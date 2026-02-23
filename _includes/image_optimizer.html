@@ -1,0 +1,171 @@
+<!-- Image Optimization and Lazy Loading -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  // Intersection Observer for lazy loading
+  const imageObserver = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const img = entry.target;
+        
+        // Load the image
+        if (img.dataset.src) {
+          img.src = img.dataset.src;
+          img.removeAttribute('data-src');
+        }
+        
+        // Load srcset if present
+        if (img.dataset.srcset) {
+          img.srcset = img.dataset.srcset;
+          img.removeAttribute('data-srcset');
+        }
+        
+        // Add loaded class for styling
+        img.classList.add('loaded');
+        
+        // Stop observing this image
+        observer.unobserve(img);
+      }
+    });
+  }, {
+    rootMargin: '50px 0px',
+    threshold: 0.01
+  });
+  
+  // Observe all lazy images
+  const lazyImages = document.querySelectorAll('img[data-src], img[loading="lazy"]');
+  lazyImages.forEach(img => {
+    imageObserver.observe(img);
+  });
+  
+  // Progressive image loading
+  function createProgressiveImage(container, lowQualitySrc, highQualitySrc, alt) {
+    const img = document.createElement('img');
+    img.src = lowQualitySrc;
+    img.alt = alt;
+    img.classList.add('progressive-image', 'low-quality');
+    
+    container.appendChild(img);
+    
+    const highQualityImg = new Image();
+    highQualityImg.onload = function() {
+      img.src = highQualitySrc;
+      img.classList.remove('low-quality');
+      img.classList.add('high-quality');
+    };
+    highQualityImg.src = highQualitySrc;
+  }
+  
+  // Auto-generate responsive images
+  function generateResponsiveImage(img) {
+    const src = img.src;
+    const baseName = src.substring(0, src.lastIndexOf('.'));
+    const extension = src.substring(src.lastIndexOf('.'));
+    
+    // Generate srcset for common breakpoints
+    const sizes = [320, 640, 768, 1024, 1200, 1600];
+    const srcset = sizes.map(size => 
+      `${baseName}-${size}w${extension} ${size}w`
+    ).join(', ');
+    
+    img.srcset = srcset;
+    img.sizes = '(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 1200px';
+  }
+  
+  // Image error handling
+  const allImages = document.querySelectorAll('img');
+  allImages.forEach(img => {
+    img.addEventListener('error', function() {
+      // Replace with placeholder or fallback image
+      this.src = '{{ site.baseurl }}/assets/images/placeholder.png';
+      this.alt = 'Image not available';
+      this.classList.add('image-error');
+    });
+    
+    img.addEventListener('load', function() {
+      this.classList.add('image-loaded');
+    });
+  });
+  
+  // Image zoom functionality
+  const zoomableImages = document.querySelectorAll('.zoomable, [data-zoom="true"]');
+  zoomableImages.forEach(img => {
+    img.addEventListener('click', function(e) {
+      e.preventDefault();
+      createImageZoom(this);
+    });
+  });
+  
+  function createImageZoom(img) {
+    const overlay = document.createElement('div');
+    overlay.className = 'image-zoom-overlay';
+    overlay.innerHTML = `
+      <div class="zoom-container">
+        <img src="${img.src}" alt="${img.alt}" class="zoomed-image">
+        <button class="zoom-close" aria-label="Close zoom">✕</button>
+      </div>
+    `;
+    
+    document.body.appendChild(overlay);
+    document.body.style.overflow = 'hidden';
+    
+    // Close zoom
+    const closeBtn = overlay.querySelector('.zoom-close');
+    [closeBtn, overlay].forEach(element => {
+      element.addEventListener('click', () => {
+        document.body.removeChild(overlay);
+        document.body.style.overflow = '';
+      });
+    });
+    
+    // Keyboard close
+    document.addEventListener('keydown', function closeOnEscape(e) {
+      if (e.key === 'Escape') {
+        document.body.removeChild(overlay);
+        document.body.style.overflow = '';
+        document.removeEventListener('keydown', closeOnEscape);
+      }
+    });
+  }
+  
+  // Image performance monitoring
+  function monitorImagePerformance() {
+    const images = document.querySelectorAll('img');
+    const imageMetrics = [];
+    
+    images.forEach((img, index) => {
+      const startTime = performance.now();
+      
+      img.addEventListener('load', function() {
+        const loadTime = performance.now() - startTime;
+        imageMetrics.push({
+          index,
+          src: this.src,
+          loadTime,
+          naturalWidth: this.naturalWidth,
+          naturalHeight: this.naturalHeight,
+          displayWidth: this.width,
+          displayHeight: this.height
+        });
+        
+        // Log slow loading images
+        if (loadTime > 2000) {
+          console.warn(`Slow loading image: ${this.src} (${loadTime.toFixed(2)}ms)`);
+        }
+      });
+    });
+    
+    // Report metrics after page load
+    window.addEventListener('load', () => {
+      setTimeout(() => {
+        console.log('Image Performance Metrics:', imageMetrics);
+      }, 1000);
+    });
+  }
+  
+  // Initialize performance monitoring in development
+  if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
+    monitorImagePerformance();
+  }
+});
+</script>
+

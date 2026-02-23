@@ -1,0 +1,31 @@
+/profile.md
+
+ # Jekyll
+ _site/
+ .sass-cache/
+ .jekyll-cache/
+ .jekyll-metadata
+ # Bundler
+ .bundle/
+ vendor/
+ Gemfile.lock
+
+ # Node.js
+ node_modules/
+ npm-debug.log*
+ yarn-debug.log*
+ yarn-error.log*
+ # Favicon generation temp files
+ temp/
+ .*
+_site/
+.env
+.env.local
+personal/
+.logs/
+*.log
+transcript/
+notes.*
+.websearch/
+scratch/
+*.png

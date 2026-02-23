@@ -1,0 +1,8 @@
+{
+  "claude-opus-4-6" : {
+    "prompt_tokens" : 70251,
+    "completion_tokens" : 8264,
+    "total_tokens" : 78515,
+    "cost" : 0.557855
+  }
+}

@@ -1,0 +1,67 @@
+<article class="post-card document-card swipeable">
+{% if post.featured_image %}
+<a href="{{ post.url | relative_url }}" class="post-card-image">
+<img src="{{ post.featured_image | relative_url }}"
+alt="{{ post.title | escape }}" loading="lazy" />
+</a>
+{% endif %}
+<div class="post-card-body">
+<h3 class="post-card-title">
+<a class="touch-target" href="{{ post.url | relative_url }}">{{ post.title }}</a>
+</h3>
+<div class="post-card-meta">
+{% if post.date %}
+<time datetime="{{ post.date | date_to_xmlschema }}">
+{{ post.date | date: "%B %d, %Y" }}
+</time>
+{% endif %}
+{% if post.category %}
+<span class="post-category">{{ post.category }}</span>
+{% endif %}
+</div>
+{% if post.content_formats and post.content_formats.size > 0 %}
+<div class="post-card-formats">
+{% for format in post.content_formats %}
+<span class="format-badge format-{{ format | slugify }}" title="{{ format | replace: '_', ' ' | capitalize }}">
+{%- case format -%}
+{%- when 'article' -%}📄
+{%- when 'comic' or 'comic_seq' or 'comic_seq_seq' -%}🎨
+{%- when 'narrative' or 'narrative_seq' or 'narrative_seq_seq' -%}📖
+{%- when 'gametheory' -%}🎲
+{%- when 'socratic' -%}💬
+{%- when 'perspectives' -%}🔭
+{%- when 'dialectical' -%}⚖️
+{%- when 'persuasive' -%}📣
+{%- when 'statemachine' -%}⚙️
+{%- when 'design' -%}🏗️
+{%- when 'tutorial' -%}🎓
+{%- else -%}📋
+{%- endcase -%}
+<span class="format-label">{{ format | replace: '_', ' ' }}</span>
+</span>
+{% endfor %}
+</div>
+{% endif %}
+{% if post.description %}
+<p class="post-card-excerpt">{{ post.description | truncate: 120 }}</p>
+{% elsif post.excerpt %}
+<p class="post-card-excerpt">{{ post.excerpt | strip_html | truncate: 120 }}</p>
+{% endif %}
+{% if post.tags and post.tags.size > 0 %}
+<div class="post-card-tags">
+{% for tag in post.tags limit: 5 %}
+<a href="{{ tag | slugify | prepend: '/tag/' | append: '/' | relative_url }}"
+class="tag touch-target">{{ tag }}</a>
+{% endfor %}
+</div>
+{% endif %}
+{% if post.related_documents %}
+{% for related_path in post.related_documents limit: 1 %}
+{% assign related = site.documents | where: "path", related_path | first %}
+{% if related %}
+<a data-related-doc href="{{ related.url | relative_url }}" style="display: none;">{{ related.title }}</a>
+{% endif %}
+{% endfor %}
+{% endif %}
+</div>
+</article>

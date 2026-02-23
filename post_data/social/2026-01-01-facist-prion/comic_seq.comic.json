@@ -1,0 +1,377 @@
+{
+  "config" : {
+    "task_description" : "Write a sequel to 'The Misfolded State' titled 'The Resilient Mesh'. The story follows The Archivist monitoring the growth of the 'Cure' (a decentralized, organic network) as it battles the 'Prion' (the glitching authoritarian regime) which attempts to purge or co-opt it.",
+    "target_pages" : 8,
+    "art_style" : "Surreal Cyberpunk Noir",
+    "style_details" : "High contrast visuals. The 'Prion' infection is represented by jagged red glitches and deep black necrosis. The 'Cure' is represented by vibrant, glowing neon green organic circuitry and vines. The visual language should emphasize the conflict between the rigid, failing digital structures and the fluid, resilient organic growth.",
+    "generate_images" : true,
+    "character_references" : [ {
+      "character_name" : "The Archivist (Unit 734)",
+      "reference_image_path" : "char_The_Archivist__Unit_734_.png",
+      "visual_description" : "A weary, androgynous figure in a heavy, matte-black tech-wear jacket. Left eye is natural; right eye is a complex, glowing amber multi-lens optical sensor. Now seen working in a server room partially overgrown with glowing green vines.",
+      "personality_notes" : "Clinical, observant, protective. Speaks like a doctor monitoring a patient in critical condition.",
+      "role" : "Narrator / Protagonist",
+      "relationships" : "Guardian of The Cure, Enemy of The Prion"
+    }, {
+      "character_name" : "The Prion (The Glitch)",
+      "visual_description" : "A jagged, neon-red, vibrating geometric shape or cloud of static. It corrupts the environment, turning buildings into pixelated voids and people into uniform red silhouettes.",
+      "personality_notes" : "Mindless, aggressive, adaptive. Seeks to flatten complexity and consume resources.",
+      "role" : "Antagonist",
+      "relationships" : "Antagonist"
+    } ],
+    "plot_continuity" : {
+      "narrative_structure" : "A 'Treatment Progress Report' following the growth of the resistance and the regime's immune response.",
+      "key_plot_points" : [ "Introduction: The single sprout has expanded into a small network of 'green' infrastructure (The Mesh).", "Reaction: The central Tower (The Platform) detects the anomaly and launches a 'Hard Reset' (massive glitch wave) to purge it.", "Resilience: The Green network flickers but holds due to its decentralized nature.", "Mutation: The Prion adapts, creating 'Fake Green' vines to trap and co-opt the resistance.", "Differentiation: The Archivist analyzes the threat, distinguishing between real organic growth (fractal, complex) and the Prion's mimicry (repeating patterns).", "Expansion: The Resistance uses the distraction to sever the Tower's main feeds, replacing them with the organic mesh.", "Climax: A digital/physical confrontation where the Tower is forced to reboot on the Green network's terms.", "Conclusion: The City is a hybrid landscape. The Prion is quarantined. The Archivist closes the file: 'Prognosis: Guarded'." ],
+      "setting_details" : "The same glitching cyberpunk metropolis, but now with veins of glowing green organic matter growing over the decay.",
+      "themes" : [ "Resilience vs Control", "Decentralization", "Adaptation", "Healing" ],
+      "tone" : "Tense, analytical, cautiously optimistic.",
+      "prior_story_context" : "Sequel to 'The Misfolded State'. The Archivist diagnosed a 'cultural prion' destroying society and identified the cure: building parallel, resilient infrastructure.",
+      "continuity_constraints" : [ "Must follow the ending of 'The Misfolded State' where a single green sprout appeared." ],
+      "ending_notes" : "The patient (society) is stable but scarred. The cure has taken root.",
+      "additional_notes" : "Maintain the 'medical report' framing device from the first comic."
+    },
+    "state" : "Pending",
+    "task_type" : "ComicBookGeneration",
+    "files" : [ "comic_seq.md" ]
+  },
+  "script" : {
+    "title" : "The Mycelial Patch",
+    "premise" : "A sequel to \"The Misfolded State.\" Six months after diagnosing the \"cultural prion\" that collapsed society, The Archivist monitors the growth of a decentralized resistance. The narrative follows the conflict between the rigid, necrotic \"Platform\" and the fluid, organic \"Mesh\" as the Prion attempts to purge, then mimic, the cure.",
+    "characters" : [ {
+      "name" : "The Archivist (Unit 734)",
+      "description" : "A clinical, detached observer acting as a physician to a dying city. They are protective of the new growth but wary of the infection's adaptability.",
+      "visual_traits" : "A weary, androgynous figure in a heavy, matte-black tech-wear jacket. Their left eye is natural and tired; their right eye is a complex, glowing amber multi-lens optical sensor. They are now seen in a server room where cables are intertwined with glowing, translucent green vines."
+    }, {
+      "name" : "The Prion (The Glitch)",
+      "description" : "The antagonist force. It is not a person, but a viral error in reality. It seeks to maintain the \"misfolded\" state of total control and identity compression.",
+      "visual_traits" : "Jagged, neon-red static. It manifests as corruption on buildings, pixelated voids in the sky, and \"dead\" textures on the city's inhabitants."
+    }, {
+      "name" : "The Mesh (The Cure)",
+      "description" : "The collective protagonist. A decentralized network of resistance.",
+      "visual_traits" : "Bioluminescent neon-green organic matter (vines, moss, roots) that grows over the cold concrete and digital surfaces. It looks fractal, chaotic, and alive."
+    } ],
+    "pages" : [ {
+      "page_number" : 1,
+      "rows" : [ {
+        "row_number" : 1,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "Close up on the vines. They are weaving into the nearby server cables, fusing biology with technology.",
+          "dialog" : [ {
+            "character" : "The Archivist",
+            "text" : "The initial inoculation was successful. The subject is responding."
+          } ],
+          "caption" : "LOG ENTRY: 2026.06.15. SUBJECT: Treatment Efficacy."
+        } ],
+        "visual_description" : "A wide shot of the same balcony from the end of the previous comic. It is night. The single crack in the concrete has widened significantly. Thick, glowing neon-green vines are pulsing out of it, spreading across the floor like a circuit board made of moss."
+      }, {
+        "row_number" : 2,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "The Archivist’s cybernetic eye zooms in on a distant rooftop where people are gathering around a green light source.",
+          "dialog" : [ {
+            "character" : "The Archivist",
+            "text" : "We call it The Mesh. A parallel nervous system growing over the necrotic tissue."
+          } ],
+          "caption" : "What began as a single sprout of post-permissioned infrastructure has metastasized."
+        } ],
+        "visual_description" : "The Archivist stands at the railing, looking out at the city. The view has changed. Small pockets of green light are visible in the dark, glitching skyline, connected by faint, thread-like beams."
+      }, {
+        "row_number" : 3,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "The Archivist’s holographic display shows the network topology.",
+          "dialog" : [ {
+            "character" : "The Archivist",
+            "text" : "It is not an army. It is a garden."
+          } ],
+          "caption" : "The Prion relies on a central point of failure. The Mesh relies on redundancy."
+        } ],
+        "visual_description" : "A split screen. On the left, a diagram of a centralized hierarchy (pyramid). On the right, a diagram of a decentralized network (mycelium)."
+      } ]
+    }, {
+      "page_number" : 2,
+      "rows" : [ {
+        "row_number" : 1,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "The \"Eye\" of the Tower (the red searchlight) snaps open. It focuses intensely on a patch of green growth in the slums below.",
+          "dialog" : [ {
+            "character" : "The Archivist",
+            "text" : "The Platform detects the anomaly. It does not see a cure. It sees a foreign body."
+          } ],
+          "caption" : "PHASE 1: IMMUNE RESPONSE."
+        } ],
+        "visual_description" : "Low angle shot of The Tower (The Platform). It looks more unstable than before. The black monolith is vibrating. The sky around it is a bruised purple, tearing with red digital artifacts."
+      }, {
+        "row_number" : 2,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "The red wave hits a building covered in green vines. The digital textures of the building shatter.",
+          "dialog" : [ {
+            "character" : "The Archivist",
+            "text" : "They attempt to drown the signal in noise."
+          } ],
+          "caption" : "The Hard Reset. An attempt to purge complexity through brute-force signal amplification."
+        } ],
+        "visual_description" : "A \"Hard Reset\" wave. A massive wall of red static and distortion blasts out from the Tower, rolling over the city like a tsunami."
+      }, {
+        "row_number" : 3,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "The red static tears through the street.",
+          "dialog" : [ ],
+          "caption" : "For those dependent on the Tower's reality, the reset is agonizing."
+        } ],
+        "visual_description" : "Street level. The red silhouettes (infected citizens) are screaming, clutching their heads as the red static washes over them."
+      } ]
+    }, {
+      "page_number" : 3,
+      "rows" : [ {
+        "row_number" : 1,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "A close-up of a green vine. A section is burnt, but the light flows around the damage, finding a new path.",
+          "dialog" : [ {
+            "character" : "The Archivist",
+            "text" : "Centralized systems shatter under stress. Distributed systems merely reroute."
+          } ],
+          "caption" : "PHASE 2: RESILIENCE."
+        } ],
+        "visual_description" : "The aftermath of the wave on the Green network. The vines are flickering, some are burnt black, but the network remains intact."
+      }, {
+        "row_number" : 2,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "A medic checks a monitor. The signal is weak but stable.",
+          "dialog" : [ {
+            "character" : "The Archivist",
+            "text" : "You cannot decapitate a movement that has no head."
+          } ],
+          "caption" : "Latency increased by 40%. Packet loss minimal."
+        } ],
+        "visual_description" : "Inside a resistance safehouse. It is lit by the soft green glow of the organic tech. People are calm, looking at handheld devices that are still working despite the chaos outside."
+      }, {
+        "row_number" : 3,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "The red eye of the Tower blinks erratically.",
+          "dialog" : [ ],
+          "caption" : "The purge failed. The energy cost of the suppression exceeded the value of the control."
+        } ],
+        "visual_description" : "The Tower, seen from a distance. It looks dimmer now, as if the attack exhausted its energy reserves."
+      } ]
+    }, {
+      "page_number" : 4,
+      "rows" : [ {
+        "row_number" : 1,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "The jagged red glitches around the Tower smooth out. They turn a sickly, artificial lime green.",
+          "dialog" : [ {
+            "character" : "The Archivist",
+            "text" : "The pathogen adapts. If it cannot destroy the host's defenses, it attempts to mimic them."
+          } ],
+          "caption" : "PHASE 3: MUTATION."
+        } ],
+        "visual_description" : "The Prion changes tactics. The red static shifts color. It tries to turn green."
+      }, {
+        "row_number" : 2,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "A close-up of the Fake Green. It’s a texture map, not a living thing. It has a \"copyright\" symbol faintly visible in the texture.",
+          "dialog" : [ {
+            "character" : "The Archivist",
+            "text" : "It offers the aesthetic of change without the structural reform."
+          } ],
+          "caption" : "Astroturfing. Controlled opposition. The simulation of grassroots growth."
+        } ],
+        "visual_description" : "\"Fake Green\" vines appear on the Tower. They look plastic, glossy, and repeat in a perfect, unnatural pattern."
+      }, {
+        "row_number" : 3,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "The vine turns back to red static upon contact, binding the citizen.",
+          "dialog" : [ ],
+          "caption" : "Co-option. It lures the desperate with the promise of the Cure, only to reintegrate them into the Stack."
+        } ],
+        "visual_description" : "A trap. A red silhouette citizen reaches for a \"Fake Green\" vine. It snaps around their wrist like a handcuff."
+      } ]
+    }, {
+      "page_number" : 5,
+      "rows" : [ {
+        "row_number" : 1,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "Left Sample (The Mesh): Fractal, chaotic, infinite detail. Right Sample (The Prion): A looping GIF, pixelated edges, hollow.",
+          "dialog" : [ {
+            "character" : "The Archivist",
+            "text" : "To the untrained eye, they look identical. But the diagnostic is clear."
+          } ],
+          "caption" : "PHASE 4: DIFFERENTIATION."
+        } ],
+        "visual_description" : "The Archivist in their lab. They are looking at two holographic samples under magnification."
+      }, {
+        "row_number" : 2,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "The Archivist’s POV. The world is filtered. The \"Fake Green\" is highlighted in warning red text: [REPEATING PATTERN DETECTED]. The \"Real Green\" is highlighted in blue: [ORGANIC COMPLEXITY VERIFIED].",
+          "dialog" : [ {
+            "character" : "The Archivist",
+            "text" : "Life is messy. The algorithm is too clean."
+          } ],
+          "caption" : "The Prion cannot generate novelty. It can only loop."
+        } ],
+        "visual_description" : "Extreme close-up on the Archivist's cybernetic eye. The lenses are rotating, filtering light."
+      }, {
+        "row_number" : 3,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "The message spreads across the Green network screens: \"VERIFY THE ROOT.\"",
+          "dialog" : [ ],
+          "caption" : "We inoculate the network with truth."
+        } ],
+        "visual_description" : "The Archivist typing a broadcast message."
+      } ]
+    }, {
+      "page_number" : 6,
+      "rows" : [ {
+        "row_number" : 1,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "A figure uses a glowing green thermal cutter to slice through a thick, black data cable.",
+          "dialog" : [ {
+            "character" : "The Archivist",
+            "text" : "We do not storm the castle. We simply cut the water supply."
+          } ],
+          "caption" : "PHASE 5: EXPANSION."
+        } ],
+        "visual_description" : "The Resistance goes on the offensive. Not a battle, but a surgery. Shadowy figures in stealth gear are climbing the massive power cables feeding the Tower."
+      }, {
+        "row_number" : 2,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "Sparks fly as the green vine fuses with the severed copper and fiber optics.",
+          "dialog" : [ {
+            "character" : "The Archivist",
+            "text" : "Re-routing the metabolic flow."
+          } ],
+          "caption" : "Replacing the extraction lines with distribution nodes."
+        } ],
+        "visual_description" : "As the black cables are cut, the Resistance grafts the glowing green organic vines into the breach."
+      }, {
+        "row_number" : 3,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "The hologram of the \"Leader\" on the Tower flickers and distorts, revealing the wireframe skeleton beneath.",
+          "dialog" : [ ],
+          "caption" : "The Platform is starving."
+        } ],
+        "visual_description" : "The Tower reacts violently. Lights flicker. The red eye widens in panic."
+      } ]
+    }, {
+      "page_number" : 7,
+      "rows" : [ {
+        "row_number" : 1,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "The green light reaches the top of the Tower. The Red Eye flickers and dies.",
+          "dialog" : [ {
+            "character" : "The Archivist",
+            "text" : "System failure imminent. Initiating Safe Mode."
+          } ],
+          "caption" : "PHASE 6: THE REBOOT."
+        } ],
+        "visual_description" : "The Climax. A digital/physical confrontation. The Tower is dark, silhouetted against the sky. The only light comes from the green vines creeping up its base."
+      }, {
+        "row_number" : 2,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "The aggressive red advertising screens turn into simple, transparent glass.",
+          "dialog" : [ {
+            "character" : "The Archivist",
+            "text" : "We force the hardware to run on our operating system."
+          } ],
+          "caption" : "The Prion is not deleted. It is quarantined."
+        } ],
+        "visual_description" : "The Tower lights up again, but the light is different. It is a soft, steady white light, filtered through the green vines wrapping the structure."
+      }, {
+        "row_number" : 3,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "A person looks at their hands, which are no longer red claws.",
+          "dialog" : [ ],
+          "caption" : "The fever breaks."
+        } ],
+        "visual_description" : "The red silhouettes in the streets look up. The red color drains from them, leaving them looking confused, tired, and human (multicolored again)."
+      } ]
+    }, {
+      "page_number" : 8,
+      "rows" : [ {
+        "row_number" : 1,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "The Archivist holds a tablet. The status reads: \"STABLE.\"",
+          "dialog" : [ {
+            "character" : "The Archivist",
+            "text" : "The patient has survived the procedure. But the damage to the institutional tissue is severe."
+          } ],
+          "caption" : "CONCLUSION."
+        } ],
+        "visual_description" : "The Archivist stands on the balcony. It is dawn. The light is grey and real, not neon. The city looks battered. There are scorch marks, rubble, and overgrown vines everywhere."
+      }, {
+        "row_number" : 2,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "The city is quiet. Not the silence of oppression, but the silence of rest.",
+          "dialog" : [ ],
+          "caption" : "We are no longer a machine. We are an ecology."
+        } ],
+        "visual_description" : "A wide shot of the city. It is a hybrid landscape. Cyberpunk skyscrapers are half-covered in vertical forests. The \"Fake Green\" plastic vines are rotting away, revealing the steel beneath."
+      }, {
+        "row_number" : 3,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "The Archivist turns away from the view, walking back into the shadows of the server room.",
+          "dialog" : [ {
+            "character" : "The Archivist",
+            "text" : "Prognosis: Guarded. End Log."
+          } ],
+          "caption" : "The Prion remains dormant in the code. Eternal vigilance is the price of health."
+        } ],
+        "visual_description" : "Close up on the Archivist closing the file."
+      } ]
+    } ]
+  },
+  "characterImages" : {
+    "The Archivist (Unit 734)" : "char_The_Archivist__Unit_734_.png",
+    "The Prion (The Glitch)" : "char_The_Prion__The_Glitch_.png",
+    "The Mesh (The Cure)" : "char_The_Mesh__The_Cure_.png"
+  },
+  "rowImages" : {
+    "1_1" : "page_1_row_1.png",
+    "1_2" : "page_1_row_2.png",
+    "1_3" : "page_1_row_3.png",
+    "2_1" : "page_2_row_1.png",
+    "2_2" : "page_2_row_2.png",
+    "2_3" : "page_2_row_3.png",
+    "3_1" : "page_3_row_1.png",
+    "3_2" : "page_3_row_2.png",
+    "3_3" : "page_3_row_3.png",
+    "4_1" : "page_4_row_1.png",
+    "4_2" : "page_4_row_2.png",
+    "4_3" : "page_4_row_3.png",
+    "5_1" : "page_5_row_1.png",
+    "5_2" : "page_5_row_2.png",
+    "5_3" : "page_5_row_3.png",
+    "6_1" : "page_6_row_1.png",
+    "6_2" : "page_6_row_2.png",
+    "6_3" : "page_6_row_3.png",
+    "7_1" : "page_7_row_1.png",
+    "7_2" : "page_7_row_2.png",
+    "7_3" : "page_7_row_3.png",
+    "8_1" : "page_8_row_1.png",
+    "8_2" : "page_8_row_2.png",
+    "8_3" : "page_8_row_3.png"
+  }
+}

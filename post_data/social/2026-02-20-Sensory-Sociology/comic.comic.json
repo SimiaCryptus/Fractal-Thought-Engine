@@ -1,0 +1,410 @@
+{
+  "config" : {
+    "task_description" : "Generate a 6-page comic book script and visuals based on the essay 'The Capsaicin Paradox'. The comic should explore the journey from the biological reality of the TRPV1 receptor to the social performance of the 'Hot-Wing Industrial Complex', concluding with the 'Semiotic Collapse' where pain destroys language.",
+    "target_pages" : 6,
+    "art_style" : "Noir-Infused Scientific Surrealism",
+    "style_details" : "High-contrast monochrome backgrounds with vibrant, glowing 'heat' colors (neon reds, oranges, and yellows) representing the capsaicin effect. Use technical diagrams, chemical structures, and semiotic labels (e.g., 'HONEST SIGNAL', 'SOCIAL POISON') as overlays on the action. The tone should be intellectual yet visceral.",
+    "generate_images" : true,
+    "character_references" : [ {
+      "character_name" : "Dr. Aris Thorne",
+      "visual_description" : "A sharp-featured academic in a dark turtleneck and a lab coat that looks like a trench coat. Often seen in silhouette or half-shadow, holding a single chili pepper like a skull in a Hamlet soliloquy.",
+      "personality_notes" : "Cynical, intellectual, detached observer of human folly.",
+      "role" : "Narrator/Philosopher",
+      "relationships" : "The guide for the reader through the 'Semiotic Field'."
+    }, {
+      "character_name" : "The Subject (Alex)",
+      "visual_description" : "An average person whose appearance shifts from composed and trendy to a distorted, sweating, red-faced mess as the comic progresses. Wears a 'Spice Seeker' t-shirt.",
+      "personality_notes" : "Initially seeking social capital and 'authenticity', eventually reduced to primal biological reaction.",
+      "role" : "Protagonist/Victim",
+      "relationships" : "The test subject for Dr. Thorne's theories."
+    } ],
+    "plot_continuity" : {
+      "narrative_structure" : "A six-act descent from molecular biology to social madness.",
+      "key_plot_points" : [ "The Molecular Lie: The Capsicum plant's 'Directed Deterrence' and the TRPV1 receptor.", "Benign Masochism: The brain's 'Safe Threat' override—pleasure in the hallucination of fire.", "The Semiotic Field: The transition from private pain to public performance; the 'Handicap Principle'.", "The Toughness Trap: Genetic luck (receptor density) being mistaken for moral character; the 'Mayonnaise Proxy'.", "The Industrialization of Suffering: The 'Hot-Wing Industrial Complex' and the 'Red Queen' race of Scoville escalation.", "Semiotic Collapse: The threshold where pain annihilates language and the 'Biological Real' returns." ],
+      "setting_details" : "Shifts between a surreal laboratory, a trendy 'authentic' restaurant, a high-energy YouTube interview set, and an abstract void of pure sensation.",
+      "themes" : [ "Biological Honesty vs. Social Performance", "The Body as a Semiotic Surface", "Costly Signaling and Status Games", "The Limits of Language in the Face of Pain" ],
+      "tone" : "Darkly comedic, philosophical, and intensely sensory.",
+      "prior_story_context" : "",
+      "continuity_constraints" : [ "Dr. Thorne must appear in at least one frame per page to provide the theoretical framework.", "The visual representation of 'heat' must become more chaotic and abstract as the Scoville level rises." ],
+      "ending_notes" : "The final page should show the total breakdown of the semiotic field, with the character Alex unable to speak, surrounded by dissolving words.",
+      "additional_notes" : ""
+    },
+    "state" : "Pending",
+    "task_type" : "ComicBookGeneration",
+    "files" : [ "comic.md" ]
+  },
+  "script" : {
+    "title" : "The Capsaicin Paradox",
+    "premise" : "A philosophical and physiological descent into the \"Spicy Food Semiotic Field,\" exploring how a plant’s defense mechanism became a tool for human status, performance, and the eventual annihilation of language itself.",
+    "characters" : [ {
+      "name" : "Dr. Aris Thorne",
+      "description" : "Cynical, intellectual, detached observer of human folly. Narrator/Philosopher. The guide for the reader through the 'Semiotic Field'.",
+      "visual_traits" : "A sharp-featured academic in a dark turtleneck and a lab coat that looks like a trench coat. Often seen in silhouette or half-shadow, holding a single chili pepper like a skull in a Hamlet soliloquy."
+    }, {
+      "name" : "The Subject (Alex)",
+      "description" : "Initially seeking social capital and 'authenticity', eventually reduced to primal biological reaction. Protagonist/Victim. The test subject for Dr. Thorne's theories.",
+      "visual_traits" : "An average person whose appearance shifts from composed and trendy to a distorted, sweating, red-faced mess as the comic progresses. Wears a 'Spice Seeker' t-shirt."
+    } ],
+    "pages" : [ {
+      "page_number" : 1,
+      "rows" : [ {
+        "row_number" : 1,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "Close up on Dr. Thorne’s face, half-hidden in shadow. He holds a bright red Habanero between his thumb and forefinger.",
+          "dialog" : [ {
+            "character" : "Dr. Thorne",
+            "text" : "Meet the Capsicum. It doesn't want to be eaten by you."
+          } ],
+          "caption" : "It begins with a lie. A molecular deception."
+        }, {
+          "frame_number" : 2,
+          "description" : "A technical overlay of the Capsaicin molecule glowing in neon orange.",
+          "dialog" : [ ],
+          "caption" : "It engineered a key. A molecular shape designed to fit a very specific lock."
+        } ],
+        "visual_description" : "The Hamlet of Heat"
+      }, {
+        "row_number" : 2,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "A surreal diagram of a human mouth. The TRPV1 receptors are depicted as glowing \"fire alarms\" on the tongue.",
+          "dialog" : [ {
+            "character" : "Dr. Thorne",
+            "text" : "The TRPV1 receptor. A thermosensor calibrated for 43°C. It’s there to tell you your mouth is on fire."
+          } ]
+        }, {
+          "frame_number" : 2,
+          "description" : "The Capsaicin molecule \"plugging into\" the receptor. Sparks of neon red fly off.",
+          "dialog" : [ {
+            "character" : "Dr. Thorne",
+            "text" : "The molecule lies. It tells the brain you are burning, even when the temperature hasn't moved a degree."
+          } ],
+          "caption" : "DIRECTED DETERRENCE."
+        } ],
+        "visual_description" : "The TRPV1 Lock"
+      }, {
+        "row_number" : 3,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "A monochrome bird eating a chili pepper, looking completely unbothered.",
+          "dialog" : [ {
+            "character" : "Dr. Thorne",
+            "text" : "Birds lack the lock. They eat, they fly, they disperse the seeds. The plant’s reproductive future is secure."
+          } ]
+        }, {
+          "frame_number" : 2,
+          "description" : "Dr. Thorne looks directly at the reader, the chili pepper now closer to his own mouth.",
+          "dialog" : [ {
+            "character" : "Dr. Thorne",
+            "text" : "But humans? We heard the alarm... and we decided we liked the sound."
+          } ]
+        } ],
+        "visual_description" : "The Avian Exception"
+      } ]
+    }, {
+      "page_number" : 2,
+      "rows" : [ {
+        "row_number" : 1,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "Alex (The Subject) sits at a lab table. He takes a bite of a pepper. He looks confident.",
+          "dialog" : [ {
+            "character" : "Alex",
+            "text" : "I can handle it. I’m a \"Spice Seeker.\""
+          } ]
+        }, {
+          "frame_number" : 2,
+          "description" : "Close up on Alex’s eye. The pupil dilates. A single bead of sweat forms.",
+          "dialog" : [ ],
+          "caption" : "BIOLOGICAL HONESTY."
+        } ],
+        "visual_description" : "The First Bite"
+      }, {
+        "row_number" : 2,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "A split-screen. On one side, Alex’s brain is a chaotic mess of \"FIRE!\" warnings. On the other, a calm Dr. Thorne stands in a library.",
+          "dialog" : [ {
+            "character" : "Dr. Thorne",
+            "text" : "This is Benign Masochism. The body screams \"Crisis,\" but the mind knows it’s a ghost."
+          } ]
+        }, {
+          "frame_number" : 2,
+          "description" : "Alex’s nervous system is lit up like a neon circuit board. Endorphins are depicted as glowing blue droplets falling into a sea of red fire.",
+          "dialog" : [ {
+            "character" : "Dr. Thorne",
+            "text" : "The brain rewards the survival of a threat that never existed."
+          } ],
+          "caption" : "THE ENDORPHIN LOOP."
+        } ],
+        "visual_description" : "The Safe Threat"
+      }, {
+        "row_number" : 3,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "Alex is now smiling through the pain, though his face is turning a light neon pink.",
+          "dialog" : [ {
+            "character" : "Alex",
+            "text" : "(Thinking) This... this feels amazing."
+          } ]
+        }, {
+          "frame_number" : 2,
+          "description" : "Dr. Thorne leans over Alex, looking like a shadow.",
+          "dialog" : [ {
+            "character" : "Dr. Thorne",
+            "text" : "You aren't just eating, Alex. You’re staging a rebellion against your own evolutionary hardware. And you think you’re winning."
+          } ]
+        } ],
+        "visual_description" : "The Cognitive Override"
+      } ]
+    }, {
+      "page_number" : 3,
+      "rows" : [ {
+        "row_number" : 1,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "Alex is at a table with friends. He’s eating a \"Nuclear Wing.\" He is visibly struggling—sweating, red-faced—but he’s holding a thumb up.",
+          "dialog" : [ ],
+          "caption" : "THE PERFORMANCE HYPOTHESIS."
+        }, {
+          "frame_number" : 2,
+          "description" : "Dr. Thorne stands in the background, leaning against a pillar, watching.",
+          "dialog" : [ {
+            "character" : "Dr. Thorne",
+            "text" : "The pain is the price of admission. If it didn't hurt, it wouldn't be a signal."
+          } ]
+        } ],
+        "visual_description" : "The Performance"
+      }, {
+        "row_number" : 2,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "A diagram of a peacock’s tail overlays the restaurant scene.",
+          "dialog" : [ {
+            "character" : "Dr. Thorne",
+            "text" : "Biologists call it the Handicap Principle. A signal is only honest if it’s expensive."
+          } ]
+        }, {
+          "frame_number" : 2,
+          "description" : "Close up on Alex’s sweating brow. The sweat drops are labeled \"THE RECEIPT.\"",
+          "dialog" : [ {
+            "character" : "Dr. Thorne",
+            "text" : "You can’t fake the flush, Alex. That’s why they believe you’re \"tough.\""
+          } ]
+        } ],
+        "visual_description" : "Costly Signaling"
+      }, {
+        "row_number" : 3,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "Alex’s friends are cheering, but their faces are slightly distorted, like masks.",
+          "dialog" : [ {
+            "character" : "Friend",
+            "text" : "Man, you’re a beast! I could never do that."
+          } ]
+        }, {
+          "frame_number" : 2,
+          "description" : "Dr. Thorne holds a magnifying glass up to the scene.",
+          "dialog" : [ {
+            "character" : "Dr. Thorne",
+            "text" : "The biological event is over. Now, it’s just Social Poison. Interpretation has begun."
+          } ]
+        } ],
+        "visual_description" : "The Social Poison"
+      } ]
+    }, {
+      "page_number" : 4,
+      "rows" : [ {
+        "row_number" : 1,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "A comparison of two tongues. One has many glowing TRPV1 receptors (labeled \"SENSITIVE\"), the other has very few (labeled \"BLEACHED\").",
+          "dialog" : [ {
+            "character" : "Dr. Thorne",
+            "text" : "Some are born with a sparse field. Others have burned their receptors into silence."
+          } ]
+        }, {
+          "frame_number" : 2,
+          "description" : "Alex is looking at a \"Mayonnaise\" jar with a look of disgust.",
+          "dialog" : [ ],
+          "caption" : "THE MAYONNAISE PROXY."
+        } ],
+        "visual_description" : "Genetic Luck"
+      }, {
+        "row_number" : 2,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "Alex is looking down at a person eating a mild korma. Alex looks \"superior.\"",
+          "dialog" : [ {
+            "character" : "Alex",
+            "text" : "Some people just don't have the grit for real food."
+          } ]
+        }, {
+          "frame_number" : 2,
+          "description" : "Dr. Thorne points to a DNA helix.",
+          "dialog" : [ {
+            "character" : "Dr. Thorne",
+            "text" : "You’re mistaking a sensory deficit for a moral surplus, Alex. It’s not character; it’s polymorphism."
+          } ]
+        } ],
+        "visual_description" : "The Attribution Error"
+      }, {
+        "row_number" : 3,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "Alex is eating something so hot it’s literally glowing. He can’t see the food anymore; it’s just a white light.",
+          "dialog" : [ ],
+          "caption" : "THE SENSORY BLACKOUT CURTAIN."
+        }, {
+          "frame_number" : 2,
+          "description" : "Dr. Thorne sips a glass of water, looking bored.",
+          "dialog" : [ {
+            "character" : "Dr. Thorne",
+            "text" : "You claim it \"enhances\" the flavor. But you’re listening to Mozart at 120 decibels. You aren't hearing the music; you’re just enduring the noise."
+          } ]
+        } ],
+        "visual_description" : "The Sophistication Paradox"
+      } ]
+    }, {
+      "page_number" : 5,
+      "rows" : [ {
+        "row_number" : 1,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "Alex is now a guest on a YouTube show. Cameras are everywhere. The host is a silhouette.",
+          "dialog" : [ {
+            "character" : "Host",
+            "text" : "Welcome to the Gauntlet! Ready for the \"Reaper’s Breath\"?"
+          } ]
+        }, {
+          "frame_number" : 2,
+          "description" : "A wall of hot sauce bottles with names like \"SUDDEN DEATH\" and \"COLON COLLAPSE.\"",
+          "dialog" : [ ],
+          "caption" : "SCOVILLE-BASED MARKETING."
+        } ],
+        "visual_description" : "The Hot-Wing Industrial Complex"
+      }, {
+        "row_number" : 2,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "A graph showing Scoville levels skyrocketing over the years.",
+          "dialog" : [ {
+            "character" : "Dr. Thorne",
+            "text" : "To keep the signal \"honest,\" the heat must rise. You’re running to stand still."
+          } ]
+        }, {
+          "frame_number" : 2,
+          "description" : "Alex takes a bite. His face begins to melt into a smear of neon orange.",
+          "dialog" : [ ],
+          "caption" : "THE POOLING EQUILIBRIUM."
+        } ],
+        "visual_description" : "The Red Queen Race"
+      }, {
+        "row_number" : 3,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "Two people at a table, both looking terrified of the wings in front of them, but neither will back down.",
+          "dialog" : [ {
+            "character" : "Diner 1",
+            "text" : "(Thinking) I hate this."
+          }, {
+            "character" : "Diner 2",
+            "text" : "(Thinking) I’m going to die."
+          }, {
+            "character" : "Both",
+            "text" : "\"This is great, right?\""
+          } ]
+        }, {
+          "frame_number" : 2,
+          "description" : "Dr. Thorne stands between them, arms crossed.",
+          "dialog" : [ {
+            "character" : "Dr. Thorne",
+            "text" : "A Pareto-inferior equilibrium. You’re both suffering because you’re afraid of a condiment."
+          } ]
+        } ],
+        "visual_description" : "The Prisoner’s Dilemma"
+      } ]
+    }, {
+      "page_number" : 6,
+      "rows" : [ {
+        "row_number" : 1,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "Alex is clutching the table. His eyes are streaming. He tries to speak, but only a jagged, neon-red shape comes out of his mouth.",
+          "dialog" : [ {
+            "character" : "Alex",
+            "text" : "I... I... [UNINTELLIGIBLE]"
+          } ]
+        }, {
+          "frame_number" : 2,
+          "description" : "Dr. Thorne stands in a void of pure white.",
+          "dialog" : [ {
+            "character" : "Dr. Thorne",
+            "text" : "We’ve reached the point of Semiotic Collapse. The world is being unmade."
+          } ]
+        } ],
+        "visual_description" : "The Threshold"
+      }, {
+        "row_number" : 2,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "The restaurant, the cameras, the friends—all are dissolving into a sea of fire. Only Alex’s agonized face remains.",
+          "dialog" : [ ],
+          "caption" : "PAIN ANNIHILATES LANGUAGE."
+        }, {
+          "frame_number" : 2,
+          "description" : "Close up on Alex’s mouth. The word \"AUTHENTIC\" is shattering into pieces.",
+          "dialog" : [ {
+            "character" : "Dr. Thorne",
+            "text" : "The \"Biological Real\" has returned. It doesn't care about your status or your \"Thai Spicy\" request."
+          } ]
+        } ],
+        "visual_description" : "The Unmaking of the World"
+      }, {
+        "row_number" : 3,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "Alex is curled in a fetal position on a floor of pure neon orange. He is silent.",
+          "dialog" : [ {
+            "character" : "Dr. Thorne",
+            "text" : "Beyond the last Scoville unit lies a silence no culture can metabolize."
+          } ]
+        }, {
+          "frame_number" : 2,
+          "description" : "Dr. Thorne walks away into the darkness, leaving the reader with a final look at the red chili pepper, now glowing like a dying star.",
+          "dialog" : [ {
+            "character" : "Dr. Thorne",
+            "text" : "We domesticate the absolute to feel alive. But the absolute... always wins in the end."
+          } ],
+          "caption" : "(Small, fading text) The body is a surface. The burn is the truth."
+        } ],
+        "visual_description" : "The Absolute"
+      } ]
+    } ]
+  },
+  "characterImages" : {
+    "Dr. Aris Thorne" : "char_Dr__Aris_Thorne.png",
+    "The Subject (Alex)" : "char_The_Subject__Alex_.png"
+  },
+  "rowImages" : {
+    "1_1" : "page_1_row_1.png",
+    "1_2" : "page_1_row_2.png",
+    "1_3" : "page_1_row_3.png",
+    "2_1" : "page_2_row_1.png",
+    "2_2" : "page_2_row_2.png",
+    "2_3" : "page_2_row_3.png",
+    "3_1" : "page_3_row_1.png",
+    "3_2" : "page_3_row_2.png",
+    "3_3" : "page_3_row_3.png",
+    "4_1" : "page_4_row_1.png",
+    "4_2" : "page_4_row_2.png",
+    "4_3" : "page_4_row_3.png",
+    "5_1" : "page_5_row_1.png",
+    "5_2" : "page_5_row_2.png",
+    "5_3" : "page_5_row_3.png",
+    "6_1" : "page_6_row_1.png",
+    "6_2" : "page_6_row_2.png",
+    "6_3" : "page_6_row_3.png"
+  }
+}

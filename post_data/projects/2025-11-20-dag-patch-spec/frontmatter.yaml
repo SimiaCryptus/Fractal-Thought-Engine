@@ -1,0 +1,50 @@
+title: DAG-Based Patch Format Specification
+layout: post
+date: '"2025-11-20T00:00:00.000Z"'
+last_modified: '"2024-01-01T00:00:00.000Z"'
+category: projects
+subcategory: Engineering & Formal Systems
+tags:
+  - Software Engineering
+  - Algorithms
+  - Data Structures
+  - Technical Spec
+keywords:
+  - patch format
+  - DAG
+  - directed acyclic graph
+  - version control
+  - LLM integration
+status: working
+last_thought_date: '"2024-01-01T00:00:00.000Z"'
+thought_generation: 1
+parent_document: null
+child_documents: []
+related_documents:
+  - _posts/projects/2025-11-20-prototype-app-spec.md
+  - _posts/projects/2025-11-30-circuit-designer.md
+  - _posts/projects/2025-06-30-bwt-tree-proposal.md
+reading_order: 1
+difficulty_level: advanced
+reading_time_minutes: 12
+document_type: framework
+thinking_style: analytical
+consciousness_level: meta
+engagement_type: analytical
+reader_participation: active
+cognitive_load: intense
+description: >-
+  A machine-consumable patch format using directed acyclic graphs to represent
+  code changes as semantic operations rather than line-based diffs.
+excerpt: >-
+  Explore a novel patch format designed for LLM processing that represents code
+  changes as a DAG of transform operations, enabling parallelization,
+  intelligent merging, and semantic code analysis.
+meta_description: >-
+  DAG-based patch format specification for machine consumption, LLM processing,
+  and intelligent version control with semantic operations.
+schema_type: TechArticle
+schema_headline: DAG-Based Patch Format Specification
+is_featured: false
+is_cornerstone: true
+is_gateway: true

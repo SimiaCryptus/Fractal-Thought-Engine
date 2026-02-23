@@ -1,0 +1,62 @@
+title: MindsEye Reference Counting Analysis
+layout: post
+date: '"2025-07-01T00:00:00.000Z"'
+last_modified: '"2025-07-01T12:00:00.000Z"'
+category: portfolio
+subcategory: Engineering & Formal Systems
+tags:
+  - Software Engineering
+  - Algorithms
+  - Technical Spec
+keywords:
+  - MindsEye
+  - Reference Counting
+  - GPU memory
+  - Java ML
+  - Deterministic Cleanup
+  - CUDA
+status: draft
+last_thought_date: '"2025-07-01T00:00:00.000Z"'
+thought_generation: 1
+related_documents:
+  - _posts/portfolio/2025-06-30-reference-counting-paper.md
+  - _posts/portfolio/2025-07-01-mindseye-technical-report.md
+  - _posts/portfolio/2025-07-01-mindseye-modularity-report.md
+conceptual_threads:
+  - memory_management
+  - gpu_optimization
+  - java_ml_frameworks
+document_type: research_paper
+thinking_style: analytical
+consciousness_level: analytical
+reading_order: 1
+difficulty_level: intermediate
+reading_time_minutes: 15
+engagement_type: analytical
+reader_participation: passive
+cognitive_load: moderate
+description: >-
+  An in-depth analysis of MindsEye's sophisticated reference counting approach
+  for GPU memory management in Java ML frameworks
+excerpt: >-
+  Examining MindsEye's innovative reference counting system that brings
+  deterministic memory management to Java-based machine learning, particularly
+  for GPU resource management.
+schema_type: TechArticle
+schema_headline: MindsEye Reference Counting Analysis
+schema_author: Andrew
+schema_date_published: '"2025-07-01T00:00:00.000Z"'
+schema_word_count: 2500
+schema_reading_time: PT15M
+robots: 'index,follow'
+priority: '0.8'
+changefreq: monthly
+content_rating: general
+content_language: en
+geo_region: Global
+sitemap_exclude: false
+search_exclude: false
+is_featured: false
+is_cornerstone: true
+is_gateway: false
+is_synthesis: true

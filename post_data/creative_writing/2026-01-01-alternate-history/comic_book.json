@@ -1,0 +1,288 @@
+{
+  "config" : {
+    "task_description" : "Create a 5-page comic script based on 'The Baghdad Divergence' alternate history. Page 1: The surrender of Baghdad in 1258 and the preservation of the House of Wisdom. Page 2: The flourishing of the Mongol-Abbasid 'Super-State' and the survival of the 'Shadow Library'. Page 3: The stagnation of feudal Europe, spared from the Black Death but trapped in a Malthusian cycle without a Renaissance. Page 4: The Pacific-centric discovery of the Americas by Malay and Persian navigators. Page 5: The modern era of Afro-Eurasian hegemony and the rise of authoritarian Western megastates.",
+    "target_pages" : 5,
+    "art_style" : "Silkpunk",
+    "style_details" : "A blend of traditional Islamic and Mongol aesthetics with advanced technology (Silkpunk) for the East, featuring rich colors and intricate geometric patterns. Contrast this with a grim, brutalist, and feudal 'Gothic Industrial' look for the Western megastates, using muted and cold tones. Visuals should emphasize the scale of the Afro-Eurasian cities and the oppressive nature of the Western bureaucracies.",
+    "generate_images" : true,
+    "state" : "Pending",
+    "task_type" : "ComicBookGeneration",
+    "files" : [ "comic.md" ]
+  },
+  "script" : {
+    "title" : "The Baghdad Divergence",
+    "premise" : "In 1258, Baghdad does not fall to the Mongol sword; it surrenders to the Mongol mind. This single act of pragmatism preserves the Islamic Golden Age, leading to a world where the East achieves a Silkpunk technological revolution while the West remains trapped in a feudal, Malthusian nightmare, eventually emerging as a brutalist, authoritarian megastate.",
+    "characters" : [ {
+      "name" : "Al-Jazari II (The Chronicler)",
+      "description" : "A high-ranking scholar-engineer of the House of Wisdom in the \"present\" (19th-century equivalent). Calm, intellectual, and authoritative.",
+      "visual_traits" : "Wears flowing robes of smart-silk with integrated brass circuitry. He has a mechanical prosthetic eye designed like an astrolabe."
+    }, {
+      "name" : "Hulagu Khan (The Preserver)",
+      "description" : "The Mongol commander who accepted Baghdad’s surrender. He is depicted in flashbacks as a visionary rather than a destroyer.",
+      "visual_traits" : "Traditional Mongol armor but adorned with Persian calligraphy."
+    }, {
+      "name" : "Klaus 704 (The Western Proletariat)",
+      "description" : "A citizen of the \"Atlantic Megastate\" (the Western Super-USSR). Represents the \"Gothic Industrial\" aesthetic.",
+      "visual_traits" : "Gaunt, wearing a heavy, soot-stained industrial uniform. Shaved head with a barcode tattoo on the neck."
+    } ],
+    "pages" : [ {
+      "page_number" : 1,
+      "rows" : [ {
+        "row_number" : 1,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "A wide shot of Baghdad, 1258. The Mongol army surrounds the city, but the gates are open. White flags fly alongside the Abbasid black.",
+          "dialog" : [ ]
+        }, {
+          "frame_number" : 2,
+          "description" : "Close up of Hulagu Khan and the Caliph Al-Musta'sim. Instead of a sword, Hulagu holds a scroll.",
+          "dialog" : [ ],
+          "caption" : "History is a narrative skin stretched over the skeleton of power. In your world, Baghdad burned. In ours, it breathed."
+        }, {
+          "frame_number" : 3,
+          "description" : "Scholars carrying crates of books *into* the Mongol camp, protected by Mongol warriors.",
+          "dialog" : [ {
+            "character" : "Hulagu Khan",
+            "text" : "Your ink is more valuable than your blood, Caliph. We shall build a heaven of logic together."
+          } ]
+        } ],
+        "visual_description" : "The Surrender: A sequence showing the peaceful surrender of Baghdad to the Mongols."
+      }, {
+        "row_number" : 2,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "Inside the House of Wisdom. It is bustling. Mongol administrators and Arab scholars work side-by-side.",
+          "dialog" : [ ]
+        }, {
+          "frame_number" : 2,
+          "description" : "A montage of scientific diagrams: Alhazen’s optics evolving into complex lens systems; early calculus notations on parchment.",
+          "dialog" : [ ],
+          "caption" : "The human chain of transmission remained unbroken. The \"Shadow Library\" was never lost to the flames."
+        } ],
+        "visual_description" : "The Shadow Library: Depicting the preservation of knowledge and collaboration between Mongols and Arabs."
+      }, {
+        "row_number" : 3,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "A map of Eurasia. The Mongol Empire and the Caliphate merge into a single, vibrant gold entity.",
+          "dialog" : [ ]
+        }, {
+          "frame_number" : 2,
+          "description" : "A Silkpunk city skyline. Minarets topped with brass lightning rods; gliders with silk wings soaring between towers.",
+          "dialog" : [ {
+            "character" : "Al-Jazari II",
+            "text" : "Power preceded the idea. Because the center held, the mind soared."
+          } ]
+        } ],
+        "visual_description" : "The Super-Abbasid State: Showing the geopolitical merger and the resulting Silkpunk technology."
+      } ]
+    }, {
+      "page_number" : 2,
+      "rows" : [ {
+        "row_number" : 1,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "A bustling, filthy medieval London. It is overcrowded. People are packed into narrow streets.",
+          "dialog" : [ ]
+        }, {
+          "frame_number" : 2,
+          "description" : "A merchant ship in the Black Sea turning away from a Mongol port.",
+          "dialog" : [ ],
+          "caption" : "In the East, stability. In the West, stagnation. The trade routes shifted south. The Black Death never reached the Atlantic shores."
+        }, {
+          "frame_number" : 3,
+          "description" : "A feudal lord on a horse, lashing a peasant. The peasant looks malnourished and broken.",
+          "dialog" : [ ]
+        } ],
+        "visual_description" : "The Missing Plague: Depicting the stagnation and overcrowding of the West."
+      }, {
+        "row_number" : 2,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "A massive stone cathedral under construction, but the technology looks primitive—wooden pulleys and thousands of straining slaves.",
+          "dialog" : [ ]
+        }, {
+          "frame_number" : 2,
+          "description" : "A close-up of a \"Knight-Inquisitor\" in heavy, rusted plate armor, looking through a slit at a crowd of starving serfs.",
+          "dialog" : [ ],
+          "caption" : "Without the labor shortage of the plague, the peasant remained a slave. The Renaissance was strangled in its crib."
+        } ],
+        "visual_description" : "The Feudal Lock: Showing the lack of technological progress and oppression in Europe."
+      }, {
+        "row_number" : 3,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "A scholar in a dark cell, hiding a forbidden Greek text. He looks terrified.",
+          "dialog" : [ ]
+        }, {
+          "frame_number" : 2,
+          "description" : "A bonfire of books in a village square, lit by a priest.",
+          "dialog" : [ ],
+          "caption" : "Europe remained a Malthusian trap. A world of high-tech empires in the East, and low-tech subjects in the West."
+        } ],
+        "visual_description" : "The Dark Ages Prolonged: Illustrating the suppression of knowledge in the West."
+      } ]
+    }, {
+      "page_number" : 3,
+      "rows" : [ {
+        "row_number" : 1,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "A massive Afro-Eurasian fleet—ships with multiple masts and lateen sails, reinforced with iron bands—sailing across a calm Pacific.",
+          "dialog" : [ ]
+        }, {
+          "frame_number" : 2,
+          "description" : "A navigator using a complex, clockwork astrolabe to chart the stars.",
+          "dialog" : [ ],
+          "caption" : "While the Atlantic remained a wall for the backward West, the Pacific became our lake."
+        } ],
+        "visual_description" : "The Eastward Discovery: The Eastern fleet sailing the Pacific with advanced navigation."
+      }, {
+        "row_number" : 2,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "The fleet arrives at a lush coastline (California). Indigenous people (Ohlone/Miwok) approach the shore, but they are met with traders, not conquistadors.",
+          "dialog" : [ ]
+        }, {
+          "frame_number" : 2,
+          "description" : "A hybrid city: Incan stonework merged with Persian arches and Mongol yurts.",
+          "dialog" : [ {
+            "character" : "Al-Jazari II",
+            "text" : "We did not come to displace. We came to integrate. The Americas became civilizational satellites."
+          } ]
+        } ],
+        "visual_description" : "The New World Encounter: Peaceful integration and hybrid architecture in the Americas."
+      }, {
+        "row_number" : 3,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "A marketplace in this new world. Jade, spices, and silver being traded for Baghdad-made clockwork and silk.",
+          "dialog" : [ ]
+        }, {
+          "frame_number" : 2,
+          "description" : "A young Indigenous girl wearing a silk scarf, looking at a mechanical bird.",
+          "dialog" : [ ],
+          "caption" : "Smallpox arrived as a whisper, not a scream. Immunity grew through commerce, not conquest."
+        } ],
+        "visual_description" : "The Global Trade: Commerce and cultural exchange in the New World."
+      } ]
+    }, {
+      "page_number" : 4,
+      "rows" : [ {
+        "row_number" : 1,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "A massive explosion in a European city. The feudal order is being torn down by a desperate, starving populace.",
+          "dialog" : [ ]
+        }, {
+          "frame_number" : 2,
+          "description" : "A new leader emerges on a balcony—a \"Techno-Autocrat\" in a sharp, militaristic uniform.",
+          "dialog" : [ ],
+          "caption" : "The \"Rich Idiots\" of the West pushed extraction too far. The explosion was inevitable."
+        } ],
+        "visual_description" : "The Rupture: The violent overthrow of the feudal order in the West."
+      }, {
+        "row_number" : 2,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "A sprawling, concrete megacity stretching across the European plain. Smoke stacks choke the sky.",
+          "dialog" : [ ]
+        }, {
+          "frame_number" : 2,
+          "description" : "Klaus 704 stands in a massive assembly line, his movements synchronized with a thousand others.",
+          "dialog" : [ {
+            "character" : "Klaus 704",
+            "text" : "The State is the only God. The State is the only bread. We must catch up to the Golden East."
+          } ]
+        } ],
+        "visual_description" : "The Super-USSR Aesthetic: The grim, industrial reality of the Western Megastate."
+      }, {
+        "row_number" : 3,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "A propaganda poster in the West: A giant fist crushing a crown, with the slogan \"UNITY THROUGH ORDER.\"",
+          "dialog" : [ ]
+        }, {
+          "frame_number" : 2,
+          "description" : "A Western \"Land-Dreadnought\"—a massive, coal-belching tank—patrolling a border wall.",
+          "dialog" : [ ],
+          "caption" : "They did not build nations. They built a Megastate. A hyper-centralized machine designed for one purpose: survival against the Hegemony."
+        } ],
+        "visual_description" : "Vertical Identity: Propaganda and militarization of the West."
+      } ]
+    }, {
+      "page_number" : 5,
+      "rows" : [ {
+        "row_number" : 1,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "Left: A Baghdad cafe. People of all ethnicities debate philosophy under a canopy of bioluminescent plants.",
+          "dialog" : [ ]
+        }, {
+          "frame_number" : 2,
+          "description" : "Right: A Western ration station. Grey-clad citizens stand in line for synthetic paste under the watchful eye of turret-drones.",
+          "dialog" : [ {
+            "character" : "Al-Jazari II",
+            "text" : "Two paths. One born of preservation, the other of catastrophe."
+          } ]
+        } ],
+        "visual_description" : "The Contrast: Split-screen comparing the elegant East and the brutal West."
+      }, {
+        "row_number" : 2,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "A high-altitude view of the border between the Hegemony and the Megastate (the Urals).",
+          "dialog" : [ ]
+        }, {
+          "frame_number" : 2,
+          "description" : "A ritualized skirmish: Elegant, solar-powered Hegemony drones intercepting a swarm of crude, chemical-fueled Western missiles.",
+          "dialog" : [ ],
+          "caption" : "War is no longer an existential struggle. It is a ritual of prestige between civilizational blocs."
+        } ],
+        "visual_description" : "The Grammar of War: High-tech Eastern drones vs. crude Western missiles."
+      }, {
+        "row_number" : 3,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "Al-Jazari II looks out from a balcony in Baghdad. The city is a jewel of light and geometry.",
+          "dialog" : [ ]
+        }, {
+          "frame_number" : 2,
+          "description" : "Close up on his mechanical eye, reflecting the stars.",
+          "dialog" : [ {
+            "character" : "Al-Jazari II",
+            "text" : "The 'Rise of the West' was never a destiny. It was a tragedy that didn't have to happen."
+          } ]
+        }, {
+          "frame_number" : 3,
+          "description" : "A wide shot of the Earth from space. The Eastern hemisphere is a glowing web of golden light; the Western hemisphere is a dark, bruised purple.",
+          "dialog" : [ ],
+          "caption" : "The map flipped. And the light stayed on."
+        } ],
+        "visual_description" : "The Final Reflection: Al-Jazari II reflecting on the world, ending with a view from space."
+      } ]
+    } ]
+  },
+  "characterImages" : {
+    "Al-Jazari II (The Chronicler)" : "char_Al_Jazari_II__The_Chronicler_.png",
+    "Hulagu Khan (The Preserver)" : "char_Hulagu_Khan__The_Preserver_.png",
+    "Klaus 704 (The Western Proletariat)" : "char_Klaus_704__The_Western_Proletariat_.png"
+  },
+  "rowImages" : {
+    "1_1" : "page_1_row_1.png",
+    "1_2" : "page_1_row_2.png",
+    "1_3" : "page_1_row_3.png",
+    "2_1" : "page_2_row_1.png",
+    "2_2" : "page_2_row_2.png",
+    "2_3" : "page_2_row_3.png",
+    "3_1" : "page_3_row_1.png",
+    "3_2" : "page_3_row_2.png",
+    "3_3" : "page_3_row_3.png",
+    "4_1" : "page_4_row_1.png",
+    "4_2" : "page_4_row_2.png",
+    "4_3" : "page_4_row_3.png",
+    "5_1" : "page_5_row_1.png",
+    "5_2" : "page_5_row_2.png",
+    "5_3" : "page_5_row_3.png"
+  }
+}

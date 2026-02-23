@@ -1,0 +1,40 @@
+---
+layout: default
+paginate: 50
+---
+
+{% comment %} Get all posts and collection documents that match this category {% endcomment %}
+{% assign category_docs = "" | split: "" %}
+
+{% comment %} First, get posts with matching category {% endcomment %}
+{% for post in site.posts %}
+{% comment %} Check if post category matches page category or page title {% endcomment %}
+{% if post.category == page.category %}
+{% assign category_docs = category_docs | push: post %}
+{% endif %}
+{% endfor %}
+
+{% assign category_docs = category_docs | sort: "date" | reverse %}
+
+<div class="category-index">
+
+    <header class="category-header">
+        <h1>{{ page.title }} ({{ category_docs.size }} posts)</h1>
+
+        {% if page.description %}
+        <div class="category-description">
+            {{ page.description | markdownify }}
+        </div>
+        {% endif %}
+    </header>
+
+    {{ content }}
+
+    <div class="posts-grid">
+        {% for doc in category_docs %}
+        {% assign post = doc %}
+        {% include post-card.html %}
+        {% endfor %}
+    </div>
+
+</div>

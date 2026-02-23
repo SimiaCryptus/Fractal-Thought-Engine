@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: 'en' }}">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="telephone=no" name="format-detection">
+    <meta content="yes" name="mobile-web-app-capable">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black-translucent" name="apple-mobile-web-app-status-bar-style">
+    <base href="{{ site.url }}{{ site.baseurl }}/">
+
+    <!-- SEO Meta Tags -->
+    {% include seo_head.html %}
+
+    <link as="style" href="{{ site.baseurl }}/assets/css/critical.css" rel="preload">
+    <link href="{{ site.baseurl }}/assets/css/style_v3.css" rel="stylesheet">
+    <link href="{{ site.baseurl }}/favicon.ico" rel="icon" type="image/x-icon">
+    <link href="{{ site.baseurl }}/assets/images/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png">
+    <link href="{{ site.baseurl }}/assets/images/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png">
+    <link href="{{ site.baseurl }}/apple-touch-icon.png" rel="apple-touch-icon">
+    <link href="{{ site.baseurl }}/assets/images/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180">
+    <link href="{{ site.baseurl }}/site.webmanifest" rel="manifest">
+    <meta content="#818cf8" name="theme-color">
+    {% feed_meta %}
+</head>
+<body>
+<!-- Floating Particles -->
+<div class="particle-field" id="particleField"></div>
+{% include theme_switcher.html %}
+
+{% include header.html %}
+<main class="container">
+    {{ content }}
+</main>
+{% include footer.html %}
+
+<!-- Back to Top Button -->
+<div class="back-to-top" id="backToTop">↑</div>
+
+<!-- JavaScript for Effects -->
+<script>
+    function createParticles() {
+        const particleContainer = document.getElementById('particleField');
+        if (!particleContainer) return;
+
+        setInterval(() => {
+            if (particleContainer.children.length < 20) {
+                const particle = document.createElement('div');
+                particle.className = 'particle';
+                particle.style.left = Math.random() * 100 + '%';
+                particle.style.animationDuration = (Math.random() * 10 + 5) + 's';
+                particleContainer.appendChild(particle);
+
+                setTimeout(() => {
+                    if (particle.parentNode) {
+                        particle.parentNode.removeChild(particle);
+                    }
+                }, 15000);
+            }
+        }, 500);
+    }
+
+    // Back to top functionality
+    function initBackToTop() {
+        const backToTopButton = document.getElementById('backToTop');
+        if (!backToTopButton) return;
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopButton.classList.add('visible');
+            } else {
+                backToTopButton.classList.remove('visible');
+            }
+        });
+        backToTopButton.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    }
+
+    // Add glitch effect to random elements
+    function addRandomGlitch() {
+        const elements = document.querySelectorAll('h1, h2, h3');
+        if (elements.length === 0) return;
+        setInterval(() => {
+            const randomElement = elements[Math.floor(Math.random() * elements.length)];
+            randomElement.classList.add('glitch');
+            randomElement.setAttribute('data-text', randomElement.textContent);
+            setTimeout(() => {
+                randomElement.classList.remove('glitch');
+            }, 200);
+        }, 5000);
+    }
+
+
+    // Initialize effects when page loads
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', () => {
+            createParticles();
+            initBackToTop();
+            addRandomGlitch();
+        });
+    } else {
+        createParticles();
+        initBackToTop();
+        addRandomGlitch();
+    }
+</script>
+</body>
+</html>

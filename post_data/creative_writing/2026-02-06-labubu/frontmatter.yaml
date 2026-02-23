@@ -1,0 +1,112 @@
+# Required fields
+title: "The Monster in the Party Hat"
+layout: "post"
+date: 2026-02-06
+last_modified: 2026-02-06 12:00:00
+
+# Content classification
+category: creative_writing
+subcategory: "Comic Script"
+tags:
+  - "Creative-Writing"
+  - "Social-Systems"
+  - "Experimental-Design"
+  - "comic-book"
+  - "storytelling"
+keywords: ["Labubu", "comic script", "birthday party", "surprise", "friendship", "costume", "character design"]
+
+# Content status and evolution
+status: "working"
+last_thought_date: 2026-02-06
+thought_generation: 1
+
+# Document relationships
+parent_document: ""
+child_documents: []
+related_documents: []
+
+# Navigation hints
+reading_order: 1
+difficulty_level: "accessible"
+reading_time_minutes: 5
+
+# Content Characteristics
+document_type: "experiment"
+thinking_style: "intuitive"
+consciousness_level: "collaborative"
+
+# Engagement metadata
+engagement_type: "contemplative"
+reader_participation: "passive"
+cognitive_load: "light"
+
+# Search and discovery
+description: "A generated comic book script featuring Labubu crashing her own surprise birthday party."
+excerpt: "Labubu, feeling left out of a secret party, decides to crash the event in a disguise, only to discover the secrecy was for her own surprise birthday celebration."
+featured_image: "page_4_row_4.png"
+og_image: "char_Labubu.png"
+
+# SEO Meta Tags
+meta_title: "The Monster in the Party Hat - Comic Script"
+meta_description: "A heartwarming comic script about Labubu, a misunderstanding, and a surprise birthday party. Generated content experiment."
+meta_keywords: "Labubu, comic, script, AI generation, story"
+
+# Open Graph (Social Media)
+og_title: "The Monster in the Party Hat"
+og_description: "Labubu crashes a party only to find out it's for her."
+og_type: "article"
+og_locale: "en_US"
+og_site_name: "Fractal Thought Engine"
+
+# Schema.org Structured Data
+schema_type: "CreativeWork"
+schema_headline: "The Monster in the Party Hat"
+schema_author: "AI Assistant"
+schema_publisher: "Fractal Thought Engine"
+schema_date_published: 2026-02-06
+schema_date_modified: 2026-02-06
+schema_image: "char_Labubu.png"
+schema_word_count: 600
+schema_reading_time: "PT5M"
+
+# Advanced SEO
+canonical_url: ""
+alternate_urls: []
+hreflang: []
+
+# Search Engine Directives
+robots: "index,follow"
+googlebot: "index,follow"
+bingbot: "index,follow"
+
+# Content Classification for Search
+content_rating: "general"
+content_language: "en"
+geo_region: "Global"
+geo_placename: ""
+geo_position: ""
+
+# Indexing Control
+priority: 0.6
+changefreq: "monthly"
+sitemap_exclude: false
+search_exclude: false
+
+# Rich Snippets Enhancement
+faq_schema: false
+how_to_schema: false
+breadcrumb_schema: true
+review_schema: false
+rating_value: 0
+rating_count: 0
+
+# Performance and Technical SEO
+preload_resources: []
+prefetch_resources: []
+dns_prefetch: []
+
+# Discoverability
+is_featured: false
+is_cornerstone: false
+is_gateway: true
+is_synthesis: false

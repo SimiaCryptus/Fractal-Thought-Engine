@@ -1,0 +1,367 @@
+{
+  "config" : {
+    "task_description" : "Generate a 6-page comic script and visuals titled 'The Innovation Immune System' based on the provided papers. The comic should satirize corporate antipatterns like the 'Gatekeeper Loop' and 'Ritualized Review', then show the transition to a 'Constraint-Governed' model enabled by AI-driven artifact production.",
+    "target_pages" : 6,
+    "art_style" : "Noir-infused corporate satire",
+    "style_details" : "High contrast, heavy shadows in the office scenes to represent bureaucratic stagnation, transitioning to vibrant, data-driven, and kinetic visuals in the 'Fitness Landscape' finale. Use a muted color palette (greys, blues) for the old world and neon accents for the AI-augmented new world.",
+    "generate_images" : true,
+    "character_references" : [ {
+      "character_name" : "Elias",
+      "visual_description" : "Mid-30s, weary but determined expression. Wears a slightly rumpled grey suit and a corporate lanyard that looks like a noose. Eyes bright with an idea.",
+      "personality_notes" : "An innovator who sees problems clearly but is exhausted by the system. Becomes energized and kinetic once he starts building.",
+      "role" : "protagonist",
+      "relationships" : "Target of Mr. Veto's obstruction."
+    }, {
+      "character_name" : "Mr. Veto",
+      "visual_description" : "Sharp, cold features, perfectly groomed hair. Sits behind a massive desk covered in 'No' and 'Pending' stamps. Wears a high-collared, stiff suit.",
+      "personality_notes" : "A personification of the 'Gatekeeper Loop'. Optimizes for personal risk avoidance. Speaks in corporate buzzwords like 'alignment' and 'buy-in'.",
+      "role" : "antagonist",
+      "relationships" : "Middle manager blocking Elias."
+    }, {
+      "character_name" : "The Architect (CEO)",
+      "visual_description" : "Initially a distant, shadowy figure in a high tower. Later, seen in shirtsleeves, designing a digital 'Fitness Landscape' grid on a holographic interface.",
+      "personality_notes" : "Transitions from a distant bureaucrat to a systems designer who understands the collapse of artifact costs.",
+      "role" : "supporting",
+      "relationships" : "Dismantles the Gatekeeper Loop."
+    } ],
+    "plot_continuity" : {
+      "narrative_structure" : "Three-act structure: The Stagnation, The Disruption, The New Equilibrium.",
+      "key_plot_points" : [ "Elias enters the 'Gatekeeper Loop' with a brilliant idea, only to be blocked by Mr. Veto's demand for 'alignment'.", "The 'Ritualized Review' (Innovation Day) where Elias's idea is applauded but sent to 'Zombie Stasis'.", "The 'Process Maximalism' nightmare: Elias is buried under spreadsheets and ROI projections.", "The AI Disruption: Elias uses generative AI to build a functional prototype overnight, bypassing the permission chain.", "The CEO realizes the 'Cost of Action' has collapsed and replaces the Gatekeeper Loop with 'Safe Zones'.", "The finale: A new 'Fitness Landscape' where decentralized teams iterate rapidly, with a dedicated space for 'Irrational Conviction'." ],
+      "setting_details" : "A monolithic corporate headquarters ('The Hive') that transforms from a grey labyrinth into a dynamic, open network.",
+      "themes" : [ "Bureaucracy vs. Action", "The collapse of artifact costs", "Permission vs. Constraints", "Organizational Immune System" ],
+      "tone" : "Darkly humorous, cynical at first, then kinetic and hopeful.",
+      "prior_story_context" : "",
+      "continuity_constraints" : [ "The 'Gatekeeper Loop' must be visually depicted as a literal circular path of desks.", "The 'Zombie Stasis' should show ideas as literal undead files in a cabinet." ],
+      "ending_notes" : "",
+      "additional_notes" : ""
+    },
+    "state" : "Pending",
+    "task_type" : "ComicBookGeneration",
+    "files" : [ "comic.md" ]
+  },
+  "script" : {
+    "title" : "The Hive’s Last Stand",
+    "premise" : "In a monolithic corporation where bureaucracy is an immune system designed to kill change, a weary innovator uses the collapse of artifact costs to bypass the \"Gatekeeper Loop\" and force a new evolutionary equilibrium.",
+    "characters" : [ {
+      "name" : "Elias",
+      "description" : "An innovator who sees problems clearly but is exhausted by the system. Becomes energized and kinetic once he starts building. Role: Protagonist.",
+      "visual_traits" : "Mid-30s, weary but determined expression. Wears a slightly rumpled grey suit and a corporate lanyard that looks like a noose. Eyes bright with an idea."
+    }, {
+      "name" : "Mr. Veto",
+      "description" : "A personification of the 'Gatekeeper Loop'. Optimizes for personal risk avoidance. Speaks in corporate buzzwords like 'alignment' and 'buy-in'. Role: Antagonist.",
+      "visual_traits" : "Sharp, cold features, perfectly groomed hair. Sits behind a massive desk covered in 'No' and 'Pending' stamps. Wears a high-collared, stiff suit."
+    }, {
+      "name" : "The Architect (CEO)",
+      "description" : "Transitions from a distant bureaucrat to a systems designer who understands the collapse of artifact costs. Role: Supporting.",
+      "visual_traits" : "Initially a distant, shadowy figure in a high tower. Later, seen in shirtsleeves, designing a digital 'Fitness Landscape' grid on a holographic interface."
+    } ],
+    "pages" : [ {
+      "page_number" : 1,
+      "rows" : [ {
+        "row_number" : 1,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "Extreme wide shot of \"The Hive,\" a brutalist skyscraper shrouded in rain and smog.",
+          "dialog" : [ ],
+          "caption" : "In the Hive, innovation isn't a goal. It's a threat."
+        }, {
+          "frame_number" : 2,
+          "description" : "Close up on Elias’s lanyard. It’s tight around his neck, the plastic ID badge dangling like a weight.",
+          "dialog" : [ ]
+        } ],
+        "visual_description" : "The Monolith: High contrast, deep blacks showing the oppressive corporate environment."
+      }, {
+        "row_number" : 2,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "Elias stands in a dimly lit hallway, holding a glowing, golden lightbulb-shaped device. It’s the only source of warm light.",
+          "dialog" : [ ]
+        }, {
+          "frame_number" : 2,
+          "description" : "He approaches a desk. Then another. The desks are arranged in a literal, infinite circle.",
+          "dialog" : [ ]
+        } ],
+        "visual_description" : "The Idea: A circular path of desks where each occupant points to the next person. The lighting is harsh overhead fluorescent."
+      }, {
+        "row_number" : 3,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "Elias reaches the end of the loop: Mr. Veto. Veto is silhouetted, his glasses reflecting the \"No\" stamp on his desk.",
+          "dialog" : [ ]
+        }, {
+          "frame_number" : 2,
+          "description" : "Mr. Veto pushes a stack of papers back toward Elias.",
+          "dialog" : [ {
+            "character" : "Mr. Veto",
+            "text" : "It’s bold, Elias. But we need alignment. Have you socialized this with Compliance? Branding? The Steering Committee for Steering Committees?"
+          }, {
+            "character" : "Elias",
+            "text" : "It’s a solution to a problem we have now, sir."
+          }, {
+            "character" : "Mr. Veto",
+            "text" : "A 'Yes' is a risk I carry. A 'No' is a safety net we all share."
+          } ]
+        } ],
+        "visual_description" : "The Veto: The end of the loop where bureaucracy stops progress."
+      } ]
+    }, {
+      "page_number" : 2,
+      "rows" : [ {
+        "row_number" : 1,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "A bright, sterile stage. A banner reads \"INNOVATION DAY: IMAGINE THE FUTURE.\" Elias is mid-pitch, looking small against a giant screen.",
+          "dialog" : [ ]
+        }, {
+          "frame_number" : 2,
+          "description" : "The audience is a row of executives in shadow, their faces illuminated only by their phone screens.",
+          "dialog" : [ ]
+        } ],
+        "visual_description" : "The Performance: The lighting is fake-bright, like a talk show set, but the shadows behind the stage are deep and ink-black."
+      }, {
+        "row_number" : 2,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "The executives are clapping, but their hands don't touch. It’s a pantomime of approval.",
+          "dialog" : [ ],
+          "caption" : "Feedback is a polite way of saying 'Not on my watch.'"
+        }, {
+          "frame_number" : 2,
+          "description" : "Mr. Veto leans over to a colleague, whispering.",
+          "dialog" : [ {
+            "character" : "Mr. Veto",
+            "text" : "Great energy. Let’s put it in the 'Pipeline' for Q4."
+          } ]
+        } ],
+        "visual_description" : "The Non-Committal Applause: A hollow display of corporate approval."
+      }, {
+        "row_number" : 3,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "Elias watches as his glowing idea is placed into a manila folder labeled \"PENDING ALIGNMENT.\"",
+          "dialog" : [ ],
+          "caption" : "This is Zombie Stasis. Not dead enough to mourn, not alive enough to move."
+        }, {
+          "frame_number" : 2,
+          "description" : "The folder is filed into a massive, rusted cabinet.",
+          "dialog" : [ ]
+        } ],
+        "visual_description" : "The Cabinet of Undead Ideas: Literal \"zombie\" files—hands reaching out from the drawers, papers that look like decaying skin."
+      } ]
+    }, {
+      "page_number" : 3,
+      "rows" : [ {
+        "row_number" : 1,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "Elias is buried under a mountain of paperwork. He’s holding a magnifying glass, looking at a spreadsheet with 10,000 rows.",
+          "dialog" : [ ]
+        }, {
+          "frame_number" : 2,
+          "description" : "Close up on a cell in the spreadsheet: \"Projected ROI 2029: 402.3% (Estimated).\"",
+          "dialog" : [ {
+            "character" : "Elias",
+            "text" : "I’m just making up numbers now. I have to. The form won't submit without them."
+          } ]
+        } ],
+        "visual_description" : "The Spreadsheet Abyss: Elias overwhelmed by meaningless data requirements."
+      }, {
+        "row_number" : 2,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "A \"Process Steward\" with a tape measure is measuring the margins on Elias’s report.",
+          "dialog" : [ ]
+        }, {
+          "frame_number" : 2,
+          "description" : "Mr. Veto stands over him, pointing at a tiny graph.",
+          "dialog" : [ {
+            "character" : "Mr. Veto",
+            "text" : "This three-year roadmap is missing the impact analysis for the North-East regional sub-brand. Redo it."
+          } ]
+        } ],
+        "visual_description" : "The Verification Trap: The room is closing in, the walls made of filing cabinets. The mood is claustrophobic and grey."
+      }, {
+        "row_number" : 3,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "A calendar on the wall flips rapidly: Spring, Summer, Fall, Winter. Elias is still at the same desk.",
+          "dialog" : [ ],
+          "caption" : "By the time the process is satisfied, the market has moved on. The \"Safe\" path is a slow-motion suicide."
+        }, {
+          "frame_number" : 2,
+          "description" : "Elias looks out the window. Outside, a competitor’s drone flies by, carrying the very product he tried to propose.",
+          "dialog" : [ ]
+        } ],
+        "visual_description" : "Velocity Death: Time passing while the corporation remains stagnant."
+      } ]
+    }, {
+      "page_number" : 4,
+      "rows" : [ {
+        "row_number" : 1,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "Elias’s apartment. Dark, except for the neon blue glow of three monitors. He looks manic, energized.",
+          "dialog" : [ ],
+          "caption" : "The cost of action just collapsed. I don't need their budget to build. I just need a prompt."
+        }, {
+          "frame_number" : 2,
+          "description" : "On screen, code is writing itself. 3D models are spinning.",
+          "dialog" : [ ]
+        } ],
+        "visual_description" : "The Midnight Shift: A shift to personal agency and technological empowerment."
+      }, {
+        "row_number" : 2,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "Split screen. Left side: A boring, grey PowerPoint slide. Right side: A vibrant, holographic prototype humming in Elias’s hand.",
+          "dialog" : [ ]
+        }, {
+          "frame_number" : 2,
+          "description" : "Elias is smiling. The \"noose\" lanyard is off, lying on the floor.",
+          "dialog" : [ ]
+        } ],
+        "visual_description" : "Artifact vs. Deck: The color palette shifts here. The dull greys are replaced by electric blues, purples, and magentas."
+      }, {
+        "row_number" : 3,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "Next morning. Elias walks past the \"Gatekeeper Loop\" desks. He doesn't stop.",
+          "dialog" : [ ]
+        }, {
+          "frame_number" : 2,
+          "description" : "He slams the functional prototype onto the Architect’s boardroom table. It projects a live data feed onto the ceiling.",
+          "dialog" : [ {
+            "character" : "Elias",
+            "text" : "Stop looking at the deck. Look at the thing. It’s already working."
+          } ]
+        } ],
+        "visual_description" : "Bypassing the Gate: Elias taking direct action."
+      } ]
+    }, {
+      "page_number" : 5,
+      "rows" : [ {
+        "row_number" : 1,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "The Architect (CEO) looks at the prototype. He looks at the \"Gatekeeper Loop\" visible through the glass floor below.",
+          "dialog" : [ ]
+        }, {
+          "frame_number" : 2,
+          "description" : "He sees the loop for what it is: a clogged artery.",
+          "dialog" : [ {
+            "character" : "The Architect (CEO)",
+            "text" : "We spent $2M on the process to approve this. You built it for the price of a subscription."
+          } ]
+        } ],
+        "visual_description" : "The Tower View: The CEO recognizes the systemic failure."
+      }, {
+        "row_number" : 2,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "Mr. Veto bursts in, looking panicked.",
+          "dialog" : [ {
+            "character" : "Mr. Veto",
+            "text" : "Sir! This hasn't been vetted! There’s no buy-in! The risk profile is—"
+          } ]
+        }, {
+          "frame_number" : 2,
+          "description" : "The Architect holds up a hand. Veto freezes.",
+          "dialog" : [ ],
+          "caption" : "The immune system is attacking the cure."
+        } ],
+        "visual_description" : "The Immune System: The bureaucratic resistance attempts to intervene."
+      }, {
+        "row_number" : 3,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "The Architect takes a digital pen and draws a circle around a section of the office on a holographic map.",
+          "dialog" : [ ]
+        }, {
+          "frame_number" : 2,
+          "description" : "The words \"SAFE ZONE\" appear in neon green.",
+          "dialog" : [ {
+            "character" : "The Architect (CEO)",
+            "text" : "No more gates, Veto. From now on, we design the constraints. If they stay inside the lines, they don't ask for permission. They just... act."
+          } ]
+        } ],
+        "visual_description" : "The New Architecture: Redesigning the system for autonomy."
+      } ]
+    }, {
+      "page_number" : 6,
+      "rows" : [ {
+        "row_number" : 1,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "The Hive has changed. The walls are gone. The office is a glowing grid of \"Fitness Landscapes\"—peaks and valleys of data.",
+          "dialog" : [ ]
+        }, {
+          "frame_number" : 2,
+          "description" : "Dozens of teams are huddled around prototypes, not decks. The movement is kinetic, blurred.",
+          "dialog" : [ ]
+        } ],
+        "visual_description" : "The Grid: High-energy, vibrant colors. The 'Fitness Landscape' looks like a 3D topographical map made of light."
+      }, {
+        "row_number" : 2,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "A team \"fails\" at a prototype. It shatters like digital glass. They immediately start the next one.",
+          "dialog" : [ ],
+          "caption" : "We don't measure 'Alignment' anymore. We measure Velocity. How fast can you learn?"
+        }, {
+          "frame_number" : 2,
+          "description" : "Elias is leading a group, pointing at a \"peak\" on the landscape.",
+          "dialog" : [ ]
+        } ],
+        "visual_description" : "Iteration Velocity: Rapid learning and failure."
+      }, {
+        "row_number" : 3,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "In a dark, quiet corner of the neon office, one person is working on something that looks completely \"wrong\"—a jagged, black shape.",
+          "dialog" : [ ]
+        }, {
+          "frame_number" : 2,
+          "description" : "Elias and the Architect watch from a distance.",
+          "dialog" : [ {
+            "character" : "The Architect (CEO)",
+            "text" : "The system says that idea is a failure."
+          }, {
+            "character" : "Elias",
+            "text" : "That’s why we keep the 'Escape Hatch' open. For the ideas the system isn't smart enough to love yet."
+          } ]
+        }, {
+          "frame_number" : 3,
+          "description" : "Final shot. Elias looks at the reader, his eyes glowing with the same light as his first idea.",
+          "dialog" : [ ],
+          "caption" : "The Hive is dead. Long live the Swarm."
+        } ],
+        "visual_description" : "Irrational Conviction: The final evolution of the system."
+      } ]
+    } ]
+  },
+  "characterImages" : {
+    "Elias" : "char_Elias.png",
+    "Mr. Veto" : "char_Mr__Veto.png",
+    "The Architect (CEO)" : "char_The_Architect__CEO_.png"
+  },
+  "rowImages" : {
+    "1_1" : "page_1_row_1.png",
+    "1_2" : "page_1_row_2.png",
+    "1_3" : "page_1_row_3.png",
+    "2_1" : "page_2_row_1.png",
+    "2_2" : "page_2_row_2.png",
+    "2_3" : "page_2_row_3.png",
+    "3_1" : "page_3_row_1.png",
+    "3_2" : "page_3_row_2.png",
+    "3_3" : "page_3_row_3.png",
+    "4_1" : "page_4_row_1.png",
+    "4_2" : "page_4_row_2.png",
+    "4_3" : "page_4_row_3.png",
+    "5_1" : "page_5_row_1.png",
+    "5_2" : "page_5_row_2.png",
+    "5_3" : "page_5_row_3.png",
+    "6_1" : "page_6_row_1.png",
+    "6_2" : "page_6_row_2.png",
+    "6_3" : "page_6_row_3.png"
+  }
+}

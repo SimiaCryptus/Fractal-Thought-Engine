@@ -1,0 +1,1159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+          content="Interactive visualization of Permutation-Based Full-Text Indexing, exploring BWT, Suffix Arrays, and Permutation Rings.">
+    <meta name="keywords" content="BWT, Suffix Array, Permutation Ring, Visualization, Algorithms">
+    <meta name="author" content="Fractal Thought Engine">
+    <title>Permutation Ring Explorer: Cyclic Text Map</title>
+
+    <!-- CSS will be added here -->
+    <style>
+        /* Placeholder for Styles */
+    </style>
+
+    <style>
+        /* =========================================
+           1. CSS Variables & Reset
+           ========================================= */
+        :root {
+            /* Color Palette */
+            --primary-color: #2563eb; /* Royal Blue */
+            --primary-hover: #1d4ed8;
+            --secondary-color: #64748b; /* Slate Gray */
+            --accent-color: #0f172a; /* Dark Slate */
+
+            --bg-app: #f1f5f9; /* Light Gray Background */
+            --bg-panel: #ffffff; /* White Panel */
+            --bg-input: #f8fafc;
+
+            --text-main: #1e293b;
+            --text-muted: #64748b;
+            --text-light: #94a3b8;
+
+            --border-color: #e2e8f0;
+            --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+            --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+
+            /* Spacing & Sizing */
+            --radius-sm: 0.375rem;
+            --radius-md: 0.5rem;
+            --radius-lg: 0.75rem;
+            --header-height: 70px;
+
+            /* Typography */
+            --font-sans: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            --font-mono: "Fira Code", "Roboto Mono", "Courier New", monospace;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: var(--font-sans);
+            background-color: var(--bg-app);
+            color: var(--text-main);
+            line-height: 1.5;
+            height: 100vh;
+        }
+
+        /* =========================================
+           2. Layout Structure
+           ========================================= */
+        .app-container {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            max-width: 1600px;
+            margin: 0 auto;
+            background-color: var(--bg-app);
+        }
+
+        /* =========================================
+           3. Header Section
+           ========================================= */
+        .app-header {
+            background-color: var(--bg-panel);
+            height: var(--header-height);
+            padding: 0 1.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 1px solid var(--border-color);
+            flex-shrink: 0;
+        }
+
+        .app-title {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--accent-color);
+        }
+
+        .app-subtitle {
+            font-size: 0.875rem;
+            color: var(--text-muted);
+            margin-top: 0.1rem;
+        }
+
+        .btn-help {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            border: 1px solid var(--border-color);
+            background: transparent;
+            color: var(--text-muted);
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .btn-help:hover {
+            background-color: var(--bg-input);
+            color: var(--primary-color);
+            border-color: var(--primary-color);
+        }
+
+        /* =========================================
+           4. Input Section
+           ========================================= */
+        .input-section {
+            background-color: var(--bg-panel);
+            padding: 1rem 1.5rem;
+            border-bottom: 1px solid var(--border-color);
+            flex-shrink: 0;
+        }
+
+        .input-wrapper {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .input-label {
+            display: block;
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--text-muted);
+            margin-bottom: 0.5rem;
+        }
+
+        .input-group {
+            display: flex;
+            gap: 0.5rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .text-input {
+            flex: 1;
+            padding: 0.6rem 1rem;
+            font-family: var(--font-mono);
+            font-size: 1rem;
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-md);
+            background-color: var(--bg-input);
+            transition: border-color 0.2s;
+        }
+
+        .text-input:focus {
+            outline: none;
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+        }
+
+        .btn-primary {
+            padding: 0 1.5rem;
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            border-radius: var(--radius-md);
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+
+        .btn-primary:hover {
+            background-color: var(--primary-hover);
+        }
+
+        .example-chips {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+        }
+
+        .chip {
+            font-size: 0.75rem;
+            font-family: var(--font-mono);
+            background-color: #eff6ff;
+            color: var(--primary-color);
+            padding: 0.25rem 0.75rem;
+            border-radius: 999px;
+            cursor: pointer;
+            border: 1px solid transparent;
+            transition: all 0.2s;
+        }
+
+        .chip:hover {
+            background-color: #dbeafe;
+            border-color: #bfdbfe;
+        }
+
+        /* =========================================
+           5. Workspace (Sidebar + Main)
+           ========================================= */
+        .workspace {
+            display: flex;
+            flex: 1;
+            overflow: hidden; /* Contains the scrollable areas */
+        }
+
+        /* --- Sidebar Controls --- */
+        .sidebar {
+            width: 300px;
+            background-color: var(--bg-panel);
+            border-right: 1px solid var(--border-color);
+            padding: 1.5rem;
+            overflow-y: auto;
+            flex-shrink: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        .group-title {
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            color: var(--text-light);
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .control-item {
+            margin-bottom: 1.25rem;
+        }
+
+        .control-label {
+            display: block;
+            font-size: 0.875rem;
+            font-weight: 500;
+            margin-bottom: 0.35rem;
+        }
+
+        .control-desc {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            margin-top: 0.25rem;
+            line-height: 1.3;
+        }
+
+        .select-input {
+            width: 100%;
+            padding: 0.5rem;
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-sm);
+            background-color: var(--bg-input);
+            font-size: 0.875rem;
+            color: var(--text-main);
+        }
+
+        .checkbox-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .checkbox-input {
+            width: 16px;
+            height: 16px;
+            accent-color: var(--primary-color);
+        }
+
+        /* Stats List */
+        .stats-list {
+            list-style: none;
+        }
+
+        .stat-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 0.5rem 0;
+            border-bottom: 1px dashed var(--border-color);
+            font-size: 0.875rem;
+        }
+
+        .stat-value {
+            font-family: var(--font-mono);
+            font-weight: 600;
+        }
+
+        /* --- Visualization Area --- */
+        .viz-area {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            background-color: #f8fafc;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .canvas-container {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            padding: 1rem;
+            overflow: hidden;
+        }
+
+        .viz-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 0.5rem;
+        }
+
+        .viz-title {
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--text-main);
+        }
+
+        .zoom-controls {
+            display: flex;
+            gap: 0.25rem;
+        }
+
+        .btn-icon {
+            width: 28px;
+            height: 28px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--bg-panel);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-sm);
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .btn-icon:hover {
+            background-color: var(--bg-input);
+        }
+
+        .canvas-wrapper {
+            flex: 1;
+            background-color: white;
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-md);
+            box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.02);
+            position: relative;
+            overflow: auto; /* Enable scrolling for large matrices */
+            cursor: crosshair;
+        }
+
+        .interactive-canvas {
+            display: block;
+            /* Dimensions controlled by JS */
+        }
+
+        /* Tooltip */
+        .tooltip {
+            position: fixed;
+            background: rgba(15, 23, 42, 0.9);
+            color: white;
+            padding: 0.5rem 0.75rem;
+            border-radius: var(--radius-sm);
+            font-size: 0.75rem;
+            font-family: var(--font-mono);
+            pointer-events: none;
+            z-index: 100;
+            white-space: pre;
+            box-shadow: var(--shadow-md);
+            transform: translate(10px, 10px);
+        }
+
+        .tooltip.hidden {
+            display: none;
+        }
+
+        /* --- Inspection Panel --- */
+        .inspection-panel {
+            height: 180px;
+            background-color: var(--bg-panel);
+            border-top: 1px solid var(--border-color);
+            padding: 1rem 1.5rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            overflow-y: auto;
+        }
+
+        .inspection-column h4 {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            color: var(--text-light);
+            margin-bottom: 0.75rem;
+        }
+
+        .data-grid {
+            display: grid;
+            grid-template-columns: auto 1fr;
+            gap: 0.5rem 1.5rem;
+            font-size: 0.875rem;
+        }
+
+        .data-pair {
+            display: contents; /* Allows children to participate in the grid */
+        }
+
+        .data-pair .label {
+            color: var(--text-muted);
+            font-weight: 500;
+        }
+
+        .data-pair .value {
+            font-family: var(--font-mono);
+            color: var(--accent-color);
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        /* =========================================
+           6. Footer
+           ========================================= */
+        .app-footer {
+            background-color: var(--bg-panel);
+            border-top: 1px solid var(--border-color);
+            padding: 0.5rem 1.5rem;
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            display: flex;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .math-context {
+            text-align: center;
+        }
+
+        #math-formula {
+            font-family: "Times New Roman", serif;
+            font-style: italic;
+            font-size: 0.9rem;
+            margin-left: 0.25rem;
+        }
+
+        /* =========================================
+           7. Responsive Design
+           ========================================= */
+        @media (max-width: 900px) {
+            .workspace {
+                flex-direction: column;
+                overflow-y: auto;
+            }
+
+            .sidebar {
+                width: 100%;
+                height: auto;
+                border-right: none;
+                border-bottom: 1px solid var(--border-color);
+                padding: 1rem;
+                gap: 1rem;
+            }
+
+            .viz-area {
+                min-height: 500px; /* Ensure canvas has space on mobile */
+            }
+
+            .inspection-panel {
+                grid-template-columns: 1fr;
+                height: auto;
+                gap: 1rem;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .header-content {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .app-subtitle {
+                display: none; /* Save space on small screens */
+            }
+
+            .input-group {
+                flex-direction: column;
+            }
+
+            .btn-primary {
+                width: 100%;
+                padding: 0.75rem;
+            }
+        }
+        .bg-texture {
+            display: none;
+        }
+    </style>
+    <!-- Generated Images:
+         - permutation-ring-hero.png: A high-tech, abstract 3D visualization of a "Permutation Ring." The central element is a glowing torus (doughnut shape) constructed entirely of floating, translucent alphanumeric characters and DNA sequences (A, T, C, G). Thin, luminous cyan and amber lines connect specific characters across the ring, representing the "movement permutations" ($\mu_F$ and $\mu_B$) described in the spec. The background is a deep, void-like navy blue with faint mathematical lattice structures. The style is cyber-mathematical, reminiscent of a complex data topology or a futuristic holographic interface.
+         - cyclic-matrix-texture.png: A subtle, seamless background texture designed for a dark-mode web application. The pattern consists of a faint, monochromatic grid of characters. Some rows are shifted cyclically, creating a diagonal cascading effect (visualizing the cyclic rotations). Overlaid are very faint, thin geometric lines connecting sorted positions, representing the Suffix Array structure. The colors are very low contrast—dark slate greys and deep indigos—so it does not interfere with foreground text. It should look like a "digital fabric" of sorted data.
+         - bwt-flow-diagram.png: An isometric, stylized schematic illustrating the transformation from "Cyclic Text" to "BWT." On the left, a circular ring of text "BANANA" rotates. In the center, these rotations unroll into a flat 2D matrix (stack of rows). On the right, the rows are sorted lexicographically, with the last column (the BWT) glowing in a bright, distinct neon orange color, while the rest of the matrix is in cool blues. This image is clean, vector-like, and instructional, suitable for a "Help" modal or a feature graphic explaining the algorithm.
+    -->
+</head>
+<body>
+
+<!-- Main Application Container -->
+<div class="app-container">
+
+    <img src="cyclic-matrix-texture.png" alt="" class="bg-texture" aria-hidden="true">
+
+    <section class="input-section">
+        <div class="input-wrapper">
+            <label for="source-text" class="input-label">Input Sequence (T)</label>
+            <div class="input-group">
+                <input type="text" id="source-text" class="text-input" placeholder="Enter text (e.g., BANANA, ATGC...)"
+                       value="BANANA" autocomplete="off">
+                <button id="process-btn" class="btn btn-primary">Construct Index</button>
+            </div>
+            <div class="example-chips">
+                <span class="chip" data-value="BANANA">BANANA</span>
+                <span class="chip" data-value="MISSISSIPPI">MISSISSIPPI</span>
+                <span class="chip" data-value="GATTACA">GATTACA</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Workspace: Split into Controls and Visualization -->
+    <div class="workspace">
+
+        <!-- Sidebar: Configuration and Permutation Controls -->
+        <aside class="sidebar controls-panel">
+
+            <!-- Axis Configuration: The Core Requirement -->
+            <div class="control-group">
+                <h3 class="group-title">Map Geometry</h3>
+
+                <!-- Y-Axis Permutation Selector -->
+                <div class="control-item">
+                    <label for="y-axis-perm" class="control-label">Y-Axis (Row Order)</label>
+                    <select id="y-axis-perm" class="select-input">
+                        <option value="identity">Identity (Original Order)</option>
+                        <option value="pi_L" selected>Lexicographic Sort (Suffix Array / &pi;_L)</option>
+                        <option value="pi_R">Reverse Sort (&pi;_R)</option>
+                        <option value="mu_F">Forward Movement (&mu;_F)</option>
+                    </select>
+                    <p class="control-desc">Determines the permutation of rows.</p>
+                </div>
+
+                <!-- X-Axis Permutation Selector -->
+                <div class="control-item">
+                    <label for="x-axis-perm" class="control-label">X-Axis (Column Shift)</label>
+                    <select id="x-axis-perm" class="select-input">
+                        <option value="cyclic">Cyclic Shift (Standard)</option>
+                        <option value="bwt_view">BWT Centered</option>
+                    </select>
+                    <p class="control-desc">Determines the cyclic rotation view.</p>
+                </div>
+            </div>
+
+            <!-- Visualization Settings -->
+            <div class="control-group">
+                <h3 class="group-title">Visual Layers</h3>
+
+                <div class="control-item checkbox-item">
+                    <input type="checkbox" id="show-lcp" class="checkbox-input">
+                    <label for="show-lcp">Overlay LCP (Agreement Length)</label>
+                </div>
+
+                <div class="control-item checkbox-item">
+                    <input type="checkbox" id="highlight-bwt" class="checkbox-input" checked>
+                    <label for="highlight-bwt">Highlight BWT Column</label>
+                </div>
+
+                <div class="control-item">
+                    <label for="color-mode" class="control-label">Color Mapping</label>
+                    <select id="color-mode" class="select-input">
+                        <option value="char-unique">Unique Character Colors</option>
+                        <option value="heatmap-lcp">LCP Heatmap</option>
+                        <option value="grayscale">Grayscale</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Statistics / Metrics Summary -->
+            <div class="control-group stats-group">
+                <h3 class="group-title">Theoretical Properties</h3>
+                <ul class="stats-list">
+                    <li class="stat-item">
+                        <span class="stat-label">Length (n):</span>
+                        <span id="stat-n" class="stat-value">0</span>
+                    </li>
+                    <li class="stat-item">
+                        <span class="stat-label">Alphabet (&Sigma;):</span>
+                        <span id="stat-sigma" class="stat-value">0</span>
+                    </li>
+                    <li class="stat-item">
+                        <span class="stat-label">Entropy:</span>
+                        <span id="stat-entropy" class="stat-value">0.00</span>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+
+        <!-- Main Visualization Area -->
+        <main class="viz-area">
+
+            <!-- The 2D Cyclical Map -->
+            <div class="canvas-container">
+                <div class="viz-header">
+                    <h2 class="viz-title">Cyclic Permutation Map</h2>
+                    <div class="zoom-controls">
+                        <button class="btn-icon" id="zoom-in">+</button>
+                        <button class="btn-icon" id="zoom-out">-</button>
+                    </div>
+                </div>
+
+                <!-- The Canvas element where the grid/map is drawn -->
+                <div class="canvas-wrapper" id="canvas-wrapper">
+                    <canvas id="perm-map-canvas" class="interactive-canvas"></canvas>
+
+                    <!-- Hover Tooltip (Dynamic) -->
+                    <div id="hover-tooltip" class="tooltip hidden">
+                        <!-- Content injected via JS -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Data Inspection Panel (Bottom) -->
+            <section class="inspection-panel">
+                <div class="inspection-column">
+                    <h4>Selected Row Details</h4>
+                    <div class="data-grid" id="row-details">
+                        <div class="data-pair">
+                            <span class="label">Index (i):</span>
+                            <span class="value" id="detail-index">-</span>
+                        </div>
+                        <div class="data-pair">
+                            <span class="label">SA[i] (&pi;_L):</span>
+                            <span class="value" id="detail-sa">-</span>
+                        </div>
+                        <div class="data-pair">
+                            <span class="label">BWT[i]:</span>
+                            <span class="value" id="detail-bwt">-</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="inspection-column">
+                    <h4>Navigation Structure</h4>
+                    <div class="data-grid" id="nav-details">
+                        <div class="data-pair">
+                            <span class="label">LCP[i]:</span>
+                            <span class="value" id="detail-lcp">-</span>
+                        </div>
+                        <div class="data-pair">
+                            <span class="label">&mu;_F (Forward):</span>
+                            <span class="value" id="detail-mu-f">-</span>
+                        </div>
+                        <div class="data-pair">
+                            <span class="label">&mu;_B (Backward):</span>
+                            <span class="value" id="detail-mu-b">-</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+    </div>
+
+
+</div>
+
+<script>
+    /**
+     * Permutation Ring Explorer - Interactive Logic
+     * Based on the Mathematical Specification for Permutation-Based Full-Text Indexing.
+     */
+
+    document.addEventListener('DOMContentLoaded', () => {
+        // --- Configuration & State ---
+        const state = {
+            text: '',
+            n: 0,
+            zoom: 20, // Pixel size of a cell
+            minZoom: 5,
+            maxZoom: 60,
+            offsetX: 0,
+            offsetY: 0,
+            hoveredCell: null,
+            config: {
+                yAxisMode: 'pi_L', // identity, pi_L, pi_R, mu_F
+                xAxisMode: 'cyclic', // cyclic, bwt_view
+                showLCP: false,
+                highlightBWT: true,
+                colorMode: 'char-unique' // char-unique, heatmap-lcp, grayscale
+            }
+        };
+
+        // --- Mathematical Engine ---
+        class PermutationEngine {
+            constructor() {
+                this.reset();
+            }
+
+            reset() {
+                this.T = '';
+                this.n = 0;
+                this.rotations = []; // Array of strings
+                this.SA = [];        // Suffix Array (pi_L)
+                this.SA_R = [];      // Reverse Suffix Array (pi_R)
+                this.LCP = [];       // LCP Array
+                this.BWT = [];       // Burrows-Wheeler Transform
+                this.mu_F = [];      // Forward Movement Permutation
+                this.mu_B = [];      // Backward Movement Permutation
+                this.alphabet = new Set();
+            }
+
+            process(inputText) {
+                this.reset();
+
+                // 1. Preprocessing
+                // Ensure sentinel '$' exists for proper BWT logic, though cyclic text
+                // technically implies infinite repetition, the sentinel breaks the symmetry for sorting.
+                this.T = inputText.includes('$') ? inputText : inputText + '$';
+                this.n = this.T.length;
+
+                // Collect Alphabet
+                for (let char of this.T) this.alphabet.add(char);
+
+                // 2. Generate Rotations
+                // R_i(T) = t_{i+1}...t_n t_1...t_i
+                // We store indices [0..n-1] representing the start position in the cyclic string
+                const indices = Array.from({length: this.n}, (_, i) => i);
+
+                // Helper to get character at cyclic index
+                const getChar = (start, offset) => this.T[(start + offset) % this.n];
+
+                // Helper to compare two rotations
+                const compareRotations = (a, b) => {
+                    for (let i = 0; i < this.n; i++) {
+                        const charA = getChar(a, i);
+                        const charB = getChar(b, i);
+                        if (charA < charB) return -1;
+                        if (charA > charB) return 1;
+                    }
+                    return 0;
+                };
+
+                // Helper to compare reverse rotations
+                const compareRotationsRev = (a, b) => {
+                    // Lexicographic comparison of the rotations, but sorted descending
+                    return compareRotations(b, a);
+                };
+
+                // 3. Compute Permutations
+
+                // Identity: 0, 1, 2...
+                this.Identity = [...indices];
+
+                // pi_L (Suffix Array): Sort indices based on rotation content
+                this.SA = [...indices].sort(compareRotations);
+
+                // pi_R (Reverse Sort): Sort indices based on reverse lexicographic order
+                this.SA_R = [...indices].sort(compareRotationsRev);
+
+                // 4. Compute BWT
+                // BWT[i] is the last character of the i-th sorted rotation
+                this.BWT = this.SA.map(idx => getChar(idx, this.n - 1));
+
+                // 5. Compute LCP (Naive O(n^2) is fine for demo purposes < 5000 chars)
+                this.LCP = new Array(this.n).fill(0);
+                this.LCP[0] = 0; // Undefined for first element usually, set to 0
+                for (let i = 1; i < this.n; i++) {
+                    let len = 0;
+                    const idx1 = this.SA[i - 1];
+                    const idx2 = this.SA[i];
+                    while (len < this.n && getChar(idx1, len) === getChar(idx2, len)) {
+                        len++;
+                    }
+                    this.LCP[i] = len;
+                }
+
+                // 6. Compute Movement Permutations (mu_F)
+                // mu_F maps position i in SA to the position of the suffix starting at SA[i] + 1
+                // This is the LF Mapping property
+                this.mu_F = new Array(this.n).fill(0);
+                // Create inverse SA for quick lookup
+                const ISA = new Array(this.n).fill(0);
+                for (let i = 0; i < this.n; i++) ISA[this.SA[i]] = i;
+
+                for (let i = 0; i < this.n; i++) {
+                    const currentStart = this.SA[i];
+                    const nextStart = (currentStart + 1) % this.n;
+                    this.mu_F[i] = ISA[nextStart];
+                }
+
+                // mu_B (Backward) is inverse of mu_F
+                this.mu_B = new Array(this.n).fill(0);
+                for (let i = 0; i < this.n; i++) {
+                    this.mu_B[this.mu_F[i]] = i;
+                }
+            }
+
+            // Get the rotation index for a specific row in the visualization based on mode
+            getRowIndex(visualRowIndex, mode) {
+                if (visualRowIndex < 0 || visualRowIndex >= this.n) return null;
+
+                switch (mode) {
+                    case 'identity':
+                        return this.Identity[visualRowIndex];
+                    case 'pi_L':
+                        return this.SA[visualRowIndex];
+                    case 'pi_R':
+                        return this.SA_R[visualRowIndex];
+                    case 'mu_F':
+                        // Visualizing the permutation vector itself
+                        // Row i shows the rotation pointed to by mu_F[i]
+                        // This is a bit abstract, but shows the cycle structure
+                        return this.SA[this.mu_F[visualRowIndex]];
+                    default:
+                        return this.SA[visualRowIndex];
+                }
+            }
+
+            getStats() {
+                // Calculate Shannon Entropy
+                const freqs = {};
+                for (let char of this.T) freqs[char] = (freqs[char] || 0) + 1;
+                let entropy = 0;
+                for (let char in freqs) {
+                    const p = freqs[char] / this.n;
+                    entropy -= p * Math.log2(p);
+                }
+
+                return {
+                    n: this.n,
+                    sigma: this.alphabet.size,
+                    entropy: entropy.toFixed(3)
+                };
+            }
+        }
+
+        const engine = new PermutationEngine();
+
+        // --- Visualization Engine ---
+        const canvas = document.getElementById('perm-map-canvas');
+        const ctx = canvas.getContext('2d');
+        const tooltip = document.getElementById('hover-tooltip');
+
+        // Color Palette Generator
+        const getColor = (char) => {
+            if (char === '$') return '#e0e0e0'; // Sentinel gray
+
+            // Consistent hashing for colors
+            let hash = 0;
+            for (let i = 0; i < char.length; i++) {
+                hash = char.charCodeAt(i) + ((hash << 5) - hash);
+            }
+
+            // Generate HSL
+            const h = Math.abs(hash % 360);
+            return `hsl(${h}, 70%, 85%)`; // Pastel colors
+        };
+
+        const getLCPColor = (val, max) => {
+            const intensity = Math.min(1, val / (max || 1));
+            // Blue heatmap
+            return `rgba(33, 150, 243, ${intensity * 0.8})`;
+        };
+
+        function resizeCanvas() {
+            const wrapper = document.getElementById('canvas-wrapper');
+            // Set canvas size to accommodate the full matrix or the wrapper size, whichever is larger
+            const size = Math.max(engine.n * state.zoom, 100);
+            canvas.width = Math.max(wrapper.clientWidth, size);
+            canvas.height = Math.max(wrapper.clientHeight, size);
+            draw();
+        }
+
+        function draw() {
+            if (!engine.n) return;
+
+            // Clear
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+            const cellSize = state.zoom;
+            const fontSize = Math.floor(cellSize * 0.6);
+            ctx.font = `${fontSize}px monospace`;
+            ctx.textAlign = 'center';
+            ctx.textBaseline = 'middle';
+
+            // Viewport Culling for Performance
+            const wrapper = document.getElementById('canvas-wrapper');
+            const startRow = Math.floor(wrapper.scrollTop / cellSize);
+            const endRow = Math.min(engine.n, startRow + Math.ceil(wrapper.clientHeight / cellSize) + 1);
+            const startCol = Math.floor(wrapper.scrollLeft / cellSize);
+            const endCol = Math.min(engine.n, startCol + Math.ceil(wrapper.clientWidth / cellSize) + 1);
+
+            // Draw Grid
+            for (let r = startRow; r < endRow; r++) {
+
+                const rotationStart = engine.getRowIndex(r, state.config.yAxisMode);
+
+                // Calculate LCP overlay for this row (compared to previous)
+                const lcpVal = (state.config.yAxisMode === 'pi_L' && r > 0) ? engine.LCP[r] : 0;
+
+                for (let c = startCol; c < endCol; c++) {
+                    const x = c * cellSize;
+                    const y = r * cellSize;
+
+                    // Determine character
+                    // If x-axis is cyclic, we just read the rotation
+                    // If x-axis is BWT centered, we shift so BWT is in middle?
+                    // For this demo, we stick to standard cyclic view where col n-1 is BWT
+                    const charIndex = (rotationStart + c) % engine.n;
+                    const char = engine.T[charIndex];
+
+                    // Background
+                    if (state.config.colorMode === 'char-unique') {
+                        ctx.fillStyle = getColor(char);
+                    } else if (state.config.colorMode === 'grayscale') {
+                        const val = char.charCodeAt(0) % 255;
+                        ctx.fillStyle = `rgb(${val}, ${val}, ${val})`;
+                    } else if (state.config.colorMode === 'heatmap-lcp') {
+                        // Heatmap based on LCP value of the row
+                        ctx.fillStyle = r > 0 ? getLCPColor(engine.LCP[r], engine.n / 2) : '#fff';
+                    }
+
+                    // Highlight BWT Column (Last column)
+                    if (state.config.highlightBWT && c === engine.n - 1) {
+                        ctx.fillStyle = '#fff9c4'; // Light yellow highlight
+                        // Blend if color mode is active
+                        if (state.config.colorMode === 'char-unique') {
+                            ctx.fillStyle = getColor(char); // Keep char color but add border later
+                        }
+                    }
+
+                    // LCP Overlay (Darken prefix matches)
+                    if (state.config.showLCP && c < lcpVal) {
+                        ctx.fillStyle = 'rgba(0,0,0,0.1)'; // Darken match
+                        ctx.fillRect(x, y, cellSize, cellSize);
+                        // Re-set fill for text
+                        ctx.fillStyle = getColor(char);
+                    }
+
+                    ctx.fillRect(x, y, cellSize, cellSize);
+
+                    // BWT Border
+                    if (state.config.highlightBWT && c === engine.n - 1) {
+                        ctx.strokeStyle = '#f57f17';
+                        ctx.lineWidth = 2;
+                        ctx.strokeRect(x, y, cellSize, cellSize);
+                    }
+
+                    // Text (only if zoom is large enough)
+                    if (cellSize > 10) {
+                        ctx.fillStyle = '#000';
+                        ctx.fillText(char, x + cellSize / 2, y + cellSize / 2);
+                    }
+                }
+            }
+
+            // Highlight Hovered Cell
+            if (state.hoveredCell) {
+                const {r, c} = state.hoveredCell;
+                if (r < engine.n && c < engine.n) {
+                    ctx.strokeStyle = '#d50000';
+                    ctx.lineWidth = 2;
+                    ctx.strokeRect(c * cellSize, r * cellSize, cellSize, cellSize);
+                }
+            }
+        }
+
+        // --- Interaction Handlers ---
+
+        function updateStats() {
+            const stats = engine.getStats();
+            document.getElementById('stat-n').textContent = stats.n;
+            document.getElementById('stat-sigma').textContent = stats.sigma;
+            document.getElementById('stat-entropy').textContent = stats.entropy;
+        }
+
+        function updateInspectionPanel(r, c) {
+            if (r === null || r >= engine.n) {
+                // Clear panel
+                ['detail-index', 'detail-sa', 'detail-bwt', 'detail-lcp', 'detail-mu-f', 'detail-mu-b'].forEach(id => {
+                    document.getElementById(id).textContent = '-';
+                });
+                return;
+            }
+
+            // Map visual row 'r' to logical index based on current permutation
+            // Note: The inspection panel usually shows details for the Suffix Array index i
+            // If we are in Identity mode, row r corresponds to SA index ISA[r].
+            // To keep it simple, we display data relative to the *visual* row if in pi_L mode,
+            // or map back if possible.
+
+            // Let's assume the panel displays properties of the row currently hovered.
+
+            let saIndex = -1;
+
+            if (state.config.yAxisMode === 'pi_L') {
+                saIndex = r;
+            } else {
+                // Find which SA index corresponds to this visual row
+                // This is complex for arbitrary permutations, so we'll just show
+                // data if we are in pi_L mode, or generic info otherwise.
+                document.getElementById('detail-index').textContent = `Row ${r}`;
+            }
+
+            if (state.config.yAxisMode === 'pi_L') {
+                document.getElementById('detail-index').textContent = r;
+                document.getElementById('detail-sa').textContent = engine.SA[r];
+                document.getElementById('detail-bwt').textContent = engine.BWT[r];
+                document.getElementById('detail-lcp').textContent = engine.LCP[r];
+                document.getElementById('detail-mu-f').textContent = engine.mu_F[r];
+                document.getElementById('detail-mu-b').textContent = engine.mu_B[r];
+            } else {
+                // Just show the rotation start
+                const rotStart = engine.getRowIndex(r, state.config.yAxisMode);
+                document.getElementById('detail-sa').textContent = rotStart;
+                document.getElementById('detail-bwt').textContent = engine.T[(rotStart + engine.n - 1) % engine.n];
+                document.getElementById('detail-lcp').textContent = "N/A (Sort dependent)";
+                document.getElementById('detail-mu-f').textContent = "-";
+                document.getElementById('detail-mu-b').textContent = "-";
+            }
+        }
+
+        function handleProcess() {
+            const input = document.getElementById('source-text').value;
+            if (!input) return;
+
+            engine.process(input);
+            updateStats();
+            // Reset scroll position
+            const wrapper = document.getElementById('canvas-wrapper');
+            wrapper.scrollTop = 0;
+            wrapper.scrollLeft = 0;
+
+            resizeCanvas();
+        }
+
+        // Event Listeners
+        document.getElementById('process-btn').addEventListener('click', handleProcess);
+
+        // Chip clicks
+        document.querySelectorAll('.chip').forEach(chip => {
+            chip.addEventListener('click', (e) => {
+                document.getElementById('source-text').value = e.target.dataset.value;
+                handleProcess();
+            });
+        });
+
+        // Controls
+        document.getElementById('y-axis-perm').addEventListener('change', (e) => {
+            state.config.yAxisMode = e.target.value;
+
+            // Update Math Context Footer
+            const mathEl = document.getElementById('math-formula');
+            if (e.target.value === 'pi_L') mathEl.innerHTML = 'R<sub>&pi;<sub>L</sub>(i)</sub>(T)';
+            else if (e.target.value === 'pi_R') mathEl.innerHTML = 'R<sub>&pi;<sub>R</sub>(i)</sub>(T)';
+            else if (e.target.value === 'identity') mathEl.innerHTML = 'R<sub>i</sub>(T)';
+            else if (e.target.value === 'mu_F') mathEl.innerHTML = 'R<sub>&pi;<sub>L</sub>(&mu;<sub>F</sub>(i))</sub>(T)';
+
+            draw();
+        });
+
+        document.getElementById('x-axis-perm').addEventListener('change', (e) => {
+            state.config.xAxisMode = e.target.value;
+            draw();
+        });
+
+        document.getElementById('show-lcp').addEventListener('change', (e) => {
+            state.config.showLCP = e.target.checked;
+            draw();
+        });
+
+        document.getElementById('highlight-bwt').addEventListener('change', (e) => {
+            state.config.highlightBWT = e.target.checked;
+            draw();
+        });
+
+        document.getElementById('color-mode').addEventListener('change', (e) => {
+            state.config.colorMode = e.target.value;
+            draw();
+        });
+        // Scroll listener for culling
+        document.getElementById('canvas-wrapper').addEventListener('scroll', draw);
+
+
+        // Zoom
+        document.getElementById('zoom-in').addEventListener('click', () => {
+            state.zoom = Math.min(state.maxZoom, state.zoom + 5);
+            resizeCanvas();
+        });
+        document.getElementById('zoom-out').addEventListener('click', () => {
+            state.zoom = Math.max(state.minZoom, state.zoom - 5);
+            resizeCanvas();
+        });
+
+        // Canvas Mouse Interaction
+        canvas.addEventListener('mousemove', (e) => {
+            if (!engine.n) return;
+
+            const rect = canvas.getBoundingClientRect();
+            const x = e.clientX - rect.left;
+            const y = e.clientY - rect.top;
+
+            const c = Math.floor(x / state.zoom);
+            const r = Math.floor(y / state.zoom);
+
+            if (r >= 0 && r < engine.n && c >= 0 && c < engine.n) {
+                state.hoveredCell = {r, c};
+
+                // Tooltip
+                const rotStart = engine.getRowIndex(r, state.config.yAxisMode);
+                const charIndex = (rotStart + c) % engine.n;
+                const char = engine.T[charIndex];
+
+                tooltip.style.left = `${e.clientX + 15}px`;
+                tooltip.style.top = `${e.clientY + 15}px`;
+                tooltip.classList.remove('hidden');
+                tooltip.innerHTML = `
+                        <strong>Pos:</strong> (${r}, ${c})<br>
+                        <strong>Char:</strong> ${char}<br>
+                        <strong>Orig Idx:</strong> ${charIndex}
+                    `;
+
+                updateInspectionPanel(r, c);
+            } else {
+                state.hoveredCell = null;
+                tooltip.classList.add('hidden');
+                updateInspectionPanel(null, null);
+            }
+            draw();
+        });
+
+        canvas.addEventListener('mouseleave', () => {
+            state.hoveredCell = null;
+            tooltip.classList.add('hidden');
+            draw();
+        });
+
+        window.addEventListener('resize', resizeCanvas);
+
+        // Initial Load
+        handleProcess();
+    });
+</script>
+</body>
+</html>

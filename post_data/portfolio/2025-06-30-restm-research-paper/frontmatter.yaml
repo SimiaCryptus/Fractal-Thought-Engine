@@ -1,0 +1,117 @@
+title: 'reSTM: A REST-Based Distributed Software Transactional Memory Platform'
+layout: post
+date: '"2025-06-30T00:00:00.000Z"'
+last_modified: '"2025-06-30T12:00:00.000Z"'
+category: portfolio
+subcategory: Engineering & Formal Systems
+tags:
+  - Distributed Systems
+  - Software Engineering
+  - Paper
+keywords:
+  - distributed systems
+  - software transactional memory
+  - REST
+  - MVCC
+  - distributed computing
+  - HTTP protocol
+  - actor architecture
+  - ACID guarantees
+status: stable
+last_thought_date: '"2025-06-30T00:00:00.000Z"'
+thought_generation: 1
+reading_order: 1
+difficulty_level: advanced
+reading_time_minutes: 45
+document_type: research_paper
+thinking_style: analytical
+research_domain: Computer Science
+research_subdomains:
+  - Distributed Systems
+  - Software Architecture
+  - Concurrency
+computational_approach: Distributed Computing
+theoretical_foundation: Software Transactional Memory
+implementation_paradigm: Actor Model
+system_properties:
+  - Scalability
+  - Fault Tolerance
+  - High Concurrency
+consciousness_level: collaborative
+engagement_type: analytical
+reader_participation: active
+cognitive_load: intense
+description: >-
+  A novel distributed software transactional memory platform providing ACID
+  guarantees across clusters through REST-friendly HTTP protocol
+excerpt: >-
+  reSTM presents a distributed STM platform that combines SQL-like transactions
+  with distributed systems scalability, implementing MVCC with fine-grained
+  locking and actor-based architecture for high concurrency while maintaining
+  perfect transaction isolation.
+meta_title: 'reSTM: REST-Based Distributed Software Transactional Memory Platform'
+meta_description: >-
+  Novel distributed STM platform providing ACID guarantees across clusters
+  through HTTP protocol with MVCC, fine-grained locking, and actor-based
+  architecture
+seo_keywords:
+  - distributed systems
+  - software transactional memory
+  - REST API
+  - MVCC
+  - actor model
+meta_keywords: >-
+  distributed systems, software transactional memory, REST API, MVCC,
+  distributed computing, actor model, concurrency control
+og_title: 'reSTM: REST-Based Distributed Software Transactional Memory'
+og_description: >-
+  A novel distributed platform that provides ACID guarantees across clusters
+  through REST-friendly HTTP protocol
+og_type: article
+schema_type: ScholarlyArticle
+schema_headline: 'reSTM: A REST-Based Distributed Software Transactional Memory Platform'
+schema_author: Research Team
+schema_date_published: '"2025-06-30T00:00:00.000Z"'
+schema_date_modified: '"2025-06-30T00:00:00.000Z"'
+schema_research_type: Technical Research
+schema_discipline: Computer Science
+schema_research_method: Experimental Design
+schema_contribution_type: Novel Platform
+schema_word_count: 8500
+schema_reading_time: PT45M
+robots: 'index,follow'
+content_rating: general
+content_language: en
+priority: '0.8'
+changefreq: monthly
+is_featured: true
+is_cornerstone: true
+is_gateway: false
+is_synthesis: false
+is_pioneering: true
+primary_tags:
+  - Distributed-Systems
+  - Software-Transactional-Memory
+  - REST
+  - MVCC
+methodological_tags:
+  - Theoretical-Framework
+  - Experimental-Design
+  - Mathematical-Modeling
+  - Proof-of-Concept
+technical_tags:
+  - Actor-Model
+  - HTTP-Protocol
+  - Concurrency-Control
+  - Fault-Tolerance
+application_tags:
+  - Database-Systems
+  - Distributed-Computing
+  - System-Architecture
+format_tags:
+  - Research-Paper
+  - Technical-Report
+related_documents:
+  - _posts/projects/2025-07-01-rust-proxy-proposal.md
+  - _posts/projects/2025-08-08-agent-orchestration-language.md
+  - _posts/portfolio/2025-07-01-mindseye-modularity-report.md

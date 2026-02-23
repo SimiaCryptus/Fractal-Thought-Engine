@@ -1,0 +1,120 @@
+---
+layout: page
+title: Categories
+description: "Explore content organized by topic areas - from consciousness research to creative writing"
+meta_description: "Browse all content categories on Fractal Thought Engine, organized by research areas and topics"
+---
+
+<div class="hero-section">
+    <img src="assets/images/fte_main.png" alt="Fractal Thought Engine" class="hero-image"/>
+    <div class="hero-content">
+        <h1>Content Categories</h1>
+        <p class="hero-description">Explore ideas organized by domain and research area</p>
+    </div>
+</div>
+
+<div class="categories-overview">
+    <div class="stats-bar">
+        <span class="stat-item">
+            <strong>{{ site.categories | size }}</strong> categories
+        </span>
+        <span class="stat-item">
+            <strong>{{ site.posts | size }}</strong> total posts
+        </span>
+    </div>
+</div>
+
+<div class="categories">
+    {% for category in site.categories %}
+    {% assign category_posts = category[1] | sort: 'date' | reverse %}
+    {% assign subcategories = category_posts | group_by: 'subcategory' %}
+    
+    <div class="category-section" id="{{ category[0] | slugify }}">
+        <div class="category-header">
+            <h2 class="category-title">
+                <a href="categories.html#{{ category[0] }}" class="category-anchor">
+                    {{ category[0] | replace: "_", " " | replace: "-", " " | capitalize }}
+                </a>
+            </h2>
+            <span class="post-count">{{ category[1] | size }} post{% if category[1].size != 1 %}s{% endif %}</span>
+        </div>
+        
+        {% assign category_description = site.data.category_descriptions[category[0]] %}
+        {% if category_description %}
+        <p class="category-description">{{ category_description }}</p>
+        {% endif %}
+        
+        {% for subcategory in subcategories %}
+        <div class="subcategory-section">
+            {% if subcategory.name and subcategory.name != "" %}
+            <h3 class="subcategory-title">{{ subcategory.name }}</h3>
+            {% else %}
+            <h3 class="subcategory-title">General</h3>
+            {% endif %}
+            
+            <div class="posts-grid">
+            {% for post in subcategory.items %}
+            <article class="post-card">
+                {% if post.featured_image %}
+                <div class="post-card-image">
+                    <a href="{{ post.url | relative_url }}">
+                        <img src="{{ post.featured_image | relative_url }}" alt="{{ post.title | escape }}">
+                    </a>
+                </div>
+                {% endif %}
+                <div class="post-card-content">
+                    <h3 class="post-title">
+                        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+                    </h3>
+                    
+                    {% if post.excerpt %}
+                    <p class="post-excerpt">{{ post.excerpt | strip_html }}</p>
+                    {% endif %}
+                    
+                    <div class="post-meta">
+                        <time class="post-date" datetime="{{ post.date | date_to_xmlschema }}">
+                            {{ post.date | date: "%B %d, %Y" }}
+                        </time>
+                        {% if post.difficulty_level %}
+                        <span class="difficulty-level difficulty-{{ post.difficulty_level }}">
+                            {{ post.difficulty_level | capitalize }}
+                        </span>
+                        {% endif %}
+                        {% if post.cognitive_load %}
+                        <span class="cognitive-load load-{{ post.cognitive_load }}">
+                            {{ post.cognitive_load | capitalize }} Load
+                        </span>
+                        {% endif %}
+                        
+                        
+                        {% if post.tags and post.tags.size > 0 %}
+                        <div class="post-tags">
+                            {% for tag in post.tags limit: 3 %}
+                            <span class="tag">{{ tag | replace: "_", " " | replace: "-", " " }}</span>
+                            {% endfor %}
+                            {% if post.tags.size > 3 %}
+                            <span class="tag-more">+{{ post.tags.size | minus: 3 }} more</span>
+                            {% endif %}
+                        </div>
+                        {% endif %}
+                    </div>
+                </div>
+            </article>
+            {% endfor %}
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+    {% endfor %}
+</div>
+<div class="categories-navigation">
+    <h3>Quick Navigation</h3>
+    <div class="category-links">
+        {% for category in site.categories %}
+        <a href="#{{ category[0] | slugify }}" class="category-link">
+            {{ category[0] | replace: "_", " " | replace: "-", " " | capitalize }}
+            <span class="link-count">({{ category[1] | size }})</span>
+        </a>
+        {% endfor %}
+    </div>
+</div>

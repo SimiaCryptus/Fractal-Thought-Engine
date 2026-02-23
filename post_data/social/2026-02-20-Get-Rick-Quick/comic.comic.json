@@ -1,0 +1,347 @@
+{
+  "config" : {
+    "task_description" : "Generate a 6-page comic script and visuals based on the essay 'Get Rich Quick: The Cultural Logic of the Instant Fortune'. The comic should illustrate the transition from the broken post-war social contract to the modern speculative economy, focusing on the '4-part script' of hype, the substitution of luck for time, and the 'Colosseum Effect' of the lottery as a social opiate.",
+    "target_pages" : 6,
+    "art_style" : "Noir-infused social realism with neon-surrealist elements",
+    "style_details" : "High contrast shadows, gritty urban textures, contrasted with vibrant, almost blinding neon holographic displays for the 'Get Rich Quick' advertisements. The color palette should shift from muted greys and browns in the 'real world' to hyper-saturated cyans and magentas in the speculative spaces.",
+    "generate_images" : true,
+    "character_references" : [ {
+      "character_name" : "Elias",
+      "visual_description" : "A middle-aged man with tired, deep-set eyes and a slight slouch. He wears a faded, grease-stained janitor's uniform. His face is expressive of weary cynicism.",
+      "personality_notes" : "Observant, disillusioned, but intellectually sharp. He sees the 'gears' of the system that others ignore.",
+      "role" : "Protagonist/Observer",
+      "relationships" : "An outsider to the 'hype' culture, watching the 'Marks' from the shadows."
+    }, {
+      "character_name" : "The Promoter",
+      "visual_description" : "A slick figure in a sharp, iridescent suit that seems to change color. His face is often partially obscured by a digital glitch effect or a glowing holographic mask. He radiates an artificial, high-energy charisma.",
+      "personality_notes" : "Predatory, persuasive, and entirely hollow. He speaks in the '4-part script' of the hype cycle.",
+      "role" : "Antagonist/Archetype",
+      "relationships" : "The architect of the mirage that draws in the Marks."
+    } ],
+    "plot_continuity" : {
+      "narrative_structure" : "Thematic journey/Essayistic progression",
+      "key_plot_points" : [ "Page 1: The Broken Promise. Visuals of a crumbling 1950s suburban dream juxtaposed with modern wage stagnation.", "Page 2: The Mechanics of the Phrase. Elias watches a 'Mark' get recruited by The Promoter using the 4-part script (You're early, others don't understand, etc.).", "Page 3: The Class Boundary. A literal chasm or high wall separating the 'Rich' enclave from the grey streets where Elias works.", "Page 4: The Casino of Luck. The city transforms into a giant, surreal casino where 'Time' is being traded for 'Luck' (The Fortune tautology).", "Page 5: The Social Opiate. Citizens transforming into 'Gamblers' at glowing terminals, losing their political agency as they refresh portfolios.", "Page 6: The Colosseum Effect. A massive, televised lottery drawing acting as a secular liturgy, keeping the masses pacified by the spectacle of a single winner." ],
+      "setting_details" : "A near-future metropolis where the infrastructure is decaying but the advertising technology is state-of-the-art.",
+      "themes" : [ "Systemic inequality", "Financialization of hope", "The erosion of the social contract", "Luck as a political analgesic" ],
+      "tone" : "Cynical, analytical, and visually haunting",
+      "prior_story_context" : "",
+      "continuity_constraints" : [ "Elias must remain the visual anchor in every scene, usually in the foreground or background observing.", "The '4-part script' must be explicitly visible in the dialogue or environmental text on Page 2." ],
+      "ending_notes" : "",
+      "additional_notes" : ""
+    },
+    "state" : "Pending",
+    "task_type" : "ComicBookGeneration",
+    "files" : [ "comic.md" ]
+  },
+  "script" : {
+    "title" : "The Instant Fortune",
+    "premise" : "In a decaying metropolis where the post-war social contract has evaporated, a weary janitor named Elias witnesses the predatory mechanics of \"Get Rich Quick\" schemes. The comic explores how the promise of a sudden windfall serves as a psychological anesthetic, transforming citizens into gamblers and neutralizing political dissent through the \"Colosseum Effect\" of the modern lottery.",
+    "characters" : [ {
+      "name" : "Elias",
+      "description" : "A middle-aged man with tired, deep-set eyes and a slight slouch. He wears a faded, grease-stained janitor's uniform. His face is expressive of weary cynicism. Observant, disillusioned, but intellectually sharp. He sees the 'gears' of the system that others ignore.",
+      "visual_traits" : "Often seen with a mop or a trash bag; his silhouette is heavy and grounded compared to the flickering neon around him."
+    }, {
+      "name" : "The Promoter",
+      "description" : "A slick figure in a sharp, iridescent suit that seems to change color (shifting between oil-slick greens and predatory purples). Predatory, persuasive, and entirely hollow. He speaks in the '4-part script' of the hype cycle.",
+      "visual_traits" : "His face is often partially obscured by a digital glitch effect or a glowing holographic mask that displays a permanent, artificial smile. He radiates high-energy, artificial charisma."
+    } ],
+    "pages" : [ {
+      "page_number" : 1,
+      "rows" : [ {
+        "row_number" : 1,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "A close-up of a vintage, peeling billboard from the 1950s. It shows a smiling family in front of a suburban home. The text reads: \"Hard Work = A Bright Future.\"",
+          "dialog" : [ ]
+        }, {
+          "frame_number" : 2,
+          "description" : "Wide shot. Elias is standing in front of the billboard, dwarfed by it. He is emptying a trash can. The background is a grey, rain-slicked street.",
+          "dialog" : [ ],
+          "caption" : "The promise was simple: steady labor for a steady life. A home. A pension. A rising tide."
+        } ],
+        "visual_description" : "The page transitions from the sepia-toned nostalgia of the past to the high-contrast, gritty reality of the present. Row: The Ghost of the Contract"
+      }, {
+        "row_number" : 2,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "Elias walks past a row of shuttered storefronts. The windows are boarded up with \"For Lease\" signs that look decades old.",
+          "dialog" : [ ]
+        }, {
+          "frame_number" : 2,
+          "description" : "A high-angle shot of a crowded subway platform. Everyone looks exhausted, hunched over, bathed in the sickly yellow light of the station.",
+          "dialog" : [ ],
+          "caption" : "But the contract was torn up decades ago. Stagnation set in. The safety nets were sold for parts."
+        } ],
+        "visual_description" : "The Hollowing Out"
+      }, {
+        "row_number" : 3,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "Elias looks up at a massive neon sign flickering above the slums. It’s an ad for a crypto-trading app: \"DON'T JUST WORK. WIN.\"",
+          "dialog" : [ ]
+        }, {
+          "frame_number" : 2,
+          "description" : "Elias’s face in profile, half-hidden in deep shadow, half-lit by the aggressive cyan neon of the sign.",
+          "dialog" : [ ],
+          "caption" : "When the middle ground disappears, the shortcut isn't a scam. It’s the only exit left."
+        } ],
+        "visual_description" : "The Shadow of the Order"
+      } ]
+    }, {
+      "page_number" : 2,
+      "rows" : [ {
+        "row_number" : 1,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "A young man (The Mark) sits on a bus bench, looking at a mounting pile of bills. The Promoter leans into the frame, his iridescent suit shimmering.",
+          "dialog" : [ ]
+        }, {
+          "frame_number" : 2,
+          "description" : "Close-up of The Promoter’s holographic mask. A digital mouth moves.",
+          "dialog" : [ {
+            "character" : "The Promoter",
+            "text" : "You're early, kid. Most people are still sleeping on this."
+          } ]
+        } ],
+        "visual_description" : "Gritty noir textures meet hyper-saturated neon. The Promoter appears, vibrant and glitchy against the grey background. Row: The Recruitment"
+      }, {
+        "row_number" : 2,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "The Promoter puts a hand on the Mark’s shoulder. In the background, Elias is mopping the sidewalk, watching them.",
+          "dialog" : [ {
+            "character" : "The Promoter",
+            "text" : "Others don't understand. They'll call it a bubble because they're scared of the future."
+          } ]
+        }, {
+          "frame_number" : 2,
+          "description" : "The Promoter gestures to a glowing tablet showing a vertical green line on a chart.",
+          "dialog" : [ {
+            "character" : "The Promoter",
+            "text" : "But this time is different. The old rules? They're dead."
+          } ]
+        } ],
+        "visual_description" : "The 4-Part Script"
+      }, {
+        "row_number" : 3,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "The Promoter leans in close to the Mark’s face. The glitch effect on his suit intensifies.",
+          "dialog" : [ {
+            "character" : "The Promoter",
+            "text" : "Act now. Before the window closes. Before you're left behind with the rest of the ghosts."
+          } ]
+        }, {
+          "frame_number" : 2,
+          "description" : "The Mark hands over a credit card. Elias watches from the shadows, his face a mask of grim recognition.",
+          "dialog" : [ ],
+          "caption" : "It’s a memetic virus. A four-part script dressed in the zeitgeist of the week."
+        } ],
+        "visual_description" : "The Closing Window"
+      } ]
+    }, {
+      "page_number" : 3,
+      "rows" : [ {
+        "row_number" : 1,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "A massive, seamless chrome wall rises out of the slums, disappearing into the clouds. At the top, golden lights of a floating city are visible.",
+          "dialog" : [ ]
+        }, {
+          "frame_number" : 2,
+          "description" : "Elias stands at the base of the wall, looking up. He looks like an ant.",
+          "dialog" : [ ],
+          "caption" : "We don't say 'wealthy' anymore. We say 'rich.' It’s a marker of distance. An admission that we're on the outside looking in."
+        } ],
+        "visual_description" : "A surreal, vertical composition emphasizing the literal and metaphorical height of wealth. Row: The Gated Enclave"
+      }, {
+        "row_number" : 2,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "A sleek, silent hover-car glides over the wall. Below, people in the mud watch it with a mix of hunger and hatred.",
+          "dialog" : [ ]
+        }, {
+          "frame_number" : 2,
+          "description" : "Close-up of Elias’s hand gripping his mop handle.",
+          "dialog" : [ ],
+          "caption" : "In a meritocracy, you climb. In this world, you have to hack the hierarchy. You have to leap."
+        } ],
+        "visual_description" : "The Transgression"
+      }, {
+        "row_number" : 3,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "A holographic news feed shows a \"lottery winner\" in a gaudy, oversized mansion, looking uncomfortable.",
+          "dialog" : [ ]
+        }, {
+          "frame_number" : 2,
+          "description" : "Elias turns away from the wall, heading back into the dark alleys.",
+          "dialog" : [ ],
+          "caption" : "The system punishes the speed it encourages. The 'quick' gain is a transgression. A glitch in the social code."
+        } ],
+        "visual_description" : "The Nouveau Riche"
+      } ]
+    }, {
+      "page_number" : 4,
+      "rows" : [ {
+        "row_number" : 1,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "Elias walks down a street where the pavement has turned into a giant roulette wheel. People are throwing \"Time\" (represented by glowing pocket watches) onto the numbers.",
+          "dialog" : [ ]
+        }, {
+          "frame_number" : 2,
+          "description" : "A man loses his watch; it shatters. He looks aged instantly.",
+          "dialog" : [ ],
+          "caption" : "'Quick' is just a euphemism for luck. To get a fortune... you need good fortune."
+        } ],
+        "visual_description" : "The city begins to warp into a surreal casino. Streets become felt-topped tables; streetlights become slot machine levers. Row: The Fortune Tautology"
+      }, {
+        "row_number" : 2,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "The Promoter is the dealer at a high-stakes table. He’s dealing cards that are blank until they hit the table.",
+          "dialog" : [ {
+            "character" : "The Promoter",
+            "text" : "High variance, high reward! Who needs a forty-year career when you have forty seconds?"
+          } ]
+        }, {
+          "frame_number" : 2,
+          "description" : "Elias stands behind the players, seeing the \"Exit Liquidity\" written on their backs in invisible neon ink.",
+          "dialog" : [ ]
+        } ],
+        "visual_description" : "The Hidden Variable"
+      }, {
+        "row_number" : 3,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "A winner at the table rakes in a pile of glowing watches. Around him, dozens of people collapse in the shadows, their \"Time\" drained.",
+          "dialog" : [ ]
+        }, {
+          "frame_number" : 2,
+          "description" : "Close-up of Elias’s eyes reflecting the flashing \"JACKPOT\" sign.",
+          "dialog" : [ ],
+          "caption" : "For one to get rich quick, thousands must lose quick. The winner’s fortune is just the losers' life-blood, transferred."
+        } ],
+        "visual_description" : "The Zero-Sum Game"
+      } ]
+    }, {
+      "page_number" : 5,
+      "rows" : [ {
+        "row_number" : 1,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "A group of workers who should be protesting a \"Factory Closing\" sign are instead huddled around a single smartphone, cheering a price chart.",
+          "dialog" : [ ]
+        }, {
+          "frame_number" : 2,
+          "description" : "Their faces are featureless, replaced by the glowing UI of a trading app.",
+          "dialog" : [ ],
+          "caption" : "The citizen is dead. Long live the gambler."
+        } ],
+        "visual_description" : "The 'Gambler' identity takes over. The city is filled with people staring at screens, ignoring the physical decay around them. Row: The Transformation"
+      }, {
+        "row_number" : 2,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "Elias mops around a man who is frantically refreshing a portfolio while a bridge crumbles in the background.",
+          "dialog" : [ ]
+        }, {
+          "frame_number" : 2,
+          "description" : "Elias tries to speak to him, but the man doesn't look up.",
+          "dialog" : [ {
+            "character" : "Elias",
+            "text" : "The water's rising, friend."
+          }, {
+            "character" : "Gambler",
+            "text" : "Not now... I'm waiting for the bounce. I've got alpha."
+          } ]
+        } ],
+        "visual_description" : "Political Inertia"
+      }, {
+        "row_number" : 3,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "A woman sits on the ground, head in her hands, her screen showing \"LIQUIDATED.\"",
+          "dialog" : [ ]
+        }, {
+          "frame_number" : 2,
+          "description" : "She isn't looking at the Promoter or the system. She’s looking at her own hands.",
+          "dialog" : [ ],
+          "caption" : "If you lose, it’s your fault. Your lack of hustle. Your bad timing. Luck has no lobby. You can't unionize against chance."
+        } ],
+        "visual_description" : "The Self-Blame Loop"
+      } ]
+    }, {
+      "page_number" : 6,
+      "rows" : [ {
+        "row_number" : 1,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "A giant holographic screen towers over the city square. It shows a golden tumbler filled with numbered balls. Thousands of people watch in total silence.",
+          "dialog" : [ ]
+        }, {
+          "frame_number" : 2,
+          "description" : "Elias stands at the edge of the crowd, a small, dark figure against the overwhelming light.",
+          "dialog" : [ ],
+          "caption" : "The Colosseum Effect. The big win validates the cage."
+        } ],
+        "visual_description" : "A massive, stadium-like atmosphere in the center of the city. The \"Secular Liturgy\" of the lottery. Row: The Spectacle"
+      }, {
+        "row_number" : 2,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "The screen explodes in light. A number is revealed. A \"Janitor from Ohio\" (looking much like a younger Elias) is shown screaming in joy.",
+          "dialog" : [ ]
+        }, {
+          "frame_number" : 2,
+          "description" : "The crowd erupts in a terrifying, desperate cheer.",
+          "dialog" : [ ],
+          "caption" : "The broadcast is the product. It’s the ritual of hope that keeps the extraction voluntary."
+        } ],
+        "visual_description" : "The Secular Liturgy"
+      }, {
+        "row_number" : 3,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "Elias turns his back on the celebration, walking down a dark, quiet alleyway. The neon glow fades behind him.",
+          "dialog" : [ ]
+        }, {
+          "frame_number" : 2,
+          "description" : "A wide shot of the city. The bright, fake light of the lottery screen is a tiny dot in a vast, crumbling darkness.",
+          "dialog" : [ ],
+          "caption" : "A society that relies on spectacle to maintain belief is a society in decline. The smoke is everywhere. But the fire... the fire went out a long time ago."
+        }, {
+          "frame_number" : 3,
+          "description" : "Elias’s mop bucket sits alone in the foreground. In the reflection of the dirty water, the word \"LUCK\" flickers in neon.",
+          "dialog" : [ ]
+        } ],
+        "visual_description" : "The Final Analysis"
+      } ]
+    } ]
+  },
+  "characterImages" : {
+    "Elias" : "char_Elias.png",
+    "The Promoter" : "char_The_Promoter.png"
+  },
+  "rowImages" : {
+    "1_1" : "page_1_row_1.png",
+    "1_2" : "page_1_row_2.png",
+    "1_3" : "page_1_row_3.png",
+    "2_1" : "page_2_row_1.png",
+    "2_2" : "page_2_row_2.png",
+    "2_3" : "page_2_row_3.png",
+    "3_1" : "page_3_row_1.png",
+    "3_2" : "page_3_row_2.png",
+    "3_3" : "page_3_row_3.png",
+    "4_1" : "page_4_row_1.png",
+    "4_2" : "page_4_row_2.png",
+    "4_3" : "page_4_row_3.png",
+    "5_1" : "page_5_row_1.png",
+    "5_2" : "page_5_row_2.png",
+    "5_3" : "page_5_row_3.png",
+    "6_1" : "page_6_row_1.png",
+    "6_2" : "page_6_row_2.png",
+    "6_3" : "page_6_row_3.png"
+  }
+}

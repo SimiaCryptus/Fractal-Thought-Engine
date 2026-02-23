@@ -1,0 +1,48 @@
+title: 'Relativistic Knot Theory: Topology in the Minkowski Metric Sheet'
+layout: post
+date: '"2025-12-12T00:00:00.000Z"'
+last_modified: '"2025-12-12T10:00:00.000Z"'
+category: projects
+subcategory: Engineering & Formal Systems
+featured_image: main.png
+tags:
+  - Topology
+  - Spacetime
+  - Minkowski Geometry
+  - Knot Theory
+  - Visualization
+keywords:
+  - relativistic knot theory
+  - minkowski metric
+  - distance matrix
+  - causal structure
+  - topology
+  - worldlines
+  - tensorflow.js
+status: finished
+last_thought_date: '"2025-11-30T00:00:00.000Z"'
+thought_generation: 1
+difficulty_level: research
+reading_time_minutes: 15
+document_type: analysis
+thinking_style: structural
+consciousness_level: meta
+engagement_type: exploratory
+reader_participation: interactive
+cognitive_load: high
+description: >-
+  Explores a novel formulation of knot theory using Minkowski distance matrices,
+  revealing how causal structure encodes topological crossings as unavoidable
+  tangencies in the metric sheet.
+excerpt: >-
+  Relativistic knot theory usually studies worldlines in spacetime. But by
+  analyzing the pairwise Minkowski distance matrix of a knot, we discover a
+  deeper invariant: the knot topology is encoded in the "metric sheet," where
+  crossings manifest as forced tangencies with the light cone.
+meta_title: 'Minkowski Knots: A New Lens on Relativistic Topology'
+meta_description: >-
+  An analysis of relativistic knot theory through the lens of pairwise Minkowski
+  distance matrices, distinguishing between curve-level freedom and sheet-level
+  constraints.
+related_documents:
+  - _posts/projects/2025-11-29-nn-layer-20251128141956.md

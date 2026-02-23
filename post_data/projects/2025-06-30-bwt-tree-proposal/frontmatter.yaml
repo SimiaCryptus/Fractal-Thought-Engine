@@ -1,0 +1,119 @@
+title: Entropy-Optimized Permutation Trees for Bijective String Transforms
+layout: post
+date: '"2025-06-30T00:00:00.000Z"'
+last_modified: '"2025-06-30T12:00:00.000Z"'
+category: projects
+subcategory: Engineering & Formal Systems
+tags:
+  - Algorithms
+  - Data Structures
+  - Compression
+  - Proposal
+keywords:
+  - burrows-wheeler-transform
+  - entropy-optimization
+  - permutation-trees
+  - string-algorithms
+  - compression
+  - bijective-transforms
+status: draft
+thought_generation: 1
+last_thought_date: '"2025-06-30T00:00:00.000Z"'
+authors:
+  - Human-AI Collaboration
+  - AI
+  - Human
+collaboration_type: framework_development
+human_contribution: 70
+ai_contribution: 30
+related_documents:
+  - _posts/projects/2025-11-20-bwt-fulltext-spec.md
+  - _posts/projects/2025-11-20-bitpacked-mmap-lib.md
+  - _posts/projects/2025-11-20-dag-patch-spec.md
+cross_synthesis_with:
+  - ../learning/2025-06-30-compression-classification-paper.md
+  - ../portfolio/2025-06-30-ngram-paper.md
+conceptual_threads:
+  - information_theory
+  - data_structures
+  - compression_algorithms
+  - entropy_optimization
+mathematical_frameworks:
+  - information_theory
+  - permutation_algebra
+  - optimal_coding_theory
+reading_order: 1
+difficulty_level: advanced
+reading_time_minutes: 25
+prerequisites:
+  - data_structures
+  - algorithms
+  - information-theory
+  - string_processing
+document_type: research_paper
+thinking_style: analytical
+consciousness_level: collaborative
+has_mathematics: true
+has_code: true
+has_diagrams: false
+has_interactive_elements: false
+is_self_modifying: false
+responds_to_attention: false
+engagement_type: analytical
+reader_participation: active
+cognitive_load: intense
+description: >-
+  Novel tree-based data structure integrating optimal coding theory with
+  permutation algebra for entropy-adaptive string processing.
+excerpt: >-
+  We propose an Entropy-Optimized Permutation Tree (EOPT) that embeds
+  information-theoretic principles directly into tree structure, enabling
+  simultaneous optimal compression and efficient query processing through 
+  explicit representation of interrelated permutation mappings.
+meta_description: >-
+  Research proposal for entropy-optimized permutation trees that integrate
+  Burrows-Wheeler Transform with information theory for efficient string
+  processing and compression
+meta_keywords: >-
+  entropy optimization, permutation trees, burrows-wheeler transform, data
+  structures, compression algorithms, information theory
+schema_type: ScholarlyArticle
+schema_headline: Entropy-Optimized Permutation Trees for Bijective String Transforms
+schema_author: Human-AI Collaboration
+schema_date_published: '"2025-06-30T00:00:00.000Z"'
+schema_word_count: 2500
+schema_reading_time: PT25M
+preload_resources:
+  - /assets/css/research-paper.css
+  - /assets/js/code-highlight.js
+prefetch_resources:
+  - bwt-tree-diagram.png
+dns_prefetch:
+  - 'https://scholar.google.com'
+  - 'https://research-gate.net'
+robots: 'index,follow'
+priority: '0.8'
+changefreq: monthly
+is_featured: false
+is_cornerstone: false
+is_gateway: false
+is_synthesis: true
+auto_update: false
+update_frequency: manual
+version_tracking: true
+allows_comments: true
+allows_collaboration: true
+og_type: article
+og_locale: en_US
+og_site_name: Fractal Thought Engine
+canonical_url: 'https://fractalthoughtengine.com/projects/bwt-tree-proposal'
+content_rating: general
+content_rating_reason: Academic research paper with technical content
+content_language: en
+geo_region: Global
+faq_schema: true
+how_to_schema: true
+breadcrumb_schema: true
+review_schema: false
+geo_placename: Global Research Space
+geo_position: 0.0;0.0

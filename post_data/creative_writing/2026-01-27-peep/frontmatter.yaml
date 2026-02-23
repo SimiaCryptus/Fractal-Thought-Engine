@@ -1,0 +1,231 @@
+# Core Metadata
+title: "Little Bo Peep: The Flock of Fury"
+layout: "post"
+date: 2026-01-27
+last_modified: 2026-01-27 00:00:00
+
+# Content Classification
+category: creative_writing
+subcategory: "Dark Fantasy Comic Script"
+tags:
+  - Creative-Writing
+  - Speculative-Fiction
+  - Dark-Fantasy
+  - Comic-Book-Script
+  - Character-Driven-Narrative
+  - Emotional-Storytelling
+  - Visual-Narrative
+  - Transformation-Arc
+keywords:
+  - comic book
+  - dark fantasy
+  - character transformation
+  - emotional narrative
+  - visual storytelling
+  - Bo Peep
+  - reimagining
+  - horror elements
+
+# Content Status and Evolution
+status: "stable"
+last_thought_date: 2026-01-27
+thought_generation: 1
+
+# Document Relationships & Navigation
+parent_document: null
+child_documents: []
+related_documents: []
+
+# Navigation Hints
+reading_order: null
+difficulty_level: "accessible"
+reading_time_minutes: 12
+estimated_viewing_time_minutes: 25
+
+# Content Characteristics
+document_type: "creative_writing"
+thinking_style: "intuitive"
+consciousness_level: "collaborative"
+
+# Engagement Metadata
+engagement_type: "contemplative"
+reader_participation: "passive"
+cognitive_load: "moderate"
+
+# Discovery & SEO
+description: "A dark fantasy reimagining of Little Bo Peep as a comic book script. A 19-year-old shepherdess must become a warrior when her beloved flock is corrupted by a mysterious curse, forcing her to confront the creatures they've become and the darkness that claimed them."
+excerpt: "Little Bo Peep has lost her sheep. And she knows exactly where to find them. A dark fantasy comic book script featuring a shepherdess forced to become a warrior, an ancient magical blade, and the emotional weight of destroying creatures she once loved."
+featured_image: "main.png"
+
+# SEO Meta Tags
+meta_title: "Little Bo Peep: The Flock of Fury - Dark Fantasy Comic Script"
+meta_description: "A dark fantasy comic book script reimagining Little Bo Peep as a warrior shepherdess facing her corrupted flock. Features character transformation, magical elements, and emotional storytelling."
+meta_keywords: "comic book script, dark fantasy, Little Bo Peep, creative writing, character transformation, speculative fiction"
+
+# Open Graph (Social Media)
+og_title: "Little Bo Peep: The Flock of Fury"
+og_description: "A dark fantasy comic book script where a shepherdess becomes a warrior to save her cursed flock"
+og_type: "article"
+og_locale: "en_US"
+og_site_name: "Fractal Thought Engine"
+
+# Schema.org Structured Data
+schema_type: "CreativeWork"
+schema_headline: "Little Bo Peep: The Flock of Fury - A Dark Fantasy Comic Script"
+schema_author: "Andrew"
+schema_publisher: "Fractal Thought Engine"
+schema_date_published: 2026-01-27
+schema_date_modified: 2026-01-27
+schema_image: "/assets/images/bo-peep-flock-of-fury-schema.png"
+schema_word_count: 3847
+schema_reading_time: "PT12M"
+
+# Advanced SEO
+canonical_url: "https://fractalthoughtengine.com/creative-writing/bo-peep-flock-of-fury"
+alternate_urls: []
+hreflang: []
+
+# Search Engine Directives
+robots: "index,follow"
+googlebot: "index,follow"
+bingbot: "index,follow"
+
+# Content Classification for Search
+content_rating: "mature"
+content_language: "en"
+geo_region: "Global"
+geo_placename: null
+geo_position: null
+
+# Indexing Control
+priority: 0.8
+changefreq: "monthly"
+sitemap_exclude: false
+search_exclude: false
+
+# Rich Snippets Enhancement
+faq_schema: false
+how_to_schema: false
+breadcrumb_schema: true
+review_schema: false
+rating_value: null
+rating_count: null
+
+# Performance and Technical SEO
+preload_resources:
+  - "/assets/images/bo-peep-flock-of-fury-featured.png"
+  - "/assets/images/char_Bo_Peep.png"
+  - "/assets/images/char_Bellwether.png"
+prefetch_resources:
+  - "/assets/images/page_1_row_1.png"
+  - "/assets/images/page_1_row_2.png"
+  - "/assets/images/page_1_row_3.png"
+  - "/assets/images/page_1_row_4.png"
+dns_prefetch: []
+
+# Discoverability
+is_featured: true
+is_cornerstone: false
+is_gateway: true
+is_synthesis: false
+
+# Creative Work Specific Metadata
+work_type: "comic_book_script"
+narrative_structure: "five_act_structure"
+genre: "dark_fantasy"
+subgenre:
+  - "horror"
+  - "action"
+  - "emotional_drama"
+themes:
+  - "transformation"
+  - "sacrifice"
+  - "love_and_loss"
+  - "duty_vs_emotion"
+  - "corruption"
+  - "redemption"
+
+# Character Information
+characters:
+  - name: "Bo Peep"
+    role: "protagonist"
+    age: 19
+    description: "Shepherdess turned warrior"
+    arc: "innocent_to_determined_fighter"
+  - name: "Bellwether"
+    role: "antagonist"
+    description: "Corrupted ram leader, Bo's beloved first lamb"
+    arc: "beloved_to_corrupted_to_redeemed"
+  - name: "The Corrupted Flock"
+    role: "antagonist"
+    description: "Once gentle sheep, now twisted creatures"
+  - name: "The Shepherd's Wrath"
+    role: "magical_artifact"
+    description: "Ancient blade disguised as walking staff"
+
+# Visual Elements
+visual_format: "comic_book_script"
+page_count: 5
+panel_count: 48
+includes_character_designs: true
+includes_visual_references: true
+includes_color_palette: false
+
+# Narrative Elements
+narrative_pov: "third_person_limited"
+narrative_voice: "captions_and_dialogue"
+tone: "dark_dramatic"
+pacing: "action_driven"
+emotional_arc: "grief_to_determination_to_acceptance"
+
+# Story Structure
+story_beats:
+  - "discovery_of_corruption"
+  - "first_encounter"
+  - "weapon_awakening"
+  - "battle_sequence"
+  - "final_confrontation"
+  - "emotional_resolution"
+
+# Content Warnings
+content_warnings:
+  - "violence"
+  - "blood"
+  - "emotional_trauma"
+  - "death_of_beloved_creatures"
+
+# Related Works
+inspired_by: "Little Bo Peep nursery rhyme"
+inspiration_for: []
+similar_works:
+  - "dark_fantasy_reimaginings"
+  - "character_driven_action_narratives"
+
+# Metadata for Serialization
+is_serialized: false
+is_part_of_series: false
+series_name: null
+series_position: null
+
+# Collaboration Metadata
+collaborators: []
+attribution: "Original concept and script"
+license: "Creative Commons Attribution-NonCommercial-ShareAlike 4.0"
+
+# Audience Targeting
+target_audience:
+  - "creative_writing_enthusiasts"
+  - "comic_book_fans"
+  - "dark_fantasy_readers"
+  - "character_study_appreciators"
+  - "visual_narrative_enthusiasts"
+
+# Performance Metrics
+expected_engagement: "high"
+shareability_score: "high"
+viral_potential: "moderate"
+
+# Additional Metadata
+format_notes: "Comic book script with detailed panel descriptions, character designs, and visual references"
+production_status: "script_complete"
+next_steps: "visual_production_ready"

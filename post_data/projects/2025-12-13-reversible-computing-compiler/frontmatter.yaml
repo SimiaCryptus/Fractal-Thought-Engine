@@ -1,0 +1,48 @@
+title: 'Project: Entropy-Aware Reversible Computing Compiler'
+layout: post
+date: '2025-12-13T00:00:00.000Z'
+last_modified: '2025-12-13T00:00:00.000Z'
+category: projects
+subcategory: Engineering & Formal Systems
+tags:
+  - Thermodynamics
+  - Quantum Computing
+  - Compiler Design
+  - Reversible Logic
+  - Information Theory
+keywords:
+  - reversible computing
+  - Landauer limit
+  - Fredkin gate
+  - Toffoli gate
+  - entropy minimization
+  - garbage bits
+  - thermodynamic computing
+status: concept
+last_thought_date: '2025-12-13T00:00:00.000Z'
+thought_generation: 1
+difficulty_level: research
+reading_time_minutes: 14
+document_type: technical_proposal
+thinking_style: analytical
+consciousness_level: meta
+engagement_type: exploratory
+reader_participation: active
+cognitive_load: high
+description: >-
+  A compiler framework for reversible logic gates (Fredkin/Toffoli) that
+  minimizes thermodynamic cost by tracking entropy generation and optimizing
+  garbage bit un-computation.
+excerpt: >-
+  Standard computing erases bits, generating heat at Landauer's limit. This
+  project builds a compiler that enforces information conservation, tracks
+  garbage bits as entropy cost, and optimizes for thermodynamic efficiency
+  rather than clock cycles.
+meta_title: Entropy-Aware Reversible Computing Compiler | Project
+meta_description: >-
+  A compiler framework targeting reversible logic gates to minimize
+  thermodynamic computation cost through entropy tracking and garbage bit
+  optimization.
+related_documents:
+  - _posts/projects/2025-11-30-circuit-designer.md
+  - _posts/projects/2025-12-12-minkowski-knots.md

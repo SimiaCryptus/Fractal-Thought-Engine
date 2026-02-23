@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Einstein Tile (The Hat) Lattice Lab</title>
+    <style>
+        :root {
+            --bg: #1a1a1a;
+            --panel: #2a2a2a;
+            --text: #e0e0e0;
+            --accent: #00d2ff;
+            --highlight: #ffaa00;
+        }
+
+        body {
+            margin: 0;
+            overflow: hidden;
+            background-color: var(--bg);
+            color: var(--text);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            user-select: none;
+        }
+
+        canvas {
+            display: block;
+        }
+
+        #controls {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            width: 280px;
+            background-color: rgba(42, 42, 42, 0.9);
+            backdrop-filter: blur(5px);
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+            border: 1px solid #444;
+        }
+
+        h1 {
+            margin: 0 0 15px 0;
+            font-size: 18px;
+            color: var(--accent);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .control-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: flex;
+            justify-content: space-between;
+            font-size: 12px;
+            margin-bottom: 5px;
+            color: #aaa;
+        }
+
+        input[type="range"] {
+            width: 100%;
+            cursor: pointer;
+            accent-color: var(--accent);
+        }
+
+        .checkbox-row {
+            display: flex;
+            align-items: center;
+            margin-bottom: 8px;
+            cursor: pointer;
+        }
+
+        .checkbox-row input {
+            margin-right: 10px;
+            accent-color: var(--accent);
+        }
+
+        .checkbox-row span {
+            font-size: 13px;
+        }
+
+        .info {
+            margin-top: 15px;
+            font-size: 11px;
+            color: #666;
+            line-height: 1.4;
+            border-top: 1px solid #444;
+            padding-top: 10px;
+        }
+
+        button {
+            background: var(--panel);
+            border: 1px solid var(--accent);
+            color: var(--accent);
+            padding: 8px 12px;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+            margin-top: 5px;
+            transition: all 0.2s;
+        }
+
+        button:hover {
+            background: var(--accent);
+            color: var(--bg);
+        }
+    </style>
+</head>
+<body>
+
+<div id="controls">
+    <h1>Einstein Lattice Lab</h1>
+
+    <div class="control-group">
+        <label>Tile Scale <span id="val-scale">30</span></label>
+        <input type="range" id="inp-scale" min="10" max="100" value="30">
+    </div>
+
+    <div class="control-group">
+        <label>Grid Spacing <span id="val-spacing">1.0</span></label>
+        <input type="range" id="inp-spacing" min="0.5" max="3.0" step="0.05" value="1.0">
+    </div>
+
+    <div class="control-group">
+        <label>Global Rotation <span id="val-rot">0°</span></label>
+        <input type="range" id="inp-rot" min="0" max="360" value="0">
+    </div>
+
+    <div class="control-group">
+        <label class="checkbox-row">
+            <input type="checkbox" id="inp-outline" checked>
+            <span>Show Outlines</span>
+        </label>
+        <label class="checkbox-row">
+            <input type="checkbox" id="inp-kites">
+            <span>Show Internal Kites</span>
+        </label>
+    </div>
+
+    <button id="btn-reset">Reset View</button>
+    <button id="btn-clear-sel">Clear Selection</button>
+
+    <div class="info">
+        <strong>Interaction:</strong><br>
+        • Click tiles to toggle highlight.<br>
+        • Drag to pan.<br>
+        • Scroll to zoom.<br>
+        <br>
+        <em>Note: This renders a patch of the canonical aperiodic Einstein (Hat) tiling using metatile
+            substitution.</em>
+    </div>
+</div>
+
+<canvas id="canvas"></canvas>
+
+<script>
+    /**
+     * Einstein Tile (The Hat) Geometry
+     * Constructed using the standard turn sequence for the equilateral polygon.
+     * Turn sequence: L, R, R, R, L, R, R, L, R, R, R, L, R
+     * (Where L = +60deg, R = -60deg)
+     */
+
+    const canvas = document.getElementById('canvas');
+    const ctx = canvas.getContext('2d');
+
+    // State
+    const state = {
+        scale: 15,
+        spacing: 1.0, // Multiplier for grid distance
+        rotation: 0,  // Degrees
+        showOutline: true,
+        showKites: false,
+        offsetX: 0,
+        offsetY: 0,
+        tiles: [], // Stores {q, r, baseX, baseY, rot, reflected, selected}
+        isDragging: false,
+        lastMouse: {x: 0, y: 0}
+    };
+
+    // Geometry Constants
+    const SQRT3 = Math.sqrt(3);
+    const HAT_TURNS = [60, -60, -60, -60, 60, -60, -60, 60, -60, -60, -60, 60, -60];
+
+    // Precompute Hat Polygon (Normalized to scale 1)
+    function generateHatPath() {
+        const path = new Path2D();
+        let x = 0, y = 0;
+        let angle = 0;
+
+        // Points start at 0,0
+        let points = [{x: 0, y: 0}];
+
+        for (let turn of HAT_TURNS) {
+            // Move forward 1 unit
+            x += Math.cos(angle * Math.PI / 180);
+            y += Math.sin(angle * Math.PI / 180);
+            points.push({x, y});
+            // Turn
+            angle += turn;
+        }
+
+        // Build Path
+        path.moveTo(points[0].x, points[0].y);
+        for (let i = 1; i < points.length; i++) {
+            path.lineTo(points[i].x, points[i].y);
+        }
+        path.closePath();
+
+        return {path, points};
+    }
+
+    const hatGeo = generateHatPath();
+
+    // Internal Kite Geometry (Approximation for visual flair)
+    // The Hat is composed of 8 kites (deltoids).
+    // We construct lines connecting specific vertices to the center area.
+    function drawInternalKites(ctx, scale) {
+        // This is a stylistic representation connecting vertices to form the kite-like structure
+        // Real kite decomposition is complex, we'll draw a "spiderweb" to the centroid for effect
+        // or connect specific vertices based on the kite grid.
+        // For this demo, we'll connect every other vertex to a central-ish point to hint at structure.
+        const p = hatGeo.points;
+        ctx.beginPath();
+        // A known decomposition connects specific vertices.
+        // Let's just draw a simple geometric fill pattern.
+        ctx.moveTo(p[0].x * scale, p[0].y * scale);
+        ctx.lineTo(p[4].x * scale, p[4].y * scale);
+        ctx.lineTo(p[8].x * scale, p[8].y * scale);
+        ctx.lineTo(p[11].x * scale, p[11].y * scale);
+        ctx.lineTo(p[0].x * scale, p[0].y * scale);
+        ctx.strokeStyle = "rgba(255, 255, 255, 0.1)";
+        ctx.lineWidth = 1;
+        ctx.stroke();
+    }
+
+    // Initialization
+    function resize() {
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+        state.offsetX = canvas.width / 2;
+        state.offsetY = canvas.height / 2;
+        generateGrid();
+        draw();
+    }
+
+
+    // Metatile Substitution Rules (Expansion factor sqrt(3))
+    // Types: 0=T, 1=H, 2=P, 3=F
+    const META_RULES = {
+        0: [{type: 1, q: 0, r: 0, rot: 0}],
+        1: [
+            {type: 1, q: 0, r: 0, rot: 0},
+            {type: 2, q: 0, r: 1, rot: 2},
+            {type: 3, q: 1, r: 0, rot: 2},
+            {type: 2, q: 1, r: -1, rot: 0}
+        ],
+        2: [
+            {type: 1, q: 0, r: 0, rot: 0},
+            {type: 2, q: 0, r: 1, rot: 5},
+            {type: 0, q: 1, r: 0, rot: 0}
+        ],
+        3: [
+            {type: 1, q: 0, r: 0, rot: 0},
+            {type: 2, q: 0, r: 1, rot: 5},
+            {type: 0, q: 1, r: 0, rot: 0}
+        ]
+    };
+
+    // Decomposition into Hats (q, r, rot, reflected)
+    const META_DECOMP = {
+        0: [{q: 0, r: 0, rot: 0, ref: false}],
+        1: [
+            {q: 0, r: 0, rot: 0, ref: false},
+            {q: 1, r: -1, rot: 2, ref: true},
+            {q: 1, r: 0, rot: 4, ref: false}
+        ],
+        2: [
+            {q: 0, r: 0, rot: 0, ref: false},
+            {q: 0, r: 1, rot: 5, ref: true}
+        ],
+        3: [
+            {q: 0, r: 0, rot: 0, ref: false},
+            {q: 0, r: 1, rot: 5, ref: true}
+        ]
+    };
+
+    function rotateHex(q, r, rot) {
+        let q2 = q, r2 = r;
+        for (let i = 0; i < rot; i++) {
+            let tmp = q2;
+            q2 = -r2;
+            r2 = tmp + r2;
+        }
+        return {q: q2, r: r2};
+    }
+
+    function generateGrid() {
+        state.tiles = [];
+
+        // Generate Metatiles
+        let metatiles = [{type: 1, q: 0, r: 0, rot: 0}];
+        const level = 4;
+
+        for (let i = 0; i < level; i++) {
+            const next = [];
+            for (let m of metatiles) {
+                const rules = META_RULES[m.type];
+                for (let r of rules) {
+                    // Grid transform: Q' = 2Q + R, R' = -Q + R
+                    let pq = 2 * m.q + m.r;
+                    let pr = -m.q + m.r;
+
+                    const childOff = rotateHex(r.q, r.r, m.rot);
+                    next.push({
+                        type: r.type,
+                        q: pq + childOff.q,
+                        r: pr + childOff.r,
+                        rot: (m.rot + r.rot) % 6
+                    });
+                }
+            }
+            metatiles = next;
+        }
+
+        // Decompose to Hats
+        for (let m of metatiles) {
+            const decomp = META_DECOMP[m.type];
+            for (let d of decomp) {
+                const off = rotateHex(d.q, d.r, m.rot);
+                state.tiles.push({
+                    q: m.q + off.q,
+                    r: m.r + off.r,
+                    baseX: SQRT3 * ((m.q + off.q) + (m.r + off.r) / 2),
+                    baseY: 1.5 * (m.r + off.r),
+                    rot: ((m.rot + d.rot) % 6) * 60,
+                    reflected: d.ref,
+                    selected: false
+                });
+            }
+        }
+    }
+
+    // Drawing
+    function draw() {
+        // Clear background
+        ctx.fillStyle = '#1a1a1a';
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+        const rad = (state.rotation * Math.PI) / 180;
+        const spacing = state.spacing * 2.5; // Base multiplier
+
+        state.tiles.forEach(tile => {
+            ctx.save();
+
+            // 1. Translate to Grid Position (with Pan Offset)
+            // Apply spacing scale here
+            let tx = tile.baseX * state.scale * spacing + state.offsetX;
+            let ty = tile.baseY * state.scale * spacing + state.offsetY;
+
+            ctx.translate(tx, ty);
+
+            // 2. Apply Global Rotation
+            ctx.rotate(rad);
+
+            // 3. Apply Local Tile Rotation
+            ctx.rotate(tile.rot * Math.PI / 180);
+            if (tile.reflected) ctx.scale(-1, 1);
+
+            // 4. Draw Tile
+            ctx.beginPath();
+            // Scale the path
+            // We manually scale the points to create the path in current context
+            const s = state.scale;
+            const p = hatGeo.points;
+
+            ctx.moveTo(p[0].x * s, p[0].y * s);
+            for (let i = 1; i < p.length; i++) {
+                ctx.lineTo(p[i].x * s, p[i].y * s);
+            }
+            ctx.closePath();
+
+            // Fill
+            if (tile.selected) {
+                ctx.fillStyle = 'var(--highlight)';
+                ctx.shadowColor = 'var(--highlight)';
+                ctx.shadowBlur = 15;
+            } else {
+                // Subtle gradient based on position
+                const hue = (tile.q * 10 + tile.r * 10) % 360;
+                ctx.fillStyle = `hsla(${180 + (tile.q * 5)}, 60%, 25%, 0.8)`;
+                ctx.shadowBlur = 0;
+            }
+            ctx.fill();
+
+            // Stroke
+            if (state.showOutline) {
+                ctx.strokeStyle = tile.selected ? '#fff' : '#00d2ff';
+                ctx.lineWidth = tile.selected ? 2 : 1;
+                ctx.stroke();
+            }
+
+            // Internal Kites
+            if (state.showKites) {
+                drawInternalKites(ctx, s);
+            }
+
+            ctx.restore();
+        });
+    }
+
+    // Interaction Logic
+    function getMousePos(evt) {
+        const rect = canvas.getBoundingClientRect();
+        return {
+            x: evt.clientX - rect.left,
+            y: evt.clientY - rect.top
+        };
+    }
+
+    function handleInteraction(x, y, isClick) {
+        const rad = (state.rotation * Math.PI) / 180;
+        const spacing = state.spacing * 2.5;
+
+        // Reverse iterate to catch top-most tiles first
+        for (let i = state.tiles.length - 1; i >= 0; i--) {
+            const tile = state.tiles[i];
+
+            // Reconstruct transform to check point collision
+            // We use the inverse transform method or Path2D isPointInPath
+
+            let tx = tile.baseX * state.scale * spacing + state.offsetX;
+            let ty = tile.baseY * state.scale * spacing + state.offsetY;
+
+            // Create a temporary path for hit testing at the correct location
+            ctx.save();
+            ctx.translate(tx, ty);
+            ctx.rotate(rad + (tile.rot * Math.PI / 180));
+            if (tile.reflected) ctx.scale(-1, 1);
+
+            const s = state.scale;
+            const p = hatGeo.points;
+
+            ctx.beginPath();
+            ctx.moveTo(p[0].x * s, p[0].y * s);
+            for (let k = 1; k < p.length; k++) ctx.lineTo(p[k].x * s, p[k].y * s);
+            ctx.closePath();
+
+            const isHit = ctx.isPointInPath(x, y);
+            ctx.restore();
+
+            if (isHit) {
+                if (isClick) {
+                    tile.selected = !tile.selected;
+                    draw();
+                }
+                return true; // Handled
+            }
+        }
+        return false;
+    }
+
+    // Event Listeners
+    window.addEventListener('resize', resize);
+
+    canvas.addEventListener('mousedown', e => {
+        const pos = getMousePos(e);
+        state.lastMouse = pos;
+
+        // Check if we clicked a tile
+        const hit = handleInteraction(pos.x, pos.y, true);
+
+        if (!hit) {
+            state.isDragging = true;
+            canvas.style.cursor = 'grabbing';
+        }
+    });
+
+    canvas.addEventListener('mousemove', e => {
+        const pos = getMousePos(e);
+
+        if (state.isDragging) {
+            const dx = pos.x - state.lastMouse.x;
+            const dy = pos.y - state.lastMouse.y;
+            state.offsetX += dx;
+            state.offsetY += dy;
+            state.lastMouse = pos;
+            draw();
+        } else {
+            // Hover effect (cursor)
+            const hit = handleInteraction(pos.x, pos.y, false);
+            canvas.style.cursor = hit ? 'pointer' : 'default';
+        }
+    });
+
+    canvas.addEventListener('mouseup', () => {
+        state.isDragging = false;
+        canvas.style.cursor = 'default';
+    });
+
+    canvas.addEventListener('wheel', e => {
+        e.preventDefault();
+        const delta = Math.sign(e.deltaY) * -2;
+        let newScale = state.scale + delta;
+        if (newScale < 5) newScale = 5;
+        if (newScale > 150) newScale = 150;
+
+        // Zoom towards mouse would be better, but center zoom is simpler for single file
+        state.scale = newScale;
+        document.getElementById('inp-scale').value = state.scale;
+        document.getElementById('val-scale').innerText = state.scale;
+        draw();
+    }, {passive: false});
+
+    // UI Controls Binding
+    document.getElementById('inp-scale').addEventListener('input', (e) => {
+        state.scale = parseInt(e.target.value);
+        document.getElementById('val-scale').innerText = state.scale;
+        draw();
+    });
+
+    document.getElementById('inp-spacing').addEventListener('input', (e) => {
+        state.spacing = parseFloat(e.target.value);
+        document.getElementById('val-spacing').innerText = state.spacing;
+        draw();
+    });
+
+    document.getElementById('inp-rot').addEventListener('input', (e) => {
+        state.rotation = parseInt(e.target.value);
+        document.getElementById('val-rot').innerText = state.rotation + '°';
+        draw();
+    });
+
+    document.getElementById('inp-outline').addEventListener('change', (e) => {
+        state.showOutline = e.target.checked;
+        draw();
+    });
+
+    document.getElementById('inp-kites').addEventListener('change', (e) => {
+        state.showKites = e.target.checked;
+        draw();
+    });
+
+    draw();
+
+    document.getElementById('btn-reset').addEventListener('click', () => {
+        state.offsetX = canvas.width / 2;
+        state.offsetY = canvas.height / 2;
+        state.scale = 30;
+        state.rotation = 0;
+        state.spacing = 1.0;
+
+        // Reset inputs
+        document.getElementById('inp-scale').value = 30;
+        document.getElementById('val-scale').innerText = 30;
+        document.getElementById('inp-rot').value = 0;
+        document.getElementById('val-rot').innerText = '0°';
+        document.getElementById('inp-spacing').value = 1.0;
+        document.getElementById('val-spacing').innerText = 1.0;
+
+        draw();
+    });
+
+    document.getElementById('btn-clear-sel').addEventListener('click', () => {
+        state.tiles.forEach(t => t.selected = false);
+        draw();
+    });
+
+    // Start
+    resize();
+
+</script>
+</body>
+</html>

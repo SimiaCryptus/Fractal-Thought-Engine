@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stochastic Potential Flow | Neural Layer Demo</title>
+    <meta name="description"
+          content="Interactive demonstration of Langevin Dynamics and Gradient Descent on complex potential landscapes using TensorFlow.js">
+
+    <!-- TensorFlow.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@4.15.0/dist/tf.min.js"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Inter:wght@400;600;800&display=swap"
+          rel="stylesheet">
+
+    <style>
+        /* =========================================
+           1. Variables & Reset (Shared Theme)
+           ========================================= */
+        :root {
+            --bg-color: #0f1115;
+            --card-bg: #1a1d24;
+            --card-hover: #22262f;
+            --text-primary: #e0e0e0;
+            --text-secondary: #a0a0a0;
+            --text-muted: #6b7280;
+            --accent-primary: #bd00ff; /* Electric Purple */
+            --accent-secondary: #00d2ff; /* Cyan */
+            --accent-tertiary: #ff0055; /* Pink/Red */
+            --danger: #ff4a4a;
+            --border-color: #2a2e36;
+            --radius-sm: 4px;
+            --radius-md: 8px;
+            --font-mono: 'JetBrains Mono', monospace;
+            --font-sans: 'Inter', sans-serif;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            font-family: var(--font-sans);
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            overflow: hidden;
+        }
+
+        /* =========================================
+           2. Layout & Header
+           ========================================= */
+        header {
+            background-color: var(--card-bg);
+            border-bottom: 1px solid var(--border-color);
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 100;
+        }
+
+        h1 {
+            font-size: 1.25rem;
+            font-weight: 800;
+            letter-spacing: -0.02em;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .badge {
+            background: rgba(189, 0, 255, 0.1);
+            color: var(--accent-primary);
+            font-size: 0.7rem;
+            padding: 0.2rem 0.5rem;
+            border-radius: var(--radius-sm);
+            font-family: var(--font-mono);
+            border: 1px solid rgba(189, 0, 255, 0.2);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        main {
+            flex: 1;
+            padding: 1.5rem;
+            display: grid;
+            grid-template-columns: 320px 1fr;
+            gap: 1.5rem;
+            height: calc(100vh - 70px);
+            max-width: 1920px;
+            margin: 0 auto;
+            width: 100%;
+        }
+
+        @media (max-width: 1024px) {
+            main { grid-template-columns: 1fr; overflow-y: auto; }
+        }
+
+        /* =========================================
+           3. Controls Panel
+           ========================================= */
+        .panel {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-md);
+            padding: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            gap: 1.25rem;
+            overflow-y: auto;
+        }
+
+        .panel-header {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--text-muted);
+            font-weight: 700;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 0.5rem;
+        }
+
+        .control-group {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        label {
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 500;
+        }
+
+        .value-display {
+            font-family: var(--font-mono);
+            color: var(--accent-secondary);
+            font-size: 0.75rem;
+            background: rgba(0, 210, 255, 0.1);
+            padding: 0.1rem 0.4rem;
+            border-radius: var(--radius-sm);
+        }
+
+        select, input[type="range"], textarea {
+            width: 100%;
+            background: var(--bg-color);
+            color: var(--text-primary);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-sm);
+            font-family: var(--font-mono);
+            font-size: 0.8rem;
+        }
+        
+        select { padding: 0.5rem; cursor: pointer; }
+        textarea { padding: 0.5rem; resize: vertical; }
+
+        input[type="range"] {
+            -webkit-appearance: none;
+            background: transparent;
+            border: none;
+            cursor: pointer;
+        }
+
+        input[type="range"]::-webkit-slider-runnable-track {
+            width: 100%;
+            height: 4px;
+            background: var(--border-color);
+            border-radius: 2px;
+        }
+
+        input[type="range"]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            height: 14px;
+            width: 14px;
+            border-radius: 50%;
+            background: var(--accent-primary);
+            margin-top: -5px;
+            transition: transform 0.1s;
+        }
+
+        input[type="range"]::-webkit-slider-thumb:hover { transform: scale(1.2); }
+
+        .button-group {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0.5rem;
+            margin-top: 0.5rem;
+        }
+
+        button {
+            padding: 0.75rem;
+            border: none;
+            border-radius: var(--radius-sm);
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+            font-family: var(--font-mono);
+            font-size: 0.75rem;
+            text-transform: uppercase;
+        }
+
+        .btn-primary { background-color: var(--accent-primary); color: #fff; }
+        .btn-primary:hover { background-color: #d54dff; }
+        
+        .btn-secondary {
+            background-color: transparent;
+            border: 1px solid var(--border-color);
+            color: var(--text-primary);
+        }
+        .btn-secondary:hover { border-color: var(--text-secondary); background: rgba(255, 255, 255, 0.05); }
+
+        .math-block {
+            font-family: var(--font-mono);
+            font-size: 0.7rem;
+            background: #13151a;
+            padding: 0.75rem;
+            border-radius: var(--radius-sm);
+            margin-top: auto;
+            color: var(--text-secondary);
+            border: 1px solid var(--border-color);
+            line-height: 1.6;
+        }
+
+        /* =========================================
+           4. Visualization Area
+           ========================================= */
+        .viz-container {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            height: 100%;
+            position: relative;
+        }
+
+        .metrics-bar {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+            gap: 1rem;
+        }
+
+        .metric-card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            padding: 1rem;
+            border-radius: var(--radius-md);
+            display: flex;
+            flex-direction: column;
+            gap: 0.25rem;
+        }
+
+        .metric-label {
+            font-size: 0.65rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            font-weight: 700;
+        }
+
+        .metric-value {
+            font-family: var(--font-mono);
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--text-primary);
+        }
+
+        .canvas-wrapper {
+            flex: 1;
+            background-color: #000;
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-md);
+            position: relative;
+            overflow: hidden;
+        }
+
+        canvas {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+        
+        #bg-canvas { z-index: 1; }
+        #particle-canvas { z-index: 2; pointer-events: none; }
+
+        /* Loading Overlay */
+        #loading {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: var(--bg-color);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+            flex-direction: column;
+            gap: 1rem;
+            color: var(--text-secondary);
+            font-family: var(--font-mono);
+        }
+
+        .spinner {
+            width: 40px;
+            height: 40px;
+            border: 3px solid var(--border-color);
+            border-top-color: var(--accent-primary);
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin { to { transform: rotate(360deg); } }
+        .hidden { display: none !important; }
+    </style>
+</head>
+<body>
+
+<div id="loading">
+    <div class="spinner"></div>
+    <div>Initializing TensorFlow.js...</div>
+</div>
+
+<header>
+    <h1>
+        Stochastic Potential Flow
+        <span class="badge">v1.0</span>
+    </h1>
+</header>
+
+<main>
+    <!-- Controls Sidebar -->
+    <aside class="panel">
+        <div class="panel-header">Landscape</div>
+
+        <div class="control-group">
+            <label>Potential Function U(x,y)</label>
+            <select id="potential-select">
+                <option value="rastrigin">Rastrigin (Multi-modal)</option>
+                <option value="rosenbrock">Rosenbrock (Valley)</option>
+                <option value="ackley">Ackley (Trap)</option>
+                <option value="himmelblau">Himmelblau (4 Minima)</option>
+                <option value="custom">Custom Formula</option>
+            </select>
+        </div>
+
+        <div class="control-group" id="custom-group" style="display:none;">
+            <label>Custom JS (TF.js)</label>
+            <textarea id="custom-formula" rows="3">x.square().add(y.square()).mul(0.5)</textarea>
+            <div style="font-size: 0.6rem; color: var(--text-secondary);">
+                Vars: <code>x</code>, <code>y</code> (tensors). Return scalar tensor.
+            </div>
+        </div>
+
+        <div class="control-group">
+            <label>Zoom / Scale <span class="value-display" id="val-scale">4.0</span></label>
+            <input type="range" id="param-scale" min="1.0" max="10.0" step="0.1" value="4.0">
+        </div>
+
+        <div class="panel-header">Dynamics</div>
+
+        <div class="control-group">
+            <label>Particle Count <span class="value-display" id="val-n">200</span></label>
+            <input type="range" id="param-n" min="10" max="2000" step="10" value="200">
+        </div>
+
+        <div class="control-group">
+            <label>Learning Rate (η) <span class="value-display" id="val-lr">0.05</span></label>
+            <input type="range" id="param-lr" min="0.001" max="0.5" step="0.001" value="0.05">
+        </div>
+
+        <div class="control-group">
+            <label>Temperature (Noise) <span class="value-display" id="val-temp">0.1</span></label>
+            <input type="range" id="param-temp" min="0" max="2.0" step="0.01" value="0.1">
+        </div>
+
+        <div class="control-group">
+            <label>Momentum (β) <span class="value-display" id="val-momentum">0.8</span></label>
+            <input type="range" id="param-momentum" min="0" max="0.99" step="0.01" value="0.8">
+        </div>
+
+        <div class="panel-header">Visualization</div>
+        <div class="control-group">
+            <label>Trail Length <span class="value-display" id="val-trail">20</span></label>
+            <input type="range" id="param-trail" min="0" max="100" step="1" value="20">
+        </div>
+        
+        <div class="button-group">
+            <button id="btn-toggle" class="btn-primary">Pause</button>
+            <button id="btn-reset" class="btn-secondary">Respawn</button>
+        </div>
+
+        <div class="math-block">
+            <strong>Langevin Dynamics:</strong><br>
+            v_{t+1} = βv_t - η∇U(x_t) + √(2ητ)ξ<br>
+            x_{t+1} = x_t + v_{t+1}<br>
+            <span style="color:var(--text-muted)">Simulates Brownian motion in a potential field.</span>
+        </div>
+    </aside>
+
+    <!-- Visualization Area -->
+    <div class="viz-container">
+        <div class="metrics-bar">
+            <div class="metric-card">
+                <span class="metric-label">Avg Potential Energy</span>
+                <span class="metric-value" id="metric-energy" style="color: var(--accent-primary)">--</span>
+            </div>
+            <div class="metric-card">
+                <span class="metric-label">Kinetic Energy</span>
+                <span class="metric-value" id="metric-kinetic" style="color: var(--accent-secondary)">--</span>
+            </div>
+            <div class="metric-card">
+                <span class="metric-label">Global Min Found</span>
+                <span class="metric-value" id="metric-min" style="color: var(--accent-tertiary)">--</span>
+            </div>
+            <div class="metric-card">
+                <span class="metric-label">Step</span>
+                <span class="metric-value" id="metric-step">0</span>
+            </div>
+        </div>
+
+        <div class="canvas-wrapper" id="canvas-container">
+            <canvas id="bg-canvas"></canvas>
+            <canvas id="particle-canvas"></canvas>
+        </div>
+    </div>
+</main>
+
+<script type="module">
+    /**
+     * Stochastic Potential Flow
+     * Visualizes optimization algorithms on 2D surfaces using TF.js
+     */
+
+    const state = {
+        isRunning: true,
+        step: 0,
+        particles: null, // Tensor [N, 2]
+        velocity: null,  // Tensor [N, 2]
+        landscapeImage: null,
+        customFunc: null,
+        params: {
+            potential: 'rastrigin',
+            scale: 4.0, // Domain [-scale, scale]
+            n: 200,
+            lr: 0.05,
+            temp: 0.1,
+            momentum: 0.8,
+            trailLength: 20,
+            customFormula: 'x.square().add(y.square()).mul(0.5)'
+        },
+        metrics: { energy: 0, kinetic: 0, minVal: Infinity }
+    };
+
+    // DOM Elements
+    const els = {
+        bgCanvas: document.getElementById('bg-canvas'),
+        ptCanvas: document.getElementById('particle-canvas'),
+        loading: document.getElementById('loading'),
+        // Controls
+        potentialSelect: document.getElementById('potential-select'),
+        customGroup: document.getElementById('custom-group'),
+        customFormula: document.getElementById('custom-formula'),
+        scaleInput: document.getElementById('param-scale'),
+        nInput: document.getElementById('param-n'),
+        lrInput: document.getElementById('param-lr'),
+        tempInput: document.getElementById('param-temp'),
+        momentumInput: document.getElementById('param-momentum'),
+        trailInput: document.getElementById('param-trail'),
+        // Values
+        valScale: document.getElementById('val-scale'),
+        valN: document.getElementById('val-n'),
+        valLr: document.getElementById('val-lr'),
+        valTemp: document.getElementById('val-temp'),
+        valMomentum: document.getElementById('val-momentum'),
+        valTrail: document.getElementById('val-trail'),
+        // Buttons
+        btnToggle: document.getElementById('btn-toggle'),
+        btnReset: document.getElementById('btn-reset'),
+        // Metrics
+        metricEnergy: document.getElementById('metric-energy'),
+        metricKinetic: document.getElementById('metric-kinetic'),
+        metricMin: document.getElementById('metric-min'),
+        metricStep: document.getElementById('metric-step')
+    };
+
+    const bgCtx = els.bgCanvas.getContext('2d');
+    const ptCtx = els.ptCanvas.getContext('2d');
+
+    // --- Math Logic (TF.js) ---
+
+    // Define Potentials
+    function getPotential(xyTensor) {
+        const x = xyTensor.slice([0, 0], [-1, 1]);
+        const y = xyTensor.slice([0, 1], [-1, 1]);
+
+        switch (state.params.potential) {
+            case 'rastrigin':
+                // 10*2 + (x^2 - 10cos(2pi*x)) + (y^2 - 10cos(2pi*y))
+                return tf.add(
+                    tf.add(
+                        tf.sub(tf.square(x), tf.mul(10, tf.cos(tf.mul(2 * Math.PI, x)))),
+                        tf.sub(tf.square(y), tf.mul(10, tf.cos(tf.mul(2 * Math.PI, y))))
+                    ),
+                    20
+                );
+            case 'rosenbrock':
+                // (1-x)^2 + 100(y-x^2)^2
+                // Usually defined on x in [-2, 2], y in [-1, 3]
+                // We scale inputs slightly to fit the generic view
+                const a = 1;
+                const b = 100;
+                return tf.add(
+                    tf.square(tf.sub(a, x)),
+                    tf.mul(b, tf.square(tf.sub(y, tf.square(x))))
+                ).div(200); // Scale down for visualization
+            case 'ackley':
+                // -20exp(-0.2sqrt(0.5(x^2+y^2))) - exp(0.5(cos(2pi*x)+cos(2pi*y))) + e + 20
+                const r = tf.sqrt(tf.mul(0.5, tf.add(tf.square(x), tf.square(y))));
+                const term1 = tf.mul(-20, tf.exp(tf.mul(-0.2, r)));
+                const term2 = tf.exp(tf.mul(0.5, tf.add(tf.cos(tf.mul(2*Math.PI, x)), tf.cos(tf.mul(2*Math.PI, y)))));
+                return tf.add(tf.add(term1, tf.neg(term2)), 20 + Math.E);
+            case 'himmelblau':
+                // (x^2+y-11)^2 + (x+y^2-7)^2
+                return tf.add(
+                    tf.square(tf.sub(tf.add(tf.square(x), y), 11)),
+                    tf.square(tf.sub(tf.add(x, tf.square(y)), 7))
+                ).div(100);
+            case 'custom':
+                try {
+                    if (!state.customFunc) {
+                        state.customFunc = new Function('x', 'y', 'tf', 'return ' + state.params.customFormula);
+                    }
+                    return state.customFunc(x, y, tf);
+                } catch(e) {
+                    return tf.add(tf.square(x), tf.square(y)); // Fallback
+                }
+            default:
+                return tf.add(tf.square(x), tf.square(y));
+        }
+    }
+
+    // Pre-compile gradient function
+    const gradFn = tf.grad(getPotential);
+
+    function initParticles() {
+        if (state.particles) state.particles.dispose();
+        if (state.velocity) state.velocity.dispose();
+
+        const range = state.params.scale;
+        // Random uniform initialization
+        state.particles = tf.randomUniform([state.params.n, 2], -range, range).variable();
+        state.velocity = tf.zeros([state.params.n, 2]).variable();
+        
+        state.step = 0;
+        state.metrics.minVal = Infinity;
+        
+        // Clear trails
+        state.trails = Array(state.params.n).fill().map(() => []);
+    }
+
+    function step() {
+        if (!state.isRunning) return;
+
+        tf.tidy(() => {
+            const p = state.particles;
+            const v = state.velocity;
+
+            // 1. Calculate Gradient
+            const gradients = gradFn(p);
+
+            // 2. Langevin Dynamics Update
+            // v_new = momentum * v - lr * grad + noise
+            const noise = tf.randomNormal(p.shape, 0, Math.sqrt(state.params.lr * state.params.temp));
+            
+            let vNew = v.mul(state.params.momentum)
+                        .sub(gradients.mul(state.params.lr))
+                        .add(noise);
+            
+            // 3. Update Position
+            let pNew = p.add(vNew);
+
+            // 4. Boundary Conditions (Bounce)
+            const limit = state.params.scale;
+            // Simple clamping for now, or wrap around
+            // Let's do soft clamping (bounce velocity)
+            const maskMin = pNew.less(-limit);
+            const maskMax = pNew.greater(limit);
+            const mask = maskMin.logicalOr(maskMax);
+            
+            // If out of bounds, reverse velocity (dampened) and clamp
+            vNew = tf.where(mask, vNew.mul(-0.5), vNew);
+            pNew = tf.clipByValue(pNew, -limit, limit);
+
+            // Update State
+            state.particles.assign(pNew);
+            state.velocity.assign(vNew);
+
+            // Metrics
+            const energies = getPotential(pNew);
+            state.metrics.energy = energies.mean().dataSync()[0];
+            state.metrics.kinetic = vNew.square().sum().dataSync()[0];
+            const currentMin = energies.min().dataSync()[0];
+            if (currentMin < state.metrics.minVal) state.metrics.minVal = currentMin;
+
+            state.step++;
+        });
+    }
+
+    // --- Visualization ---
+
+    async function renderLandscape() {
+        // Generate a heatmap of the potential function
+        const w = els.bgCanvas.width;
+        const h = els.bgCanvas.height;
+        const scale = state.params.scale;
+
+        // Create a grid of coordinates
+        const gridW = 100; // Resolution
+        const gridH = 100;
+        
+        const imgData = await tf.tidy(() => {
+            const xs = tf.linspace(-scale, scale, gridW);
+            const ys = tf.linspace(scale, -scale, gridH); // Y is inverted in canvas
+            
+            const xMesh = xs.reshape([1, gridW]).tile([gridH, 1]);
+            const yMesh = ys.reshape([gridH, 1]).tile([1, gridW]);
+            
+            const coords = tf.stack([xMesh.flatten(), yMesh.flatten()], 1);
+            const z = getPotential(coords);
+            
+            // Normalize Z for color mapping
+            const minZ = z.min();
+            const maxZ = z.max();
+            const range = maxZ.sub(minZ).add(1e-6);
+            const normZ = z.sub(minZ).div(range);
+            
+            return normZ.reshape([gridH, gridW]).data();
+        });
+
+        // Draw to canvas
+        const id = bgCtx.createImageData(gridW, gridH);
+        const data = id.data;
+        
+        for (let i = 0; i < imgData.length; i++) {
+            const val = imgData[i]; // 0 to 1
+            // Color Map: Deep Blue -> Purple -> Pink -> White
+            // Simple heatmap interpolation
+            const r = Math.floor(val * 255);
+            const g = Math.floor(Math.sin(val * Math.PI) * 100);
+            const b = Math.floor((1 - val) * 255);
+            
+            const idx = i * 4;
+            data[idx] = r * 0.5;     // R
+            data[idx+1] = g * 0.5;   // G
+            data[idx+2] = b + 50;    // B
+            data[idx+3] = 255;       // Alpha
+        }
+        
+        // Create temp canvas to scale up
+        const tempC = document.createElement('canvas');
+        tempC.width = gridW;
+        tempC.height = gridH;
+        tempC.getContext('2d').putImageData(id, 0, 0);
+        
+        bgCtx.fillStyle = '#000';
+        bgCtx.fillRect(0, 0, w, h);
+        bgCtx.imageSmoothingEnabled = false; // Pixelated look is kinda cool
+        bgCtx.drawImage(tempC, 0, 0, w, h);
+        
+        // Draw Contour Lines (Simulated)
+        bgCtx.strokeStyle = 'rgba(255,255,255,0.1)';
+        bgCtx.lineWidth = 1;
+        // (Skipping complex contouring for performance, the heatmap is sufficient)
+    }
+
+    function drawParticles() {
+        const w = els.ptCanvas.width;
+        const h = els.ptCanvas.height;
+        ptCtx.clearRect(0, 0, w, h);
+
+        if (!state.particles) return;
+
+        const pData = state.particles.dataSync();
+        const scale = state.params.scale;
+
+        // Map coordinates to canvas
+        const mapX = (x) => (x + scale) / (2 * scale) * w;
+        const mapY = (y) => (1 - (y + scale) / (2 * scale)) * h; // Invert Y
+
+        ptCtx.lineWidth = 1;
+
+        for (let i = 0; i < state.params.n; i++) {
+            const x = pData[i * 2];
+            const y = pData[i * 2 + 1];
+            const cx = mapX(x);
+            const cy = mapY(y);
+
+            // Update Trails
+            if (!state.trails[i]) state.trails[i] = [];
+            state.trails[i].push({x: cx, y: cy});
+            if (state.trails[i].length > state.params.trailLength) {
+                state.trails[i].shift();
+            }
+
+            // Draw Trail
+            if (state.trails[i].length > 1) {
+                ptCtx.beginPath();
+                ptCtx.strokeStyle = `rgba(0, 210, 255, 0.3)`;
+                for (let j = 0; j < state.trails[i].length - 1; j++) {
+                    ptCtx.lineTo(state.trails[i][j].x, state.trails[i][j].y);
+                }
+                ptCtx.stroke();
+            }
+
+            // Draw Particle
+            ptCtx.fillStyle = '#fff';
+            ptCtx.beginPath();
+            ptCtx.arc(cx, cy, 2, 0, Math.PI * 2);
+            ptCtx.fill();
+            
+            // Glow
+            ptCtx.shadowColor = '#00d2ff';
+            ptCtx.shadowBlur = 5;
+            ptCtx.stroke();
+            ptCtx.shadowBlur = 0;
+        }
+    }
+
+    function updateUI() {
+        els.metricEnergy.textContent = state.metrics.energy.toFixed(4);
+        els.metricKinetic.textContent = state.metrics.kinetic.toFixed(4);
+        els.metricMin.textContent = state.metrics.minVal.toFixed(4);
+        els.metricStep.textContent = state.step;
+    }
+
+    function loop() {
+        step();
+        drawParticles();
+        updateUI();
+        requestAnimationFrame(loop);
+    }
+
+    function resize() {
+        const rect = els.canvasContainer.getBoundingClientRect();
+        els.bgCanvas.width = rect.width;
+        els.bgCanvas.height = rect.height;
+        els.ptCanvas.width = rect.width;
+        els.ptCanvas.height = rect.height;
+        renderLandscape();
+    }
+
+    // --- Initialization ---
+
+    function setupEvents() {
+        els.canvasContainer = document.getElementById('canvas-container');
+        
+        els.potentialSelect.addEventListener('change', (e) => {
+            state.params.potential = e.target.value;
+            els.customGroup.style.display = e.target.value === 'custom' ? 'flex' : 'none';
+            renderLandscape();
+            initParticles();
+        });
+
+        els.customFormula.addEventListener('input', (e) => {
+            state.params.customFormula = e.target.value;
+            state.customFunc = null;
+            renderLandscape(); // Re-render on formula change
+        });
+
+        els.scaleInput.addEventListener('input', (e) => {
+            state.params.scale = parseFloat(e.target.value);
+            els.valScale.textContent = state.params.scale.toFixed(1);
+            renderLandscape();
+            initParticles();
+        });
+
+        els.nInput.addEventListener('input', (e) => {
+            state.params.n = parseInt(e.target.value);
+            els.valN.textContent = state.params.n;
+            initParticles();
+        });
+
+        els.lrInput.addEventListener('input', (e) => {
+            state.params.lr = parseFloat(e.target.value);
+            els.valLr.textContent = state.params.lr;
+        });
+
+        els.tempInput.addEventListener('input', (e) => {
+            state.params.temp = parseFloat(e.target.value);
+            els.valTemp.textContent = state.params.temp;
+        });
+
+        els.momentumInput.addEventListener('input', (e) => {
+            state.params.momentum = parseFloat(e.target.value);
+            els.valMomentum.textContent = state.params.momentum;
+        });
+        
+        els.trailInput.addEventListener('input', (e) => {
+            state.params.trailLength = parseInt(e.target.value);
+            els.valTrail.textContent = state.params.trailLength;
+        });
+
+        els.btnToggle.addEventListener('click', () => {
+            state.isRunning = !state.isRunning;
+            els.btnToggle.textContent = state.isRunning ? 'Pause' : 'Resume';
+            els.btnToggle.classList.toggle('btn-primary');
+            els.btnToggle.classList.toggle('btn-secondary');
+        });
+
+        els.btnReset.addEventListener('click', () => {
+            initParticles();
+        });
+
+        window.addEventListener('resize', resize);
+    }
+
+    async function init() {
+        await tf.ready();
+        els.loading.classList.add('hidden');
+        setupEvents();
+        resize();
+        initParticles();
+        loop();
+    }
+
+    init();
+</script>
+</body>
+</html>

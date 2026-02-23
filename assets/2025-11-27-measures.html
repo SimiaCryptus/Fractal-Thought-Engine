@@ -1,0 +1,1433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interpolated Density Entropy | Neural Layer Demo</title>
+    <meta name="description"
+          content="Interactive demonstration of the InterpolatedDensityEntropy neural network layer using TensorFlow.js">
+
+    <!-- TensorFlow.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@4.15.0/dist/tf.min.js"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Inter:wght@400;600;800&display=swap"
+          rel="stylesheet">
+
+    <style>
+        :root {
+            --bg-color: #0f1115;
+            --card-bg: #1a1d24;
+            --text-primary: #e0e0e0;
+            --text-secondary: #a0a0a0;
+            --accent-primary: #00ff9d; /* Cyan/Green */
+            --accent-secondary: #ff00ff; /* Magenta */
+            --accent-tertiary: #00d2ff; /* Blue */
+            --danger: #ff4a4a;
+            --border-color: #2a2e36;
+            --font-mono: 'JetBrains Mono', monospace;
+            --font-sans: 'Inter', sans-serif;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            font-family: var(--font-sans);
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: var(--card-bg);
+            border-bottom: 1px solid var(--border-color);
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        h1 {
+            font-size: 1.25rem;
+            font-weight: 800;
+            letter-spacing: -0.02em;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .badge {
+            background: rgba(0, 255, 157, 0.1);
+            color: var(--accent-primary);
+            font-size: 0.75rem;
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+            font-family: var(--font-mono);
+            border: 1px solid rgba(0, 255, 157, 0.2);
+        }
+
+        main {
+            flex: 1;
+            padding: 2rem;
+            display: grid;
+            grid-template-columns: 300px 1fr;
+            gap: 2rem;
+            max-width: 1600px;
+            margin: 0 auto;
+            width: 100%;
+        }
+
+        @media (max-width: 1024px) {
+            main {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Controls Panel */
+        .panel {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            height: fit-content;
+        }
+
+        .panel-header {
+            font-size: 0.875rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--text-secondary);
+            font-weight: 600;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 0.5rem;
+        }
+
+        .control-group {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        label {
+            font-size: 0.875rem;
+            color: var(--text-secondary);
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .value-display {
+            font-family: var(--font-mono);
+            color: var(--accent-tertiary);
+        }
+
+        input[type="range"] {
+            width: 100%;
+            background: transparent;
+            -webkit-appearance: none;
+        }
+
+        input[type="range"]::-webkit-slider-runnable-track {
+            width: 100%;
+            height: 4px;
+            background: var(--border-color);
+            border-radius: 2px;
+        }
+
+        input[type="range"]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            height: 16px;
+            width: 16px;
+            border-radius: 50%;
+            background: var(--accent-primary);
+            margin-top: -6px;
+            cursor: pointer;
+            transition: transform 0.1s;
+        }
+
+        input[type="range"]::-webkit-slider-thumb:hover {
+            transform: scale(1.2);
+        }
+
+        select {
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            border: 1px solid var(--border-color);
+            padding: 0.5rem;
+            border-radius: 4px;
+            font-family: var(--font-mono);
+            font-size: 0.875rem;
+        }
+
+        .button-group {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0.5rem;
+        }
+
+        button {
+            padding: 0.75rem;
+            border: none;
+            border-radius: 4px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+            font-family: var(--font-mono);
+            font-size: 0.875rem;
+        }
+
+        .btn-primary {
+            background-color: var(--accent-primary);
+            color: #000;
+        }
+
+        .btn-primary:hover {
+            background-color: #00cc7d;
+        }
+
+        .btn-secondary {
+            background-color: transparent;
+            border: 1px solid var(--border-color);
+            color: var(--text-primary);
+        }
+
+        .btn-secondary:hover {
+            border-color: var(--text-secondary);
+            background-color: rgba(255, 255, 255, 0.05);
+        }
+
+        .btn-danger {
+            background-color: rgba(255, 74, 74, 0.1);
+            color: var(--danger);
+            border: 1px solid rgba(255, 74, 74, 0.2);
+        }
+
+        .btn-danger:hover {
+            background-color: rgba(255, 74, 74, 0.2);
+        }
+
+        /* Visualization Area */
+        .viz-container {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            height: 100%;
+            min-height: 500px;
+        }
+
+        .canvas-wrapper {
+            flex: 1;
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        canvas {
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+
+        .metrics-bar {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1rem;
+        }
+
+        .metric-card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            padding: 1rem;
+            border-radius: 6px;
+            display: flex;
+            flex-direction: column;
+            gap: 0.25rem;
+        }
+
+        .metric-label {
+            font-size: 0.75rem;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+        }
+
+        .metric-value {
+            font-family: var(--font-mono);
+            font-size: 1.25rem;
+            font-weight: 700;
+        }
+
+        .math-block {
+            font-family: var(--font-mono);
+            font-size: 0.8rem;
+            background: rgba(0, 0, 0, 0.3);
+            padding: 1rem;
+            border-radius: 4px;
+            margin-top: 1rem;
+            color: var(--text-secondary);
+            overflow-x: auto;
+        }
+
+        /* Loading Overlay */
+        #loading {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: var(--bg-color);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .spinner {
+            width: 40px;
+            height: 40px;
+            border: 3px solid var(--border-color);
+            border-top-color: var(--accent-primary);
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        .hidden {
+            display: none !important;
+        }
+    </style>
+
+    <style>
+        /* =========================================
+           1. Variables & Reset
+           ========================================= */
+        :root {
+            /* Color Palette - Dark Sci-Fi Theme */
+            --bg-color: #0f1115;
+            --card-bg: #1a1d24;
+            --card-hover: #22262f;
+
+            /* Typography Colors */
+            --text-primary: #e0e0e0;
+            --text-secondary: #a0a0a0;
+            --text-muted: #6b7280;
+
+            /* Accents */
+            --accent-primary: #00ff9d; /* Neon Green */
+            --accent-secondary: #ff00ff; /* Magenta */
+            --accent-tertiary: #00d2ff; /* Cyan */
+            --danger: #ff4a4a; /* Red */
+
+            /* UI Elements */
+            --border-color: #2a2e36;
+            --border-focus: #4a4f5a;
+            --radius-sm: 4px;
+            --radius-md: 8px;
+
+            /* Fonts */
+            --font-mono: 'JetBrains Mono', monospace;
+            --font-sans: 'Inter', sans-serif;
+
+            /* Transitions */
+            --transition-fast: 0.15s ease;
+            --transition-normal: 0.3s ease;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            font-family: var(--font-sans);
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        /* =========================================
+           2. Layout & Header
+           ========================================= */
+        header {
+            background-color: var(--card-bg);
+            border-bottom: 1px solid var(--border-color);
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            backdrop-filter: blur(10px);
+            background-color: rgba(26, 29, 36, 0.95);
+        }
+
+        h1 {
+            font-size: 1.25rem;
+            font-weight: 800;
+            letter-spacing: -0.02em;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            color: var(--text-primary);
+        }
+
+        .badge {
+            background: rgba(0, 255, 157, 0.1);
+            color: var(--accent-primary);
+            font-size: 0.7rem;
+            padding: 0.2rem 0.5rem;
+            border-radius: var(--radius-sm);
+            font-family: var(--font-mono);
+            border: 1px solid rgba(0, 255, 157, 0.2);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        main {
+            flex: 1;
+            padding: 2rem;
+            display: grid;
+            grid-template-columns: 320px 1fr; /* Fixed sidebar, flexible content */
+            gap: 2rem;
+            max-width: 1800px;
+            margin: 0 auto;
+            width: 100%;
+        }
+
+        /* Responsive Layout */
+        @media (max-width: 1024px) {
+            main {
+                grid-template-columns: 1fr;
+                padding: 1rem;
+                gap: 1.5rem;
+            }
+
+            header {
+                padding: 1rem;
+            }
+        }
+
+        /* =========================================
+           3. Controls Panel (Sidebar)
+           ========================================= */
+        .panel {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-md);
+            padding: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            height: fit-content;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .panel-header {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--text-muted);
+            font-weight: 700;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 0.75rem;
+            margin-bottom: 0.25rem;
+        }
+
+        .control-group {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+        }
+
+        label {
+            font-size: 0.875rem;
+            color: var(--text-secondary);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 500;
+        }
+
+        .value-display {
+            font-family: var(--font-mono);
+            color: var(--accent-tertiary);
+            font-size: 0.8rem;
+            background: rgba(0, 210, 255, 0.1);
+            padding: 0.1rem 0.4rem;
+            border-radius: var(--radius-sm);
+        }
+
+        /* Form Elements */
+        select {
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            border: 1px solid var(--border-color);
+            padding: 0.75rem;
+            border-radius: var(--radius-sm);
+            font-family: var(--font-sans);
+            font-size: 0.875rem;
+            width: 100%;
+            cursor: pointer;
+            transition: border-color var(--transition-fast);
+            appearance: none;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='%23a0a0a0' viewBox='0 0 16 16'%3E%3Cpath d='M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z'/%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: right 1rem center;
+        }
+
+        select:focus {
+            outline: none;
+            border-color: var(--accent-primary);
+        }
+
+        /* Custom Range Slider Styling */
+        input[type="range"] {
+            width: 100%;
+            background: transparent;
+            -webkit-appearance: none;
+            cursor: pointer;
+        }
+
+        input[type="range"]:focus {
+            outline: none;
+        }
+
+        /* Webkit Slider Track */
+        input[type="range"]::-webkit-slider-runnable-track {
+            width: 100%;
+            height: 4px;
+            background: var(--border-color);
+            border-radius: 2px;
+            transition: background var(--transition-fast);
+        }
+
+        /* Webkit Slider Thumb */
+        input[type="range"]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            height: 16px;
+            width: 16px;
+            border-radius: 50%;
+            background: var(--accent-primary);
+            margin-top: -6px; /* Centers thumb on track */
+            box-shadow: 0 0 0 2px var(--card-bg);
+            transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+        }
+
+        input[type="range"]::-webkit-slider-thumb:hover {
+            transform: scale(1.2);
+            box-shadow: 0 0 0 4px rgba(0, 255, 157, 0.2);
+        }
+
+        /* Firefox Slider Track */
+        input[type="range"]::-moz-range-track {
+            width: 100%;
+            height: 4px;
+            background: var(--border-color);
+            border-radius: 2px;
+        }
+
+        /* Firefox Slider Thumb */
+        input[type="range"]::-moz-range-thumb {
+            height: 16px;
+            width: 16px;
+            border: none;
+            border-radius: 50%;
+            background: var(--accent-primary);
+            box-shadow: 0 0 0 2px var(--card-bg);
+            transition: transform var(--transition-fast);
+        }
+
+        /* Buttons */
+        .button-group {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0.75rem;
+            margin-top: 0.5rem;
+        }
+
+        button {
+            padding: 0.75rem;
+            border: none;
+            border-radius: var(--radius-sm);
+            font-weight: 600;
+            cursor: pointer;
+            transition: all var(--transition-fast);
+            font-family: var(--font-mono);
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.02em;
+        }
+
+        .btn-primary {
+            background-color: var(--accent-primary);
+            color: #000;
+        }
+
+        .btn-primary:hover {
+            background-color: #00cc7d;
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(0, 255, 157, 0.2);
+        }
+
+        .btn-primary:active {
+            transform: translateY(0);
+        }
+
+        .btn-secondary {
+            background-color: transparent;
+            border: 1px solid var(--border-color);
+            color: var(--text-primary);
+        }
+
+        .btn-secondary:hover {
+            border-color: var(--text-secondary);
+            background-color: rgba(255, 255, 255, 0.05);
+        }
+
+        .btn-danger {
+            background-color: rgba(255, 74, 74, 0.1);
+            color: var(--danger);
+            border: 1px solid rgba(255, 74, 74, 0.3);
+        }
+
+        .btn-danger:hover {
+            background-color: rgba(255, 74, 74, 0.2);
+            border-color: var(--danger);
+        }
+
+        .math-block {
+            font-family: var(--font-mono);
+            font-size: 0.75rem;
+            background: #13151a;
+            padding: 1rem;
+            border-radius: var(--radius-sm);
+            margin-top: auto;
+            color: var(--text-secondary);
+            border: 1px solid var(--border-color);
+            line-height: 1.8;
+        }
+
+        /* =========================================
+           4. Visualization Area
+           ========================================= */
+        .viz-container {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            height: 100%;
+            min-height: 600px;
+        }
+
+        /* Metrics Bar */
+        .metrics-bar {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 1rem;
+        }
+
+        .metric-card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            padding: 1.25rem;
+            border-radius: var(--radius-md);
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            transition: transform var(--transition-fast);
+        }
+
+        .metric-card:hover {
+            border-color: var(--border-focus);
+        }
+
+        .metric-label {
+            font-size: 0.7rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            font-weight: 600;
+        }
+
+        .metric-value {
+            font-family: var(--font-mono);
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--text-primary);
+        }
+
+        /* Canvas Area */
+        .canvas-wrapper {
+            flex: 1;
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-md);
+            position: relative;
+            overflow: hidden;
+            box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.2);
+        }
+
+        canvas {
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+
+        /* =========================================
+           5. Loading Overlay & Utilities
+           ========================================= */
+        #loading {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: var(--bg-color);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+            flex-direction: column;
+            gap: 1.5rem;
+            color: var(--text-secondary);
+            font-family: var(--font-mono);
+            font-size: 0.875rem;
+        }
+
+        .spinner {
+            width: 48px;
+            height: 48px;
+            border: 3px solid var(--border-color);
+            border-top-color: var(--accent-primary);
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        .hidden {
+            display: none !important;
+        }
+
+        /* Scrollbar Styling */
+        ::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: var(--bg-color);
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: var(--border-color);
+            border-radius: 4px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: var(--text-muted);
+        }
+    </style>
+</head>
+<body>
+
+<div id="loading">
+    <div class="spinner"></div>
+    <div>Initializing TensorFlow.js...</div>
+</div>
+
+<header>
+    <h1>
+        InterpolatedDensityEntropy
+        <span class="badge">v1.0</span>
+    </h1>
+    <div style="font-size: 0.875rem; color: var(--text-secondary);">
+        Fractal Thought Engine // Research
+    </div>
+</header>
+
+<main>
+    <!-- Controls Sidebar -->
+    <aside class="panel">
+        <div class="panel-header">Configuration</div>
+
+        <div class="control-group">
+            <label>
+                Optimization Target
+            </label>
+            <select id="opt-target">
+                <option value="maximize">Maximize Entropy (Spread)</option>
+                <option value="minimize">Minimize Entropy (Cluster)</option>
+                <option value="target">Match Target Entropy</option>
+            </select>
+        </div>
+
+        <div class="control-group" id="target-entropy-group" style="display:none;">
+            <label>
+                Target Entropy
+                <span class="value-display" id="val-target">2.0</span>
+            </label>
+            <input type="range" id="param-target" min="-2" max="5" step="0.1" value="2.0">
+        </div>
+
+        <div class="control-group">
+            <label>
+                Point Count (N)
+                <span class="value-display" id="val-n">20</span>
+            </label>
+            <input type="range" id="param-n" min="5" max="100" step="1" value="20">
+        </div>
+        <div class="control-group">
+            <label>
+                Fix Boundaries (0, 1)
+                <input type="checkbox" id="chk-fix-bounds">
+            </label>
+        </div>
+        <div class="panel-header">Custom Potential</div>
+        <div class="control-group">
+            <label>
+                Add to Loss (JS/TFJS)
+            </label>
+            <textarea id="param-custom" rows="2" spellcheck="false"
+                      style="width:100%; background:var(--bg-color); color:var(--text-primary); border:1px solid var(--border-color); border-radius:4px; padding:0.5rem; font-family:var(--font-mono); font-size:0.75rem; resize:vertical;">x.sub(0.4).square().mul(0.01)</textarea>
+            <div style="font-size: 0.7rem; color: var(--text-secondary);">
+                Evaluated & summed. Vars: <code>x</code>, <code>p</code> (0-1 pos), <code>tf</code>.
+            </div>
+        </div>
+
+
+        <div class="panel-header">Hyperparameters</div>
+        <div class="control-group">
+            <label>
+                Optimizer
+            </label>
+            <select id="opt-optimizer">
+                <option value="lbfgs">L-BFGS</option>
+                <option value="qqn">QQN</option>
+                <option value="adam">Adam</option>
+            </select>
+        </div>
+
+
+        <div class="control-group">
+            <label>
+                Temperature (τ)
+                <span class="value-display" id="val-tau">1.0</span>
+            </label>
+            <input type="range" id="param-tau" min="0" max="5.0" step="0.01" value="1.0">
+        </div>
+
+        <div class="control-group">
+            <label>
+                Learning Rate
+                <span class="value-display" id="val-lr">0.01</span>
+            </label>
+            <input type="range" id="param-lr" min="-5" max="-1" step="0.1" value="-2">
+        </div>
+
+        <div class="button-group">
+            <button id="btn-toggle" class="btn-primary">Start Training</button>
+            <button id="btn-reset" class="btn-secondary">Reset Points</button>
+        </div>
+
+        <div class="math-block">
+            H = -∫ p(x) log p(x) dx<br>
+            p(x) ∝ 1 / (s_{i+1} - s_i)
+        </div>
+    </aside>
+
+    <!-- Visualization Area -->
+    <div class="viz-container">
+        <div class="metrics-bar">
+            <div class="metric-card">
+                <span class="metric-label">Current Entropy</span>
+                <span class="metric-value" id="metric-entropy" style="color: var(--accent-primary)">--</span>
+            </div>
+            <div class="metric-card">
+                <span class="metric-label">Loss</span>
+                <span class="metric-value" id="metric-loss" style="color: var(--danger)">--</span>
+            </div>
+            <div class="metric-card">
+                <span class="metric-label">Sum (Z)</span>
+                <span class="metric-value" id="metric-sum" style="color: var(--accent-tertiary)">--</span>
+            </div>
+            <div class="metric-card">
+                <span class="metric-label">Step</span>
+                <span class="metric-value" id="metric-step">0</span>
+            </div>
+        </div>
+
+        <div class="canvas-wrapper" id="canvas-container">
+            <canvas id="viz-canvas"></canvas>
+        </div>
+    </div>
+</main>
+
+
+<script type="module">
+    import {OptimizerLbfgs} from './js/optimizer-lbfgs.js';
+    import {OptimizerAdam} from './js/optimizer-adam.js';
+    import {OptimizerQQN} from './js/optimizer-qqn.js';
+
+    /**
+     * Interpolated Density Entropy - Interactive Demo
+     *
+     * This script implements a custom neural network layer logic using TensorFlow.js.
+     * It optimizes a set of 1D points to maximize, minimize, or target a specific entropy value
+     * based on an interpolated density estimation derived from point spacing.
+     */
+
+        // --- Configuration & State ---
+    const state = {
+            isTraining: false,
+            points: null,      // TensorFlow variable (tensor)
+            optimizer: null,   // TensorFlow optimizer
+            customFunc: null,  // Compiled custom function
+            step: 0,
+            animationId: null,
+            params: {
+                n: 20,         // Number of points
+                tau: 1.0,      // Temperature (smoothing factor)
+                lr: 0.01,      // Learning rate
+                optimizerType: 'lbfgs',
+                targetMode: 'maximize', // 'maximize', 'minimize', 'target'
+                targetVal: 2.0, // Target entropy value
+                customFormula: 'x.sub(0.4).square().mul(0.01)',
+                fixBoundaries: false
+            },
+            metrics: {
+                entropy: 0,
+                loss: 0,
+                sum: 0
+            }
+        };
+
+    function getDensityStats(x, temperature, sortedIndices = null) {
+        let sorted;
+        if (sortedIndices) {
+            sorted = x.gather(sortedIndices);
+        } else {
+            sorted = tf.topk(x, x.shape[0], true).values.reverse();
+        }
+        const s_left = sorted.slice([0], [sorted.shape[0] - 1]);
+        const s_right = sorted.slice([1], [sorted.shape[0] - 1]);
+        const diffs = tf.sub(s_right, s_left).add(1e-6);
+
+        // Use stable softmax for probabilities: p_i = softmax(-ln(d_i)/tau)
+        const safeTau = Math.max(temperature, 1e-4);
+        const logits = tf.neg(tf.log(diffs)).div(safeTau);
+        const probs = tf.softmax(logits);
+
+        // Calculate Z (partition function) for display
+        const sumWeights = tf.exp(logits).sum();
+
+        const logProbs = tf.log(probs.add(1e-12));
+        const entropy = tf.neg(tf.sum(tf.mul(probs, logProbs)));
+        const densities = probs.div(diffs);
+        return {entropy, densities, diffs, sorted, sumWeights};
+    }
+
+    function interpolatedDensityEntropy(x, temperature, sortedIndices = null) {
+        return tf.tidy(() => {
+            return getDensityStats(x, temperature, sortedIndices).entropy;
+        });
+    }
+
+    // --- DOM Elements ---
+    const els = {
+        canvas: document.getElementById('viz-canvas'),
+        loading: document.getElementById('loading'),
+        // Controls
+        mode: document.getElementById('opt-target'),
+        optimizerSelect: document.getElementById('opt-optimizer'),
+        targetGroup: document.getElementById('target-entropy-group'),
+        targetInput: document.getElementById('param-target'),
+        nInput: document.getElementById('param-n'),
+        chkFixBounds: document.getElementById('chk-fix-bounds'),
+        tauInput: document.getElementById('param-tau'),
+        customInput: document.getElementById('param-custom'),
+        lrInput: document.getElementById('param-lr'),
+        // Buttons
+        btnToggle: document.getElementById('btn-toggle'),
+        btnReset: document.getElementById('btn-reset'),
+        // Value Displays
+        valTarget: document.getElementById('val-target'),
+        valN: document.getElementById('val-n'),
+        valTau: document.getElementById('val-tau'),
+        valLr: document.getElementById('val-lr'),
+        // Metrics
+        metricEntropy: document.getElementById('metric-entropy'),
+        metricLoss: document.getElementById('metric-loss'),
+        metricSum: document.getElementById('metric-sum'),
+        metricStep: document.getElementById('metric-step')
+    };
+    const ctx = els.canvas.getContext('2d');
+
+
+    /**
+     * Performs one training step.
+     */
+    function trainStep() {
+        if (!state.isTraining || !state.points) return;
+
+        tf.tidy(() => {
+            // Construct effective points (trainable + fixed)
+            let effectivePoints = state.points;
+            if (state.params.fixBoundaries) {
+                effectivePoints = state.points.concat(tf.tensor1d([0, 1]));
+            }
+
+            // Pre-calculate sort indices to avoid topk in gradient tape
+            const {indices} = tf.topk(effectivePoints, effectivePoints.shape[0], true);
+            const sortedIndices = indices.reverse();
+
+            const lossFunction = () => {
+                // Re-construct effective points inside the function so it tracks gradients from state.points
+                let trainPoints = state.points;
+                if (state.params.fixBoundaries) {
+                    trainPoints = trainPoints.concat(tf.tensor1d([0, 1]));
+                }
+
+                const {
+                    entropy,
+                    densities,
+                    diffs,
+                    sorted,
+                    sumWeights
+                } = getDensityStats(trainPoints, state.params.tau, sortedIndices);
+
+                // Calculate normalized position p (0-1)
+const s_left = sorted.slice([0], [sorted.shape[0] - 1]);
+                const s_right = sorted.slice([1], [sorted.shape[0] - 1]);
+                const midpoints = s_left.add(s_right).div(2);
+
+                let p;
+                if (state.params.fixBoundaries) {
+                    p = midpoints;
+                } else {
+                    const minVal = sorted.min();
+                    const maxVal = sorted.max();
+                    p = midpoints.sub(minVal).div(maxVal.sub(minVal).add(1e-6));
+                }
+
+                // Define Loss based on Target Mode
+                let loss;
+                if (state.params.targetMode === 'maximize') {
+                    // Minimize negative entropy
+                    loss = tf.neg(entropy);
+                } else if (state.params.targetMode === 'minimize') {
+                    // Minimize entropy
+                    loss = entropy;
+                } else {
+                    // Squared error from target
+                    const target = tf.scalar(state.params.targetVal);
+                    loss = tf.square(tf.sub(entropy, target));
+                }
+
+                // Add Custom Potential
+                let customTerm = tf.scalar(0);
+                if (state.params.customFormula) {
+                    try {
+                        if (!state.customFunc) {
+                            state.customFunc = new Function('x', 'p', 'tf', 'return ' + state.params.customFormula);
+                        }
+                        const res = state.customFunc(densities, p, tf);
+                        if (res) {
+                            if (res instanceof tf.Tensor) {
+                                customTerm = res.mul(diffs).sum();
+                            } else if (typeof res === 'number') {
+                                customTerm = tf.scalar(res).mul(diffs).sum();
+                            }
+                        }
+                    } catch (e) {
+                        // Ignore runtime errors
+                    }
+                }
+                return loss.add(customTerm);
+            };
+
+            // Compute gradients and apply
+            const {value: loss, grads} = state.optimizer.computeGradients(lossFunction);
+            // NaN Guard
+            if (loss.isNaN().dataSync()[0]) {
+                // Skip update if NaN
+                return;
+            }
+
+            state.optimizer.applyGradients(grads, lossFunction);
+
+            // Update metrics for UI (syncing small scalars is cheap)
+            const stats = getDensityStats(effectivePoints, state.params.tau);
+            state.metrics.sum = stats.sumWeights.dataSync()[0];
+            const currentEntropy = stats.entropy;
+
+            state.metrics.loss = loss.dataSync()[0];
+            state.metrics.entropy = currentEntropy.dataSync()[0];
+            state.step++;
+        });
+    }
+
+    // --- Visualization ---
+
+    function resizeCanvas() {
+        const container = els.canvas.parentElement;
+        els.canvas.width = container.clientWidth;
+        els.canvas.height = container.clientHeight;
+        if (!state.isTraining) draw();
+    }
+
+    function draw() {
+        if (!state.points) return;
+
+        const width = els.canvas.width;
+        const height = els.canvas.height;
+
+        // Clear background
+        ctx.fillStyle = '#1a1d24'; // Matches --card-bg
+        ctx.fillRect(0, 0, width, height);
+
+        // Get data from tensor
+        let pointsArr = Array.from(state.points.dataSync());
+        if (state.params.fixBoundaries) {
+            pointsArr.push(0, 1);
+        }
+        // Sort for visualization
+        const sortedPoints = Float32Array.from(pointsArr).sort();
+
+        // Determine scale
+        let viewMin, viewMax;
+        if (state.params.fixBoundaries) {
+            viewMin = -0.1;
+            viewMax = 1.1;
+        } else {
+            // We want to keep the view somewhat centered but dynamic
+            const minVal = Math.min(...sortedPoints);
+            const maxVal = Math.max(...sortedPoints);
+            const spread = Math.max(maxVal - minVal, 4.0); // Minimum spread of 4
+            const padding = spread * 0.1;
+            viewMin = minVal - padding;
+            viewMax = maxVal + padding;
+        }
+
+        const mapX = (val) => {
+            return ((val - viewMin) / (viewMax - viewMin)) * (width - 40) + 20;
+        };
+
+        // Calculate Density Curve for Visualization
+        // We replicate the math logic in JS for the drawing
+        const densities = [];
+        const diffs = [];
+        for (let i = 0; i < sortedPoints.length - 1; i++) {
+            const d = Math.max(sortedPoints[i + 1] - sortedPoints[i], 1e-6);
+            diffs.push(d);
+        }
+
+        // Calculate normalized heights (probabilities)
+        const safeTau = Math.max(state.params.tau, 1e-4);
+        const weights = diffs.map(d => Math.exp(-Math.log(d) / safeTau));
+        const sumW = weights.reduce((a, b) => a + b, 0);
+        const probs = weights.map(w => w / sumW);
+
+        // Map Y (Density)
+        const maxProb = Math.max(...probs);
+        const mapY = (p) => {
+            // Scale max probability to 80% of canvas height
+            return height - 40 - (p / maxProb) * (height - 80);
+        };
+
+        // Draw Grid / Axis
+        ctx.strokeStyle = '#2a2e36';
+        ctx.lineWidth = 1;
+        ctx.beginPath();
+        ctx.moveTo(20, height - 40);
+        ctx.lineTo(width - 20, height - 40);
+        ctx.stroke();
+
+        // Draw Density Area
+        ctx.beginPath();
+        ctx.moveTo(mapX(sortedPoints[0]), height - 40);
+
+        // We draw the density as blocks between points (histogram style)
+        // or connected peaks. Let's do connected midpoints for "Interpolated" look.
+        for (let i = 0; i < probs.length; i++) {
+            const x1 = mapX(sortedPoints[i]);
+            const x2 = mapX(sortedPoints[i + 1]);
+            const y = mapY(probs[i]);
+
+            // Draw a plateau for the segment density
+            ctx.lineTo(x1, y);
+            ctx.lineTo(x2, y);
+        }
+
+        ctx.lineTo(mapX(sortedPoints[sortedPoints.length - 1]), height - 40);
+        ctx.closePath();
+
+        // Gradient Fill
+        const gradient = ctx.createLinearGradient(0, 0, 0, height);
+        gradient.addColorStop(0, 'rgba(0, 255, 157, 0.2)');
+        gradient.addColorStop(1, 'rgba(0, 255, 157, 0.0)');
+        ctx.fillStyle = gradient;
+        ctx.fill();
+
+        // Stroke Line
+        ctx.strokeStyle = '#00ff9d';
+        ctx.lineWidth = 2;
+        ctx.stroke();
+
+        // Draw Points
+        ctx.fillStyle = '#e0e0e0';
+        for (let i = 0; i < sortedPoints.length; i++) {
+            const cx = mapX(sortedPoints[i]);
+            const cy = height - 40; // Points sit on the axis
+
+            ctx.beginPath();
+            ctx.arc(cx, cy, 4, 0, Math.PI * 2);
+            ctx.fill();
+
+            // Draw little tick marks
+            ctx.strokeStyle = 'rgba(255,255,255,0.2)';
+            ctx.beginPath();
+            ctx.moveTo(cx, cy);
+            ctx.lineTo(cx, cy + 10);
+            ctx.stroke();
+        }
+    }
+
+    function updateUI() {
+        els.metricEntropy.textContent = state.metrics.entropy.toFixed(4);
+        els.metricLoss.textContent = state.metrics.loss.toFixed(5);
+        els.metricSum.textContent = state.metrics.sum?.toExponential(2);
+        els.metricStep.textContent = state.step;
+    }
+
+    function animate() {
+        if (state.isTraining) {
+            trainStep();
+        }
+        draw();
+        updateUI();
+        state.animationId = requestAnimationFrame(animate);
+    }
+    function createOptimizer() {
+        if (state.params.optimizerType === 'adam') {
+            return new OptimizerAdam(state.params.lr);
+        } else if (state.params.optimizerType === 'qqn') {
+            return new OptimizerQQN(state.params.lr);
+        }
+        return new OptimizerLbfgs(state.params.lr);
+    }
+
+
+    // --- Initialization & Events ---
+
+    function resetPoints() {
+        if (state.points) state.points.dispose();
+
+        let numPoints = state.params.n;
+        if (state.params.fixBoundaries) {
+            numPoints = Math.max(0, numPoints - 2);
+        }
+
+        // Initialize points
+        let initialPoints;
+        if (state.params.fixBoundaries) {
+            // Initialize between 0 and 1
+            initialPoints = tf.randomUniform([numPoints], 0.1, 0.9);
+        } else {
+            // Normal distribution around 0
+            initialPoints = tf.randomNormal([numPoints], 0, 1.5);
+        }
+
+        state.points = tf.variable(initialPoints);
+
+        // Reset Optimizer
+        state.optimizer = createOptimizer();
+
+        state.step = 0;
+        state.metrics = {entropy: 0, loss: 0};
+
+        // Initial calculation
+        let effectivePoints = state.points;
+        if (state.params.fixBoundaries) {
+            effectivePoints = tf.tidy(() => state.points.concat(tf.tensor1d([0, 1])));
+        }
+        const ent = interpolatedDensityEntropy(effectivePoints, state.params.tau);
+        state.metrics.entropy = ent.dataSync()[0];
+        ent.dispose();
+        if (effectivePoints !== state.points) effectivePoints.dispose();
+    }
+
+    function updatePointCount(newN) {
+        if (!state.points) return;
+        let targetSize = newN;
+        if (state.params.fixBoundaries) {
+            targetSize = Math.max(0, newN - 2);
+        }
+
+        const newVar = tf.tidy(() => {
+            const oldPoints = state.points;
+            const oldSize = oldPoints.shape[0];
+
+            if (targetSize === oldSize) return oldPoints.clone();
+
+            let newPointsArr;
+            if (targetSize > oldSize) {
+                // Add points randomly
+                const diff = targetSize - oldSize;
+                const added = state.params.fixBoundaries
+                    ? tf.randomUniform([diff], 0, 1)
+                    : tf.randomNormal([diff], 0, 1.5);
+                return tf.concat([oldPoints, added]);
+            } else {
+                // Remove points randomly
+                const indices = tf.util.createShuffledIndices(oldSize).slice(0, targetSize);
+                return oldPoints.gather(indices);
+            }
+        });
+        state.points.dispose();
+        state.points = tf.variable(newVar);
+        // Re-create optimizer to bind to new variable
+        state.optimizer = createOptimizer();
+        state.params.n = newN;
+        els.valN.textContent = newN;
+        if (!state.isTraining) draw();
+    }
+
+
+    function setupEventListeners() {
+        // Toggle Training
+        els.btnToggle.addEventListener('click', () => {
+            state.isTraining = !state.isTraining;
+
+            if (state.isTraining) {
+                els.btnToggle.textContent = 'Stop Training';
+                els.btnToggle.classList.replace('btn-primary', 'btn-danger');
+            } else {
+                els.btnToggle.textContent = 'Start Training';
+                els.btnToggle.classList.replace('btn-danger', 'btn-primary');
+            }
+        });
+
+        // Reset
+        els.btnReset.addEventListener('click', () => {
+            state.isTraining = false;
+            els.btnToggle.textContent = 'Start Training';
+            els.btnToggle.classList.replace('btn-danger', 'btn-primary');
+            resetPoints();
+            draw();
+            updateUI();
+        });
+
+        // Inputs
+        els.nInput.addEventListener('input', (e) => {
+            const val = parseInt(e.target.value);
+            updatePointCount(val);
+        });
+        els.chkFixBounds.addEventListener('change', (e) => {
+            state.params.fixBoundaries = e.target.checked;
+            resetPoints();
+            draw();
+            updateUI();
+        });
+
+
+        els.tauInput.addEventListener('input', (e) => {
+            const val = parseFloat(e.target.value);
+            state.params.tau = val;
+            els.valTau.textContent = val.toFixed(2);
+        });
+
+        els.lrInput.addEventListener('input', (e) => {
+            const val = Math.pow(10, parseFloat(e.target.value));
+            state.params.lr = val;
+            els.valLr.textContent = val.toExponential(1);
+            // Update optimizer learning rate
+            if (state.optimizer) {
+                // Re-create optimizer to apply new LR immediately
+                // (TFJS optimizers are stateful, but for this simple demo, replacement is fine)
+                state.optimizer.setLearningRate(val);
+            }
+        });
+        els.optimizerSelect.addEventListener('change', (e) => {
+            state.params.optimizerType = e.target.value;
+            state.optimizer = createOptimizer();
+        });
+
+
+        els.mode.addEventListener('change', (e) => {
+            state.params.targetMode = e.target.value;
+            if (state.params.targetMode === 'target') {
+                els.targetGroup.style.display = 'flex';
+            } else {
+                els.targetGroup.style.display = 'none';
+            }
+        });
+
+        els.targetInput.addEventListener('input', (e) => {
+            const val = parseFloat(e.target.value);
+            state.params.targetVal = val;
+            els.valTarget.textContent = val.toFixed(1);
+        });
+        els.customInput.addEventListener('input', (e) => {
+            state.params.customFormula = e.target.value;
+            state.customFunc = null; // Force re-compile
+        });
+
+
+        // Window Resize
+        window.addEventListener('resize', resizeCanvas);
+    }
+
+    async function init() {
+        try {
+            await tf.ready();
+            console.log('TensorFlow.js ready');
+
+            // Hide loading screen
+            els.loading.classList.add('hidden');
+
+            setupEventListeners();
+            resetPoints();
+            resizeCanvas();
+            animate();
+
+        } catch (err) {
+            console.error('Initialization failed:', err);
+            els.loading.innerHTML = `<div style="color:var(--danger)">Error: ${err.message}</div>`;
+        }
+    }
+
+    // Start the application
+    init();
+</script>
+</body>
+</html>

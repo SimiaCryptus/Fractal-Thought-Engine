@@ -1,0 +1,15 @@
+<div class="terminal-window">
+  <div class="terminal-header">
+    <span>{{ include.title | default: "NEURAL_INTERFACE_v2.1" }}</span>
+    <div class="terminal-buttons">
+      <div class="terminal-button"></div>
+      <div class="terminal-button minimize"></div>
+      <div class="terminal-button maximize"></div>
+    </div>
+  </div>
+  <div class="terminal-content">
+    <div class="terminal-prompt">root@matrix:~$ {{ include.command | default: "access_classified_files" }}</div>
+    <div class="terminal-output">{{ include.content }}</div>
+    <span class="terminal-cursor">█</span>
+  </div>
+</div>

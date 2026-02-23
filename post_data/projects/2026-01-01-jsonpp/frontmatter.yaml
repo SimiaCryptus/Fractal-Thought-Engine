@@ -1,0 +1,96 @@
+title: 'JSON++: The Symbolic Substrate for Active Data'
+layout: post
+date: 2026-01-01T00:00:00.000Z
+last_modified: 2026-01-01T10:00:00.000Z
+category: learning
+subcategory: Data Architectures
+tags:
+  - Information-Theory
+  - Machine-Learning
+  - Theoretical-Framework
+  - Cognitive-Architecture
+  - Computational-Analysis
+keywords:
+  - JSON++
+  - Symbolic Bindings
+  - Active Data
+  - Data Interchange
+  - JavaScript Subgrammar
+status: working
+last_thought_date: 2026-01-01T00:00:00.000Z
+thought_generation: 1
+parent_document: ''
+child_documents: []
+related_documents: []
+reading_order: 1
+difficulty_level: intermediate
+reading_time_minutes: 5
+document_type: framework
+thinking_style: analytical
+consciousness_level: meta
+engagement_type: analytical
+reader_participation: passive
+cognitive_load: moderate
+description: >-
+  A proposal for JSON++, a grammar-extensible substrate for active data,
+  bridging the gap between static serialization and dynamic processing.
+excerpt: >-
+  JSON++ represents a shift from viewing data as a static serialization format
+  to viewing it as a grammar-extensible substrate. By remaining a strategic
+  subgrammar of JavaScript, JSON++ enables symbolic power and declarative
+  processing without sacrificing compatibility with existing engines.
+og_image: /assets/images/jsonpp-social.png
+meta_title: 'JSON++: The Symbolic Substrate for Active Data'
+meta_description: >-
+  JSON++ evolves JSON into a symbolic, active substrate for data-intensive
+  applications, ML models, and agentic workflows.
+meta_keywords: >-
+  JSON++, data format, symbolic data, active data, machine learning data,
+  telemetry
+og_title: 'JSON++: The Symbolic Substrate for Active Data'
+og_description: >-
+  Evolving JSON from a static format to a symbolic, active substrate for the
+  agentic era.
+og_type: article
+og_locale: en_US
+og_site_name: Fractal Thought Engine
+schema_type: TechArticle
+schema_headline: 'JSON++: The Symbolic Substrate for Active Data'
+schema_author: Andrew
+schema_publisher: Fractal Thought Engine
+schema_date_published: 2026-01-01T00:00:00.000Z
+schema_date_modified: 2026-01-01T00:00:00.000Z
+schema_image: /assets/images/jsonpp-schema.png
+schema_word_count: 550
+schema_reading_time: PT5M
+canonical_url: 'https://fractalthoughtengine.com/learning/json-plus-plus'
+alternate_urls: []
+hreflang:
+  - lang: en
+    url: 'https://fractalthoughtengine.com/learning/json-plus-plus'
+robots: 'index,follow'
+googlebot: 'index,follow'
+bingbot: 'index,follow'
+content_rating: general
+content_language: en
+geo_region: Global
+geo_placename: ''
+geo_position: ''
+priority: 0.8
+changefreq: monthly
+sitemap_exclude: false
+search_exclude: false
+faq_schema: false
+how_to_schema: false
+breadcrumb_schema: true
+review_schema: false
+rating_value: 0
+rating_count: 0
+preload_resources: []
+prefetch_resources: []
+dns_prefetch: []
+is_featured: false
+is_cornerstone: true
+is_gateway: true
+is_synthesis: true
+featured_image: main.png

@@ -1,0 +1,75 @@
+title: 'Computational Ethics: A Field Theory of Moral Operators'
+layout: post
+date: 2026-01-01T00:00:00.000Z
+last_modified: 2026-01-01T14:30:00.000Z
+category: social
+subcategory: Computational Ethics
+tags:
+  - AI-Consciousness
+  - Social-Systems
+  - Philosophy-of-Mind
+  - Theoretical-Framework
+  - Mathematical-Modeling
+  - Ethics-Technology
+  - Research-Paper
+keywords:
+  - moral physics
+  - operator algebra
+  - multi-agent systems
+  - harm functional
+  - topological dynamics
+  - moral resonance
+status: working
+last_thought_date: 2026-01-01T00:00:00.000Z
+thought_generation: 1
+parent_document: docs/index.md
+child_documents: []
+related_documents: []
+reading_order: 1
+difficulty_level: advanced
+reading_time_minutes: 8
+document_type: framework
+thinking_style: mathematical
+consciousness_level: meta
+engagement_type: analytical
+reader_participation: passive
+cognitive_load: intense
+description: >-
+  A formal framework for ethics using field theory and operator algebra to model
+  harm propagation in multi-agent systems.
+excerpt: >-
+  Computational Ethics proposes a phase shift from moral philosophy to Moral
+  Physics, treating ethics as a structural analysis of how harm and benefit
+  propagate through multi-agent reward manifolds.
+og_image: /assets/images/social/moral-field-theory-og.png
+meta_title: 'Computational Ethics: A Field Theory of Moral Operators'
+meta_description: >-
+  Explore a mathematical approach to ethics using field theory, operator
+  algebra, and topology to model harm and resonance in multi-agent systems.
+meta_keywords: >-
+  computational ethics, moral physics, AI alignment, operator algebra,
+  multi-agent systems
+og_title: 'Computational Ethics: A Field Theory of Moral Operators'
+og_description: >-
+  Transitioning from moral philosophy to Moral Physics: A mathematical framework
+  for multi-agent ethics.
+og_type: article
+og_locale: en_US
+og_site_name: Fractal Thought Engine
+schema_type: ScholarlyArticle
+schema_headline: 'Computational Ethics: A Field Theory of Moral Operators'
+schema_author: Andrew
+schema_publisher: Fractal Thought Engine
+schema_date_published: 2026-01-01T00:00:00.000Z
+schema_date_modified: 2026-01-01T00:00:00.000Z
+schema_word_count: 850
+schema_reading_time: PT8M
+robots: 'index,follow'
+googlebot: 'index,follow'
+priority: 0.8
+changefreq: monthly
+is_featured: true
+is_cornerstone: true
+is_gateway: false
+is_synthesis: true
+featured_image: main.png

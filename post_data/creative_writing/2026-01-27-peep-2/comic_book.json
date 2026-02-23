@@ -1,0 +1,428 @@
+{
+  "config" : {
+    "subject" : "SEQUEL TO 'THE FLOCK OF FURY': Following the tragic battle where Bo Peep was forced to destroy her corrupted flock, she now embarks on a quest for vengeance and closure. Armed with The Shepherd's Wrath and the tattered blue ribbon of Bellwether, Bo tracks the source of the dark corruption to an ancient entity known as The Shepherd's Bane—a demonic wolf spirit that has haunted shepherdess bloodlines for centuries, feeding on the bonds between shepherds and their flocks. Bo journeys to the Hollow of Shadows, a cursed valley where the entity dwells. Along the way, she encounters a lone surviving lamb—pure white, uncorrupted—who escaped the curse by hiding. This lamb, whom she names Hope, becomes her companion. In the climactic battle, Bo confronts The Shepherd's Bane in its lair, using not just her sword skills but the power of her unbroken love—channeled through Bellwether's ribbon—to purify and destroy the ancient evil forever. The story ends with Bo returning to Meadowbrook, rebuilding her cottage, and beginning anew with Hope and a small flock of rescued sheep from neighboring villages. The curse is broken, the Peep bloodline is freed, and Bo finds peace—still a warrior, but also once again a shepherdess.",
+    "target_pages" : 5,
+    "art_style" : "western action comic",
+    "style_details" : "Non-anime martial arts action comic style - dynamic poses, dramatic angles, bold ink lines, high contrast shadows, motion blur effects, impact frames, gritty and intense atmosphere similar to classic martial arts comics like Sin City meets Lone Wolf and Cub. Western comic book aesthetic with heavy blacks, dramatic lighting, and visceral action choreography. Consistent with the first volume's visual style.",
+    "generate_images" : true,
+    "task_dependencies" : [ ],
+    "state" : "Pending",
+    "task_type" : "ComicBookGeneration",
+    "task_description" : "Generate a sequel comic book continuing Bo Peep's story as she hunts down the source of the corruption, defeats it, and finds redemption with a new flock."
+  },
+  "script" : {
+    "title" : "THE FLOCK OF FURY II: THE SHEPHERD'S BANE",
+    "premise" : "Following the devastating events of the first volume, Bo Peep—having been forced to destroy her beloved but corrupted flock—now walks a path of vengeance and healing. Clutching the tattered blue ribbon of her fallen lead sheep Bellwether and wielding The Shepherd's Wrath, she hunts the source of the dark corruption: an ancient demonic wolf spirit called The Shepherd's Bane. Her journey takes her through cursed lands, introduces an unexpected companion, and culminates in a battle that will either free her bloodline forever or consume her entirely.",
+    "characters" : [ {
+      "name" : "BO PEEP",
+      "description" : "A hardened shepherdess-turned-warrior in her late twenties. Once gentle, now forged by grief into something dangerous. She carries the weight of having killed her own flock, but refuses to let their deaths be meaningless.",
+      "visual_traits" : "Athletic build, weathered pastoral dress now reinforced with leather armor pieces, knee-high boots with steel toe caps. Blonde hair pulled back in a practical braid, loose strands framing a face marked by a fresh scar across her left cheek. Piercing blue eyes that shift between cold determination and deep sorrow. Bellwether's tattered blue ribbon wrapped around her left forearm like a bracer. The Shepherd's Wrath—a crook that transforms into a curved blade—strapped across her back."
+    }, {
+      "name" : "HOPE",
+      "description" : "A young lamb, pure white, who survived the corruption by hiding in a hollow log during the massacre. Represents innocence preserved and the possibility of renewal.",
+      "visual_traits" : "Small, pristine white wool that seems to glow slightly in darkness. Large, trusting dark eyes. A small notch in the left ear (birth mark). Moves with nervous energy but shows fierce loyalty to Bo."
+    }, {
+      "name" : "THE SHEPHERD'S BANE",
+      "description" : "An ancient demonic wolf spirit that has plagued shepherdess bloodlines for centuries. It feeds on the sacred bond between shepherd and flock, corrupting that love into madness and violence. It exists partially in shadow, partially in flesh.",
+      "visual_traits" : "Massive wolf form, twice the size of a normal wolf. Body composed of writhing shadows and black smoke, with patches of matted, rotting fur visible beneath. Eyes like burning coals—deep red with no pupils. Mouth filled with obsidian fangs that drip black ichor. Wears the skulls of past shepherdesses as a collar/necklace. When it speaks, multiple voices overlap—the screams of corrupted flocks throughout history."
+    }, {
+      "name" : "THE HOLLOW OF SHADOWS",
+      "description" : "A cursed valley where light itself seems wounded. The final resting place of The Shepherd's Bane.",
+      "visual_traits" : "Twisted dead trees, perpetual twilight, ground covered in black grass that moves without wind. Ancient shepherd's crooks jut from the earth like grave markers. A cave mouth at the valley's heart resembles a wolf's open maw."
+    } ],
+    "pages" : [ {
+      "page_number" : 1,
+      "rows" : [ {
+        "row_number" : 1,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "Panoramic view of the destroyed Meadowbrook cottage at dawn. Seven small grave mounds in the foreground, each marked with a river stone. Bo kneels before the center grave (Bellwether's), her back to us, The Shepherd's Wrath planted in the ground beside her. Smoke curls from the ruined cottage behind her. Crows circle overhead.",
+          "dialog" : [ ],
+          "caption" : "Three days since the slaughter. Three days since I buried what I loved with my own bloodied hands."
+        } ],
+        "visual_description" : "A single wide establishing panel. Dawn light struggles through heavy clouds over the burned ruins of Bo's cottage in Meadowbrook. The scene is rendered in heavy blacks and grays with only hints of warm light breaking through. Smoke still rises from the wreckage. In the foreground, small mounds of earth—fresh graves marked with simple stones."
+      }, {
+        "row_number" : 2,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "Extreme close-up of Bo's hands wrapping Bellwether's tattered blue ribbon around her left forearm. The ribbon is frayed, stained with dark spots. Her hands are calloused, knuckles scraped.",
+          "dialog" : [ {
+            "character" : "BO",
+            "text" : "You'll guide me, old friend."
+          } ],
+          "caption" : "Bellwether's ribbon. The last pure thing from my flock."
+        }, {
+          "frame_number" : 2,
+          "description" : "Bo standing, pulling The Shepherd's Wrath from the ground. The crook catches the weak morning light, its blade edge gleaming. Her expression is stone—grief compressed into purpose.",
+          "dialog" : [ ],
+          "caption" : "The corruption didn't come from nowhere. It had a source."
+        }, {
+          "frame_number" : 3,
+          "description" : "Bo's face in profile, scar prominent, eyes narrowed toward the distant mountains. Wind pulls at loose strands of her hair. Her jaw is set.",
+          "dialog" : [ {
+            "character" : "BO",
+            "text" : "And sources can be destroyed."
+          } ],
+          "caption" : "My grandmother's journals spoke of it. The Shepherd's Bane."
+        } ],
+        "visual_description" : "Three panels showing Bo's preparation to leave. Heavy shadows, intimate close-ups. The lighting is cold morning gray with harsh contrasts. Focus on textures—the roughness of the ribbon, the gleam of the blade, the determination in her eyes."
+      }, {
+        "row_number" : 3,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "Bo walking away from the graves toward a dark forest edge. She doesn't look back. Her posture is rigid, controlled. The graves are small shapes behind her. Morning mist clings to the ground.",
+          "dialog" : [ {
+            "character" : "BO",
+            "text" : "Wait for me, my flock."
+          } ],
+          "caption" : "The Hollow of Shadows. Three days' walk through cursed country."
+        }, {
+          "frame_number" : 2,
+          "description" : "Bo's silhouette—small but defiant—against massive dark mountains in the distance. Storm clouds gather above the peaks. The Shepherd's Wrath is visible across her back. She stands at the edge of the known world.",
+          "dialog" : [ {
+            "character" : "BO",
+            "text" : "Either way... this ends."
+          } ],
+          "caption" : "I'll bring you peace. Or I'll die trying."
+        } ],
+        "visual_description" : "Two panels. Bo walking away from the graves toward a dark treeline, then a dramatic shot of her silhouette against the mountains. Heavy blacks frame the panels."
+      } ]
+    }, {
+      "page_number" : 2,
+      "rows" : [ {
+        "row_number" : 1,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "Bo walking through a dead forest. Trees are twisted, bark blackened as if burned from within. The grass is gray and brittle. Animal skeletons—sheep, dogs, deer—litter the path. Faint black mist clings to the ground. Bo moves cautiously, hand near her weapon.",
+          "dialog" : [ ],
+          "caption" : "Day two. The land itself remembers the Bane's passage. Everything it touches... withers."
+        } ],
+        "visual_description" : "A wide panel showing Bo traveling through increasingly corrupted landscape. The environment tells the story of the Bane's influence—dead trees, blackened grass, animal bones. Heavy inks, oppressive atmosphere."
+      }, {
+        "row_number" : 2,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "Bo frozen mid-step, head turned sharply to the right. Her hand grips The Shepherd's Wrath. Tension in every line of her body. Leaves fall around her from dead branches.",
+          "dialog" : [ {
+            "character" : "BO",
+            "text" : "Show yourself."
+          } ],
+          "caption" : ""
+        }, {
+          "frame_number" : 2,
+          "description" : "From Bo's perspective, looking down at a hollow log partially hidden by dead brush. Something white is visible inside—a tuft of wool. Small hoofprints in the ash-gray dirt.",
+          "dialog" : [ ],
+          "caption" : "Impossible..."
+        }, {
+          "frame_number" : 3,
+          "description" : "A small lamb's face peering out from the hollow log. Pure white wool, large dark frightened eyes, the notched left ear visible. It trembles but doesn't flee.",
+          "dialog" : [ {
+            "character" : "BO",
+            "text" : "...A survivor?"
+          } ],
+          "caption" : ""
+        } ],
+        "visual_description" : "Three panels building tension. Bo hears something, reacts, discovers the source. Dynamic angles—low angle looking up at Bo's alert stance, then her perspective looking down, then the reveal."
+      }, {
+        "row_number" : 3,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "Bo crouched down, reaching toward the log with one hand. Her expression is conflicted—pain, hope, fear all visible. The Shepherd's Wrath is set aside. Bellwether's ribbon on her arm seems to catch faint light.",
+          "dialog" : [ {
+            "character" : "BO",
+            "text" : "How did you escape the corruption, little one?"
+          } ],
+          "caption" : "Part of me wanted to walk away. Attachment is weakness now."
+        }, {
+          "frame_number" : 2,
+          "description" : "The lamb—Hope—stepping cautiously out of the log toward Bo's extended hand. Its wool catches light, almost glowing against the dead surroundings. Its eyes are fixed on Bo with desperate trust.",
+          "dialog" : [ ],
+          "caption" : "But I couldn't. I'm still a shepherdess. Even now."
+        }, {
+          "frame_number" : 3,
+          "description" : "Bo holding the small lamb against her chest. Her eyes are closed, a single tear tracking down her scarred cheek. The lamb nuzzles against her. For one moment, the hardness in her breaks.",
+          "dialog" : [ {
+            "character" : "BO",
+            "text" : "Hope. I'll call you Hope."
+          }, {
+            "character" : "BO",
+            "text" : "And I swear on Bellwether's memory—I won't fail you."
+          } ],
+          "caption" : ""
+        } ],
+        "visual_description" : "Three emotional panels. Bo's internal conflict—this lamb represents everything she lost, and everything she fears losing again. Lighting shifts slightly warmer as she makes her choice."
+      }, {
+        "row_number" : 4,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "Bo standing tall, The Shepherd's Wrath in hand, looking toward distant dark mountains. Hope stands close to her boots, looking up at her. The dead forest stretches before them, but Bo's posture has changed.",
+          "dialog" : [ {
+            "character" : "BO",
+            "text" : "Stay close, Hope. Where we're going... nothing is safe."
+          } ],
+          "caption" : "The Hollow of Shadows. One more day's walk. Especially me."
+        } ],
+        "visual_description" : "Single panel - Bo rising with renewed purpose, Hope at her heels. The composition shows them small against the vast corrupted landscape ahead, but united."
+      } ]
+    }, {
+      "page_number" : 3,
+      "rows" : [ {
+        "row_number" : 1,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "Bo and Hope at the edge of a cliff, looking down into the Hollow of Shadows. The valley is a wound in the earth—black grass ripples without wind, dead trees claw at a sky that's perpetual twilight. Ancient shepherd's crooks stand upright in the ground. At the valley's heart, a massive cave mouth shaped like a snarling wolf.",
+          "dialog" : [ {
+            "character" : "BO",
+            "text" : "Those crooks... each one a shepherdess who came before me."
+          } ],
+          "caption" : "The Hollow of Shadows. Where my bloodline's curse began. Where it ends."
+        } ],
+        "visual_description" : "Wide cinematic panel. Bo and Hope arrive at the Hollow of Shadows—a nightmarish valley. The visual style goes full horror-western: extreme contrast, twisted impossible geometry, oppressive darkness."
+      }, {
+        "row_number" : 2,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "Bo descending the cliff path into the valley, Hope tucked under one arm. Her other hand grips The Shepherd's Wrath. The crooks loom around her like a dead forest. Shadows stretch unnaturally long.",
+          "dialog" : [ ],
+          "caption" : "The whispers started the moment I entered."
+        }, {
+          "frame_number" : 2,
+          "description" : "Bo's face set in grim determination, but sweat beads on her brow. Her eyes dart to shadows that seem to move at the panel edges. The ribbon on her arm pulses with faint blue light.",
+          "dialog" : [ {
+            "character" : "BO",
+            "text" : "Lies. My flock is at peace."
+          }, {
+            "character" : "BO",
+            "text" : "You're the one who'll join them."
+          } ],
+          "caption" : ""
+        }, {
+          "frame_number" : 3,
+          "description" : "Bo approaching the wolf-maw cave entrance, shot from below to emphasize its massive, threatening size. Red light pulses from within like a heartbeat. Hope shivers against Bo's leg.",
+          "dialog" : [ {
+            "character" : "VOICE FROM CAVE",
+            "text" : "LITTLE PEEP... I'VE BEEN EXPECTING YOU..."
+          } ],
+          "caption" : "The Shepherd's Bane. Waiting."
+        } ],
+        "visual_description" : "Three panels - descent into the valley. Increasing tension and horror. Bo moves through the crook-graves, Hope pressed against her legs. Shadows seem to move independently."
+      }, {
+        "row_number" : 3,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "Bo at the cave mouth, kneeling to set Hope down. She looks into the lamb's eyes with fierce protectiveness. The red glow from within illuminates half her face.",
+          "dialog" : [ {
+            "character" : "BO",
+            "text" : "Stay here, Hope. No matter what you hear."
+          }, {
+            "character" : "BO",
+            "text" : "If I don't come back... run. Find a new shepherd."
+          }, {
+            "character" : "HOPE",
+            "text" : "Baaaa..."
+          } ],
+          "caption" : ""
+        }, {
+          "frame_number" : 2,
+          "description" : "Bo stepping into the cave, silhouetted against the red glow. Before her, in the darkness, two massive coal-red eyes open. The suggestion of enormous scale—a shadow that fills the cavern. Skulls of past shepherdesses gleam around what might be a neck.",
+          "dialog" : [ {
+            "character" : "THE SHEPHERD'S BANE",
+            "text" : "ANOTHER PEEP COME TO DIE."
+          }, {
+            "character" : "THE SHEPHERD'S BANE",
+            "text" : "YOUR GRANDMOTHER SCREAMED FOR THREE DAYS."
+          }, {
+            "character" : "BO",
+            "text" : "I'm not here to scream."
+          } ],
+          "caption" : ""
+        } ],
+        "visual_description" : "Two panels - Bo enters the cave, and we get our first partial glimpse of The Shepherd's Bane. Extreme horror imagery—shadows that move wrong, the glint of red eyes in darkness."
+      } ]
+    }, {
+      "page_number" : 4,
+      "rows" : [ {
+        "row_number" : 1,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "The Shepherd's Bane fully revealed—a massive wolf of shadow and rot, twice Bo's height, lunging with obsidian fangs bared. Bo leaps to meet it, The Shepherd's Wrath transformed into its curved blade form, slashing upward. Bellwether's ribbon blazes with blue light.",
+          "dialog" : [ {
+            "character" : "THE SHEPHERD'S BANE",
+            "text" : "I HAVE DEVOURED A HUNDRED OF YOUR LINE!"
+          }, {
+            "character" : "BO",
+            "text" : "THEN CHOKE ON ME!"
+          } ],
+          "caption" : "It was faster than anything mortal. Stronger than nightmare. But I had something it didn't understand."
+        } ],
+        "visual_description" : "Full action splash - The Shepherd's Bane revealed in full horrific glory as it lunges at Bo. Maximum dynamic energy—motion blur, impact lines, dramatic lighting from the creature's eyes and Bo's glowing ribbon."
+      }, {
+        "row_number" : 2,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "The Bane's massive paw swatting Bo across the cave. She twists mid-air, blade catching the creature's leg, leaving a glowing wound. Black ichor sprays. Her face shows pain but no surrender.",
+          "dialog" : [ {
+            "character" : "BO",
+            "text" : "NNGH!"
+          } ],
+          "caption" : ""
+        }, {
+          "frame_number" : 2,
+          "description" : "Bo rolling to her feet, blood from a gash on her forehead. The Bane circles her, wounded leg smoking where she cut it. Multiple red eyes now visible in its shadow-form—the souls of corrupted flocks.",
+          "dialog" : [ {
+            "character" : "THE SHEPHERD'S BANE",
+            "text" : "YOUR FLOCK SCREAMS INSIDE ME, LITTLE PEEP."
+          }, {
+            "character" : "THE SHEPHERD'S BANE",
+            "text" : "BELLWETHER BEGGED FOR DEATH."
+          }, {
+            "character" : "BO",
+            "text" : "LIAR!"
+          } ],
+          "caption" : ""
+        }, {
+          "frame_number" : 3,
+          "description" : "Bo charging, blade high, ribbon blazing. She's fighting through pain and rage. The Bane opens its massive jaws to consume her. This is the moment of crisis—she's running straight into death.",
+          "dialog" : [ ],
+          "caption" : "It wanted me angry. Blind. It almost worked."
+        } ],
+        "visual_description" : "Three rapid-fire combat panels. Brutal, visceral fighting. Bo takes hits but keeps fighting. The Bane is powerful but Bo's attacks—charged with the ribbon's light—actually wound it."
+      }, {
+        "row_number" : 3,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "The Bane's jaws clamped around Bo, lifting her off the ground. She's trapped, blade pinned, shadow-teeth piercing her armor. Her eyes aren't afraid—they're closed in concentration. The ribbon pulses brighter.",
+          "dialog" : [ {
+            "character" : "THE SHEPHERD'S BANE",
+            "text" : "FINALLY. ANOTHER PEEP FOR MY COLLECTION."
+          } ],
+          "caption" : "In that moment, I stopped fighting. I remembered."
+        }, {
+          "frame_number" : 2,
+          "description" : "Soft-edged panel within the harsh scene—a memory. Bo as a young girl, surrounded by her first flock, Bellwether as a lamb nuzzling her hand. Pure warmth and love. The blue ribbon, new and bright, being tied around Bellwether's neck.",
+          "dialog" : [ {
+            "character" : "YOUNG BO",
+            "text" : "I'll always protect you, Bellwether."
+          } ],
+          "caption" : "Not the death. The life. Not the corruption. The love."
+        } ],
+        "visual_description" : "Two panels - the turning point. Bo is caught in the Bane's jaws but instead of fighting with rage, she remembers love. The ribbon's power fully activates."
+      } ]
+    }, {
+      "page_number" : 5,
+      "rows" : [ {
+        "row_number" : 1,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "Bo, still in the Bane's jaws, eyes open and blazing with blue light. The ribbon has unwound from her arm and wraps around the creature's head like chains of light. She presses her palm directly against the Bane's skull. Pure white-blue radiance explodes outward. The Bane is being torn apart from within.",
+          "dialog" : [ {
+            "character" : "BO",
+            "text" : "THIS IS FOR BELLWETHER!"
+          }, {
+            "character" : "BO",
+            "text" : "FOR MY FLOCK!"
+          }, {
+            "character" : "BO",
+            "text" : "FOR EVERY SHEPHERDESS YOU EVER TOUCHED!"
+          }, {
+            "character" : "THE SHEPHERD'S BANE",
+            "text" : "NOOO... THE BOND... IT BURNS..."
+          } ],
+          "caption" : "Love. The one thing it could never corrupt. The one thing stronger than centuries of darkness."
+        } ],
+        "visual_description" : "The climactic purification. Bo channels pure love through the ribbon, and it explodes with light that tears through The Shepherd's Bane. Blazing white/blue light burns the creature's darkness away."
+      }, {
+        "row_number" : 2,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "The cave interior, now lit by natural light streaming through cracks in the ceiling. Where the Bane stood, only a scorch mark and scattered ash remain. Bo lies crumpled on the ground, wounded but alive. The ribbon, now pure white, drifts down toward her.",
+          "dialog" : [ ],
+          "caption" : "It was over. The Shepherd's Bane—destroyed. The curse—broken."
+        }, {
+          "frame_number" : 2,
+          "description" : "Hope the lamb running into the cave, bleating frantically, rushing to Bo's side. Bo stirs, reaching out weakly to touch the lamb's wool. A faint smile crosses her bloodied face.",
+          "dialog" : [ {
+            "character" : "HOPE",
+            "text" : "BAAA! BAAA!"
+          }, {
+            "character" : "BO",
+            "text" : "I told you... to stay outside..."
+          }, {
+            "character" : "BO",
+            "text" : "Good girl... for not listening."
+          } ],
+          "caption" : ""
+        }, {
+          "frame_number" : 3,
+          "description" : "Bo's hand, scraped and bloody, catching the white ribbon as it falls. She clutches it to her chest. Tears mix with blood on her cheeks, but she's smiling.",
+          "dialog" : [ {
+            "character" : "BO",
+            "text" : "We did it, Bellwether."
+          }, {
+            "character" : "BO",
+            "text" : "You're free now. All of you."
+          } ],
+          "caption" : ""
+        } ],
+        "visual_description" : "Three panels - aftermath of the battle. The Bane is destroyed, Bo collapses, Hope finds her. Transition from intense action to quiet emotional resolution."
+      }, {
+        "row_number" : 3,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "Bo walking through a healing landscape—the dead trees now showing tiny green buds, the black grass fading to brown then green. Hope walks beside her. Bo is bandaged, leaning slightly on The Shepherd's Wrath as a walking stick.",
+          "dialog" : [ ],
+          "caption" : "Two weeks later. The land healed as the curse lifted. So did I."
+        }, {
+          "frame_number" : 2,
+          "description" : "Bo's cottage, partially rebuilt with fresh timber. A small flock of sheep grazes in a new pen. Hope stands among them, slightly apart, watching Bo. The graves of her original flock are now marked with a small stone monument.",
+          "dialog" : [ ],
+          "caption" : "Meadowbrook would live again. And so would I."
+        } ],
+        "visual_description" : "Two panels - time skip to healing and rebuilding. Bo returning to Meadowbrook, her cottage being rebuilt. Warmer lighting, softer shadows."
+      }, {
+        "row_number" : 4,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "Golden hour. Bo sits on a hill overlooking her rebuilt farm, Hope curled in her lap. The white ribbon is tied around Hope's neck. The Shepherd's Wrath leans against a rock beside her. Her new small flock grazes below. Bo's expression is serene but strong.",
+          "dialog" : [ {
+            "character" : "BO",
+            "text" : "I'm still a warrior, Bellwether. I always will be."
+          }, {
+            "character" : "BO",
+            "text" : "But I'm a shepherdess first."
+          }, {
+            "character" : "BO",
+            "text" : "I always was."
+          } ],
+          "caption" : "The Peep bloodline—freed at last. And Bo Peep—home."
+        } ],
+        "visual_description" : "Final panel - Bo at peace but still a warrior. She stands with her new flock, The Shepherd's Wrath across her back, the white ribbon now tied in Hope's wool."
+      } ]
+    } ]
+  },
+  "characterImages" : {
+    "BO PEEP" : "char_BO_PEEP.png",
+    "HOPE" : "char_HOPE.png",
+    "THE SHEPHERD'S BANE" : "char_THE_SHEPHERD_S_BANE.png",
+    "THE HOLLOW OF SHADOWS" : "char_THE_HOLLOW_OF_SHADOWS.png"
+  },
+  "rowImages" : {
+    "1_1" : "page_1_row_1.png",
+    "1_2" : "page_1_row_2.png",
+    "1_3" : "page_1_row_3.png",
+    "2_1" : "page_2_row_1.png",
+    "2_2" : "page_2_row_2.png",
+    "2_3" : "page_2_row_3.png",
+    "2_4" : "page_2_row_4.png",
+    "3_1" : "page_3_row_1.png",
+    "3_2" : "page_3_row_2.png",
+    "3_3" : "page_3_row_3.png",
+    "4_1" : "page_4_row_1.png",
+    "4_2" : "page_4_row_2.png",
+    "4_3" : "page_4_row_3.png",
+    "5_1" : "page_5_row_1.png",
+    "5_2" : "page_5_row_2.png",
+    "5_3" : "page_5_row_3.png",
+    "5_4" : "page_5_row_4.png"
+  }
+}

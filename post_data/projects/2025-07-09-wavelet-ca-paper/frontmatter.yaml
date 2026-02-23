@@ -1,0 +1,87 @@
+title: >-
+  Geographic Wavelet-Invariant Neural Cellular Automata for Differentiable
+  Geospatial Dynamics Learning
+layout: post
+date: '"2025-07-09T00:00:00.000Z"'
+last_modified: '"2025-07-09T12:00:00.000Z"'
+category: projects
+subcategory: Engineering & Formal Systems
+tags:
+  - Machine Learning
+  - Algorithms
+  - Paper
+keywords:
+  - cellular automata
+  - wavelet decomposition
+  - neural networks
+  - geospatial modeling
+  - differentiable programming
+  - inverse problems
+  - weather forecasting
+  - climate modeling
+status: stable
+last_thought_date: '"2025-07-09T00:00:00.000Z"'
+thought_generation: 1
+reading_order: 1
+difficulty_level: research
+reading_time_minutes: 45
+document_type: research_paper
+thinking_style: mathematical
+consciousness_level: analytical
+engagement_type: analytical
+reader_participation: passive
+cognitive_load: intense
+description: >-
+  A novel computational framework combining wavelet-decomposed geographic
+  topology with deep neural cellular automata for learning geospatial dynamics
+  from observational data
+excerpt: >-
+  We present a framework that separates geographic structure from learned
+  dynamics by encoding terrain features as invariant wavelet basis functions
+  while employing deep neural networks as local transition rules, enabling
+  back-evolution of physical process rules from satellite imagery and weather
+  data.
+meta_title: Wavelet Neural Cellular Automata for Geospatial Dynamics Learning
+meta_description: >-
+  Novel framework combining wavelet decomposition with neural cellular automata
+  for differentiable geospatial modeling, weather forecasting, and climate
+  analysis from observational data.
+meta_keywords: >-
+  neural cellular automata, wavelet analysis, geospatial modeling, weather
+  forecasting, climate modeling, differentiable programming, machine learning
+og_title: Geographic Wavelet-Invariant Neural Cellular Automata
+og_description: >-
+  Revolutionary approach to learning geospatial dynamics by combining wavelet
+  topology with neural networks for weather and climate modeling
+og_type: article
+og_locale: en_US
+schema_type: ScholarlyArticle
+schema_headline: >-
+  Geographic Wavelet-Invariant Neural Cellular Automata for Differentiable
+  Geospatial Dynamics Learning
+schema_author: Research Team
+schema_publisher: Fractal Thought Engine
+schema_date_published: '"2025-07-09T00:00:00.000Z"'
+schema_date_modified: '"2025-07-09T00:00:00.000Z"'
+schema_word_count: 8500
+schema_reading_time: PT45M
+robots: 'index,follow'
+content_rating: general
+content_language: en
+geo_region: Global
+priority: '0.8'
+changefreq: monthly
+sitemap_exclude: false
+search_exclude: false
+faq_schema: false
+how_to_schema: false
+breadcrumb_schema: true
+review_schema: false
+is_featured: true
+is_cornerstone: true
+is_gateway: false
+is_synthesis: true
+related_documents:
+  - _posts/projects/2025-08-08-flood-memory-model.md
+  - _posts/projects/2025-06-30-wavelet-geometric-optimization.md
+  - _posts/learning/2025-07-09-wavelet-trust-region-dropout.md

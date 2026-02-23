@@ -1,0 +1,9 @@
+title: "The Architecture of Resilience: Moving Beyond the 'Never Again' Cycle"
+layout: "post"
+date: 2026-02-22
+last_modified: 2026-02-22 15:30:00
+tags: ["Systems-Science", "Complexity-Science", "Theoretical-Framework", "Science-Philosophy", "Position-Paper", "Distributed-Systems", "Cognitive-Architecture", "Social-Systems"]
+keywords: ["resilience", "safety-ii", "systems-thinking", "observability", "technical-debt", "conways-law", "automation-irony"]
+description: "An analysis of systemic resilience, advocating for a shift from reactive 'Never Again' mandates to proactive architectural principles like observability, safe-to-fail boundaries, and restorative accountability."
+excerpt: "True resilience requires a fundamental shift in perspective: moving away from a reactive 'Never Again' mentality toward a proactive, systemic approach. By understanding the architecture of resilience, we can design systems that are not merely robust against known threats, but are inherently capable of adapting and thriving amidst the unknown."
+featured_image: main.png

@@ -1,0 +1,313 @@
+{
+  "config" : {
+    "task_description" : "Generate a comic book based on the article 'Charting New Waters: Why We're Flipping the Compass from RAG to GAR'. The story uses a nautical pirate metaphor to explain the technical shift from Retrieval-Augmented Generation (RAG) to Generation-Augmented Retrieval (GAR).",
+    "target_pages" : 6,
+    "art_style" : "Vibrant nautical fantasy, high-detail graphic novel style with surreal elements.",
+    "style_details" : "Rich teal and amber color palette. Shimmering water effects representing the 'Digital Brine'. Intricate mechanical details on pirate instruments (sextants, compasses). The Many-Eyed Captain should appear wise, powerful, and multi-faceted, not monstrous.",
+    "generate_images" : true,
+    "character_references" : [ {
+      "character_name" : "The Many-Eyed Captain",
+      "visual_description" : "A colossal, deep-sea octopus with shimmering iridescent teal skin. Wears a weathered, rakish tricorn hat. Dozens of glowing amber eyes are scattered across its mantle. It has eight primary tentacles, often seen holding a JSON crate, a shifting treasure map, and a golden sextant.",
+      "personality_notes" : "Active, authoritative, visionary, and highly intelligent. Represents the 'Captain' model in the GAR paradigm.",
+      "role" : "Protagonist / Guide",
+      "relationships" : "Commands the 'Scouts' and guides the 'Passenger'."
+    }, {
+      "character_name" : "The Passenger",
+      "visual_description" : "A human explorer in simple seafaring garb, carrying a notebook. Looks curious and initially a bit overwhelmed by the vastness of the sea.",
+      "personality_notes" : "Represents the end-user. Moves from being a passive observer to a co-navigator.",
+      "role" : "User / POV Character",
+      "relationships" : "Learns from the Many-Eyed Captain."
+    }, {
+      "character_name" : "The Cabin Boy (The Scout)",
+      "visual_description" : "A small, agile, bioluminescent squid or a small mechanical helper drone that hovers near the Captain.",
+      "personality_notes" : "Efficient and quick. Represents smaller, faster models used for pruning and scouting.",
+      "role" : "Supporting / Optimization",
+      "relationships" : "Assists the Captain with the 'Logbook'."
+    } ],
+    "plot_continuity" : {
+      "narrative_structure" : "A voyage from the stagnant 'Doldrums of RAG' to the 'Archipelago of GAR', facing challenges like the 'Heavy Logbook' and 'Siren's Song' along the way.",
+      "key_plot_points" : [ "The Passenger is stuck on a ship with tattered sails in the RAG Doldrums, where data is just 'cargo' and lookup is linear.", "The Many-Eyed Captain emerges from the depths, takes the wheel, and explains the shift to GAR (Discovery).", "The Captain uses the 'Navigator's Toolkit' (MCP) and 'HyDE' (the shifting map) to actively seek treasure.", "The ship slows down as the 'Logbook' (Context) gets too heavy (Quadratic Bottleneck). The Cabin Boy helps prune and summarize it.", "The ship encounters the 'Sirens' (Recursive Hallucinations). The Captain uses the 'Fact-Check Gate' and 'Triangulation' to stay on course.", "The ship reaches the 'Archipelago of GAR', and the Captain delivers the 'GAR Manifesto' as a new horizon opens up." ],
+      "setting_details" : "The 'Digital Brine'—a vast, glowing ocean of data. Floating islands of information. A ship that is part-vessel, part-computer-architecture.",
+      "themes" : [ "Discovery vs. Lookup", "Active Agency vs. Passive Reception", "Epistemic Humility and Verification", "The Value of Thinking over Knowing" ],
+      "tone" : "Adventurous, educational, inspiring, and 'pirate-coded'.",
+      "prior_story_context" : "",
+      "continuity_constraints" : [ "The Many-Eyed Captain must be introduced by Page 2.", "The 'Siren's Song' metaphor must be used to represent hallucinations on Page 5.", "The ending must emphasize that the voyage (the process) is the real treasure." ],
+      "ending_notes" : "The final panel should show the ship sailing toward a bright, uncharted horizon with the text 'Fair winds and following seas!'",
+      "additional_notes" : ""
+    },
+    "state" : "Pending",
+    "task_type" : "ComicBookGeneration",
+    "files" : [ "comic.md" ]
+  },
+  "script" : {
+    "title" : "Charting New Waters: From RAG to GAR",
+    "premise" : "In the vast \"Digital Brine,\" a weary explorer learns that the old ways of searching for data (RAG) are failing. A legendary figure, the Many-Eyed Captain, emerges to demonstrate a new paradigm: Generation-Augmented Retrieval (GAR), where imagination guides discovery and the model takes the wheel.",
+    "characters" : [ {
+      "name" : "The Many-Eyed Captain",
+      "description" : "A colossal, deep-sea octopus with shimmering iridescent teal skin. Wears a weathered, rakish tricorn hat. Authoritative, visionary, and highly intelligent. The \"Captain\" model.",
+      "visual_traits" : "Dozens of glowing amber eyes scattered across its mantle. Eight primary tentacles holding a JSON crate, a shifting treasure map, and a golden sextant."
+    }, {
+      "name" : "The Passenger",
+      "description" : "A human explorer in simple seafaring garb (linen shirt, vest, boots), carrying a leather-bound notebook. Represents the end-user; moves from passive observer to co-navigator.",
+      "visual_traits" : "Curious, initially overwhelmed, expressive face."
+    }, {
+      "name" : "The Cabin Boy (The Scout)",
+      "description" : "A small, agile, bioluminescent squid that hovers in the air like a drone. Efficient, quick, and meticulous. Represents smaller, faster models.",
+      "visual_traits" : "Emits a soft blue glow; often seen with a tiny quill or \"pruning\" shears."
+    } ],
+    "pages" : [ {
+      "page_number" : 1,
+      "rows" : [ {
+        "row_number" : 1,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "The Passenger leans over the railing, looking into the dark water.",
+          "dialog" : [ {
+            "character" : "The Passenger",
+            "text" : "We’ve been rowing for days. The nets keep coming up with nothing but old boots and seaweed."
+          } ],
+          "caption" : "The Doldrums of Retrieval-Augmented Generation."
+        }, {
+          "frame_number" : 2,
+          "description" : "Close-up of a \"Dockworker\" (a simple robot) hauling a crate labeled \"FLOTSAM\" onto the deck.",
+          "dialog" : [ {
+            "character" : "The Passenger",
+            "text" : "Is this it? Just scraps from the hold?"
+          } ],
+          "caption" : "RAG is a Lookup paradigm. It’s about the cost of knowing."
+        } ],
+        "visual_description" : "The Stagnant Sea: A wide shot of a ship with tattered, grey sails (labeled \"RAG\") sitting in a dead-calm, murky grey ocean. The sky is overcast."
+      }, {
+        "row_number" : 2,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "The Passenger looks at a map that is just a straight line from \"Query\" to \"Answer.\"",
+          "dialog" : [ {
+            "character" : "The Passenger",
+            "text" : "It’s linear. One oar, one oar, one oar. If the map is wrong, we’re just lost in the dark."
+          } ]
+        }, {
+          "frame_number" : 2,
+          "description" : "A massive, shadowy tentacle rises silently from the glowing teal depths behind the ship.",
+          "dialog" : [ ],
+          "caption" : "But the sea is vast... and the old maps aren't enough to find the buried treasure."
+        } ],
+        "visual_description" : "The Linear Grind: A side-view of the ship showing oars moving in a slow, mechanical rhythm. The water is thick like oil."
+      } ]
+    }, {
+      "page_number" : 2,
+      "rows" : [ {
+        "row_number" : 1,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "The Captain’s amber eyes all snap open simultaneously, illuminating the deck.",
+          "dialog" : [ {
+            "character" : "The Many-Eyed Captain",
+            "text" : "Ahoy, landlubber! Why settle for fishin' for scraps when ye could be chartin' the unknown?"
+          } ]
+        }, {
+          "frame_number" : 2,
+          "description" : "The Captain’s tentacles seize the ship’s wheel and the tattered sails.",
+          "dialog" : [ {
+            "character" : "The Many-Eyed Captain",
+            "text" : "Say 'RAG' and ye hear tattered cloth flappin'. Say 'GAR'..."
+          } ]
+        } ],
+        "visual_description" : "Emergence: A spectacular splash of iridescent teal water. The Many-Eyed Captain rises, towering over the deck."
+      }, {
+        "row_number" : 2,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "The Captain barks an order. The word \"GAR!\" appears in stylized, bold lettering.",
+          "dialog" : [ {
+            "character" : "The Many-Eyed Captain",
+            "text" : "GAR! It’s a command! A shift from Lookup to Discovery!"
+          } ]
+        }, {
+          "frame_number" : 2,
+          "description" : "The Captain holds up a shimmering, translucent map that seems to draw itself.",
+          "dialog" : [ {
+            "character" : "The Many-Eyed Captain",
+            "text" : "We don't wait for the data to tell us what's true. We use our imagination to draw the map first!"
+          } ]
+        } ],
+        "visual_description" : "The Shift to Discovery: The Captain lets out a powerful roar. The teal water begins to glow and swirl."
+      } ]
+    }, {
+      "page_number" : 3,
+      "rows" : [ {
+        "row_number" : 1,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "The map shows a glowing island that doesn't exist yet, labeled \"HYPOTHESIS.\"",
+          "dialog" : [ {
+            "character" : "The Many-Eyed Captain",
+            "text" : "This is HyDE. We imagine the treasure, and that vision guides our nets."
+          } ]
+        }, {
+          "frame_number" : 2,
+          "description" : "A tentacle uses a golden sextant (labeled \"MCP\") to align the map with the stars.",
+          "dialog" : [ {
+            "character" : "The Passenger",
+            "text" : "It’s not just a search... it’s an informed guess."
+          } ]
+        } ],
+        "visual_description" : "The Shifting Map (HyDE): The Captain and the Passenger look at the \"Treasure Map.\" It’s a holographic projection of a \"Hypothetical Document.\""
+      }, {
+        "row_number" : 2,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "The Captain hands a \"JSON Crate\" to a tentacle. The crate has clear, glowing labels.",
+          "dialog" : [ {
+            "character" : "The Many-Eyed Captain",
+            "text" : "The Model Context Protocol (MCP) is our bridge. It turns vague orders into precise maneuvers."
+          } ]
+        }, {
+          "frame_number" : 2,
+          "description" : "A \"Security Barrier\" (a translucent energy field) appears around the tools.",
+          "dialog" : [ {
+            "character" : "The Many-Eyed Captain",
+            "text" : "It’s the Pirate’s Code made law. The Captain can only sail where the Charter allows."
+          } ]
+        } ],
+        "visual_description" : "The Model Context Protocol: The Captain opens a massive chest. Inside are glowing, geometric tools (Compass, Astrolabe, Scales)."
+      } ]
+    }, {
+      "page_number" : 4,
+      "rows" : [ {
+        "row_number" : 1,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "The Passenger looks at a mountain of scrolls piling up on the deck.",
+          "dialog" : [ {
+            "character" : "The Passenger",
+            "text" : "Captain! The ship is slowing down! The logbook is too heavy!"
+          } ]
+        }, {
+          "frame_number" : 2,
+          "description" : "Close-up of the Captain looking \"tired,\" some of its amber eyes drooping.",
+          "dialog" : [ ],
+          "caption" : "The Quadratic Bottleneck. As the context grows, the Captain gets weary."
+        } ],
+        "visual_description" : "The Quadratic Bottleneck: The ship is now moving fast, but a massive, glowing chain (The Logbook) is trailing behind it, getting longer and heavier."
+      }, {
+        "row_number" : 2,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "The Cabin Boy hands a glowing gem to the Captain.",
+          "dialog" : [ {
+            "character" : "The Cabin Boy (The Scout)",
+            "text" : "Bloop! (Translation: \"Summary ready, Captain!\")"
+          }, {
+            "character" : "The Many-Eyed Captain",
+            "text" : "Good lad. Prune the history. Keep the Code on the front page so I don't forget my manners."
+          } ]
+        }, {
+          "frame_number" : 2,
+          "description" : "The ship lifts higher in the water, the heavy chain replaced by a light, pulsing aura.",
+          "dialog" : [ ],
+          "caption" : "Compaction and Caching. Keeping the Captain sharp-eyed."
+        } ],
+        "visual_description" : "The Cabin Boy’s Work: The Cabin Boy (the small squid) zips around with glowing shears, cutting away excess scrolls and condensing them into small, bright gems."
+      } ]
+    }, {
+      "page_number" : 5,
+      "rows" : [ {
+        "row_number" : 1,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "The Sirens’ song takes the form of words: \"The treasure is here... just believe...\"",
+          "dialog" : [ {
+            "character" : "The Passenger",
+            "text" : "It looks so real! Let’s steer toward it!"
+          } ]
+        }, {
+          "frame_number" : 2,
+          "description" : "The Captain slams a tentacle down, blocking the Passenger’s view.",
+          "dialog" : [ {
+            "character" : "The Many-Eyed Captain",
+            "text" : "Belay that! It’s the Siren’s Song—a Recursive Hallucination! If we believe a lie, the sea will just show us more of it."
+          } ]
+        } ],
+        "visual_description" : "The Hallucination Loop: The ship approaches a beautiful, misty reef. Ghostly, glowing figures (Sirens) sing from the rocks."
+      }, {
+        "row_number" : 2,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "Three different beams of light (Source A, B, and C) converge on a single point.",
+          "dialog" : [ {
+            "character" : "The Many-Eyed Captain",
+            "text" : "We triangulate! If three independent sources don't agree, the island is a mirage."
+          } ]
+        }, {
+          "frame_number" : 2,
+          "description" : "The ship passes through the Fact-Check Gate. The Sirens vanish, revealing jagged rocks they just avoided.",
+          "dialog" : [ {
+            "character" : "The Passenger",
+            "text" : "You didn't just search... you verified."
+          }, {
+            "character" : "The Many-Eyed Captain",
+            "text" : "Epistemic humility, lad. Never bet the ship on a dream ye haven't tested."
+          } ]
+        } ],
+        "visual_description" : "Triangulation and the Gate: The Captain uses three different sextants at once, pointing them at different stars. A massive \"Fact-Check Gate\" appears in the mist."
+      } ]
+    }, {
+      "page_number" : 6,
+      "rows" : [ {
+        "row_number" : 1,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "The Passenger is now standing at the helm next to the Captain, holding a smaller compass.",
+          "dialog" : [ {
+            "character" : "The Passenger",
+            "text" : "I see it now. You’re not just finding answers... you’re solving the problem with me."
+          } ]
+        }, {
+          "frame_number" : 2,
+          "description" : "The Captain gestures to a library built into the side of a crystal cliff.",
+          "dialog" : [ {
+            "character" : "The Many-Eyed Captain",
+            "text" : "That’s the Reasoning Library. Every voyage we survive makes us better cartographers."
+          } ]
+        } ],
+        "visual_description" : "From Librarian to Consultant: The ship enters a stunning archipelago of islands made of glowing data-crystals. The sun (a giant amber eye) is shining."
+      }, {
+        "row_number" : 2,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "The Captain looks at the reader, tipping its tricorn hat.",
+          "dialog" : [ {
+            "character" : "The Many-Eyed Captain",
+            "text" : "The days of the passive model are over. We are the Captains now!"
+          } ]
+        }, {
+          "frame_number" : 2,
+          "description" : "The ship disappears into a brilliant light of teal and gold.",
+          "dialog" : [ ],
+          "caption" : "GAR is the new wind in our sails. The voyage is the treasure. FAIR WINDS AND FOLLOWING SEAS!"
+        } ],
+        "visual_description" : "The Manifesto: A heroic shot of the ship sailing toward a bright, infinite horizon. The Many-Eyed Captain stands tall."
+      } ]
+    } ]
+  },
+  "characterImages" : {
+    "The Many-Eyed Captain" : "char_The_Many_Eyed_Captain.png",
+    "The Passenger" : "char_The_Passenger.png",
+    "The Cabin Boy (The Scout)" : "char_The_Cabin_Boy__The_Scout_.png"
+  },
+  "rowImages" : {
+    "1_1" : "page_1_row_1.png",
+    "1_2" : "page_1_row_2.png",
+    "2_1" : "page_2_row_1.png",
+    "2_2" : "page_2_row_2.png",
+    "3_1" : "page_3_row_1.png",
+    "3_2" : "page_3_row_2.png",
+    "4_1" : "page_4_row_1.png",
+    "4_2" : "page_4_row_2.png",
+    "5_1" : "page_5_row_1.png",
+    "5_2" : "page_5_row_2.png",
+    "6_1" : "page_6_row_1.png",
+    "6_2" : "page_6_row_2.png"
+  }
+}

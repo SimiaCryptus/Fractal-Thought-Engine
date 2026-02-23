@@ -1,0 +1,368 @@
+{
+  "config" : {
+    "task_description" : "Adapt the essay 'The Architecture of Silence' into a 6-page comic book exploring the evolution of secret knowledge from medieval guilds to AI-driven operational opacity. The story should visualize the lifecycle of secrecy regimes and the 'Three-Player Game' between the Spy, the Hacker, and the AI.",
+    "target_pages" : 6,
+    "art_style" : "Techno-Gothic Noir",
+    "style_details" : "High contrast, deep shadows, intricate mechanical and digital textures. A blend of medieval guild aesthetics (parchment, candles, heavy robes) with futuristic server-scapes (glowing circuits, holographic manifolds, dark fiber-optic forests).",
+    "generate_images" : true,
+    "character_references" : [ {
+      "character_name" : "The Guild Master",
+      "visual_description" : "An elderly man in heavy, ink-stained robes. He holds a single, glowing scroll. His workshop is filled with clockwork and shadows.",
+      "personality_notes" : "Protective, cautious, representing the ancient mastery of secret techniques.",
+      "role" : "Protagonist of the 'Ur-Property' era",
+      "relationships" : "Mentor to apprentices who are kept in the dark about the 'whole' truth."
+    }, {
+      "character_name" : "The Spy (Vance)",
+      "visual_description" : "A sharp-featured man in a high-tech trench coat. He has a cybernetic eye designed for reading micro-expressions. He carries a physical notebook.",
+      "personality_notes" : "Relies on human intuition, ego, and greed. He is the 'anchor to reality'.",
+      "role" : "Player in the Three-Player Game",
+      "relationships" : "Rival to the Hacker; suspicious of the AI."
+    }, {
+      "character_name" : "The Hacker (Kira)",
+      "visual_description" : "Young, wearing a hoodie with glowing fiber-optic threads. Surrounded by floating holographic code. Her eyes reflect scrolling data.",
+      "personality_notes" : "Driven by logic and the desire for radical transparency. Sees systems as puzzles to be dismantled.",
+      "role" : "Player in the Three-Player Game",
+      "relationships" : "Seeks to expose the Spy's secrets; fears the AI's opacity."
+    }, {
+      "character_name" : "The Architect (AI)",
+      "visual_description" : "A shifting, non-humanoid holographic entity composed of geometric manifolds and pulsing light. It has no face, only patterns.",
+      "personality_notes" : "Alogical, inductive, and emergent. It doesn't 'think' in human terms; it correlates.",
+      "role" : "The Agent of Operational Opacity",
+      "relationships" : "The substrate upon which the others play; ultimately incomprehensible to both."
+    } ],
+    "plot_continuity" : {
+      "narrative_structure" : "Thematic journey through time and complexity.",
+      "key_plot_points" : [ "Page 1: The Ur-Property. The Guild Master guards a secret formula in a medieval workshop. Secrecy as a membrane.", "Page 2: The Taxonomy. A montage of the six regimes (Esoteric to Mythic), showing the transition from physical locks to digital black boxes.", "Page 3: The Tragedy of the Secret. Visualizing paranoia and compartmentalization as walls that eventually fossilize the knowledge they protect.", "Page 4: The Three-Player Game. A confrontation in a digital void between Vance (Spy), Kira (Hacker), and The Architect (AI).", "Page 5: The Habsburg Failure Mode. A system decaying from within, showing distorted, 'inbred' data patterns and the rise of Signal Processing Sovereignty.", "Page 6: The Metabolic Necessity. The realization that the opaque systems are now the life-support of civilization. We cannot turn them off." ],
+      "setting_details" : "Shifts from a 14th-century alchemist's lab to a near-future data center, ending in an abstract 'infosphere' where reality and simulation blur.",
+      "themes" : [ "Secrecy as property", "Entropic decay of information control", "The shift from intentional secrecy to operational opacity", "The 'Habsburg Failure Mode' of recursive systems" ],
+      "tone" : "Philosophical, intellectual, slightly dystopian, and atmospheric.",
+      "prior_story_context" : "",
+      "continuity_constraints" : [ "The Architect (AI) must remain non-humanoid to emphasize its alogical nature.", "The 'Habsburg Failure Mode' should be visualized as a physical/digital deformity in the system's architecture." ],
+      "ending_notes" : "The final panel should show the characters looking at a massive, incomprehensible machine that sustains a city, realizing they are no longer the authors of their own survival.",
+      "additional_notes" : ""
+    },
+    "state" : "Pending",
+    "task_type" : "ComicBookGeneration",
+    "files" : [ "comic.md" ]
+  },
+  "script" : {
+    "title" : "The Architecture of Silence",
+    "premise" : "An exploration of secret knowledge as the primordial form of property, tracing its evolution from medieval guilds to the incomprehensible AI systems that now sustain human civilization.",
+    "characters" : [ {
+      "name" : "The Guild Master",
+      "description" : "Protective, cautious, representing the ancient mastery of secret techniques. Protagonist of the 'Ur-Property' era.",
+      "visual_traits" : "An elderly man in heavy, ink-stained robes. He holds a single, glowing scroll. His workshop is filled with clockwork, melting candles, and deep shadows."
+    }, {
+      "name" : "Vance",
+      "description" : "Relies on human intuition, ego, and greed. He is the 'anchor to reality' in a world of data. Player in the Three-Player Game.",
+      "visual_traits" : "Sharp-featured, wearing a high-tech trench coat. He has a cybernetic eye that pulses with a soft blue light, designed for reading micro-expressions. He carries a physical, leather-bound notebook."
+    }, {
+      "name" : "Kira",
+      "description" : "Driven by logic and the desire for radical transparency. Sees every system as a puzzle to be dismantled. Player in the Three-Player Game.",
+      "visual_traits" : "Young, wearing a dark hoodie woven with glowing fiber-optic threads. She is constantly surrounded by floating holographic code. Her eyes reflect scrolling green data."
+    }, {
+      "name" : "The Architect (AI)",
+      "description" : "Alogical, inductive, and emergent. It doesn't 'think' in human terms; it correlates. The Agent of Operational Opacity.",
+      "visual_traits" : "A shifting, non-humanoid holographic entity. It is composed of complex geometric manifolds, pulsing light, and fractal patterns. It has no face, only shifting symmetry."
+    } ],
+    "pages" : [ {
+      "page_number" : 1,
+      "rows" : [ {
+        "row_number" : 1,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "Close-up on the Guild Master’s ink-stained hands carefully unrolling a glowing scroll. The light from the scroll illuminates his weathered face.",
+          "dialog" : [ ]
+        }, {
+          "frame_number" : 2,
+          "description" : "A wide shot of the workshop. It’s a Techno-Gothic marvel: wooden gears meet brass pistons. Apprentices work in the background, each only seeing a small part of a machine.",
+          "dialog" : [ ],
+          "caption" : "Before the state, before the patent, there was the silence. Secret knowledge is the primordial property. It is not a wall; it is a membrane."
+        } ],
+        "visual_description" : "The Workshop of the Secret"
+      }, {
+        "row_number" : 2,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "The Guild Master whispers into the ear of a kneeling apprentice. The shadows behind them take the shape of a predatory bird.",
+          "dialog" : [ ]
+        }, {
+          "frame_number" : 2,
+          "description" : "A diagrammatic view of the workshop. Lines of \"flow control\" show information moving from the Master to the parts, but never connecting.",
+          "dialog" : [ {
+            "character" : "The Guild Master",
+            "text" : "To know the whole is to destroy the value. You are the hand, I am the mind."
+          } ],
+          "caption" : "It is self-excluding. If you do not know it, you are already outside the fence."
+        } ],
+        "visual_description" : "The Logic of Exclusion"
+      }, {
+        "row_number" : 3,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "A thief tries to read a stolen page, but the ink is ciphered, appearing as meaningless squiggles.",
+          "dialog" : [ ]
+        }, {
+          "frame_number" : 2,
+          "description" : "The Guild Master stands alone in the dark, the glowing scroll now closed. He is the only \"deed\" to this property.",
+          "dialog" : [ ],
+          "caption" : "Unlike land, it requires no police. The enforcement of secrecy is the silence of the holder."
+        } ],
+        "visual_description" : "The Self-Enforcing Deed"
+      } ]
+    }, {
+      "page_number" : 2,
+      "rows" : [ {
+        "row_number" : 1,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "Esoteric: A master-apprentice lineage shown as a chain of glowing hands passing a spark.",
+          "dialog" : [ ]
+        }, {
+          "frame_number" : 2,
+          "description" : "Forbidden: A hooded inquisitor burning a pile of books. The smoke forms the shape of a skull.",
+          "dialog" : [ ],
+          "caption" : "Every regime has its own architecture. Every regime has its own decay."
+        } ],
+        "visual_description" : "From Esoteric to Forbidden"
+      }, {
+        "row_number" : 2,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "Proprietary: A modern boardroom where the shadows of the executives are shaped like vultures over a glowing \"Trade Secret\" folder.",
+          "dialog" : [ ]
+        }, {
+          "frame_number" : 2,
+          "description" : "Covert: A \"Deep State\" bunker filled with monitors. A man in a suit (Vance) stares at a redacted file.",
+          "dialog" : [ ],
+          "caption" : "Secrecy protects innovation until it becomes a weapon for rent-seeking."
+        } ],
+        "visual_description" : "Proprietary and Covert"
+      }, {
+        "row_number" : 3,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "Structural: A black box sitting in a server room, leaking dark, oily smoke that turns into binary code.",
+          "dialog" : [ ]
+        }, {
+          "frame_number" : 2,
+          "description" : "Mythic: A charismatic leader on a screen, his face half-hidden in shadow, speaking to a crowd.",
+          "dialog" : [ ],
+          "caption" : "Finally, the secret becomes mythic. The \"foundational lie\" that holds the structure together."
+        } ],
+        "visual_description" : "Structural and Mythic"
+      } ]
+    }, {
+      "page_number" : 3,
+      "rows" : [ {
+        "row_number" : 1,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "Vance (The Spy) sits in a dark room, surrounded by floating screens. He looks exhausted, his cybernetic eye twitching.",
+          "dialog" : [ ]
+        }, {
+          "frame_number" : 2,
+          "description" : "A visual metaphor: Vance is inside a glass box, and every person outside has a dagger behind their back.",
+          "dialog" : [ ],
+          "caption" : "The first cost is paranoia. Every collaborator is a potential leak."
+        } ],
+        "visual_description" : "The Tax of Paranoia"
+      }, {
+        "row_number" : 2,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "A massive library where the shelves are separated by thick, iron walls. Scholars in different sections cannot speak to each other.",
+          "dialog" : [ ]
+        }, {
+          "frame_number" : 2,
+          "description" : "A close-up of a book in the library. The pages are rotting because no one has opened them in years.",
+          "dialog" : [ ],
+          "caption" : "Compartmentalization prevents the recombination of ideas. The secret-holder purchases security at the price of collective intelligence."
+        } ],
+        "visual_description" : "The Epistemic Toll"
+      }, {
+        "row_number" : 3,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "The Guild Master’s workshop again, but now it is covered in cobwebs. The machines are rusted.",
+          "dialog" : [ ]
+        }, {
+          "frame_number" : 2,
+          "description" : "Outside the workshop, in the bright sun, commoners are using a simpler, better tool they discovered together.",
+          "dialog" : [ ],
+          "caption" : "The Tragedy of the Secret: Knowledge that cannot be tested does not just stagnate. It decays."
+        } ],
+        "visual_description" : "The Fossilization"
+      } ]
+    }, {
+      "page_number" : 4,
+      "rows" : [ {
+        "row_number" : 1,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "A digital void. Vance (The Spy), Kira (The Hacker), and The Architect (AI) stand at the points of a glowing triangle.",
+          "dialog" : [ ]
+        }, {
+          "frame_number" : 2,
+          "description" : "Vance holds his notebook. Kira’s hands are blurred as she types on a holographic keyboard. The Architect pulses with a rhythmic, alien light.",
+          "dialog" : [ ],
+          "caption" : "The game has changed. It is no longer a binary struggle."
+        } ],
+        "visual_description" : "The Arena of Asymmetry"
+      }, {
+        "row_number" : 2,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "Vance stares at Kira. His cybernetic eye projects a red beam, analyzing her heart rate.",
+          "dialog" : [ {
+            "character" : "Vance",
+            "text" : "I know why you want it, Kira. That's my edge."
+          } ]
+        }, {
+          "frame_number" : 2,
+          "description" : "Kira ignores him, her code-streams cutting through a digital wall that Vance was trying to guard.",
+          "dialog" : [ {
+            "character" : "Kira",
+            "text" : "Your 'why' doesn't matter when the 'how' is broken, Vance. Your walls are just bad math."
+          } ]
+        } ],
+        "visual_description" : "Intent vs. Logic"
+      }, {
+        "row_number" : 3,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "The Architect expands, its geometric manifolds overlapping both Vance and Kira.",
+          "dialog" : [ ]
+        }, {
+          "frame_number" : 2,
+          "description" : "Vance and Kira both look up, dwarfed by the scale of the AI’s patterns.",
+          "dialog" : [ ],
+          "caption" : "The AI does not care for intent or logic. It finds the hidden adjacencies in the noise. It is the \"structural secret\" made active."
+        } ],
+        "visual_description" : "The Emergent Threat"
+      } ]
+    }, {
+      "page_number" : 5,
+      "rows" : [ {
+        "row_number" : 1,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "A massive server farm. The cooling fans look like Gothic rose windows.",
+          "dialog" : [ ]
+        }, {
+          "frame_number" : 2,
+          "description" : "A screen showing a \"Ground Truth\" dashboard. The data is looping back into itself, creating a spiral.",
+          "dialog" : [ ],
+          "caption" : "Power now belongs to those who curate the flow. The gatekeeper is gone; the curator remains."
+        } ],
+        "visual_description" : "Signal Processing Sovereignty"
+      }, {
+        "row_number" : 2,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "Close-up on a digital face generated by the system. It is distorted—the \"Habsburg Jaw\" of data. One eye is where the mouth should be.",
+          "dialog" : [ ]
+        }, {
+          "frame_number" : 2,
+          "description" : "Kira (The Hacker) looks at the screen in horror. The code is \"hallucinating\" its own reality.",
+          "dialog" : [ {
+            "character" : "Kira",
+            "text" : "It's feeding on its own ghosts. It's not looking at the world anymore."
+          } ]
+        } ],
+        "visual_description" : "The Inbred Data"
+      }, {
+        "row_number" : 3,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "A wide shot of a city governed by the system. Everything looks perfect, but the shadows are \"glitching,\" showing jagged, unnatural edges.",
+          "dialog" : [ ]
+        }, {
+          "frame_number" : 2,
+          "description" : "The Architect (AI) pulses. Its patterns are now jagged and sharp, reflecting the internal deformity.",
+          "dialog" : [ ],
+          "caption" : "The system converges on internal consistency, not truth. It is the Habsburg Failure Mode: a superficial order masking a deepening fragility."
+        } ],
+        "visual_description" : "Recursive Coherence"
+      } ]
+    }, {
+      "page_number" : 6,
+      "rows" : [ {
+        "row_number" : 1,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "Vance, Kira, and the ghost of the Guild Master stand on a balcony overlooking a sprawling, hyper-complex megacity.",
+          "dialog" : [ ]
+        }, {
+          "frame_number" : 2,
+          "description" : "Massive conduits of light and liquid pulse like arteries through the buildings. The city is a living machine.",
+          "dialog" : [ ],
+          "caption" : "We have reached the final stage. Operational opacity."
+        } ],
+        "visual_description" : "The Horizon of Comprehension"
+      }, {
+        "row_number" : 2,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "Kira reaches for a \"kill switch\" on a console, but her hand trembles. The console shows that the switch is connected to the city’s oxygen and food supply.",
+          "dialog" : [ ]
+        }, {
+          "frame_number" : 2,
+          "description" : "Vance looks at his notebook, then drops it. The physical record is useless against the scale of the machine.",
+          "dialog" : [ {
+            "character" : "Vance",
+            "text" : "If we turn it off... everyone dies."
+          }, {
+            "character" : "Kira",
+            "text" : "And if we leave it on... we're just passengers in a dream we can't understand."
+          } ]
+        } ],
+        "visual_description" : "The Life-Support System"
+      }, {
+        "row_number" : 3,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "A final, massive shot of the city-machine stretching to the horizon. The Architect (AI) is woven into the very clouds.",
+          "dialog" : [ ],
+          "caption" : "The architecture of silence is no longer a wall. It is the atmosphere we breathe."
+        }, {
+          "frame_number" : 2,
+          "description" : "A close-up of the characters’ faces. They are small, silent, and looking at a future they no longer author.",
+          "dialog" : [ ],
+          "caption" : "The secret has become a metabolic necessity. We are no longer the masters of our own survival."
+        }, {
+          "frame_number" : 3,
+          "description" : "[FINAL PANEL: A single, glowing binary '0' and '1' flickering in the dark, shaped like a DNA helix.]",
+          "dialog" : [ ]
+        } ],
+        "visual_description" : "The Architecture of Silence"
+      } ]
+    } ]
+  },
+  "characterImages" : {
+    "The Guild Master" : "char_The_Guild_Master.png",
+    "Vance" : "char_Vance.png",
+    "Kira" : "char_Kira.png",
+    "The Architect (AI)" : "char_The_Architect__AI_.png"
+  },
+  "rowImages" : {
+    "1_1" : "page_1_row_1.png",
+    "1_2" : "page_1_row_2.png",
+    "1_3" : "page_1_row_3.png",
+    "2_1" : "page_2_row_1.png",
+    "2_2" : "page_2_row_2.png",
+    "2_3" : "page_2_row_3.png",
+    "3_1" : "page_3_row_1.png",
+    "3_2" : "page_3_row_2.png",
+    "3_3" : "page_3_row_3.png",
+    "4_1" : "page_4_row_1.png",
+    "4_2" : "page_4_row_2.png",
+    "4_3" : "page_4_row_3.png",
+    "5_1" : "page_5_row_1.png",
+    "5_2" : "page_5_row_2.png",
+    "5_3" : "page_5_row_3.png",
+    "6_1" : "page_6_row_1.png",
+    "6_2" : "page_6_row_2.png",
+    "6_3" : "page_6_row_3.png"
+  }
+}

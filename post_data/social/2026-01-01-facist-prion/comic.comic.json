@@ -1,0 +1,446 @@
+{
+  "config" : {
+    "task_description" : "Adapt the article 'Fascism as a Cultural Prion' into a comic book. The story follows a 'Rogue Archivist' diagnosing the societal collapse caused by a 'cultural prion'. It visualizes abstract concepts like 'identity compression', 'algorithmic necropolitics', and 'institutional necrosis' using cyberpunk and body horror imagery.",
+    "target_pages" : 8,
+    "art_style" : "Surreal Cyberpunk Noir",
+    "style_details" : "High contrast, neon greens and reds against deep blacks. Glitch art effects to represent the 'prion' infection. Biological textures (flesh, decay) merged with mechanical/digital structures (servers, cables). The 'Prion' should look like a jagged, misfolded digital artifact.",
+    "generate_images" : true,
+    "character_references" : [ {
+      "character_name" : "The Archivist",
+      "visual_description" : "A weary figure in a cluttered, dimly lit server room. Wears a hooded tech-wear jacket. One eye is replaced by a complex optical sensor lens. Surrounded by floating holographic displays showing biological cell structures overlaying maps of cities.",
+      "personality_notes" : "Clinical, cynical, but determined. Speaks like a medical examiner performing an autopsy on a society.",
+      "role" : "Narrator / Protagonist",
+      "relationships" : "Observer of The Patient (Society)"
+    } ],
+    "plot_continuity" : {
+      "narrative_structure" : "The comic functions as a 'diagnostic report' or 'autopsy' narrated by The Archivist. It visualizes the abstract sociological concepts as physical threats in a dystopian city.",
+      "key_plot_points" : [ "Introduction: The Archivist isolates the 'Prion' sample—a glowing, glitching shape that distorts reality.", "Section I: The Infection. Visualizing 'Identity Compression' where complex, colorful crowds are flattened into angry, uniform red silhouettes.", "Section II: The Techbro Stack. A massive, monolithic server tower (The Platform) that processes people. 'Algorithmic Necropolitics' shown as automated systems discarding 'obsolete' humans.", "Section III: Immune System Failure. The Courthouse and Military HQ are shown rotting from the inside, covered in the digital necrosis.", "Section IV: The Power Cost Curve. Resistance fighters (The Cure) are shown not fighting head-on, but cutting cables, freezing assets, and building parallel networks in the shadows.", "Conclusion: The Archivist finishes the report. A small, green sprout of 'post-permissioned infrastructure' grows through the concrete cracks." ],
+      "setting_details" : "A sprawling, near-future metropolis that is visibly glitching. Buildings flicker in and out of existence. The sky is the color of a bruised monitor.",
+      "themes" : [ "Viral ideas", "Technological control", "Institutional decay", "Asymmetric resistance" ],
+      "tone" : "Dark, analytical, foreboding, urgent.",
+      "prior_story_context" : "",
+      "continuity_constraints" : [ ],
+      "ending_notes" : "",
+      "additional_notes" : ""
+    },
+    "state" : "Pending",
+    "task_type" : "ComicBookGeneration",
+    "files" : [ "comic.md" ]
+  },
+  "script" : {
+    "title" : "The Misfolded State",
+    "premise" : "A clinical autopsy of a dying society. In a surreal, glitching cyberpunk metropolis, a lone Archivist diagnoses the spread of a \"cultural prion\"—a viral cognitive distortion that transforms a pluralistic democracy into a necrotic, authoritarian machine.",
+    "characters" : [ {
+      "name" : "The Archivist (Unit 734)",
+      "description" : "Clinical, detached, cynical, yet driven by a duty to record the truth. Speaks in the cadence of a medical examiner or a systems administrator performing a post-mortem. Narrator / Protagonist.",
+      "visual_traits" : "A weary, androgynous figure clad in a heavy, matte-black tech-wear jacket with a high collar. Their left eye is natural and tired; their right eye is replaced by a complex, protruding multi-lens optical sensor that glows faint amber. They sit in a \"clean room\" filled with floating holographic displays."
+    }, {
+      "name" : "The Patient (The City)",
+      "description" : "The setting and the victim of the infection.",
+      "visual_traits" : "A sprawling megastructure of concrete and neon. The architecture is unstable—buildings flicker, textures fail to load, and organic veins of \"necrosis\" (black/red sludge) weep from the digital billboards."
+    } ],
+    "pages" : [ {
+      "page_number" : 1,
+      "rows" : [ {
+        "row_number" : 1,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "The Archivist stands over a central console. In the air hovers a magnified image of the \"Prion\"—a jagged, neon-red, glitching geometric shape that looks like a corrupted protein structure.",
+          "dialog" : [ {
+            "character" : "The Archivist",
+            "text" : "Conventional diagnostics failed. The political scientists kept looking for a manifesto. An ideology."
+          } ],
+          "caption" : "LOG ENTRY: 2026.01.01. SUBJECT: The Collapse."
+        }, {
+          "frame_number" : 2,
+          "description" : "Extreme close-up on the Prion. It is vibrating, causing the pixels around it to tear and bleed.",
+          "dialog" : [ {
+            "character" : "The Archivist",
+            "text" : "It is not a doctrine. It is a cultural prion. A self-replicating, host-agnostic misfold."
+          } ],
+          "caption" : "They were looking for software. They should have been looking for a hardware failure."
+        } ],
+        "visual_description" : "A wide, establishing shot of The Archivist’s sanctum. It is dark, lit only by the cool blue and green light of floating holographic data streams. The room is cluttered with server racks and biological containment units."
+      }, {
+        "row_number" : 2,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "The Prion makes contact. Sparks of digital static fly.",
+          "dialog" : [ ],
+          "caption" : "Content-minimal. Function-destroying."
+        }, {
+          "frame_number" : 2,
+          "description" : "The sphere is now a clone of the Prion.",
+          "dialog" : [ ],
+          "caption" : "It doesn't debate. It overwrites. It replaces shared reality with a closed loop of ritualized grievance."
+        } ],
+        "visual_description" : "Abstract visualization of the infection. The Prion touches a healthy, complex blue sphere (representing a healthy mind/society). The sphere instantly snaps into the jagged, red shape of the Prion."
+      }, {
+        "row_number" : 3,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "The Archivist’s face. The cybernetic eye projects a grid over the \"camera.\"",
+          "dialog" : [ {
+            "character" : "The Archivist",
+            "text" : "To understand the necrosis, we must map the sequence of the infection."
+          } ],
+          "caption" : "Commencing autopsy of the body politic."
+        } ],
+        "visual_description" : "The Archivist turns away from the hologram, looking directly at the reader with their cybernetic eye. The lens zooms/focuses."
+      } ]
+    }, {
+      "page_number" : 2,
+      "rows" : [ {
+        "row_number" : 1,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "A bustling market. People of different colors (blue, yellow, purple) interacting.",
+          "dialog" : [ {
+            "character" : "The Archivist",
+            "text" : "A healthy social topology is high-dimensional. Vocation, faith, geography. Complex."
+          } ],
+          "caption" : "PHASE 1: IDENTITY COMPRESSION."
+        } ],
+        "visual_description" : "A street scene in the City before the infection. The crowd is vibrant, represented as complex, multi-colored polygons. People have depth and dimension."
+      }, {
+        "row_number" : 2,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "The crowd screams as they are flattened. Their colors drain away, replaced by a uniform, angry red.",
+          "dialog" : [ {
+            "character" : "The Archivist",
+            "text" : "\"The People\" vs \"The Traitors.\" The complex web is smashed into a flat, binary line."
+          } ],
+          "caption" : "The Prion crushes the dimensions."
+        }, {
+          "frame_number" : 2,
+          "description" : "The crowd is now identical, 2D red silhouettes. They look like paper cutouts, angry and flat.",
+          "dialog" : [ ],
+          "caption" : "Nuance is deleted."
+        } ],
+        "visual_description" : "The \"Misfold\" occurs. A wave of red static washes over the crowd. The complex polygons are crushed flat."
+      }, {
+        "row_number" : 3,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "The red silhouettes are huddled together, pointing at a harmless shadow that looks like a monster to them.",
+          "dialog" : [ {
+            "character" : "The Archivist",
+            "text" : "The survival circuitry is hijacked. Every stimulus is recoded as a lethal threat."
+          } ],
+          "caption" : "PHASE 2: THREAT AMPLIFICATION."
+        }, {
+          "frame_number" : 2,
+          "description" : "Close up on a silhouette's face—a featureless mask of terror and rage.",
+          "dialog" : [ ],
+          "caption" : "Deliberation is replaced by a permanent state of emergency."
+        } ],
+        "visual_description" : "Threat Amplification. The environment around the red silhouettes transforms into a nightmare. Shadows loom large, shaped like wolves or demons, but they are just glitches."
+      } ]
+    }, {
+      "page_number" : 3,
+      "rows" : [ {
+        "row_number" : 1,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "Through the POV of a red silhouette (HUD overlay). A scientist is labeled \"ENEMY.\" A teacher is labeled \"ENEMY.\"",
+          "dialog" : [ {
+            "character" : "The Archivist",
+            "text" : "Social empathy collapses into Algorithmic Triage."
+          } ],
+          "caption" : "PHASE 3: ENEMY SIMPLIFICATION."
+        }, {
+          "frame_number" : 2,
+          "description" : "The \"Others\" are merged into a single, glitching blob of static.",
+          "dialog" : [ ],
+          "caption" : "The complexity of the adversary is replaced by the simplicity of a pathogen."
+        } ],
+        "visual_description" : "Enemy Simplification. A diverse group of \"outsiders\" (scientists, journalists, immigrants) are being scanned by the red silhouettes. The scan simplifies them into a single, monolithic block of \"Contaminant.\""
+      }, {
+        "row_number" : 2,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "The cables pulse with red light, feeding data from the Leader to the crowd.",
+          "dialog" : [ {
+            "character" : "The Archivist",
+            "text" : "Epistemic trust is rebound to a singular, \"unfolded\" source."
+          } ],
+          "caption" : "PHASE 4: AUTHORITY REBINDING."
+        }, {
+          "frame_number" : 2,
+          "description" : "The crowd mimics the Leader's pose exactly.",
+          "dialog" : [ ],
+          "caption" : "The host no longer processes reality. It merely mirrors the Prion’s internal logic."
+        } ],
+        "visual_description" : "Authority Rebinding. The red silhouettes are plugged via cables from their necks into a giant, floating holographic head—a \"Leader\" figure, but the face is a blur of shifting pixels."
+      }, {
+        "row_number" : 3,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "A silhouette smashing a scale of justice.",
+          "dialog" : [ {
+            "character" : "The Archivist",
+            "text" : "Violence is no longer a violation of order. It is seen as a \"cleansing\" metabolic necessity."
+          } ],
+          "caption" : "PHASE 5: NECROSIS."
+        } ],
+        "visual_description" : "Institutional Necrosis. A montage of violence. The red silhouettes are smashing windows and burning books, but the fire is digital, pixelated flame."
+      } ]
+    }, {
+      "page_number" : 4,
+      "rows" : [ {
+        "row_number" : 1,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "Low angle shot of the Tower. It pierces the bruised, purple sky.",
+          "dialog" : [ {
+            "character" : "The Archivist",
+            "text" : "The old fascism needed bodies in the street. Fascism 2.0 only needs the Stack."
+          } ],
+          "caption" : "SECTION II: FASCISM AS A PLATFORM."
+        } ],
+        "visual_description" : "A massive, monolithic server tower rises from the center of the city. It is sleek, black, and ominous. It resembles a tombstone fused with a smartphone. This is \"The Platform.\""
+      }, {
+        "row_number" : 2,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "A green light scans a wealthy-looking individual. The gate opens.",
+          "dialog" : [ ],
+          "caption" : "Elite continuity through managed obsolescence."
+        }, {
+          "frame_number" : 2,
+          "description" : "A red light scans a worker. The floor drops out beneath them. They fall into a dark pit of \"deletion.\"",
+          "dialog" : [ {
+            "character" : "The Archivist",
+            "text" : "They don't need to kill you. They just optimize you out of existence."
+          } ],
+          "caption" : "Automated disposability."
+        } ],
+        "visual_description" : "Inside the Tower. It’s a factory of \"Algorithmic Necropolitics.\" Conveyor belts move people through scanners."
+      }, {
+        "row_number" : 3,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "The hologram rallies the crowd.",
+          "dialog" : [ ],
+          "caption" : "They weaponize demographic panic..."
+        }, {
+          "frame_number" : 2,
+          "description" : "The machinery consumes the crowd.",
+          "dialog" : [ {
+            "character" : "The Archivist",
+            "text" : "Post-labor optimization. They don't need a loyal population. Just a compliant one."
+          } ],
+          "caption" : "...to build an infrastructure that discards the very base it claims to protect."
+        } ],
+        "visual_description" : "The Biopolitical Paradox. A split screen. On the left, the Tower projects a hologram of \"White Grievance\" (a flag, a symbol) to the red silhouettes outside. On the right, the Tower's machinery is actively grinding those same silhouettes into fuel/data."
+      } ]
+    }, {
+      "page_number" : 5,
+      "rows" : [ {
+        "row_number" : 1,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "Inside a command center. Empty uniforms lie on the floor, as if the people evaporated.",
+          "dialog" : [ {
+            "character" : "The Archivist",
+            "text" : "The \"Resign if Unlawful\" Trap. Ethical officers left."
+          } ],
+          "caption" : "SECTION III: THE IMMUNE SYSTEM FAILURE."
+        }, {
+          "frame_number" : 2,
+          "description" : "\"Opportunistic Compliers\" (faceless soldiers with glitching visors) step over the uniforms, taking the seats.",
+          "dialog" : [ ],
+          "caption" : "The vacuum was filled by the opportunistic. The military fragmented into fiefdoms."
+        } ],
+        "visual_description" : "The Military Headquarters (The Pentagon, stylized). It is covered in the Prion infection—jagged red crystals growing out of the concrete."
+      }, {
+        "row_number" : 2,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "The Eye stares down at a small, pleading figure holding a law book. The book bursts into flames.",
+          "dialog" : [ {
+            "character" : "The Archivist",
+            "text" : "The Court moved from adjudicator to vector."
+          } ],
+          "caption" : "Jurisprudential Capture."
+        }, {
+          "frame_number" : 2,
+          "description" : "The Eye projects a beam of red light, rewriting the text on the wall from \"EQUAL JUSTICE\" to \"PURE IDENTITY.\"",
+          "dialog" : [ ],
+          "caption" : "Prioritizing the mythic identity over the constitutional framework. The legal immune system didn't just fail; it facilitated the necrosis."
+        } ],
+        "visual_description" : "The Supreme Court. The pillars are cracking. The statue of Lady Justice has been replaced by a giant, unblinking eye (The Prion's eye)."
+      }, {
+        "row_number" : 3,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "The map is almost entirely red.",
+          "dialog" : [ {
+            "character" : "The Archivist",
+            "text" : "The backstops are gone. We cannot litigate the Prion away."
+          } ]
+        } ],
+        "visual_description" : "The Archivist looking at a map of the city. The red infection zones cover the courts and the barracks."
+      } ]
+    }, {
+      "page_number" : 6,
+      "rows" : [ {
+        "row_number" : 1,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "The Archivist’s hand brings up a new schematic: \"THE POWER COST CURVE.\" It shows a graph spiking upward.",
+          "dialog" : [ {
+            "character" : "The Archivist",
+            "text" : "Authoritarianism is a high-maintenance equilibrium. It yields only when the cost of control exceeds the value of power."
+          } ],
+          "caption" : "SECTION IV: THE CURE."
+        } ],
+        "visual_description" : "A shift in tone. Deep shadows, but now, sharp neon GREEN lines appear. The Resistance. They are not a crowd, but shadowy figures in the infrastructure."
+      }, {
+        "row_number" : 2,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "An executive looks at a tablet showing \"ASSETS FROZEN\" and \"SANCTIONS ACTIVE.\"",
+          "dialog" : [ {
+            "character" : "The Archivist",
+            "text" : "Make alignment a liability. Poison the reputation of the collaborators."
+          } ],
+          "caption" : "AXIS 1: STRATEGIC DECOUPLING."
+        } ],
+        "visual_description" : "Axis 1: Strategic Decoupling. A boardroom of faceless executives. Their holographic money is turning to ash."
+      }, {
+        "row_number" : 3,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "A regime bureaucrat screaming at a frozen computer screen.",
+          "dialog" : [ {
+            "character" : "The Archivist",
+            "text" : "Malicious compliance. Maximize friction."
+          } ],
+          "caption" : "AXIS 2: INSTITUTIONAL DRAG."
+        }, {
+          "frame_number" : 2,
+          "description" : "Close up on a gear jammed with a simple wrench.",
+          "dialog" : [ ],
+          "caption" : "Force them to expend energy on basic governance."
+        } ],
+        "visual_description" : "Axis 2: Bureaucratic Friction. Inside a government office. Piles of paper (physical paper) are overwhelming the digital systems. The gears are jammed with sand."
+      } ]
+    }, {
+      "page_number" : 7,
+      "rows" : [ {
+        "row_number" : 1,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "A wide shot of the city. Half of it is dark. The Tower flickers, starved of power.",
+          "dialog" : [ {
+            "character" : "The Archivist",
+            "text" : "The disruption of \"business as usual.\" Make the peace of authoritarianism more expensive than the chaos of transition."
+          } ],
+          "caption" : "AXIS 3: MASS RESISTANCE."
+        } ],
+        "visual_description" : "Axis 3: Mass Resistance. A massive strike. But it's not a riot; it's a stillness. The city lights are off. The trains have stopped. The silence is the weapon."
+      }, {
+        "row_number" : 2,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "A resistance medic healing a patient using off-grid tech.",
+          "dialog" : [ {
+            "character" : "The Archivist",
+            "text" : "Post-permissioned civic infrastructure."
+          } ],
+          "caption" : "AXIS 4: DISTRIBUTED SOVEREIGNTY."
+        }, {
+          "frame_number" : 2,
+          "description" : "A web of green light connects these underground nodes, forming a safety net beneath the rotting city.",
+          "dialog" : [ ],
+          "caption" : "We build the systems they cannot switch off."
+        } ],
+        "visual_description" : "Axis 4: Distributed Sovereignty. Underground, in a subway tunnel. A \"Mesh Network\" is glowing green. People are sharing food and data via handheld devices that aren't connected to the Tower."
+      }, {
+        "row_number" : 3,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "The Archivist nods, a grim satisfaction on their face.",
+          "dialog" : [ {
+            "character" : "The Archivist",
+            "text" : "We transform the state from a profitable enterprise into a bankrupting liability."
+          } ]
+        } ],
+        "visual_description" : "The Archivist watches the green lines on the map overtake the red necrosis in key sectors."
+      } ]
+    }, {
+      "page_number" : 8,
+      "rows" : [ {
+        "row_number" : 1,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "The Archivist types a final command.",
+          "dialog" : [ {
+            "character" : "The Archivist",
+            "text" : "You cannot fight a prion with arguments. You fight it by altering the environment in which it replicates."
+          } ],
+          "caption" : "CONCLUSION."
+        } ],
+        "visual_description" : "Back to the Archivist in the server room. The hologram of the Prion is still there, but it is being contained by a green geometric cage."
+      }, {
+        "row_number" : 2,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "The Archivist looks out. The sky is clearing slightly.",
+          "dialog" : [ ],
+          "caption" : "We decouple survival from the Stack. We create structural resilience."
+        } ],
+        "visual_description" : "The Archivist stands up and walks out of the server room, into the real world. They step out onto a balcony overlooking the glitching city."
+      }, {
+        "row_number" : 3,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "Growing out of the crack is a small, organic, vibrant green plant. It is real, not digital. It contrasts sharply with the glitchy surroundings.",
+          "dialog" : [ ],
+          "caption" : "The regime ends not when it is defeated in debate..."
+        }, {
+          "frame_number" : 2,
+          "description" : "The Archivist’s hand gently shields the plant from the wind.",
+          "dialog" : [ {
+            "character" : "The Archivist",
+            "text" : "End Log."
+          } ],
+          "caption" : "...but when the cost of its maintenance exceeds the utility of its existence."
+        } ],
+        "visual_description" : "Extreme close-up on the concrete floor of the balcony. There is a crack in the grey, digital cement."
+      } ]
+    } ]
+  },
+  "characterImages" : {
+    "The Archivist (Unit 734)" : "char_The_Archivist__Unit_734_.png",
+    "The Patient (The City)" : "char_The_Patient__The_City_.png"
+  },
+  "rowImages" : {
+    "1_1" : "page_1_row_1.png",
+    "1_2" : "page_1_row_2.png",
+    "1_3" : "page_1_row_3.png",
+    "2_1" : "page_2_row_1.png",
+    "2_2" : "page_2_row_2.png",
+    "2_3" : "page_2_row_3.png",
+    "3_1" : "page_3_row_1.png",
+    "3_2" : "page_3_row_2.png",
+    "3_3" : "page_3_row_3.png",
+    "4_1" : "page_4_row_1.png",
+    "4_2" : "page_4_row_2.png",
+    "4_3" : "page_4_row_3.png",
+    "5_1" : "page_5_row_1.png",
+    "5_2" : "page_5_row_2.png",
+    "5_3" : "page_5_row_3.png",
+    "6_1" : "page_6_row_1.png",
+    "6_2" : "page_6_row_2.png",
+    "6_3" : "page_6_row_3.png",
+    "7_1" : "page_7_row_1.png",
+    "7_2" : "page_7_row_2.png",
+    "7_3" : "page_7_row_3.png",
+    "8_1" : "page_8_row_1.png",
+    "8_2" : "page_8_row_2.png",
+    "8_3" : "page_8_row_3.png"
+  }
+}

@@ -1,0 +1,54 @@
+title: 'Design Document: Kotlin Exact Real Arithmetic Toolkit'
+layout: post
+date: '"2025-12-06T00:00:00.000Z"'
+last_modified: '"2025-12-06T10:00:00.000Z"'
+category: projects
+subcategory: Engineering & Formal Systems
+tags:
+  - Software Engineering
+  - Kotlin
+  - Algorithms
+  - Technical Spec
+keywords:
+  - Kotlin
+  - exact real arithmetic
+  - arbitrary precision
+  - constructive mathematics
+  - lazy evaluation
+  - computable functions
+  - BigInteger
+  - BigDecimal alternative
+  - numerical analysis
+status: stable
+last_thought_date: '"2025-12-06T00:00:00.000Z"'
+thought_generation: 1
+reading_time_minutes: 8
+difficulty_level: advanced
+document_type: framework
+thinking_style: mathematical
+cognitive_load: intense
+description: >-
+  A design document for a Kotlin library implementing Constructive Real
+  Arithmetic, focusing on exactness, lazy evaluation, and arbitrary precision
+  for real numbers.
+excerpt: >-
+  This document outlines the design of a Kotlin library for Constructive Real
+  Arithmetic, treating numbers as computable functions. It details the core
+  philosophy of exactness and lazy evaluation, the type hierarchy (KInteger,
+  KRational, KReal), architectural considerations like the genealogy tree, and
+  algorithmic implementations for fundamental and transcendental functions. The
+  API specification and roadmap are also covered.
+meta_title: Kotlin Exact Real Arithmetic Toolkit Design Document
+meta_description: >-
+  Explore the design of a Kotlin library for exact real arithmetic, featuring
+  lazy evaluation, arbitrary precision, and a computation graph for representing
+  real numbers like sqrt(2) and Pi.
+og_title: 'Kotlin Exact Real Arithmetic: A Design Overview'
+og_description: >-
+  Dive into the architectural and algorithmic design of a Kotlin library for
+  exact real arithmetic, emphasizing constructive mathematics and lazy
+  evaluation.
+related_documents:
+  - _posts/projects/2025-08-08-spiral-number-system.md
+  - _posts/phenomenology/2025-11-20-numeral-evolution-theory.md
+  - _posts/projects/2025-11-22-parameric-manifolds.md

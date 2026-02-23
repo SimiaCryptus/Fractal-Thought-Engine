@@ -1,0 +1,62 @@
+title: >-
+  Empirical Measurement of Recursive Processing Limits in Large Language Models
+  Using Self-Referential Text Corpora
+layout: post
+date: '"2025-07-06T00:00:00.000Z"'
+last_modified: '"2025-07-06T14:30:00.000Z"'
+category: consciousness
+subcategory: Engineering & Formal Systems
+tags:
+  - LLMs
+  - Artificial Intelligence
+  - Paper
+keywords:
+  - recursive processing
+  - self-reference
+  - LLM limits
+  - meta-cognition
+  - hall of mirrors effect
+status: stable
+last_thought_date: '"2025-07-06T00:00:00.000Z"'
+thought_generation: 1
+parent_document: ../projects/2025-06-30-knots.md
+related_documents:
+  - _posts/learning/2025-07-06-llm-feedback-dynamics.md
+  - _posts/social/2025-07-02-quantum-trolling-paper.md
+  - _posts/consciousness/2025-07-07-retrospective-analysis.md
+reading_order: 5
+difficulty_level: research
+reading_time_minutes: 15
+document_type: research_paper
+thinking_style: analytical
+consciousness_level: meta
+engagement_type: analytical
+reader_participation: passive
+cognitive_load: intense
+description: >-
+  First systematic study of LLM performance degradation when processing
+  self-referential and meta-cognitive content, revealing exponential failure
+  rates with recursive depth.
+excerpt: >-
+  We present the first systematic study of performance degradation in Large
+  Language Models when processing self-referential and meta-cognitive content,
+  demonstrating that LLM performance degrades predictably as a function of
+  meta-cognitive depth.
+is_cornerstone: true
+is_synthesis: false
+meta_title: Empirical Measurement of Recursive Processing Limits in LLMs
+meta_description: >-
+  Systematic study revealing how LLMs fail when processing self-referential
+  content, with failure rates approaching 90% at recursion depths beyond 3.
+meta_keywords: >-
+  LLM limits, recursive processing, self-reference, meta-cognition, transformer
+  architecture, AI consciousness
+schema_type: ScholarlyArticle
+schema_headline: LLMs Show Exponential Performance Degradation with Self-Referential Content
+schema_author: Human-AI Collaboration
+schema_date_published: '"2025-07-06T00:00:00.000Z"'
+schema_date_modified: '"2025-07-06T00:00:00.000Z"'
+schema_word_count: 2500
+schema_reading_time: PT15M
+priority: '0.9'
+changefreq: monthly

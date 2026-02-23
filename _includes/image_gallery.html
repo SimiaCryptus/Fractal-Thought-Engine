@@ -1,0 +1,203 @@
+<!-- Image Gallery Component -->
+{% assign gallery_id = include.id | default: "gallery" %}
+{% assign gallery_class = include.class | default: "" %}
+{% assign columns = include.columns | default: 3 %}
+{% assign lightbox = include.lightbox | default: true %}
+
+<div class="image-gallery {{ gallery_class }}" 
+     id="{{ gallery_id }}"
+     data-columns="{{ columns }}"
+     data-lightbox="{{ lightbox }}">
+  
+  {% if include.title %}
+    <h3 class="gallery-title">{{ include.title }}</h3>
+  {% endif %}
+  
+  {% if include.description %}
+    <p class="gallery-description">{{ include.description }}</p>
+  {% endif %}
+  
+  <div class="gallery-grid" style="--columns: {{ columns }};">
+    {% for image in include.images %}
+      <div class="gallery-item" data-index="{{ forloop.index0 }}">
+        <div class="gallery-image-container">
+          <img src="{{ image.src | relative_url }}"
+               alt="{{ image.alt | default: image.title | default: 'Gallery image' }}"
+               {% if image.title %}title="{{ image.title }}"{% endif %}
+               loading="lazy"
+               class="gallery-image"
+               {% if lightbox %}data-lightbox="{{ gallery_id }}"{% endif %}
+               {% if image.full_size %}data-full="{{ image.full_size | relative_url }}"{% endif %}>
+          
+          {% if image.overlay or lightbox %}
+            <div class="gallery-overlay">
+              {% if image.overlay %}
+                <div class="overlay-content">{{ image.overlay }}</div>
+              {% endif %}
+              {% if lightbox %}
+                <button class="gallery-expand-btn" aria-label="Expand image">⛶</button>
+              {% endif %}
+            </div>
+          {% endif %}
+        </div>
+        
+        {% if image.caption %}
+          <div class="gallery-caption">{{ image.caption }}</div>
+        {% endif %}
+      </div>
+    {% endfor %}
+  </div>
+  
+  {% if include.show_controls %}
+    <div class="gallery-controls">
+      <button class="gallery-prev" aria-label="Previous image">‹</button>
+      <button class="gallery-next" aria-label="Next image">›</button>
+      <div class="gallery-counter">
+        <span class="current-image">1</span> / <span class="total-images">{{ include.images.size }}</span>
+      </div>
+    </div>
+  {% endif %}
+</div>
+
+{% if lightbox %}
+  <!-- Lightbox Modal -->
+  <div class="lightbox-modal" id="{{ gallery_id }}-lightbox">
+    <div class="lightbox-backdrop"></div>
+    <div class="lightbox-content">
+      <button class="lightbox-close" aria-label="Close lightbox">✕</button>
+      <button class="lightbox-prev" aria-label="Previous image">‹</button>
+      <button class="lightbox-next" aria-label="Next image">›</button>
+      <div class="lightbox-image-container">
+        <img class="lightbox-image" src="" alt="">
+      </div>
+      <div class="lightbox-caption"></div>
+      <div class="lightbox-counter">
+        <span class="lightbox-current">1</span> / <span class="lightbox-total">{{ include.images.size }}</span>
+      </div>
+    </div>
+  </div>
+{% endif %}
+
+
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  // Initialize all galleries
+  const galleries = document.querySelectorAll('.image-gallery');
+  
+  galleries.forEach(gallery => {
+    const galleryId = gallery.id;
+    const lightboxEnabled = gallery.dataset.lightbox === 'true';
+    
+    if (lightboxEnabled) {
+      initializeLightbox(gallery, galleryId);
+    }
+    
+    // Initialize gallery controls if present
+    const controls = gallery.querySelector('.gallery-controls');
+    if (controls) {
+      initializeGalleryControls(gallery);
+    }
+  });
+  
+  function initializeLightbox(gallery, galleryId) {
+    const lightbox = document.getElementById(galleryId + '-lightbox');
+    const lightboxImage = lightbox.querySelector('.lightbox-image');
+    const lightboxCaption = lightbox.querySelector('.lightbox-caption');
+    const lightboxCurrent = lightbox.querySelector('.lightbox-current');
+    const images = gallery.querySelectorAll('.gallery-image');
+    let currentIndex = 0;
+    
+    // Open lightbox
+    images.forEach((img, index) => {
+      img.addEventListener('click', () => {
+        currentIndex = index;
+        showLightboxImage(currentIndex);
+        lightbox.classList.add('active');
+        document.body.style.overflow = 'hidden';
+      });
+    });
+    
+    // Close lightbox
+    const closeBtn = lightbox.querySelector('.lightbox-close');
+    const backdrop = lightbox.querySelector('.lightbox-backdrop');
+    
+    [closeBtn, backdrop].forEach(element => {
+      element.addEventListener('click', () => {
+        lightbox.classList.remove('active');
+        document.body.style.overflow = '';
+      });
+    });
+    
+    // Navigation
+    const prevBtn = lightbox.querySelector('.lightbox-prev');
+    const nextBtn = lightbox.querySelector('.lightbox-next');
+    
+    prevBtn.addEventListener('click', () => {
+      currentIndex = (currentIndex - 1 + images.length) % images.length;
+      showLightboxImage(currentIndex);
+    });
+    
+    nextBtn.addEventListener('click', () => {
+      currentIndex = (currentIndex + 1) % images.length;
+      showLightboxImage(currentIndex);
+    });
+    
+    // Keyboard navigation
+    document.addEventListener('keydown', (e) => {
+      if (!lightbox.classList.contains('active')) return;
+      
+      switch(e.key) {
+        case 'Escape':
+          lightbox.classList.remove('active');
+          document.body.style.overflow = '';
+          break;
+        case 'ArrowLeft':
+          prevBtn.click();
+          break;
+        case 'ArrowRight':
+          nextBtn.click();
+          break;
+      }
+    });
+    
+    function showLightboxImage(index) {
+      const img = images[index];
+      const fullSrc = img.dataset.full || img.src;
+      const caption = img.closest('.gallery-item').querySelector('.gallery-caption');
+      
+      lightboxImage.src = fullSrc;
+      lightboxImage.alt = img.alt;
+      lightboxCaption.textContent = caption ? caption.textContent : '';
+      lightboxCurrent.textContent = index + 1;
+    }
+  }
+  
+  function initializeGalleryControls(gallery) {
+    const prevBtn = gallery.querySelector('.gallery-prev');
+    const nextBtn = gallery.querySelector('.gallery-next');
+    const currentSpan = gallery.querySelector('.current-image');
+    const images = gallery.querySelectorAll('.gallery-item');
+    let currentIndex = 0;
+    
+    function updateGallery() {
+      images.forEach((item, index) => {
+        item.style.display = index === currentIndex ? 'block' : 'none';
+      });
+      currentSpan.textContent = currentIndex + 1;
+    }
+    
+    prevBtn.addEventListener('click', () => {
+      currentIndex = (currentIndex - 1 + images.length) % images.length;
+      updateGallery();
+    });
+    
+    nextBtn.addEventListener('click', () => {
+      currentIndex = (currentIndex + 1) % images.length;
+      updateGallery();
+    });
+    
+    updateGallery();
+  }
+});
+</script>

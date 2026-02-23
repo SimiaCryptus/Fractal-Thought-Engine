@@ -1,0 +1,447 @@
+{
+  "project_name" : "The Blind Substrate",
+  "description" : "A minimalist architecture for secure, scalable distributed systems that decouples permission, volume, state, and logic using cryptographic blindness. It ensures that the server can manage access and storage without ever seeing the plaintext data.",
+  "created_date" : "2026-02-16T13:38:49.139325034",
+  "epics" : [ {
+    "id" : "EPIC-UC",
+    "name" : "User Features",
+    "description" : "Core user-facing functionality based on use cases",
+    "priority" : "High",
+    "status" : "Planned",
+    "story_points" : 80
+  }, {
+    "id" : "EPIC-ARCH",
+    "name" : "Architecture & Infrastructure",
+    "description" : "Set up system architecture and infrastructure",
+    "priority" : "High",
+    "status" : "Planned",
+    "story_points" : 21
+  }, {
+    "id" : "EPIC-TEST",
+    "name" : "Quality Assurance",
+    "description" : "Testing and quality assurance activities",
+    "priority" : "High",
+    "status" : "Planned",
+    "story_points" : 13
+  }, {
+    "id" : "EPIC-101",
+    "name" : "Epic EPIC-101",
+    "description" : "Auto-extracted epic from analysis",
+    "priority" : "Medium",
+    "status" : "Planned",
+    "story_points" : 13
+  }, {
+    "id" : "EPIC-102",
+    "name" : "Epic EPIC-102",
+    "description" : "Auto-extracted epic from analysis",
+    "priority" : "Medium",
+    "status" : "Planned",
+    "story_points" : 13
+  }, {
+    "id" : "EPIC-103",
+    "name" : "Epic EPIC-103",
+    "description" : "Auto-extracted epic from analysis",
+    "priority" : "Medium",
+    "status" : "Planned",
+    "story_points" : 13
+  }, {
+    "id" : "EPIC-104",
+    "name" : "Epic EPIC-104",
+    "description" : "Auto-extracted epic from analysis",
+    "priority" : "Medium",
+    "status" : "Planned",
+    "story_points" : 13
+  }, {
+    "id" : "EPIC-105",
+    "name" : "Epic EPIC-105",
+    "description" : "Auto-extracted epic from analysis",
+    "priority" : "Medium",
+    "status" : "Planned",
+    "story_points" : 13
+  }, {
+    "id" : "EPIC-106",
+    "name" : "Epic EPIC-106",
+    "description" : "Auto-extracted epic from analysis",
+    "priority" : "Medium",
+    "status" : "Planned",
+    "story_points" : 13
+  } ],
+  "releases" : [ {
+    "id" : "REL-1",
+    "name" : "MVP Release",
+    "version" : "1.0.0",
+    "target_date" : "2026-03-30",
+    "description" : "Minimum Viable Product release with core functionality",
+    "epic_ids" : [ "EPIC-UC", "EPIC-ARCH", "EPIC-TEST", "EPIC-101" ],
+    "status" : "Planned"
+  }, {
+    "id" : "REL-2",
+    "name" : "Feature Complete Release",
+    "version" : "1.1.0",
+    "target_date" : "2026-05-11",
+    "description" : "Full feature release with all planned functionality",
+    "epic_ids" : [ "EPIC-UC", "EPIC-ARCH", "EPIC-TEST", "EPIC-101", "EPIC-102", "EPIC-103", "EPIC-104", "EPIC-105", "EPIC-106" ],
+    "status" : "Planned"
+  } ],
+  "sprints" : [ {
+    "id" : "SPRINT-1",
+    "name" : "Sprint 1",
+    "number" : 1,
+    "start_date" : "2026-02-16",
+    "end_date" : "2026-03-02",
+    "goals" : [ "Complete sprint 1 deliverables" ],
+    "capacity_points" : 40,
+    "task_ids" : [ "TASK-101", "TASK-102", "TASK-103", "TASK-104", "TASK-301" ],
+    "status" : "Planned"
+  }, {
+    "id" : "SPRINT-2",
+    "name" : "Sprint 2",
+    "number" : 2,
+    "start_date" : "2026-03-02",
+    "end_date" : "2026-03-16",
+    "goals" : [ "Complete sprint 2 deliverables" ],
+    "capacity_points" : 40,
+    "task_ids" : [ "TASK-302", "TASK-303", "TASK-304", "TASK-201", "TASK-202" ],
+    "status" : "Planned"
+  }, {
+    "id" : "SPRINT-3",
+    "name" : "Sprint 3",
+    "number" : 3,
+    "start_date" : "2026-03-16",
+    "end_date" : "2026-03-30",
+    "goals" : [ "Complete sprint 3 deliverables" ],
+    "capacity_points" : 40,
+    "task_ids" : [ "TASK-203", "TASK-204", "TASK-501", "TASK-401", "TASK-402" ],
+    "status" : "Planned"
+  }, {
+    "id" : "SPRINT-4",
+    "name" : "Sprint 4",
+    "number" : 4,
+    "start_date" : "2026-03-30",
+    "end_date" : "2026-04-13",
+    "goals" : [ "Complete sprint 4 deliverables" ],
+    "capacity_points" : 40,
+    "task_ids" : [ "TASK-403", "TASK-502", "TASK-503", "TASK-601", "TASK-602" ],
+    "status" : "Planned"
+  }, {
+    "id" : "SPRINT-5",
+    "name" : "Sprint 5",
+    "number" : 5,
+    "start_date" : "2026-04-13",
+    "end_date" : "2026-04-27",
+    "goals" : [ "Complete sprint 5 deliverables" ],
+    "capacity_points" : 40,
+    "task_ids" : [ "TASK-603", "TASK-604", "TASK-605" ],
+    "status" : "Planned"
+  }, {
+    "id" : "SPRINT-6",
+    "name" : "Sprint 6",
+    "number" : 6,
+    "start_date" : "2026-04-27",
+    "end_date" : "2026-05-11",
+    "goals" : [ "Complete sprint 6 deliverables" ],
+    "capacity_points" : 40,
+    "task_ids" : [ ],
+    "status" : "Planned"
+  } ],
+  "tasks" : [ {
+    "id" : "TASK-101",
+    "title" : "Task TASK-101",
+    "description" : "Auto-extracted task from analysis",
+    "type" : "task",
+    "epic_id" : "EPIC-UC",
+    "sprint_id" : "SPRINT-1",
+    "priority" : "Medium",
+    "story_points" : 3,
+    "status" : "Backlog",
+    "acceptance_criteria" : [ "Task completed successfully" ],
+    "labels" : [ "auto-generated" ]
+  }, {
+    "id" : "TASK-102",
+    "title" : "Task TASK-102",
+    "description" : "Auto-extracted task from analysis",
+    "type" : "task",
+    "epic_id" : "EPIC-UC",
+    "sprint_id" : "SPRINT-1",
+    "priority" : "Medium",
+    "story_points" : 3,
+    "status" : "Backlog",
+    "acceptance_criteria" : [ "Task completed successfully" ],
+    "labels" : [ "auto-generated" ]
+  }, {
+    "id" : "TASK-103",
+    "title" : "Task TASK-103",
+    "description" : "Auto-extracted task from analysis",
+    "type" : "task",
+    "epic_id" : "EPIC-UC",
+    "sprint_id" : "SPRINT-1",
+    "priority" : "Medium",
+    "story_points" : 3,
+    "status" : "Backlog",
+    "acceptance_criteria" : [ "Task completed successfully" ],
+    "labels" : [ "auto-generated" ]
+  }, {
+    "id" : "TASK-104",
+    "title" : "Task TASK-104",
+    "description" : "Auto-extracted task from analysis",
+    "type" : "task",
+    "epic_id" : "EPIC-UC",
+    "sprint_id" : "SPRINT-1",
+    "priority" : "Medium",
+    "story_points" : 3,
+    "status" : "Backlog",
+    "acceptance_criteria" : [ "Task completed successfully" ],
+    "labels" : [ "auto-generated" ]
+  }, {
+    "id" : "TASK-301",
+    "title" : "Task TASK-301",
+    "description" : "Auto-extracted task from analysis",
+    "type" : "task",
+    "epic_id" : "EPIC-UC",
+    "sprint_id" : "SPRINT-1",
+    "priority" : "Medium",
+    "story_points" : 3,
+    "status" : "Backlog",
+    "acceptance_criteria" : [ "Task completed successfully" ],
+    "labels" : [ "auto-generated" ]
+  }, {
+    "id" : "TASK-302",
+    "title" : "Task TASK-302",
+    "description" : "Auto-extracted task from analysis",
+    "type" : "task",
+    "epic_id" : "EPIC-UC",
+    "sprint_id" : "SPRINT-2",
+    "priority" : "Medium",
+    "story_points" : 3,
+    "status" : "Backlog",
+    "acceptance_criteria" : [ "Task completed successfully" ],
+    "labels" : [ "auto-generated" ]
+  }, {
+    "id" : "TASK-303",
+    "title" : "Task TASK-303",
+    "description" : "Auto-extracted task from analysis",
+    "type" : "task",
+    "epic_id" : "EPIC-UC",
+    "sprint_id" : "SPRINT-2",
+    "priority" : "Medium",
+    "story_points" : 3,
+    "status" : "Backlog",
+    "acceptance_criteria" : [ "Task completed successfully" ],
+    "labels" : [ "auto-generated" ]
+  }, {
+    "id" : "TASK-304",
+    "title" : "Task TASK-304",
+    "description" : "Auto-extracted task from analysis",
+    "type" : "task",
+    "epic_id" : "EPIC-UC",
+    "sprint_id" : "SPRINT-2",
+    "priority" : "Medium",
+    "story_points" : 3,
+    "status" : "Backlog",
+    "acceptance_criteria" : [ "Task completed successfully" ],
+    "labels" : [ "auto-generated" ]
+  }, {
+    "id" : "TASK-201",
+    "title" : "Task TASK-201",
+    "description" : "Auto-extracted task from analysis",
+    "type" : "task",
+    "epic_id" : "EPIC-UC",
+    "sprint_id" : "SPRINT-2",
+    "priority" : "Medium",
+    "story_points" : 3,
+    "status" : "Backlog",
+    "acceptance_criteria" : [ "Task completed successfully" ],
+    "labels" : [ "auto-generated" ]
+  }, {
+    "id" : "TASK-202",
+    "title" : "Task TASK-202",
+    "description" : "Auto-extracted task from analysis",
+    "type" : "task",
+    "epic_id" : "EPIC-UC",
+    "sprint_id" : "SPRINT-2",
+    "priority" : "Medium",
+    "story_points" : 3,
+    "status" : "Backlog",
+    "acceptance_criteria" : [ "Task completed successfully" ],
+    "labels" : [ "auto-generated" ]
+  }, {
+    "id" : "TASK-203",
+    "title" : "Task TASK-203",
+    "description" : "Auto-extracted task from analysis",
+    "type" : "task",
+    "epic_id" : "EPIC-UC",
+    "sprint_id" : "SPRINT-3",
+    "priority" : "Medium",
+    "story_points" : 3,
+    "status" : "Backlog",
+    "acceptance_criteria" : [ "Task completed successfully" ],
+    "labels" : [ "auto-generated" ]
+  }, {
+    "id" : "TASK-204",
+    "title" : "Task TASK-204",
+    "description" : "Auto-extracted task from analysis",
+    "type" : "task",
+    "epic_id" : "EPIC-UC",
+    "sprint_id" : "SPRINT-3",
+    "priority" : "Medium",
+    "story_points" : 3,
+    "status" : "Backlog",
+    "acceptance_criteria" : [ "Task completed successfully" ],
+    "labels" : [ "auto-generated" ]
+  }, {
+    "id" : "TASK-501",
+    "title" : "Task TASK-501",
+    "description" : "Auto-extracted task from analysis",
+    "type" : "task",
+    "epic_id" : "EPIC-UC",
+    "sprint_id" : "SPRINT-3",
+    "priority" : "Medium",
+    "story_points" : 3,
+    "status" : "Backlog",
+    "acceptance_criteria" : [ "Task completed successfully" ],
+    "labels" : [ "auto-generated" ]
+  }, {
+    "id" : "TASK-401",
+    "title" : "Task TASK-401",
+    "description" : "Auto-extracted task from analysis",
+    "type" : "task",
+    "epic_id" : "EPIC-UC",
+    "sprint_id" : "SPRINT-3",
+    "priority" : "Medium",
+    "story_points" : 3,
+    "status" : "Backlog",
+    "acceptance_criteria" : [ "Task completed successfully" ],
+    "labels" : [ "auto-generated" ]
+  }, {
+    "id" : "TASK-402",
+    "title" : "Task TASK-402",
+    "description" : "Auto-extracted task from analysis",
+    "type" : "task",
+    "epic_id" : "EPIC-UC",
+    "sprint_id" : "SPRINT-3",
+    "priority" : "Medium",
+    "story_points" : 3,
+    "status" : "Backlog",
+    "acceptance_criteria" : [ "Task completed successfully" ],
+    "labels" : [ "auto-generated" ]
+  }, {
+    "id" : "TASK-403",
+    "title" : "Task TASK-403",
+    "description" : "Auto-extracted task from analysis",
+    "type" : "task",
+    "epic_id" : "EPIC-UC",
+    "sprint_id" : "SPRINT-4",
+    "priority" : "Medium",
+    "story_points" : 3,
+    "status" : "Backlog",
+    "acceptance_criteria" : [ "Task completed successfully" ],
+    "labels" : [ "auto-generated" ]
+  }, {
+    "id" : "TASK-502",
+    "title" : "Task TASK-502",
+    "description" : "Auto-extracted task from analysis",
+    "type" : "task",
+    "epic_id" : "EPIC-UC",
+    "sprint_id" : "SPRINT-4",
+    "priority" : "Medium",
+    "story_points" : 3,
+    "status" : "Backlog",
+    "acceptance_criteria" : [ "Task completed successfully" ],
+    "labels" : [ "auto-generated" ]
+  }, {
+    "id" : "TASK-503",
+    "title" : "Task TASK-503",
+    "description" : "Auto-extracted task from analysis",
+    "type" : "task",
+    "epic_id" : "EPIC-UC",
+    "sprint_id" : "SPRINT-4",
+    "priority" : "Medium",
+    "story_points" : 3,
+    "status" : "Backlog",
+    "acceptance_criteria" : [ "Task completed successfully" ],
+    "labels" : [ "auto-generated" ]
+  }, {
+    "id" : "TASK-601",
+    "title" : "Task TASK-601",
+    "description" : "Auto-extracted task from analysis",
+    "type" : "task",
+    "epic_id" : "EPIC-UC",
+    "sprint_id" : "SPRINT-4",
+    "priority" : "Medium",
+    "story_points" : 3,
+    "status" : "Backlog",
+    "acceptance_criteria" : [ "Task completed successfully" ],
+    "labels" : [ "auto-generated" ]
+  }, {
+    "id" : "TASK-602",
+    "title" : "Task TASK-602",
+    "description" : "Auto-extracted task from analysis",
+    "type" : "task",
+    "epic_id" : "EPIC-UC",
+    "sprint_id" : "SPRINT-4",
+    "priority" : "Medium",
+    "story_points" : 3,
+    "status" : "Backlog",
+    "acceptance_criteria" : [ "Task completed successfully" ],
+    "labels" : [ "auto-generated" ]
+  }, {
+    "id" : "TASK-603",
+    "title" : "Task TASK-603",
+    "description" : "Auto-extracted task from analysis",
+    "type" : "task",
+    "epic_id" : "EPIC-UC",
+    "sprint_id" : "SPRINT-5",
+    "priority" : "Medium",
+    "story_points" : 3,
+    "status" : "Backlog",
+    "acceptance_criteria" : [ "Task completed successfully" ],
+    "labels" : [ "auto-generated" ]
+  }, {
+    "id" : "TASK-604",
+    "title" : "Task TASK-604",
+    "description" : "Auto-extracted task from analysis",
+    "type" : "task",
+    "epic_id" : "EPIC-UC",
+    "sprint_id" : "SPRINT-5",
+    "priority" : "Medium",
+    "story_points" : 3,
+    "status" : "Backlog",
+    "acceptance_criteria" : [ "Task completed successfully" ],
+    "labels" : [ "auto-generated" ]
+  }, {
+    "id" : "TASK-605",
+    "title" : "Task TASK-605",
+    "description" : "Auto-extracted task from analysis",
+    "type" : "task",
+    "epic_id" : "EPIC-UC",
+    "sprint_id" : "SPRINT-5",
+    "priority" : "Medium",
+    "story_points" : 3,
+    "status" : "Backlog",
+    "acceptance_criteria" : [ "Task completed successfully" ],
+    "labels" : [ "auto-generated" ]
+  } ],
+  "milestones" : [ ],
+  "dependencies" : [ {
+    "id" : "DEP-1",
+    "source_id" : "TASK-101",
+    "source_type" : "task",
+    "target_id" : "TASK-104",
+    "target_type" : "task",
+    "dependency_type" : "blocks"
+  }, {
+    "id" : "DEP-2",
+    "source_id" : "EPIC-101",
+    "source_type" : "epic",
+    "target_id" : "EPIC-102",
+    "target_type" : "epic",
+    "dependency_type" : "depends_on"
+  }, {
+    "id" : "DEP-3",
+    "source_id" : "EPIC-103",
+    "source_type" : "epic",
+    "target_id" : "EPIC-104",
+    "target_type" : "epic",
+    "dependency_type" : "relates_to"
+  } ]
+}

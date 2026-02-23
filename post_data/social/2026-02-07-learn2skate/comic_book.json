@@ -1,0 +1,425 @@
+{
+  "config" : {
+    "task_description" : "An instructional comic titled 'Learn to Skate!' following a 7-year-old white girl named Lily with light brown hair with a slight reddish tint, blue-gray eyes, and a Caucasian complexion. The comic teaches kids the basics of roller skating in a fun, encouraging, step-by-step format. Lily is enthusiastic but nervous at first. Her dad (Caucasian, warm and supportive) helps guide her through the process. The story begins at their house (which should prominently feature two birds perched on/near the rooftop or windowsill in establishing shots) and moves to the sidewalk/driveway. Key instructional beats to cover: (1) Getting excited about new skates at home — dad presents them, two birds visible on the house exterior; (2) Putting on skates and safety gear (helmet, knee pads, elbow pads, wrist guards) — dad helps her gear up; (3) Learning to stand and balance on skates — dad holds her hands; (4) Taking first wobbly steps/rolls — dad supports her; (5) Learning to stop (using the toe brake); (6) Falling down safely and getting back up — dad encourages her; (7) Gaining confidence and skating a short distance on her own; (8) Triumphant moment — Lily skates independently, dad cheers, the two birds visible on the house in the background. Each frame should include short instructional captions or dialogue bubbles with skating tips appropriate for young children.",
+    "target_pages" : 4,
+    "art_style" : "Bright, cheerful, child-friendly cartoon illustration style with clean outlines, vibrant pastel and primary colors, soft shading, and expressive characters.",
+    "style_details" : "Similar to a modern children's picture book or educational comic style. Backgrounds are detailed but not cluttered. Characters have slightly exaggerated expressions to convey emotion clearly. The house is a cozy suburban home with two distinct birds (e.g., blue jays or robins) visible on the roof/gutters/windowsill whenever the house appears. The dad is a friendly-looking Caucasian man in his mid-30s with short brown hair and a warm smile. Lily has shoulder-length light brown hair with a subtle reddish tint, blue-gray eyes, and freckles on her cheeks.",
+    "generate_images" : true,
+    "state" : "Pending",
+    "task_type" : "ComicBookGeneration",
+    "files" : [ ]
+  },
+  "script" : {
+    "title" : "LEARN TO SKATE!",
+    "premise" : "Seven-year-old Lily receives her very first pair of roller skates from her dad and embarks on a fun, step-by-step journey to learn how to skate. Set on a sunny afternoon at their cozy suburban home and driveway, the story follows Lily from nervous beginner to confident skater, with her supportive dad guiding her every roll of the way. Two friendly birds perched on the family's house serve as cheerful witnesses to Lily's adventure. The comic doubles as a real instructional guide, with each scene teaching young readers an essential skating skill.",
+    "characters" : [ {
+      "name" : "Lily",
+      "description" : "An enthusiastic, expressive girl who is excited about new adventures but gets nervous when things feel wobbly. She's determined and resilient — when she falls, she gets back up with a smile.",
+      "visual_traits" : "Shoulder-length light brown hair with a subtle reddish tint, often bouncing as she moves. Blue-gray eyes, wide and expressive. Light Caucasian complexion with a scattering of freckles across her cheeks and nose. Wears a bright teal T-shirt with a small star graphic, purple shorts, and rainbow-striped knee-high socks. Later adds pink roller skates and a full set of safety gear (lavender helmet with star stickers, pink knee pads, purple elbow pads, and white wrist guards)."
+    }, {
+      "name" : "Dad (Mike)",
+      "description" : "Warm, patient, and encouraging. He's the kind of dad who gets down on one knee to help buckle a helmet and cheers like it's the Olympics when his daughter rolls three feet. He offers gentle instructions and never rushes Lily.",
+      "visual_traits" : "Caucasian man with short brown hair, friendly brown eyes, and a warm, slightly lopsided smile. Clean-shaven with a strong jaw. Wears a soft green polo shirt, khaki shorts, and white sneakers. Medium build, slightly tall."
+    }, {
+      "name" : "Robin & Jay",
+      "description" : "A pair of friendly birds — one robin (reddish-orange breast) and one blue jay — who are always perched somewhere on or near the house. They serve as a recurring visual motif, silent cheerful observers of Lily's progress.",
+      "visual_traits" : "Robin is small and round with a warm orange-red breast and brown back. Jay is slightly larger with vivid blue, white, and black plumage. Both have cartoonishly bright, friendly eyes."
+    } ],
+    "pages" : [ {
+      "page_number" : 1,
+      "rows" : [ {
+        "row_number" : 1,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "The full front of the house. The red door is slightly ajar. Through the doorway, we can just glimpse the warm interior. Robin and Jay sit on the roof ridge, silhouetted slightly against the blue sky. Flower boxes under the windows bloom with pink and yellow flowers. A bicycle leans against the garage. The driveway is smooth and clean — perfect for skating.",
+          "dialog" : [ ],
+          "caption" : "**\"LEARN TO SKATE!\"** (top, banner style) / \"It was a beautiful sunny day at Lily's house. The birds on the roof could tell something exciting was about to happen!\" (bottom)"
+        } ],
+        "visual_description" : "A wide establishing panel showing the front of a cozy, light-yellow suburban house with white trim, a red front door, a small porch with flower boxes, and a green lawn. The sky is bright blue with a few puffy white clouds. Sunlight bathes the scene in warm golden tones. On the peak of the roof, Robin and Jay are perched side by side, looking down at the front door with curious tilted heads. A welcome mat reads 'HOME.' The mood is cheerful, inviting, and full of promise — a perfect sunny afternoon. A large title banner arcs across the top of the panel in playful, colorful bubble letters."
+      }, {
+        "row_number" : 2,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "Dad stands in the living room holding the wrapped gift box out toward Lily, who sits on the blue couch with her legs tucked under her, leaning forward with wide eyes and hands clasped together. Sunlight from the window illuminates the scene. Robin and Jay are visible on the windowsill outside, peering in.",
+          "dialog" : [ {
+            "character" : "Dad (Mike)",
+            "text" : "I've got a surprise for you, Lily-bug!"
+          }, {
+            "character" : "Lily",
+            "text" : "For ME?! What is it, what is it?!"
+          } ]
+        }, {
+          "frame_number" : 2,
+          "description" : "Lily stands on the couch cushion, holding up the bright pink roller skates triumphantly above her head. Wrapping paper and the purple bow are scattered everywhere. Her face is pure elation — huge grin, eyes squeezed into happy crescents, freckled cheeks flushed pink. Dad has one hand on his hip and the other giving a thumbs-up, his smile wide and proud. Through the window behind them, Robin and Jay appear to be chirping excitedly.",
+          "dialog" : [ {
+            "character" : "Lily",
+            "text" : "ROLLER SKATES!! Oh my gosh, oh my gosh, oh my GOSH!"
+          }, {
+            "character" : "Dad (Mike)",
+            "text" : "That's right! Today, you're going to learn to skate!"
+          } ],
+          "caption" : "\"Lily had wanted roller skates for a VERY long time.\""
+        } ],
+        "visual_description" : "Two panels set inside the living room. Warm interior lighting with sunlight streaming through a window (where Robin and Jay can be seen perched on the outside windowsill, peeking in). The living room is cozy. In the first panel, Dad stands behind the couch holding a large gift box wrapped in shiny pink paper, grinning. Lily sits on the couch, eyes wide. In the second panel, Lily holds up a pair of bright pink roller skates, her face exploding with joy. Dad beams proudly beside her. The two birds are visible through the window, watching."
+      }, {
+        "row_number" : 3,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "Dad kneels on the porch, gently placing the lavender helmet on Lily's head. Lily sits on the porch step, holding still but grinning. The safety gear is spread out beside them. A corner of the roof is visible with Robin perched on the gutter.",
+          "dialog" : [ {
+            "character" : "Dad (Mike)",
+            "text" : "First things first — safety gear! A good skater ALWAYS protects herself."
+          } ],
+          "caption" : "\"🛡️ SKATING TIP #1: Always wear a helmet, knee pads, elbow pads, and wrist guards before you skate!\" (instructional box, bright yellow)"
+        }, {
+          "frame_number" : 2,
+          "description" : "Lily is now fully suited up in all her safety gear. Dad kneels at her feet, carefully buckling the right pink roller skate onto her foot. Lily looks down at herself and makes a funny, slightly overwhelmed face. Her arms stick out a little because of the elbow pads.",
+          "dialog" : [ {
+            "character" : "Lily",
+            "text" : "I look like a superhero! ...A really puffy superhero."
+          }, {
+            "character" : "Dad (Mike)",
+            "text" : "(laughing) You look like a SMART superhero. Every piece of gear is there to keep you safe if you fall."
+          }, {
+            "character" : "Lily",
+            "text" : "Wait — IF I fall?!"
+          } ],
+          "caption" : "\"🛡️ Make sure your helmet fits snugly and all straps are buckled tight. Ask a grown-up to help!\" (instructional box)"
+        } ],
+        "visual_description" : "Two panels on the front porch. In the first panel, Dad kneels beside Lily, who sits on the top step, buckling a lavender helmet onto her head. Safety gear is spread out beside them. In the second panel, Lily is fully geared up (helmet, pads, wrist guards) and Dad is helping her put on the roller skates, carefully tightening the buckles. Lily looks down at all her gear with a mix of excitement and slight nervousness."
+      }, {
+        "row_number" : 4,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "Lily stands on the driveway in her skates, wobbling dramatically. Her arms are stretched out gripping Dad's hands. Her legs form a shaky inverted V. Her eyes are wide as saucers. Dad holds her firmly, smiling reassuringly. Both birds are visible on the roof peak.",
+          "dialog" : [ {
+            "character" : "Lily",
+            "text" : "WHOA-WHOA-WHOA! The ground is MOVING!"
+          }, {
+            "character" : "Dad (Mike)",
+            "text" : "The ground isn't moving, sweetheart — YOU are! And that's okay. I've got you."
+          } ],
+          "caption" : "\"🛡️ SKATING TIP #2: When you first stand up in skates, keep your feet shoulder-width apart and bend your knees a little. This helps you balance!\" (instructional box)"
+        }, {
+          "frame_number" : 2,
+          "description" : "Lily's stance has improved. Her feet are more parallel, shoulder-width apart, knees softly bent. She still holds Dad's hands but her grip has relaxed slightly. Her expression has shifted from terror to cautious optimism — a small, hopeful smile. Dad gives her an encouraging nod.",
+          "dialog" : [ {
+            "character" : "Lily",
+            "text" : "Oh! Oh, I think... I think I'm doing it? I'm STANDING!"
+          }, {
+            "character" : "Dad (Mike)",
+            "text" : "You ARE! See? Bend those knees just a little, keep your feet apart. You're a natural!"
+          } ],
+          "caption" : "\"Lily's heart was beating fast, but she didn't let go.\""
+        } ],
+        "visual_description" : "Two panels on the driveway. In the first panel, Lily stands in her skates for the first time, gripping Dad's hands tightly. Her legs are wobbly, and her expression is a comical mix of terror and determination. Dad stands firm, holding both her hands. In the second panel, Lily has found a slightly better stance — feet shoulder-width apart, knees slightly bent, still holding Dad's hands but with cautious optimism."
+      } ]
+    }, {
+      "page_number" : 2,
+      "rows" : [ {
+        "row_number" : 1,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "Lily takes her very first tiny roll forward. One foot slides ahead about three inches. Her tongue pokes out of the corner of her mouth in concentration. Her arms are rigid, gripping Dad's hands. Dad walks backward, guiding her gently.",
+          "dialog" : [ {
+            "character" : "Dad (Mike)",
+            "text" : "Don't try to walk — just let your feet gliiiiide. One little push at a time."
+          } ],
+          "caption" : "\"🛡️ SKATING TIP #3: Don't walk in skates — GLIDE! Push one foot gently to the side and let yourself roll forward. Then push with the other foot.\" (instructional box)"
+        }, {
+          "frame_number" : 2,
+          "description" : "Lily has moved a few feet. Her body is still stiff, but her feet are doing a slow, alternating push-glide motion. Her expression is focused but less terrified.",
+          "dialog" : [ {
+            "character" : "Lily",
+            "text" : "Push... glide... push... glide..."
+          }, {
+            "character" : "Dad (Mike)",
+            "text" : "That's it! You're rolling, Lily! Keep those knees bent!"
+          } ]
+        }, {
+          "frame_number" : 3,
+          "description" : "Lily has rolled several more feet. A huge, surprised smile breaks across her face. Her eyes are bright. Dad is beaming, still holding her hands but his grip is lighter now.",
+          "dialog" : [ {
+            "character" : "Lily",
+            "text" : "I'M MOVING! Dad, I'm actually SKATING!"
+          }, {
+            "character" : "Dad (Mike)",
+            "text" : "You sure are, kiddo!"
+          } ],
+          "caption" : "\"It was wobbly. It was slow. But it was SKATING!\""
+        } ],
+        "visual_description" : "A three-panel sequence on the driveway showing Lily's first attempts at movement. Dad walks backward slowly in front of Lily, holding her hands. In the first panel, Lily takes a tiny, tentative step-roll forward, concentrating intensely. In the second panel, she's moving a couple of feet, still stiff. In the third panel, she's rolled several feet and a surprised, delighted laugh breaks across her face."
+      }, {
+        "row_number" : 2,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "Dad holds Lily's left hand and points down at her right skate with his free hand. Lily looks down, curious. A circular inset/magnification bubble shows a close-up of the pink rubber toe brake at the front of the skate, labeled 'TOE BRAKE.'",
+          "dialog" : [ {
+            "character" : "Dad (Mike)",
+            "text" : "See this rubber piece on the front of your skate? That's your BRAKE. When you want to stop, just lift your toes and press it down on the ground."
+          }, {
+            "character" : "Lily",
+            "text" : "That little thing stops me?"
+          } ],
+          "caption" : "\"🛡️ SKATING TIP #4: To stop, gently lift the toe of one foot and press the toe brake against the ground. Don't stomp — just press!\" (instructional box)"
+        }, {
+          "frame_number" : 2,
+          "description" : "Lily rolls slowly forward and tips her right foot forward, pressing the toe brake to the pavement. Small friction lines show the brake engaging. She slows to a stop, arms out for balance. Her face shows concentration turning to satisfaction. Dad stands two steps behind her, arms outstretched.",
+          "dialog" : [ {
+            "character" : "Lily",
+            "text" : "Press... the... toe... DOWN... and..."
+          }, {
+            "character" : "Lily",
+            "text" : "I STOPPED! I actually stopped!"
+          }, {
+            "character" : "Dad (Mike)",
+            "text" : "Perfect! See? You're in control. YOU decide when to go and when to stop."
+          } ],
+          "caption" : "\"Knowing how to stop made Lily feel much braver.\""
+        } ],
+        "visual_description" : "Two panels on the driveway focused on stopping. In the first panel, Dad points down at the rubber toe brake on Lily's skate, explaining its function. A small inset circle shows a close-up of the brake. In the second panel, Lily rolls slowly forward and tips her right toe down, pressing the brake to the ground to stop. Dad stands nearby, ready to catch her."
+      }, {
+        "row_number" : 3,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "Lily rolls forward with a bit of speed. Suddenly her balance shifts — her arms windmill wildly, her body tilts backward. Motion lines emphasize the wobble. Her face is a classic 'uh-oh!' — wide eyes, open mouth, eyebrows up.",
+          "dialog" : [ {
+            "character" : "Lily",
+            "text" : "Whoa— WHOAAAA—!"
+          } ],
+          "caption" : "*WOBBLE WOBBLE* (Sound Effect)"
+        }, {
+          "frame_number" : 2,
+          "description" : "Lily is on the ground, having landed on her hands (wrist guards) and knees (knee pads). She sits back on the driveway, looking down at herself with a stunned expression. A small scuff mark is visible on her right knee pad. She is not crying.",
+          "dialog" : [ {
+            "character" : "Lily",
+            "text" : "...Ow?"
+          } ],
+          "caption" : "*THUMP!* (Sound Effect) / \"Down she went! But guess what?\""
+        }, {
+          "frame_number" : 3,
+          "description" : "Dad kneels beside Lily on the driveway, one hand on her shoulder, smiling warmly. Lily looks at her knee pads and wrist guards, then up at Dad, realizing she's totally fine.",
+          "dialog" : [ {
+            "character" : "Dad (Mike)",
+            "text" : "Hey, you okay? Look at that — your knee pads and wrist guards did their job! Not even a scratch."
+          }, {
+            "character" : "Lily",
+            "text" : "It... didn't even hurt! The pads caught me!"
+          }, {
+            "character" : "Dad (Mike)",
+            "text" : "That's EXACTLY what they're for. Every skater falls. The important thing is what you do next."
+          } ],
+          "caption" : "\"🛡️ SKATING TIP #5: Everybody falls when they're learning — even grown-ups! That's why we wear safety gear. If you feel yourself falling, try to fall FORWARD onto your knee pads and wrist guards.\" (instructional box)"
+        } ],
+        "visual_description" : "Three panels showing Lily's first fall. In the first panel, Lily is skating faster, arms windmilling as she loses balance. In the second panel, she is on the ground, having landed safely on her knee pads and wrist guards, looking surprised but not hurt. In the third panel, Dad kneels beside her, smiling gently, pointing out that her safety gear worked."
+      }, {
+        "row_number" : 4,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "Dad crouches beside Lily, who is still sitting on the driveway. He mimes the getting-up motion with his hands — showing 'one knee, one foot, push up.' Lily watches him carefully, nodding.",
+          "dialog" : [ {
+            "character" : "Dad (Mike)",
+            "text" : "Here's the trick: get on one knee, put one skate flat on the ground in front of you, and push yourself up. Nice and easy."
+          } ],
+          "caption" : "\"🛡️ SKATING TIP #6: To get up — go to one knee, place one skate flat in front of you, and push up with your hands. Take your time!\" (instructional box)"
+        }, {
+          "frame_number" : 2,
+          "description" : "Lily is mid-rise. Her left knee is on the ground, her right skate is flat on the pavement in front of her, and she's pushing up with both hands on her right knee. Her face is set with determination. Dad stands beside her with one hand hovering near her elbow.",
+          "dialog" : [ {
+            "character" : "Lily",
+            "text" : "One knee... one skate... and... PUSH... UP!"
+          }, {
+            "character" : "Dad (Mike)",
+            "text" : "There you go! Look at you — back on your feet like a champ!"
+          }, {
+            "character" : "Lily",
+            "text" : "(standing, fists pumped) I did it! Okay. Let's go again."
+          } ],
+          "caption" : "\"Lily wasn't afraid of falling anymore. She knew she could always get back up.\""
+        } ],
+        "visual_description" : "Two panels showing Lily getting back up. In the first panel, Dad crouches beside Lily, demonstrating the technique for standing up while on skates. In the second panel, Lily is mid-rise, on one knee, pushing herself up with determination. Dad stands nearby, ready to help but letting her succeed on her own."
+      } ]
+    }, {
+      "page_number" : 3,
+      "rows" : [ {
+        "row_number" : 1,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "A flowing montage across the full width of the row. From left to right: (1) Lily gripping both of Dad's hands; (2) Lily holding just Dad's right hand; (3) Dad walking beside Lily with hands at his sides; (4) Lily skating a few feet ahead of Dad, who smiles proudly. Robin and Jay fly above.",
+          "dialog" : [ {
+            "character" : "Lily",
+            "text" : "Whoa..."
+          }, {
+            "character" : "Lily",
+            "text" : "Okay, okay..."
+          }, {
+            "character" : "Lily",
+            "text" : "I got this..."
+          }, {
+            "character" : "Lily",
+            "text" : "Look, Dad!"
+          } ],
+          "caption" : "\"Lily practiced and practiced. Each try was a little better than the last.\" (top) / \"🛡️ SKATING TIP #7: Practice makes progress! Don't worry about being perfect. Every time you skate, you get a little bit better.\" (bottom, instructional box)"
+        } ],
+        "visual_description" : "A wide panoramic strip showing a time-lapse/montage of Lily practicing on the driveway. Multiple 'ghost' images of Lily show her progress from wobbly (holding Dad's hands) to independent (skating ahead of Dad). Robin and Jay fly in a gentle arc above the montage. The mood is one of time passing and gradual improvement."
+      }, {
+        "row_number" : 2,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "Dad stands still on the driveway, arms gently crossed, a proud smile on his face. Ahead of him, Lily skates forward with good form, focused on the path ahead. The gap between them is about ten feet and growing.",
+          "dialog" : [ {
+            "character" : "Dad (Mike)",
+            "text" : "There she goes..."
+          } ],
+          "caption" : "\"Dad quietly stopped walking. Lily kept right on skating.\""
+        }, {
+          "frame_number" : 2,
+          "description" : "From behind Lily's shoulder, we see her turned head looking back at Dad, who is now quite far behind her. Her face is a mix of shock and pure joy — eyebrows up, mouth open in surprise. Dad stands in the background, both thumbs up, grinning.",
+          "dialog" : [ {
+            "character" : "Lily",
+            "text" : "DAD! You— you LET GO! I'm skating BY MYSELF!!"
+          }, {
+            "character" : "Dad (Mike)",
+            "text" : "(calling out) You've BEEN skating by yourself for the last twenty feet, superstar!"
+          } ],
+          "caption" : "\"🛡️ SKATING TIP #8: When you feel ready, try skating a short distance without holding anyone's hand. Stay on a smooth, flat surface and keep your knees bent!\" (instructional box)"
+        } ],
+        "visual_description" : "Two panels showing Lily realizing she is skating solo. In the first panel, Dad has stopped walking and watches Lily skate ten feet ahead, focused on the path. In the second panel, Lily glances back, sees the distance, and her face explodes with shock and delight. Dad gives her a double thumbs-up from the background."
+      }, {
+        "row_number" : 3,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "Lily leans gently to her left, arms extended like airplane wings, executing a slow, wide turn on the driveway. Her hair swings with the motion. Her face shows focused fun.",
+          "dialog" : [ {
+            "character" : "Lily",
+            "text" : "Leaning makes me tuuuurn!"
+          } ],
+          "caption" : "\"🛡️ SKATING TIP #9: To turn, gently lean in the direction you want to go. Don't lean too far — just a little!\" (instructional box)"
+        }, {
+          "frame_number" : 2,
+          "description" : "Lily rolls forward and executes a smooth toe-brake stop. Her right foot tips forward, the brake presses the ground, and she comes to a clean, controlled stop. She looks calm and in control.",
+          "dialog" : [ {
+            "character" : "Lily",
+            "text" : "Stop!"
+          } ],
+          "caption" : "*Ssshhhhh* (Sound Effect) / \"Stopping was easy now.\""
+        }, {
+          "frame_number" : 3,
+          "description" : "Lily skates in a joyful wide circle on the driveway, hair streaming behind her, arms relaxed and swinging naturally. Her smile is enormous and carefree. Dad sits on the porch steps watching, clapping. Robin and Jay are perched on the porch railing.",
+          "dialog" : [ {
+            "character" : "Dad (Mike)",
+            "text" : "(clapping) Look at you GO!"
+          }, {
+            "character" : "Lily",
+            "text" : "WHEEEEE!"
+          } ],
+          "caption" : "\"Lily couldn't believe it. She was REALLY skating!\""
+        } ],
+        "visual_description" : "Three panels showing Lily experimenting with confidence. In the first panel, she practices gentle turns, leaning slightly. In the second panel, she executes a smooth, controlled toe-brake stop. In the third panel, Lily skates in a wide, happy circle on the driveway while Dad sits on the porch steps, clapping. Robin and Jay are perched on the porch railing."
+      }, {
+        "row_number" : 4,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "Lily stands at the end of the driveway where it meets the sidewalk, turned back to face the house. The late afternoon sun halos the house in warm gold. Dad walks toward her, arms slightly open. Robin and Jay are perched on the roof peak. Lily's face is soft — a gentle, proud smile.",
+          "dialog" : [ {
+            "character" : "Lily",
+            "text" : "(softly) Dad... I skated all the way from the house."
+          }, {
+            "character" : "Dad (Mike)",
+            "text" : "(approaching, voice warm) You sure did, Lily-bug. I'm so proud of you."
+          } ],
+          "caption" : "\"Lily looked back at where she started. It seemed so far away now. She had done it — one wobbly roll at a time.\""
+        } ],
+        "visual_description" : "A single wide panel showing Lily standing at the end of the driveway, looking back toward the house, which is bathed in warm golden sunset light. Dad walks toward her from the porch, arms open. Robin and Jay are on the roof peak, silhouetted against the golden sky. Lily's expression is soft and proud, reflecting on her accomplishment."
+      } ]
+    }, {
+      "page_number" : 4,
+      "rows" : [ {
+        "row_number" : 1,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "Lily skates confidently along the sidewalk, body in smooth motion, arms swinging naturally. Her smile is radiant. Dad jogs on the grass beside the sidewalk, fist pumping the air, laughing. Robin and Jay are on the roof with wings slightly spread.",
+          "dialog" : [ {
+            "character" : "Lily",
+            "text" : "LOOK AT ME! I'M A ROLLER SKATER!!"
+          }, {
+            "character" : "Dad (Mike)",
+            "text" : "THAT'S MY GIRL! YOU'RE AMAZING!"
+          } ],
+          "caption" : "*Roll roll roll roll* (Sound Effect, small, playful) / \"Lily took her very first victory lap — and it was GLORIOUS.\""
+        } ],
+        "visual_description" : "A wide, dynamic panel showing Lily's triumphant victory lap. She skates confidently down the sidewalk, arms swinging, hair bouncing, a massive joyful grin on her face. Dad jogs alongside her on the grass, cheering and pumping his fist. The house is in the background. Motion lines and small sparkle effects emphasize her speed and joy."
+      }, {
+        "row_number" : 2,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "Lily rolls into Dad's arms. He bends down and scoops her into a hug, lifting her slightly. Both are laughing joyfully. Lily's helmet bumps against Dad's chin.",
+          "dialog" : [ {
+            "character" : "Lily",
+            "text" : "I DID IT, DAD! I really, really did it!"
+          }, {
+            "character" : "Dad (Mike)",
+            "text" : "You did it, Lily-bug. You were SO brave."
+          } ],
+          "caption" : "\"The best part of learning something new? Sharing it with someone who believes in you.\""
+        }, {
+          "frame_number" : 2,
+          "description" : "Dad and Lily sit side by side on the porch steps. Dad's arm is around Lily's shoulders. Lily's skated feet are stretched out in front of her. They both look out at the driveway. Robin and Jay are on the porch railing. Lily raises her hand and Dad meets it with a high-five.",
+          "dialog" : [ {
+            "character" : "Lily",
+            "text" : "Can we skate again tomorrow?"
+          }, {
+            "character" : "Dad (Mike)",
+            "text" : "We can skate every single day."
+          } ],
+          "caption" : "*SLAP!* (Sound Effect, high-five) / \"And the two birds on the roof? They'd had the best seats in the house.\""
+        } ],
+        "visual_description" : "Two panels showing the celebration. In the first panel, Lily skates back to Dad and rolls right into a big hug. Both are laughing. In the second panel, they sit together on the porch steps, side by side, looking out at the driveway. Robin and Jay have hopped down to the porch railing. Lily and Dad share a high-five."
+      }, {
+        "row_number" : 3,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "Lily stands center in full gear, confident pose. Around her are 6 colorful tip bubbles with small illustrations: 🛡️ \"Gear Up!\"; 🦵 \"Bend Your Knees!\"; 🦶 \"Glide, Don't Walk!\"; 🛑 \"Use Your Toe Brake!\"; 💪 \"Fall? Get Back Up!\"; ⭐ \"Practice Makes Progress!\". Robin and Jay hold a banner at the top: \"LILY'S SKATING TIPS!\"",
+          "dialog" : [ {
+            "character" : "Lily",
+            "text" : "Remember: every expert was once a beginner. YOU can do this!"
+          } ],
+          "caption" : "\"Now YOU know how to start skating, just like Lily! Grab your gear, find a smooth flat spot, and give it a try!\" (bottom)"
+        } ],
+        "visual_description" : "A fun, colorful instructional recap panel designed like a poster or infographic. Lily stands in the center in her full gear, striking a confident pose. Around her are 6 colorful tip bubbles with small illustrated icons summarizing the key skating tips. Robin and Jay hold a banner at the top that reads 'LILY'S SKATING TIPS!'"
+      }, {
+        "row_number" : 4,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "The house in warm sunset light — peach and pink sky, golden glow. Robin and Jay sit together on the roof peak. On the driveway, Lily's skates, helmet, and pads are neatly arranged. On the driveway concrete, wobbly kid handwriting reads: \"I ❤️ SKATING.\" Everything is peaceful and still.",
+          "dialog" : [ ],
+          "caption" : "\"And tomorrow? Tomorrow she'd skate even farther.\" (centered, warm font) / **THE END** (bottom, in playful comic font) / \"...but really, it's just the beginning! 🛼\" (small text in corner)"
+        } ],
+        "visual_description" : "A final, wide, beautiful closing panel that mirrors the opening shot, now bathed in warm golden-pink sunset light. Robin and Jay are back on the roof peak. On the driveway, Lily's skates, helmet, and pads are neatly arranged. Chalk marks on the driveway read 'I ❤️ SKATING.' The mood is peaceful and conclusive."
+      } ]
+    } ]
+  },
+  "characterImages" : {
+    "Lily" : "char_Lily.png",
+    "Dad (Mike)" : "char_Dad__Mike_.png",
+    "Robin & Jay" : "char_Robin___Jay.png"
+  },
+  "rowImages" : {
+    "1_1" : "page_1_row_1.png",
+    "1_2" : "page_1_row_2.png",
+    "1_3" : "page_1_row_3.png",
+    "1_4" : "page_1_row_4.png",
+    "2_1" : "page_2_row_1.png",
+    "2_2" : "page_2_row_2.png",
+    "2_3" : "page_2_row_3.png",
+    "2_4" : "page_2_row_4.png",
+    "3_1" : "page_3_row_1.png",
+    "3_2" : "page_3_row_2.png",
+    "3_3" : "page_3_row_3.png",
+    "3_4" : "page_3_row_4.png",
+    "4_1" : "page_4_row_1.png",
+    "4_2" : "page_4_row_2.png",
+    "4_3" : "page_4_row_3.png",
+    "4_4" : "page_4_row_4.png"
+  }
+}

@@ -1,0 +1,539 @@
+{
+  "config" : {
+    "subject" : "Little Bo Peep, a young girl shepherdess, discovers her flock of sheep have turned evil and sinister. Armed with her walking stick that transforms into a deadly sword, she must battle her corrupted sheep in an epic martial arts showdown. The innocent nursery rhyme character becomes a fierce warrior as she faces off against her once-beloved flock, using skilled swordsmanship and combat techniques to defeat the malevolent sheep one by one. The story blends the classic fairy tale setting with intense action sequences.",
+    "target_pages" : 5,
+    "art_style" : "western action comic",
+    "style_details" : "Non-anime martial arts action comic style - dynamic poses, dramatic angles, bold ink lines, high contrast shadows, motion blur effects, impact frames, gritty and intense atmosphere similar to classic martial arts comics like Sin City meets Lone Wolf and Cub. Western comic book aesthetic with heavy blacks, dramatic lighting, and visceral action choreography.",
+    "generate_images" : true,
+    "task_dependencies" : [ ],
+    "state" : "Pending",
+    "task_type" : "ComicBookGeneration",
+    "task_description" : "Generate a comic book about Little Bo Peep's martial arts battle against her evil sheep flock."
+  },
+  "script" : {
+    "title" : "LITTLE BO PEEP: THE FLOCK OF FURY",
+    "premise" : "In the pastoral hills of Meadowbrook, young shepherdess Bo Peep has always tended her flock with love and care. But when a dark curse sweeps across the land, her innocent sheep transform into demonic, bloodthirsty creatures with glowing red eyes and razor-sharp teeth. As the corruption spreads, Bo discovers her grandmother's walking staff holds an ancient secret—it transforms into a legendary blade called \"The Shepherd's Wrath.\" Now, the girl who once sang lullabies to her lambs must become a warrior and put down her beloved flock before they spread their evil beyond the hills. This is not the nursery rhyme you remember.",
+    "characters" : [ {
+      "name" : "Bo Peep",
+      "description" : "A 19-year-old shepherdess forced to become a warrior. Initially innocent and nurturing, she transforms into a fierce, determined fighter while struggling with the emotional weight of destroying creatures she once loved.",
+      "visual_traits" : "Long blonde hair tied in twin braids, now battle-worn and loose. Traditional blue and white shepherdess dress, torn and bloodied from combat. Piercing blue eyes that shift between sorrow and cold determination. Athletic build hidden beneath pastoral clothing. Carries her staff/sword across her back."
+    }, {
+      "name" : "The Corrupted Flock",
+      "description" : "Once gentle sheep, now twisted into nightmarish versions of themselves. They move with unnatural speed and predatory intelligence.",
+      "visual_traits" : "Matted, blackened wool. Glowing crimson eyes. Elongated snouts filled with rows of sharp teeth. Cloven hooves that spark against stone. Some walk on hind legs. Varying sizes—from lamb-sized scouts to massive ram leaders. Black ichor drips from their mouths."
+    }, {
+      "name" : "Bellwether",
+      "description" : "The eldest ram of the flock, now the alpha of the corrupted herd. Once Bo's favorite and most trusted sheep, his betrayal cuts deepest.",
+      "visual_traits" : "Massive, twice the size of a normal ram. Curved horns now twisted and blackened like burnt wood, crackling with dark energy. A scar over his left eye from when Bo saved him from wolves years ago. Walks upright. Wears the tattered remains of the blue ribbon Bo gave him as a lamb."
+    }, {
+      "name" : "The Shepherd's Wrath",
+      "description" : "An ancient blade passed down through generations of Peep shepherdesses, disguised as a simple walking staff.",
+      "visual_traits" : "Staff form: gnarled oak wood with a curved hook. Sword form: elegant single-edged blade with silver edge, the hook becomes an ornate guard, runes glow faintly along the blade. Transforms with a twist and pull motion."
+    } ],
+    "pages" : [ {
+      "page_number" : 1,
+      "rows" : [ {
+        "row_number" : 1,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "Panoramic view of Meadowbrook hills. Bo Peep's cottage in the middle distance. Empty sheep pen visible. Long shadows stretch across the grass. A single crow sits on a fencepost.",
+          "dialog" : [ ],
+          "caption" : "Meadowbrook Hills. Where I've tended my flock since I could walk. Where I learned that some things, once lost, should never be found."
+        } ],
+        "visual_description" : "A wide establishing shot of rolling pastoral hills at dusk. The sky bleeds orange and purple, but dark storm clouds gather ominously on the horizon. In the distance, a small cottage sits beside a wooden fence. The scene is peaceful but tension lurks—the shadows are too dark, too deep. High contrast between the warm sunset and the encroaching darkness."
+      }, {
+        "row_number" : 2,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "Bo Peep stands in the doorway of her cottage, hand on the frame, looking out at the empty hills. Her staff leans against the wall beside her. Warm candlelight behind her, cold dusk ahead.",
+          "dialog" : [ {
+            "character" : "BO PEEP",
+            "text" : "Three days. Three days they've been gone."
+          } ],
+          "caption" : ""
+        }, {
+          "frame_number" : 2,
+          "description" : "Extreme close-up of Bo's eyes—worried, but with a flicker of steel beneath the concern. Reflection of the darkening sky in her pupils.",
+          "dialog" : [ ],
+          "caption" : "Grandmother always said the flock would return when they were ready."
+        }, {
+          "frame_number" : 3,
+          "description" : "Bo grabs her staff from the wall, knuckles white around the wood. Her jaw is set. Behind her, an old portrait of her grandmother holding the same staff is partially visible.",
+          "dialog" : [ {
+            "character" : "BO PEEP",
+            "text" : "But something's wrong. I can feel it."
+          } ],
+          "caption" : ""
+        } ],
+        "visual_description" : "Medium shots focusing on Bo Peep at her cottage, showing her concern. Warm interior lighting from the cottage contrasts with the cold blue exterior. Her expression shifts from worry to determination. Heavy shadows on her face suggest inner turmoil."
+      }, {
+        "row_number" : 3,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "Bo walks up a hill path, staff in hand, dress billowing in an unnatural wind. Dead grass and withered flowers line the path. The sky has darkened significantly.",
+          "dialog" : [ {
+            "character" : "BO PEEP",
+            "text" : "Clover? Buttercup? Where are you, my darlings?"
+          } ],
+          "caption" : "The hills have changed. The grass dies where I walk."
+        }, {
+          "frame_number" : 2,
+          "description" : "Bo reaches the hilltop, shown from below to emphasize her silhouette against the stormy sky. Lightning flickers in the distant clouds. Her braids whip behind her. Sound Effect: KRAK-KOOOM.",
+          "dialog" : [ ],
+          "caption" : ""
+        }, {
+          "frame_number" : 3,
+          "description" : "From behind Bo, we see what she sees—in the valley below, dozens of shapes move in the darkness. Red pinpricks of light. Eyes. Many eyes. All looking up at her.",
+          "dialog" : [ {
+            "character" : "BO PEEP",
+            "text" : "...No."
+          } ],
+          "caption" : "I found my sheep."
+        } ],
+        "visual_description" : "Bo ventures into the darkening hills, the atmosphere growing more ominous with each panel. Heavy blacks dominate the backgrounds. Wind whips her dress and hair. The pastoral beauty becomes threatening—twisted trees, unnatural shadows. Motion lines suggest urgency in her movement."
+      }, {
+        "row_number" : 4,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "The corrupted flock emerges from the shadows of the valley. Dozens of twisted sheep, some on all fours, some standing upright. Black wool, red eyes, gleaming teeth. They move as one organism, surrounding the base of Bo's hill. Sound Effect: Baaaahhhhh...",
+          "dialog" : [ ],
+          "caption" : ""
+        }, {
+          "frame_number" : 2,
+          "description" : "Bo's face in stark contrast—half lit by the red glow from below, half in shadow. A single tear rolls down her cheek, but her expression hardens from grief to grim resolve.",
+          "dialog" : [ {
+            "character" : "BO PEEP",
+            "text" : "What happened to you...?"
+          } ],
+          "caption" : ""
+        }, {
+          "frame_number" : 3,
+          "description" : "Extreme close-up of a corrupted sheep's face—once gentle Clover, now monstrous. Matted black wool, hellfire eyes, mouth open to reveal rows of needle teeth. Black drool drips from its maw.",
+          "dialog" : [ {
+            "character" : "CORRUPTED SHEEP",
+            "text" : "Shepherdessssss... we've been waiting..."
+          } ],
+          "caption" : "I wished I'd never found them."
+        } ],
+        "visual_description" : "The horror reveal. Heavy contrast, almost silhouette work with the corrupted sheep emerging from shadow. Bo's face illuminated by the hellish red glow of their eyes. This is the turn—innocence dies here. Impact frame energy without the action yet."
+      } ]
+    }, {
+      "page_number" : 2,
+      "rows" : [ {
+        "row_number" : 1,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "Three corrupted sheep launch themselves up the hillside toward Bo, mouths agape, claws extended from their hooves. Motion lines streak behind them. Bo braces herself, staff horizontal. Sound Effect: SKREEEE!",
+          "dialog" : [ {
+            "character" : "BO PEEP",
+            "text" : "Stay back!"
+          } ],
+          "caption" : ""
+        }, {
+          "frame_number" : 2,
+          "description" : "Bo swings her staff, connecting with the lead sheep's skull. The impact sends it tumbling, but two more are right behind it. Sweat on Bo's brow. Her dress tears at the hem. Sound Effect: KRAKK!",
+          "dialog" : [ ],
+          "caption" : "The staff grandmother gave me. 'For protection,' she said."
+        } ],
+        "visual_description" : "The corrupted flock begins their assault up the hill. Dynamic motion—sheep leaping, charging, moving with predatory speed. Bo backs up, staff raised defensively. Heavy motion blur on the attacking creatures. Dramatic upward angles showing the overwhelming numbers."
+      }, {
+        "row_number" : 2,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "A corrupted sheep tackles Bo from behind. She falls forward, losing grip on her staff. It clatters away. Three more sheep close in, teeth bared. Sound Effect: THUD!",
+          "dialog" : [ {
+            "character" : "BO PEEP",
+            "text" : "AAAH!"
+          } ],
+          "caption" : ""
+        }, {
+          "frame_number" : 2,
+          "description" : "Bo on the ground, reaching desperately for her staff just out of reach. A sheep's hoof pins her braid. Another lunges for her throat. Her fingers stretch toward the wood.",
+          "dialog" : [ {
+            "character" : "BO PEEP",
+            "text" : "Please... PLEASE!"
+          } ],
+          "caption" : ""
+        }, {
+          "frame_number" : 3,
+          "description" : "The staff begins to glow with silver-white light. Ancient runes appear along its surface, burning through the wood grain. The curved hook straightens, gleams. Sound Effect: FWOOOSH!",
+          "dialog" : [ ],
+          "caption" : "'For protection,' she said. I never understood."
+        } ],
+        "visual_description" : "Bo is overwhelmed, knocked down. The sheep pile on. Desperate struggle. Then—the staff begins to glow. Mystical energy cuts through the darkness. A turning point rendered in stark light versus shadow."
+      }, {
+        "row_number" : 3,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "Bo grabs the glowing staff. Light explodes outward in a shockwave, throwing the corrupted sheep back. The staff elongates, the hook reshapes into a guard, a blade emerges—THE SHEPHERD'S WRATH is born. Bo's eyes reflect the silver light. Sound Effect: SHRAAAAANG!",
+          "dialog" : [ ],
+          "caption" : ""
+        }, {
+          "frame_number" : 2,
+          "description" : "Bo rises to her feet, sword in a two-handed grip, blade pointed down and to the side. Her torn dress flows like battle garb. Her expression has transformed—no more tears, only cold determination. The corrupted sheep recoil from the light.",
+          "dialog" : [ {
+            "character" : "BO PEEP",
+            "text" : "...I understand now, Grandmother."
+          } ],
+          "caption" : ""
+        } ],
+        "visual_description" : "The transformation sequence. The staff becomes the sword in a burst of light that throws back the attacking sheep. Bo rises, weapon in hand, reborn as a warrior. Dramatic low angle, cape-like motion on her torn dress, blade gleaming. This is her hero moment."
+      }, {
+        "row_number" : 4,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "Bo shifts into a fighting stance—blade raised at an angle, feet planted, weight forward. Wind dies. Everything goes still. Her eyes narrow.",
+          "dialog" : [ {
+            "character" : "BO PEEP",
+            "text" : "You're not my flock anymore."
+          } ],
+          "caption" : ""
+        }, {
+          "frame_number" : 2,
+          "description" : "The corrupted sheep spread out, surrounding her in a circle. Dozens of red eyes in the darkness. They crouch, ready to spring. The largest ones hang back, watching.",
+          "dialog" : [ {
+            "character" : "CORRUPTED SHEEP",
+            "text" : "Kill... kill the shepherdess... Tear... rend... feast..."
+          } ],
+          "caption" : ""
+        }, {
+          "frame_number" : 3,
+          "description" : "Bo's eye, reflected in the blade of her sword. In the reflection, we see the sheep beginning their charge.",
+          "dialog" : [ {
+            "character" : "BO PEEP",
+            "text" : "Then let me put you to rest."
+          } ],
+          "caption" : "Little Bo Peep has lost her sheep. And she knows exactly where to find them."
+        } ],
+        "visual_description" : "Bo takes her first offensive stance. The sheep recover and prepare to attack again. The battle is about to begin in earnest. Heavy shadows, gleaming blade, red eyes in the darkness. Tension before the storm."
+      } ]
+    }, {
+      "page_number" : 3,
+      "rows" : [ {
+        "row_number" : 1,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "Bo spins, blade extended, cutting through three sheep in a single arc. Black ichor sprays in a fan pattern. Her braids whip around her. Motion blur on the blade creates a silver crescent. Sound Effect: SLASHHH!",
+          "dialog" : [ {
+            "character" : "BO PEEP",
+            "text" : "HYAAAH!"
+          } ],
+          "caption" : ""
+        }, {
+          "frame_number" : 2,
+          "description" : "Close-up of the Shepherd's Wrath cleaving through a corrupted sheep's skull. The blade glows where it cuts. The creature's red eyes flicker and die. Ichor splatters across the panel border. Sound Effect: SHUNK!",
+          "dialog" : [ ],
+          "caption" : ""
+        } ],
+        "visual_description" : "The battle explodes. Bo moves through the first wave of corrupted sheep with brutal efficiency. Sword arcs, blood sprays (black ichor), bodies fall. Dynamic motion lines, speed blur, impact frames. She fights like a dancer—graceful but lethal. High contrast action with heavy blacks."
+      }, {
+        "row_number" : 2,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "Bo kicks a sheep in the chest while simultaneously blocking another's bite with her blade. A third rakes claws across her forearm. Blood (red) mixes with ichor (black) on her skin. Sound Effect: KRAK! / SLASH!",
+          "dialog" : [ {
+            "character" : "BO PEEP",
+            "text" : "NGH!"
+          } ],
+          "caption" : ""
+        }, {
+          "frame_number" : 2,
+          "description" : "Bo drops low, sweeping her blade in a horizontal arc that takes out the legs of two charging sheep. She's covered in black ichor now, dress ruined, but her eyes burn with focus. Sound Effect: SWICK-SWICK!",
+          "dialog" : [ ],
+          "caption" : ""
+        }, {
+          "frame_number" : 3,
+          "description" : "A sheep's jaws snap shut inches from Bo's face. She's caught its throat with her free hand, holding it back. Drool and ichor drip onto her cheek. Her teeth are gritted.",
+          "dialog" : [ {
+            "character" : "BO PEEP",
+            "text" : "I raised you from a lamb, Buttercup."
+          } ],
+          "caption" : ""
+        } ],
+        "visual_description" : "Bo continues her assault, but the sheep adapt. They attack in coordinated groups. She takes hits—claw marks on her arm, teeth graze her shoulder. She's winning but paying a price. Gritty, visceral combat."
+      }, {
+        "row_number" : 3,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "Bo drives her blade through Buttercup's chest. The sheep's eyes flicker—for a moment, they seem to clear, to recognize her. Then they go dark. Bo's face is a mask of controlled grief. Sound Effect: SHUNK.",
+          "dialog" : [ {
+            "character" : "BO PEEP",
+            "text" : "I'm sorry."
+          } ],
+          "caption" : ""
+        }, {
+          "frame_number" : 2,
+          "description" : "Bo stands among fallen sheep, breathing hard. Black ichor pools around her feet. But beyond the bodies, MORE sheep emerge from the darkness. Dozens more. She's barely made a dent.",
+          "dialog" : [ ],
+          "caption" : "For every one I cut down, two more take its place."
+        }, {
+          "frame_number" : 3,
+          "description" : "Bo wipes ichor from her face with her forearm, smearing it. She adjusts her grip on the sword. Behind her, sheep corpses. Before her, a sea of red eyes.",
+          "dialog" : [ {
+            "character" : "BO PEEP",
+            "text" : "Come on then. I have all night."
+          } ],
+          "caption" : ""
+        } ],
+        "visual_description" : "Bo dispatches Buttercup with visible anguish, then faces the next wave. The emotional toll shows even as she fights. Brief moment of humanity amid the carnage. Then more sheep come."
+      }, {
+        "row_number" : 4,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "The smaller sheep part like a wave. Through them charges a corrupted ram twice Bo's size, horns lowered, hooves sparking on stone. Its wool is matted with the blood of other creatures. Sound Effect: DOOM DOOM DOOM.",
+          "dialog" : [ {
+            "character" : "CORRUPTED RAM",
+            "text" : "LITTLE GIRRRRRL..."
+          } ],
+          "caption" : ""
+        }, {
+          "frame_number" : 2,
+          "description" : "Bo's eyes widen. She shifts her stance, blade angled to deflect. Time seems to slow—motion lines converge on the point of impact.",
+          "dialog" : [ {
+            "character" : "BO PEEP",
+            "text" : "Bramble? You were always the stubborn one—"
+          } ],
+          "caption" : ""
+        }, {
+          "frame_number" : 3,
+          "description" : "The ram's horns meet Bo's blade in an explosion of sparks and force. The impact creates a shockwave that flattens the grass around them. Bo's feet dig trenches in the earth as she's pushed back. Sound Effect: KRAKOOOM!",
+          "dialog" : [ ],
+          "caption" : "—but so am I."
+        } ],
+        "visual_description" : "A massive corrupted ram—a lieutenant of the flock—charges through the smaller sheep. Bo braces for impact. This is a mini-boss moment. The ram is huge, terrifying, and fast. Heavy impact energy."
+      } ]
+    }, {
+      "page_number" : 4,
+      "rows" : [ {
+        "row_number" : 1,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "Bo rolls under Bramble's charging horns, slashing at his flank as she passes. The blade cuts deep, black ichor spraying. The ram bellows in rage. Sound Effect: SLASH! / BWAAAHHH!",
+          "dialog" : [ ],
+          "caption" : ""
+        }, {
+          "frame_number" : 2,
+          "description" : "Bramble spins faster than expected, his hoof catching Bo in the ribs. She's launched sideways, sword still in hand, pain evident on her face. Sound Effect: KRAKK!",
+          "dialog" : [ {
+            "character" : "BO PEEP",
+            "text" : "GAHH!"
+          } ],
+          "caption" : ""
+        }, {
+          "frame_number" : 3,
+          "description" : "Bo lands in a crouch, one hand on the ground, sword extended behind her for balance. She spits blood. Bramble paws the ground, preparing another charge.",
+          "dialog" : [ {
+            "character" : "BO PEEP",
+            "text" : "Okay... that hurt."
+          } ],
+          "caption" : ""
+        } ],
+        "visual_description" : "Bo battles the corrupted ram Bramble in a brutal one-on-one fight. She's faster, he's stronger. She uses terrain and technique to overcome raw power. Martial arts choreography—parries, counters, precise strikes. Heavy blacks, dynamic angles."
+      }, {
+        "row_number" : 2,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "Bramble charges again. Bo doesn't dodge—she runs TOWARD him, blade low.",
+          "dialog" : [ {
+            "character" : "BO PEEP",
+            "text" : "You always charged blind, Bramble."
+          } ],
+          "caption" : ""
+        }, {
+          "frame_number" : 2,
+          "description" : "At the last second, Bo plants her staff-sword in the ground and vaults over Bramble's horns. In mid-air, inverted, she draws the blade up through his skull from behind. Time-frozen moment of lethal grace. Sound Effect: SHRAANG!",
+          "dialog" : [ ],
+          "caption" : ""
+        }, {
+          "frame_number" : 3,
+          "description" : "Bo lands behind Bramble as he collapses, blade dripping. She doesn't look back. But she's breathing hard, wounded, exhausted.",
+          "dialog" : [ ],
+          "caption" : "Twelve years I raised him. Twelve seconds to end him."
+        } ],
+        "visual_description" : "Bo defeats Bramble with a decisive, acrobatic finishing move. She uses his momentum against him. The kill is clean but brutal. Then—a new presence makes itself known. The real threat emerges."
+      }, {
+        "row_number" : 3,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "The corrupted sheep freeze mid-motion. Then, as one, they back away from Bo, creating a wide circle. Their red eyes dim slightly, submissive.",
+          "dialog" : [ {
+            "character" : "BO PEEP",
+            "text" : "What...?"
+          } ],
+          "caption" : ""
+        }, {
+          "frame_number" : 2,
+          "description" : "A shadow falls over the battlefield. The clouds part to reveal a blood-red moon. In the distance, heavy hoofbeats. DOOM. DOOM. DOOM. Sound Effect: DOOM... DOOM... DOOM...",
+          "dialog" : [ ],
+          "caption" : "Then I felt it. The presence I'd been dreading."
+        }, {
+          "frame_number" : 3,
+          "description" : "Bo turns slowly, sword raised. Her face shows recognition—and heartbreak. Tears threaten at the corners of her eyes, but she forces them back.",
+          "dialog" : [ {
+            "character" : "BO PEEP",
+            "text" : "No... not you. Please, not you."
+          } ],
+          "caption" : ""
+        } ],
+        "visual_description" : "The remaining corrupted sheep suddenly stop attacking. They part, creating a path. Something is coming. Heavy atmosphere of dread. Bo senses the true enemy approaching. Dramatic lighting shift—darker, more oppressive."
+      }, {
+        "row_number" : 4,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "BELLWETHER emerges from the darkness. Towering, walking upright on hind legs, twisted horns crackling with dark energy. His wool is midnight black, his eyes burn like hellfire. Around his neck—tattered and stained—is a faded blue ribbon.",
+          "dialog" : [ {
+            "character" : "BELLWETHER",
+            "text" : "Bo... my little shepherdess. You've grown strong."
+          } ],
+          "caption" : ""
+        }, {
+          "frame_number" : 2,
+          "description" : "Extreme close-up of the blue ribbon around Bellwether's neck. It's the same one from Bo's childhood. Faded. Bloodstained. But unmistakable.",
+          "dialog" : [ ],
+          "caption" : "The ribbon I tied around his neck when he was born. When I promised to always protect him."
+        }, {
+          "frame_number" : 3,
+          "description" : "Bo's sword arm trembles. A single tear escapes, cutting a path through the ichor on her cheek. But she doesn't lower her blade.",
+          "dialog" : [ {
+            "character" : "BO PEEP",
+            "text" : "Bellwether... what have you become?"
+          }, {
+            "character" : "BELLWETHER",
+            "text" : "What you made me, child. What your love made me."
+          } ],
+          "caption" : ""
+        } ],
+        "visual_description" : "BELLWETHER reveals himself. The ultimate corruption of Bo's most beloved sheep. He's massive, terrifying, and still wearing the blue ribbon she gave him. The emotional gut-punch. Full villain reveal with heavy shadows and dramatic backlighting."
+      } ]
+    }, {
+      "page_number" : 5,
+      "rows" : [ {
+        "row_number" : 1,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "Bellwether spreads his arms wide, gesturing to the corrupted flock around them. Dark energy crackles between his horns. His voice echoes unnaturally.",
+          "dialog" : [ {
+            "character" : "BELLWETHER",
+            "text" : "Your grandmother knew. The Shepherd's bloodline draws darkness like moths to flame. Your LOVE for us... it was a beacon."
+          } ],
+          "caption" : ""
+        }, {
+          "frame_number" : 2,
+          "description" : "A brief, soft-edged flashback: young Bo, maybe 7, tying the blue ribbon around a tiny lamb's neck. Both are smiling. Innocent. Beautiful.",
+          "dialog" : [ ],
+          "caption" : "I loved them more than anything in this world."
+        }, {
+          "frame_number" : 3,
+          "description" : "Bo's grip tightens on her sword. Her expression hardens from grief to cold fury. The tears stop. Something breaks inside her—and something stronger takes its place.",
+          "dialog" : [ {
+            "character" : "BO PEEP",
+            "text" : "Then I'll love you enough to set you free."
+          } ],
+          "caption" : ""
+        } ],
+        "visual_description" : "Bellwether explains the curse—Bo's love for the flock made them a target for dark forces. Her devotion became their corruption. It's a cruel irony. Bo must process this while preparing for the final battle. Emotional and tense."
+      }, {
+        "row_number" : 2,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "Bo and Bellwether collide in the center of the circle. Her blade meets his horns in an explosion of silver light and dark energy. Shockwave ripples outward. The corrupted sheep are thrown back. Sound Effect: KRAKABOOOOM!",
+          "dialog" : [ ],
+          "caption" : ""
+        }, {
+          "frame_number" : 2,
+          "description" : "Rapid exchange—Bellwether swipes with clawed hooves, Bo parries and counters, he blocks with a horn, she spins away. Motion blur creates overlapping images of their deadly dance. Sound Effect: CLANG! SLASH! KRANG!",
+          "dialog" : [ ],
+          "caption" : ""
+        } ],
+        "visual_description" : "The final battle begins. Bo vs. Bellwether. This is the climactic fight—faster, harder, more desperate than anything before. Bellwether fights with dark magic and brute strength. Bo counters with skill and determination. Maximum dynamic energy."
+      }, {
+        "row_number" : 3,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "Bellwether's horn catches Bo across the chest, sending her flying. She crashes through several corrupted sheep, blade spinning from her grip. Sound Effect: KRUNCH!",
+          "dialog" : [ {
+            "character" : "BO PEEP",
+            "text" : "AAAGH!"
+          } ],
+          "caption" : ""
+        }, {
+          "frame_number" : 2,
+          "description" : "Bellwether stands over the fallen Bo, hoof raised for the killing blow. Dark energy gathers around him. His eyes show no mercy—but the ribbon flutters in the wind.",
+          "dialog" : [ {
+            "character" : "BELLWETHER",
+            "text" : "Rest now, little shepherdess. Join your flock in darkness."
+          } ],
+          "caption" : ""
+        }, {
+          "frame_number" : 3,
+          "description" : "From Bo's ground-level POV, she sees the ribbon. Close-up of her eyes—something shifts. Not defeat. Recognition. Love.",
+          "dialog" : [ {
+            "character" : "BO PEEP",
+            "text" : "The ribbon... you kept it. After everything... you kept it."
+          }, {
+            "character" : "BELLWETHER",
+            "text" : "I... I..."
+          } ],
+          "caption" : ""
+        } ],
+        "visual_description" : "The fight intensifies. Both combatants take damage. Bo is faster but Bellwether's dark power is overwhelming. She's losing—until she sees the ribbon again and finds her resolve. The emotional core of the battle."
+      }, {
+        "row_number" : 4,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "Bo rolls, grabs her sword, and rises in one fluid motion. Bellwether is frozen, one hoof on the ribbon, confusion in his hellfire eyes. For a moment, they're just a girl and her sheep again.",
+          "dialog" : [ {
+            "character" : "BO PEEP",
+            "text" : "I know you're still in there. My Bellwether. My first lamb."
+          } ],
+          "caption" : ""
+        }, {
+          "frame_number" : 2,
+          "description" : "Bo drives the Shepherd's Wrath through Bellwether's heart. But she's embracing him as she does it—one arm around his neck, face pressed to his wool. The blade glows brilliant white. The dark energy shatters like glass. Around them, the other corrupted sheep collapse, the curse breaking. Sound Effect: SHRAAAAANG!",
+          "dialog" : [ {
+            "character" : "BO PEEP",
+            "text" : "I release you. I release you all."
+          }, {
+            "character" : "BELLWETHER",
+            "text" : "...thank... you..."
+          } ],
+          "caption" : ""
+        }, {
+          "frame_number" : 3,
+          "description" : "Dawn breaks over the hills. Bo kneels among the bodies of her flock—no longer corrupted, just... gone. Bellwether's head rests in her lap. The blue ribbon is clutched in her hand. She's crying freely now. The Shepherd's Wrath has returned to staff form, lying beside her.",
+          "dialog" : [ ],
+          "caption" : "Little Bo Peep has lost her sheep... and doesn't know where to find them. But she knows where to find the darkness that took them."
+        } ],
+        "visual_description" : "The finale. Bo exploits Bellwether's moment of hesitation—the part of him that still remembers love. She retrieves her sword and delivers the killing blow, but it's an act of mercy, not violence. Emotional climax with visual poetry."
+      } ]
+    } ]
+  },
+  "characterImages" : {
+    "Bo Peep" : "char_Bo_Peep.png",
+    "The Corrupted Flock" : "char_The_Corrupted_Flock.png",
+    "Bellwether" : "char_Bellwether.png",
+    "The Shepherd's Wrath" : "char_The_Shepherd_s_Wrath.png"
+  },
+  "rowImages" : {
+    "1_1" : "page_1_row_1.png",
+    "1_2" : "page_1_row_2.png",
+    "1_3" : "page_1_row_3.png",
+    "1_4" : "page_1_row_4.png",
+    "2_1" : "page_2_row_1.png",
+    "2_2" : "page_2_row_2.png",
+    "2_3" : "page_2_row_3.png",
+    "2_4" : "page_2_row_4.png",
+    "3_1" : "page_3_row_1.png",
+    "3_2" : "page_3_row_2.png",
+    "3_3" : "page_3_row_3.png",
+    "3_4" : "page_3_row_4.png",
+    "4_1" : "page_4_row_1.png",
+    "4_2" : "page_4_row_2.png",
+    "4_3" : "page_4_row_3.png",
+    "4_4" : "page_4_row_4.png",
+    "5_1" : "page_5_row_1.png",
+    "5_2" : "page_5_row_2.png",
+    "5_3" : "page_5_row_3.png",
+    "5_4" : "page_5_row_4.png"
+  }
+}

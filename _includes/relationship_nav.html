@@ -1,0 +1,146 @@
+{% comment %}
+Document relationship navigation showing parent/child relationships,
+cross-synthesis connections, and conceptual threads
+{% endcomment %}
+
+<nav class="relationship-nav" role="navigation" aria-label="Document relationships">
+  {% assign current_doc = page %}
+  
+  {% if current_doc.parent_document %}
+    <div class="nav-section parent-section">
+      <h3 class="nav-section-title">
+        <span class="nav-icon">⬆️</span>
+        Parent Document
+      </h3>
+      {% assign parent = site.documents | where: "path", current_doc.parent_document | first %}
+      {% if parent %}
+        <a href="{{ parent.url | relative_url }}" class="relationship-link parent-link touch-target">
+          <span class="link-title">{{ parent.title }}</span>
+          <span class="link-meta">{{ parent.category }}</span>
+        </a>
+      {% endif %}
+    </div>
+  {% endif %}
+
+  {% if current_doc.child_documents %}
+    <div class="nav-section children-section">
+      <h3 class="nav-section-title">
+        <span class="nav-icon">⬇️</span>
+        Child Documents
+      </h3>
+      <ul class="relationship-list">
+        {% for child_path in current_doc.child_documents %}
+          {% assign child = site.documents | where: "path", child_path | first %}
+          {% if child %}
+            <li class="relationship-item">
+              <a href="{{ child.url | relative_url }}" class="relationship-link child-link touch-target">
+                <span class="link-title">{{ child.title }}</span>
+                <span class="link-meta">
+                  {{ child.subcategory | default: child.category }}
+                </span>
+              </a>
+            </li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </div>
+  {% endif %}
+
+  {% if current_doc.related_documents %}
+    <div class="nav-section related-section">
+      <h3 class="nav-section-title">
+        <span class="nav-icon">🔗</span>
+        Related Documents
+      </h3>
+      <ul class="relationship-list">
+        {% for related_path in current_doc.related_documents %}
+          {% assign related = site.documents | where: "path", related_path | first %}
+          {% if related %}
+            <li class="relationship-item">
+              <a href="{{ related.url | relative_url }}" class="relationship-link related-link touch-target">
+                <span class="link-title">{{ related.title }}</span>
+                <span class="link-meta">
+                  {{ related.difficulty_level }}
+                  {% if related.reading_time_minutes %}
+                    • {{ related.reading_time_minutes }}min
+                  {% endif %}
+                </span>
+              </a>
+            </li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </div>
+  {% endif %}
+
+  {% if current_doc.cross_synthesis_with %}
+    <div class="nav-section synthesis-section">
+      <h3 class="nav-section-title">
+        <span class="nav-icon">🔄</span>
+        Cross-Synthesis Partners
+      </h3>
+      <ul class="relationship-list">
+        {% for synthesis_path in current_doc.cross_synthesis_with %}
+          {% assign synthesis = site.documents | where: "path", synthesis_path | first %}
+          {% if synthesis %}
+            <li class="relationship-item">
+              <a href="{{ synthesis.url | relative_url }}" class="relationship-link synthesis-link">
+                <span class="link-title">{{ synthesis.title }}</span>
+                <span class="link-meta">
+                  Cross-domain synthesis
+                  {% if synthesis.category != current_doc.category %}
+                    • {{ synthesis.category }}
+                  {% endif %}
+                </span>
+              </a>
+            </li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </div>
+  {% endif %}
+
+  {% if current_doc.inspired_by %}
+    <div class="nav-section inspiration-section">
+      <h3 class="nav-section-title">
+        <span class="nav-icon">💡</span>
+        Inspired By
+      </h3>
+      <ul class="relationship-list">
+        {% for inspiration_path in current_doc.inspired_by %}
+          {% assign inspiration = site.documents | where: "path", inspiration_path | first %}
+          {% if inspiration %}
+            <li class="relationship-item">
+              <a href="{{ inspiration.url | relative_url }}" class="relationship-link inspiration-link">
+                <span class="link-title">{{ inspiration.title }}</span>
+                <span class="link-meta">{{ inspiration.category }}</span>
+              </a>
+            </li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </div>
+  {% endif %}
+
+  {% if current_doc.has_inspired %}
+    <div class="nav-section offspring-section">
+      <h3 class="nav-section-title">
+        <span class="nav-icon">🌟</span>
+        Has Inspired
+      </h3>
+      <ul class="relationship-list">
+        {% for offspring_path in current_doc.has_inspired %}
+          {% assign offspring = site.documents | where: "path", offspring_path | first %}
+          {% if offspring %}
+            <li class="relationship-item">
+              <a href="{{ offspring.url | relative_url }}" class="relationship-link offspring-link">
+                <span class="link-title">{{ offspring.title }}</span>
+                <span class="link-meta">{{ offspring.category }}</span>
+              </a>
+            </li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </div>
+  {% endif %}
+</nav>

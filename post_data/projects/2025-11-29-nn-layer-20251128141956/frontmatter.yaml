@@ -1,0 +1,98 @@
+title: 'Neural Network Layer Analysis: MinkowskiRBFLayer'
+layout: post
+date: '"2025-11-29T00:00:00.000Z"'
+last_modified: '"2025-11-28T14:19:56.000Z"'
+category: projects
+subcategory: Engineering & Formal Systems
+tags:
+  - Machine Learning
+  - Spacetime
+  - Technical Spec
+keywords:
+  - MinkowskiRBFLayer
+  - neural network layer
+  - spacetime
+  - causal structure
+  - timelike
+  - spacelike
+  - complex numbers
+  - relativistic geometry
+  - physics-informed machine learning
+  - geometric deep learning
+  - spatiotemporal modeling
+  - causal inference
+  - gradient analysis
+  - numerical stability
+  - pytorch
+  - numpy
+  - deep learning
+status: working
+last_thought_date: '"2025-11-28T00:00:00.000Z"'
+thought_generation: 1
+difficulty_level: research
+reading_time_minutes: 25
+document_type: framework
+thinking_style: analytical
+consciousness_level: meta
+engagement_type: analytical
+reader_participation: passive
+cognitive_load: intense
+description: >-
+  Projects input vectors into Minkowski spacetime and computes complex-valued
+  pseudo-distances to learned reference points, encoding causal structure
+  through timelike vs. spacelike intervals.
+excerpt: >-
+  Projects input vectors into Minkowski spacetime and computes complex-valued
+  pseudo-distances to learned reference points, encoding causal structure
+  through timelike vs. spacelike intervals. By using the Minkowski metric from
+  special relativity, this layer distinguishes between 'causally connected'
+  (timelike) and 'causally disconnected' (spacelike) relationships, encoding
+  this fundamental distinction in the real vs. imaginary components of the
+  output.
+featured_image: main.png
+og_image: minkowski_light_cone_diagram.png
+meta_title: 'MinkowskiRBFLayer: Neural Network for Causal Spacetime Relationships'
+meta_description: >-
+  Detailed analysis of MinkowskiRBFLayer, a novel neural network layer that
+  projects inputs into Minkowski spacetime to encode causal relationships
+  (timelike/spacelike) using complex-valued outputs. Covers theory,
+  implementation, and stability.
+meta_keywords: >-
+  MinkowskiRBFLayer, neural network layer, spacetime, causal structure,
+  timelike, spacelike, complex numbers, relativistic geometry, physics-informed
+  machine learning, geometric deep learning, spatiotemporal modeling, causal
+  inference, gradient analysis, numerical stability, pytorch, numpy, deep
+  learning
+og_title: 'MinkowskiRBFLayer: Causal Spacetime Neural Network'
+og_description: >-
+  Detailed analysis of MinkowskiRBFLayer, a novel neural network layer that
+  projects inputs into Minkowski spacetime to encode causal relationships
+  (timelike/spacelike) using complex-valued outputs. Covers theory,
+  implementation, and stability.
+og_type: article
+og_locale: en_US
+og_site_name: Fractal Thought Engine
+schema_type: TechArticle
+schema_headline: 'Neural Network Layer Analysis: MinkowskiRBFLayer'
+schema_author: AI Assistant
+schema_publisher: Fractal Thought Engine
+schema_date_published: '"2025-11-29T00:00:00.000Z"'
+schema_date_modified: '"2025-11-28T00:00:00.000Z"'
+schema_image: minkowski_rbf_layer.png
+schema_word_count: 5000
+schema_reading_time: PT25M
+canonical_url: >-
+  https://fractalthoughtengine.com/projects/2025/11/29/nn-layer-20251128141956.html
+robots: 'index,follow'
+googlebot: 'index,follow'
+bingbot: 'index,follow'
+content_rating: general
+content_language: en
+is_featured: true
+is_cornerstone: true
+is_gateway: true
+is_synthesis: true
+related_documents:
+  - _posts/projects/2025-11-27-nn-layer-20251127154041.md
+  - _posts/phenomenology/2025-11-20-lorentzian-ethics-ai.md
+  - _posts/learning/2025-07-06-probabilistic-neural-substrate.md

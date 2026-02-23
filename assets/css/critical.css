@@ -1,0 +1,56 @@
+/* Critical CSS for above-the-fold content */
+:root {
+    --primary-color: #818cf8;
+    --secondary-color: #34d399;
+    --tertiary-color: #9ca3af;
+    --bg-primary: #111827;
+    --bg-secondary: #1f2937;
+    --bg-accent: #374151;
+    --font-display: 'Orbitron', monospace;
+    --font-mono: 'Share Tech Mono', 'Courier New', monospace;
+    --spacing-unit: 20px;
+    --border-radius: 0px;
+    --glow-small: 5px;
+    --glow-medium: 10px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-mono);
+    margin: 0;
+    padding: 0;
+    background: var(--bg-primary);
+    color: var(--tertiary-color);
+    min-height: 100vh;
+}
+
+.site-header {
+    background: var(--bg-secondary);
+    padding: calc(.15 * var(--spacing-unit)) 0;
+    text-align: center;
+    border-bottom: 2px solid var(--primary-color);
+}
+
+.site-header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    font-family: var(--font-display);
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.site-header h1 a {
+    color: var(--primary-color);
+    text-decoration: none;
+    text-shadow: 0 0 var(--glow-medium) var(--primary-color);
+}
+
+.container {
+    max-width: 800px;
+    margin: var(--spacing-unit) auto;
+    padding: 0 var(--spacing-unit);
+}

@@ -1,0 +1,72 @@
+title: >-
+  Efficient Storage and Hierarchical Compression of Large-Scale N-gram Language
+  Models
+layout: post
+date: '"2025-06-30T00:00:00.000Z"'
+last_modified: '"2025-06-30T12:00:00.000Z"'
+category: portfolio
+subcategory: Engineering & Formal Systems
+tags:
+  - Machine Learning
+  - Compression
+  - Paper
+keywords:
+  - n-gram compression
+  - language models
+  - trie storage
+status: stable
+last_thought_date: '"2025-06-30T00:00:00.000Z"'
+thought_generation: 3
+parent_document: ../social/2025-07-03-hiring.md
+related_documents:
+  - _posts/projects/2025-11-20-bwt-fulltext-spec.md
+  - _posts/learning/2025-06-30-compression-classification-paper.md
+  - _posts/projects/2025-08-08-ceprle-rust-implementation.md
+reading_order: 2
+difficulty_level: advanced
+reading_time_minutes: 25
+document_type: research_paper
+thinking_style: analytical
+consciousness_level: meta
+engagement_type: analytical
+reader_participation: passive
+cognitive_load: intense
+description: >-
+  A novel approach to compressing large-scale n-gram language models using
+  hierarchical structural expectations
+excerpt: >-
+  Explores hierarchical compression techniques for efficient n-gram language
+  model storage and retrieval
+meta_title: Hierarchical N-gram Language Model Compression
+meta_description: >-
+  Innovative compression method for large-scale language models using structural
+  redundancy and hierarchical encoding
+meta_keywords: 'n-gram, language models, compression, information theory, trie storage'
+schema_type: ScholarlyArticle
+schema_headline: Efficient Storage of Large-Scale N-gram Language Models
+schema_author: Andrew
+schema_publisher: Fractal Thought Engine
+schema_date_published: '"2025-06-30T00:00:00.000Z"'
+schema_date_modified: '"2025-06-30T00:00:00.000Z"'
+schema_word_count: 3500
+schema_reading_time: PT25M
+robots: 'index,follow'
+priority: '0.8'
+changefreq: monthly
+is_featured: true
+is_cornerstone: true
+is_gateway: true
+is_synthesis: true
+og_title: Revolutionizing N-gram Language Model Compression
+og_description: >-
+  Discover a breakthrough approach to efficiently storing and compressing
+  large-scale language models
+og_type: article
+og_locale: en_US
+og_site_name: Fractal Thought Engine
+canonical_url: 'https://fractalthoughtengine.com/research/ngram-compression'
+alternate_urls:
+  - 'https://arxiv.org/abs/2025.ngram-compression'
+preload_resources:
+  - /assets/css/research-paper.css
+  - /assets/js/citation-handler.js

@@ -1,0 +1,128 @@
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "{% if page.schema_type %}{{ page.schema_type }}{% else %}Article{% endif %}",
+  "headline": "{% if page.schema_headline %}{{ page.schema_headline }}{% else %}{{ page.title }}{% endif %}",
+  "description": "{% if page.description %}{{ page.description }}{% elsif page.excerpt %}{{ page.excerpt | strip_html | strip_newlines }}{% else %}{{ site.description }}{% endif %}",
+  "url": "{{ page.url | absolute_url }}",
+  {% if page.schema_image %}"image": "{{ page.schema_image | absolute_url }}",{% elsif page.featured_image %}"image": "{{ page.featured_image | absolute_url }}",{% endif %}
+  {% if page.date %}"datePublished": "{{ page.date | date_to_xmlschema }}",{% endif %}
+  {% if page.last_modified %}"dateModified": "{{ page.last_modified | date_to_xmlschema }}",{% endif %}
+  {% if page.schema_word_count %}"wordCount": {{ page.schema_word_count }},{% endif %}
+  {% if page.schema_reading_time %}"timeRequired": "{{ page.schema_reading_time }}",{% endif %}
+  "author": {
+    "@type": "{% if page.authors.size > 1 %}Organization{% else %}Person{% endif %}",
+    "name": "{% if page.schema_author %}{{ page.schema_author }}{% elsif page.authors %}{{ page.authors | join: ', ' }}{% else %}{{ site.author }}{% endif %}"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "{% if page.schema_publisher %}{{ page.schema_publisher }}{% else %}{{ site.title }}{% endif %}",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "{{ '{{ site.baseurl }}/assets/images/logo.png' | absolute_url }}"
+    }
+  },
+  {% if page.category %}"articleSection": "{{ page.category }}",{% endif %}
+  {% if page.tags %}"keywords": "{{ page.tags | join: ', ' }}",{% endif %}
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "{{ page.url | absolute_url }}"
+  }
+  {% if page.review_schema and page.rating_value %},
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": {{ page.rating_value }},
+    "ratingCount": {% if page.rating_count %}{{ page.rating_count }}{% else %}1{% endif %}
+  }
+  {% endif %}
+}
+</script>
+
+{% if page.breadcrumb_schema %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "{{ site.url }}"
+    }
+    {% if page.category %},
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "{{ page.category }}",
+      "item": "{{ site.url }}/{{ page.category | slugify }}/"
+    }
+    {% endif %}
+    {% if page.subcategory %},
+    {
+      "@type": "ListItem",
+      "position": {% if page.category %}3{% else %}2{% endif %},
+      "name": "{{ page.subcategory }}",
+      "item": "{{ site.url }}/{{ page.category | slugify }}/{{ page.subcategory | slugify }}/"
+    }
+    {% endif %},
+    {
+      "@type": "ListItem",
+      "position": {% if page.subcategory %}{% if page.category %}4{% else %}3{% endif %}{% elsif page.category %}3{% else %}2{% endif %},
+      "name": "{{ page.title }}",
+      "item": "{{ page.url | absolute_url }}"
+    }
+  ]
+}
+</script>
+{% endif %}
+
+{% if page.faq_schema and page.faq_items %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {% for faq in page.faq_items %}
+    {
+      "@type": "Question",
+      "name": "{{ faq.question }}",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "{{ faq.answer }}"
+      }
+    }{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+  ]
+}
+</script>
+{% endif %}
+
+{% if page.how_to_schema and page.how_to_steps %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "{{ page.title }}",
+  "description": "{% if page.description %}{{ page.description }}{% else %}{{ page.excerpt | strip_html | strip_newlines }}{% endif %}",
+  "supply": [
+    {% for supply in page.how_to_supplies %}
+    {
+      "@type": "HowToSupply",
+      "name": "{{ supply }}"
+    }{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+  ],
+  "step": [
+    {% for step in page.how_to_steps %}
+    {
+      "@type": "HowToStep",
+      "name": "{{ step.name }}",
+      "text": "{{ step.text }}",
+      "url": "{{ page.url | absolute_url }}#step-{{ forloop.index }}"
+    }{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+  ]
+}
+</script>
+{% endif %}

@@ -1,0 +1,80 @@
+---
+layout: default
+title: "404 - Neural Pathway Not Found"
+permalink: /404.html
+---
+
+<div class="error-page">
+  <div class="terminal-window">
+    <div class="terminal-header">
+      <span>ERROR_HANDLER_v1.0</span>
+      <div class="terminal-buttons">
+        <div class="terminal-button"></div>
+        <div class="terminal-button minimize"></div>
+        <div class="terminal-button maximize"></div>
+      </div>
+    </div>
+    <div class="terminal-content">
+      <div class="terminal-prompt">root@agentic:~$ locate_neural_pathway</div>
+      <div class="error-message">
+        ERROR 404: Neural pathway not found in quantum substrate
+      </div>
+      <p>The requested consciousness stream appears to have:</p>
+      <ul style="color: #ff00ff; margin: 20px 0;">
+        <li>→ Collapsed into an alternate dimension</li>
+        <li>→ Been absorbed by a rogue AI process</li>
+        <li>→ Exceeded local reality constraints</li>
+        <li>→ Simply never existed in this timeline</li>
+      </ul>
+      <p style="color: #00ffff;">Suggested recovery protocols:</p>
+      <div style="margin: 20px 0;">
+        <a href="{{ site.baseurl }}/" style="display: inline-block; margin: 10px 0;">↻ Return to Home Base</a><br>
+      </div>
+      <span class="terminal-cursor">█</span>
+    </div>
+  </div>
+  
+  <div class="glitch-text" data-text="404" style="font-size: 8em; text-align: center; margin: 40px 0; font-family: 'Orbitron', monospace;">404</div>
+  
+  <div class="neural-network" id="errorNetwork" style="height: 300px; margin: 40px 0;"></div>
+</div>
+
+<script>
+  // Create a special error-themed neural network
+  function createErrorNetwork() {
+    const container = document.getElementById('errorNetwork');
+    if (!container) return;
+    
+    // Create broken/glitchy nodes
+    for (let i = 0; i < 20; i++) {
+      const node = document.createElement('div');
+      node.className = 'neural-node';
+      node.style.left = Math.random() * 90 + '%';
+      node.style.top = Math.random() * 80 + '%';
+      node.style.animationDelay = Math.random() * 2 + 's';
+      node.style.background = Math.random() > 0.5 ? '#ff0000' : '#ff00ff';
+      node.style.boxShadow = `0 0 10px ${node.style.background}`;
+      container.appendChild(node);
+    }
+    
+    // Create chaotic connections
+    for (let i = 0; i < 15; i++) {
+      const connection = document.createElement('div');
+      connection.className = 'neural-connection';
+      connection.style.left = Math.random() * 80 + '%';
+      connection.style.top = Math.random() * 80 + '%';
+      connection.style.width = Math.random() * 150 + 50 + 'px';
+      connection.style.transform = 'rotate(' + Math.random() * 360 + 'deg)';
+      connection.style.background = 'linear-gradient(90deg, #ff0000, transparent, #ff00ff)';
+      connection.style.animationDelay = Math.random() * 3 + 's';
+      connection.style.opacity = Math.random() * 0.5 + 0.5;
+      container.appendChild(connection);
+    }
+  }
+  
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', createErrorNetwork);
+  } else {
+    createErrorNetwork();
+  }
+</script>

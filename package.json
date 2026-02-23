@@ -1,0 +1,25 @@
+{
+  "name": "favicon-generator",
+  "version": "1.0.0",
+  "description": "Generate favicons for Fractal Thought Engine",
+  "main": "scripts/generate-favicons.js",
+  "scripts": {
+    "validate": "node scripts/validate-links.js",
+    "test": "node scripts/test-validate-links.js",
+    "generate-favicons": "node scripts/generate-favicons.js",
+    "build": "node scripts/generate-favicons.js",
+    "export-posts": "node scripts/export-posts.js",
+    "import-posts": "node scripts/import-posts.js"
+  },
+  "dependencies": {
+    "gray-matter": "^4.0.3",
+    "glob": "^11.0.3",
+    "sharp": "^0.33.0"
+  },
+  "devDependencies": {
+    "chalk": "^5.4.1"
+  },
+  "keywords": ["favicon", "icons", "web", "jekyll"],
+  "author": "Human-AI Collaboration",
+  "license": "MIT"
+}

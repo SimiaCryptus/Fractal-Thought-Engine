@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: 'en' }}">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="telephone=no" name="format-detection">
+    <meta content="yes" name="mobile-web-app-capable">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black-translucent" name="apple-mobile-web-app-status-bar-style">
+    <base href="{{ site.url }}{{ site.baseurl }}/">
+
+    <!-- SEO Meta Tags -->
+    {% include seo_head.html %}
+
+    <link as="style" href="{{ site.baseurl }}/assets/css/critical.css" rel="preload">
+    <link href="{{ site.baseurl }}/assets/css/style_v3.css" rel="stylesheet">
+    <style>
+        /* Content Format Badges */
+        .post-card-formats {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.35rem;
+            margin-top: 0.5rem;
+        }
+        .format-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.25rem;
+            padding: 0.15rem 0.5rem;
+            border-radius: 999px;
+            font-size: 0.7rem;
+            font-weight: 500;
+            letter-spacing: 0.02em;
+            text-transform: capitalize;
+            background: rgba(129, 140, 248, 0.12);
+            border: 1px solid rgba(129, 140, 248, 0.25);
+            color: var(--text-secondary, #a5b4fc);
+            transition: background 0.2s ease, border-color 0.2s ease, transform 0.15s ease;
+            cursor: default;
+            white-space: nowrap;
+        }
+        .format-badge:hover {
+            background: rgba(129, 140, 248, 0.22);
+            border-color: rgba(129, 140, 248, 0.5);
+            transform: translateY(-1px);
+        }
+        .format-label {
+            line-height: 1;
+        }
+        /* Format-specific color accents */
+        .format-article {
+            background: rgba(96, 165, 250, 0.12);
+            border-color: rgba(96, 165, 250, 0.3);
+        }
+        .format-comic, .format-comic-seq, .format-comic-seq-seq {
+            background: rgba(251, 146, 60, 0.12);
+            border-color: rgba(251, 146, 60, 0.3);
+            color: #fdba74;
+        }
+        .format-narrative, .format-narrative-seq, .format-narrative-seq-seq {
+            background: rgba(167, 139, 250, 0.12);
+            border-color: rgba(167, 139, 250, 0.3);
+            color: #c4b5fd;
+        }
+        .format-gametheory {
+            background: rgba(52, 211, 153, 0.12);
+            border-color: rgba(52, 211, 153, 0.3);
+            color: #6ee7b7;
+        }
+        .format-socratic {
+            background: rgba(251, 191, 36, 0.12);
+            border-color: rgba(251, 191, 36, 0.3);
+            color: #fcd34d;
+        }
+        .format-perspectives {
+            background: rgba(56, 189, 248, 0.12);
+            border-color: rgba(56, 189, 248, 0.3);
+            color: #7dd3fc;
+        }
+        .format-dialectical {
+            background: rgba(244, 114, 182, 0.12);
+            border-color: rgba(244, 114, 182, 0.3);
+            color: #f9a8d4;
+        }
+        .format-persuasive {
+            background: rgba(248, 113, 113, 0.12);
+            border-color: rgba(248, 113, 113, 0.3);
+            color: #fca5a5;
+        }
+        .format-statemachine {
+            background: rgba(45, 212, 191, 0.12);
+            border-color: rgba(45, 212, 191, 0.3);
+            color: #5eead4;
+        }
+        .format-design {
+            background: rgba(139, 92, 246, 0.12);
+            border-color: rgba(139, 92, 246, 0.3);
+            color: #a78bfa;
+        }
+        .format-tutorial {
+            background: rgba(34, 197, 94, 0.12);
+            border-color: rgba(34, 197, 94, 0.3);
+            color: #86efac;
+        }
+        /* Light theme overrides */
+        [data-theme="light"] .format-badge {
+            color: #4338ca;
+        }
+        [data-theme="light"] .format-comic,
+        [data-theme="light"] .format-comic-seq,
+        [data-theme="light"] .format-comic-seq-seq { color: #c2410c; }
+        [data-theme="light"] .format-narrative,
+        [data-theme="light"] .format-narrative-seq,
+        [data-theme="light"] .format-narrative-seq-seq { color: #6d28d9; }
+        [data-theme="light"] .format-gametheory { color: #047857; }
+        [data-theme="light"] .format-socratic { color: #b45309; }
+        [data-theme="light"] .format-perspectives { color: #0369a1; }
+        [data-theme="light"] .format-dialectical { color: #be185d; }
+        [data-theme="light"] .format-persuasive { color: #dc2626; }
+        [data-theme="light"] .format-statemachine { color: #0d9488; }
+        [data-theme="light"] .format-design { color: #7c3aed; }
+        [data-theme="light"] .format-tutorial { color: #15803d; }
+    </style>
+    <link href="{{ site.baseurl }}/favicon.ico" rel="icon" type="image/x-icon">
+    <link href="{{ site.baseurl }}/assets/images/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png">
+    <link href="{{ site.baseurl }}/assets/images/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png">
+    <link href="{{ site.baseurl }}/apple-touch-icon.png" rel="apple-touch-icon">
+    <link href="{{ site.baseurl }}/assets/images/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180">
+    <link href="{{ site.baseurl }}/site.webmanifest" rel="manifest">
+    <meta content="#818cf8" name="theme-color">
+    {% feed_meta %}
+</head>
+<body>
+<!-- Floating Particles -->
+<div class="particle-field" id="particleField"></div>
+{% include theme_switcher.html %}
+
+{% include header.html %}
+<main class="container">
+    <!-- Include image optimization -->
+    {% include image_optimizer.html %}
+    {{ content }}
+</main>
+{% include footer.html %}
+
+<!-- Back to Top Button -->
+<div class="back-to-top" id="backToTop">↑</div>
+
+<!-- JavaScript for Effects -->
+<script>
+    function createParticles() {
+        const particleContainer = document.getElementById('particleField');
+        if (!particleContainer) return;
+
+        setInterval(() => {
+            if (particleContainer.children.length < 20) {
+                const particle = document.createElement('div');
+                particle.className = 'particle';
+                particle.style.left = Math.random() * 100 + '%';
+                particle.style.animationDuration = (Math.random() * 10 + 5) + 's';
+                particleContainer.appendChild(particle);
+
+                setTimeout(() => {
+                    if (particle.parentNode) {
+                        particle.parentNode.removeChild(particle);
+                    }
+                }, 15000);
+            }
+        }, 500);
+    }
+
+    // Back to top functionality
+    function initBackToTop() {
+        const backToTopButton = document.getElementById('backToTop');
+        if (!backToTopButton) return;
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopButton.classList.add('visible');
+            } else {
+                backToTopButton.classList.remove('visible');
+            }
+        });
+        backToTopButton.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    }
+
+    // Add glitch effect to random elements
+    function addRandomGlitch() {
+        const elements = document.querySelectorAll('h1, h2, h3');
+        if (elements.length === 0) return;
+        setInterval(() => {
+            const randomElement = elements[Math.floor(Math.random() * elements.length)];
+            randomElement.classList.add('glitch');
+            randomElement.setAttribute('data-text', randomElement.textContent);
+            setTimeout(() => {
+                randomElement.classList.remove('glitch');
+            }, 200);
+        }, 5000);
+    }
+
+
+    // Initialize effects when page loads
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', () => {
+            createParticles();
+            initBackToTop();
+            addRandomGlitch();
+        });
+    } else {
+        createParticles();
+        initBackToTop();
+        addRandomGlitch();
+    }
+</script>
+</body>
+</html>

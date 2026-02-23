@@ -1,0 +1,124 @@
+---
+# Core Metadata
+title: "The Flock of Fury II: The Shepherd's Bane"
+layout: "post"
+date: 2026-01-27
+last_modified: 2026-01-27 00:00:00
+
+# Content Classification
+category: "creative_writing"
+subcategory: "Narrative Worldbuilding"
+tags: 
+  - "Creative-Writing"
+  - "Speculative-Fiction"
+  - "Character-Study"
+  - "Phenomenology"
+  - "Narrative-Arc"
+  - "Dark-Fantasy"
+  - "Emotional-Journey"
+  - "Heroic-Narrative"
+keywords: 
+  - "comic book"
+  - "shepherdess"
+  - "redemption"
+  - "grief"
+  - "transformation"
+  - "dark fantasy"
+  - "character development"
+  - "visual storytelling"
+
+# Content Status and Evolution
+status: "stable"
+last_thought_date: 2026-01-27
+thought_generation: 1
+
+# Document Relationships & Navigation
+parent_document: null
+child_documents: []
+related_documents: []
+reading_order: null
+difficulty_level: "accessible"
+reading_time_minutes: 12
+
+# Content Characteristics
+document_type: "creative_writing"
+thinking_style: "intuitive"
+consciousness_level: "recursive"
+engagement_type: "contemplative"
+reader_participation: "passive"
+cognitive_load: "moderate"
+
+# Discovery & SEO
+description: "A dark fantasy comic book script following Bo Peep, a hardened shepherdess-turned-warrior, as she confronts an ancient demonic curse to free her bloodline and find redemption through love and sacrifice."
+excerpt: "Following the devastating events of the first volume, Bo Peep—having been forced to destroy her beloved but corrupted flock—now walks a path of vengeance and healing. Clutching the tattered blue ribbon of her fallen lead sheep Bellwether and wielding The Shepherd's Wrath, she hunts the source of the dark corruption: an ancient demonic wolf spirit called The Shepherd's Bane."
+featured_image: "main.png"
+
+# SEO Meta Tags
+meta_title: "The Flock of Fury II: The Shepherd's Bane - Dark Fantasy Comic Script"
+meta_description: "A dark fantasy comic book script exploring redemption, grief, and transformation as a shepherdess confronts an ancient curse. Features Bo Peep's journey from vengeance to healing."
+meta_keywords: "comic book, dark fantasy, shepherdess, redemption, character study, creative writing, narrative"
+
+# Open Graph (Social Media)
+og_title: "The Flock of Fury II: The Shepherd's Bane"
+og_description: "A dark fantasy comic book script following Bo Peep's journey of redemption and transformation as she confronts an ancient demonic curse."
+og_type: "article"
+og_locale: "en_US"
+og_site_name: "Fractal Thought Engine"
+
+# Schema.org Structured Data
+schema_type: "CreativeWork"
+schema_headline: "The Flock of Fury II: The Shepherd's Bane"
+schema_author: "Andrew"
+schema_publisher: "Fractal Thought Engine"
+schema_date_published: 2026-01-27
+schema_date_modified: 2026-01-27
+schema_image: "/assets/images/peep-2-schema.png"
+schema_word_count: 3847
+schema_reading_time: "PT12M"
+
+# Advanced SEO
+canonical_url: "https://fractalthoughtengine.com/creative-writing/peep-2"
+alternate_urls: []
+hreflang: 
+  - lang: "en"
+    url: "https://fractalthoughtengine.com/en/creative-writing/peep-2"
+
+# Search Engine Directives
+robots: "index,follow"
+googlebot: "index,follow"
+bingbot: "index,follow"
+
+# Content Classification for Search
+content_rating: "mature"
+content_language: "en"
+geo_region: "Global"
+geo_placename: null
+geo_position: null
+
+# Indexing Control
+priority: 0.8
+changefreq: "monthly"
+sitemap_exclude: false
+search_exclude: false
+
+# Rich Snippets Enhancement
+faq_schema: false
+how_to_schema: false
+breadcrumb_schema: true
+review_schema: false
+rating_value: null
+rating_count: null
+
+# Performance and Technical SEO
+preload_resources: []
+prefetch_resources: 
+  - "/assets/images/page_1_row_1.png"
+  - "/assets/images/page_1_row_2.png"
+  - "/assets/images/char_BO_PEEP.png"
+dns_prefetch: []
+
+# Discoverability
+is_featured: true
+is_cornerstone: false
+is_gateway: true
+is_synthesis: false

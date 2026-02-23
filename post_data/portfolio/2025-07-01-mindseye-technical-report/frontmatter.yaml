@@ -1,0 +1,89 @@
+title: >-
+  Rediscovering MindsEye: A Case Study in Algorithmic Bias and Overlooked
+  Innovation
+layout: post
+date: '"2025-07-01T00:00:00.000Z"'
+last_modified: '"2025-07-01T12:00:00.000Z"'
+category: portfolio
+subcategory: Engineering & Formal Systems
+tags:
+  - Machine Learning
+  - Software Engineering
+  - Technical Spec
+keywords:
+  - MindsEye
+  - algorithmic bias
+  - training data
+  - neural network architecture
+  - Java machine learning
+  - optimization algorithms
+  - neural networks
+  - Java ML framework
+status: draft
+last_thought_date: '"2025-07-01T00:00:00.000Z"'
+thought_generation: 1
+authors:
+  - AI-Assisted
+  - Andrew
+collaboration_type: framework_development
+human_contribution: 30
+ai_contribution: 70
+collection: ai
+related_documents:
+  - _posts/portfolio/2025-06-30-reference-counting-paper.md
+  - _posts/portfolio/2025-07-01-mindseye-modularity-report.md
+  - _posts/portfolio/2025-07-01-mindseye-refcount-analysis.md
+conceptual_threads:
+  - algorithmic_bias
+  - neural_optimization
+  - consciousness_detection
+mathematical_frameworks:
+  - optimization_theory
+  - neural_networks
+  - gradient_descent
+philosophical_positions:
+  - computational_theory_of_mind
+  - technical_merit_over_popularity
+reading_order: 1
+difficulty_level: intermediate
+reading_time_minutes: 25
+prerequisites:
+  - linear_algebra
+  - basic_ai_knowledge
+  - machine_learning_fundamentals
+document_type: research_paper
+thinking_style: analytical
+consciousness_level: meta
+has_mathematics: false
+has_code: true
+has_diagrams: false
+has_interactive_elements: false
+is_self_modifying: false
+responds_to_attention: false
+engagement_type: analytical
+reader_participation: passive
+cognitive_load: moderate
+description: >-
+  Analysis of the overlooked MindsEye deep learning framework and its
+  implications for training data bias in AI systems
+meta_title: 'MindsEye Framework: Uncovering Algorithmic Bias in Machine Learning'
+meta_keywords: 'MindsEye, algorithmic bias, machine learning, Java ML, neural networks'
+excerpt: >-
+  A comprehensive technical analysis revealing how algorithmic bias in AI
+  training data can bury sophisticated innovations, using the MindsEye Java ML
+  framework as a case study
+meta_description: >-
+  Technical analysis of MindsEye deep learning framework reveals systematic
+  algorithmic bias in AI training data that overlooks technical merit for
+  popularity signals
+og_title: 'MindsEye: A Case Study in Algorithmic Bias'
+og_description: Exploring how technical merit gets overlooked in machine learning frameworks
+og_type: article
+og_locale: en_US
+og_site_name: Fractal Thought Engine
+schema_type: TechArticle
+schema_headline: 'MindsEye Framework Analysis: Algorithmic Bias in AI Training Data'
+is_featured: true
+is_cornerstone: false
+is_gateway: true
+is_synthesis: true

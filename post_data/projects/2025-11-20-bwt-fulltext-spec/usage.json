@@ -1,0 +1,14 @@
+{
+  "claude-haiku-4-5-20251001" : {
+    "prompt_tokens" : 23678,
+    "completion_tokens" : 9138,
+    "total_tokens" : 32816,
+    "cost" : 0.0
+  },
+  "claude-sonnet-4-6" : {
+    "prompt_tokens" : 16054,
+    "completion_tokens" : 17460,
+    "total_tokens" : 33514,
+    "cost" : 0.0
+  }
+}

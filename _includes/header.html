@@ -1,0 +1,126 @@
+<style>
+.home-btn {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: var(--z-tooltip, 1000);
+  background: var(--bg-secondary);
+  border: 2px solid var(--primary-color);
+  color: var(--primary-color);
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  width: 48px;
+  height: 48px;
+  box-sizing: border-box;
+}
+
+.home-btn:hover,
+.home-btn:focus {
+  box-shadow: 0 0 var(--glow-medium, 10px) var(--primary-color);
+  transform: scale(1.1);
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+.home-icon {
+  transition: transform 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .home-btn {
+    top: 15px;
+    left: 15px;
+    padding: 8px;
+    width: 44px;
+    height: 44px;
+  }
+}
+
+@media (max-width: 480px) {
+  .home-btn {
+    top: 10px;
+    left: 10px;
+    padding: 6px;
+    width: 40px;
+    height: 40px;
+  }
+  .home-icon {
+    width: 20px;
+    height: 20px;
+  }
+}
+</style>
+
+<header class="site-header" role="banner">
+  <div class="header-content">
+    <a href="{{ '/' | relative_url }}" class="home-btn" aria-label="Go to homepage">
+      <svg class="home-icon" viewBox="0 0 24 24" width="24" height="24">
+        <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z" fill="currentColor"/>
+      </svg>
+    </a>
+    <img
+            src="assets/images/fractal_thought_engine.png"
+            style="
+              position: fixed;
+              top: 0;
+              z-index: -100;
+              opacity: 10%;
+              justify-self: anchor-center;
+              border: 0;
+              width: 100%;
+              pointer-events: none;"
+    />
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+      <span class="nav-toggle-icon"></span>
+      <span>MENU</span>
+    </button>
+    <nav class="site-nav">
+      <a href="{{ '/portfolio.html' | relative_url }}" class="touch-target">Portfolio</a>
+      <a href="{{ '/projects.html' | relative_url }}" class="touch-target">Projects</a>
+      <a href="{{ '/learning.html' | relative_url }}" class="touch-target">Learning</a>
+      <a href="{{ '/scifi.html' | relative_url }}" class="touch-target">Physics</a>
+      <a href="{{ '/social.html' | relative_url }}" class="touch-target">Social</a>
+      <a href="{{ '/phenomenology.html' | relative_url }}" class="touch-target">Phenomenology</a>
+      <a href="{{ '/consciousness.html' | relative_url }}" class="touch-target">Consciousness</a>
+      <a href="{{ '/creative_writing.html' | relative_url }}" class="touch-target">Creative</a>
+    </nav>
+  </div>
+</header>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  // Mobile nav toggle
+  const navToggle = document.getElementById('navToggle');
+  const siteNav = document.getElementById('siteNav');
+  if (navToggle && siteNav) {
+    navToggle.addEventListener('click', function() {
+      const expanded = this.getAttribute('aria-expanded') === 'true';
+      this.setAttribute('aria-expanded', !expanded);
+      this.classList.toggle('active');
+      siteNav.classList.toggle('active');
+    });
+    // Close on outside click
+    document.addEventListener('click', function(e) {
+      if (!navToggle.contains(e.target) && !siteNav.contains(e.target)) {
+        navToggle.setAttribute('aria-expanded', 'false');
+        navToggle.classList.remove('active');
+        siteNav.classList.remove('active');
+      }
+    });
+    // Close on link click
+    siteNav.querySelectorAll('a').forEach(function(link) {
+      link.addEventListener('click', function() {
+        navToggle.setAttribute('aria-expanded', 'false');
+        navToggle.classList.remove('active');
+        siteNav.classList.remove('active');
+      });
+    });
+  }
+});
+</script>

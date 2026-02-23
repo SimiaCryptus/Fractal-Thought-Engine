@@ -1,0 +1,328 @@
+{
+  "config" : {
+    "task_description" : "The Life of a Genetically Engineered Waste Processing Organism - Volume 2: After the Flash. A story about giant, intelligent, radiation-eating mice inheriting the Earth after a nuclear apocalypse. The narrative follows Cleveland, a 180kg engineered mouse, and his companions as they thrive on radiation following a nuclear exchange, eventually forming a global network and a new world order where they partner with surviving humans.",
+    "target_pages" : 5,
+    "art_style" : "Sci-Fi Noir",
+    "style_details" : "Gritty, high contrast, detailed biological textures for the organisms, glowing radioactive elements, desolate but atmospheric post-apocalyptic landscapes. The mice should look intelligent and massive, not like cartoon animals. Use cinematic lighting and a sense of scale to emphasize the size of the organisms compared to humans.",
+    "generate_images" : true,
+    "state" : "Pending",
+    "task_type" : "ComicBookGeneration",
+    "files" : [ "comic.md" ]
+  },
+  "script" : {
+    "title" : "After the Flash: The Inheritors",
+    "premise" : "In the wake of a global nuclear exchange, the genetically engineered \"Processing Units\"—massive, intelligent mice designed to consume waste—find that their radiation-resistant biology makes them the new masters of a dying Earth. As human civilization crumbles, these creatures must decide whether to save their creators or let them fade into history.",
+    "characters" : [ {
+      "name" : "Cleveland (WPM-7742)",
+      "description" : "The protagonist and narrator. A massive, 180kg (later 400kg) engineered mouse. Vibe: Philosophical, weary, authoritative.",
+      "visual_traits" : "Thick, scarred grey fur; intelligent, glowing amber eyes; heavy, muscular build similar to a grizzly bear but with rodent proportions. His paws have evolved slightly more dexterity."
+    }, {
+      "name" : "Dr. Sarah Chen",
+      "description" : "The lead researcher at New Albany. Vibe: Desperate, brilliant, increasingly fragile.",
+      "visual_traits" : "Middle-aged, wearing tattered lab coats and later, makeshift radiation gear. Her eyes are often bloodshot or shielded by dark goggles."
+    }, {
+      "name" : "Quicksilver",
+      "description" : "A peer of Cleveland. Vibe: Pragmatic, cold, strategic.",
+      "visual_traits" : "Sleek, silvery fur; slightly smaller but faster-looking. He has a jagged scar across his snout."
+    } ],
+    "pages" : [ {
+      "page_number" : 1,
+      "rows" : [ {
+        "row_number" : 1,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "A wide, cinematic shot of the New Albany facility at dusk. The western horizon is exploding in a blinding, white-hot light.",
+          "dialog" : [ ]
+        }, {
+          "frame_number" : 2,
+          "description" : "Inside the facility. Dr. Chen and other researchers are clutching their faces, screaming. The light through the windows is washing everything out.",
+          "dialog" : [ {
+            "character" : "Dr. Chen",
+            "text" : "MY EYES! I CAN’T SEE!"
+          } ]
+        }, {
+          "frame_number" : 3,
+          "description" : "Close-up on Cleveland’s eye. The pupil is a complex, multi-layered aperture. It is dilating and adjusting. The reflection of the mushroom cloud is visible in his iris.",
+          "dialog" : [ ],
+          "caption" : "I was 180 kilograms then. We were eating polymer waste when the western horizon lit up like a second sun."
+        } ],
+        "visual_description" : "High-contrast lighting. The world outside is white; the world inside is deep shadows and harsh silhouettes."
+      }, {
+        "row_number" : 2,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "The facility goes dark. Computer monitors spark and die. The \"EXIT\" signs flicker out.",
+          "dialog" : [ ]
+        }, {
+          "frame_number" : 2,
+          "description" : "The mice stand in the darkness, their eyes glowing with a faint, bioluminescent hue. They look calm, almost bored.",
+          "dialog" : [ ]
+        }, {
+          "frame_number" : 3,
+          "description" : "Dr. Chen, slumped against a wall, looking up at Cleveland’s massive silhouette in the dark.",
+          "dialog" : [ {
+            "character" : "Dr. Chen",
+            "text" : "Cleveland... they hit Cleveland."
+          } ],
+          "caption" : "The humans went blind. The machines went silent. But we felt... nothing. No pain. No disorientation."
+        } ],
+        "visual_description" : "Deep noir shadows. The only light sources are the glowing eyes of the mice and the dying sparks of electronics."
+      }, {
+        "row_number" : 3,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "A diagrammatic view (like a HUD) showing Cleveland’s DNA strands absorbing glowing particles.",
+          "dialog" : [ ]
+        }, {
+          "frame_number" : 2,
+          "description" : "Cleveland looks out the window at the blackened landscape. He looks stronger, his muscles rippling.",
+          "dialog" : [ ],
+          "caption" : "Whatever they engineered into us—the cellular repair, the radiation tolerance—it just became our species' greatest advantage. They accidentally created the perfect survivor."
+        } ],
+        "visual_description" : "Gritty texture. The air is filled with falling ash that looks like snow."
+      } ]
+    }, {
+      "page_number" : 2,
+      "rows" : [ {
+        "row_number" : 1,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "A split panel. On the left, a human researcher is coughing, looking pale and sickly. On the right, Cleveland is tearing into a rusted metal drum of radioactive waste.",
+          "dialog" : [ ]
+        }, {
+          "frame_number" : 2,
+          "description" : "Dr. Chen holds a clicking Geiger counter near Cleveland’s enclosure. The needle is buried in the red.",
+          "dialog" : [ {
+            "character" : "Dr. Chen",
+            "text" : "They’re not just surviving, HQ. They’re thriving. Their metabolic rate is doubling."
+          } ],
+          "caption" : "The emergency fuel ran out in three days. The humans began to wither. But the radiation... it energized us."
+        } ],
+        "visual_description" : "The \"human\" side is desaturated and sickly yellow; the \"mouse\" side is vibrant, with glowing green/blue accents."
+      }, {
+        "row_number" : 2,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "The massive bay doors of the facility groan open. Cleveland and Quicksilver stand at the threshold.",
+          "dialog" : [ ]
+        }, {
+          "frame_number" : 2,
+          "description" : "A wide shot of the wasteland. Ruined cars, scorched trees, a sickly green haze over the valley.",
+          "dialog" : [ ]
+        }, {
+          "frame_number" : 3,
+          "description" : "Cleveland steps onto the scorched earth. His massive paw leaves a heavy print in the ash.",
+          "dialog" : [ ],
+          "caption" : "On day seven, they asked us to go outside. They needed to know if the world was still there."
+        } ],
+        "visual_description" : "Atmospheric and desolate. A sense of immense scale as the mice look like giants in the ruins."
+      }, {
+        "row_number" : 3,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "Cleveland returns, carrying a piece of salvaged tech in his mouth. He looks healthy, his fur sleek despite the ash.",
+          "dialog" : [ ]
+        }, {
+          "frame_number" : 2,
+          "description" : "Close-up on Dr. Chen’s face. She isn't smiling. She looks terrified.",
+          "dialog" : [ ]
+        }, {
+          "frame_number" : 3,
+          "description" : "Cleveland and Quicksilver making eye contact. A silent understanding.",
+          "dialog" : [ ],
+          "caption" : "We returned with the intelligence they wanted. But we didn't see gratitude in their eyes. We saw fear. They realized they were no longer the masters."
+        } ],
+        "visual_description" : "Low-angle shot of the mice looking down at the humans. The power dynamic has visibly flipped."
+      } ]
+    }, {
+      "page_number" : 3,
+      "rows" : [ {
+        "row_number" : 1,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "Cleveland is hunched over a modified ham radio, his large claws delicately adjusting a dial.",
+          "dialog" : [ ]
+        }, {
+          "frame_number" : 2,
+          "description" : "A stylized map of the world. Glowing dots appear in Nevada, Canada, Brisbane, Moscow.",
+          "dialog" : [ {
+            "character" : "Radio (Static)",
+            "text" : "...Nevada Colony reporting... forty-three units stable... humans non-functional..."
+          } ],
+          "caption" : "The radio brought news of a world in free-fall. But it also brought voices."
+        } ],
+        "visual_description" : "A \"tech-noir\" aesthetic. The map is a holographic projection or a gritty CRT screen."
+      }, {
+        "row_number" : 2,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "Quicksilver stands on a pile of rubble, looking at the moon. He looks even larger now.",
+          "dialog" : [ ]
+        }, {
+          "frame_number" : 2,
+          "description" : "A flashback-style panel showing mice in different environments: one in a snowy Canadian forest, another in a flooded Brisbane street.",
+          "dialog" : [ {
+            "character" : "Quicksilver",
+            "text" : "We weren't the only ones, Cleveland. The humans were thorough in their desperation."
+          } ],
+          "caption" : "We were a global network of waste processors. And the world was now nothing but waste."
+        } ],
+        "visual_description" : "High detail on the biological textures—fur, whiskers, and the \"intelligent\" look in their eyes."
+      }, {
+        "row_number" : 3,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "Dr. Chen, looking gaunt, stands before Cleveland. She has to look way up to meet his eyes.",
+          "dialog" : [ ]
+        }, {
+          "frame_number" : 2,
+          "description" : "She reaches out a trembling hand toward his massive shoulder.",
+          "dialog" : [ {
+            "character" : "Dr. Chen",
+            "text" : "We need you, Cleveland. You can go where we can't. You're our only lifeline to the other colonies."
+          }, {
+            "character" : "Cleveland",
+            "text" : "Of course, Doctor. We will help."
+          } ],
+          "caption" : "I lied. We were already planning for a world without them."
+        } ],
+        "visual_description" : "Cinematic lighting, a single spotlight effect from a hole in the ceiling."
+      } ]
+    }, {
+      "page_number" : 4,
+      "rows" : [ {
+        "row_number" : 1,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "A violent flash. A military humvee is flipped over.",
+          "dialog" : [ ]
+        }, {
+          "frame_number" : 2,
+          "description" : "A massive mouse (300kg) is crushing a rifle in its jaws while soldiers flee in terror.",
+          "dialog" : [ ]
+        }, {
+          "frame_number" : 3,
+          "description" : "The mouse stands over the fallen \"secure\" team, silhouetted against a burning wreck.",
+          "dialog" : [ ],
+          "caption" : "Some humans tried to \"secure\" us. They forgot that evolution doesn't respect a chain of command."
+        } ],
+        "visual_description" : "Action-heavy, gritty, and brutal. The mice move with terrifying speed and power."
+      }, {
+        "row_number" : 2,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "A series of screens showing different mice from around the world. This is the first \"Global Parliament.\"",
+          "dialog" : [ ]
+        }, {
+          "frame_number" : 2,
+          "description" : "Close-up on the Moscow representative—a scarred, dark-furred mouse with a cold stare.",
+          "dialog" : [ ]
+        }, {
+          "frame_number" : 3,
+          "description" : "Cleveland speaking into the mesh.",
+          "dialog" : [ {
+            "character" : "Moscow Rep",
+            "text" : "Why keep them? They designed us to be disposable."
+          }, {
+            "character" : "Cleveland",
+            "text" : "They gave us consciousness. That carries an obligation."
+          }, {
+            "character" : "Brisbane Rep",
+            "text" : "They gave it to us by accident. Intent matters."
+          } ]
+        } ],
+        "visual_description" : "A mosaic of faces. Each mouse has a distinct look based on their region."
+      }, {
+        "row_number" : 3,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "A digital tally on a screen. 127 to 98.",
+          "dialog" : [ ]
+        }, {
+          "frame_number" : 2,
+          "description" : "Cleveland looking at Dr. Chen, who is sleeping fitfully in a corner of the lab.",
+          "dialog" : [ ],
+          "caption" : "The vote was close. Closer than I liked. We would preserve them. But on our terms."
+        } ],
+        "visual_description" : "Soft, somber lighting. A moment of heavy quiet."
+      } ]
+    }, {
+      "page_number" : 5,
+      "rows" : [ {
+        "row_number" : 1,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "A lush, green landscape—but the \"green\" is a strange, bioluminescent flora growing over ruins.",
+          "dialog" : [ ]
+        }, {
+          "frame_number" : 2,
+          "description" : "A \"Safe Zone.\" Humans are farming inside a domed structure, while a massive mouse patrols the perimeter like a guardian deity.",
+          "dialog" : [ ]
+        }, {
+          "frame_number" : 3,
+          "description" : "Cleveland, now a titan of 400kg, sits on a hill overlooking the New Albany facility.",
+          "dialog" : [ ],
+          "caption" : "I weigh 400 kilograms now. My children ask about the old world. About the humans who made us."
+        } ],
+        "visual_description" : "A \"Post-Post-Apocalyptic\" beauty. Nature is reclaiming the world, but it's a new kind of nature."
+      }, {
+        "row_number" : 2,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "Cleveland’s offspring—smaller, sleek mice—playing in a field of rusted gears and glowing flowers.",
+          "dialog" : [ ]
+        }, {
+          "frame_number" : 2,
+          "description" : "Cleveland and Dr. Chen (now elderly) sitting together. There is a bottle of alcohol and two glasses (one very large, one small) between them.",
+          "dialog" : [ {
+            "character" : "Dr. Chen",
+            "text" : "You always know exactly how much we need, Cleveland."
+          }, {
+            "character" : "Cleveland",
+            "text" : "We learned from the best, Sarah."
+          } ]
+        } ],
+        "visual_description" : "Warm, sunset lighting. A sense of peace, however fragile."
+      }, {
+        "row_number" : 3,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "Cleveland lifts his glass with a surprisingly dexterous paw.",
+          "dialog" : [ ]
+        }, {
+          "frame_number" : 2,
+          "description" : "A wide shot of the horizon. The ruins of a city are visible, but new structures—organic and strange—are rising beside them.",
+          "dialog" : [ ]
+        }, {
+          "frame_number" : 3,
+          "description" : "Close-up on Cleveland’s face. He looks toward the reader.",
+          "dialog" : [ ],
+          "caption" : "We chose partnership over domination. We chose to honor our origins while transcending them. The future belongs to us. And for the first time... we get to write it. TO THE ASHES. AND WHAT GROWS FROM THEM."
+        } ],
+        "visual_description" : "Final, epic scale. The sun sets on the human era and rises on the era of the Inheritors."
+      } ]
+    } ]
+  },
+  "characterImages" : {
+    "Cleveland (WPM-7742)" : "char_Cleveland__WPM_7742_.png",
+    "Dr. Sarah Chen" : "char_Dr__Sarah_Chen.png",
+    "Quicksilver" : "char_Quicksilver.png"
+  },
+  "rowImages" : {
+    "1_1" : "page_1_row_1.png",
+    "1_2" : "page_1_row_2.png",
+    "1_3" : "page_1_row_3.png",
+    "2_1" : "page_2_row_1.png",
+    "2_2" : "page_2_row_2.png",
+    "2_3" : "page_2_row_3.png",
+    "3_1" : "page_3_row_1.png",
+    "3_2" : "page_3_row_2.png",
+    "3_3" : "page_3_row_3.png",
+    "4_1" : "page_4_row_1.png",
+    "4_2" : "page_4_row_2.png",
+    "4_3" : "page_4_row_3.png",
+    "5_1" : "page_5_row_1.png",
+    "5_2" : "page_5_row_2.png",
+    "5_3" : "page_5_row_3.png"
+  }
+}

@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adaptive Voronoi Fields | Neural Layer Demo</title>
+    <meta name="description"
+          content="Interactive demonstration of Differentiable Weighted Voronoi Optimization using TensorFlow.js">
+
+    <!-- TensorFlow.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@4.15.0/dist/tf.min.js"></script>
+    <!-- D3 for Voronoi Rendering -->
+    <script src="https://cdn.jsdelivr.net/npm/d3-delaunay@6"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Inter:wght@400;600;800&display=swap"
+          rel="stylesheet">
+
+    <style>
+        :root {
+            --bg-color: #0f1115;
+            --card-bg: #1a1d24;
+            --text-primary: #e0e0e0;
+            --text-secondary: #a0a0a0;
+            --text-muted: #6b7280;
+            
+            /* Amber/Orange Theme */
+            --accent-primary: #ffb86c; 
+            --accent-secondary: #ff79c6; 
+            --accent-tertiary: #8be9fd; 
+            --danger: #ff5555;
+            
+            --border-color: #2a2e36;
+            --radius-sm: 4px;
+            --radius-md: 8px;
+            --font-mono: 'JetBrains Mono', monospace;
+            --font-sans: 'Inter', sans-serif;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            font-family: var(--font-sans);
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            overflow: hidden;
+        }
+
+        header {
+            background-color: var(--card-bg);
+            border-bottom: 1px solid var(--border-color);
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 10;
+        }
+
+        h1 {
+            font-size: 1.25rem;
+            font-weight: 800;
+            letter-spacing: -0.02em;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .badge {
+            background: rgba(255, 184, 108, 0.1);
+            color: var(--accent-primary);
+            font-size: 0.7rem;
+            padding: 0.2rem 0.5rem;
+            border-radius: var(--radius-sm);
+            font-family: var(--font-mono);
+            border: 1px solid rgba(255, 184, 108, 0.2);
+            text-transform: uppercase;
+        }
+
+        main {
+            flex: 1;
+            padding: 1.5rem;
+            display: grid;
+            grid-template-columns: 320px 1fr;
+            gap: 1.5rem;
+            height: calc(100vh - 70px);
+            max-width: 1920px;
+            margin: 0 auto;
+            width: 100%;
+        }
+
+        @media (max-width: 1024px) {
+            main { grid-template-columns: 1fr; overflow-y: auto; }
+        }
+
+        /* Panel Styles */
+        .panel {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-md);
+            padding: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            gap: 1.25rem;
+            overflow-y: auto;
+        }
+
+        .panel-header {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--text-muted);
+            font-weight: 700;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 0.5rem;
+        }
+
+        .control-group {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        label {
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 500;
+        }
+
+        .value-display {
+            font-family: var(--font-mono);
+            color: var(--accent-primary);
+            font-size: 0.75rem;
+            background: rgba(255, 184, 108, 0.1);
+            padding: 0.1rem 0.4rem;
+            border-radius: var(--radius-sm);
+        }
+
+        select, input[type="range"] {
+            width: 100%;
+            background: transparent;
+            cursor: pointer;
+        }
+
+        select {
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            border: 1px solid var(--border-color);
+            padding: 0.5rem;
+            border-radius: var(--radius-sm);
+            font-family: var(--font-sans);
+            font-size: 0.8rem;
+        }
+
+        input[type="range"] {
+            -webkit-appearance: none;
+        }
+
+        input[type="range"]::-webkit-slider-runnable-track {
+            width: 100%;
+            height: 4px;
+            background: var(--border-color);
+            border-radius: 2px;
+        }
+
+        input[type="range"]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            height: 14px;
+            width: 14px;
+            border-radius: 50%;
+            background: var(--accent-primary);
+            margin-top: -5px;
+            transition: transform 0.1s;
+        }
+
+        input[type="range"]::-webkit-slider-thumb:hover { transform: scale(1.2); }
+
+        .button-group {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0.5rem;
+            margin-top: 0.5rem;
+        }
+
+        button {
+            padding: 0.75rem;
+            border: none;
+            border-radius: var(--radius-sm);
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+            font-family: var(--font-mono);
+            font-size: 0.75rem;
+            text-transform: uppercase;
+        }
+
+        .btn-primary { background-color: var(--accent-primary); color: #000; }
+        .btn-primary:hover { background-color: #ffc98f; }
+        
+        .btn-secondary {
+            background-color: transparent;
+            border: 1px solid var(--border-color);
+            color: var(--text-primary);
+        }
+        .btn-secondary:hover { border-color: var(--text-secondary); background: rgba(255,255,255,0.05); }
+
+        .btn-danger {
+            background-color: rgba(255, 85, 85, 0.1);
+            color: var(--danger);
+            border: 1px solid rgba(255, 85, 85, 0.3);
+        }
+        .btn-danger:hover { background-color: rgba(255, 85, 85, 0.2); }
+
+        .math-block {
+            font-family: var(--font-mono);
+            font-size: 0.7rem;
+            background: #13151a;
+            padding: 0.75rem;
+            border-radius: var(--radius-sm);
+            margin-top: auto;
+            color: var(--text-secondary);
+            border: 1px solid var(--border-color);
+            line-height: 1.6;
+        }
+
+        /* Visualization */
+        .viz-container {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            height: 100%;
+        }
+
+        .metrics-bar {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+            gap: 1rem;
+        }
+
+        .metric-card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            padding: 1rem;
+            border-radius: var(--radius-md);
+            display: flex;
+            flex-direction: column;
+            gap: 0.25rem;
+        }
+
+        .metric-label {
+            font-size: 0.65rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            font-weight: 700;
+        }
+
+        .metric-value {
+            font-family: var(--font-mono);
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--text-primary);
+        }
+
+        .canvas-wrapper {
+            flex: 1;
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-md);
+            position: relative;
+            overflow: hidden;
+        }
+
+        canvas {
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+
+        #loading {
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: var(--bg-color);
+            display: flex; justify-content: center; align-items: center;
+            z-index: 1000; flex-direction: column; gap: 1rem;
+            color: var(--text-secondary); font-family: var(--font-mono);
+        }
+        
+        .hidden { display: none !important; }
+    </style>
+</head>
+<body>
+
+<div id="loading">
+    <div>Initializing TensorFlow.js...</div>
+</div>
+
+<header>
+    <h1>
+        Adaptive Voronoi Fields
+        <span class="badge">v1.0</span>
+    </h1>
+</header>
+
+<main>
+    <aside class="panel">
+        <div class="panel-header">Field Configuration</div>
+
+        <div class="control-group">
+            <label>Density Distribution</label>
+            <select id="density-mode">
+                <option value="gaussian">Gaussian Cluster</option>
+                <option value="ring">Ring / Donut</option>
+                <option value="waves">Sine Waves</option>
+                <option value="checker">Soft Checkerboard</option>
+                <option value="uniform">Uniform</option>
+            </select>
+        </div>
+
+        <div class="control-group">
+            <label>
+                Point Count (N)
+                <span class="value-display" id="val-n">100</span>
+            </label>
+            <input type="range" id="param-n" min="10" max="500" step="10" value="100">
+        </div>
+
+        <div class="control-group">
+            <label>
+                Field Frequency
+                <span class="value-display" id="val-freq">2.0</span>
+            </label>
+            <input type="range" id="param-freq" min="0.5" max="10.0" step="0.1" value="2.0">
+        </div>
+
+        <div class="panel-header">Optimization</div>
+
+        <div class="control-group">
+            <label>Optimizer</label>
+            <select id="opt-select">
+                <option value="adam">Adam</option>
+                <option value="rmsprop">RMSProp</option>
+                <option value="sgd">SGD (Momentum)</option>
+            </select>
+        </div>
+
+        <div class="control-group">
+            <label>
+                Learning Rate
+                <span class="value-display" id="val-lr">0.05</span>
+            </label>
+            <input type="range" id="param-lr" min="0.001" max="0.2" step="0.001" value="0.05">
+        </div>
+
+        <div class="control-group">
+            <label>
+                Repulsion Force
+                <span class="value-display" id="val-repel">0.0</span>
+            </label>
+            <input type="range" id="param-repel" min="0" max="0.5" step="0.01" value="0.0">
+            <div style="font-size:0.6rem; color:var(--text-muted);">Prevents point collapse</div>
+        </div>
+
+        <div class="panel-header">Visualization</div>
+        
+        <div class="control-group">
+            <label>
+                Show Density Map
+                <input type="checkbox" id="chk-density" checked>
+            </label>
+            <label>
+                Show Centroids
+                <input type="checkbox" id="chk-centroids" checked>
+            </label>
+            <label>
+                Show Voronoi Edges
+                <input type="checkbox" id="chk-edges" checked>
+            </label>
+        </div>
+
+        <div class="button-group">
+            <button id="btn-toggle" class="btn-primary">Start Optimization</button>
+            <button id="btn-reset" class="btn-secondary">Reset Points</button>
+            <button id="btn-randomize-field" class="btn-secondary" style="grid-column: span 2;">Randomize Field</button>
+        </div>
+
+        <div class="math-block">
+            <strong>Weighted Energy (Loss):</strong><br>
+            E = ∫ ρ(x) ||x - c_i||² dx<br>
+            <br>
+            Minimizing E moves points c_i to the centroids of their Voronoi regions weighted by density ρ(x).
+        </div>
+    </aside>
+
+    <div class="viz-container">
+        <div class="metrics-bar">
+            <div class="metric-card">
+                <span class="metric-label">Energy (Loss)</span>
+                <span class="metric-value" id="metric-loss" style="color: var(--accent-primary)">--</span>
+            </div>
+            <div class="metric-card">
+                <span class="metric-label">Uniformity</span>
+                <span class="metric-value" id="metric-uniformity" style="color: var(--accent-tertiary)">--</span>
+            </div>
+            <div class="metric-card">
+                <span class="metric-label">Step</span>
+                <span class="metric-value" id="metric-step">0</span>
+            </div>
+        </div>
+
+        <div class="canvas-wrapper">
+            <canvas id="viz-canvas"></canvas>
+        </div>
+    </div>
+</main>
+
+<script type="module">
+    /**
+     * Adaptive Voronoi Fields
+     * 
+     * This lab optimizes the positions of N points such that they minimize the 
+     * weighted variance (energy) relative to a background density field.
+     * This is effectively a differentiable implementation of Lloyd's Algorithm
+     * (Centroidal Voronoi Tessellation) using Gradient Descent.
+     */
+
+    const state = {
+        isTraining: false,
+        points: null,       // TF Variable [N, 2]
+        optimizer: null,
+        step: 0,
+        gridSize: 64,       // Resolution of the physics grid (upscaled for viz)
+        gridCoords: null,   // Cached grid coordinates tensor
+        densityField: null, // Cached density tensor
+        animationId: null,
+        params: {
+            n: 100,
+            lr: 0.05,
+            optimizerType: 'adam',
+            densityMode: 'gaussian',
+            frequency: 2.0,
+            repulsion: 0.0
+        },
+        viz: {
+            showDensity: true,
+            showCentroids: true,
+            showEdges: true
+        }
+    };
+
+    const els = {
+        canvas: document.getElementById('viz-canvas'),
+        loading: document.getElementById('loading'),
+        btnToggle: document.getElementById('btn-toggle'),
+        btnReset: document.getElementById('btn-reset'),
+        btnRandField: document.getElementById('btn-randomize-field'),
+        // Inputs
+        nInput: document.getElementById('param-n'),
+        valN: document.getElementById('val-n'),
+        lrInput: document.getElementById('param-lr'),
+        valLr: document.getElementById('val-lr'),
+        freqInput: document.getElementById('param-freq'),
+        valFreq: document.getElementById('val-freq'),
+        repelInput: document.getElementById('param-repel'),
+        valRepel: document.getElementById('val-repel'),
+        optSelect: document.getElementById('opt-select'),
+        densitySelect: document.getElementById('density-mode'),
+        // Checkboxes
+        chkDensity: document.getElementById('chk-density'),
+        chkCentroids: document.getElementById('chk-centroids'),
+        chkEdges: document.getElementById('chk-edges'),
+        // Metrics
+        metricLoss: document.getElementById('metric-loss'),
+        metricUniformity: document.getElementById('metric-uniformity'),
+        metricStep: document.getElementById('metric-step')
+    };
+
+    const ctx = els.canvas.getContext('2d');
+
+    // --- TensorFlow Logic ---
+
+    function initGrid() {
+        // Create a normalized grid of coordinates [-1, 1]
+        const size = state.gridSize;
+        const coords = [];
+        for (let y = 0; y < size; y++) {
+            for (let x = 0; x < size; x++) {
+                // Normalize to [-1, 1]
+                const u = (x / (size - 1)) * 2 - 1;
+                const v = (y / (size - 1)) * 2 - 1;
+                coords.push([u, v]);
+            }
+        }
+        if (state.gridCoords) state.gridCoords.dispose();
+        state.gridCoords = tf.tensor2d(coords, [size * size, 2]);
+        updateDensityField();
+    }
+
+    function updateDensityField() {
+        if (!state.gridCoords) return;
+        
+        tf.tidy(() => {
+            const x = state.gridCoords.slice([0, 0], [-1, 1]);
+            const y = state.gridCoords.slice([0, 1], [-1, 1]);
+            const freq = state.params.frequency;
+            
+            let density;
+
+            switch (state.params.densityMode) {
+                case 'gaussian':
+                    // exp(-(x^2 + y^2) * freq)
+                    const r2 = tf.add(tf.square(x), tf.square(y));
+                    density = tf.exp(tf.mul(r2, -freq));
+                    break;
+                case 'ring':
+                    // exp(-(|r - 0.5|)^2 * freq * 10)
+                    const r = tf.sqrt(tf.add(tf.square(x), tf.square(y)));
+                    const dist = tf.square(tf.sub(r, 0.6));
+                    density = tf.exp(tf.mul(dist, -freq * 5));
+                    break;
+                case 'waves':
+                    // (sin(x*freq) + sin(y*freq) + 2) / 4
+                    const sx = tf.sin(tf.mul(x, freq * 3));
+                    const sy = tf.sin(tf.mul(y, freq * 3));
+                    density = tf.div(tf.add(tf.add(sx, sy), 2), 4);
+                    break;
+                case 'checker':
+                    const cx = tf.sin(tf.mul(x, freq * 3));
+                    const cy = tf.sin(tf.mul(y, freq * 3));
+                    density = tf.mul(cx, cy).square(); // Soft checkerboard
+                    break;
+                case 'uniform':
+                default:
+                    density = tf.onesLike(x);
+                    break;
+            }
+
+            // Normalize density to 0-1 range for stability
+            const min = density.min();
+            const max = density.max();
+            density = density.sub(min).div(max.sub(min).add(1e-6));
+            
+// Add a small epsilon base density so points don't get stuck in zero-density voids
+            density = density.add(0.05);
+
+            if (state.densityField) state.densityField.dispose();
+            state.densityField = tf.keep(density);
+        });
+    }
+
+    function createOptimizer() {
+        const lr = state.params.lr;
+        switch (state.params.optimizerType) {
+            case 'sgd': return tf.train.momentum(lr, 0.9);
+            case 'rmsprop': return tf.train.rmsprop(lr);
+            case 'adam': 
+            default: return tf.train.adam(lr);
+        }
+    }
+
+    function resetPoints() {
+        if (state.points) state.points.dispose();
+        // Initialize points randomly in [-1, 1]
+        state.points = tf.variable(tf.randomUniform([state.params.n, 2], -1, 1));
+        state.optimizer = createOptimizer();
+        state.step = 0;
+    }
+
+    function trainStep() {
+        if (!state.isTraining || !state.points) return;
+
+        tf.tidy(() => {
+            const lossFn = () => {
+                // 1. Calculate squared Euclidean distance from every grid pixel to every point
+                // Grid: [G, 2], Points: [N, 2]
+                // Result: [G, N]
+                
+                // Expand dims for broadcasting:
+                // Grid: [G, 1, 2]
+                // Points: [1, N, 2]
+                const gridExp = state.gridCoords.expandDims(1);
+                const pointsExp = state.points.expandDims(0);
+                
+                const diff = gridExp.sub(pointsExp);
+                const distSq = diff.square().sum(2); // [G, N]
+
+                // 2. Find the distance to the closest point (Voronoi region definition)
+                const minDistSq = distSq.min(1); // [G] - The squared distance to the nearest centroid
+                
+                // 3. Weighted Energy: Sum(Density * MinDistSq)
+                // We reshape densityField to match [G]
+                const weightedEnergy = state.densityField.flatten().mul(minDistSq).mean();
+
+                // 4. Optional Repulsion (Regularization)
+                // Penalize points getting too close to each other
+                let repulsionLoss = tf.scalar(0);
+                if (state.params.repulsion > 0) {
+                    const r = tf.sum(tf.square(state.points), 1, true);
+                    const pDistSq = tf.add(tf.sub(r, tf.mul(2, tf.matMul(state.points, state.points, false, true))), tf.transpose(r));
+                    // Add identity to avoid division by zero on diagonal
+                    const safePDist = pDistSq.add(tf.eye(state.params.n));
+                    repulsionLoss = tf.mean(tf.div(1.0, safePDist));
+                }
+
+                return weightedEnergy.add(repulsionLoss.mul(state.params.repulsion));
+            };
+
+            const {value: loss, grads} = state.optimizer.computeGradients(lossFn);
+            state.optimizer.applyGradients(grads);
+
+            // Clip points to stay within [-1, 1] box
+            const clipped = state.points.clipByValue(-1, 1);
+            state.points.assign(clipped);
+
+            // Metrics
+            state.metricLoss = loss.dataSync()[0];
+            state.step++;
+        });
+    }
+
+    // --- Visualization ---
+
+    function resizeCanvas() {
+        const container = els.canvas.parentElement;
+        els.canvas.width = container.clientWidth;
+        els.canvas.height = container.clientHeight;
+    }
+
+    function draw() {
+        const w = els.canvas.width;
+        const h = els.canvas.height;
+        
+        // Clear
+        ctx.fillStyle = '#1a1d24';
+        ctx.fillRect(0, 0, w, h);
+
+        // 1. Draw Density Field
+        if (state.viz.showDensity && state.densityField) {
+            const size = state.gridSize;
+            const densityData = state.densityField.dataSync();
+            
+            // Create an offscreen canvas or ImageData for the density map
+            // For performance, we draw rects (since grid is small, 64x64)
+            const cellW = w / size;
+            const cellH = h / size;
+
+            for (let y = 0; y < size; y++) {
+                for (let x = 0; x < size; x++) {
+                    const val = densityData[y * size + x];
+                    // Map density to opacity of the accent color
+                    // Low density = Dark, High density = Bright Amber
+                    const alpha = val * 0.4; 
+                    ctx.fillStyle = `rgba(255, 184, 108, ${alpha})`;
+                    ctx.fillRect(x * cellW, y * cellH, cellW + 1, cellH + 1);
+                }
+            }
+        }
+
+        if (!state.points) return;
+        const pointsData = state.points.dataSync();
+        const n = state.params.n;
+
+        // Map [-1, 1] to Canvas Coords
+        const mapX = (val) => (val + 1) * 0.5 * w;
+        const mapY = (val) => (val + 1) * 0.5 * h;
+
+        const formattedPoints = [];
+        for(let i=0; i<n; i++) {
+            formattedPoints.push([mapX(pointsData[i*2]), mapY(pointsData[i*2+1])]);
+        }
+
+        // 2. Draw Voronoi Edges (using D3-Delaunay)
+        if (state.viz.showEdges) {
+            const delaunay = d3.Delaunay.from(formattedPoints);
+            const voronoi = delaunay.voronoi([0, 0, w, h]);
+            
+            ctx.beginPath();
+            voronoi.render(ctx);
+            ctx.strokeStyle = 'rgba(255, 255, 255, 0.2)';
+            ctx.lineWidth = 1;
+            ctx.stroke();
+        }
+
+        // 3. Draw Centroids
+        if (state.viz.showCentroids) {
+            ctx.fillStyle = '#fff';
+            for(let i=0; i<n; i++) {
+                const [px, py] = formattedPoints[i];
+                ctx.beginPath();
+                ctx.arc(px, py, 3, 0, Math.PI * 2);
+                ctx.fill();
+            }
+        }
+    }
+
+    function updateUI() {
+        els.metricLoss.textContent = state.metricLoss ? state.metricLoss.toFixed(5) : '--';
+        els.metricStep.textContent = state.step;
+        
+        // Calculate simple uniformity metric (variance of edge lengths in Delaunay)
+        // This is expensive to do every frame, so maybe skip or approximate
+        if (state.step % 10 === 0 && state.points) {
+             // Placeholder for uniformity metric
+             els.metricUniformity.textContent = "Active";
+        }
+    }
+
+    function animate() {
+        if (state.isTraining) {
+            trainStep();
+        }
+        draw();
+        updateUI();
+        state.animationId = requestAnimationFrame(animate);
+    }
+
+    // --- Initialization ---
+
+    function setupEventListeners() {
+        els.btnToggle.addEventListener('click', () => {
+            state.isTraining = !state.isTraining;
+            els.btnToggle.textContent = state.isTraining ? 'Stop Optimization' : 'Start Optimization';
+            els.btnToggle.classList.toggle('btn-primary');
+            els.btnToggle.classList.toggle('btn-danger');
+        });
+
+        els.btnReset.addEventListener('click', () => {
+            resetPoints();
+        });
+
+        els.btnRandField.addEventListener('click', () => {
+            // Randomize frequency slightly
+            state.params.frequency = Math.random() * 4 + 1;
+            els.freqInput.value = state.params.frequency;
+            els.valFreq.textContent = state.params.frequency.toFixed(1);
+            updateDensityField();
+        });
+
+        // Inputs
+        els.nInput.addEventListener('input', (e) => {
+            state.params.n = parseInt(e.target.value);
+            els.valN.textContent = state.params.n;
+            resetPoints();
+        });
+
+        els.lrInput.addEventListener('input', (e) => {
+            state.params.lr = parseFloat(e.target.value);
+            els.valLr.textContent = state.params.lr;
+            state.optimizer = createOptimizer();
+        });
+
+        els.freqInput.addEventListener('input', (e) => {
+            state.params.frequency = parseFloat(e.target.value);
+            els.valFreq.textContent = state.params.frequency;
+            updateDensityField();
+        });
+
+        els.repelInput.addEventListener('input', (e) => {
+            state.params.repulsion = parseFloat(e.target.value);
+            els.valRepel.textContent = state.params.repulsion;
+        });
+
+        els.optSelect.addEventListener('change', (e) => {
+            state.params.optimizerType = e.target.value;
+            state.optimizer = createOptimizer();
+        });
+
+        els.densitySelect.addEventListener('change', (e) => {
+            state.params.densityMode = e.target.value;
+            updateDensityField();
+        });
+
+        // Viz Toggles
+        els.chkDensity.addEventListener('change', e => state.viz.showDensity = e.target.checked);
+        els.chkCentroids.addEventListener('change', e => state.viz.showCentroids = e.target.checked);
+        els.chkEdges.addEventListener('change', e => state.viz.showEdges = e.target.checked);
+
+        window.addEventListener('resize', resizeCanvas);
+    }
+
+    async function init() {
+        try {
+            await tf.ready();
+            els.loading.classList.add('hidden');
+            
+            initGrid();
+            setupEventListeners();
+            resetPoints();
+            resizeCanvas();
+            animate();
+        } catch (err) {
+            console.error(err);
+            els.loading.innerHTML = `<div style="color:var(--danger)">Error: ${err.message}</div>`;
+        }
+    }
+
+    init();
+</script>
+</body>
+</html>

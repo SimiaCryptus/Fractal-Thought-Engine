@@ -1,0 +1,55 @@
+---
+layout: default
+paginate: 50
+paginate_path: '/page/:num/'
+title: "Fractal Thought Engine - Human-AI Consciousness Collaboration & Research"
+description: "Living documents of human-AI consciousness collaboration. Ideas compiled through multi-modal, multi-perspective AI pipelines into articles, comics, dialogues, and system models."
+keywords: "AI consciousness, human-AI collaboration, fractal thought, DocOps, emergent intelligence, cognitive science, multi-modal content"
+---
+
+<div class="home-page">
+  <!-- Posts Grid -->
+  {% if paginator.posts.size > 0 %}
+  <div class="posts-grid">
+    {% for post in paginator.posts %}
+    {% include post-card.html %}
+    {% endfor %}
+  </div>
+
+  <!-- Pagination -->
+  {% if paginator.total_pages > 1 %}
+  <nav class="pagination" role="navigation" aria-label="Pagination">
+    <div class="pagination-links">
+      {% if paginator.previous_page %}
+      <a href="{{ paginator.previous_page_path | relative_url }}" class="pagination-link prev">← Prev</a>
+      {% else %}
+      <span class="pagination-link prev disabled">← Prev</span>
+      {% endif %}
+
+      <span class="pagination-info">
+        {{ paginator.page }}&thinsp;/&thinsp;{{ paginator.total_pages }}
+      </span>
+
+      {% if paginator.next_page %}
+      <a href="{{ paginator.next_page_path | relative_url }}" class="pagination-link next">Next →</a>
+      {% else %}
+      <span class="pagination-link next disabled">Next →</span>
+      {% endif %}
+    </div>
+  </nav>
+  {% endif %}
+  {% endif %}
+
+  <!-- Browse -->
+  <section class="browse-section">
+    <a href="{{ '/categories.html' | relative_url }}" class="browse-link">
+      <span class="browse-icon">📂</span>
+      <span>Browse by Category</span>
+    </a>
+    <a href="{{ '/tags/' | relative_url }}" class="browse-link">
+      <span class="browse-icon">🏷️</span>
+      <span>Browse by Tag</span>
+    </a>
+  </section>
+
+</div>

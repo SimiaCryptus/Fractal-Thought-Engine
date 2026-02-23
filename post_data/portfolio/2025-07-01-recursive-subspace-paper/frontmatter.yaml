@@ -1,0 +1,110 @@
+title: >-
+  Recursive Subspace Optimization (RSO): A Layer-Wise Meta-Learning Approach for
+  Deep Networks
+layout: post
+date: '"2025-07-01T00:00:00.000Z"'
+last_modified: '"2025-07-01T12:00:00.000Z"'
+category: portfolio
+subcategory: Engineering & Formal Systems
+tags:
+  - Machine Learning
+  - Algorithms
+  - Paper
+keywords:
+  - neural network optimization
+  - meta-learning algorithms
+  - recursive subspace optimization
+  - layer-wise optimization
+  - meta-learning
+  - gradient decomposition
+  - neural network training
+status: draft
+thought_generation: 1
+last_thought_date: '"2025-07-01T00:00:00.000Z"'
+authors:
+  - Human-AI Collaboration
+  - Andrew
+collaboration_type: framework_development
+human_contribution: 85
+ai_contribution: 15
+related_documents:
+  - _posts/portfolio/2025-07-01-trust-regions.md
+  - _posts/portfolio/2025-07-01-qqn-paper.md
+  - _posts/learning/2025-07-09-wavelet-trust-region-dropout.md
+cross_synthesis_with:
+  - ./2025-07-01-mindseye-modularity-report.md
+  - ./2025-07-01-qqn-paper.md
+conceptual_threads:
+  - optimization_algorithms
+  - neural_architecture
+  - meta_learning
+mathematical_frameworks:
+  - optimization_theory
+  - gradient_descent
+  - meta_optimization
+difficulty_level: advanced
+reading_time_minutes: 25
+prerequisites:
+  - deep_learning
+  - optimization_theory
+  - gradient_descent
+document_type: research_paper
+thinking_style: analytical
+has_mathematics: true
+has_code: true
+has_diagrams: false
+engagement_type: analytical
+reader_participation: passive
+cognitive_load: intense
+description: >-
+  A novel optimization algorithm that improves deep neural network training by
+  decomposing gradients into layer-wise components and using meta-optimization
+  to find optimal combinations.
+excerpt: >-
+  We present Recursive Subspace Optimization (RSO), achieving 60-75% reduction
+  in gradient variance and 2-3% improvement in test accuracy through layer-wise
+  gradient decomposition and meta-optimization.
+meta_title: 'Recursive Subspace Optimization: Layer-Wise Meta-Learning for Deep Networks'
+meta_description: >-
+  Novel RSO algorithm improves neural network training through layer-wise
+  gradient decomposition and meta-optimization, achieving superior stability and
+  convergence.
+meta_keywords: >-
+  recursive subspace optimization, neural network optimization, meta-learning,
+  gradient descent, deep learning gradient descent, deep learning
+og_title: 'Recursive Subspace Optimization: A Layer-Wise Meta-Learning Approach'
+og_description: >-
+  Revolutionary optimization algorithm for deep neural networks with 60-75%
+  gradient variance reduction and emergent regularization.
+og_type: article
+og_locale: en_US
+schema_type: ScholarlyArticle
+schema_headline: >-
+  Recursive Subspace Optimization (RSO): A Layer-Wise Meta-Learning Approach for
+  Deep Networks
+schema_author: Andrew
+schema_date_published: '"2025-07-01T00:00:00.000Z"'
+schema_date_modified: '"2025-07-01T00:00:00.000Z"'
+schema_word_count: 3500
+schema_reading_time: PT25M
+robots: 'index,follow'
+content_rating: general
+content_language: en
+is_featured: true
+is_cornerstone: true
+is_gateway: true
+is_synthesis: true
+priority: '0.9'
+changefreq: monthly
+version_tracking: true
+change_log: true
+collection: ai
+research_stage_tags:
+  - Full-Implementation
+  - Validation-Study
+domain_tags:
+  - Machine-Learning
+  - Optimization
+methodological_tags:
+  - Experimental-Design
+  - Computational-Analysis

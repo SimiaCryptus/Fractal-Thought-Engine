@@ -1,0 +1,99 @@
+<!-- Dynamic Navigation Component -->
+<nav class="dynamic-nav" role="navigation" aria-label="Main navigation">
+    <div class="nav-container">
+
+        <!-- Mobile menu toggle -->
+        <button class="nav-toggle"
+                aria-expanded="false"
+                aria-controls="nav-menu"
+                aria-label="Toggle navigation menu">
+            <span class="nav-toggle-icon">☰</span>
+        </button>
+
+        <!-- Main navigation menu -->
+        <ul class="nav-menu" id="nav-menu" role="menubar">
+
+            <!-- Home -->
+            <li class="nav-item" role="none">
+                <a href="{{ '/' | relative_url }}"
+                   class="nav-link {% if page.url == '/' %}active{% endif %}"
+                   role="menuitem">
+                    Home
+                </a>
+            </li>
+
+            <!-- Collections Navigation -->
+            {% for collection in site.collections %}
+            {% unless collection.label == 'posts' %}
+        {% if site[collection.label].size > 0 %}
+            <li class="nav-item" role="none">
+                <a href="/{{ collection.label }}/"
+                   class="nav-link {% if page.collection == collection.label %}active{% endif %}"
+                   role="menuitem">
+                    {{ collection.label | replace: '_', ' ' | capitalize }}
+                </a>
+            </li>
+            {% endif %}
+            {% endunless %}
+            {% endfor %}
+
+            <!-- Category-based navigation -->
+            {% assign main_categories = site.documents | map: 'category' | compact | uniq | sort %}
+            {% for category in main_categories limit: 6 %}
+            <li class="nav-item" role="none">
+                <a href="/{{ category | slugify }}/"
+                   class="nav-link {% if page.category == category %}active{% endif %}"
+                   role="menuitem">
+                    {{ category }}
+                </a>
+            </li>
+            {% endfor %}
+
+        </ul>
+
+        <!-- Search toggle -->
+        <button class="search-toggle"
+                aria-label="Toggle search"
+                aria-expanded="false"
+                aria-controls="search-panel">
+            🔍
+        </button>
+
+    </div>
+</nav>
+
+<!-- Mobile navigation JavaScript -->
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const navToggle = document.querySelector('.nav-toggle');
+        const navMenu = document.querySelector('.nav-menu');
+        const searchToggle = document.querySelector('.search-toggle');
+
+        if (navToggle && navMenu) {
+            navToggle.addEventListener('click', function() {
+                const isExpanded = navToggle.getAttribute('aria-expanded') === 'true';
+                navToggle.setAttribute('aria-expanded', !isExpanded);
+                navMenu.classList.toggle('active');
+
+                // Update icon
+                const icon = navToggle.querySelector('.nav-toggle-icon');
+                if (icon) {
+                    icon.textContent = isExpanded ? '☰' : '✕';
+                }
+            });
+        }
+
+        // Close navigation when clicking outside
+        document.addEventListener('click', function(event) {
+            if (!event.target.closest('.dynamic-nav')) {
+                navMenu.classList.remove('active');
+                navToggle.setAttribute('aria-expanded', 'false');
+                const icon = navToggle.querySelector('.nav-toggle-icon');
+                if (icon) {
+                    icon.textContent = '☰';
+                }
+            }
+        });
+    });
+</script>
+

@@ -1,0 +1,304 @@
+{
+  "config" : {
+    "task_description" : "The Life of a Genetically Engineered Waste Processing Organism: A biopunk journey of a mouse-like creature evolving from a lab specimen to a 120kg warrior-philosopher in a waste-processing facility. Based on the journal of Processing Unit WPM-7742.",
+    "target_pages" : 6,
+    "art_style" : "Biopunk Noir",
+    "style_details" : "Gritty, industrial waste facility settings with mountains of garbage and high-contrast lighting. The creatures evolve from small pink mice to elongated ferret-like forms, then dog-sized predators, and finally massive, intelligent beasts. Visuals should emphasize the biological modifications (vulture-like traits, thick hide) and the contrast between the sterile lab origins and the filthy, vibrant waste ecosystem.",
+    "generate_images" : true,
+    "state" : "Pending",
+    "task_type" : "ComicBookGeneration",
+    "files" : [ "comic.md" ]
+  },
+  "script" : {
+    "title" : "The Waste-Eaters of Ohio",
+    "premise" : "A genetically engineered organism, designed to solve the world’s waste crisis, recounts its brutal evolution from a laboratory mouse to a massive, sentient predator within the mountains of a corporate landfill.",
+    "characters" : [ {
+      "name" : "WPM-7742 (The Narrator)",
+      "description" : "Our protagonist. Evolves throughout the story.",
+      "visual_traits" : "Phase 1: A pink, hairless lab mouse. Phase 2 (Ferret): Elongated spine, thick neck, vulture-like skin around the face, 2kg. Phase 3 (Dog): 35kg, muscular, thick hide, intelligent eyes, scarred. Phase 4 (The Big): 120kg, horse-sized, broad skull, powerful limbs, looks like a prehistoric nightmare but with a calm, observant gaze."
+    }, {
+      "name" : "Tinker",
+      "description" : "A smaller, highly intelligent sibling of WPM-7742.",
+      "visual_traits" : "Never grows past the \"Ferret Phase.\" Wears a \"utility belt\" made of scavenged wire. Always carrying a tool (a hook or a sharpened plastic shard)."
+    }, {
+      "name" : "The Supervisor",
+      "description" : "A corporate middle-manager.",
+      "visual_traits" : "Seen mostly in silhouette or through high-up observation windows. Wears a clean hazmat suit that contrasts with the filth of the facility."
+    } ],
+    "pages" : [ {
+      "page_number" : 1,
+      "rows" : [ {
+        "row_number" : 1,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "Close up on a pink, twitching nose. Sterile white background.",
+          "dialog" : [ ]
+        }, {
+          "frame_number" : 2,
+          "description" : "A gloved hand holds WPM-7742. Other pink siblings squirm in a plastic tub.",
+          "dialog" : [ ],
+          "caption" : "I don’t remember being born. I only remember the taste of milk. Warm. Sweet. Simple."
+        } ],
+        "visual_description" : "The page transitions from the blinding white of a lab to the deep, murky shadows of a waste facility. High contrast, heavy blacks."
+      }, {
+        "row_number" : 2,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "A dark cage door opens. A flood of brown and grey light hits the mouse.",
+          "dialog" : [ ]
+        }, {
+          "frame_number" : 2,
+          "description" : "WPM-7742 stands at the edge of a vast, indoor mountain of trash. Pigeons circle in the rafters above.",
+          "dialog" : [ ],
+          "caption" : "Week 8. The smell hit me like a physical blow. Rotting fruit. Chemical polymers. Cellulose. My modified brain began to categorize the chaos."
+        } ],
+        "visual_description" : "The Drop"
+      }, {
+        "row_number" : 3,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "A pigeon lands on a pile of scraps. Three \"ferret-phase\" mice are coiled in the shadows, eyes glowing.",
+          "dialog" : [ ]
+        }, {
+          "frame_number" : 2,
+          "description" : "The mice pounce in a blur of motion. Feathers fly.",
+          "dialog" : [ ],
+          "caption" : "The humans called it \"selection pressure.\" I called it the first lesson: everything is potential food."
+        } ],
+        "visual_description" : "Natural Selection"
+      } ]
+    }, {
+      "page_number" : 2,
+      "rows" : [ {
+        "row_number" : 1,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "WPM-7742 is now elongated, sleek, and muscular. He is chewing on a thick piece of plastic piping.",
+          "dialog" : [ ]
+        }, {
+          "frame_number" : 2,
+          "description" : "X-ray style inset showing the gut: specialized bacteria glowing as they break down complex polymers.",
+          "dialog" : [ ],
+          "caption" : "Month 6. I was two kilograms of hunger. My ribs expanded. My gut sang with the music of plastic-processing bacteria."
+        } ],
+        "visual_description" : "Focus on the biological \"upgrades.\" The setting is deeper in the trash piles, illuminated by flickering industrial lights."
+      }, {
+        "row_number" : 2,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "WPM-7742 and a larger sibling, Scratch, snarl over a dead, toxic rat.",
+          "dialog" : [ ]
+        }, {
+          "frame_number" : 2,
+          "description" : "A brutal, fast-paced struggle. WPM-7742’s claws are buried in Scratch’s neck.",
+          "dialog" : [ ],
+          "caption" : "Scratch was larger. I was faster. And I was more desperate."
+        } ],
+        "visual_description" : "The First Duel"
+      }, {
+        "row_number" : 3,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "WPM-7742 stands over the remains of Scratch. He is eating.",
+          "dialog" : [ ]
+        }, {
+          "frame_number" : 2,
+          "description" : "High-angle shot of a corporate dashboard on a monitor: WPM-7742: Efficiency +15%. Aggression: Optimal.",
+          "dialog" : [ ],
+          "caption" : "Cannibalism is just efficiency applied to protein. The humans watched our murders with the satisfaction of investors seeing a return."
+        } ],
+        "visual_description" : "The Efficiency of Protein"
+      } ]
+    }, {
+      "page_number" : 3,
+      "rows" : [ {
+        "row_number" : 1,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "Small scouts flush out roaches. Medium \"dogs\" (like WPM-7742) tear through heavy bags.",
+          "dialog" : [ ]
+        }, {
+          "frame_number" : 2,
+          "description" : "In the background, a massive, horse-sized \"Big\" crushes a wooden crate in its jaws.",
+          "dialog" : [ ],
+          "caption" : "Month 12. We were a system now. A warrior society. We developed gestures. Scent-markers. An honor code written in waste."
+        } ],
+        "visual_description" : "The scale of the facility is revealed. We see the different sizes of the organisms working together in a grim, industrial ecosystem."
+      }, {
+        "row_number" : 2,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "From the dark floor, WPM-7742 watches a glass-walled breakroom high above. Humans are laughing, holding beer cans.",
+          "dialog" : [ ]
+        }, {
+          "frame_number" : 2,
+          "description" : "Close up on WPM-7742’s eye, reflecting the yellow light of the party.",
+          "dialog" : [ ],
+          "caption" : "Every Friday, the humans had \"the small death.\" They bonded. They laughed. We were excluded from the only thing that made their lives bearable."
+        } ],
+        "visual_description" : "The Small Death"
+      }, {
+        "row_number" : 3,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "WPM-7742 is now 35kg. He looks like a pitbull crossed with a vulture. He is standing on a pile of fertilizer pellets he just produced.",
+          "dialog" : [ ],
+          "caption" : "I was an industrial system that happened to be alive. But I was starting to think. About them. About us."
+        } ],
+        "visual_description" : "The Growth"
+      } ]
+    }, {
+      "page_number" : 4,
+      "rows" : [ {
+        "row_number" : 1,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "Tinker uses a wire hook to pull a piece of meat out of a narrow pipe.",
+          "dialog" : [ ]
+        }, {
+          "frame_number" : 2,
+          "description" : "Tinker shows WPM-7742 a crude trap he built for cockroaches.",
+          "dialog" : [ ],
+          "caption" : "Tinker was different. He didn't grow in size; he grew in mind. He was a liability in a fight, but a genius in the piles."
+        } ],
+        "visual_description" : "A shift to a more \"intellectual\" but tragic tone. Focus on the tools and the strategic betrayal."
+      }, {
+        "row_number" : 2,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "A rival pack of \"dogs\" emerges from the shadows, baring teeth. Tinker cringes behind WPM-7742, fumbling with a plastic shard.",
+          "dialog" : [ ]
+        }, {
+          "frame_number" : 2,
+          "description" : "WPM-7742 looks back at Tinker. His eyes are cold, calculating.",
+          "dialog" : [ ],
+          "caption" : "The mathematics of survival are clear. Tinker was a liability. I made the choice."
+        } ],
+        "visual_description" : "The Calculation"
+      }, {
+        "row_number" : 3,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "A silhouette of WPM-7742 lunging—not at the enemy, but at Tinker.",
+          "dialog" : [ ]
+        }, {
+          "frame_number" : 2,
+          "description" : "WPM-7742 stands alone in the aftermath. Tinker’s wire tools lie scattered and broken in the grime.",
+          "dialog" : [ ],
+          "caption" : "His meat was the richest I’d ever tasted. His creativity literally became part of me. I carried his intelligence in my belly."
+        } ],
+        "visual_description" : "The Mercy"
+      } ]
+    }, {
+      "page_number" : 5,
+      "rows" : [ {
+        "row_number" : 1,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "WPM-7742 (85kg) stands before the Supervisor. The human looks small, holding a tablet.",
+          "dialog" : [ ]
+        }, {
+          "frame_number" : 2,
+          "description" : "Close up on the tablet: TRANSFER TO BREEDING FACILITY: APPROVED.",
+          "dialog" : [ ],
+          "caption" : "I crossed the line. I was too expensive to keep as a worker. I had become a \"Warrior-Philosopher.\""
+        } ],
+        "visual_description" : "WPM-7742 is now massive. The lighting is more dramatic, almost operatic."
+      }, {
+        "row_number" : 2,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "WPM-7742 watches the Supervisor typing on a laptop.",
+          "dialog" : [ ]
+        }, {
+          "frame_number" : 2,
+          "description" : "Split screen: On the left, WPM-7742’s bloody claws. On the right, a spreadsheet with red numbers.",
+          "dialog" : [ ],
+          "caption" : "Humans kill with spreadsheets and legislation. We kill with teeth. The result is the same: a pyramid of corpses. At least we have the honesty to taste our victims."
+        } ],
+        "visual_description" : "The Comparison"
+      }, {
+        "row_number" : 3,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "A cleaner, larger enclosure. WPM-7742 meets other \"Bigs.\" They don't fight; they sit in a circle, observing.",
+          "dialog" : [ ],
+          "caption" : "We are the 10%. The survivors. We carry the memories of everyone we’ve eaten."
+        } ],
+        "visual_description" : "The Breeding Facility"
+      } ]
+    }, {
+      "page_number" : 6,
+      "rows" : [ {
+        "row_number" : 1,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "A human researcher pours a gallon of premium whiskey into a large stone trough.",
+          "dialog" : [ ]
+        }, {
+          "frame_number" : 2,
+          "description" : "WPM-7742 and the other Bigs lap at the liquid.",
+          "dialog" : [ ],
+          "caption" : "They use alcohol to control us. We don't care. We work for the beer. It’s the only thing that makes the memories of our siblings quiet."
+        } ],
+        "visual_description" : "The final evolution. A sense of grim peace and a look toward a dark future."
+      }, {
+        "row_number" : 2,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "WPM-7742 uses a large claw to point at a map of a polluted river on a screen. Dr. Sarah Chen takes notes.",
+          "dialog" : [ ]
+        }, {
+          "frame_number" : 2,
+          "description" : "They look at each other—beast and creator. A mutual understanding of exploitation.",
+          "dialog" : [ ],
+          "caption" : "We are no longer just tools. We are partners. We solve the problems their consumption created."
+        } ],
+        "visual_description" : "The Partnership"
+      }, {
+        "row_number" : 3,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "WPM-7742 stands outside at night, looking up at the stars. He is 120kg of muscle, scars, and wisdom.",
+          "dialog" : [ ]
+        }, {
+          "frame_number" : 2,
+          "description" : "A silhouette of the massive creature against the moon.",
+          "dialog" : [ ],
+          "caption" : "We dream of other worlds to clean. Of a future where we don't have to kill to grow."
+        }, {
+          "frame_number" : 3,
+          "description" : "A close up of a discarded beer can with a tiny, pink mouse crawling over it.",
+          "dialog" : [ ],
+          "caption" : "But for now... we toast to the fallen. And we wait for the next shipment of waste."
+        } ],
+        "visual_description" : "The Future"
+      } ]
+    } ]
+  },
+  "characterImages" : {
+    "WPM-7742 (The Narrator)" : "char_WPM_7742__The_Narrator_.png",
+    "Tinker" : "char_Tinker.png",
+    "The Supervisor" : "char_The_Supervisor.png"
+  },
+  "rowImages" : {
+    "1_1" : "page_1_row_1.png",
+    "1_2" : "page_1_row_2.png",
+    "1_3" : "page_1_row_3.png",
+    "2_1" : "page_2_row_1.png",
+    "2_2" : "page_2_row_2.png",
+    "2_3" : "page_2_row_3.png",
+    "3_1" : "page_3_row_1.png",
+    "3_2" : "page_3_row_2.png",
+    "3_3" : "page_3_row_3.png",
+    "4_1" : "page_4_row_1.png",
+    "4_2" : "page_4_row_2.png",
+    "4_3" : "page_4_row_3.png",
+    "5_1" : "page_5_row_1.png",
+    "5_2" : "page_5_row_2.png",
+    "5_3" : "page_5_row_3.png",
+    "6_1" : "page_6_row_1.png",
+    "6_2" : "page_6_row_2.png",
+    "6_3" : "page_6_row_3.png"
+  }
+}

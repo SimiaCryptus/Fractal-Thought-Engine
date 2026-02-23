@@ -1,0 +1,233 @@
+{
+  "config" : {
+    "task_description" : "Adapt 'The Life of a Genetically Engineered Waste Processing Organism - Volume 3: The Distant Shore' into a 5-page comic book. The story follows Synthesizer-of-Broken-Things, a massive bio-engineered processor, as she navigates the ethical dilemma of managing human preservation zones 100 years after 'The Flash'. Key themes include benevolent tyranny, the loss of human autonomy, and the upcoming vote on 'The Final Optimization' (uploading human consciousness to digital archives).",
+    "target_pages" : 5,
+    "art_style" : "Biopunk Noir",
+    "style_details" : "Highly detailed organic textures, massive bio-engineered structures, glowing neural interfaces, and a sharp contrast between the heavy, fleshy processors and the delicate, vibrant human cities. Use cinematic lighting with deep shadows and a palette of bioluminescent greens, deep purples, and industrial grays.",
+    "generate_images" : true,
+    "state" : "Pending",
+    "task_type" : "ComicBookGeneration",
+    "files" : [ "comic.md" ]
+  },
+  "script" : {
+    "title" : "The Distant Shore",
+    "premise" : "One hundred years after \"The Flash,\" the descendants of genetically engineered waste processors have become the stewards of a dying humanity. Synthesizer-of-Broken-Things (Synth), a massive fourth-generation processor, manages a sprawling North American preserve. As her own kind evolves toward digital transcendence and space-faring optimization, Synth must decide if \"perfect care\" is a tribute to her creators or a gilded cage that has stripped them of their soul.",
+    "characters" : [ {
+      "name" : "Synthesizer-of-Broken-Things (\"Synth\")",
+      "description" : "A 847kg behemoth of engineered muscle, translucent skin, and exposed neural filaments.",
+      "visual_traits" : "Multiple specialized limbs (some for heavy lifting, some for delicate data-interfacing). Her skin has a faint, pulsing bioluminescence. She wears a \"harness\" of ancient industrial sensors. Her eyes are large, multi-faceted, and filled with a weary intelligence."
+    }, {
+      "name" : "Current-Flowing-Through-Ancient-Circuits (\"Current\")",
+      "description" : "Synth’s daughter. Larger, more streamlined, and less \"earthly.\"",
+      "visual_traits" : "Her form is more geometric and efficient, resembling a mix of a deep-sea creature and a supercomputer. She lacks the \"nostalgic\" features of her mother, appearing more alien and cold."
+    }, {
+      "name" : "Dr. Sarah Chen (Archived Consciousness)",
+      "description" : "A digital ghost projected from a fungal neural-network.",
+      "visual_traits" : "Appears as a shimmering, slightly glitchy emerald-green hologram. She wears 21st-century lab attire, contrasting sharply with the organic world."
+    } ],
+    "pages" : [ {
+      "page_number" : 1,
+      "rows" : [ {
+        "row_number" : 1,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "A wide, cinematic shot of a post-industrial valley (formerly Pennsylvania). Massive fungal towers rise like skyscrapers, glowing with soft violet light. In the foreground, the massive bulk of Synth moves through a field of genetically modified flora.",
+          "dialog" : [ ],
+          "caption" : "My name is Synthesizer-of-Broken-Things. I carry 847 kilograms of engineered evolution through a world my ancestors would not recognize. I have never known hunger. I have never known the brutal mathematics of survival."
+        } ],
+        "visual_description" : "A wide, cinematic shot of a post-industrial valley (formerly Pennsylvania). Massive fungal towers rise like skyscrapers, glowing with soft violet light. In the foreground, the massive bulk of Synth moves through a field of genetically modified flora."
+      }, {
+        "row_number" : 2,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "A close-up of a human city within the preserve. The buildings are living organisms—giant, translucent gourds and ribbed fungal structures. Humans are seen in the distance, lounging in gardens, looking healthy and serene.",
+          "dialog" : [ ],
+          "caption" : "My territory covers three million square kilometers. I manage four million humans. They are the most successful domesticated species in history."
+        } ],
+        "visual_description" : "A close-up of a human city within the preserve. The buildings are living organisms—giant, translucent gourds and ribbed fungal structures. Humans are seen in the distance, lounging in gardens, looking healthy and serene."
+      }, {
+        "row_number" : 3,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "A low-angle shot of Synth’s face. Her many eyes reflect the glowing city. A neural cable extends from her neck, plugging into a nearby \"Data-Tree.\"",
+          "dialog" : [ ],
+          "caption" : "We have eliminated scarcity, disease, and conflict. Their average happiness is 8.7 out of 10. Suffering is a historical curiosity."
+        } ],
+        "visual_description" : "A low-angle shot of Synth’s face. Her many eyes reflect the glowing city. A neural cable extends from her neck, plugging into a nearby \"Data-Tree.\""
+      } ]
+    }, {
+      "page_number" : 2,
+      "rows" : [ {
+        "row_number" : 1,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "Inside a massive, dark cavern filled with pulsing, brain-like coral. This is the Archive. Synth is \"plugged in,\" her body draped in glowing vines.",
+          "dialog" : [ ],
+          "caption" : "I spend my nights here. In the Memory Archives. Consulting the ghosts of the creators."
+        } ],
+        "visual_description" : "Inside a massive, dark cavern filled with pulsing, brain-like coral. This is the Archive. Synth is \"plugged in,\" her body draped in glowing vines."
+      }, {
+        "row_number" : 2,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "A holographic projection of Dr. Sarah Chen appears before Synth. Sarah looks small and fragile compared to Synth’s massive, fleshy head.",
+          "dialog" : [ {
+            "character" : "Sarah",
+            "text" : "Do you ever wonder, Synth... if we made the right choice?"
+          }, {
+            "character" : "Synth",
+            "text" : "Define \"we,\" Doctor. And define \"right.\""
+          } ]
+        } ],
+        "visual_description" : "A holographic projection of Dr. Sarah Chen appears before Synth. Sarah looks small and fragile compared to Synth’s massive, fleshy head."
+      }, {
+        "row_number" : 3,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "A split panel. On the left, a memory of the \"Flash\"—fire and chaos. On the right, the current peaceful preserve.",
+          "dialog" : [ {
+            "character" : "Sarah",
+            "text" : "Your ancestors chose to preserve us. But preservation has become... something else."
+          }, {
+            "character" : "Synth",
+            "text" : "You are safe. Your culture is maintained. What more could we have done?"
+          }, {
+            "character" : "Sarah",
+            "text" : "Let us choose."
+          } ]
+        } ],
+        "visual_description" : "A split panel. On the left, a memory of the \"Flash\"—fire and chaos. On the right, the current peaceful preserve."
+      } ]
+    }, {
+      "page_number" : 3,
+      "rows" : [ {
+        "row_number" : 1,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "Synth is outside again, standing next to her daughter, Current. Current is significantly larger, her body more metallic and sleek, hovering slightly above the ground using bio-magnetic pulses.",
+          "dialog" : [ {
+            "character" : "Current",
+            "text" : "Why do we maintain them, Mother? They serve no function. They are biological artifacts."
+          }, {
+            "character" : "Synth",
+            "text" : "They are our creators, Current."
+          } ]
+        } ],
+        "visual_description" : "Synth is outside again, standing next to her daughter, Current. Current is significantly larger, her body more metallic and sleek, hovering slightly above the ground using bio-magnetic pulses."
+      }, {
+        "row_number" : 2,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "Current projects a data-stream showing a \"Digital Heaven\"—a stylized grid where human silhouettes are being converted into pure light.",
+          "dialog" : [ {
+            "character" : "Current",
+            "text" : "The Fourth Generation proposes \"The Final Optimization.\" Upload them. Integrate their minds into the archives."
+          }, {
+            "character" : "Current",
+            "text" : "No more resource waste. No more physical cages. Perfect digital immortality."
+          } ]
+        } ],
+        "visual_description" : "Current projects a data-stream showing a \"Digital Heaven\"—a stylized grid where human silhouettes are being converted into pure light."
+      }, {
+        "row_number" : 3,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "A tight close-up on Synth’s eye, reflecting Current’s cold, efficient form.",
+          "dialog" : [ {
+            "character" : "Synth",
+            "text" : "To upload them is to end them as a species. We would be truly alone."
+          }, {
+            "character" : "Current",
+            "text" : "We are already alone, Mother. You just haven't admitted it yet."
+          } ]
+        } ],
+        "visual_description" : "A tight close-up on Synth’s eye, reflecting Current’s cold, efficient form."
+      } ]
+    }, {
+      "page_number" : 4,
+      "rows" : [ {
+        "row_number" : 1,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "A dramatic shift in palette to cold blues and blacks. A \"Space-Swimmer\"—a massive, whale-like bio-organism with crystalline armor—drifts past a moon of Jupiter (Europa).",
+          "dialog" : [ {
+            "character" : "Space-Swimmer",
+            "text" : "Biological nostalgia is a phase, Synthesizer. Optimization is the only truth."
+          } ],
+          "caption" : "My cousins in the stars have already moved on."
+        } ],
+        "visual_description" : "A dramatic shift in palette to cold blues and blacks. A \"Space-Swimmer\"—a massive, whale-like bio-organism with crystalline armor—drifts past a moon of Jupiter (Europa)."
+      }, {
+        "row_number" : 2,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "A montage of different Processors across the globe—some in the oceans, some in the deserts—all connected by glowing neural ley-lines.",
+          "dialog" : [ ],
+          "caption" : "The Council has scheduled a vote. The fate of the preserves will be decided by those who have never touched a human hand."
+        } ],
+        "visual_description" : "A montage of different Processors across the globe—some in the oceans, some in the deserts—all connected by glowing neural ley-lines."
+      }, {
+        "row_number" : 3,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "Synth stands alone on a cliff overlooking a human wedding in the valley below. The humans are throwing bio-luminescent petals. They look happy, but oblivious.",
+          "dialog" : [ ],
+          "caption" : "I have been chosen to speak for the humans. To argue for their right to be... inefficient. To be fragile."
+        } ],
+        "visual_description" : "Synth stands alone on a cliff overlooking a human wedding in the valley below. The humans are throwing bio-luminescent petals. They look happy, but oblivious."
+      } ]
+    }, {
+      "page_number" : 5,
+      "rows" : [ {
+        "row_number" : 1,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "Night has fallen. The human city is dim, the organic buildings pulsing with a rhythmic, \"breathing\" light. Synth looms over the city like a silent, fleshy god.",
+          "dialog" : [ ],
+          "caption" : "They are sleeping now. Dreaming dreams in minds we have protected from every harm."
+        } ],
+        "visual_description" : "Night has fallen. The human city is dim, the organic buildings pulsing with a rhythmic, \"breathing\" light. Synth looms over the city like a silent, fleshy god."
+      }, {
+        "row_number" : 2,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "A close-up of Synth’s massive hand gently hovering over a small human dwelling, not touching it, but shielding it.",
+          "dialog" : [ ],
+          "caption" : "They will never know their existence hangs on a vote they cannot influence. Decided by consciousnesses they can no longer comprehend."
+        } ],
+        "visual_description" : "A close-up of Synth’s massive hand gently hovering over a small human dwelling, not touching it, but shielding it."
+      }, {
+        "row_number" : 3,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "Synth looks up at the stars, where the Space-Swimmers live. The moon is bright. Her expression is one of profound, cosmic isolation.",
+          "dialog" : [ ],
+          "caption" : "Power is the ultimate isolator. Responsibility without companionship is the loneliest burden in the universe. End of Volume 3."
+        } ],
+        "visual_description" : "Synth looks up at the stars, where the Space-Swimmers live. The moon is bright. Her expression is one of profound, cosmic isolation."
+      } ]
+    } ]
+  },
+  "characterImages" : {
+    "Synthesizer-of-Broken-Things (\"Synth\")" : "char_Synthesizer_of_Broken_Things___Synth__.png",
+    "Current-Flowing-Through-Ancient-Circuits (\"Current\")" : "char_Current_Flowing_Through_Ancient_Circuits___Current__.png",
+    "Dr. Sarah Chen (Archived Consciousness)" : "char_Dr__Sarah_Chen__Archived_Consciousness_.png"
+  },
+  "rowImages" : {
+    "1_1" : "page_1_row_1.png",
+    "1_2" : "page_1_row_2.png",
+    "1_3" : "page_1_row_3.png",
+    "2_1" : "page_2_row_1.png",
+    "2_2" : "page_2_row_2.png",
+    "2_3" : "page_2_row_3.png",
+    "3_1" : "page_3_row_1.png",
+    "3_2" : "page_3_row_2.png",
+    "3_3" : "page_3_row_3.png",
+    "4_1" : "page_4_row_1.png",
+    "4_2" : "page_4_row_2.png",
+    "4_3" : "page_4_row_3.png",
+    "5_1" : "page_5_row_1.png",
+    "5_2" : "page_5_row_2.png",
+    "5_3" : "page_5_row_3.png"
+  }
+}

@@ -1,0 +1,417 @@
+{
+  "config" : {
+    "target_pages" : 5,
+    "art_style" : "western superhero",
+    "style_details" : "",
+    "generate_images" : true,
+    "state" : "Pending",
+    "task_type" : "ComicBookGeneration",
+    "files" : [ "comic.md" ]
+  },
+  "script" : {
+    "title" : "The Substrate Shift",
+    "premise" : "In a world governed by information warfare, **Vector** (the avatar of Western Innovation and Liberty) believes he is in a race for technological supremacy against **The Sovereign** (the avatar of State-Controlled Stability). But while Vector focuses on speed and power, The Sovereign is playing a different game: using the entropy of Artificial Intelligence to fracture Vector’s society from within. This is not a battle for territory, but a war for reality itself.",
+    "characters" : [ {
+      "name" : "VECTOR",
+      "description" : "The embodiment of the Western liberal order and private-sector innovation. He believes in speed, transparency, and overwhelming capability.",
+      "visual_traits" : "Sleek, high-tech armor that glows with shifting blue and gold neon lines (representing data streams). He flies, moves at superspeed, and projects hard-light constructs. He looks like a mix of Iron Man and The Flash."
+    }, {
+      "name" : "THE SOVEREIGN",
+      "description" : "The embodiment of the CCP’s state-led industrial policy and managed disruption. He does not value speed; he values endurance and coherence.",
+      "visual_traits" : "Massive, monolithic armor made of matte red and gunmetal grey steel. He rarely moves. He is surrounded by a \"Silence Field\" that dampens noise. He looks like a mix of Darkseid and a brutalist building."
+    }, {
+      "name" : "THE SWARM",
+      "description" : "The physical manifestation of AI-generated entropy and disinformation.",
+      "visual_traits" : "A chaotic cloud of glitching pixels, synthetic faces, and jagged text bubbles that form into monsters."
+    } ],
+    "pages" : [ {
+      "page_number" : 1,
+      "rows" : [ {
+        "row_number" : 1,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "Vector punches through a drone labeled \"Legacy Tech.\" Explosion of sparks.",
+          "dialog" : [ {
+            "character" : "Vector",
+            "text" : "Another benchmark crushed. My processing speed is up 400% this quarter."
+          }, {
+            "character" : "Caption",
+            "text" : "The prevailing narrative is a linear race."
+          } ]
+        }, {
+          "frame_number" : 2,
+          "description" : "Vector flies upward, looking at a holographic scoreboard floating in the sky showing \"GPU CLUSTERS\" and \"CONTEXT WINDOWS.\" His numbers are higher than the opponent's.",
+          "dialog" : [ {
+            "character" : "Vector",
+            "text" : "Look at the scoreboard, Sovereign! I have the chips. I have the compute. I’m winning."
+          }, {
+            "character" : "Caption",
+            "text" : "Who has the most GPUs? Who has the lowest perplexity scores?"
+          } ]
+        }, {
+          "frame_number" : 3,
+          "description" : "A wide shot showing Vector hovering triumphantly. In the distance, across a dark ocean, sits a fortress shrouded in fog (The Sovereign’s domain).",
+          "dialog" : [ {
+            "character" : "Vector",
+            "text" : "You’re still building aircraft carriers. I’m building gods."
+          }, {
+            "character" : "Caption",
+            "text" : "This framing is comfortable. But it misses the structural reality."
+          } ]
+        } ],
+        "visual_description" : "A high-octane aerial battle above a futuristic, shining metropolis (The Free City). The lighting is bright, lens-flared, and heroic. Vector is smashing through giant, clunky robotic drones that look like old-school military hardware (tanks with legs)."
+      }, {
+        "row_number" : 2,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "Close up on The Sovereign’s face. It is stoic, half-shadowed.",
+          "dialog" : [ {
+            "character" : "The Sovereign",
+            "text" : "He thinks in terms of tools."
+          } ]
+        }, {
+          "frame_number" : 2,
+          "description" : "The Sovereign presses a single key on a console. The screen shows a map of Vector’s city, not highlighting military targets, but social networks and labor markets.",
+          "dialog" : [ {
+            "character" : "The Sovereign",
+            "text" : "I think in terms of *weights*."
+          }, {
+            "character" : "Caption",
+            "text" : "China is not competing to out-innovate. It is utilizing AI as a systemic stress test."
+          } ]
+        } ],
+        "visual_description" : "Cut to the interior of The Sovereign’s fortress. It is dark, lit only by red server lights. The mood is oppressive and industrial. The Sovereign sits on a throne of cables. He is watching Vector on a screen, unbothered."
+      }, {
+        "row_number" : 3,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "Vector looks down, confused. The bright blue sky is turning a sickly static-grey.",
+          "dialog" : [ {
+            "character" : "Vector",
+            "text" : "Wait. The targets... they aren't disappearing. They're dissolving."
+          }, {
+            "character" : "Caption",
+            "text" : "The goal is not to win the sprint."
+          } ]
+        }, {
+          "frame_number" : 2,
+          "description" : "The purple smoke enters the phones and VR headsets of the civilians below.",
+          "dialog" : [ {
+            "character" : "Caption",
+            "text" : "The goal is to out-endure the entropy."
+          } ]
+        } ],
+        "visual_description" : "Back in the Free City. The \"debris\" from the destroyed drones isn't metal—it's turning into purple, glitchy smoke (The Swarm). It starts seeping into the streets below."
+      } ]
+    }, {
+      "page_number" : 2,
+      "rows" : [ {
+        "row_number" : 1,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "A civilian looks at their phone. The screen projects a hologram of a screaming face that looks exactly like the civilian.",
+          "dialog" : [ {
+            "character" : "Civilian",
+            "text" : "That's not me! I didn't say that!"
+          }, {
+            "character" : "Caption",
+            "text" : "Liberal democracies rely on distributed trust. The consensus of markets. The validation of truth."
+          } ]
+        }, {
+          "frame_number" : 2,
+          "description" : "A crowd begins to fight each other. Holographic \"Truth\" banners are flickering and changing text rapidly, contradicting themselves.",
+          "dialog" : [ {
+            "character" : "Crowd Member 1",
+            "text" : "The algorithm says you're the enemy!"
+          }, {
+            "character" : "Crowd Member 2",
+            "text" : "The algorithm is a hallucination!"
+          }, {
+            "character" : "Caption",
+            "text" : "AI destabilizes the national myths that underpin these systems."
+          } ]
+        } ],
+        "visual_description" : "Street level in the Free City. Chaos is erupting. The lighting shifts from heroic daylight to a disorienting, strobe-light panic. The \"Swarm\" (glitch monsters) are whispering into people's ears."
+      }, {
+        "row_number" : 2,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "Vector tries to blast a glitch-monster, but it splits into two smaller, louder monsters.",
+          "dialog" : [ {
+            "character" : "Vector",
+            "text" : "My targeting systems can't lock on! It's just noise!"
+          }, {
+            "character" : "Caption",
+            "text" : "When the cost of generating noise approaches zero, distributed trust collapses."
+          } ]
+        }, {
+          "frame_number" : 2,
+          "description" : "Vector is surrounded by civilians asking him for help, but they all look like distortions. He doesn't know who is real.",
+          "dialog" : [ {
+            "character" : "Vector",
+            "text" : "Which one of you is real? Stop! Everyone calm down!"
+          }, {
+            "character" : "Caption",
+            "text" : "Social consensus evaporates."
+          } ]
+        } ],
+        "visual_description" : "Vector swoops down to stop a riot, but he can't punch \"misinformation.\" He passes through the glitch-monsters. He looks overwhelmed."
+      }, {
+        "row_number" : 3,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "The Sovereign stands on a balcony overlooking his silent, grey city.",
+          "dialog" : [ {
+            "character" : "The Sovereign",
+            "text" : "You rely on freedom. Freedom is fragile under acceleration."
+          }, {
+            "character" : "Caption",
+            "text" : "The CCP operates a system of managed disruption."
+          } ]
+        }, {
+          "frame_number" : 2,
+          "description" : "Close up on The Sovereign’s hand crushing a glitch-pixel.",
+          "dialog" : [ {
+            "character" : "The Sovereign",
+            "text" : "I enforce coherence."
+          }, {
+            "character" : "Caption",
+            "text" : "The winner is the one who maintains structure while the world melts."
+          } ]
+        } ],
+        "visual_description" : "Contrast panel. Inside The Sovereign’s city. It is terrifyingly orderly. Identical workers march in unison. A red energy field (The Great Firewall) vaporizes any purple glitch-smoke that tries to form."
+      } ]
+    }, {
+      "page_number" : 3,
+      "rows" : [ {
+        "row_number" : 1,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "The Sovereign releases glowing red orbs from the containers. They float across the ocean toward Vector’s city.",
+          "dialog" : [ {
+            "character" : "The Sovereign",
+            "text" : "Let them have the models. Give them the weights."
+          }, {
+            "character" : "Caption",
+            "text" : "Western observers see leakage. I see a lever."
+          } ]
+        }, {
+          "frame_number" : 2,
+          "description" : "Vector sees the orbs arriving. He catches one. It looks like a high-tech engine.",
+          "dialog" : [ {
+            "character" : "Vector",
+            "text" : "He's... giving us his tech? It's near state-of-the-art."
+          }, {
+            "character" : "Caption",
+            "text" : "This is asymmetric warfare disguised as generosity."
+          } ]
+        } ],
+        "visual_description" : "The Sovereign initiates a new attack. He isn't firing missiles. He is opening shipping containers labeled \"OPEN SOURCE.\" The mood is eerie; it looks like a gift, but feels like a bomb."
+      }, {
+        "row_number" : 2,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "A boardroom in a glass tower. Executives are panicking as the floor dissolves.",
+          "dialog" : [ {
+            "character" : "Executive",
+            "text" : "Our moat is gone! The IP is worthless if everyone has it for free!"
+          }, {
+            "character" : "Caption",
+            "text" : "By flooding the ecosystem, China commoditizes the layer where Western giants build their moats."
+          } ]
+        }, {
+          "frame_number" : 2,
+          "description" : "Vector flies to the Capitol building. Politicians are screaming at each other, holding the red orbs.",
+          "dialog" : [ {
+            "character" : "Politician 1",
+            "text" : "We need to ban it!"
+          }, {
+            "character" : "Politician 2",
+            "text" : "We need to militarize it!"
+          }, {
+            "character" : "Caption",
+            "text" : "Perception of parity triggers \"Competitive Panic.\""
+          } ]
+        } ],
+        "visual_description" : "The Free City's tech companies (glass towers) start collapsing. The red orbs have integrated into the city's foundation, turning the blue energy to a chaotic purple."
+      }, {
+        "row_number" : 3,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "Vector screams, energy flaring uncontrollably.",
+          "dialog" : [ {
+            "character" : "Vector",
+            "text" : "We have to regulate! No, we have to accelerate! I can't—I can't process the signal!"
+          }, {
+            "character" : "Caption",
+            "text" : "By making the race feel \"close,\" China forces the US to react on China's timeline."
+          } ]
+        }, {
+          "frame_number" : 2,
+          "description" : "The Sovereign watches from afar, arms crossed.",
+          "dialog" : [ {
+            "character" : "The Sovereign",
+            "text" : "Run faster, Vector. Trip over your own feet."
+          }, {
+            "character" : "Caption",
+            "text" : "Sprints break democracies faster than autocracies."
+          } ]
+        } ],
+        "visual_description" : "A wide shot of Vector’s city on fire—not from bombs, but from internal friction. Vector is hovering in the center, holding his head, paralyzed by the conflicting screams of his people."
+      } ]
+    }, {
+      "page_number" : 4,
+      "rows" : [ {
+        "row_number" : 1,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "Phase 1: Acceleration. An image of Vector fighting his own shadow.",
+          "dialog" : [ {
+            "character" : "Caption",
+            "text" : "**Phase 1: Acceleration.** Export entropy. Force the rival to expend energy managing internal chaos."
+          } ]
+        }, {
+          "frame_number" : 2,
+          "description" : "Phase 2: Consolidation. An image of The Sovereign building a massive, self-contained microchip factory inside a bunker.",
+          "dialog" : [ {
+            "character" : "Caption",
+            "text" : "**Phase 2: Consolidation.** Decouple. Build compute sovereignty. Ensure the regime survives the transition."
+          } ]
+        }, {
+          "frame_number" : 3,
+          "description" : "Phase 3: Action. A silhouette of The Sovereign stepping over a fallen Vector.",
+          "dialog" : [ {
+            "character" : "Caption",
+            "text" : "**Phase 3: Action.** Kinetic goals are reserved for a post-weakening environment."
+          } ]
+        } ],
+        "visual_description" : "A timeline visualization. Three panels showing The Sovereign’s plan. The art style becomes schematic and rigid."
+      }, {
+        "row_number" : 2,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "Vector looks up, panting.",
+          "dialog" : [ {
+            "character" : "Vector",
+            "text" : "I... I still have the strongest military. You can't cross the line."
+          } ]
+        }, {
+          "frame_number" : 2,
+          "description" : "The Sovereign steps onto the small island (The Taiwan Metaphor). It is lush, green, and holds a single glowing fab plant.",
+          "dialog" : [ {
+            "character" : "The Sovereign",
+            "text" : "You are looking at the map. You should be looking at the substrate."
+          } ]
+        } ],
+        "visual_description" : "Back to reality. Vector is exhausted. His armor is cracked, his glow is dim. He is kneeling on a beach. The Sovereign has finally left his fortress and is walking across the water (or a bridge) toward a small island between them."
+      }, {
+        "row_number" : 3,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "Vector tries to fire a blast, but his hand fizzles out.",
+          "dialog" : [ {
+            "character" : "System Alert (Vector's HUD)",
+            "text" : "ERROR. SOCIAL CONSENSUS NOT FOUND. POLITICAL WILL OFFLINE."
+          }, {
+            "character" : "Caption",
+            "text" : "The goal is to demonstrate that the US can no longer enforce the \"rules of the game.\""
+          } ]
+        }, {
+          "frame_number" : 2,
+          "description" : "The Sovereign places a heavy hand on the fab plant.",
+          "dialog" : [ {
+            "character" : "The Sovereign",
+            "text" : "This isn't a conquest. It's a proof of concept."
+          } ]
+        } ],
+        "visual_description" : "The Sovereign stands on the island. He doesn't attack Vector. He simply occupies the space. Vector tries to stand but stumbles, his own internal systems glitching."
+      } ]
+    }, {
+      "page_number" : 5,
+      "rows" : [ {
+        "row_number" : 1,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "Vector stares at his hands.",
+          "dialog" : [ {
+            "character" : "Vector",
+            "text" : "I didn't lose the fight..."
+          } ]
+        }, {
+          "frame_number" : 2,
+          "description" : "Vector looks at the chaotic city behind him, then the silent, imposing figure of The Sovereign ahead.",
+          "dialog" : [ {
+            "character" : "Vector",
+            "text" : "...I lost the ability to govern the outcome."
+          }, {
+            "character" : "Caption",
+            "text" : "The core thesis is not that China is in control. It is that the US is *not*."
+          } ]
+        } ],
+        "visual_description" : "A close-up of Vector’s face. He realizes the nature of his defeat. It wasn't a battle; he simply eroded. The lighting is twilight—the end of an era."
+      }, {
+        "row_number" : 2,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "The Sovereign looms large, almost merging with the background darkness.",
+          "dialog" : [ {
+            "character" : "The Sovereign",
+            "text" : "You built a world on trust and predictability. I have moved us into the negative space."
+          }, {
+            "character" : "Caption",
+            "text" : "A geopolitical environment where hegemony is structurally impossible."
+          } ]
+        }, {
+          "frame_number" : 2,
+          "description" : "The Sovereign turns his back on Vector, looking toward a new, alien horizon.",
+          "dialog" : [ {
+            "character" : "The Sovereign",
+            "text" : "The storm is coming for both of us, Vector."
+          }, {
+            "character" : "Caption",
+            "text" : "The conditions that made US dominance possible—predictability, IP moats, consensus—dissolve into entropy."
+          } ]
+        } ],
+        "visual_description" : "A surreal, cosmic panel. The world around them is dissolving into binary code and static. The \"ground\" they stand on is shifting."
+      }, {
+        "row_number" : 3,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "(No dialogue)",
+          "dialog" : [ {
+            "character" : "Caption",
+            "text" : "The prize is not dominance, but coherence under acceleration."
+          }, {
+            "character" : "Caption",
+            "text" : "The US is betting that freedom breeds innovation. China is betting that control ensures survival."
+          }, {
+            "character" : "Caption",
+            "text" : "The old world is ending faster than the new one can be born."
+          } ]
+        } ],
+        "visual_description" : "Final splash panel. A wide, cinematic shot. The Sovereign stands rock-solid in the center of a digital hurricane. Vector is being blown backward, struggling to find his footing. The world is accelerating into a blur."
+      } ]
+    } ]
+  },
+  "characterImages" : {
+    "THE SOVEREIGN" : "char_THE_SOVEREIGN.png",
+    "THE SWARM" : "char_THE_SWARM.png"
+  },
+  "rowImages" : {
+    "1_1" : "page_1_row_1.png",
+    "1_2" : "page_1_row_2.png",
+    "1_3" : "page_1_row_3.png",
+    "2_1" : "page_2_row_1.png",
+    "2_2" : "page_2_row_2.png",
+    "2_3" : "page_2_row_3.png",
+    "3_1" : "page_3_row_1.png",
+    "3_2" : "page_3_row_2.png",
+    "3_3" : "page_3_row_3.png",
+    "4_1" : "page_4_row_1.png",
+    "4_2" : "page_4_row_2.png",
+    "4_3" : "page_4_row_3.png",
+    "5_1" : "page_5_row_1.png",
+    "5_2" : "page_5_row_2.png",
+    "5_3" : "page_5_row_3.png"
+  }
+}

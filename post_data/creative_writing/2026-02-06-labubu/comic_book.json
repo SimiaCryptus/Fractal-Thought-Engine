@@ -1,0 +1,289 @@
+{
+  "config" : {
+    "task_description" : "A heartwarming story about Labubu, a little girl with dark hair and blue eyes. She feels sad and excluded when she isn't invited to a birthday party that all her friends are attending. Determined not to miss out, she disguises herself in a costume to crash the party. Upon arrival, she sees her friends in costumes too, only to discover the party was actually a surprise birthday celebration for her all along.",
+    "target_pages" : 4,
+    "art_style" : "Whimsical Children's Book Illustration",
+    "style_details" : "soft colors, expressive characters, cute and vibrant.",
+    "generate_images" : true,
+    "state" : "Pending",
+    "task_type" : "ComicBookGeneration",
+    "files" : [ ]
+  },
+  "script" : {
+    "title" : "The Monster in the Party Hat",
+    "premise" : "Labubu, feeling left out of a secret party, decides to crash the event in a disguise, only to discover the secrecy was for her own surprise birthday celebration.",
+    "characters" : [ {
+      "name" : "Labubu",
+      "description" : "Imaginative, sensitive, but determined.",
+      "visual_traits" : "A small girl (approx. 6-7 years old). Shoulder-length messy dark hair, large expressive blue eyes, rosy cheeks. Usually wears oversized sweaters and striped tights."
+    }, {
+      "name" : "Milo",
+      "description" : "Energetic, usually terrible at keeping secrets.",
+      "visual_traits" : "A boy with glasses and messy blonde hair. Wears a dinosaur t-shirt."
+    }, {
+      "name" : "The Friends",
+      "description" : "Diverse group of children in the background.",
+      "visual_traits" : "Distinct by colorful clothes and eventual costumes."
+    }, {
+      "name" : "Friend",
+      "description" : "One of Labubu's friends.",
+      "visual_traits" : "Colorful clothes and costume."
+    }, {
+      "name" : "Voice",
+      "description" : "An unseen character speaking from inside the house.",
+      "visual_traits" : "N/A"
+    }, {
+      "name" : "All Friends",
+      "description" : "The entire group of friends speaking in unison.",
+      "visual_traits" : "N/A"
+    } ],
+    "pages" : [ {
+      "page_number" : 1,
+      "rows" : [ {
+        "row_number" : 1,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "Labubu on the swing, looking curious and slightly hopeful.",
+          "dialog" : [ ],
+          "caption" : "It started on a Tuesday. The whispering."
+        }, {
+          "frame_number" : 2,
+          "description" : "Labubu hops off the swing and approaches the group. The group immediately stops talking and looks guilty. Milo hides a colorful envelope behind his back.",
+          "dialog" : [ {
+            "character" : "Labubu",
+            "text" : "Whatcha playing? Can I play?"
+          }, {
+            "character" : "Milo",
+            "text" : "Uh... nothing! Just... homework stuff!"
+          } ]
+        } ],
+        "visual_description" : "A wide, establishing shot of a whimsical school playground. Soft sunlight filters through large oak trees. In the foreground, Labubu sits on a swing, looking back over her shoulder. In the background, a group of her friends (including Milo) are huddled in a circle, whispering excitedly."
+      }, {
+        "row_number" : 2,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "In the cafeteria, the friends are giggling at a table. Labubu walks up with her tray, but they suddenly get quiet.",
+          "dialog" : [ ],
+          "caption" : "It happened at lunch."
+        }, {
+          "frame_number" : 2,
+          "description" : "Walking home from school. The friends are walking ahead in a group, laughing. Labubu is ten paces behind, head down, kicking a pebble.",
+          "dialog" : [ ],
+          "caption" : "And all the way home."
+        } ],
+        "visual_description" : "A montage of exclusion. The colors should be slightly cooler/bluer here to reflect Labubu's sadness."
+      }, {
+        "row_number" : 3,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "Labubu is lying on her bed, staring at the ceiling. A tear rolls down her cheek.",
+          "dialog" : [ {
+            "character" : "Labubu",
+            "text" : "They're having a party. I know it. And I'm the only one not invited."
+          } ]
+        }, {
+          "frame_number" : 2,
+          "description" : "Close up on Labubu’s face. Her expression shifts from sad to a cute, furrowed-brow frown. Determination sets in.",
+          "dialog" : [ {
+            "character" : "Labubu",
+            "text" : "Well, I like parties too. And I’m going."
+          } ]
+        } ],
+        "visual_description" : "Interior of Labubu’s bedroom. It is cozy but feels lonely right now. Blue moonlight spills in from the window."
+      } ]
+    }, {
+      "page_number" : 2,
+      "rows" : [ {
+        "row_number" : 1,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "Labubu tossing a feather boa and a pirate hat over her shoulder.",
+          "dialog" : [ {
+            "character" : "Labubu",
+            "text" : "If I go as me, they'll send me home."
+          } ]
+        }, {
+          "frame_number" : 2,
+          "description" : "She holds up a fuzzy purple fabric and a cardboard box.",
+          "dialog" : [ {
+            "character" : "Labubu",
+            "text" : "But if I go as a *Mystery Guest*... they'll never know!"
+          } ]
+        } ],
+        "visual_description" : "Bright, energetic morning light. The scene is chaotic and vibrant. Labubu is rummaging through a large wooden chest labeled 'Dress Up.'"
+      }, {
+        "row_number" : 2,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "Labubu painting a cardboard box with green and purple polka dots. She has paint on her nose. (SFX: SQUEAK SQUEAK - Marker sounds)",
+          "dialog" : [ ]
+        }, {
+          "frame_number" : 2,
+          "description" : "She is taping fuzzy ears onto the box. (SFX: RIIIIIP - Tape sound)",
+          "dialog" : [ ]
+        } ],
+        "visual_description" : "A crafting montage. The background should be abstract swirls of creativity—scissors, glue, and glitter floating in the air."
+      }, {
+        "row_number" : 3,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "Labubu stands in front of a mirror. She is wearing a homemade 'Swamp Monster' costume. It’s a boxy head with mismatched eyes and a fuzzy purple body suit. It is clearly homemade and adorable.",
+          "dialog" : [ {
+            "character" : "Labubu",
+            "text" : "Perfect. Scary, but stylish."
+          } ]
+        } ],
+        "visual_description" : "The reveal of the costume. It is a full-body shot."
+      }, {
+        "row_number" : 4,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "Labubu (in costume) marching down the sidewalk. Her blue eyes are visible through the eyeholes of the mask.",
+          "dialog" : [ ],
+          "caption" : "Operation Party Crash is a go."
+        } ],
+        "visual_description" : "Labubu stepping out of her front door into the twilight. The sky is a mix of purple and orange."
+      } ]
+    }, {
+      "page_number" : 3,
+      "rows" : [ {
+        "row_number" : 1,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "Labubu hiding behind a bush in the front yard, looking at the house.",
+          "dialog" : [ {
+            "character" : "Labubu",
+            "text" : "Look at them. Having fun. Without me."
+          } ]
+        }, {
+          "frame_number" : 2,
+          "description" : "Through the window, she sees Milo wearing a superhero cape. Another friend is dressed as a fairy.",
+          "dialog" : [ {
+            "character" : "Labubu",
+            "text" : "Wait... it's a COSTUME party?! Now I really have to go in!"
+          } ]
+        } ],
+        "visual_description" : "Exterior of Milo’s house. It is nighttime now. The house is glowing with warm yellow light. Silhouettes of kids are visible in the windows."
+      }, {
+        "row_number" : 2,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "Labubu’s gloved hand reaching for the doorbell. The doorbell glows softly. (SFX: DING DONG)",
+          "dialog" : [ ]
+        }, {
+          "frame_number" : 2,
+          "description" : "The door creaks open slightly. It’s dark inside the hallway.",
+          "dialog" : [ {
+            "character" : "Voice",
+            "text" : "Someone get the door!"
+          } ]
+        } ],
+        "visual_description" : "Tension building. The perspective is from Labubu's point of view (through the mask eyeholes)."
+      }, {
+        "row_number" : 3,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "Labubu steps onto the welcome mat. She puffs out her chest to look brave.",
+          "dialog" : [ {
+            "character" : "Labubu",
+            "text" : "Here comes the party monster..."
+          } ]
+        }, {
+          "frame_number" : 2,
+          "description" : "She walks through the archway into the main living room. The room is pitch black.",
+          "dialog" : [ {
+            "character" : "Labubu",
+            "text" : "Hello? Is the party over?"
+          } ]
+        } ],
+        "visual_description" : "Labubu stepping into the hallway. The lighting is dramatic—dark foreground, bright light coming from the living room ahead."
+      } ]
+    }, {
+      "page_number" : 4,
+      "rows" : [ {
+        "row_number" : 1,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "The lights flip on. Streamers and confetti explode from the sides. Milo and all the friends jump out from behind sofas and tables. They are all in costumes. A banner hangs across the room: HAPPY BIRTHDAY LABUBU!",
+          "dialog" : [ {
+            "character" : "All Friends",
+            "text" : "SURPRISE!!!"
+          } ]
+        } ],
+        "visual_description" : "A sudden explosion of light and color. This should be the brightest, most vibrant panel in the comic."
+      }, {
+        "row_number" : 2,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "The friends stop cheering and look confused at the purple swamp monster standing in the doorway.",
+          "dialog" : [ {
+            "character" : "Milo",
+            "text" : "Uh... who is that?"
+          } ]
+        }, {
+          "frame_number" : 2,
+          "description" : "Labubu pulls the boxy mask off her head. Her dark hair is messy, and her blue eyes are wide with shock.",
+          "dialog" : [ {
+            "character" : "Labubu",
+            "text" : "Me?"
+          } ]
+        } ],
+        "visual_description" : "Confusion and realization. The mood shifts from shock to warmth."
+      }, {
+        "row_number" : 3,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "Milo runs over and hugs Labubu. The other friends crowd around.",
+          "dialog" : [ {
+            "character" : "Milo",
+            "text" : "We thought you weren't coming! We tried to keep it a secret all week!"
+          }, {
+            "character" : "Labubu",
+            "text" : "You... you didn't forget me?"
+          } ]
+        }, {
+          "frame_number" : 2,
+          "description" : "A friend hands Labubu a party hat to put on top of her monster costume.",
+          "dialog" : [ {
+            "character" : "Friend",
+            "text" : "Forget you? It's YOUR party, silly!"
+          } ]
+        } ],
+        "visual_description" : "The emotional climax. Soft, warm colors."
+      }, {
+        "row_number" : 4,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "Labubu is laughing, wearing her monster suit body but with her face visible and a party hat on. She is blowing out candles on a cake. (Text on cake: Happy Birthday!)",
+          "dialog" : [ ],
+          "caption" : "Best. Party. Crash. Ever."
+        } ],
+        "visual_description" : "The happy ending. A wide shot of the party in full swing."
+      } ]
+    } ]
+  },
+  "characterImages" : {
+    "Labubu" : "char_Labubu.png",
+    "Milo" : "char_Milo.png",
+    "The Friends" : "char_The_Friends.png",
+    "Friend" : "char_Friend.png",
+    "Voice" : "char_Voice.png",
+    "All Friends" : "char_All_Friends.png"
+  },
+  "rowImages" : {
+    "1_1" : "page_1_row_1.png",
+    "1_2" : "page_1_row_2.png",
+    "1_3" : "page_1_row_3.png",
+    "2_1" : "page_2_row_1.png",
+    "2_2" : "page_2_row_2.png",
+    "2_3" : "page_2_row_3.png",
+    "2_4" : "page_2_row_4.png",
+    "3_1" : "page_3_row_1.png",
+    "3_2" : "page_3_row_2.png",
+    "3_3" : "page_3_row_3.png",
+    "4_1" : "page_4_row_1.png",
+    "4_2" : "page_4_row_2.png",
+    "4_3" : "page_4_row_3.png",
+    "4_4" : "page_4_row_4.png"
+  }
+}

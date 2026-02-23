@@ -1,0 +1,77 @@
+title: "Learn to Skate: A Comic Book Adventure"
+layout: "post"
+date: 2026-02-07
+last_modified: 2026-02-07 12:00:00
+
+# Content classification
+category: social
+subcategory: "Skill Acquisition"
+tags: ["Social-Systems", "Education", "Creative-Writing", "Tutorial", "Educational-Resource"]
+keywords: ["roller skating", "comic generation", "instructional story", "Lily", "learning curve"]
+
+# Content status and evolution
+status: "stable"
+last_thought_date: 2026-02-07
+thought_generation: 1
+
+# Content Relationships & Navigation
+reading_order: 1
+difficulty_level: "accessible"
+reading_time_minutes: 10
+
+# Content Characteristics
+document_type: "synthesis"
+thinking_style: "intuitive"
+consciousness_level: "emergent"
+
+# Engagement metadata
+engagement_type: "contemplative"
+reader_participation: "active"
+cognitive_load: "light"
+
+# Search and discovery
+description: "A generated comic book script describing a young girl's journey to learn roller skating, combining narrative storytelling with instructional steps."
+excerpt: "Seven-year-old Lily receives her very first pair of roller skates from her dad and embarks on a fun, step-by-step journey to learn how to skate. The comic doubles as a real instructional guide."
+featured_image: "page_1_row_1.png"
+og_image: "page_1_row_1.png"
+
+# SEO Meta Tags
+meta_title: "Learn to Skate: Generated Comic Script"
+meta_description: "A detailed comic book script about learning to roller skate. Follow Lily's progress from putting on gear to her first victory lap."
+meta_keywords: "comic script, roller skating, learn to skate, educational comic, storytelling"
+
+# Open Graph (Social Media)
+og_title: "Learn to Skate: A Comic Book Adventure"
+og_description: "A heartwarming instructional comic script about learning to skate."
+og_type: "article"
+og_locale: "en_US"
+og_site_name: "Fractal Thought Engine"
+
+# Schema.org Structured Data
+schema_type: "CreativeWork"
+schema_headline: "Learn to Skate: A Comic Book Adventure"
+schema_author: "Fractal Thought Engine"
+schema_date_published: 2026-02-07
+schema_date_modified: 2026-02-07
+schema_image: "page_1_row_1.png"
+schema_word_count: 2000
+schema_reading_time: "PT10M"
+
+# Search Engine Directives
+robots: "index,follow"
+googlebot: "index,follow"
+
+# Content Classification for Search
+content_rating: "general"
+content_language: "en"
+geo_region: "Global"
+
+# Indexing Control
+priority: 0.6
+changefreq: "monthly"
+
+# Discoverability
+is_featured: false
+is_cornerstone: false
+is_gateway: true
+is_synthesis: true

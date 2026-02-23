@@ -1,0 +1,147 @@
+# Comic Book Generation Task
+
+## Generated Script
+
+
+# The Monster in the Party Hat
+*Labubu, feeling left out of a secret party, decides to crash the event in a disguise, only to discover the secrecy was for her own surprise birthday celebration.*
+## Characters
+- **Labubu**: Imaginative, sensitive, but determined. (A small girl (approx. 6-7 years old). Shoulder-length messy dark hair, large expressive blue eyes, rosy cheeks. Usually wears oversized sweaters and striped tights.)
+- **Milo**: Energetic, usually terrible at keeping secrets. (A boy with glasses and messy blonde hair. Wears a dinosaur t-shirt.)
+- **The Friends**: Diverse group of children in the background. (Distinct by colorful clothes and eventual costumes.)
+- **Friend**: One of Labubu's friends. (Colorful clothes and costume.)
+- **Voice**: An unseen character speaking from inside the house. (N/A)
+- **All Friends**: The entire group of friends speaking in unison. (N/A)
+## Script
+### Page 1
+**Row 1**
+- Panel 1: Labubu on the swing, looking curious and slightly hopeful.
+  - *Caption*: It started on a Tuesday. The whispering.
+- Panel 2: Labubu hops off the swing and approaches the group. The group immediately stops talking and looks guilty. Milo hides a colorful envelope behind his back.
+  - **Labubu**: "Whatcha playing? Can I play?"
+  - **Milo**: "Uh... nothing! Just... homework stuff!"
+**Row 2**
+- Panel 1: In the cafeteria, the friends are giggling at a table. Labubu walks up with her tray, but they suddenly get quiet.
+  - *Caption*: It happened at lunch.
+- Panel 2: Walking home from school. The friends are walking ahead in a group, laughing. Labubu is ten paces behind, head down, kicking a pebble.
+  - *Caption*: And all the way home.
+**Row 3**
+- Panel 1: Labubu is lying on her bed, staring at the ceiling. A tear rolls down her cheek.
+  - **Labubu**: "They're having a party. I know it. And I'm the only one not invited."
+- Panel 2: Close up on Labubu’s face. Her expression shifts from sad to a cute, furrowed-brow frown. Determination sets in.
+  - **Labubu**: "Well, I like parties too. And I’m going."
+### Page 2
+**Row 1**
+- Panel 1: Labubu tossing a feather boa and a pirate hat over her shoulder.
+  - **Labubu**: "If I go as me, they'll send me home."
+- Panel 2: She holds up a fuzzy purple fabric and a cardboard box.
+  - **Labubu**: "But if I go as a *Mystery Guest*... they'll never know!"
+**Row 2**
+- Panel 1: Labubu painting a cardboard box with green and purple polka dots. She has paint on her nose. (SFX: SQUEAK SQUEAK - Marker sounds)
+- Panel 2: She is taping fuzzy ears onto the box. (SFX: RIIIIIP - Tape sound)
+**Row 3**
+- Panel 1: Labubu stands in front of a mirror. She is wearing a homemade 'Swamp Monster' costume. It’s a boxy head with mismatched eyes and a fuzzy purple body suit. It is clearly homemade and adorable.
+  - **Labubu**: "Perfect. Scary, but stylish."
+**Row 4**
+- Panel 1: Labubu (in costume) marching down the sidewalk. Her blue eyes are visible through the eyeholes of the mask.
+  - *Caption*: Operation Party Crash is a go.
+### Page 3
+**Row 1**
+- Panel 1: Labubu hiding behind a bush in the front yard, looking at the house.
+  - **Labubu**: "Look at them. Having fun. Without me."
+- Panel 2: Through the window, she sees Milo wearing a superhero cape. Another friend is dressed as a fairy.
+  - **Labubu**: "Wait... it's a COSTUME party?! Now I really have to go in!"
+**Row 2**
+- Panel 1: Labubu’s gloved hand reaching for the doorbell. The doorbell glows softly. (SFX: DING DONG)
+- Panel 2: The door creaks open slightly. It’s dark inside the hallway.
+  - **Voice**: "Someone get the door!"
+**Row 3**
+- Panel 1: Labubu steps onto the welcome mat. She puffs out her chest to look brave.
+  - **Labubu**: "Here comes the party monster..."
+- Panel 2: She walks through the archway into the main living room. The room is pitch black.
+  - **Labubu**: "Hello? Is the party over?"
+### Page 4
+**Row 1**
+- Panel 1: The lights flip on. Streamers and confetti explode from the sides. Milo and all the friends jump out from behind sofas and tables. They are all in costumes. A banner hangs across the room: HAPPY BIRTHDAY LABUBU!
+  - **All Friends**: "SURPRISE!!!"
+**Row 2**
+- Panel 1: The friends stop cheering and look confused at the purple swamp monster standing in the doorway.
+  - **Milo**: "Uh... who is that?"
+- Panel 2: Labubu pulls the boxy mask off her head. Her dark hair is messy, and her blue eyes are wide with shock.
+  - **Labubu**: "Me?"
+**Row 3**
+- Panel 1: Milo runs over and hugs Labubu. The other friends crowd around.
+  - **Milo**: "We thought you weren't coming! We tried to keep it a secret all week!"
+  - **Labubu**: "You... you didn't forget me?"
+- Panel 2: A friend hands Labubu a party hat to put on top of her monster costume.
+  - **Friend**: "Forget you? It's YOUR party, silly!"
+**Row 4**
+- Panel 1: Labubu is laughing, wearing her monster suit body but with her face visible and a party hat on. She is blowing out candles on a cake. (Text on cake: Happy Birthday!)
+  - *Caption*: Best. Party. Crash. Ever.
+
+
+
+## Character: Labubu
+
+![Labubu](char_Labubu.png)
+
+*Imaginative, sensitive, but determined.*
+
+## Character: Milo
+
+![Milo](char_Milo.png)
+
+*Energetic, usually terrible at keeping secrets.*
+
+## Character: The Friends
+
+![The Friends](char_The_Friends.png)
+
+*Diverse group of children in the background.*
+
+## Character: Friend
+
+![Friend](char_Friend.png)
+
+*One of Labubu's friends.*
+
+## Character: Voice
+
+![Voice](char_Voice.png)
+
+*An unseen character speaking from inside the house.*
+
+## Character: All Friends
+
+![All Friends](char_All_Friends.png)
+
+*The entire group of friends speaking in unison.*
+
+![Page 1 Row 1](page_1_row_1.png)
+
+![Page 1 Row 2](page_1_row_2.png)
+
+![Page 1 Row 3](page_1_row_3.png)
+
+![Page 2 Row 1](page_2_row_1.png)
+
+![Page 2 Row 2](page_2_row_2.png)
+
+![Page 2 Row 3](page_2_row_3.png)
+
+![Page 2 Row 4](page_2_row_4.png)
+
+![Page 3 Row 1](page_3_row_1.png)
+
+![Page 3 Row 2](page_3_row_2.png)
+
+![Page 3 Row 3](page_3_row_3.png)
+
+![Page 4 Row 1](page_4_row_1.png)
+
+![Page 4 Row 2](page_4_row_2.png)
+
+![Page 4 Row 3](page_4_row_3.png)
+
+![Page 4 Row 4](page_4_row_4.png)
+

@@ -1,0 +1,77 @@
+title: 'Blind KMS: A Non-Custodial Architecture for Policy-Gated Cryptography'
+layout: post
+date: 2026-01-01T00:00:00.000Z
+last_modified: 2026-01-01T14:30:00.000Z
+category: projects
+subcategory: Security Architecture
+tags:
+  - Cryptography
+  - Distributed-Systems
+  - Theoretical-Framework
+  - Technical-Proposal
+  - Technical-Documentation
+  - Current-Research
+keywords:
+  - blind kms
+  - non-custodial
+  - zero-trust
+  - kdf oracle
+  - bk1 envelope
+  - policy enforcement
+status: working
+last_thought_date: 2026-01-01T00:00:00.000Z
+thought_generation: 1
+parent_document: ''
+child_documents: []
+related_documents: []
+reading_order: 1
+difficulty_level: advanced
+reading_time_minutes: 8
+document_type: framework
+thinking_style: analytical
+consciousness_level: meta
+engagement_type: analytical
+reader_participation: passive
+cognitive_load: intense
+description: >-
+  A technical proposal for Blind KMS, a non-custodial architecture that
+  decouples policy enforcement from cryptographic visibility to create a
+  zero-trust data plane.
+excerpt: >-
+  Traditional Key Management Systems operate on a custodial model. Blind KMS
+  shifts this paradigm, creating a system where the server can enforce policy
+  without ever seeing the data, the ciphertext, or the derived keys.
+og_image: /assets/images/blind-kms-social.png
+meta_title: 'Blind KMS: Non-Custodial Policy-Gated Cryptography'
+meta_description: >-
+  Explore the Blind KMS architecture: a zero-trust approach to key management
+  that ensures server blindness while maintaining strict policy control.
+meta_keywords: 'cryptography, kms, zero-trust, security architecture, non-custodial, kdf'
+og_title: 'Blind KMS: A Non-Custodial Architecture'
+og_description: >-
+  Decoupling policy enforcement from cryptographic visibility for a zero-trust
+  data plane.
+og_type: article
+og_locale: en_US
+og_site_name: Fractal Thought Engine
+schema_type: TechArticle
+schema_headline: 'Blind KMS: A Non-Custodial Architecture for Policy-Gated Cryptography'
+schema_author: Andrew
+schema_publisher: Fractal Thought Engine
+schema_date_published: 2026-01-01T00:00:00.000Z
+schema_date_modified: 2026-01-01T00:00:00.000Z
+schema_image: /assets/images/blind-kms-arch.png
+schema_word_count: 850
+schema_reading_time: PT8M
+robots: 'index,follow'
+googlebot: 'index,follow'
+bingbot: 'index,follow'
+content_rating: general
+content_language: en
+priority: 0.8
+changefreq: monthly
+is_featured: true
+is_cornerstone: true
+is_gateway: false
+is_synthesis: false
+featured_image: main.png
