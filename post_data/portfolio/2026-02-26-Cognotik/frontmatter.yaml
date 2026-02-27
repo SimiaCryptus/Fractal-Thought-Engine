@@ -1,0 +1,46 @@
+# Required fields
+title: "Cognotik Demos: AI-Powered Workflows in Action"
+layout: "post"
+date: 2026-02-26
+last_modified: 2026-02-26 00:00:00
+
+# Content classification
+tags:
+  - "AI-Consciousness"
+  - "Human-AI-Collaboration"
+  - "Cognitive-Architecture"
+  - "Computational-Analysis"
+  - "Software-Design"
+  - "Technical-Documentation"
+  - "Tutorial"
+  - "Industry-Applications"
+  - "Distributed-Systems"
+  - "Complexity-Science"
+  - "Systems-Science"
+  - "Full-Implementation"
+  - "Technical-Report"
+  - "Current-Research"
+keywords:
+  - "cognotik"
+  - "ai orchestration"
+  - "declarative workflows"
+  - "docprocessor"
+  - "ai-powered development"
+  - "code generation"
+  - "task planning"
+  - "cognitive modes"
+  - "frontmatter-driven"
+  - "open source ai"
+  - "bring your own key"
+  - "makefile for ai"
+  - "self-maintaining tools"
+  - "bootstrapping"
+  - "document-driven architecture"
+  - "regex transforms"
+  - "subplanning"
+  - "multi-modal content pipeline"
+
+# Search and discovery
+description: "A comprehensive walkthrough of Cognotik, an open-source AI-powered development platform that uses declarative Markdown files with YAML frontmatter to orchestrate complex workflows — from README generation and web research pipelines to self-maintaining codebases."
+excerpt: "Cognotik is an open-source, AI-powered development platform that combines intelligent planning, code generation, and interactive interfaces to automate complex workflows. This article walks through five progressively sophisticated demos — package README generation, multi-stage puppy research, a software project factory, the Fractal Thought Engine publishing system, and Cognotik's own self-bootstrapping development loop — illustrating the declarative, document-driven architecture that makes it all possible."
+featured_image: "/assets/images/cognotik_demos.png"

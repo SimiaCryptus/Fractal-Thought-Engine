@@ -1,6 +1,5 @@
 ---
 transforms: (.+/)content\.md -> $1/frontmatter.yaml
-task_type: IterativeFileModification
 ---
 
 # Dynamic Frontmatter-Driven Site Architecture

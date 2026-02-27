@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../CognotikDemo/CognotikDemo.iml" filepath="$PROJECT_DIR$/../CognotikDemo/CognotikDemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/../PersonalDocs/PersonalDocs.iml" filepath="$PROJECT_DIR$/../PersonalDocs/PersonalDocs.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/Science.iml" filepath="$PROJECT_DIR$/.idea/Science.iml" />
       <module fileurl="file://$PROJECT_DIR$/../blog.simiacryptus.com/blog.simiacryptus.com.iml" filepath="$PROJECT_DIR$/../blog.simiacryptus.com/blog.simiacryptus.com.iml" />
