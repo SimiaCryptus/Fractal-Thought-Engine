@@ -1,0 +1,353 @@
+{
+  "config" : {
+    "task_description" : "Cognotik: The Build System for Thought. A visual journey through the Cognotik platform, contrasting the 'Magic Genie' chat-based AI with the 'Build System' approach. It covers the DocProcessor engine, the Puppy Research pipeline, the Software Factory, and the self-referential bootstrapping process where Cognotik builds itself.",
+    "target_pages" : 6,
+    "art_style" : "Noir Tech",
+    "style_details" : "High contrast, heavy shadows, detailed mechanical and digital interfaces. The aesthetic should feel like a mix of 'Mr. Robot' and 'Ghost in the Shell'—gritty, professional, and focused on the 'machinery' of code. Use a limited color palette: deep blacks, stark whites, and 'terminal green' or 'cyber blue' for highlights.",
+    "generate_images" : true,
+    "character_references" : [ {
+      "character_name" : "Elias (The Architect)",
+      "visual_description" : "A seasoned systems architect in his mid-40s with sharp, focused eyes and salt-and-pepper hair. He wears a dark, minimalist tactical turtleneck and cargo pants. He is often seen surrounded by holographic terminal windows and Git diffs.",
+      "personality_notes" : "Stoic, precise, and deeply skeptical of 'magic' solutions. He values transparency, auditability, and control above all else.",
+      "role" : "protagonist",
+      "relationships" : "Creator and operator of the Cognotik system."
+    }, {
+      "character_name" : "The Promoter",
+      "visual_description" : "A shifting, nebulous entity made of neon-pink and gold light. It has no fixed form, appearing as a cloud of floating chat bubbles, emojis, and vague 'Magic Genie' imagery. It glows with an artificial, distracting brightness.",
+      "personality_notes" : "Flashy, superficial, and evasive. It promises instant results without explaining the 'how'.",
+      "role" : "antagonist",
+      "relationships" : "Represents the 'Hype Equilibrium' of chat-based AI."
+    } ],
+    "plot_continuity" : {
+      "narrative_structure" : "Three-act structure: The Rejection of Hype, The Revelation of the Machinery, and The Mastery of the Build System.",
+      "key_plot_points" : [ "Elias sits in a dark server room, rejecting a glowing 'Magic Genie' lamp offered by The Promoter.", "Elias activates the DocProcessor, showing Markdown files with YAML frontmatter acting as gears in a massive clockwork engine.", "The Puppy Research demo: A linear pipeline where 'Requirements' are transformed into 'Breeder Reports' through a series of visible, auditable steps.", "The Software Factory: A single 'Idea' file is fed into the machine, which autonomously plans and renders a full project skeleton.", "The Ouroboros: Elias watches as Cognotik uses its own 'FileModification' tasks to update its own source code and documentation.", "The Final Stand: Elias stands on a digital precipice, holding his own API key (BYOK). He looks out over a landscape of 'Professional Equilibrium' while The Promoter fades into the background." ],
+      "setting_details" : "A near-future industrial server facility. The environment is filled with physical racks, glowing fiber optics, and holographic overlays that represent the 'DocProcessor' logic.",
+      "themes" : [ "Orchestration vs. Conversation", "Filesystem as the Source of Truth", "Bring Your Own Key (BYOK)", "The Shift from Generative to Evaluative Toil" ],
+      "tone" : "Serious, technical, empowering, and slightly cynical toward marketing hype.",
+      "prior_story_context" : "",
+      "continuity_constraints" : [ "The Promoter must never have a solid human form.", "The 'Makefile for Thought' metaphor should be visually represented with gears or assembly lines.", "The 'BYOK' concept should be represented as a physical or digital key that Elias holds." ],
+      "ending_notes" : "The story ends with Elias in full control, emphasizing that the human remains the judge of the AI's implementation choices.",
+      "additional_notes" : ""
+    },
+    "state" : "Pending",
+    "task_type" : "ComicBookGeneration",
+    "files" : [ "comic.md" ]
+  },
+  "script" : {
+    "title" : "Cognotik: The Build System for Thought",
+    "premise" : "In a world blinded by the neon glow of \"AI Magic,\" a seasoned architect named Elias rejects the ephemeral nature of chat-based AI. He utilizes Cognotik, an open-source orchestration engine, to transform raw intent into structured reality, proving that the future of AI isn't a conversation—it's a build system.",
+    "characters" : [ {
+      "name" : "Elias (The Architect)",
+      "description" : "A seasoned systems architect in his mid-40s with sharp, focused eyes and salt-and-pepper hair. Stoic, precise, and deeply skeptical of \"magic\" solutions. Values transparency and control.",
+      "visual_traits" : "Wears a dark, minimalist tactical turtleneck and cargo pants. Surrounded by holographic terminal windows and Git diffs."
+    }, {
+      "name" : "The Promoter",
+      "description" : "A shifting, nebulous entity representing the \"Hype Equilibrium.\" Flashy, superficial, and evasive. Promises instant results without explaining the \"how.\"",
+      "visual_traits" : "A cloud of neon-pink and gold light, floating chat bubbles, and vague \"Magic Genie\" imagery. No solid human form."
+    } ],
+    "pages" : [ {
+      "page_number" : 1,
+      "rows" : [ {
+        "row_number" : 1,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "Close-up on Elias’s face, illuminated by a cold green terminal glow. He looks weary.",
+          "dialog" : [ ],
+          "caption" : "The world is drowning in \"Magic Genies.\""
+        }, {
+          "frame_number" : 2,
+          "description" : "The Promoter extends a nebulous, glowing \"lamp\" toward Elias. Chat bubbles with \"✨\" and \"Just Ask!\" float around it.",
+          "dialog" : [ {
+            "character" : "The Promoter",
+            "text" : "Why struggle, Elias? Just tell the genie what you want. No code. No keys. Just... magic."
+          } ]
+        }, {
+          "frame_number" : 3,
+          "description" : "Elias pushes the lamp away. His hand is steady, silhouetted against the pink glare.",
+          "dialog" : [ {
+            "character" : "Elias",
+            "text" : "Magic is just a black box with a marketing budget. I don't want a conversation partner. I want a build system."
+          } ]
+        } ],
+        "visual_description" : "A dark, cavernous server room. The only light comes from blinking server LEDs and a blindingly bright, neon-pink cloud (The Promoter) hovering in the center. Elias stands in the shadows, unimpressed."
+      }, {
+        "row_number" : 2,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "Elias’s fingers hover over a holographic keyboard.",
+          "dialog" : [ {
+            "character" : "Elias",
+            "text" : "Intent is ephemeral. It drifts. It decays. I need reproducibility."
+          } ]
+        }, {
+          "frame_number" : 2,
+          "description" : "A wide shot of the server room. The Promoter looks small and chaotic compared to the massive, orderly architecture Elias is summoning.",
+          "dialog" : [ {
+            "character" : "The Promoter",
+            "text" : "But the chat is so... intuitive!"
+          }, {
+            "character" : "Elias",
+            "text" : "For casuals. For professionals? It’s a toy. I’m building a factory."
+          } ]
+        } ],
+        "visual_description" : "Elias turns toward a massive holographic display. The pink light of the Promoter is pushed to the edges of the frame by a sharp, structured grid of blue and green data."
+      } ]
+    }, {
+      "page_number" : 2,
+      "rows" : [ {
+        "row_number" : 1,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "Close-up on the text: transforms: (.+)/content\\.md -> $1/comic.md. The text begins to rotate like a gear.",
+          "dialog" : [ ],
+          "caption" : "This is the DocProcessor. The engine under the hood."
+        }, {
+          "frame_number" : 2,
+          "description" : "The YAML directives (specifies, generates, related) transform into interlocking mechanical gears and assembly lines.",
+          "dialog" : [ {
+            "character" : "Elias (V.O.)",
+            "text" : "It’s a Makefile for thought. I declare the 'what.' The engine figures out the 'how.'"
+          } ]
+        }, {
+          "frame_number" : 3,
+          "description" : "A \"terminal green\" light pulses through the gears. We see files being pulled into the machinery.",
+          "dialog" : [ ],
+          "caption" : "The filesystem is the source of truth. No hidden databases. No volatile memory. Just disk and logic."
+        } ],
+        "visual_description" : "The holographic display zooms into a single Markdown file. The YAML frontmatter glows with a mechanical intensity."
+      }, {
+        "row_number" : 2,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "Elias points to a \"Task\" block labeled FileModificationTask.",
+          "dialog" : [ {
+            "character" : "Elias",
+            "text" : "Every action is visible. Every thought is version-controlled. If it breaks, I don't guess. I diff."
+          } ]
+        }, {
+          "frame_number" : 2,
+          "description" : "The Promoter hovers in the corner, its neon light flickering as if losing power.",
+          "dialog" : [ {
+            "character" : "The Promoter",
+            "text" : "Where is the... the soul? The mystery?"
+          }, {
+            "character" : "Elias",
+            "text" : "In the engineering. Not the sales pitch."
+          } ]
+        } ],
+        "visual_description" : "A split-screen view. On one side, raw Markdown; on the other, a complex flow-chart of AI tasks."
+      } ]
+    }, {
+      "page_number" : 3,
+      "rows" : [ {
+        "row_number" : 1,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "The file moves through a \"Brainstorming\" station. Multiple \"Idea\" files fan out like sparks from a forge.",
+          "dialog" : [ ],
+          "caption" : "Stage 1: Brainstorm. Stage 2: Expand."
+        }, {
+          "frame_number" : 2,
+          "description" : "A digital spider (The CrawlerAgent) descends from the top of the frame, weaving threads of web data into the \"Breed\" files.",
+          "dialog" : [ {
+            "character" : "Elias (V.O.)",
+            "text" : "The CrawlerAgent doesn't just hallucinate. It hunts. Real breeders. Real health standards."
+          } ]
+        }, {
+          "frame_number" : 3,
+          "description" : "The fan-out files merge back into a single, thick document: final_summary.md.",
+          "dialog" : [ {
+            "character" : "Elias",
+            "text" : "Four stages. Heterogeneous tasks. One coordinated pipeline. Automated, yet auditable."
+          } ]
+        } ],
+        "visual_description" : "The scene shifts to a digital workspace. A file named requirements.md sits at the start of a long, linear assembly line."
+      }, {
+        "row_number" : 2,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "Elias scrolls through the report. We see images of dogs and tables of data.",
+          "dialog" : [ {
+            "character" : "Elias",
+            "text" : "This isn't a toy example. It's a demonstration of leverage."
+          } ]
+        }, {
+          "frame_number" : 2,
+          "description" : "The Promoter tries to interject, but its chat bubbles are being crushed by the weight of the generated files.",
+          "dialog" : [ {
+            "character" : "The Promoter",
+            "text" : "I could have just told you 'Get a Lab' in two seconds!"
+          }, {
+            "character" : "Elias",
+            "text" : "And I wouldn't have known why. Trust is earned through evidence, not assertions."
+          } ]
+        } ],
+        "visual_description" : "Elias reviews the final report. The data is clean, structured, and cited."
+      } ]
+    }, {
+      "page_number" : 4,
+      "rows" : [ {
+        "row_number" : 1,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "The SubPlanningTask activates. A new, smaller clockwork engine sparks to life inside the main one.",
+          "dialog" : [ ],
+          "caption" : "The Software Factory. Idea to Project."
+        }, {
+          "frame_number" : 2,
+          "description" : "The \"Waterfall\" cognitive mode is shown as a series of descending glass levels: Analyze → Plan → Execute → Summarize.",
+          "dialog" : [ {
+            "character" : "Elias (V.O.)",
+            "text" : "The SubPlan launches a new instance. It doesn't just write code; it designs the architecture."
+          } ]
+        }, {
+          "frame_number" : 3,
+          "description" : "A 3D wireframe of a project folder structure (/src, /docs, README.md) rapidly assembles itself.",
+          "dialog" : [ ]
+        } ],
+        "visual_description" : "A single file labeled cool-app_idea.md is dropped into a massive, vertical \"Waterfall\" structure."
+      }, {
+        "row_number" : 2,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "Elias inspects a generated README.md.",
+          "dialog" : [ {
+            "character" : "Elias",
+            "text" : "The AI handles the generative toil. I handle the evaluative toil."
+          } ]
+        }, {
+          "frame_number" : 2,
+          "description" : "Close-up on Elias’s eye reflecting the code.",
+          "dialog" : [ ],
+          "caption" : "The human shifts from builder to reviewer. The responsibility remains."
+        }, {
+          "frame_number" : 3,
+          "description" : "The Promoter looks faded, almost transparent.",
+          "dialog" : [ {
+            "character" : "The Promoter",
+            "text" : "It's... so cold. So structured."
+          }, {
+            "character" : "Elias",
+            "text" : "It's professional. There's a difference."
+          } ]
+        } ],
+        "visual_description" : "Elias stands before the completed project skeleton. It looks like a blueprint brought to life."
+      } ]
+    }, {
+      "page_number" : 5,
+      "rows" : [ {
+        "row_number" : 1,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "A digital snake (made of code) bites its own tail.",
+          "dialog" : [ ],
+          "caption" : "Bootstrapping. The tool that builds itself."
+        }, {
+          "frame_number" : 2,
+          "description" : "We see index_docs.md transforming Kotlin source files into READMEs in real-time.",
+          "dialog" : [ {
+            "character" : "Elias",
+            "text" : "If I change the code, the docs follow. Automatically. No drift. No lies."
+          } ]
+        }, {
+          "frame_number" : 3,
+          "description" : "A \"Review Standards\" task flags a piece of code with a red \"R14 Violation\" warning.",
+          "dialog" : [ {
+            "character" : "Elias",
+            "text" : "Compliance-as-code. The AI enforces the standards I set."
+          } ]
+        } ],
+        "visual_description" : "The \"Fractal Thought Engine\" appears as a circular pipeline. Cognotik’s own source code is being fed back into itself."
+      }, {
+        "row_number" : 2,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "A Kotlin file (FileModificationTask.kt) is being \"projected\" through a design template to become a sleek HTML page.",
+          "dialog" : [ {
+            "character" : "Elias (V.O.)",
+            "text" : "The marketing site is just a projection of the truth. No separate documentation sprint required."
+          } ]
+        }, {
+          "frame_number" : 2,
+          "description" : "Elias smiles—a rare, sharp expression.",
+          "dialog" : [ {
+            "character" : "Elias",
+            "text" : "It eats its own dog food. And it’s hungry."
+          } ]
+        }, {
+          "frame_number" : 3,
+          "description" : "The entire server room pulses with a rhythmic, mechanical heartbeat. The system is alive and self-sustaining.",
+          "dialog" : [ ]
+        } ],
+        "visual_description" : "The Cognotik website is being projected from the source code."
+      } ]
+    }, {
+      "page_number" : 6,
+      "rows" : [ {
+        "row_number" : 1,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "Elias holds up a physical, glowing \"API Key.\" It looks like a crystal shard.",
+          "dialog" : [ {
+            "character" : "Elias",
+            "text" : "Bring Your Own Key. I own the intelligence. I own the cost. I own the privacy."
+          } ]
+        }, {
+          "frame_number" : 2,
+          "description" : "He slots the key into a console. The \"Professional Equilibrium\" landscape brightens.",
+          "dialog" : [ {
+            "character" : "Elias",
+            "text" : "When a better model drops, I swap the key. Not the tool. No vendor lock-in. No ransom."
+          } ]
+        }, {
+          "frame_number" : 3,
+          "description" : "The Promoter is now just a faint, pink mist, drifting away into the darkness.",
+          "dialog" : [ {
+            "character" : "The Promoter (faintly)",
+            "text" : "But... the magic..."
+          } ]
+        } ],
+        "visual_description" : "Elias stands on a digital precipice. Below him is a vast landscape of \"Professional Equilibrium\"—orderly, glowing grids. Behind him, the \"Hype\" landscape is a chaotic, flickering neon storm."
+      }, {
+        "row_number" : 2,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "Elias is silhouetted against the white light. He looks powerful, in control.",
+          "dialog" : [ ],
+          "caption" : "The shift is complete. From generative toil to evaluative mastery."
+        }, {
+          "frame_number" : 2,
+          "description" : "Close-up on a terminal screen. A single command is typed: cognotik run docs/.",
+          "dialog" : [ {
+            "character" : "Elias",
+            "text" : "The AI handles the 'how.' I am the judge of the 'what.'"
+          } ]
+        }, {
+          "frame_number" : 3,
+          "description" : "Final wide shot. The server room is silent, efficient, and dark, save for the steady, rhythmic pulse of the DocProcessor.",
+          "dialog" : [ ],
+          "caption" : "Cognotik. Orchestrating the machinery of thought. [BUILD SUCCESSFUL]"
+        } ],
+        "visual_description" : "Elias looks out over the horizon. The sun (a bright, white terminal cursor) is rising over the grid."
+      } ]
+    } ]
+  },
+  "characterImages" : {
+    "Elias (The Architect)" : "char_Elias__The_Architect_.png",
+    "The Promoter" : "char_The_Promoter.png"
+  },
+  "rowImages" : {
+    "1_1" : "page_1_row_1.png",
+    "1_2" : "page_1_row_2.png",
+    "2_1" : "page_2_row_1.png",
+    "2_2" : "page_2_row_2.png",
+    "3_1" : "page_3_row_1.png",
+    "3_2" : "page_3_row_2.png",
+    "4_1" : "page_4_row_1.png",
+    "4_2" : "page_4_row_2.png",
+    "5_1" : "page_5_row_1.png",
+    "5_2" : "page_5_row_2.png",
+    "6_1" : "page_6_row_1.png",
+    "6_2" : "page_6_row_2.png"
+  }
+}

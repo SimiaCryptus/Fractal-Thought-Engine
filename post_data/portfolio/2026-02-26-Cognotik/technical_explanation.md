@@ -19,8 +19,8 @@
 ### Phase 1: Analysis & Outline
 *Analyzing topic and creating explanation structure...*
 ## Reference Context
-<details>
-<summary>Prior Context and Related Files</summary>
+
+Prior Context and Related Files
 
 ### Prior Context
 
@@ -29,7 +29,7 @@
 ## Related Documentation Files
 
 
-</details>
+
 
 
 # Explanation Outline
@@ -768,7 +768,7 @@ For a software engineer, Cognotik isn't just a library; it's a **managed pipelin
 
 ✅ Complete
 
-<div id="final-output" class="tab-content" style="display: block;" markdown="1">
+
 
 ## Final Explanation
 
@@ -1011,7 +1011,7 @@ This explanation covered:
 > _... (truncated for display, 51 characters omitted)_
 
 
-</div>
+
 
 
 ---

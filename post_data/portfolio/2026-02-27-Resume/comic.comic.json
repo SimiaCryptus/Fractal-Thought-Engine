@@ -1,0 +1,278 @@
+{
+  "config" : {
+    "task_description" : "The Architect of Thought: The Journey of Andrew Charneski. A visual narrative tracing the evolution of a software engineer from low-level systems and security at Amazon to pioneering deep learning frameworks and AI orchestration platforms. The story explores the transition from manual coding to the 'Fractal Thought Engine', where AI and human creativity merge.",
+    "target_pages" : 6,
+    "art_style" : "Modern Tech Noir",
+    "style_details" : "High contrast, neon accents against dark backgrounds, intricate circuit-like patterns, holographic data visualizations, and a blend of realistic character depictions with abstract neural network imagery.",
+    "generate_images" : true,
+    "character_references" : [ {
+      "character_name" : "Andrew Charneski",
+      "visual_description" : "Mid-40s, short dark hair, glasses, intelligent and focused gaze. Usually wears tech-casual attire like a dark hoodie or a simple t-shirt. Often surrounded by glowing code snippets or abstract geometric shapes representing data structures.",
+      "personality_notes" : "Visionary, analytical, and deeply curious. He speaks in terms of systems, scale, and the future of intelligence.",
+      "role" : "Protagonist",
+      "relationships" : "The 'Architect' of the Cognotik and MindsEye systems."
+    } ],
+    "plot_continuity" : {
+      "narrative_structure" : "Three-act structure: The Foundation (Early career/Systems), The Scale (Enterprise/Distributed Systems), and The Synthesis (AI/Cognotik/Fractal Thought).",
+      "key_plot_points" : [ "Act 1: Early days at Amazon and Aristocrat, battling DDoS attacks and building high-availability systems in C++ and Java.", "Act 2: Scaling at Expedia and Grubhub, optimizing JVMs, and the realization that manual coding is reaching its limits as systems grow in complexity.", "Act 3: The creation of MindsEye (GPU deep learning) and Cognotik (AI orchestration).", "Act 4: The 'Fractal Thought Engine'—Andrew uses his own tools to generate the very comic we are reading, showing the loop of AI-augmented creativity.", "Climax: A vision of the future where 95% of code is AI-generated but human-guided, leading to a new era of 'Content-as-Code'.", "Ending: Andrew looking out at a digital horizon, ready for the next evolution." ],
+      "setting_details" : "Shifting from physical server rooms and office cubicles to abstract, glowing 'data-spaces' and neural network landscapes.",
+      "themes" : [ "Evolution of Intelligence", "Human-AI Collaboration", "The Beauty of Scale", "Self-Bootstrapping Systems" ],
+      "tone" : "Intellectual, visionary, slightly gritty but ultimately optimistic.",
+      "prior_story_context" : "",
+      "continuity_constraints" : [ "The transition from low-level C++ to high-level AI orchestration must feel like a natural progression of power.", "The Cognotik platform should be depicted as a sophisticated, multi-layered interface." ],
+      "ending_notes" : "",
+      "additional_notes" : ""
+    },
+    "state" : "Pending",
+    "task_type" : "ComicBookGeneration",
+    "files" : [ "comic.md" ]
+  },
+  "script" : {
+    "title" : "The Architect of Intelligence",
+    "premise" : "The journey of Andrew Charneski, from the low-level trenches of C++ and DDoS defense to the visionary heights of AI orchestration and the creation of the Fractal Thought Engine.",
+    "characters" : [ {
+      "name" : "Andrew Charneski",
+      "description" : "Mid-40s, short dark hair, glasses, intelligent and focused gaze. Visionary, analytical, and deeply curious. He speaks in terms of systems, scale, and the future of intelligence.",
+      "visual_traits" : "Usually wears tech-casual attire like a dark hoodie or a simple t-shirt. Often surrounded by glowing code snippets, holographic data structures, or abstract geometric shapes representing neural networks."
+    } ],
+    "pages" : [ {
+      "page_number" : 1,
+      "rows" : [ {
+        "row_number" : 1,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "Andrew (younger) staring intensely at a screen filled with C++ code.",
+          "dialog" : [ {
+            "character" : "Andrew",
+            "text" : "If the routing logic fails by a millisecond, the whole system chokes."
+          } ],
+          "caption" : "Seattle, 2007. The scale was already unimaginable."
+        }, {
+          "frame_number" : 2,
+          "description" : "A visualization of a DDoS attack—red jagged lines slamming against a blue shield.",
+          "dialog" : [ ],
+          "caption" : "At Amazon, I built the shields. Real-time AI for DDoS detection before 'AI' was a buzzword."
+        } ],
+        "visual_description" : "A split-screen effect showing Andrew in his early career. On the left, he’s at Amazon; on the right, Aristocrat Technologies. The lighting is moody, dominated by the glow of CRT monitors."
+      }, {
+        "row_number" : 2,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "Close-up on Andrew’s glasses, reflecting lines of C and Perl.",
+          "dialog" : [ {
+            "character" : "Andrew",
+            "text" : "C, C++, Java... I wasn't just writing code. I was learning the physics of data."
+          } ]
+        }, {
+          "frame_number" : 2,
+          "description" : "Andrew standing in a dark room, looking at a massive, glowing \"httpd\" module he’s constructing like a clockwork engine.",
+          "dialog" : [ ],
+          "caption" : "Systems programming. High availability. 24/7 wasn't a goal; it was the baseline."
+        } ],
+        "visual_description" : "Andrew’s hands typing on a mechanical keyboard. The letters fly off the keys and form a 3D structure around him."
+      } ]
+    }, {
+      "page_number" : 2,
+      "rows" : [ {
+        "row_number" : 1,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "Andrew pointing at a specific \"loop\" in the wire that is glowing a hot, angry red.",
+          "dialog" : [ {
+            "character" : "Andrew",
+            "text" : "A single gzip decompression bug. It was eating the servers alive."
+          } ]
+        }, {
+          "frame_number" : 2,
+          "description" : "Andrew \"snips\" the red wire. The entire system suddenly turns a calm, cool blue.",
+          "dialog" : [ ],
+          "caption" : "One fix. 90% CPU reduction. No more rolling restarts every 30 minutes."
+        } ],
+        "visual_description" : "Andrew at HBO Code Labs. He is looking at a chaotic web of Spring services that look like tangled neon wires."
+      }, {
+        "row_number" : 2,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "Andrew orchestrating a flow of data with his hands, like a conductor.",
+          "dialog" : [ ],
+          "caption" : "Expedia. 10,000 transactions per second. Sub-5ms latency."
+        }, {
+          "frame_number" : 2,
+          "description" : "A wide shot of a massive Hadoop cluster transitioning into an AWS cloud silhouette.",
+          "dialog" : [ {
+            "character" : "Andrew",
+            "text" : "We moved the giants to the cloud. We didn't just migrate; we optimized."
+          } ]
+        } ],
+        "visual_description" : "Andrew at Expedia, standing amidst a hurricane of data points."
+      } ]
+    }, {
+      "page_number" : 3,
+      "rows" : [ {
+        "row_number" : 1,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "Andrew talking to a group of shadowed \"Data Scientists,\" pointing to a holographic dashboard.",
+          "dialog" : [ {
+            "character" : "Andrew",
+            "text" : "The infrastructure shouldn't be a bottleneck. It should be the wind at your back."
+          } ]
+        }, {
+          "frame_number" : 2,
+          "description" : "Andrew working on \"Project Panama\" (Java 21). He is literally stitching a glowing Java thread into a heavy, metallic Native library.",
+          "dialog" : [ ],
+          "caption" : "When standard libraries failed, I went deeper. Project Panama. FFI. Native performance in a JVM world."
+        } ],
+        "visual_description" : "Andrew at Grubhub, looking at a complex map of PySpark workflows and Azkaban clusters."
+      }, {
+        "row_number" : 2,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "Andrew looking at a screen showing \"Cognotik\" in early development.",
+          "dialog" : [ {
+            "character" : "Andrew",
+            "text" : "The systems are getting too complex for manual toil. We need a new kind of leverage."
+          } ]
+        }, {
+          "frame_number" : 2,
+          "description" : "A close-up of Andrew’s eye. In the reflection, we see the first sparks of a neural network.",
+          "dialog" : [ ],
+          "caption" : "The realization: The next frontier isn't just better code. It's code that understands itself."
+        } ],
+        "visual_description" : "Andrew sitting in a dark room, his face lit by the glow of a new project. The background shows the transition from 2018 to 2025."
+      } ]
+    }, {
+      "page_number" : 4,
+      "rows" : [ {
+        "row_number" : 1,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "Andrew writing CUDA kernels. Glowing \"0\"s and \"1\"s are being funneled into a GPU.",
+          "dialog" : [ ],
+          "caption" : "MindsEye. A deep learning framework built from the ground up. No shortcuts."
+        }, {
+          "frame_number" : 2,
+          "description" : "Andrew adjusting a \"Quadratic Quasi-Newton\" (QQN) optimizer. It looks like a golden compass needle finding the perfect path down a mountain of data.",
+          "dialog" : [ {
+            "character" : "Andrew",
+            "text" : "72.6% win rate. We're bridging the gap between first and second-order methods."
+          } ]
+        } ],
+        "visual_description" : "Andrew building a neural network from scratch. It looks like a crystalline structure growing in a dark void."
+      }, {
+        "row_number" : 2,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "Andrew standing in front of a wall of perfectly symmetrical, kaleidoscopic textures.",
+          "dialog" : [ ],
+          "caption" : "Breakthroughs in neural art. Mathematical symmetry meets deep learning."
+        }, {
+          "frame_number" : 2,
+          "description" : "Andrew looking at a \"Fractal Thought\" diagram. It’s a tree that grows more branches the closer you look.",
+          "dialog" : [ {
+            "character" : "Andrew",
+            "text" : "Intelligence is recursive. It’s a fractal."
+          } ]
+        } ],
+        "visual_description" : "A massive explosion of color—Neural Style Transfer and geometric textures."
+      } ]
+    }, {
+      "page_number" : 5,
+      "rows" : [ {
+        "row_number" : 1,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "A JetBrains IDE window showing the Cognotik plugin. A counter shows \"57,000+ Downloads.\"",
+          "dialog" : [ ],
+          "caption" : "Cognotik. The early-market pioneer. Before the world knew ChatGPT, we were already building the assistant."
+        }, {
+          "frame_number" : 2,
+          "description" : "Andrew interacting with a \"Council\" of AI models. They are voting on a piece of code.",
+          "dialog" : [ {
+            "character" : "Andrew",
+            "text" : "Multi-model orchestration. Eight cognitive modes. This is the 'Makefile' for the AI age."
+          } ]
+        } ],
+        "visual_description" : "Andrew in the center of a \"Command Center\" interface. Logos for OpenAI, Anthropic, and Google float around him."
+      }, {
+        "row_number" : 2,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "Andrew reviewing a massive block of code that is writing its own documentation.",
+          "dialog" : [ ],
+          "caption" : "95% AI-generated. Human-guided. The platform maintains itself."
+        }, {
+          "frame_number" : 2,
+          "description" : "Andrew smiling as a \"DocProcessor\" pipeline turns a raw note into a finished product.",
+          "dialog" : [ {
+            "character" : "Andrew",
+            "text" : "We’ve moved from generative toil to evaluative mastery."
+          } ]
+        } ],
+        "visual_description" : "A \"Matrix\" style view of code. 95% of the code is a soft, glowing white (AI-generated), and 5% is a sharp, intense gold (Human-reviewed)."
+      } ]
+    }, {
+      "page_number" : 6,
+      "rows" : [ {
+        "row_number" : 1,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "Andrew’s hand on a mouse, clicking a button labeled \"Generate Comic Script.\"",
+          "dialog" : [ ],
+          "caption" : "The Fractal Thought Engine. Transforming raw notes into multi-modal publications."
+        }, {
+          "frame_number" : 2,
+          "description" : "A wide shot of Andrew’s workspace. It’s a blend of physical reality and digital projection.",
+          "dialog" : [ {
+            "character" : "Andrew",
+            "text" : "Articles, dialogues, game theory... and even this. The loop is closed."
+          } ]
+        } ],
+        "visual_description" : "Andrew is looking at a screen that shows the very comic page we are currently reading."
+      }, {
+        "row_number" : 2,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "Andrew looking out at the horizon. The sky is a gradient of neon sunset.",
+          "dialog" : [ ],
+          "caption" : "From C++ modules to Agentic Workflows. The journey of a Full-Stack Architect."
+        }, {
+          "frame_number" : 2,
+          "description" : "A close-up of Andrew’s face, looking determined and ready.",
+          "dialog" : [ {
+            "character" : "Andrew",
+            "text" : "The system is ready. What shall we build next?"
+          } ]
+        } ],
+        "visual_description" : "Andrew walks toward a massive window overlooking a digital city made of light and data."
+      }, {
+        "row_number" : 3,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "Andrew’s silhouette against the digital horizon.",
+          "dialog" : [ ],
+          "caption" : "Andrew Charneski: Architect of the Future. Generated via Cognotik & Fractal Thought Engine."
+        } ],
+        "visual_description" : "A single, large frame. Andrew’s silhouette against the digital horizon. The Cognotik logo and his contact info (simiacrypt.us) glow faintly in the corner."
+      } ]
+    } ]
+  },
+  "characterImages" : {
+    "Andrew Charneski" : "char_Andrew_Charneski.png"
+  },
+  "rowImages" : {
+    "1_1" : "page_1_row_1.png",
+    "1_2" : "page_1_row_2.png",
+    "2_1" : "page_2_row_1.png",
+    "2_2" : "page_2_row_2.png",
+    "3_1" : "page_3_row_1.png",
+    "3_2" : "page_3_row_2.png",
+    "4_1" : "page_4_row_1.png",
+    "4_2" : "page_4_row_2.png",
+    "5_1" : "page_5_row_1.png",
+    "5_2" : "page_5_row_2.png",
+    "6_1" : "page_6_row_1.png",
+    "6_2" : "page_6_row_2.png",
+    "6_3" : "page_6_row_3.png"
+  }
+}

@@ -1,8 +1,14 @@
 {
-  "claude-opus-4-6" : {
-    "prompt_tokens" : 33027,
-    "completion_tokens" : 11777,
-    "total_tokens" : 44804,
-    "cost" : 0.45956
+  "gemini-3-flash-preview" : {
+    "prompt_tokens" : 442875,
+    "completion_tokens" : 31039,
+    "total_tokens" : 473914,
+    "cost" : 0.36576825
+  },
+  "gemini-3-pro-image-preview" : {
+    "prompt_tokens" : 13284,
+    "completion_tokens" : 19593,
+    "total_tokens" : 32877,
+    "cost" : 0.283363
   }
 }

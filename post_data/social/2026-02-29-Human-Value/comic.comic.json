@@ -1,0 +1,339 @@
+{
+  "config" : {
+    "task_description" : "Adapt the essay 'The Evaporating Substrate' into a 6-page comic book script and visual series, illustrating the historical migration of human functional value and the current existential crisis posed by automated cognition.",
+    "target_pages" : 6,
+    "art_style" : "Dark Noir with Cyberpunk elements",
+    "style_details" : "High contrast, heavy shadows, symbolic imagery (e.g., the horse, the wizard, the evaporating substrate), gritty textures, and a desaturated color palette with sharp neon accents for AI elements.",
+    "generate_images" : true,
+    "character_references" : [ {
+      "character_name" : "The Archivist",
+      "visual_description" : "A weary figure in a tattered trench coat, eyes glowing faintly with augmented reality overlays. Surrounded by a mix of physical books and flickering holographic data.",
+      "personality_notes" : "Analytical, somber, but deeply concerned for humanity's future.",
+      "role" : "Narrator",
+      "relationships" : "Observer of human history."
+    }, {
+      "character_name" : "The Wizard",
+      "visual_description" : "A mid-century scientist in a crisp lab coat, holding a glowing mathematical formula or a punch card. Sharp features, intense gaze, representing the peak of human cognitive value.",
+      "personality_notes" : "Confident, intellectual, and authoritative.",
+      "role" : "Symbol of Regime 2",
+      "relationships" : "The predecessor to the current automated systems."
+    } ],
+    "plot_continuity" : {
+      "narrative_structure" : "Chronological and thematic progression through three regimes of human value, leading to a systemic bifurcation.",
+      "key_plot_points" : [ "Regime 1: The shift from animal strength to industrial mass (Napoleon's mammals vs. Grant's logistics).", "Regime 2: The rise of the cognitive elite (The Wizards of WWII: Turing, Oppenheimer).", "The Horse Analogy: A visual comparison of the horse population in 1900 vs 1960 as a warning for human labor.", "Regime 3: The current evaporation of cognitive value as AI replaces the 'Wizards'.", "Bifurcation: The collapse of institutional legitimacy, rising status panic, and the risk of scapegoating.", "The Final Choice: A call to redefine human worth beyond economic function or face irrelevance." ],
+      "setting_details" : "A shifting landscape that moves from 19th-century battlefields to mid-century labs, to sterile modern server farms, and finally a fragmented digital/physical wasteland.",
+      "themes" : [ "Functional value vs. Intrinsic worth", "Technological displacement", "Institutional collapse", "The 'Horse' as a cautionary tale", "The migration of power substrates" ],
+      "tone" : "Philosophical, dark, urgent, and analytical.",
+      "prior_story_context" : "",
+      "continuity_constraints" : [ "The 'Horse' analogy must be a central visual motif in the middle of the story.", "The transition from physical mass to cognitive elite must be clearly depicted as a migration of power." ],
+      "ending_notes" : "The comic should end on a haunting but open-ended note, emphasizing the closing window for human agency.",
+      "additional_notes" : ""
+    },
+    "state" : "Pending",
+    "task_type" : "ComicBookGeneration",
+    "files" : [ "comic.md" ]
+  },
+  "script" : {
+    "title" : "The Evaporating Substrate",
+    "premise" : "As artificial intelligence dismantles the scarcity of human cognition, the very foundation of human value—once based on muscle, then on mind—is vanishing. A weary observer traces the history of this \"substrate migration\" and warns of a coming systemic collapse unless we redefine what it means to be human.",
+    "characters" : [ {
+      "name" : "The Archivist",
+      "description" : "Somber, analytical, and deeply haunted by the patterns of history. The guide through the three regimes of power.",
+      "visual_traits" : "A weary figure in a tattered, high-collar trench coat. Their eyes glow with a faint, flickering blue AR overlay that projects data streams into the air. They carry a heavy, physical ledger but consult holographic displays."
+    }, {
+      "name" : "The Wizard",
+      "description" : "Confident, elite, and indispensable. Represents the era where human intelligence was the ultimate strategic resource.",
+      "visual_traits" : "A mid-century scientist in a sharp, white lab coat. He has an intense, authoritative gaze and holds a glowing punch card that emits a golden light. He stands amidst chalkboard equations and early mainframe computers."
+    } ],
+    "pages" : [ {
+      "page_number" : 1,
+      "rows" : [ {
+        "row_number" : 1,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "Close-up on The Archivist’s face. Rain streaks down their cheeks, catching the neon glow of a nearby sign.",
+          "dialog" : [ ],
+          "caption" : "Every civilization rests on a single, brutal question: What makes a human valuable?"
+        }, {
+          "frame_number" : 2,
+          "description" : "The Archivist stands in a dark, cyberpunk alleyway. Holographic projections of 19th-century soldiers flicker around them.",
+          "dialog" : [ ],
+          "caption" : "Not morally. Morality is cheap. I’m talking about functional value. The kind that buys you a seat at the table of power."
+        } ],
+        "visual_description" : "The Archivist in the Rain"
+      }, {
+        "row_number" : 2,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "A wide shot of Napoleon’s Grande Armée marching through mud. It’s a mass of muscle and bayonets.",
+          "dialog" : [ ],
+          "caption" : "Regime 1 was the Body. Power was primate strength. The sovereign who fielded the most men won."
+        }, {
+          "frame_number" : 2,
+          "description" : "A split panel. On the left, a romanticized cavalry charge. On the right, the grim, industrial reality of the American Civil War—Union railroads and telegraph lines.",
+          "dialog" : [ ],
+          "caption" : "But the North didn't out-fight the South. They out-logisticked them. Grant turned war into a resource-consumption problem."
+        } ],
+        "visual_description" : "Regime 1 – Primate Strength"
+      }, {
+        "row_number" : 3,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "A silhouette of a lone farmer looking at a massive, smoking factory. The factory is dark, imposing, and noir-esque.",
+          "dialog" : [ ],
+          "caption" : "When the substrate shifted from muscle to industrial mass, those who couldn't adapt weren't retrained. They were crushed."
+        } ],
+        "visual_description" : "The Crushing of the Old Substrate"
+      } ]
+    }, {
+      "page_number" : 2,
+      "rows" : [ {
+        "row_number" : 1,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "The transition from factory smoke to the sterile glow of a laboratory. We see The Wizard standing before a chalkboard filled with nuclear physics equations.",
+          "dialog" : [ ],
+          "caption" : "Then came the Hinge. 1940. The world realized that an army of millions could be ended by the thoughts of a dozen."
+        }, {
+          "frame_number" : 2,
+          "description" : "Close-up on The Wizard’s hand holding a glowing atom. Behind him, the silhouettes of Turing and Oppenheimer.",
+          "dialog" : [ ],
+          "caption" : "Intelligence became the new substrate. The \"Wizards\" were the new elite."
+        } ],
+        "visual_description" : "The Second Migration"
+      }, {
+        "row_number" : 2,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "A montage of the Cold War: a rocket launch, a mainframe computer, a university lecture hall. Everything is bathed in a sharp, \"meritocratic\" gold light.",
+          "dialog" : [ ],
+          "caption" : "We built a world on this myth: Human value equals intelligence. We expanded universities and funded labs because smart humans were the scarcest resource."
+        }, {
+          "frame_number" : 2,
+          "description" : "The Wizard looks directly at the reader, his expression one of supreme confidence.",
+          "dialog" : [ ],
+          "caption" : "For eighty years, if you were smart, the system valued you. It was a golden age... but it was contingent."
+        } ],
+        "visual_description" : "The Talent Race"
+      }, {
+        "row_number" : 3,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "The golden light of The Wizard begins to flicker and turn a cold, digital blue.",
+          "dialog" : [ ],
+          "caption" : "Scarcity is the only thing that creates market value. And scarcity is about to evaporate."
+        } ],
+        "visual_description" : "The Shadow of the Machine"
+      } ]
+    }, {
+      "page_number" : 3,
+      "rows" : [ {
+        "row_number" : 1,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "A bustling 1900 city street. Horses are everywhere—pulling carriages, hauling coal, carrying soldiers.",
+          "dialog" : [ ],
+          "caption" : "In 1900, there were 21 million horses in America. They were the heartbeat of the economy."
+        }, {
+          "frame_number" : 2,
+          "description" : "A close-up of a horse’s eye, reflecting the busy street.",
+          "dialog" : [ ],
+          "caption" : "They were essential. Irreplaceable. Until they weren't."
+        } ],
+        "visual_description" : "1900 – The Essential Animal"
+      }, {
+        "row_number" : 2,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "A 1960s highway, sleek cars zooming past. In a small, fenced paddock in the corner, a single horse stands alone.",
+          "dialog" : [ ],
+          "caption" : "By 1960, the population collapsed to 3 million. No one \"solved\" horse unemployment."
+        }, {
+          "frame_number" : 2,
+          "description" : "The horse in the paddock looks small and irrelevant against the vast industrial backdrop.",
+          "dialog" : [ ],
+          "caption" : "They simply stopped being necessary."
+        } ],
+        "visual_description" : "1960 – The Luxury"
+      }, {
+        "row_number" : 3,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "A modern server farm, glowing with thousands of tiny blue LEDs. It looks like a digital necropolis.",
+          "dialog" : [ ],
+          "caption" : "AI is doing to the \"Wizards\" what the steam engine did to the horse."
+        }, {
+          "frame_number" : 2,
+          "description" : "A human face (a programmer or lawyer) is shown in profile, their features dissolving into binary code.",
+          "dialog" : [ ],
+          "caption" : "The substrate of human worth is evaporating. And this time, there is no further retreat."
+        } ],
+        "visual_description" : "The Third Migration"
+      } ]
+    }, {
+      "page_number" : 4,
+      "rows" : [ {
+        "row_number" : 1,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "The Archivist stands before a massive holographic graph. Two lines are drifting apart—one labeled \"Productivity,\" the other \"Human Wages.\"",
+          "dialog" : [ ],
+          "caption" : "In dynamical systems, we track the \"slow variables.\" Perceived worth. Economic inclusion. Institutional legitimacy."
+        }, {
+          "frame_number" : 2,
+          "description" : "A montage of decay: a boarded-up courthouse, a flickering TV news screen showing static, a \"Closed\" sign on a school.",
+          "dialog" : [ ],
+          "caption" : "These variables have been drifting for decades. We are approaching a bifurcation."
+        } ],
+        "visual_description" : "The Slow Variables"
+      }, {
+        "row_number" : 2,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "The graph on the hologram suddenly hits a jagged cliff and drops. The lines shatter.",
+          "dialog" : [ ],
+          "caption" : "A bifurcation isn't a slope. It's a snap. The old equilibrium ceases to exist."
+        }, {
+          "frame_number" : 2,
+          "description" : "A riot in a high-tech city. Police in sleek armor face off against protesters holding signs that say \"WE ARE NOT FRICTION.\"",
+          "dialog" : [ ],
+          "caption" : "The system is optimized for efficiency, not resilience. Humans are becoming friction."
+        } ],
+        "visual_description" : "The Snap"
+      }, {
+        "row_number" : 3,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "A young man sits in a dark room, illuminated only by the glow of a smartphone. He looks hollow.",
+          "dialog" : [ ],
+          "caption" : "When you lose your category of usefulness, you don't just lose a job. You lose your story."
+        }, {
+          "frame_number" : 2,
+          "description" : "The Archivist looks at the young man with pity.",
+          "dialog" : [ ],
+          "caption" : "And a human without a story is a dangerous thing."
+        } ],
+        "visual_description" : "The Loss of Meaning"
+      } ]
+    }, {
+      "page_number" : 5,
+      "rows" : [ {
+        "row_number" : 1,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "A group of \"formerly valued\" professionals—men in suits, women in lab coats—looking angry and terrified in a dark bar.",
+          "dialog" : [ ],
+          "caption" : "Status panic generates scapegoating. Scapegoating generates dehumanization."
+        }, {
+          "frame_number" : 2,
+          "description" : "A digital screen showing a populist leader pointing a finger. The background is a fiery red.",
+          "dialog" : [ ],
+          "caption" : "They will look for someone to blame. Immigrants. Elites. Shadows. Anything but the abstract truth of the substrate shift."
+        } ],
+        "visual_description" : "Status Panic"
+      }, {
+        "row_number" : 2,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "A drone swarm flying over a desert landscape. No humans are visible.",
+          "dialog" : [ ],
+          "caption" : "States are learning to fight and rule without us."
+        }, {
+          "frame_number" : 2,
+          "description" : "A high-tech \"Petrostate\" command center. AI screens monitor everything. A single operator sits in a chair, looking bored.",
+          "dialog" : [ ],
+          "caption" : "A state that doesn't need your labor doesn't need your welfare. It only needs your compliance."
+        } ],
+        "visual_description" : "The Post-Human State"
+      }, {
+        "row_number" : 3,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "A wide shot of a grand, classical government building (like the Supreme Court) sinking into a digital swamp.",
+          "dialog" : [ ],
+          "caption" : "We are told to vote, to litigate, to organize. But the institutions are captured by the same optimization logic that is replacing us."
+        }, {
+          "frame_number" : 2,
+          "description" : "Close-up on a ballot box being covered in digital cobwebs.",
+          "dialog" : [ ],
+          "caption" : "The toolkit is empty."
+        } ],
+        "visual_description" : "The Broken Tools"
+      } ]
+    }, {
+      "page_number" : 6,
+      "rows" : [ {
+        "row_number" : 1,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "A split panel. On the left, a \"Utopian\" vision: humans in a garden, AI machines in the background (The Easy Way). On the right, a scorched wasteland with ruins (The Hard Way).",
+          "dialog" : [ ],
+          "caption" : "There is an easy way. We reground human value in consciousness, not function. We redistribute the abundance."
+        }, {
+          "frame_number" : 2,
+          "description" : "The Archivist shakes their head, looking at the \"Hard Way\" side.",
+          "dialog" : [ ],
+          "caption" : "But history says we choose the hard way. Conflict. Collapse. Then rebuilding from the wreckage."
+        } ],
+        "visual_description" : "The Two Paths"
+      }, {
+        "row_number" : 2,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "The Archivist is back in the rainy alley, but they are handing a physical book to a young child.",
+          "dialog" : [ ],
+          "caption" : "The task now isn't to stop the bifurcation. It's to survive it. To build local resilience. To preserve the moral frameworks that the machine can't compute."
+        }, {
+          "frame_number" : 2,
+          "description" : "The child looks at the book. It’s a simple, hand-drawn anatomy of a human heart.",
+          "dialog" : [ ],
+          "caption" : "We must believe we have value that isn't contingent on being useful."
+        } ],
+        "visual_description" : "Preparation"
+      }, {
+        "row_number" : 3,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "A wide shot of the city. The neon lights are bright, but the shadows are deeper than ever. A single horse stands at the end of the alley, looking at the Archivist.",
+          "dialog" : [ ],
+          "caption" : "The substrate is migrating. The window is closing."
+        }, {
+          "frame_number" : 2,
+          "description" : "Close-up on The Archivist’s glowing eye. The AR display says: \"CONNECTION LOST.\"",
+          "dialog" : [ ],
+          "caption" : "Will you be a person? Or will you be the horse?"
+        }, {
+          "frame_number" : 3,
+          "description" : "Total blackness.",
+          "dialog" : [ ],
+          "caption" : "Choose fast."
+        } ],
+        "visual_description" : "The Closing Window"
+      } ]
+    } ]
+  },
+  "characterImages" : {
+    "The Archivist" : "char_The_Archivist.png",
+    "The Wizard" : "char_The_Wizard.png"
+  },
+  "rowImages" : {
+    "1_1" : "page_1_row_1.png",
+    "1_2" : "page_1_row_2.png",
+    "1_3" : "page_1_row_3.png",
+    "2_1" : "page_2_row_1.png",
+    "2_2" : "page_2_row_2.png",
+    "2_3" : "page_2_row_3.png",
+    "3_1" : "page_3_row_1.png",
+    "3_2" : "page_3_row_2.png",
+    "3_3" : "page_3_row_3.png",
+    "4_1" : "page_4_row_1.png",
+    "4_2" : "page_4_row_2.png",
+    "4_3" : "page_4_row_3.png",
+    "5_1" : "page_5_row_1.png",
+    "5_2" : "page_5_row_2.png",
+    "5_3" : "page_5_row_3.png",
+    "6_1" : "page_6_row_1.png",
+    "6_2" : "page_6_row_2.png",
+    "6_3" : "page_6_row_3.png"
+  }
+}

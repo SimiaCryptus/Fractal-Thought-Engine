@@ -1,0 +1,48 @@
+# Required fields
+title: "Andrew Charneski — Senior Software Engineer & AI Architect"
+layout: "post"
+date: 2026-02-27
+last_modified: 2026-02-27 00:00:00
+
+# Content classification
+tags:
+  - "AI-Consciousness"
+  - "Machine-Learning"
+  - "Distributed-Systems"
+  - "Neural-Networks"
+  - "Cognitive-Architecture"
+  - "Human-AI-Collaboration"
+  - "Full-Implementation"
+  - "Technical-Documentation"
+  - "Industry-Applications"
+  - "Software-Design"
+  - "Computational-Analysis"
+  - "Natural-Language-Processing"
+  - "Computer-Vision"
+  - "Optimization"
+keywords:
+  - "resume"
+  - "senior software engineer"
+  - "AI architect"
+  - "machine learning"
+  - "distributed systems"
+  - "cloud architecture"
+  - "AWS"
+  - "GPU computing"
+  - "CUDA"
+  - "Kotlin"
+  - "Java"
+  - "Scala"
+  - "neural networks"
+  - "large language models"
+  - "open source"
+  - "full stack development"
+  - "DevOps"
+  - "AI agents"
+  - "JVM"
+  - "deep learning"
+
+# Search and discovery
+description: "Professional resume of Andrew Charneski, a senior software engineer and AI architect with 20+ years of experience in AI/ML research, distributed systems, cloud infrastructure, and full-stack development."
+excerpt: "Versatile and deeply technical software engineer with over 20 years of professional experience spanning AI/ML research, distributed systems, cloud infrastructure, and full-stack development. Proven track record designing high-performance, scalable systems across artificial intelligence, financial technology, healthcare, and defense domains. Creator of multiple open-source projects including MindsEye, Skyenet, and JoePenai."
+featured_image: "main.png"

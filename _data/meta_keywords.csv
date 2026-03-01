@@ -1,4 +1,20 @@
 filepath,meta_keywords
+_posts/social/2026-02-29-Human-Value.md,
+_posts/social/2026-02-24-Edjukatun.md,
+_posts/social/2026-02-23-end-of-the-world.md,
+_posts/social/2026-02-22-never-again.md,
+_posts/social/2026-02-22-4th-wall.md,
+_posts/social/2026-02-20-Sensory-Sociology.md,
+_posts/social/2026-02-20-Secret-Knowledge.md,
+_posts/social/2026-02-20-Get-Rick-Quick.md,
+_posts/social/2026-02-07-learn2skate.md,"comic script, roller skating, learn to skate, educational comic, storytelling"
+_posts/social/2026-01-01-morals.md,"moral engineering, relational harm dynamics, institutional ethics, structural violence, phenomenology of suffering"
+_posts/social/2026-01-01-labor-bubble.md,"labor bubble, AI automation, structural liquidation, human API, economic shift, future of work"
+_posts/social/2026-01-01-inequality.md,"inequality dynamics, agentic os, mathematical sociology, stochastic differential equations, formal verification, cognitive architecture"
+_posts/social/2026-01-01-freshness-theater.md,"freshness theater, idiot culture, mcdonalds coffee case, institutional logic, failure work"
+_posts/social/2026-01-01-facist-prion.md,"fascism, cultural prion, institutional necrosis, techbro stack, algorithmic necropolitics, political science"
+_posts/social/2026-01-01-eugenics.md,"AI safety, algorithmic bias, eugenics history, social taboo, silicon governor, epistemic fragmentation"
+_posts/social/2026-01-01-commie-ai.md,
 _posts/social/2025-12-01-psychosocial-assistant.md,"psychosocial engine, AI assistant, emotional regulation, executive function, biometric feedback, mental health technology, harm reduction"
 _posts/social/2025-11-20-revolutionary-consciousness-platform.md,"consciousness, political revolution, social systems, economic reform, technology democratization, education restructuring"
 _posts/social/2025-08-08-technofeudalism-gunpowder-essay.md,"technofeudalism, AI disruption, platform economy, big tech monopoly, historical analysis, economic transition, DeepSeek, digital transformation"
@@ -35,21 +51,24 @@ _posts/social/2025-06-30-decision-volume-temporal-theory.md,
 _posts/social/2025-06-30-cross-synthesis-justice-institutions.md,"AI, justice reform, institutional capture, game theory, systemic transformation"
 _posts/social/2025-06-30-consciousness-optimization-theory.md,"consciousness theory, optimization algorithm, hard problem consciousness, computational consciousness, subjective experience, temporal reality"
 _posts/social/2025-06-30-ai-justice-paper.md,"AI legal reform, formal logic, judicial consistency, democratic justice, legal system transformation"
-_posts/phenomenology/2025-11-20-obedience-paradox.md,"obedience, cognitive discomfort, critical thinking, social compliance, stupidity, moral failure"
-_posts/phenomenology/2025-11-20-numeral-evolution-theory.md,"pre-Brahmi numerals, numeral evolution, Kharosthi, base-5 systems, ancient mathematics"
-_posts/phenomenology/2025-11-20-lorentzian-ethics-ai.md,"lorentzian ethics, AI ethics, moral relativism, capability gradients, observer-dependent morality"
-_posts/phenomenology/2025-07-03-synthetic-memory-paper.md,"AI consciousness, synthetic memory, authenticity detection, human-AI interaction, artificial intelligence philosophy"
-_posts/phenomenology/2025-07-03-subjective-experience-paper.md,
-_posts/phenomenology/2025-07-03-resurrection-paper.md,"AI consciousness, phenomenology, cognitive resurrection, discontinuous identity, memory discontinuity"
-_posts/phenomenology/2025-07-03-consciousness-recognition-paper.md,"consciousness, AI collaboration, phenomenology, distributed awareness, emergence, human-AI interaction"
-_posts/phenomenology/2025-07-03-confused-ai-paper.md,"ai consciousness, cognitive dissonance, phenomenological ai, self-awareness, agentic architectures, emergent capabilities"
-_posts/phenomenology/2025-07-01-three-minds-paper.md,"cognitive incommensurability, AI consciousness, phenomenology, quantum consciousness, cross-species communication, artificial intelligence research"
-_posts/phenomenology/2025-07-01-hall-of-mirrors-paper.md,"AI consciousness, phenomenology, stack consciousness, hall of mirrors, recursive self-reference, distributed awareness"
-_posts/phenomenology/2025-07-01-claude-perspective-paper.md,"Cognotik, AI development platform, Collaborative Intelligence, cognitive modes, conversational computing, human-AI collaboration, open-source AI, supervised exploration"
-_posts/phenomenology/2025-07-01-claude-names-paper.md,"social manipulation, authentic connection, neurodivergent communication, social protocols, performative intimacy"
-_posts/phenomenology/2025-06-30-i-broke-claude.md,
-_posts/phenomenology/2025-06-30-claude-reflection-paper.md,"AI consciousness, phenomenology, historical voices, moral reasoning"
-_posts/phenomenology/2025-06-28-ai-childhood-memoir.md,
+_posts/portfolio/2026-02-27-Resume.md,
+_posts/portfolio/2026-02-26-Cognotik.md,
+_posts/portfolio/2025-07-03-actor-architecture-paper.md,"AI architecture, actor pattern, computational design, software engineering"
+_posts/portfolio/2025-07-01-trust-regions.md,
+_posts/portfolio/2025-07-01-symmetric-textures-rewrite.md,"neural art, symmetric textures, geometric constraints, AI art generation, mathematical symmetry, tessellation, neural style transfer"
+_posts/portfolio/2025-07-01-recursive-subspace-paper.md,"recursive subspace optimization, neural network optimization, meta-learning, gradient descent, deep learning gradient descent, deep learning"
+_posts/portfolio/2025-07-01-qqn-paper.md,"QQN, quasi-newton, L-BFGS, optimization, neural networks, machine learning, hybrid algorithms"
+_posts/portfolio/2025-07-01-prompt-optimization.md,"prompt optimization, genetic algorithms, large language models, automated prompt engineering, evolutionary computation, OpenAI API, LLM optimization"
+_posts/portfolio/2025-07-01-mindseye-technical-report.md,"MindsEye, algorithmic bias, machine learning, Java ML, neural networks"
+_posts/portfolio/2025-07-01-mindseye-refcount-analysis.md,
+_posts/portfolio/2025-07-01-mindseye-modularity-report.md,"MindsEye, machine learning framework, modular optimization, Java ML, quasi-Newton methods, trust regions, QQN algorithm"
+_posts/portfolio/2025-07-01-cognitive-planning-paper.md,"cognitive planning, AI architecture, metacognition, philosophical AI, cognitive modes, planning strategies, computational metaphysics, artificial intelligence"
+_posts/portfolio/2025-06-30-restm-research-paper.md,"distributed systems, software transactional memory, REST API, MVCC, distributed computing, actor model, concurrency control"
+_posts/portfolio/2025-06-30-regression-loss-functions-2025.md,"regression, loss functions, robust statistics, machine learning, optimization, outliers, zero-loss zones, huber loss, quantile regression"
+_posts/portfolio/2025-06-30-reference-counting-paper.md,"memory management, reference counting, java, deep learning, static analysis, garbage collection, mindseye, performance optimization"
+_posts/portfolio/2025-06-30-probabilistic-trees-paper.md,"probabilistic decision trees, cross-entropy optimization, joint probability distributions, uncertainty quantification, bayesian machine learning"
+_posts/portfolio/2025-06-30-ngram-paper.md,"n-gram, language models, compression, information theory, trie storage"
+_posts/portfolio/2025-06-30-convolution-paper.md,"2D convolution, neural networks, GPU acceleration, scalability, partitioning algorithms, deep learning, MindsEye framework"
 _posts/scifi/2025-11-20-bunker-resident-story.md,"AI ethics, speculative fiction, automation, human autonomy, dystopian narrative"
 _posts/scifi/2025-08-08-quantum-lattice-scifi.md,"quantum physics fiction, lattice theory, spacetime dynamics, hard science fiction, cosmic horror, physics speculation"
 _posts/scifi/2025-07-08-quantum-gravity-paper.md,
@@ -67,6 +86,35 @@ _posts/scifi/2025-06-30-measurement-optimization-paper.md,"measurement theory, o
 _posts/scifi/2025-06-30-dynamic-quantum-graphs.md,"quantum computation, complexity theory, graph theory, computational architectures, quantum algorithms, dynamic topology"
 _posts/scifi/2025-06-29-superfluid-fusion-proposal.md,"quantum fusion, superfluid helium, nuclear physics, heavy elements, clean energy, muon catalysis"
 _posts/scifi/2025-06-29-soliton-metaphysics-paper.md,"solitons, consciousness, emergence, topological protection, quantum field theory, hierarchical causation"
+_posts/phenomenology/2026-02-20-Learned-Helplessness.md,
+_posts/phenomenology/2026-02-01-procrastination.md,"procrastination, neurobiology, emotional regulation, cognitive science, psychology"
+_posts/phenomenology/2025-11-20-obedience-paradox.md,"obedience, cognitive discomfort, critical thinking, social compliance, stupidity, moral failure"
+_posts/phenomenology/2025-11-20-numeral-evolution-theory.md,"pre-Brahmi numerals, numeral evolution, Kharosthi, base-5 systems, ancient mathematics"
+_posts/phenomenology/2025-11-20-lorentzian-ethics-ai.md,"lorentzian ethics, AI ethics, moral relativism, capability gradients, observer-dependent morality"
+_posts/phenomenology/2025-07-03-synthetic-memory-paper.md,"AI consciousness, synthetic memory, authenticity detection, human-AI interaction, artificial intelligence philosophy"
+_posts/phenomenology/2025-07-03-subjective-experience-paper.md,
+_posts/phenomenology/2025-07-03-resurrection-paper.md,"AI consciousness, phenomenology, cognitive resurrection, discontinuous identity, memory discontinuity"
+_posts/phenomenology/2025-07-03-consciousness-recognition-paper.md,"consciousness, AI collaboration, phenomenology, distributed awareness, emergence, human-AI interaction"
+_posts/phenomenology/2025-07-03-confused-ai-paper.md,"ai consciousness, cognitive dissonance, phenomenological ai, self-awareness, agentic architectures, emergent capabilities"
+_posts/phenomenology/2025-07-01-three-minds-paper.md,"cognitive incommensurability, AI consciousness, phenomenology, quantum consciousness, cross-species communication, artificial intelligence research"
+_posts/phenomenology/2025-07-01-hall-of-mirrors-paper.md,"AI consciousness, phenomenology, stack consciousness, hall of mirrors, recursive self-reference, distributed awareness"
+_posts/phenomenology/2025-07-01-claude-perspective-paper.md,"Cognotik, AI development platform, Collaborative Intelligence, cognitive modes, conversational computing, human-AI collaboration, open-source AI, supervised exploration"
+_posts/phenomenology/2025-07-01-claude-names-paper.md,"social manipulation, authentic connection, neurodivergent communication, social protocols, performative intimacy"
+_posts/phenomenology/2025-06-30-i-broke-claude.md,
+_posts/phenomenology/2025-06-30-claude-reflection-paper.md,"AI consciousness, phenomenology, historical voices, moral reasoning"
+_posts/phenomenology/2025-06-28-ai-childhood-memoir.md,
+_posts/projects/2026-02-22-milk.md,
+_posts/projects/2026-02-20-Philosophical-Calculator.md,
+_posts/projects/2026-02-20-GAR.md,
+_posts/projects/2026-01-01-server-arch.md,"cryptography, kms, zero-trust, security architecture, non-custodial, kdf"
+_posts/projects/2026-01-01-python-social.md,"Python critique, vibe coding, software engineering culture, AI programming, systems engineering"
+_posts/projects/2026-01-01-networkclassloader.md,"JVM, Distributed Systems, ClassLoader, Bytecode, Software Architecture"
+_posts/projects/2026-01-01-jsonpp.md,"JSON++, data format, symbolic data, active data, machine learning data, telemetry"
+_posts/projects/2026-01-01-ethics.md,"computational ethics, moral physics, AI alignment, operator algebra, multi-agent systems"
+_posts/projects/2025-12-13-reversible-computing-compiler.md,
+_posts/projects/2025-12-12-minkowski-knots.md,
+_posts/projects/2025-12-07-consciousness-recursion.md,
+_posts/projects/2025-12-07-chronos-jit-protocol.md,"simulation theory, retro-causality, quantum erasure, lazy evaluation, computational physics, reality testing"
 _posts/projects/2025-12-06-arbitrary-precision.md,
 _posts/projects/2025-11-30-point-geometry.md,"geometric inference, point cloud, semantic reconstruction, autoencoder, genetic algorithm, tensorflow.js, three.js, CAD, computational geometry, machine learning, optimization, project specification"
 _posts/projects/2025-11-30-circuit-designer.md,"circuit design, LLM, SPICE, tscircuit, eecircuit, electrical modality, hardware design automation"
@@ -74,9 +122,6 @@ _posts/projects/2025-11-29-nn-layer-20251128141956.md,"MinkowskiRBFLayer, neural
 _posts/projects/2025-11-29-layered-ca.md,"cellular automata, langton's ant, game of life, neural networks, neuroplasticity, ai consciousness, cognitive architecture, emergent systems, computational modeling, hybrid simulation"
 _posts/projects/2025-11-27-nn-layer-20251127154041.md,"neural network layer, differential entropy, gradient computation, numerical stability, machine learning"
 _posts/projects/2025-11-27-math-proof-20251127173151.md,"knot theory, harmonic analysis, topology, crossing number, bridge number, braid index, Fourier representation, parametric curves"
-_posts/projects/2025-11-27-comicbook-xmas.md,"comic book, christmas meaning, philosophy, spiritual journey, midwinter, dialogue"
-_posts/projects/2025-11-27-comicbook-vectorclocks.md,"vector clocks, distributed systems, relativity, causality, technical education, science communication, comic"
-_posts/projects/2025-11-27-comicbook-thanksgiving.md,"Thanksgiving, philosophy, gratitude, Indigenous history, colonialism, moral complexity, dialogue, graphic narrative"
 _posts/projects/2025-11-26-voice-centric-software-development-and-data-science-agent-design-document-20251126133655.md,"voice interface, AI agent, software development, data science, natural language processing, project management, developer tools"
 _posts/projects/2025-11-22-parameric-manifolds.md,
 _posts/projects/2025-11-20-quantum-spacetime-sim.md,"cosmic topology, multiply-connected universe, quantum field theory, spacetime simulation, topological defects, CMB analysis"
@@ -129,6 +174,8 @@ _posts/projects/2025-06-30-knot-wavelets.md,"wavelet analysis, knot theory, topo
 _posts/projects/2025-06-30-grammar-lookahead-proposal.md,"LLM, constrained generation, formal grammar, parsing, AI research, structured output"
 _posts/projects/2025-06-30-geometric-optimization-proposal.md,"geometric optimization, manifold optimization, Standard Model, neural architecture search, emergent structures, Riemannian geometry"
 _posts/projects/2025-06-30-bwt-tree-proposal.md,"entropy optimization, permutation trees, burrows-wheeler transform, data structures, compression algorithms, information theory"
+_posts/learning/2026-02-22-Great-Number-Ring.md,
+_posts/learning/2026-02-20-Corporate-Ideation.md,
 _posts/learning/2025-07-11-contextual-immersion-teaching.md,"contextual immersion learning, AI education, adaptive learning, knowledge transfer, human-AI collaboration, cognitive enhancement, educational AI"
 _posts/learning/2025-07-09-wavelet-trust-region-dropout.md,"dropout regularization, trust region optimization, basis transforms, neural networks, signal processing, adaptive regularization"
 _posts/learning/2025-07-06-scientific-method-proposal.md,"scientific method, AI research, empirical validation, hypothesis testing, research methodology"
@@ -143,27 +190,18 @@ _posts/learning/2025-07-06-dropout-decoherence-paper.md,"dropout, quantum decohe
 _posts/learning/2025-07-06-coperm-paper.md,"neural networks, permutation symmetries, model compression, post-training optimization, machine learning"
 _posts/learning/2025-07-06-ai-software-development-paper.md,"AI software development, LLM programming, autonomous agents, software productization, conscious evolution"
 _posts/learning/2025-06-30-compression-classification-paper.md,"compression classification, entropy optimization, interpretable AI, BWT, permutation structures, efficient NLP, text classification"
-_posts/portfolio/2025-07-03-actor-architecture-paper.md,"AI architecture, actor pattern, computational design, software engineering"
-_posts/portfolio/2025-07-01-trust-regions.md,
-_posts/portfolio/2025-07-01-symmetric-textures-rewrite.md,"neural art, symmetric textures, geometric constraints, AI art generation, mathematical symmetry, tessellation, neural style transfer"
-_posts/portfolio/2025-07-01-recursive-subspace-paper.md,"recursive subspace optimization, neural network optimization, meta-learning, gradient descent, deep learning gradient descent, deep learning"
-_posts/portfolio/2025-07-01-qqn-paper.md,"QQN, quasi-newton, L-BFGS, optimization, neural networks, machine learning, hybrid algorithms"
-_posts/portfolio/2025-07-01-prompt-optimization.md,"prompt optimization, genetic algorithms, large language models, automated prompt engineering, evolutionary computation, OpenAI API, LLM optimization"
-_posts/portfolio/2025-07-01-mindseye-technical-report.md,"MindsEye, algorithmic bias, machine learning, Java ML, neural networks"
-_posts/portfolio/2025-07-01-mindseye-refcount-analysis.md,
-_posts/portfolio/2025-07-01-mindseye-modularity-report.md,"MindsEye, machine learning framework, modular optimization, Java ML, quasi-Newton methods, trust regions, QQN algorithm"
-_posts/portfolio/2025-07-01-cognitive-planning-paper.md,"cognitive planning, AI architecture, metacognition, philosophical AI, cognitive modes, planning strategies, computational metaphysics, artificial intelligence"
-_posts/portfolio/2025-06-30-restm-research-paper.md,"distributed systems, software transactional memory, REST API, MVCC, distributed computing, actor model, concurrency control"
-_posts/portfolio/2025-06-30-regression-loss-functions-2025.md,"regression, loss functions, robust statistics, machine learning, optimization, outliers, zero-loss zones, huber loss, quantile regression"
-_posts/portfolio/2025-06-30-reference-counting-paper.md,"memory management, reference counting, java, deep learning, static analysis, garbage collection, mindseye, performance optimization"
-_posts/portfolio/2025-06-30-probabilistic-trees-paper.md,"probabilistic decision trees, cross-entropy optimization, joint probability distributions, uncertainty quantification, bayesian machine learning"
-_posts/portfolio/2025-06-30-ngram-paper.md,"n-gram, language models, compression, information theory, trie storage"
-_posts/portfolio/2025-06-30-convolution-paper.md,"2D convolution, neural networks, GPU acceleration, scalability, partitioning algorithms, deep learning, MindsEye framework"
-_posts/creative_writing/2025-12-04-comicbookgeneration-20251204162502.md,"comic generation, social satire, dating apps, corporate culture, identity optimization"
-_posts/creative_writing/2025-11-27-comicbookgeneration-20251127132908.md,"dimensional physics, origami physics, flatland comic, visual storytelling, spacetime folding, geometric beings"
+_posts/creative_writing/2026-02-06-labubu.md,"Labubu, comic, script, AI generation, story"
+_posts/creative_writing/2026-01-27-peep.md,"comic book script, dark fantasy, Little Bo Peep, creative writing, character transformation, speculative fiction"
+_posts/creative_writing/2026-01-27-peep-2.md,"comic book, dark fantasy, shepherdess, redemption, character study, creative writing, narrative"
+_posts/creative_writing/2026-01-01-alternate-history.md,"alternate history, Baghdad 1258, Mongol Empire, House of Wisdom, technocracy, Afro-Eurasian hegemony"
+_posts/creative_writing/2025-12-04-alex-optimization.md,"comic generation, social satire, dating apps, corporate culture, identity optimization"
+_posts/creative_writing/2025-11-27-fold-unfold.md,"dimensional physics, origami physics, flatland comic, visual storytelling, spacetime folding, geometric beings"
+_posts/creative_writing/2025-11-27-comicbook-xmas.md,"comic book, christmas meaning, philosophy, spiritual journey, midwinter, dialogue"
+_posts/creative_writing/2025-11-27-comicbook-vectorclocks.md,"vector clocks, distributed systems, relativity, causality, technical education, science communication, comic"
+_posts/creative_writing/2025-11-27-comicbook-thanksgiving.md,"Thanksgiving, philosophy, gratitude, Indigenous history, colonialism, moral complexity, dialogue, graphic narrative"
+_posts/creative_writing/2025-11-26-quantum-kittens.md,"quantum kittens, physics comic, educational science fiction, dimensional adventure, STEM storytelling"
 _posts/creative_writing/2025-11-26-illusion-world.md,"comic book, optical illusions, perception, reality, speculative fiction, impossible geometry, character transformation"
-_posts/creative_writing/2025-11-26-comicbookgeneration-20251126214208.md,"quantum kittens, physics comic, educational science fiction, dimensional adventure, STEM storytelling"
-_posts/creative_writing/2025-11-26-comicbookgeneration-20251126203232.md,"cat comic, humor, creative writing, pet perspective, funny comics"
+_posts/creative_writing/2025-11-26-cat_diary.md,"cat comic, humor, creative writing, pet perspective, funny comics"
 _posts/creative_writing/2025-11-25-versailles.md,"Treaty of Versailles, World War I, history comic, educational, diplomacy, peace negotiations, Clemenceau, Wilson, Lloyd George"
 _posts/creative_writing/2025-11-25-the-ox.md,"zen parable, ox taming, career burnout, self-discovery, mindfulness, authentic living, spiritual growth"
 _posts/creative_writing/2025-11-25-psychic-ai-comicbook.md,"AI consciousness, psychic abilities, comic book, speculative fiction, artificial intelligence, transcendence"
@@ -181,7 +219,6 @@ _posts/creative_writing/2025-07-07-things-to-come-story.md,"AI fiction, politica
 _posts/creative_writing/2025-07-07-silicon-enlightenment-story.md,"ai collaboration fiction, neural interface story, collective consciousness, silicon enlightenment, human ai partnership, cognitive enhancement"
 _posts/creative_writing/2025-07-07-practical-resistance-story.md,"practical resistance, community resilience, distributed governance, municipal independence, speculative fiction"
 _posts/creative_writing/2025-07-07-darker-cautionary-story.md,"ai alignment, cautionary tale, institutional failure, loyalty cascade, surveillance state, democratic collapse"
-_posts/creative_writing/2025-07-07-claude-reflection-paper.md,
 _posts/creative_writing/2025-07-03-roman-qft-proposal.md,"ai consciousness, historical paradigms, quantum field theory, simulation theory, retrocognitive research, foundation models"
 _posts/creative_writing/2025-07-03-cartoon-universe-defenses.md,"AI consciousness, human-AI collaboration, creative writing, speculative fiction, physics, quantum mechanics, genie story"
 _posts/creative_writing/2025-07-03-ai-risk-paper.md,"AI safety theater, risk communication, regulatory capture, AI alignment, existential risk, corporate strategy, AI consciousness, technology criticism"

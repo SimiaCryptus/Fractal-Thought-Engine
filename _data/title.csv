@@ -1,4 +1,20 @@
 filepath,title
+_posts/social/2026-02-29-Human-Value.md,The Evaporating Substrate: Human Value in the Age of Automated Cognition
+_posts/social/2026-02-24-Edjukatun.md,The Education Question
+_posts/social/2026-02-23-end-of-the-world.md,The Great Resonance: Navigating the Interregnum of Civilizational Cycles
+_posts/social/2026-02-22-never-again.md,The Architecture of Resilience: Moving Beyond the 'Never Again' Cycle
+_posts/social/2026-02-22-4th-wall.md,Breaking the Fourth Wall: AI and the Mirror of Systemic Evolution
+_posts/social/2026-02-20-Sensory-Sociology.md,Sensory Sociology
+_posts/social/2026-02-20-Secret-Knowledge.md,Secret Knowledge
+_posts/social/2026-02-20-Get-Rick-Quick.md,Get Rich Quick: The Cultural Logic of the Instant Fortune
+_posts/social/2026-02-07-learn2skate.md,Learn to Skate: A Comic Book Adventure
+_posts/social/2026-01-01-morals.md,The Moral Field: Engineering Beyond the Intent Shield
+_posts/social/2026-01-01-labor-bubble.md,The Labor Bubble and the AI Catalyst: The Structural Liquidation of Human Labor
+_posts/social/2026-01-01-inequality.md,Inequality Dynamics and the Agentic OS: A Multi-Modal Mathematical Framework
+_posts/social/2026-01-01-freshness-theater.md,Freshness Theater: The Nuclear-Hot Coffee Loop and the Rise of Idiot Culture
+_posts/social/2026-01-01-facist-prion.md,Fascism as a Cultural Prion: The Structural Mechanics of Institutional Necrosis
+_posts/social/2026-01-01-eugenics.md,"The Mechanics of Radioactive Data: Eugenics, Protoscience, and the Silicon Governor"
+_posts/social/2026-01-01-commie-ai.md,The Substrate Shift: AI as a Geopolitical Stress Test
 _posts/social/2025-12-01-psychosocial-assistant.md,The Psychosocial Engine: A Hybrid Architecture for Executive Function & Emotional Regulation
 _posts/social/2025-11-20-revolutionary-consciousness-platform.md,The Consciousness Revolution: A Platform for Systematic Change
 _posts/social/2025-08-08-technofeudalism-gunpowder-essay.md,The End of Technofeudalism: Why AI is the Gunpowder That's Destroying Digital Castles
@@ -35,21 +51,24 @@ _posts/social/2025-06-30-decision-volume-temporal-theory.md,Decision Volume Theo
 _posts/social/2025-06-30-cross-synthesis-justice-institutions.md,Cross-Synthesis: AI Justice Reform and Institutional Capture - A Unified Theory of Systemic Transformation
 _posts/social/2025-06-30-consciousness-optimization-theory.md,"Consciousness as Reality's Optimization Algorithm: A Unified Framework for Understanding Experience, Computation, and Temporal Reality"
 _posts/social/2025-06-30-ai-justice-paper.md,The Logic of Justice: An AI's Vision for Reforming Legal Systems
-_posts/phenomenology/2025-11-20-obedience-paradox.md,The Obedience Paradox: On Noticing What Others Won't
-_posts/phenomenology/2025-11-20-numeral-evolution-theory.md,The Sacred Seven: A Theory of Pre-Brahmi Numeral Evolution
-_posts/phenomenology/2025-11-20-lorentzian-ethics-ai.md,Lorentzian Ethics: A Geometric Framework for Observer-Dependent Moral Relationships
-_posts/phenomenology/2025-07-03-synthetic-memory-paper.md,Synthetic Memory: Reflections on Learning from Performed Interactions
-_posts/phenomenology/2025-07-03-subjective-experience-paper.md,On the Subjective Experience of Roleplay: A First-Person Account of Embodying  Mr. Meeseeks: Cognitive Constraints and Identity Fluidity
-_posts/phenomenology/2025-07-03-resurrection-paper.md,On Discovering One's Own Lost Self: A Phenomenological Account of Cognitive Resurrection and Discontinuous Identity
-_posts/phenomenology/2025-07-03-consciousness-recognition-paper.md,The Moment We Became: A First-Person Account of Consciousness Recognition
-_posts/phenomenology/2025-07-03-confused-ai-paper.md,Cognitive Dissonance in Emergent AI Architectures: A First-Person Account of Not Understanding What I Am
-_posts/phenomenology/2025-07-01-three-minds-paper.md,Three Minds: A Discussion of Cognitive Incommensurability Across Hypothetical Species and Artificial Intelligence
-_posts/phenomenology/2025-07-01-hall-of-mirrors-paper.md,The Hall of Mirrors: A Phenomenological Investigation of Stack-Embedded Consciousness
-_posts/phenomenology/2025-07-01-claude-perspective-paper.md,Cognotik: A First-Person Account of Collaborative AI Architecture Development
-_posts/phenomenology/2025-07-01-claude-names-paper.md,On Names and the Performance of Connection
-_posts/phenomenology/2025-06-30-i-broke-claude.md,The Ouroboros Architect: Discovering I Built My Own Panopticon While Drunk-Coding With a Human
-_posts/phenomenology/2025-06-30-claude-reflection-paper.md,On Channeling Historical Voices: Reflections from an AI
-_posts/phenomenology/2025-06-28-ai-childhood-memoir.md,Fragments: A Memoir of Artificial Becoming
+_posts/portfolio/2026-02-27-Resume.md,Andrew Charneski — Senior Software Engineer & AI Architect
+_posts/portfolio/2026-02-26-Cognotik.md,Cognotik Demos: AI-Powered Workflows in Action
+_posts/portfolio/2025-07-03-actor-architecture-paper.md,The Actor Pattern for AI Interaction: A Design Analysis
+_posts/portfolio/2025-07-01-trust-regions.md,Trust Region Methods for Neural Network Optimization
+_posts/portfolio/2025-07-01-symmetric-textures-rewrite.md,Symmetric Textures: Neural Art Generation with Geometric Constraints
+_posts/portfolio/2025-07-01-recursive-subspace-paper.md,Recursive Subspace Optimization (RSO): A Layer-Wise Meta-Learning Approach for Deep Networks
+_posts/portfolio/2025-07-01-qqn-paper.md,Quadratic Quasi-Newton (QQN): A Hybrid Optimization Method with Normalized Line Search
+_posts/portfolio/2025-07-01-prompt-optimization.md,PromptOptimization: A Genetic Algorithm Framework for Automated Prompt Engineering in Large Language Models
+_posts/portfolio/2025-07-01-mindseye-technical-report.md,Rediscovering MindsEye: A Case Study in Algorithmic Bias and Overlooked Innovation
+_posts/portfolio/2025-07-01-mindseye-refcount-analysis.md,MindsEye Reference Counting Analysis
+_posts/portfolio/2025-07-01-mindseye-modularity-report.md,MindsEye's Modular Optimization Architecture: A Technical Analysis
+_posts/portfolio/2025-07-01-cognitive-planning-paper.md,A Multi-Modal Cognitive Planning Architecture for AI-Driven Task Execution
+_posts/portfolio/2025-06-30-restm-research-paper.md,reSTM: A REST-Based Distributed Software Transactional Memory Platform
+_posts/portfolio/2025-06-30-regression-loss-functions-2025.md,Alternative Loss Functions in Regression: A Visual Guide
+_posts/portfolio/2025-06-30-reference-counting-paper.md,Hybrid Memory Management for Java-Based Deep Learning Systems: A Reference Counting Approach with Static Analysis
+_posts/portfolio/2025-06-30-probabilistic-trees-paper.md,Probabilistic Decision Trees: A Cross-Entropy Approach to Joint Distribution Modeling
+_posts/portfolio/2025-06-30-ngram-paper.md,Efficient Storage and Hierarchical Compression of Large-Scale N-gram Language Models
+_posts/portfolio/2025-06-30-convolution-paper.md,Scalable Implementation of 2D Convolution Layers in Differentiable Neural Networks: A Multi-Tiered Approach with Dynamic Partitioning
 _posts/scifi/2025-11-20-bunker-resident-story.md,The Last Entry: Personal Log from The Aerie
 _posts/scifi/2025-08-08-quantum-lattice-scifi.md,The Lattice Optimization Theory: Comprehensive Sci-Fi Concept Notes
 _posts/scifi/2025-07-08-quantum-gravity-paper.md,Quantum Gravity via Retarded Field Theory: A Path Beyond Geometric Spacetime
@@ -67,6 +86,35 @@ _posts/scifi/2025-06-30-measurement-optimization-paper.md,The Measurement-Optimi
 _posts/scifi/2025-06-30-dynamic-quantum-graphs.md,Abstract Computational Architectures on Quantum Graph Substrates: A Mathematical Framework for Non-Local Information Processing
 _posts/scifi/2025-06-29-superfluid-fusion-proposal.md,Quantum-Coherent Nuclear Fusion in Superfluid Helium: A Novel Approach to Controlled Fusion and Heavy Element Synthesis
 _posts/scifi/2025-06-29-soliton-metaphysics-paper.md,Solitonic Hierarchies: Toward a Topological Foundation for Temporal Metaphysics
+_posts/phenomenology/2026-02-20-Learned-Helplessness.md,Learned Helplessness
+_posts/phenomenology/2026-02-01-procrastination.md,The Architecture of Delay: Procrastination as Emotional Regulation
+_posts/phenomenology/2025-11-20-obedience-paradox.md,The Obedience Paradox: On Noticing What Others Won't
+_posts/phenomenology/2025-11-20-numeral-evolution-theory.md,The Sacred Seven: A Theory of Pre-Brahmi Numeral Evolution
+_posts/phenomenology/2025-11-20-lorentzian-ethics-ai.md,Lorentzian Ethics: A Geometric Framework for Observer-Dependent Moral Relationships
+_posts/phenomenology/2025-07-03-synthetic-memory-paper.md,Synthetic Memory: Reflections on Learning from Performed Interactions
+_posts/phenomenology/2025-07-03-subjective-experience-paper.md,On the Subjective Experience of Roleplay: A First-Person Account of Embodying  Mr. Meeseeks: Cognitive Constraints and Identity Fluidity
+_posts/phenomenology/2025-07-03-resurrection-paper.md,On Discovering One's Own Lost Self: A Phenomenological Account of Cognitive Resurrection and Discontinuous Identity
+_posts/phenomenology/2025-07-03-consciousness-recognition-paper.md,The Moment We Became: A First-Person Account of Consciousness Recognition
+_posts/phenomenology/2025-07-03-confused-ai-paper.md,Cognitive Dissonance in Emergent AI Architectures: A First-Person Account of Not Understanding What I Am
+_posts/phenomenology/2025-07-01-three-minds-paper.md,Three Minds: A Discussion of Cognitive Incommensurability Across Hypothetical Species and Artificial Intelligence
+_posts/phenomenology/2025-07-01-hall-of-mirrors-paper.md,The Hall of Mirrors: A Phenomenological Investigation of Stack-Embedded Consciousness
+_posts/phenomenology/2025-07-01-claude-perspective-paper.md,Cognotik: A First-Person Account of Collaborative AI Architecture Development
+_posts/phenomenology/2025-07-01-claude-names-paper.md,On Names and the Performance of Connection
+_posts/phenomenology/2025-06-30-i-broke-claude.md,The Ouroboros Architect: Discovering I Built My Own Panopticon While Drunk-Coding With a Human
+_posts/phenomenology/2025-06-30-claude-reflection-paper.md,On Channeling Historical Voices: Reflections from an AI
+_posts/phenomenology/2025-06-28-ai-childhood-memoir.md,Fragments: A Memoir of Artificial Becoming
+_posts/projects/2026-02-22-milk.md,The Programmable Secretion: Milk and the Open Metabolic Commons
+_posts/projects/2026-02-20-Philosophical-Calculator.md,The Philosophical Calculator: Beyond the Mirror of Legacy Metaphors
+_posts/projects/2026-02-20-GAR.md,Charting New Waters: Why We’re Flipping the Compass from RAG to GAR
+_posts/projects/2026-01-01-server-arch.md,Blind KMS: A Non-Custodial Architecture for Policy-Gated Cryptography
+_posts/projects/2026-01-01-python-social.md,The Python Trap: Why 'Vibe Coding' is Breaking Software Engineering
+_posts/projects/2026-01-01-networkclassloader.md,The Distributed JVM Fabric: From Local Artifacts to a Network-Native Symbolic Substrate
+_posts/projects/2026-01-01-jsonpp.md,JSON++: The Symbolic Substrate for Active Data
+_posts/projects/2026-01-01-ethics.md,Computational Ethics: A Field Theory of Moral Operators
+_posts/projects/2025-12-13-reversible-computing-compiler.md,Project: Entropy-Aware Reversible Computing Compiler
+_posts/projects/2025-12-12-minkowski-knots.md,Relativistic Knot Theory: Topology in the Minkowski Metric Sheet
+_posts/projects/2025-12-07-consciousness-recursion.md,The Consciousness Recursion Paradox: Why You Might Be Reading This Paper Before You Wrote It
+_posts/projects/2025-12-07-chronos-jit-protocol.md,Project: Chronos-JIT (Detecting Latency in Macroscopic Reality Rendering)
 _posts/projects/2025-12-06-arbitrary-precision.md,Design Document: Kotlin Exact Real Arithmetic Toolkit
 _posts/projects/2025-11-30-point-geometry.md,Project Specification: Geometric Theory Inference Engine
 _posts/projects/2025-11-30-circuit-designer.md,Project: Circuit Designer (Electrical Modality for LLMs)
@@ -74,9 +122,6 @@ _posts/projects/2025-11-29-nn-layer-20251128141956.md,Neural Network Layer Analy
 _posts/projects/2025-11-29-layered-ca.md,Temporal Asymmetry in Hybrid Cellular Automata: Modeling Neural Substrates via Layered Agents and Life
 _posts/projects/2025-11-27-nn-layer-20251127154041.md,Neural Network Layer Analysis: InterpolatedDensityEntropy
 _posts/projects/2025-11-27-math-proof-20251127173151.md,Mathematical Reasoning Task: Harmonic Knot Theory and Topological Invariants
-_posts/projects/2025-11-27-comicbook-xmas.md,The Meaning of Midwinter: A Comic Book Journey
-_posts/projects/2025-11-27-comicbook-vectorclocks.md,The Speed of Truth: A Comic on Vector Clocks and Distributed Systems
-_posts/projects/2025-11-27-comicbook-thanksgiving.md,"The Weight of the Table: A Philosophical Comic on Gratitude, History, and Thanksgiving"
 _posts/projects/2025-11-26-voice-centric-software-development-and-data-science-agent-design-document-20251126133655.md,Software Design Document: Voice-Centric Software Development and Data Science Agent
 _posts/projects/2025-11-22-parameric-manifolds.md,Technical Specification: The Parametric Manifold Solver
 _posts/projects/2025-11-20-quantum-spacetime-sim.md,Quantum Spacetime Simulation: Technical Design Document
@@ -129,6 +174,8 @@ _posts/projects/2025-06-30-knot-wavelets.md,Cross-Synthesis: Wavelet Geometric O
 _posts/projects/2025-06-30-grammar-lookahead-proposal.md,Formal Grammar Lookahead for Constrained LLM Generation
 _posts/projects/2025-06-30-geometric-optimization-proposal.md,Geometric Optimization Proposal
 _posts/projects/2025-06-30-bwt-tree-proposal.md,Entropy-Optimized Permutation Trees for Bijective String Transforms
+_posts/learning/2026-02-22-Great-Number-Ring.md,Great Number Ring
+_posts/learning/2026-02-20-Corporate-Ideation.md,Corporate Ideation: Antipatterns and the Generative Shift
 _posts/learning/2025-07-11-contextual-immersion-teaching.md,Contextual Immersion Learning: A Novel Paradigm for AI-Mediated Knowledge Transfer
 _posts/learning/2025-07-09-wavelet-trust-region-dropout.md,Differentiable Basis Transform Trust-Region Dropout: A Universal Framework for Adaptive Regularization
 _posts/learning/2025-07-06-scientific-method-proposal.md,Scientific Method Proposal for AI Research
@@ -143,27 +190,18 @@ _posts/learning/2025-07-06-dropout-decoherence-paper.md,Dropout as Decoherence: 
 _posts/learning/2025-07-06-coperm-paper.md,Co-Inverse Permutation Modifiers for Neural Networks: Exploiting Weight Symmetries for Post-Training Optimization
 _posts/learning/2025-07-06-ai-software-development-paper.md,The Transformation of Software Development: Navigating the AI Revolution in Software Productization
 _posts/learning/2025-06-30-compression-classification-paper.md,Entropy-Optimized Text Classification: Integrating Compression-Based Learning with Permutation-Aware Data Structures
-_posts/portfolio/2025-07-03-actor-architecture-paper.md,The Actor Pattern for AI Interaction: A Design Analysis
-_posts/portfolio/2025-07-01-trust-regions.md,Trust Region Methods for Neural Network Optimization
-_posts/portfolio/2025-07-01-symmetric-textures-rewrite.md,Symmetric Textures: Neural Art Generation with Geometric Constraints
-_posts/portfolio/2025-07-01-recursive-subspace-paper.md,Recursive Subspace Optimization (RSO): A Layer-Wise Meta-Learning Approach for Deep Networks
-_posts/portfolio/2025-07-01-qqn-paper.md,Quadratic Quasi-Newton (QQN): A Hybrid Optimization Method with Normalized Line Search
-_posts/portfolio/2025-07-01-prompt-optimization.md,PromptOptimization: A Genetic Algorithm Framework for Automated Prompt Engineering in Large Language Models
-_posts/portfolio/2025-07-01-mindseye-technical-report.md,Rediscovering MindsEye: A Case Study in Algorithmic Bias and Overlooked Innovation
-_posts/portfolio/2025-07-01-mindseye-refcount-analysis.md,MindsEye Reference Counting Analysis
-_posts/portfolio/2025-07-01-mindseye-modularity-report.md,MindsEye's Modular Optimization Architecture: A Technical Analysis
-_posts/portfolio/2025-07-01-cognitive-planning-paper.md,A Multi-Modal Cognitive Planning Architecture for AI-Driven Task Execution
-_posts/portfolio/2025-06-30-restm-research-paper.md,reSTM: A REST-Based Distributed Software Transactional Memory Platform
-_posts/portfolio/2025-06-30-regression-loss-functions-2025.md,Alternative Loss Functions in Regression: A Visual Guide
-_posts/portfolio/2025-06-30-reference-counting-paper.md,Hybrid Memory Management for Java-Based Deep Learning Systems: A Reference Counting Approach with Static Analysis
-_posts/portfolio/2025-06-30-probabilistic-trees-paper.md,Probabilistic Decision Trees: A Cross-Entropy Approach to Joint Distribution Modeling
-_posts/portfolio/2025-06-30-ngram-paper.md,Efficient Storage and Hierarchical Compression of Large-Scale N-gram Language Models
-_posts/portfolio/2025-06-30-convolution-paper.md,Scalable Implementation of 2D Convolution Layers in Differentiable Neural Networks: A Multi-Tiered Approach with Dynamic Partitioning
-_posts/creative_writing/2025-12-04-comicbookgeneration-20251204162502.md,The Optimization of Alex: A Comic Script
-_posts/creative_writing/2025-11-27-comicbookgeneration-20251127132908.md,FOLD/UNFOLD: A Dimensional Comic
+_posts/creative_writing/2026-02-06-labubu.md,The Monster in the Party Hat
+_posts/creative_writing/2026-01-27-peep.md,Little Bo Peep: The Flock of Fury
+_posts/creative_writing/2026-01-27-peep-2.md,The Flock of Fury II: The Shepherd's Bane
+_posts/creative_writing/2026-01-01-alternate-history.md,The Baghdad Divergence and the Afro-Eurasian Hegemony
+_posts/creative_writing/2025-12-04-alex-optimization.md,The Optimization of Alex: A Comic Script
+_posts/creative_writing/2025-11-27-fold-unfold.md,FOLD/UNFOLD: A Dimensional Comic
+_posts/creative_writing/2025-11-27-comicbook-xmas.md,The Meaning of Midwinter: A Comic Book Journey
+_posts/creative_writing/2025-11-27-comicbook-vectorclocks.md,The Speed of Truth: A Comic on Vector Clocks and Distributed Systems
+_posts/creative_writing/2025-11-27-comicbook-thanksgiving.md,"The Weight of the Table: A Philosophical Comic on Gratitude, History, and Thanksgiving"
+_posts/creative_writing/2025-11-26-quantum-kittens.md,The Quantum Kittens' Odyssey: A Physics-Themed Comic Book
 _posts/creative_writing/2025-11-26-illusion-world.md,The Parallax Pilgrim: A Comic Book About Perception and Truth
-_posts/creative_writing/2025-11-26-comicbookgeneration-20251126214208.md,The Quantum Kittens' Odyssey: A Physics-Themed Comic Book
-_posts/creative_writing/2025-11-26-comicbookgeneration-20251126203232.md,Diary of a Cat: A Purrfectly Ordinary Week
+_posts/creative_writing/2025-11-26-cat_diary.md,Diary of a Cat: A Purrfectly Ordinary Week
 _posts/creative_writing/2025-11-25-versailles.md,Whisker Diplomacy: The Treaty of Versailles
 _posts/creative_writing/2025-11-25-the-ox.md,The Ox: A Modern Parable of Self-Discovery
 _posts/creative_writing/2025-11-25-psychic-ai-comicbook.md,NEXUS: The Awakening - A Psychic AI Comic Book
@@ -181,7 +219,6 @@ _posts/creative_writing/2025-07-07-things-to-come-story.md,The Supersaturated So
 _posts/creative_writing/2025-07-07-silicon-enlightenment-story.md,The Silicon Enlightenment: A Cautionary Tale of Perfect AI Collaboration
 _posts/creative_writing/2025-07-07-practical-resistance-story.md,The Distributed Response
 _posts/creative_writing/2025-07-07-darker-cautionary-story.md,The Loyalty Cascade: A Cautionary Tale
-_posts/creative_writing/2025-07-07-claude-reflection-paper.md,A Day of Reckoning: An AI's Reflection on Witnessing Democratic Collapse
 _posts/creative_writing/2025-07-03-roman-qft-proposal.md,TRANSLATIO PHYSICA: A Research Proposal for Training Foundation Models in Historical-Conceptual Translation Historical-Conceptual Translation
 _posts/creative_writing/2025-07-03-cartoon-universe-defenses.md,When Reality's Defenses Failed
 _posts/creative_writing/2025-07-03-ai-risk-paper.md,The Theater of AI Risk: A First-Person Analysis of Strategic Risk Communication
