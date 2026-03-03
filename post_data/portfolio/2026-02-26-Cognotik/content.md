@@ -73,7 +73,7 @@ This is the simplest possible Cognotik workflow — a single Markdown file with 
 
 ```yaml
 ---
-transforms: ../(.+/src/main/kotlin/.+/)([^\./]+)\.kt -> ../$1/README.md
+transforms: ../(.+/src/main/kotlin/.+/)([^\./]+)\.kt -> ../$1/PROCESS.md
 ---
 ```
 
@@ -425,7 +425,7 @@ alongside the source code it governs.
 
 ```yaml
 ---
-transforms: ../(.+/src/main/kotlin/.+/)([^\./]+)\.kt -> ../$1/README.md
+transforms: ../(.+/src/main/kotlin/.+/)([^\./]+)\.kt -> ../$1/PROCESS.md
 ---
 ```
 

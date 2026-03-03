@@ -1,30 +1,23 @@
 ---
-title: Secret Knowledge
-layout: post
-date: 2026-02-20T00:00:00.000Z
-last_modified: 2026-02-20T00:00:00.000Z
-tags:
-  - Social-Systems
-  - Game-Theory
-  - Theoretical-Framework
-  - Complexity-Science
-  - Science-Philosophy
-  - Position-Paper
-  - Creative-Writing
-  - Philosophy-of-Mind
+date: '"2026-02-20T00:00:00.000Z"'
+description: >-
+  An analysis of secret knowledge as a primordial property of social systems and
+  a fundamental governance technology used to manage operational opacity.
+featured_image: /assets/images/2026-02-20-Secret-Knowledge/main.png
 keywords:
   - secret knowledge
   - primordial property
   - governance technology
   - operational opacity
-description: >-
-  An analysis of secret knowledge as a primordial property of social systems and
-  a fundamental governance technology used to manage operational opacity.
-excerpt: >-
-  This paper investigates the structural role of secrecy through a formal
-  taxonomy, the concept of technical debt in social systems, and the strategic
-  dynamics of the three-player game.
-featured_image: /assets/images/2026-02-20-Secret-Knowledge/main.png
+tags:
+  - paper
+  - sociology
+  - game-theory
+  - institutional-analysis
+  - Creative-Writing
+  - Philosophy-of-Mind
+title: Secret Knowledge
+category: social
 content_formats:
   - article
   - narrative

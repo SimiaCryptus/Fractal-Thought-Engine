@@ -1,28 +1,24 @@
 ---
-title: Great Number Ring
-layout: post
-date: 2026-02-22T00:00:00.000Z
-last_modified: 2026-02-22T00:00:00.000Z
+date: '"2026-02-22T00:00:00.000Z"'
 description: >-
   An investigation into the topological nature of the real number system,
   exploring the thesis that the real line functions as a circle of infinite
   radius, unifying the concepts of linear progression and cyclical return.
-excerpt: >-
-  Explore the mathematical perspective that treats the real number line as an
-  infinite circle, bridging the gap between the finite and the infinite.
 featured_image: /assets/images/2026-02-22-Great-Number-Ring/main.png
-tags:
-  - Topology
-  - Mathematical-Modeling
-  - Theoretical-Framework
-  - Science-Philosophy
-  - Philosophy-of-Mind
 keywords:
   - projective geometry
-  - Fourier transform
+  - fourier transform
   - cosmology
   - real number system
   - infinite radius
+tags:
+  - paper
+  - topology
+  - mathematics
+  - philosophy
+  - Philosophy-of-Mind
+title: Great Number Ring
+category: learning
 content_formats:
   - article
   - socratic

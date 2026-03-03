@@ -143,13 +143,37 @@ async function importPosts() {
 
                 // Process frontmatter images
                 frontmatterData = await processFrontmatterImages(frontmatterData, postDir, postSlug);
+                // Auto-impute featured_image from main.png if not set
+                if (!frontmatterData.featured_image) {
+                    const mainImagePath = path.join(postDir, 'main.png');
+                    try {
+                        await fs.access(mainImagePath);
+                        const newPath = await copyImageFromPostDir('main.png', postDir, postSlug);
+                        if (newPath) {
+                            frontmatterData.featured_image = newPath;
+                            console.log(`    📷 Auto featured_image: main.png -> ${newPath}`);
+                        }
+                    } catch (error) {
+                        // main.png doesn't exist, skip
+                    }
+                }
+
+                // Auto-insert category based on first directory of content path
+                const relativePath = path.relative(inputDir, postDir);
+                const pathParts = relativePath.split(path.sep);
+                if (pathParts.length > 1 && !frontmatterData.category) {
+                    frontmatterData.category = pathParts[0];
+                    console.log(`    📂 Auto-category: ${frontmatterData.category}`);
+                }
+
 // Define content files to look for
                const contentFiles = [
                     { filename: 'content.md', title: 'Article', id: 'article' },
-                    { filename: 'tutorial.md', title: 'Tutorial', id: 'tutorial' },
+                    { filename: 'brainstorm.md', title: 'Brainstorm', id: 'brainstorm' },
                     { filename: 'comic.md', title: 'Comic', id: 'comic' },
                     { filename: 'comic_seq.md', title: 'Comic 2', id: 'comic_seq' },
                     { filename: 'comic_seq_seq.md', title: 'Comic 3', id: 'comic_seq_seq' },
+                    { filename: 'tutorial.md', title: 'Tutorial', id: 'tutorial' },
                     { filename: 'narrative.md', title: 'Narrative', id: 'narrative' },
                     { filename: 'narrative_seq.md', title: 'Narrative 2', id: 'narrative_seq' },
                     { filename: 'narrative_seq_seq.md', title: 'Narrative 3', id: 'narrative_seq_seq' },
@@ -241,7 +265,6 @@ async function importPosts() {
 
                 // Reconstruct the output path
                 // post_data/2024/01/my-post/ -> _posts/2024/01/my-post.md
-                const relativePath = path.relative(inputDir, postDir);
                 const outputPath = path.join(outputDir, relativePath + '.md');
 
                 // Ensure output directory exists

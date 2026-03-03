@@ -224,7 +224,7 @@ toc:
 # Override default robots.txt generation
 include:
   - robots.txt
-  - README.md
+  - PROCESS.md
   - LICENSE
   - .gitignore
 

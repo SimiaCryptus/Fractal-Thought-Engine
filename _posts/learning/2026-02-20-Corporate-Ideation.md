@@ -1,30 +1,24 @@
 ---
-title: 'Corporate Ideation: Antipatterns and the Generative Shift'
-layout: post
-date: 2026-02-20T00:00:00.000Z
-last_modified: 2026-02-20T12:00:00.000Z
-tags:
-  - Social-Systems
-  - Theoretical-Framework
-  - Position-Paper
-  - Research-Paper
-  - Academic-Research
-  - Philosophy-of-Mind
-  - Computational-Analysis
-keywords:
-  - innovation
-  - corporate bureaucracy
-  - generative AI
-  - organizational design
-  - ideation
+date: '"2026-02-20T00:00:00.000Z"'
 description: >-
   An analysis of structural antipatterns in corporate ideation and how
   generative AI is shifting the cost landscape of innovation.
-excerpt: >-
-  Large organizations often claim to prioritize innovation while maintaining
-  structures that suppress it. This paper identifies these antipatterns and
-  explores the transition to constraint-governed environments enabled by AI.
 featured_image: /assets/images/2026-02-20-Corporate-Ideation/main.png
+keywords:
+  - innovation
+  - corporate bureaucracy
+  - generative ai
+  - organizational design
+  - ideation
+tags:
+  - paper
+  - sociology
+  - economics
+  - institutional-analysis
+  - Philosophy-of-Mind
+  - Computational-Analysis
+title: 'Corporate Ideation: Antipatterns and the Generative Shift'
+category: learning
 content_formats:
   - article
   - socratic

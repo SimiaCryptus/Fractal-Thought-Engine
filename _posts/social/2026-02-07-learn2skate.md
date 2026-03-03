@@ -1,72 +1,22 @@
 ---
-title: 'Learn to Skate: A Comic Book Adventure'
-layout: post
-date: 2026-02-07T00:00:00.000Z
-last_modified: 2026-02-07T12:00:00.000Z
-category: social
-subcategory: Skill Acquisition
-tags:
-  - Social-Systems
-  - Education
-  - Creative-Writing
-  - Tutorial
-  - Educational-Resource
+date: '"2026-02-07T00:00:00.000Z"'
+description: >-
+  A generated comic book script describing a young girl's journey to learn
+  roller skating, combining narrative storytelling with instructional steps.
+featured_image: /assets/images/2026-02-07-learn2skate/page_1_row_1.png
 keywords:
   - roller skating
   - comic generation
   - instructional story
-  - Lily
+  - lily
   - learning curve
-status: stable
-last_thought_date: 2026-02-07T00:00:00.000Z
-thought_generation: 1
-reading_order: 1
-difficulty_level: accessible
-reading_time_minutes: 10
-document_type: synthesis
-thinking_style: intuitive
-consciousness_level: emergent
-engagement_type: contemplative
-reader_participation: active
-cognitive_load: light
-description: >-
-  A generated comic book script describing a young girl's journey to learn
-  roller skating, combining narrative storytelling with instructional steps.
-excerpt: >-
-  Seven-year-old Lily receives her very first pair of roller skates from her dad
-  and embarks on a fun, step-by-step journey to learn how to skate. The comic
-  doubles as a real instructional guide.
-featured_image: /assets/images/2026-02-07-learn2skate/page_1_row_1.png
-og_image: /assets/images/2026-02-07-learn2skate/page_1_row_1.png
-meta_title: 'Learn to Skate: Generated Comic Script'
-meta_description: >-
-  A detailed comic book script about learning to roller skate. Follow Lily's
-  progress from putting on gear to her first victory lap.
-meta_keywords: 'comic script, roller skating, learn to skate, educational comic, storytelling'
-og_title: 'Learn to Skate: A Comic Book Adventure'
-og_description: A heartwarming instructional comic script about learning to skate.
-og_type: article
-og_locale: en_US
-og_site_name: Fractal Thought Engine
-schema_type: CreativeWork
-schema_headline: 'Learn to Skate: A Comic Book Adventure'
-schema_author: Fractal Thought Engine
-schema_date_published: 2026-02-07T00:00:00.000Z
-schema_date_modified: 2026-02-07T00:00:00.000Z
-schema_image: /assets/images/2026-02-07-learn2skate/page_1_row_1.png
-schema_word_count: 2000
-schema_reading_time: PT10M
-robots: 'index,follow'
-googlebot: 'index,follow'
-content_rating: general
-content_language: en
-geo_region: Global
-priority: 0.6
-changefreq: monthly
-is_featured: false
-is_cornerstone: false
-is_gateway: true
-is_synthesis: true
+tags:
+  - comic-book
+  - creative-writing
+  - education
+  - Tutorial
+title: 'Learn to Skate: A Comic Book Adventure'
+category: social
 content_formats:
   - article
   - tutorial

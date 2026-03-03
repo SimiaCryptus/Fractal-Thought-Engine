@@ -1,37 +1,28 @@
 ---
-title: 'Get Rich Quick: The Cultural Logic of the Instant Fortune'
-layout: post
-date: 2026-02-20T00:00:00.000Z
-last_modified: 2026-02-20T10:00:00.000Z
-tags:
-  - Social-Systems
-  - Economics
-  - Theoretical-Framework
-  - Social-Justice
-  - Position-Paper
-  - Commentary
-  - Popular-Science
-  - Creative-Writing
-  - Philosophy-of-Mind
-  - Computational-Analysis
+date: '"2026-02-20T00:00:00.000Z"'
+description: >-
+  An analysis of the "Get Rich Quick" narrative as a cultural technology that
+  maintains the economic status quo by transmuting systemic inequality into
+  individual aspiration.
+featured_image: /assets/images/2026-02-20-Get-Rick-Quick/main.png
 keywords:
-  - Get Rich Quick
+  - get rich quick
   - economic inequality
   - social mobility
   - financialization
   - class disparity
   - lottery
   - social control
-description: >-
-  An analysis of the "Get Rich Quick" narrative as a cultural technology that
-  maintains the economic status quo by transmuting systemic inequality into
-  individual aspiration.
-excerpt: >-
-  This essay examines how Get Rich Quick schemes function as structural
-  artifacts of modern economic life, serving as psychological pressure valves
-  and tools of social control that neutralize collective dissent through the
-  promise of the "big win."
-featured_image: /assets/images/2026-02-20-Get-Rick-Quick/main.png
+tags:
+  - paper
+  - economics
+  - sociology
+  - political-economy
+  - Creative-Writing
+  - Philosophy-of-Mind
+  - Computational-Analysis
+title: 'Get Rich Quick: The Cultural Logic of the Instant Fortune'
+category: social
 content_formats:
   - article
   - narrative

@@ -1,39 +1,19 @@
 ---
-title: >-
-  The Consciousness Recursion Paradox: Why You Might Be Reading This Paper
-  Before You Wrote It
-layout: post
-date: 2025-12-07T00:00:00.000Z
-last_modified: 2025-12-07T14:30:00.000Z
-category: projects
-subcategory: Philosophy & Consciousness
-featured_image: /assets/images/2025-12-07-consciousness-recursion/main.png
-og_image: >-
-  /assets/images/2025-12-07-consciousness-recursion/recursive_hand_writing_paradox.png
-tags:
-  - Philosophy-of-Mind
-  - Quantum-Physics
-  - Theoretical-Framework
-  - Phenomenology
-  - Information-Theory
-status: stable
-last_thought_date: 2025-12-07T00:00:00.000Z
-thought_generation: 1
-related_documents:
-  - ../learning/2025-07-06-probabilistic-neural-substrate.md
-  - ../projects/2025-08-08-bifurcation-cascade-paper.md
-reading_order: 1
-difficulty_level: research
-document_type: research_paper
-thinking_style: phenomenological
-consciousness_level: recursive
-engagement_type: experimental
-reader_participation: co-creative
-cognitive_load: transcendent
+date: '"2025-12-07T00:00:00.000Z"'
 description: >-
   A rigorous exploration of how consciousness might create retroactive causality
   through observation, suggesting that reading this paper may have caused its
   own writing.
+featured_image: /assets/images/2025-12-07-consciousness-recursion/main.png
+tags:
+  - paper
+  - philosophy
+  - consciousness
+  - quantum-physics
+title: >-
+  The Consciousness Recursion Paradox: Why You Might Be Reading This Paper
+  Before You Wrote It
+category: projects
 ---
 # The Consciousness Recursion Paradox: Why You Might Be Reading This Paper Before You've Written It
 

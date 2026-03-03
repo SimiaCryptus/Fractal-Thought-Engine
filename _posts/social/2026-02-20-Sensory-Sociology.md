@@ -1,27 +1,22 @@
 ---
-title: Sensory Sociology
-layout: post
-date: 2026-02-20T00:00:00.000Z
-last_modified: 2026-02-20T00:00:00.000Z
-tags:
-  - Sensory Sociology
-  - Sociology
-  - Qualitative Research
-  - Methodology
-  - Creative-Writing
-  - Philosophy-of-Mind
-keywords:
-  - Sensory Sociology
-  - Senses
-  - Social Theory
-  - Research Methods
+date: '"2026-02-20T00:00:00.000Z"'
 description: >-
   An exploration of sensory sociology and its implications for qualitative
   research.
-excerpt: >-
-  Sensory sociology offers a unique lens through which to understand social life
-  by focusing on the senses.
 featured_image: /assets/images/2026-02-20-Sensory-Sociology/main.png
+keywords:
+  - sensory sociology
+  - senses
+  - social theory
+  - research methods
+tags:
+  - paper
+  - sociology
+  - phenomenology
+  - Creative-Writing
+  - Philosophy-of-Mind
+title: Sensory Sociology
+category: social
 content_formats:
   - article
   - narrative

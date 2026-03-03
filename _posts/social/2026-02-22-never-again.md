@@ -1,19 +1,10 @@
 ---
-title: 'The Architecture of Resilience: Moving Beyond the ''Never Again'' Cycle'
-layout: post
-date: 2026-02-22T00:00:00.000Z
-last_modified: 2026-02-22T15:30:00.000Z
-tags:
-  - Systems-Science
-  - Complexity-Science
-  - Theoretical-Framework
-  - Science-Philosophy
-  - Position-Paper
-  - Distributed-Systems
-  - Cognitive-Architecture
-  - Social-Systems
-  - Philosophy-of-Mind
-  - Computational-Analysis
+date: '"2026-02-22T00:00:00.000Z"'
+description: >-
+  An analysis of systemic resilience, advocating for a shift from reactive
+  'Never Again' mandates to proactive architectural principles like
+  observability, safe-to-fail boundaries, and restorative accountability.
+featured_image: /assets/images/2026-02-22-never-again/main.png
 keywords:
   - resilience
   - safety-ii
@@ -22,17 +13,15 @@ keywords:
   - technical-debt
   - conways-law
   - automation-irony
-description: >-
-  An analysis of systemic resilience, advocating for a shift from reactive
-  'Never Again' mandates to proactive architectural principles like
-  observability, safe-to-fail boundaries, and restorative accountability.
-excerpt: >-
-  True resilience requires a fundamental shift in perspective: moving away from
-  a reactive 'Never Again' mentality toward a proactive, systemic approach. By
-  understanding the architecture of resilience, we can design systems that are
-  not merely robust against known threats, but are inherently capable of
-  adapting and thriving amidst the unknown.
-featured_image: /assets/images/2026-02-22-never-again/main.png
+tags:
+  - paper
+  - complexity-science
+  - institutional-analysis
+  - distributed-systems
+  - Philosophy-of-Mind
+  - Computational-Analysis
+title: 'The Architecture of Resilience: Moving Beyond the ''Never Again'' Cycle'
+category: social
 content_formats:
   - article
   - socratic

@@ -1,29 +1,24 @@
 ---
-title: Learned Helplessness
-layout: post
-date: 2026-02-20T00:00:00.000Z
-last_modified: 2026-02-20T00:00:00.000Z
-tags:
-  - Psychology
-  - Behavioral Science
-  - Mental Health
-  - Philosophy-of-Mind
+date: '"2026-02-20T00:00:00.000Z"'
+description: >-
+  An exploration of the psychological phenomenon of learned helplessness, its
+  origins in behavioral research, and its implications for mental health and
+  motivation.
+featured_image: /assets/images/2026-02-20-Learned-Helplessness/main.png
 keywords:
   - learned helplessness
   - psychology
   - motivation
   - depression
   - martin seligman
-description: >-
-  An exploration of the psychological phenomenon of learned helplessness, its
-  origins in behavioral research, and its implications for mental health and
-  motivation.
-excerpt: >-
-  Learned helplessness is a state that occurs after a person has experienced a
-  stressful situation repeatedly. They come to believe that they are unable to
-  control or change the situation, so they do not try — even when opportunities
-  for change become available.
-featured_image: /assets/images/2026-02-20-Learned-Helplessness/main.png
+tags:
+  - paper
+  - phenomenology
+  - psychology
+  - ethics
+  - Philosophy-of-Mind
+title: Learned Helplessness
+category: phenomenology
 content_formats:
   - article
   - socratic

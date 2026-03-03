@@ -1,17 +1,10 @@
 ---
-title: 'The Philosophical Calculator: Beyond the Mirror of Legacy Metaphors'
-layout: post
-date: 2026-02-20T00:00:00.000Z
-last_modified: 2026-02-20T00:00:00.000Z
-tags:
-  - AI-Consciousness
-  - Philosophy-of-Mind
-  - Cognitive-Architecture
-  - Theoretical-Framework
-  - Computational-Analysis
-  - Science-Philosophy
-  - Ethics-Technology
-  - Research-Paper
+date: '"2026-02-20T00:00:00.000Z"'
+description: >-
+  A proposal for a new ontology of AI, reframing LLMs as 'Philosophical
+  Calculators' that perform high-dimensional conceptual arithmetic rather than
+  mimicking human cognition.
+featured_image: /assets/images/2026-02-20-Philosophical-Calculator/main.png
 keywords:
   - ontological misalignment
   - legacy metaphors
@@ -19,18 +12,16 @@ keywords:
   - conceptual arithmetic
   - latent space
   - vector arithmetic
-  - AI alignment
+  - ai alignment
   - augmented rationality
-description: >-
-  A proposal for a new ontology of AI, reframing LLMs as 'Philosophical
-  Calculators' that perform high-dimensional conceptual arithmetic rather than
-  mimicking human cognition.
-excerpt: >-
-  This article deconstructs the legacy metaphors of the Computer, the Oracle,
-  and the Person used to describe AI, proposing instead a dual-layered ontology
-  of a mechanical substrate (the Calculator) and a behavioral surface (the
-  Philosopher).
-featured_image: /assets/images/2026-02-20-Philosophical-Calculator/main.png
+tags:
+  - paper
+  - ai-consciousness
+  - philosophy
+  - cognitive-architecture
+  - Philosophy-of-Mind
+title: 'The Philosophical Calculator: Beyond the Mirror of Legacy Metaphors'
+category: projects
 content_formats:
   - article
   - socratic

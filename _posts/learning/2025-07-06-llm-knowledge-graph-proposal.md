@@ -1,14 +1,9 @@
 ---
 tags:
-  - LLMs
-  - Data Structures
-  - Proposal
+  - proposal
+  - machine-learning
+  - data-structures
 category: learning
-subcategory: Symbiotic Epistemology
-related_documents:
-  - _posts/projects/2025-07-11-agentic-cms-spec.md
-  - _posts/learning/2025-07-06-llm-feedback-dynamics.md
-  - _posts/consciousness/2025-07-06-echosynth-proposal.md
 ---
 date: 2025-07-06
 ---

@@ -1,8 +1,9 @@
 #!/usr/bin/env node
 const fs = require('fs').promises;
 const path = require('path');
-const matter = require('gray-matter');
- const { glob } = require('glob');
+const yaml = require('js-yaml');
+const { glob } = require('glob');
+
 function toCsvValue(val) {
     if (val === undefined || val === null) return '';
     let stringVal;
@@ -23,28 +24,34 @@ function toCsvValue(val) {
     console.log('========================\n');
 
     try {
-        const files = await glob('_posts/**/*.md');
-        console.log(`Found ${files.length} markdown files.\n`);
+        const files = await glob('post_data/**/frontmatter.yaml');
+        console.log(`Found ${files.length} frontmatter files.\n`);
 
         const allData = [];
-        const allKeys = new Set(['filepath']); // Ensure filepath is first
+        const allKeys = new Set(['frontmatter_path']); // Ensure path is first
 
         // 1. Read all files and collect data + keys
         for (const file of files) {
             try {
                 const content = await fs.readFile(file, 'utf-8');
-                const parsed = matter(content);
                 
-                // Store relative path
+                const parsed = yaml.load(content);
+
+                if (!parsed || typeof parsed !== 'object') {
+                    console.warn(`⚠️ Skipping ${file}: empty or invalid YAML`);
+                    continue;
+                }
+
                 const relativePath = path.relative('.', file);
                 
+
                 const rowData = {
-                    filepath: relativePath,
-                    ...parsed.data
+                    frontmatter_path: relativePath,
+                    ...parsed
                 };
 
                 // Track all unique keys found across all files
-                Object.keys(parsed.data).forEach(k => allKeys.add(k));
+                Object.keys(parsed).forEach(k => allKeys.add(k));
                 
                 allData.push(rowData);
             } catch (err) {
@@ -60,16 +67,16 @@ function toCsvValue(val) {
             // ignore if exists
         }
 
-        // 3. Export CSVs per key
-        const keysToExport = Array.from(allKeys).filter(k => k !== 'filepath');
+        // 3. Export CSVs per key  
+        const keysToExport = Array.from(allKeys).filter(k => k !== 'frontmatter_path');
         
         for (const key of keysToExport) {
             const csvRows = [];
-            // Header: filepath, key_name
-            csvRows.push(`filepath,${toCsvValue(key)}`);
+            // Header: frontmatter_path, key_name
+            csvRows.push(`frontmatter_path,${toCsvValue(key)}`);
             
             for (const row of allData) {
-                const fileVal = toCsvValue(row.filepath);
+                const fileVal = toCsvValue(row.frontmatter_path);
                 const dataVal = toCsvValue(row[key]);
                 csvRows.push(`${fileVal},${dataVal}`);
             }

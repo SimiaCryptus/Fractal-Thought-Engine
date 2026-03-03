@@ -1,5 +1,6 @@
 ---
 transforms:
+  - (../.+)/brainstorm\.md -> $1/content.md
   - (../.+)/content\.md -> $1/content.md
   - (../.+)/notes\..* -> $1/content.md
   - (../.+)/dialectical\.md -> $1/content.md
@@ -9,6 +10,7 @@ transforms:
   - (../.+)/persuasive\.md -> $1/content.md
   - (../.+)/socratic\.md -> $1/content.md
   - (../.+)/statemachine\.md -> $1/content.md
+  - (../.+)/web_research\.md -> $1/content.md
 ---
 
 * Update the document

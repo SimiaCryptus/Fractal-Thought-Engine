@@ -1,0 +1,1 @@
+Successfully generated and saved image to <a href="fileIndex/G-20260302-Mz6B//home/andrew/code/Fractal-Thought-Engine/post_data/portfolio/2025-07-01-cognitive-planning-paper/main.png">/home/andrew/code/Fractal-Thought-Engine/post_data/portfolio/2025-07-01-cognitive-planning-paper/main.png</a>.

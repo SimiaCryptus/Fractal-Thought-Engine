@@ -1,0 +1,1 @@
+Successfully generated and saved image to <a href="fileIndex/G-20260302-crtm//home/andrew/code/Fractal-Thought-Engine/post_data/portfolio/2025-07-01-mindseye-modularity-report/main.png">/home/andrew/code/Fractal-Thought-Engine/post_data/portfolio/2025-07-01-mindseye-modularity-report/main.png</a>.
