@@ -18,6 +18,8 @@ tags:
   - software-engineering
   - algorithms
   - Multi-Perspective-Analysis
+  - Ideation
+  - Research
 title: >-
   Hybrid Memory Management for Java-Based Deep Learning Systems: A Reference
   Counting Approach with Static Analysis
@@ -1400,8 +1402,8 @@ Execution Configuration (click to expand)
 
                                                                                                                                                                                                                                                                                                                                                                                                                                       
 ### Link Processing Summary for [The Oral History Reader](https://eclass.duth.gr/modules/document/file.php/KOM03267/Perks%20Thomson%20The_Oral_History_Reader.pdf)
-<details>
-<summary>**Links Found:** 7, **Added to Queue:** 2, **Skipped:** 5</summary>
+
+**Links Found:** 7, **Added to Queue:** 2, **Skipped:** 5
 
 - ⏭️ **[MindsEye GitHub Repository](https://github.com/search?q=MindsEye+Java)** - Relevance: 100.0  - Tags: Source Code, MindsEye, Java
 - ✅ **[Netty Reference Counted Objects](https://netty.io/wiki/reference-counted-objects.html)** - Relevance: 95.0  - Tags: Reference Counting, Java, Documentation
@@ -1411,7 +1413,7 @@ Execution Configuration (click to expand)
 - ✅ **[The Checker Framework](https://checkerframework.org/)** - Relevance: 85.0  - Tags: Static Analysis, Verification, Java
 - ✅ **[ZGC (The Z Garbage Collector)](https://openjdk.org/jeps/333)** - Relevance: 80.0  - Tags: Garbage Collection, JVM, Performance
 
-</details>
+
 
 **Completed:** 18:47:56
 **Processing Time:** 1175588ms
@@ -1420,12 +1422,12 @@ Execution Configuration (click to expand)
 
 
 ### Link Processing Summary for [Detailed Developer Guide (Google Docs)](https://docs.google.com/document/d/15SzONTa9D5sR-3fehFPm_GWCQxhht0A7IjR_1_vIlk4/edit?usp=sharing)
-<details>
-<summary>**Links Found:** 1, **Added to Queue:** 0, **Skipped:** 1</summary>
+
+**Links Found:** 1, **Added to Queue:** 0, **Skipped:** 1
 
 - ✅ **[Mindseye Manual (Google Doc)](https://docs.google.com/document/d/15SzONTa9D5sR-3fehFPm_GWCQxhht0A7IjR_1_vIlk4/edit?usp=sharing)** - Relevance: 100.0  - Tags: documentation, manual, technical-specifications, reference-counting
 
-</details>
+
 
 **Completed:** 18:48:15
 **Processing Time:** 18216ms
@@ -1434,8 +1436,8 @@ Execution Configuration (click to expand)
 
 
 ### Link Processing Summary for [MindsEye GitHub Repository](https://github.com/minds-eye)
-<details>
-<summary>**Links Found:** 5, **Added to Queue:** 1, **Skipped:** 4</summary>
+
+**Links Found:** 5, **Added to Queue:** 1, **Skipped:** 4
 
 - ✅ **[Netty Reference Counting Guide](https://netty.io/wiki/reference-counted-objects.html)** - Relevance: 90.0  - Tags: Netty, Reference Counting, Documentation
 - ✅ **[Apache Arrow Java Documentation](https://arrow.apache.org/docs/java/)** - Relevance: 85.0  - Tags: Apache Arrow, Memory Management, Java
@@ -1443,7 +1445,7 @@ Execution Configuration (click to expand)
 - ⏭️ **[GitHub Search for "MindsEye" + "Java"](https://github.com/search?q=MindsEye+language%3AJava&type=repositories)** - Relevance: 95.0  - Tags: GitHub Search, Source Code, Java
 - ✅ **[ZGC and Shenandoah Performance Benchmarks](https://openjdk.org/jeps/333)** - Relevance: 80.0  - Tags: JVM, Garbage Collection, Benchmarks
 
-</details>
+
 
 **Completed:** 18:48:23
 **Processing Time:** 26332ms
@@ -1452,8 +1454,8 @@ Execution Configuration (click to expand)
 
 
 ### Link Processing Summary for [Netty Reference Counting Documentation](https://netty.io/wiki/reference-counted-objects.html)
-<details>
-<summary>**Links Found:** 5, **Added to Queue:** 4, **Skipped:** 1</summary>
+
+**Links Found:** 5, **Added to Queue:** 4, **Skipped:** 1
 
 - ✅ **[Netty Reference Counted Objects Wiki](https://netty.io/wiki/reference-counted-objects.html)** - Relevance: 100.0  - Tags: Documentation, Wiki
 - ✅ **[Netty GitHub Repository](https://github.com/netty/netty)** - Relevance: 85.0  - Tags: Source Code, GitHub
@@ -1461,7 +1463,7 @@ Execution Configuration (click to expand)
 - ✅ **[StackOverflow: Buffer ownership in Netty 4](http://stackoverflow.com/questions/15781276/buffer-ownership-in-netty-4-how-is-buffer-life-cycle-managed)** - Relevance: 90.0  - Tags: Architecture, Lifecycle
 - ✅ **[Netty API Javadoc (ByteBuf)](https://netty.io/4.1/api/index.html?io/netty/buffer/ByteBuf.html)** - Relevance: 95.0  - Tags: API Reference, Javadoc
 
-</details>
+
 
 **Completed:** 18:48:26
 **Processing Time:** 29202ms
@@ -1475,15 +1477,15 @@ Execution Configuration (click to expand)
 
 
 ### Link Processing Summary for [StackOverflow: Buffer ownership in Netty 4](http://stackoverflow.com/questions/15781276/buffer-ownership-in-netty-4-how-is-buffer-life-cycle-managed)
-<details>
-<summary>**Links Found:** 4, **Added to Queue:** 1, **Skipped:** 3</summary>
+
+**Links Found:** 4, **Added to Queue:** 1, **Skipped:** 3
 
 - ✅ **[Netty Wiki: Reference Counted Objects](http://netty.io/wiki/reference-counted-objects.html)** - Relevance: 100.0  - Tags: documentation, netty, guide
 - ✅ **[Why manual RC if JVM GC is in place?](http://stackoverflow.com/questions/28647048/why-do-we-need-to-manually-handle-reference-counting-for-netty-bytebuf-if-jvm-gc)** - Relevance: 95.0  - Tags: stackoverflow, discussion, performance
 - ⏭️ **[MindsEye GitHub Project](https://github.com/search?q=MindsEye)** - Relevance: 70.0  - Tags: github, machine learning, implementation
 - ✅ **[Apache Arrow Memory Management](https://arrow.apache.org/docs/java/memory.html)** - Relevance: 85.0  - Tags: apache arrow, documentation, comparison
 
-</details>
+
 
 **Completed:** 18:48:50
 **Processing Time:** 23164ms
@@ -1492,8 +1494,8 @@ Execution Configuration (click to expand)
 
 
 ### Link Processing Summary for [StackOverflow: Why manual reference counting in Netty?](http://stackoverflow.com/questions/28647048/why-do-we-need-to-manually-handle-reference-counting-for-netty-bytebuf-if-jvm-gc)
-<details>
-<summary>**Links Found:** 5, **Added to Queue:** 2, **Skipped:** 3</summary>
+
+**Links Found:** 5, **Added to Queue:** 2, **Skipped:** 3
 
 - ⏭️ **[Netty 4 at Twitter: Reduced GC Overhead](https://blog.twitter.com/2013/netty-4-at-twitter-reduced-gc-overhead)** - Relevance: 95.0  - Tags: Case Study, Performance, Twitter, Netty
 - ✅ **[Why do we need to manually handle reference counting for Netty ByteBuf?](http://stackoverflow.com/questions/28647048/why-do-we-need-to-manually-handle-reference-counting-for-netty-bytebuf-if-jvm-gc)** - Relevance: 90.0  - Tags: Technical Discussion, Netty, ByteBuf, StackOverflow
@@ -1501,7 +1503,7 @@ Execution Configuration (click to expand)
 - ✅ **[Buffer Ownership and Lifecycle in Netty 4](https://stackoverflow.com/questions/15781276/buffer-ownership-in-netty-4-how-is-buffer-life-cycle-managed)** - Relevance: 88.0  - Tags: Netty, Lifecycle, Ownership, StackOverflow
 - ✅ **[Are Java DirectByteBuffer wrappers garbage collected?](https://stackoverflow.com/questions/6697709/are-java-directbytebuffer-wrappers-garbage-collected)** - Relevance: 80.0  - Tags: DirectByteBuffer, JVM, Garbage Collection, StackOverflow
 
-</details>
+
 
 **Completed:** 18:49:09
 **Processing Time:** 42153ms
@@ -1517,15 +1519,15 @@ Execution Configuration (click to expand)
 
 
 ### Link Processing Summary for [Netty Wiki: Reference Counted Objects](http://netty.io/wiki/reference-counted-objects.html)
-<details>
-<summary>**Links Found:** 4, **Added to Queue:** 1, **Skipped:** 3</summary>
+
+**Links Found:** 4, **Added to Queue:** 1, **Skipped:** 3
 
 - ✅ **[Netty Reference Counted Objects Wiki](http://netty.io/wiki/reference-counted-objects.html)** - Relevance: 100.0  - Tags: Documentation, Wiki, Reference Counting
 - ✅ **[ResourceLeakDetector Javadoc](https://netty.io/4.1/api/io/netty/util/ResourceLeakDetector.html)** - Relevance: 95.0  - Tags: API, Javadoc, Leak Detection
 - ✅ **[Why manual reference counting for Netty ByteBuf? (StackOverflow)](http://stackoverflow.com/questions/28647048/why-do-we-need-to-manually-handle-reference-counting-for-netty-bytebuf-if-jvm-gc)** - Relevance: 90.0  - Tags: Community, StackOverflow, Performance
 - ✅ **[Buffer Ownership in Netty 4 (StackOverflow)](http://stackoverflow.com/questions/15781276/buffer-ownership-in-netty-4-how-is-buffer-life-cycle-managed)** - Relevance: 85.0  - Tags: Community, StackOverflow, Lifecycle
 
-</details>
+
 
 **Completed:** 18:49:37
 **Processing Time:** 26957ms
@@ -1534,8 +1536,8 @@ Execution Configuration (click to expand)
 
 
 ### Link Processing Summary for [OpenJDK Project Panama](https://openjdk.org/projects/panama/)
-<details>
-<summary>**Links Found:** 5, **Added to Queue:** 4, **Skipped:** 1</summary>
+
+**Links Found:** 5, **Added to Queue:** 4, **Skipped:** 1
 
 - ✅ **[JEP-424: Foreign Function & Memory API](https://openjdk.org/jeps/424)** - Relevance: 100.0  - Tags: JEP, FFM API, Memory Management
 - ✅ **[Panama Foreign Memory Access Design Doc](https://github.com/openjdk/panama-foreign/blob/foreign-memaccess%2Babi/doc/panama_memaccess.md)** - Relevance: 95.0  - Tags: Design Doc, Technical Rationale, Memory Access
@@ -1543,7 +1545,7 @@ Execution Configuration (click to expand)
 - ✅ **[Talk: ByteBuffers are dead, long live ByteBuffers!](https://archive.fosdem.org/2020/schedule/event/bytebuffers/)** - Relevance: 85.0  - Tags: Talk, Performance, Benchmarking, ByteBuffer
 - ✅ **[JEP-426: Vector API](https://openjdk.org/jeps/426)** - Relevance: 80.0  - Tags: JEP, Vector API, SIMD, HPC
 
-</details>
+
 
 **Completed:** 18:49:40
 **Processing Time:** 29940ms
@@ -1557,13 +1559,13 @@ Execution Configuration (click to expand)
 
 
 ### Link Processing Summary for [Panama Foreign Memory Access Design Doc](https://github.com/openjdk/panama-foreign/blob/foreign-memaccess%2Babi/doc/panama_memaccess.md)
-<details>
-<summary>**Links Found:** 2, **Added to Queue:** 0, **Skipped:** 2</summary>
+
+**Links Found:** 2, **Added to Queue:** 0, **Skipped:** 2
 
 - ✅ **[Project Panama Foreign Memory Access Documentation](https://github.com/openjdk/panama-foreign/blob/foreign-memaccess%2Babi/doc/panama_memaccess.md)** - Relevance: 95.0  - Tags: documentation, panama, memory-management
 - ✅ **[OpenJDK Panama-Foreign Repository](https://github.com/openjdk/panama-foreign)** - Relevance: 90.0  - Tags: source-code, openjdk, panama
 
-</details>
+
 
 **Completed:** 18:50:02
 **Processing Time:** 22235ms
@@ -1572,15 +1574,15 @@ Execution Configuration (click to expand)
 
 
 ### Link Processing Summary for [ResourceLeakDetector Javadoc](https://netty.io/4.1/api/io/netty/util/ResourceLeakDetector.html)
-<details>
-<summary>**Links Found:** 4, **Added to Queue:** 3, **Skipped:** 1</summary>
+
+**Links Found:** 4, **Added to Queue:** 3, **Skipped:** 1
 
 - ✅ **[Netty ResourceLeakDetector API](https://netty.io/4.1/api/io/netty/util/ResourceLeakDetector.html)** - Relevance: 95.0  - Tags: API Documentation, Core Class
 - ✅ **[Netty ResourceLeakTracker API](https://netty.io/4.1/api/io/netty/util/ResourceLeakTracker.html)** - Relevance: 90.0  - Tags: API Documentation, Interface
 - ✅ **[Netty ResourceLeakDetector.Level](https://netty.io/4.1/api/io/netty/util/ResourceLeakDetector.Level.html)** - Relevance: 85.0  - Tags: Configuration, Performance
 - ✅ **[The Netty Project Home](https://netty.io/)** - Relevance: 70.0  - Tags: Project Home, Context
 
-</details>
+
 
 **Completed:** 18:50:14
 **Processing Time:** 34248ms
@@ -1589,15 +1591,15 @@ Execution Configuration (click to expand)
 
 
 ### Link Processing Summary for [Netty ResourceLeakTracker API](https://netty.io/4.1/api/io/netty/util/ResourceLeakTracker.html)
-<details>
-<summary>**Links Found:** 4, **Added to Queue:** 0, **Skipped:** 4</summary>
+
+**Links Found:** 4, **Added to Queue:** 0, **Skipped:** 4
 
 - ✅ **[Netty ResourceLeakDetector Documentation](https://netty.io/4.1/api/io/netty/util/ResourceLeakDetector.html)** - Relevance: 95.0  - Tags: documentation, netty, api
 - ✅ **[Netty ByteBuf Reference Counting Guide](https://netty.io/wiki/reference-counted-objects.html)** - Relevance: 90.0  - Tags: guide, netty, reference-counting
 - ✅ **[Apache Arrow Memory Management](https://arrow.apache.org/docs/java/memory.html)** - Relevance: 85.0  - Tags: apache-arrow, memory-management, comparison
 - ⏭️ **[MindsEye GitHub Repository](https://github.com/search?q=MindsEye+Java)** - Relevance: 75.0  - Tags: github, mindseye, source-code
 
-</details>
+
 
 **Completed:** 18:50:36
 **Processing Time:** 21096ms
@@ -1606,8 +1608,8 @@ Execution Configuration (click to expand)
 
 
 ### Link Processing Summary for [LIDA Cognitive Architecture (Official Site)](https://ccrg.cs.memphis.edu/)
-<details>
-<summary>**Links Found:** 5, **Added to Queue:** 5, **Skipped:** 0</summary>
+
+**Links Found:** 5, **Added to Queue:** 5, **Skipped:** 0
 
 - ✅ **[CCRG Framework Page](https://ccrg.cs.memphis.edu/framework.html)** - Relevance: 95.0  - Tags: source code, documentation, technical specifications, LIDA
 - ✅ **[CCRG Papers/Publications](https://ccrg.cs.memphis.edu/papers.html)** - Relevance: 90.0  - Tags: research, benchmarks, reference counting
@@ -1615,7 +1617,7 @@ Execution Configuration (click to expand)
 - ✅ **[LIDA Tutorial](https://ccrg.cs.memphis.edu/tutorial/index.html)** - Relevance: 80.0  - Tags: Cognitive Cycle, functional requirements
 - ✅ **[Sean Kugele’s VISCA 2021 Talk](https://youtu.be/ddR04gZ2z4M)** - Relevance: 85.0  - Tags: video, performance optimization, software stack
 
-</details>
+
 
 **Completed:** 18:50:39
 **Processing Time:** 23616ms
@@ -1624,8 +1626,8 @@ Execution Configuration (click to expand)
 
 
 ### Link Processing Summary for [Panama Foreign Support GitHub Repository](https://github.com/openjdk/panama-foreign)
-<details>
-<summary>**Links Found:** 6, **Added to Queue:** 4, **Skipped:** 2</summary>
+
+**Links Found:** 6, **Added to Queue:** 4, **Skipped:** 2
 
 - ✅ **[Project Panama Home Page](https://openjdk.org/projects/panama)** - Relevance: 95.0  - Tags: Project Home, Roadmap
 - ✅ **[JEP 424: Foreign Function & Memory API](https://openjdk.java.net/jeps/424)** - Relevance: 100.0  - Tags: JEP, Specification, Memory Model
@@ -1634,7 +1636,7 @@ Execution Configuration (click to expand)
 - ⏭️ **[MindsEye Project Search](https://github.com/search?q=MindsEye)** - Relevance: 80.0  - Tags: External Project, Reference Counting
 - ✅ **[JDK Panama Early Access Binaries](http://jdk.java.net/panama/)** - Relevance: 85.0  - Tags: Downloads, Early Access, Benchmarking
 
-</details>
+
 
 **Completed:** 18:51:11
 **Processing Time:** 55806ms
@@ -1643,15 +1645,15 @@ Execution Configuration (click to expand)
 
 
 ### Link Processing Summary for [CCRG Projects Page](https://ccrg.cs.memphis.edu/projects.html)
-<details>
-<summary>**Links Found:** 4, **Added to Queue:** 1, **Skipped:** 3</summary>
+
+**Links Found:** 4, **Added to Queue:** 1, **Skipped:** 3
 
 - ✅ **[CCRG GitHub Organization](https://github.com/orgs/CognitiveComputingResearchGroup)** - Relevance: 95.0  - Tags: Source Code, GitHub, Software Management
 - ✅ **[LIDA Framework Documentation](https://ccrg.cs.memphis.edu/framework.html)** - Relevance: 90.0  - Tags: Documentation, Java, Implementation
 - ✅ **[CCRG Research Papers](https://ccrg.cs.memphis.edu/papers.html)** - Relevance: 85.0  - Tags: Research, Publications, Technical Theory
 - ✅ **[Vector LIDA Project Details](https://ccrg.cs.memphis.edu/projects.html)** - Relevance: 80.0  - Tags: Projects, Vector LIDA, SDM, MCR
 
-</details>
+
 
 **Completed:** 18:51:30
 **Processing Time:** 19224ms
@@ -1660,8 +1662,8 @@ Execution Configuration (click to expand)
 
 
 ### Link Processing Summary for [Project Panama Home Page](https://openjdk.org/projects/panama)
-<details>
-<summary>**Links Found:** 6, **Added to Queue:** 1, **Skipped:** 5</summary>
+
+**Links Found:** 6, **Added to Queue:** 1, **Skipped:** 5
 
 - ✅ **[JEP-424: Foreign Function & Memory API](https://openjdk.org/jeps/424)** - Relevance: 100.0  - Tags: JEP, Official Documentation, API
 - ✅ **[Panama Foreign Memory Access Design Doc](https://github.com/openjdk/panama-foreign/blob/foreign-memaccess%2Babi/doc/panama_memaccess.md)** - Relevance: 95.0  - Tags: Design Document, Technical Specification
@@ -1670,7 +1672,7 @@ Execution Configuration (click to expand)
 - ✅ **[ByteBuffers are dead, long live ByteBuffers! (Talk)](https://archive.fosdem.org/2020/schedule/event/bytebuffers/)** - Relevance: 80.0  - Tags: Performance, Conference Talk, Comparison
 - ✅ **[Panama Foreign Support GitHub](https://github.com/openjdk/panama-foreign)** - Relevance: 90.0  - Tags: Source Code, Community, Development
 
-</details>
+
 
 **Completed:** 18:52:04
 **Processing Time:** 52508ms
@@ -1679,8 +1681,8 @@ Execution Configuration (click to expand)
 
 
 ### Link Processing Summary for [JEP 424: Foreign Function & Memory API](https://openjdk.java.net/jeps/424)
-<details>
-<summary>**Links Found:** 7, **Added to Queue:** 4, **Skipped:** 3</summary>
+
+**Links Found:** 7, **Added to Queue:** 4, **Skipped:** 3
 
 - ✅ **[JEP 434: Foreign Function & Memory API (Second Preview)](https://openjdk.java.net/jeps/434)** - Relevance: 100.0  - Tags: Specification, Core Technology
 - ✅ **[Project Panama (OpenJDK)](https://openjdk.java.net/projects/panama/)** - Relevance: 95.0  - Tags: Project Home, Native Interop
@@ -1690,7 +1692,7 @@ Execution Configuration (click to expand)
 - ✅ **[The ZGC Project](https://openjdk.java.net/projects/zgc)** - Relevance: 80.0  - Tags: Garbage Collection, Benchmarking
 - ✅ **[JMH (Java Microbenchmark Harness)](https://github.com/openjdk/jmh)** - Relevance: 80.0  - Tags: Tools, Benchmarking
 
-</details>
+
 
 **Completed:** 18:52:14
 **Processing Time:** 63102ms
@@ -1709,9 +1711,9 @@ Execution Configuration (click to expand)
 **Success Rate:** 86%
 
 
-</div>
 
-<div id="final-output" class="tab-content" style="display: block;" markdown="1">
+
+
 
 ## Final Summary
 
@@ -1823,7 +1825,7 @@ The following pages were not processed:
 42. [The Mind's Eye in Chess (Chase & Simon, 1973)](https://www.sciencedirect.com/science/article/abs/pii/0010028573900042), Relevance Score: 60.252
 
 
-</div>
+
 
 
 

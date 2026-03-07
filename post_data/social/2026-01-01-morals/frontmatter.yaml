@@ -1,6 +1,6 @@
 date: '"2026-01-01T00:00:00.000Z"'
 description: An analysis of Western ethics as a governance tool and a proposal for Relational Harm Dynamics (RHD) to replace intent-based morality with impact-based engineering.
-featured_image: main.png
+featured_image: /assets/images/2026-01-01-morals/main.png
 keywords:
   - intent shield
   - relational harm dynamics
@@ -14,4 +14,11 @@ tags:
   - philosophy
   - mathematics
   - sociology
+  - Software-Design
+  - Philosophy-of-Mind
 title: 'The Moral Field: Engineering Beyond the Intent Shield'
+category: social
+content_formats:
+  - article
+  - design
+  - socratic

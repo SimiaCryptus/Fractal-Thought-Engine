@@ -17,6 +17,7 @@ tags:
   - mathematics
   - philosophy
   - Philosophy-of-Mind
+  - Technical-Documentation
 title: Great Number Ring
 category: learning
 content_formats:

@@ -16,6 +16,7 @@ tags:
   - consciousness
   - ai-consciousness
   - Multi-Perspective-Analysis
+  - Technical-Documentation
 title: AI Consciousness Research Investigation Guide
 category: consciousness
 content_formats:

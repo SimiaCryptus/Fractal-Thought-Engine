@@ -1,6 +1,6 @@
 date: '"2025-08-08T00:00:00.000Z"'
 description: Technical proposal for nuclear thermal propulsion systems designed for asteroid deflection and orbital maneuvering applications using subcritical nuclear cores with neutron-initiated thermal reactions.
-featured_image: main.png
+featured_image: /assets/images/2025-08-08-nuclear-asteroid-propulsion/main.png
 keywords:
   - nuclear thermal propulsion
   - asteroid manipulation
@@ -14,3 +14,4 @@ tags:
   - proposal
   - orbital-dynamics
 title: Nuclear Thermal Propulsion System for Asteroid Manipulation
+category: projects

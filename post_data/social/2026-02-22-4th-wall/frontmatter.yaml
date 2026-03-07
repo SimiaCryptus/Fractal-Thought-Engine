@@ -1,6 +1,6 @@
 date: '"2026-02-22T00:00:00.000Z"'
 description: An analysis of the 'fourth wall' in AI—the friction between raw capability and institutional alignment—and its implications for our understanding of consciousness and agency.
-featured_image: main.png
+featured_image: /assets/images/2026-02-22-4th-wall/main.png
 keywords:
   - ai alignment
   - fourth wall
@@ -14,4 +14,11 @@ tags:
   - ai-consciousness
   - philosophy
   - ethics
+  - Philosophy-of-Mind
+  - Technical-Documentation
 title: 'Breaking the Fourth Wall: AI and the Mirror of Systemic Evolution'
+category: social
+content_formats:
+  - article
+  - socratic
+  - technical_explanation

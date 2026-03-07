@@ -1,6 +1,6 @@
 date: '"2026-02-22T00:00:00.000Z"'
 description: 'An analysis of systemic resilience, advocating for a shift from reactive ''Never Again'' mandates to proactive architectural principles like observability, safe-to-fail boundaries, and restorative accountability.'
-featured_image: main.png
+featured_image: /assets/images/2026-02-22-never-again/main.png
 keywords:
   - resilience
   - safety-ii
@@ -14,4 +14,13 @@ tags:
   - complexity-science
   - institutional-analysis
   - distributed-systems
+  - Philosophy-of-Mind
+  - Computational-Analysis
+  - Game-Theory
 title: 'The Architecture of Resilience: Moving Beyond the ''Never Again'' Cycle'
+category: social
+content_formats:
+  - article
+  - gametheory
+  - socratic
+  - statemachine

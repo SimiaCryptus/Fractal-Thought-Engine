@@ -1,6 +1,6 @@
 date: '"2025-07-06T00:00:00.000Z"'
 description: 'A novel computational paradigm proposing Probabilistic Neural Substrates (PNS) that maintain continuous probability distributions through cross-entropy optimization, enabling self-organizing recurrent intelligence with unprecedented interpretability and uncertainty quantification.'
-featured_image: main.png
+featured_image: /assets/images/2025-07-06-probabilistic-neural-substrate/main.png
 keywords:
   - probabilistic neural networks
   - cross-entropy optimization
@@ -15,4 +15,9 @@ tags:
   - machine-learning
   - mathematics
   - cognitive-architecture
+  - Multi-Perspective-Analysis
 title: 'Probabilistic Neural Substrates: A Cross-Entropy Approach to Recurrent Intelligence'
+category: learning
+content_formats:
+  - article
+  - perspectives

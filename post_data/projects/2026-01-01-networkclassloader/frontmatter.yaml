@@ -1,6 +1,6 @@
 date: '"2026-01-01T00:00:00.000Z"'
 description: A deep dive into evolving the Java Virtual Machine from a local artifact-based model to a network-native symbolic substrate.
-featured_image: main.png
+featured_image: /assets/images/2026-01-01-networkclassloader/main.png
 keywords:
   - jvm
   - classloader
@@ -13,4 +13,11 @@ tags:
   - technical-spec
   - distributed-systems
   - software-engineering
+  - Software-Design
+  - Tutorial
 title: 'The Distributed JVM Fabric: From Local Artifacts to a Network-Native Symbolic Substrate'
+category: projects
+content_formats:
+  - article
+  - design
+  - tutorial

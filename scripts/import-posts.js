@@ -169,25 +169,27 @@ async function importPosts() {
 // Define content files to look for
                const contentFiles = [
                     { filename: 'content.md', title: 'Article', id: 'article' },
+                    { filename: 'analogy.md', title: 'Analogy', id: 'analogy' },
                     { filename: 'brainstorm.md', title: 'Brainstorm', id: 'brainstorm' },
+                    { filename: 'causal.md', title: 'Causal', id: 'causal' },
                     { filename: 'comic.md', title: 'Comic', id: 'comic' },
                     { filename: 'comic_seq.md', title: 'Comic 2', id: 'comic_seq' },
                     { filename: 'comic_seq_seq.md', title: 'Comic 3', id: 'comic_seq_seq' },
-                    { filename: 'tutorial.md', title: 'Tutorial', id: 'tutorial' },
+                    { filename: 'design.md', title: 'Software Design', id: 'design' },
+                    { filename: 'counterfactual.md', title: 'Counterfactual Analysis', id: 'counterfactual' },
                     { filename: 'narrative.md', title: 'Narrative', id: 'narrative' },
                     { filename: 'narrative_seq.md', title: 'Narrative 2', id: 'narrative_seq' },
                     { filename: 'narrative_seq_seq.md', title: 'Narrative 3', id: 'narrative_seq_seq' },
                     { filename: 'gametheory.md', title: 'Game Theory', id: 'gametheory' },
-                    { filename: 'socratic.md', title: 'Socratic Dialog', id: 'socratic' },
                     { filename: 'perspectives.md', title: 'Multi-Perspective', id: 'perspectives' },
                     { filename: 'dialectical.md', title: 'Dialectic', id: 'dialectical' },
                     { filename: 'persuasive.md', title: 'Persuasive', id: 'persuasive' },
+                    { filename: 'socratic.md', title: 'Socratic Dialog', id: 'socratic' },
+                    { filename: 'systems.md', title: 'Systems Thinking', id: 'systems' },
                     { filename: 'statemachine.md', title: 'State Machine', id: 'statemachine' },
-                    { filename: 'design.md', title: 'Software Design', id: 'design' },
-                    { filename: 'counterfactual.md', title: 'Counterfactual Analysis', id: 'counterfactual' },
                     { filename: 'genetic.md', title: 'Genetic Optimization', id: 'genetic' },
                     { filename: 'mathematical.md', title: 'Mathematical Reasoning', id: 'mathematical' },
-                    { filename: 'brainstorming.md', title: 'Brainstorming', id: 'brainstorming' },
+                    { filename: 'tutorial.md', title: 'Tutorial', id: 'tutorial' },
                     { filename: 'interactive.md', title: 'Interactive Experience', id: 'interactive' },
                     { filename: 'script.md', title: 'Creative Writing', id: 'script' },
                     { filename: 'technical_explanation.md', title: 'Technical Documentation', id: 'technical_explanation' },
@@ -215,9 +217,7 @@ async function importPosts() {
                     bodyContent = loadedContents[0].content;
                 } else {
                     // Auto-tag based on which content variants were included
-                    if (!frontmatterData.content_formats) {
-                        frontmatterData.content_formats = loadedContents.map(item => item.id);
-                    }
+                    frontmatterData.content_formats = loadedContents.map(item => item.id);
                     // Auto-add format-specific tags
                     const formatTagMap = {
                         'comic': 'Creative-Writing',
@@ -226,14 +226,25 @@ async function importPosts() {
                         'narrative': 'Creative-Writing',
                         'narrative_seq': 'Creative-Writing',
                         'narrative_seq_seq': 'Creative-Writing',
+                        'script': 'Creative-Writing',
                         'gametheory': 'Game-Theory',
                         'socratic': 'Philosophy-of-Mind',
                         'perspectives': 'Multi-Perspective-Analysis',
                         'dialectical': 'Theoretical-Framework',
                         'persuasive': 'Persuasive-Essay',
                         'statemachine': 'Computational-Analysis',
+                        'genetic': 'Computational-Analysis',
                         'design': 'Software-Design',
-                        'tutorial': 'Tutorial'
+                        'tutorial': 'Tutorial',
+                        'technical_explanation': 'Technical-Documentation',
+                        'web_research': 'Research',
+                        'mathematical': 'Mathematical-Reasoning',
+                        'systems': 'Systems-Thinking',
+                        'counterfactual': 'Counterfactual-Analysis',
+                        'causal': 'Causal-Analysis',
+                        'analogy': 'Comparative-Analysis',
+                        'brainstorm': 'Ideation',
+                        'interactive': 'Interactive-Experience'
                     };
                     if (!frontmatterData.tags) {
                         frontmatterData.tags = [];
@@ -260,6 +271,19 @@ async function importPosts() {
                         bodyContent += item.content + '\n\n';
                         bodyContent += '</div>\n';
                     });
+                }
+                // Write back imputed/calculated properties to the source frontmatter.yaml
+                try {
+                    const updatedYaml = yaml.dump(frontmatterData, {
+                        lineWidth: -1,
+                        noRefs: true,
+                        quotingType: '"',
+                        forceQuotes: false
+                    });
+                    await fs.writeFile(frontmatterPath, updatedYaml, 'utf-8');
+                    console.log(`    💾 Updated frontmatter.yaml with imputed properties`);
+                } catch (writeError) {
+                    console.log(`    ⚠️  Could not write back to ${frontmatterPath}: ${writeError.message}`);
                 }
 
 

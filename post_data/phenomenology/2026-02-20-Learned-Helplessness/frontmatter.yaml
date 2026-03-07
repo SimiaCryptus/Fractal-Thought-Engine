@@ -1,6 +1,6 @@
 date: '"2026-02-20T00:00:00.000Z"'
 description: 'An exploration of the psychological phenomenon of learned helplessness, its origins in behavioral research, and its implications for mental health and motivation.'
-featured_image: main.png
+featured_image: /assets/images/2026-02-20-Learned-Helplessness/main.png
 keywords:
   - learned helplessness
   - psychology
@@ -12,4 +12,9 @@ tags:
   - phenomenology
   - psychology
   - ethics
+  - Philosophy-of-Mind
 title: Learned Helplessness
+category: phenomenology
+content_formats:
+  - article
+  - socratic

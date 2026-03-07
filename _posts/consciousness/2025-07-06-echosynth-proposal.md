@@ -17,6 +17,8 @@ tags:
   - machine-learning
   - agents
   - Multi-Perspective-Analysis
+  - Mathematical-Reasoning
+  - Technical-Documentation
 title: 'EchoSynth: Hierarchical Ensemble for Semantic Drift'
 category: consciousness
 content_formats:

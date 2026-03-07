@@ -16,6 +16,8 @@ tags:
   - software-engineering
   - machine-learning
   - Multi-Perspective-Analysis
+  - Ideation
+  - Research
 title: 'MindsEye''s Modular Optimization Architecture: A Technical Analysis'
 featured_image: /assets/images/2025-07-01-mindseye-modularity-report/main.png
 category: portfolio

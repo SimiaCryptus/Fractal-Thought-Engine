@@ -1,6 +1,6 @@
 date: '"2026-02-20T00:00:00.000Z"'
 description: An analysis of secret knowledge as a primordial property of social systems and a fundamental governance technology used to manage operational opacity.
-featured_image: main.png
+featured_image: /assets/images/2026-02-20-Secret-Knowledge/main.png
 keywords:
   - secret knowledge
   - primordial property
@@ -11,4 +11,13 @@ tags:
   - sociology
   - game-theory
   - institutional-analysis
+  - Creative-Writing
+  - Philosophy-of-Mind
+  - Counterfactual-Analysis
 title: Secret Knowledge
+category: social
+content_formats:
+  - article
+  - counterfactual
+  - narrative
+  - socratic

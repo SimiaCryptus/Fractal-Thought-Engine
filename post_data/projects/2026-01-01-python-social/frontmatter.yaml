@@ -1,6 +1,6 @@
 date: '"2026-01-01T00:00:00.000Z"'
 description: An analysis of how Python's pedagogical origins and the rise of 'vibe coding' are impacting the rigor and scalability of modern software engineering.
-featured_image: main.png
+featured_image: /assets/images/2026-01-01-python-social/main.png
 keywords:
   - python
   - vibe coding
@@ -13,4 +13,9 @@ tags:
   - software-engineering
   - sociology
   - education
+  - Tutorial
 title: 'The Python Trap: Why ''Vibe Coding'' is Breaking Software Engineering'
+category: projects
+content_formats:
+  - article
+  - tutorial

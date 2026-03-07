@@ -1,6 +1,6 @@
 date: '"2025-08-08T00:00:00.000Z"'
 description: 'A mathematical analysis of bifurcation cascades across complex systems, exploring universal patterns in critical transitions from technological disruption to ecological tipping points.'
-featured_image: main.png
+featured_image: /assets/images/2025-08-08-bifurcation-cascade-paper/main.png
 keywords:
   - bifurcation cascades
   - feigenbaum universality
@@ -16,3 +16,4 @@ tags:
   - complexity-science
   - institutional-analysis
 title: 'Bifurcation Cascades and Reorganization Waves in Complex Systems: A Cross-Domain Analysis of Critical Transitions'
+category: projects

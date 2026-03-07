@@ -12,6 +12,8 @@ tags:
   - machine-learning
   - compression
   - Multi-Perspective-Analysis
+  - Ideation
+  - Research
 title: >-
   Efficient Storage and Hierarchical Compression of Large-Scale N-gram Language
   Models
@@ -1172,8 +1174,8 @@ Execution Configuration (click to expand)
 
                                                                                                                                                             
 ### Link Processing Summary for [Findings of the Association for Computational Linguistics (2025)](https://aclanthology.org/events/findings-2025/)
-<details>
-<summary>**Links Found:** 7, **Added to Queue:** 7, **Skipped:** 0</summary>
+
+**Links Found:** 7, **Added to Queue:** 7, **Skipped:** 0
 
 - ✅ **[RQT: Hierarchical Residual Quantization for Multi-Model Compression](https://aclanthology.org/2025.findings-acl.554/)** - Relevance: 95.0  - Tags: RQT, Hierarchical, Residual Quantization
 - ✅ **[TriEmbed: Trie-based Embedding Reparameterization](https://aclanthology.org/2025.findings-acl.275/)** - Relevance: 100.0  - Tags: TriEmbed, Trie, Embeddings
@@ -1183,7 +1185,7 @@ Execution Configuration (click to expand)
 - ✅ **[Test-Time Steering for Lossless Text Compression](https://aclanthology.org/2025.findings-emnlp.110/)** - Relevance: 90.0  - Tags: PPM, Lossless, Neural Hybrids
 - ✅ **[FPE2M2: Efficient Quantization with Native Floating Point](https://aclanthology.org/2025.findings-acl.943/)** - Relevance: 78.0  - Tags: FPE2M2, Quantization, Memory Formats
 
-</details>
+
 
 **Completed:** 18:49:08
 **Processing Time:** 2988364ms
@@ -1192,8 +1194,8 @@ Execution Configuration (click to expand)
 
 
 ### Link Processing Summary for [Accepted Main Conference Papers - emnlp 2025](https://2025.emnlp.org/program/main_papers/)
-<details>
-<summary>**Links Found:** 6, **Added to Queue:** 3, **Skipped:** 3</summary>
+
+**Links Found:** 6, **Added to Queue:** 3, **Skipped:** 3
 
 - ✅ **[Infini-gram mini: Exact n-gram Search at the Internet Scale with FM-Index](https://arxiv.org/abs/2401.17377)** - Relevance: 95.0  - Tags: FM-Index, n-gram search, compression
 - ✅ **[Faster In-Context Learning for LLMs via N-Gram Trie Speculative Decoding](https://2025.emnlp.org/program/main_papers/)** - Relevance: 92.0  - Tags: Speculative Decoding, LLM acceleration, n-gram trie
@@ -1202,7 +1204,7 @@ Execution Configuration (click to expand)
 - ✅ **[R-BPE: Improving BPE-Tokenizers with Token Reuse](https://2025.emnlp.org/program/main_papers/)** - Relevance: 80.0  - Tags: BPE, Token Reuse, Dictionary Efficiency
 - ✅ **[Succinct Data Structures (Technical Overview)](https://alexbowe.com/succinct-data-structures/)** - Relevance: 88.0  - Tags: Succinct Data Structures, LOUDS, Tutorial
 
-</details>
+
 
 **Completed:** 18:52:58
 **Processing Time:** 229858ms
@@ -1211,8 +1213,8 @@ Execution Configuration (click to expand)
 
 
 ### Link Processing Summary for [Space and Time-Efficient Data Structures for Massive Datasets](https://pages.di.unipi.it/pibiri/papers/phd_thesis.pdf)
-<details>
-<summary>**Links Found:** 6, **Added to Queue:** 6, **Skipped:** 0</summary>
+
+**Links Found:** 6, **Added to Queue:** 6, **Skipped:** 0
 
 - ✅ **[tongrams GitHub Repository](https://github.com/jermp/tongrams)** - Relevance: 100.0  - Tags: implementation, 1-sort, n-gram, data structures
 - ✅ **[ds2i Project](https://github.com/ot/ds2i)** - Relevance: 90.0  - Tags: framework, compressed index, performance
@@ -1221,7 +1223,7 @@ Execution Configuration (click to expand)
 - ✅ **[DINT (Dictionary of Integers)](https://github.com/jermp/dint)** - Relevance: 90.0  - Tags: integer compression, dictionary-based, decoding
 - ✅ **[SIMD Compression Libraries (Masked-VByte)](https://github.com/lemire/MaskedVByte)** - Relevance: 80.0  - Tags: SIMD, VByte, optimization, decoding
 
-</details>
+
 
 **Completed:** 18:55:32
 **Processing Time:** 384207ms
@@ -1230,8 +1232,8 @@ Execution Configuration (click to expand)
 
 
 ### Link Processing Summary for [Track: San Diego Poster Session 2 - NeurIPS](https://neurips.cc/virtual/2025/loc/san-diego/session/128332)
-<details>
-<summary>**Links Found:** 7, **Added to Queue:** 7, **Skipped:** 0</summary>
+
+**Links Found:** 7, **Added to Queue:** 7, **Skipped:** 0
 
 - ✅ **[RadixAttention: LLM Query Scheduling with Prefix Reuse](https://neurips.cc/virtual/2025/poster/118899)** - Relevance: 100.0  - Tags: Radix Tree, Prefix Reuse, KV Cache
 - ✅ **[zip2zip: Inference-Time Adaptive Tokenization via Online Compression](https://neurips.cc/virtual/2025/poster/118871)** - Relevance: 95.0  - Tags: LZW, Adaptive Tokenization, Compression
@@ -1241,7 +1243,7 @@ Execution Configuration (click to expand)
 - ✅ **[Understanding LLM Behaviors via Compression (Syntax-Knowledge Model)](https://neurips.cc/virtual/2025/poster/119655)** - Relevance: 80.0  - Tags: Syntax-Knowledge, Data Generation, Theoretical Foundation
 - ✅ **[Point3R: Streaming Reconstruction with Explicit Spatial Pointer Memory](https://neurips.cc/virtual/2025/poster/115114)** - Relevance: 80.0  - Tags: Pointer Memory, Streaming Reconstruction, Spatial Data
 
-</details>
+
 
 **Completed:** 19:02:35
 **Processing Time:** 806835ms
@@ -1250,15 +1252,15 @@ Execution Configuration (click to expand)
 
 
 ### Link Processing Summary for [RadixAttention: LLM Query Scheduling with Prefix Reuse](https://neurips.cc/virtual/2025/poster/118899)
-<details>
-<summary>**Links Found:** 4, **Added to Queue:** 4, **Skipped:** 0</summary>
+
+**Links Found:** 4, **Added to Queue:** 4, **Skipped:** 0
 
 - ✅ **[OpenReview: LLM Query Scheduling with Prefix Reuse and Latency Constraints](https://openreview.net/forum?id=HKfZwLjSwQ)** - Relevance: 100.0  - Tags: Primary Source, k-LPM, LLM Scheduling
 - ✅ **[RadixAttention (vLLM Project)](https://github.com/vllm-project/vllm)** - Relevance: 95.0  - Tags: Implementation, vLLM, RadixAttention
 - ✅ **[Succinct Data Structures (Wikipedia/Research Overview)](https://en.wikipedia.org/wiki/Succinct_data_structure)** - Relevance: 85.0  - Tags: Background, Data Structures, LOUDS
 - ✅ **[PPM Compression Algorithms](https://en.wikipedia.org/wiki/Prediction_by_partial_matching)** - Relevance: 80.0  - Tags: Background, Compression, PPM
 
-</details>
+
 
 **Completed:** 19:03:02
 **Processing Time:** 26167ms
@@ -1267,8 +1269,8 @@ Execution Configuration (click to expand)
 
 
 ### Link Processing Summary for [tongrams GitHub Repository](https://github.com/jermp/tongrams)
-<details>
-<summary>**Links Found:** 5, **Added to Queue:** 4, **Skipped:** 1</summary>
+
+**Links Found:** 5, **Added to Queue:** 4, **Skipped:** 1
 
 - ✅ **[Tongrams GitHub Repository](https://github.com/jermp/tongrams)** - Relevance: 100.0  - Tags: Source Code, C++, Implementation
 - ✅ **[SIGIR 2017 Paper: Efficient Data Structures for Massive N-Gram Datasets](https://dl.acm.org/doi/10.1145/3077136.3080798)** - Relevance: 95.0  - Tags: Research Paper, SIGIR, Foundational
@@ -1276,12 +1278,552 @@ Execution Configuration (click to expand)
 - ✅ **[Tongrams-rs (Rust Implementation)](https://github.com/kampersanda/tongrams-rs)** - Relevance: 85.0  - Tags: Source Code, Rust, Alternative Implementation
 - ✅ **[Giulio Ermanno Pibiri’s Academic Page](http://pages.di.unipi.it/pibiri/)** - Relevance: 80.0  - Tags: Academic Profile, Author, Publications
 
-</details>
+
 
 **Completed:** 19:03:40
 **Processing Time:** 64357ms
 
 ---
+
+
+### Link Processing Summary for [Ask HN: What are some cool but obscure data structures you know ...](https://news.ycombinator.com/item?id=32186203)
+
+**Links Found:** 7, **Added to Queue:** 7, **Skipped:** 0
+
+- ✅ **[SDSL-lite (GitHub)](https://github.com/simongog/sdsl-lite)** - Relevance: 95.0  - Tags: library, succinct, data structures
+- ✅ **[MARISA-Trie](https://github.com/s-yata/marisa-trie)** - Relevance: 90.0  - Tags: library, trie, compression
+- ✅ **[Succinct Tries by Steve Hanov](http://stevehanov.ca/blog/?id=120)** - Relevance: 85.0  - Tags: guide, implementation, succinct
+- ✅ **[CHAMP: Compressed Hash-Array Mapped Prefix-tree](https://blog.acolyer.org/2015/11/27/hamt/)** - Relevance: 80.0  - Tags: research, persistent, trie
+- ✅ **[Deterministic Acyclic Finite State Automaton (Wikipedia)](https://en.wikipedia.org/wiki/Deterministic_acyclic_finite_state_automaton)** - Relevance: 75.0  - Tags: wiki, DAWG, automata
+- ✅ **[The Myth of RAM](http://www.ilikebigbits.com/2014_04_21_myth_of_ram_1.html)** - Relevance: 70.0  - Tags: blog, memory latency, performance
+- ✅ **[Ribbon Filters Paper](https://drops.dagstuhl.de/opus/volltexte/2022/16538/pdf/LIPIcs-SEA-2022-4.pdf)** - Relevance: 80.0  - Tags: paper, filters, recursive
+
+
+
+**Completed:** 19:08:35
+**Processing Time:** 359859ms
+
+---
+
+
+### Link Processing Summary for [OpenReview: LLM Query Scheduling with Prefix Reuse and Latency Constraints](https://openreview.net/forum?id=HKfZwLjSwQ)
+
+**Links Found:** 1, **Added to Queue:** 1, **Skipped:** 0
+
+- ✅ **[LLM Query Scheduling with Prefix Reuse and Latency Constraints (PDF)](https://openreview.net/pdf?id=HKfZwLjSwQ)** - Relevance: 100.0  - Tags: PDF, research paper, RadixAttention, scheduling
+
+
+
+**Completed:** 19:08:56
+**Processing Time:** 20172ms
+
+---
+
+
+### Link Processing Summary for [ICLR 2026 Papers](https://iclr.cc/virtual/2026/papers.html)
+
+**Links Found:** 4, **Added to Queue:** 3, **Skipped:** 1
+
+- ✅ **[ICLR 2026 Papers Gallery](https://iclr.cc/virtual/2026/papers.html)** - Relevance: 90.0  - Tags: papers, ICLR, research
+- ✅ **[Proceedings at OpenReview](https://openreview.net/group?id=ICLR.cc)** - Relevance: 95.0  - Tags: reviews, technical discussions, full text
+- ✅ **[ICLR Blog Track](https://iclr.cc/virtual/2026/events/BlogTrack-2026)** - Relevance: 85.0  - Tags: blog, summaries, implementations
+- ✅ **[ICLR Downloads](https://iclr.cc/Downloads)** - Relevance: 75.0  - Tags: datasets, codebases, resources
+
+
+
+**Completed:** 19:09:01
+**Processing Time:** 25968ms
+
+---
+
+                                                                                                                                                                                                                                                                                                                                                      
+### Link Processing Summary for [Available CRAN Packages By Name](https://cran.r-project.org/web/packages/available_packages_by_name.html)
+
+**Links Found:** 7, **Added to Queue:** 6, **Skipped:** 1
+
+- ✅ **[KenLM Language Model Toolkit](https://kheafield.com/code/kenlm/)** - Relevance: 95.0  - Tags: toolkit, n-gram, compression
+- ✅ **[Marisa-Trie](https://github.com/s-yata/marisa-trie)** - Relevance: 90.0  - Tags: C++, succinct, trie
+- ✅ **[triebeard](https://cran.r-project.org/web/packages/triebeard/index.html)** - Relevance: 85.0  - Tags: R, Radix tree
+- ✅ **[gibasa (MeCab)](https://cran.r-project.org/web/packages/gibasa/index.html)** - Relevance: 80.0  - Tags: R, Double-Array Trie
+- ✅ **[thor (LMDB)](https://cran.r-project.org/web/packages/thor/index.html)** - Relevance: 75.0  - Tags: R, LMDB, memory-mapped
+- ✅ **[VLMC](https://cran.r-project.org/web/packages/VLMC/index.html)** - Relevance: 80.0  - Tags: R, Markov Chain, pruning
+- ✅ **[nanoarrow](https://cran.r-project.org/web/packages/nanoarrow/index.html)** - Relevance: 75.0  - Tags: R, Arrow, serialization
+
+
+
+**Completed:** 19:54:21
+**Processing Time:** 2745413ms
+
+---
+
+
+### Link Processing Summary for [TriEmbed: Trie-based Embedding Reparameterization](https://aclanthology.org/2025.findings-acl.275/)
+
+**Links Found:** 4, **Added to Queue:** 4, **Skipped:** 0
+
+- ✅ **[TriEmbed: Bridge the Gap between Text and Token Indices with Embedding Reparameterization](https://aclanthology.org/2025.findings-acl.275.pdf)** - Relevance: 100.0  - Tags: TriEmbed, ACL 2025, Embedding Reparameterization
+- ✅ **[Double-Array Trie Research (Aoe, 1989)](https://dl.acm.org/doi/10.1145/78524.78533)** - Relevance: 90.0  - Tags: Double-Array Trie, Memory Formats, Foundational Research
+- ✅ **[Succinct Data Structures (Jacobson, 1989)](https://ieeexplore.ieee.org/document/45681)** - Relevance: 85.0  - Tags: Succinct Data Structures, LOUDS, Bit-vector
+- ✅ **[PPM Compression Standards (Cleary & Witten)](https://ieeexplore.ieee.org/document/1096127)** - Relevance: 80.0  - Tags: PPM, Data Compression, N-gram Contexts
+
+
+
+**Completed:** 19:54:44
+**Processing Time:** 22658ms
+
+---
+
+
+### Link Processing Summary for [MSRLM: a scalable language modeling toolkit - Microsoft](https://www.microsoft.com/en-us/research/wp-content/uploads/2007/11/tr-2007-144.pdf)
+
+**Links Found:** 5, **Added to Queue:** 4, **Skipped:** 1
+
+- ✅ **[MSRLM Technical Report (MSR-TR-2007-144)](https://www.microsoft.com/en-us/research/publication/msrlm-a-scalable-language-modeling-toolkit/)** - Relevance: 100.0  - Tags: MSRLM, Technical Report, Backsorted Trie, MAD
+- ✅ **[KenLM: Faster and Smaller Language Model Queries](https://kheafield.com/code/kenlm/)** - Relevance: 95.0  - Tags: KenLM, Software, Compression, Quantization
+- ✅ **[Scalable Modified Kneser-Ney Language Model Estimation](http://www.aclweb.org/anthology/P11-1018)** - Relevance: 90.0  - Tags: Kneser-Ney, Research Paper, LM Estimation
+- ✅ **[Succinct Data Structures for LMs (Ottaviano & Venturini)](https://arxiv.org/abs/1406.3510)** - Relevance: 85.0  - Tags: Succinct Data Structures, Elias-Fano, Research Paper
+- ✅ **[On the Implementation of MST (Minimum Spanning Trie) Compression](https://ieeexplore.ieee.org/document/1055557)** - Relevance: 80.0  - Tags: MST Compression, Research Paper, Hierarchical Structures
+
+
+
+**Completed:** 19:54:50
+**Processing Time:** 28578ms
+
+---
+
+
+### Link Processing Summary for [LLM Query Scheduling with Prefix Reuse and Latency Constraints (PDF)](https://openreview.net/pdf?id=HKfZwLjSwQ)
+
+**Links Found:** 5, **Added to Queue:** 4, **Skipped:** 1
+
+- ✅ **[SGLang Framework (GitHub)](https://github.com/sgl-project/sglang)** - Relevance: 95.0  - Tags: Implementation, RadixAttention, LLM Serving
+- ✅ **[RadixAttention: Efficient Serving with Shared Prefixes (Zheng et al.)](https://arxiv.org/abs/2312.07104)** - Relevance: 100.0  - Tags: Research Paper, RadixAttention, KV Cache
+- ✅ **[Succinct Data Structures (LOUDS)](https://en.wikipedia.org/wiki/LOUDS)** - Relevance: 85.0  - Tags: Data Structures, Trie Compression
+- ✅ **[Zstandard (Zstd) Dictionary Compression Manual](https://facebook.github.io/zstd/)** - Relevance: 80.0  - Tags: Compression, Zstd, Dictionary
+- ✅ **[Prediction by Partial Matching (PPM) Overview](https://en.wikipedia.org/wiki/Prediction_by_partial_matching)** - Relevance: 75.0  - Tags: Compression, PPM, N-Gram
+
+
+
+**Completed:** 19:55:14
+**Processing Time:** 52846ms
+
+---
+
+
+### Link Processing Summary for [MSRLM Technical Report (MSR-TR-2007-144)](https://www.microsoft.com/en-us/research/publication/msrlm-a-scalable-language-modeling-toolkit/)
+
+**Links Found:** 4, **Added to Queue:** 2, **Skipped:** 2
+
+- ✅ **[MSRLM Publication (PDF)](https://www.microsoft.com/en-us/research/wp-content/uploads/2007/11/tr-2007-144.pdf)** - Relevance: 95.0  - Tags: MSRLM, research paper, scalability
+- ✅ **[KenLM: Faster and Smaller Language Model Queries](https://kheafield.com/code/kenlm/)** - Relevance: 90.0  - Tags: KenLM, software, benchmarks
+- ✅ **[Succinct Data Structures for Tries (Survey)](https://www.di.unipi.it/~ottavian/files/elias_fano_trie.pdf)** - Relevance: 85.0  - Tags: succinct data structures, trie, survey
+- ✅ **[PPM Compression Research (Cleary & Witten)](https://ieeexplore.ieee.org/document/1096090)** - Relevance: 80.0  - Tags: PPM, data compression, context-based encoding
+
+
+
+**Completed:** 19:55:41
+**Processing Time:** 26543ms
+
+---
+
+
+### Link Processing Summary for [RadixAttention: Efficient Serving with Shared Prefixes (Zheng et al.)](https://arxiv.org/abs/2312.07104)
+
+**Links Found:** 5, **Added to Queue:** 0, **Skipped:** 5
+
+- ✅ **[SGLang: Efficient Execution of Structured Language Model Programs](https://arxiv.org/abs/2312.07104)** - Relevance: 100.0  - Tags: Research Paper, RadixAttention, SGLang
+- ✅ **[SGLang GitHub Repository](https://github.com/sgl-project/sglang)** - Relevance: 95.0  - Tags: Source Code, Implementation, SGLang
+- ✅ **[KenLM: Faster and Smaller Language Model Queries](https://kheafield.com/code/kenlm/)** - Relevance: 85.0  - Tags: N-gram Compression, Language Models, Optimization
+- ✅ **[Succinct Data Structures (Wikipedia/Resource)](https://en.wikipedia.org/wiki/Succinct_data_structure)** - Relevance: 80.0  - Tags: Data Structures, LOUDS, Theory
+- ✅ **[PPM Compression Algorithms](https://en.wikipedia.org/wiki/Prediction_by_partial_matching)** - Relevance: 80.0  - Tags: Compression, Algorithms, PPM
+
+
+
+**Completed:** 19:55:53
+**Processing Time:** 39411ms
+
+---
+
+
+### Link Processing Summary for [TriEmbed: Bridge the Gap between Text and Token Indices with Embedding Reparameterization](https://aclanthology.org/2025.findings-acl.275.pdf)
+
+**Links Found:** 0, **Added to Queue:** 0, **Skipped:** 0
+
+
+
+
+**Completed:** 19:55:59
+**Processing Time:** 45039ms
+
+---
+
+
+### Link Processing Summary for [Infini-gram mini: Exact n-gram Search at the Internet Scale with FM-Index](https://arxiv.org/abs/2401.17377)
+
+**Links Found:** 4, **Added to Queue:** 1, **Skipped:** 3
+
+- ✅ **[arXiv:2401.17377: Infini-gram primary paper](https://arxiv.org/abs/2401.17377)** - Relevance: 100.0  - Tags: research-paper, infinigram, suffix-arrays
+- ✅ **[Infini-gram HTML Version](https://arxiv.org/html/2401.17377v4)** - Relevance: 95.0  - Tags: documentation, experimental-results
+- ✅ **[KenLM (External Research)](https://kheafield.com/code/kenlm/)** - Relevance: 85.0  - Tags: n-gram-models, compression-tools, baseline
+- ⏭️ **[Suffix Arrays in Language Modeling](https://scholar.google.com/scholar?q=suffix+arrays+for+language+modeling)** - Relevance: 80.0  - Tags: search-query, literature-review
+
+
+
+**Completed:** 19:56:39
+**Processing Time:** 38769ms
+
+---
+
+
+### Link Processing Summary for [Partitioned Elias-Fano (PEF) Research](https://github.com/ot/partitioned_elias_fano)
+
+**Links Found:** 5, **Added to Queue:** 3, **Skipped:** 2
+
+- ✅ **[Partitioned Elias-Fano Indexes (Research Paper)](https://vigna.di.unimi.it/ftp/papers/PartitionedEliasFano.pdf)** - Relevance: 100.0  - Tags: Research Paper, Foundational
+- ✅ **[ot/partitioned_elias_fano GitHub Repository](https://github.com/ot/partitioned_elias_fano)** - Relevance: 95.0  - Tags: GitHub, Implementation, Source Code
+- ✅ **[ds2i (Distributed Static Inverted Index)](https://github.com/ot/ds2i)** - Relevance: 90.0  - Tags: GitHub, Framework, Production-Ready
+- ✅ **[FastPFor Library](https://github.com/lemire/FastPFor)** - Relevance: 85.0  - Tags: GitHub, Library, SIMD, Compression
+- ✅ **[Succinct Data Structures Library](https://github.com/ot/succinct)** - Relevance: 85.0  - Tags: GitHub, Library, Succinct Data Structures
+
+
+
+**Completed:** 19:57:02
+**Processing Time:** 62328ms
+
+---
+
+
+### Link Processing Summary for [REST: Retrieval-Based Speculative Decoding (He et al., 2023)](https://arxiv.org/html/2402.16363v3#bib.bib47)
+
+**Links Found:** 5, **Added to Queue:** 4, **Skipped:** 1
+
+- ✅ **[REST: Retrieval-Based Speculative Decoding](https://arxiv.org/abs/2311.08252)** - Relevance: 95.0  - Tags: Speculative Decoding, N-gram Trie, Inference Acceleration
+- ✅ **[SpecInfer: Tree-based Speculative Decoding](https://arxiv.org/abs/2305.09781)** - Relevance: 90.0  - Tags: Token Trees, GPU Parallelism, Speculative Decoding
+- ✅ **[PagedAttention (vLLM)](https://arxiv.org/abs/2309.06180)** - Relevance: 85.0  - Tags: Memory Management, KV Cache, System Optimization
+- ✅ **[TensorGPT (TTD for Embeddings)](https://arxiv.org/abs/2303.04705)** - Relevance: 80.0  - Tags: Tensor Decomposition, Compression, Low-rank Formats
+- ✅ **[LLM-Viewer GitHub](https://github.com/hahnyuan/LLM-Viewer)** - Relevance: 75.0  - Tags: Benchmarking, Memory Footprint, Analysis Tool
+
+
+
+**Completed:** 19:58:23
+**Processing Time:** 143242ms
+
+---
+
+**Error:** HTTP 404 error for URL: https://vigna.di.unimi.it/ftp/papers/PartitionedEliasFano.pdf
+
+**Completed:** 19:58:24
+**Processing Time:** 379ms
+
+---
+
+
+### Link Processing Summary for [REST: Retrieval-Based Speculative Decoding](https://arxiv.org/abs/2311.08252)
+
+**Links Found:** 4, **Added to Queue:** 1, **Skipped:** 3
+
+- ✅ **[REST: Retrieval-Based Speculative Decoding (arXiv:2311.08252)](https://arxiv.org/abs/2311.08252)** - Relevance: 100.0  - Tags: Research Paper, Speculative Decoding
+- ✅ **[REST GitHub Repository](https://github.com/FasterDecoding/REST)** - Relevance: 95.0  - Tags: Source Code, Implementation
+- ✅ **[Succinct Data Structures (Wikipedia/Resource)](https://en.wikipedia.org/wiki/Succinct_data_structure)** - Relevance: 85.0  - Tags: Data Structures, Theory
+- ✅ **[PPM (Prediction by Partial Matching) Technical Overviews](https://en.wikipedia.org/wiki/Prediction_by_partial_matching)** - Relevance: 80.0  - Tags: Compression Algorithms, PPM
+
+
+
+**Completed:** 19:59:00
+**Processing Time:** 36147ms
+
+---
+
+
+### Link Processing Summary for [Infini-gram HTML Version](https://arxiv.org/html/2401.17377v4)
+
+**Links Found:** 6, **Added to Queue:** 3, **Skipped:** 3
+
+- ✅ **[Infini-gram: Scaling Unbounded n-gram LMs (arXiv:2401.17377)](https://arxiv.org/abs/2401.17377)** - Relevance: 100.0  - Tags: Research Paper, Infini-gram, Suffix Array
+- ✅ **[Shareghi et al. (2015) - Language Modeling with Compressed Suffix Trees](https://api.semanticscholar.org/CorpusID:225428)** - Relevance: 90.0  - Tags: Research Paper, Suffix Trees, Compression
+- ✅ **[KenLM: Faster and Smaller Language Model Queries](https://kheafield.com/code/kenlm/)** - Relevance: 85.0  - Tags: Software, Trie Compression, N-gram
+- ✅ **[Succinct Data Structures for LMs (Ottaviano et al.)](https://github.com/ot/succinct)** - Relevance: 80.0  - Tags: Software, Succinct Data Structures, Elias-Fano
+- ✅ **[Stehouwer & van Zaanen (2010) - Suffix Arrays as Language Models](https://api.semanticscholar.org/CorpusID:18379946)** - Relevance: 85.0  - Tags: Research Paper, Suffix Arrays
+- ✅ **[Infini-gram Project Homepage & Source Code](https://infini-gram.io/)** - Relevance: 95.0  - Tags: Project Homepage, Source Code, API
+
+
+
+**Completed:** 20:00:26
+**Processing Time:** 121532ms
+
+---
+
+
+### Link Processing Summary for [Infini-gram Project Homepage & Source Code](https://infini-gram.io/)
+
+**Links Found:** 5, **Added to Queue:** 4, **Skipped:** 1
+
+- ✅ **[Infini-gram Research Paper (arXiv:2401.17377)](https://arxiv.org/pdf/2401.17377.pdf)** - Relevance: 100.0  - Tags: Research Paper, Infini-gram, Suffix Array
+- ✅ **[Infini-gram Mini](https://infini-gram-mini.io/)** - Relevance: 95.0  - Tags: FM-index, Succinct Data Structures, Implementation
+- ✅ **[KenLM: Faster and Smaller Language Model Queries](https://kheafield.com/code/kenlm/)** - Relevance: 90.0  - Tags: KenLM, Trie-based, N-gram, Software
+- ✅ **[Succinct Data Structures for Language Modeling](https://www.microsoft.com/en-us/research/publication/succinct-data-structures-for-compression-and-faster-queries/)** - Relevance: 85.0  - Tags: Succinct Data Structures, Wavelet Trees, Research
+- ✅ **[Modified Kneser-Ney Smoothing Research](https://ict.usc.edu/pubs/Smoothing%20Techniques%20for%20N-gram%20Language%20Models.pdf)** - Relevance: 80.0  - Tags: Smoothing, Kneser-Ney, N-gram, Probability
+
+
+
+**Completed:** 20:00:58
+**Processing Time:** 31897ms
+
+---
+
+
+### Link Processing Summary for [SDSL-lite (GitHub)](https://github.com/simongog/sdsl-lite)
+
+**Links Found:** 5, **Added to Queue:** 4, **Skipped:** 1
+
+- ✅ **[SDSL Literature Wiki](https://github.com/simongog/sdsl-lite/wiki/Literature)** - Relevance: 95.0  - Tags: Research, Documentation, Bibliography
+- ✅ **[From Theory to Practice: Plug and Play with Succinct Data Structures (SEA 2014)](http://arxiv.org/pdf/1311.1249v1.pdf)** - Relevance: 90.0  - Tags: Academic Paper, Architecture
+- ✅ **[SDSL Cheat Sheet](http://simongog.github.io/assets/data/sdsl-cheatsheet.pdf)** - Relevance: 85.0  - Tags: Technical Summary, Reference
+- ✅ **[List of Implemented Data Structures](https://github.com/simongog/sdsl-lite/wiki/List-of-Implemented-Data-Structures)** - Relevance: 88.0  - Tags: Implementation, Reference
+- ✅ **[SDSL-lite GitHub Repository](https://github.com/simongog/sdsl-lite)** - Relevance: 92.0  - Tags: Source Code, C++
+
+
+
+**Completed:** 20:01:12
+**Processing Time:** 46074ms
+
+---
+
+
+### Link Processing Summary for [SGLang Framework (GitHub)](https://github.com/sgl-project/sglang)
+
+**Links Found:** 5, **Added to Queue:** 4, **Skipped:** 1
+
+- ✅ **[SGLang RadixAttention Technical Blog](https://lmsys.org/blog/2024-01-17-sglang/)** - Relevance: 100.0  - Tags: RadixAttention, Prefix Caching, Memory Management
+- ✅ **[Compressed FSM for JSON Decoding](https://lmsys.org/blog/2024-02-05-compressed-fsm/)** - Relevance: 95.0  - Tags: FSM, JSON, Decoding Optimization
+- ⏭️ **[SGL-Kernel Implementation](https://github.com/sgl-project/sglang/tree/main/sgl-kernel)** - Relevance: 90.0  - Tags: Source Code, CUDA, C++, Kernels
+- ✅ **[SGLang v0.4 Zero-Overhead Scheduler](https://lmsys.org/blog/2024-12-04-sglang-v0-4/)** - Relevance: 85.0  - Tags: Scheduler, Performance, Batching
+- ✅ **[SGLang Official Documentation](https://docs.sglang.io/)** - Relevance: 80.0  - Tags: Documentation, API, Runtime
+
+
+
+**Completed:** 20:01:31
+**Processing Time:** 65304ms
+
+---
+
+
+### Link Processing Summary for [SGLang RadixAttention Technical Blog](https://lmsys.org/blog/2024-01-17-sglang/)
+
+**Links Found:** 4, **Added to Queue:** 2, **Skipped:** 2
+
+- ✅ **[SGLang Technical Report (arXiv:2312.07104)](https://arxiv.org/abs/2312.07104)** - Relevance: 100.0  - Tags: Research Paper, Technical Report, RadixAttention
+- ✅ **[SGLang GitHub Repository](https://github.com/sgl-project/sglang/)** - Relevance: 95.0  - Tags: Source Code, Implementation, Radix Tree
+- ✅ **[vLLM Project](https://github.com/vllm-project/vllm)** - Relevance: 85.0  - Tags: Baseline, PagedAttention, Comparison
+- ✅ **[Guidance AI](https://github.com/guidance-ai/guidance)** - Relevance: 80.0  - Tags: Frontend, Structured Generation, Inspiration
+
+
+
+**Completed:** 20:01:54
+**Processing Time:** 21897ms
+
+---
+
+
+### Link Processing Summary for [SDSL Literature Wiki](https://github.com/simongog/sdsl-lite/wiki/Literature)
+
+**Links Found:** 5, **Added to Queue:** 4, **Skipped:** 1
+
+- ✅ **[SDSL-lite Literature Wiki](https://github.com/simongog/sdsl-lite/wiki/Literature)** - Relevance: 100.0  - Tags: wiki, literature, sdsl-lite
+- ✅ **[Sadakane (2007a) - Compressed Suffix Trees with Full Functionality](http://dx.doi.org/10.1007/s00224-006-1188-3)** - Relevance: 95.0  - Tags: research paper, compressed suffix trees, Sadakane
+- ✅ **[Brisaboa et al. (2009) - Directly Addressable Variable-Length Codes](https://doi.org/10.1007/978-3-642-03784-9_12)** - Relevance: 95.0  - Tags: research paper, DACs, variable-length codes
+- ✅ **[Grossi et al. (2003) - High-order entropy-compressed text indexes](https://doi.org/10.1145/644108.644250)** - Relevance: 95.0  - Tags: research paper, entropy compression, text indexes
+- ✅ **[Okanohara & Sadakane (2007) - Practical Entropy-Compressed Rank/Select Dictionary](https://archive.siam.org/meetings/alenex07/papers/03.pdf)** - Relevance: 90.0  - Tags: research paper, rank/select, dictionary
+
+
+
+**Completed:** 20:02:07
+**Processing Time:** 35303ms
+
+---
+
+
+### Link Processing Summary for [Infini-gram Research Paper (arXiv:2401.17377)](https://arxiv.org/pdf/2401.17377.pdf)
+
+**Links Found:** 5, **Added to Queue:** 2, **Skipped:** 3
+
+- ✅ **[Infini-gram Research Paper (arXiv:2401.17377)](https://arxiv.org/abs/2401.17377)** - Relevance: 100.0  - Tags: research, paper, infini-gram, suffix-array
+- ✅ **[Infini-gram Source Code (GitHub)](https://github.com/liujch1998/infini-gram)** - Relevance: 95.0  - Tags: code, github, implementation, open-source
+- ✅ **[KenLM Language Model Toolkit](https://kheafield.com/code/kenlm/)** - Relevance: 85.0  - Tags: toolkit, software, kenlm, trie-compression
+- ✅ **[Suffix Array Construction (Kärkkäinen et al., 2006)](https://api.semanticscholar.org/CorpusID:12825385)** - Relevance: 80.0  - Tags: research, suffix-array, algorithms, foundational
+- ✅ **[Shareghi et al. (2015) - Compressed Suffix Trees](https://api.semanticscholar.org/CorpusID:225428)** - Relevance: 80.0  - Tags: research, suffix-trees, language-modeling, comparison
+
+
+
+**Completed:** 20:02:44
+**Processing Time:** 72065ms
+
+---
+
+
+---
+
+## Crawling Session Summary
+
+**Completed:** 2026-03-02 20:02:45
+**Total Time:** 7411 seconds
+**Pages Processed:** 30
+**Errors:** 2
+**Success Rate:** 93%
+
+
+
+
+
+
+## Final Summary
+
+# Final Output
+This comprehensive summary synthesizes research and technical insights into the hierarchical compression of n-gram tries, focusing on layer-wise encoding, parent-to-child expectation values, and serialized memory formats.
+
+---
+
+### **1. Hierarchical and Layer-wise Encoding Strategies**
+Modern research has evolved from simple path compression to sophisticated layer-wise optimization that treats trie levels as distinct statistical distributions.
+
+*   **Succinct Topology (LOUDS):** To approach the information-theoretic lower bound of space, research highlights **LOUDS (Level-Order Unary Degree Sequence)**. This succinct representation encodes the trie structure into a bit-vector, allowing for navigation (parent-to-child) using constant-time `rank` and `select` operations. This eliminates the need for 64-bit pointers, reducing overhead to a few bits per node.
+*   **Layer-wise Adaptive Compression:** Frameworks like **LAVa** and **QPruner** demonstrate that information density is non-uniform across layers. In neural contexts, "layer-wise encoding" dynamically allocates memory budgets, ensuring that critical layers (often shallow or middle layers) receive higher bit-precision.
+*   **Residual Quantization Trees (RQT):** This method organizes models into a tree where parent nodes optimize parameters and delegate "residual errors" to child nodes. This top-down approach achieves extreme compression by leveraging the hierarchical relationship between nodes.
+*   **TriEmbed:** This method utilizes a trie to organize a model's vocabulary. By reparameterizing embeddings through the trie, it facilitates the recovery of morphological relations, proving that hierarchical organization improves the scaling and informativeness of token representations.
+
+### **2. Parent-Child Relationships and Expectation Values**
+A core advancement in trie compression is the shift from storing absolute values to storing **residuals** based on parent expectations.
+
+*   **Expectation-Based Residuals:** In n-gram tries, the probability or frequency of a child node is highly constrained by its parent (the prefix). Modern methods use the parent’s state to "predict" the child’s distribution, storing only the deviation (residual) from that expectation. These residuals typically follow a Laplacian distribution, making them highly compressible via entropy coding.
+*   **Context-Based Identifier Remapping:** As seen in the **Tongrams** library, global word IDs are remapped to local, context-dependent integers. A word following a specific $k$-word context is represented as an integer proportional only to the number of unique words that can follow that specific context. This "projection" significantly reduces the magnitude of integers, allowing for quasi-optimal compression.
+*   **Binary Interpolative Coding (BIC):** This recursive algorithm uses the bounds provided by parent nodes to constrain the encoding range for children, making it highly efficient for clustered data.
+*   **Structural Inheritance:** Frameworks like **SCOPE** use compression-based prefix trees to merge equivalent reasoning steps, reducing complexity from $O(NMK)$ to $O(N)$ by inheriting parent states.
+
+### **3. Serialized Memory Formats and Succinct Structures**
+To overcome the "pointer-chasing" bottleneck, research emphasizes serialized, hardware-aligned formats that support "zero-copy" access.
+
+*   **Pointer-less and Flat Layouts:** Techniques like **Double-Array Tries (DAT)** and **Eytzinger Order** flatten the trie into contiguous memory blocks. This improves cache locality and allows for memory-mapping (**mmap**), enabling massive models to be queried directly from disk without full decompression.
+*   **Partitioned Elias-Fano (PEF):** PEF is a foundational technique for hierarchical encoding. It uses a two-level representation: a top level storing upper bounds and block sizes (metadata), and a bottom level encoding the blocks themselves. This structure supports $O(1)$ random access and is ideal for the "NextGEQ" operations required in trie traversal.
+*   **Directly Addressable Variable-Length Codes (DACs):** DACs allow for the storage of variable-length integers (like n-gram counts) in a way that permits $O(1)$ random access, bypassing the overhead of standard byte-aligned serialization.
+*   **SIMD Acceleration:** High-speed decoding is achieved through SIMD instructions (e.g., **Masked-VByte**). These libraries process multiple integers in a single clock cycle, bridging the gap between compression efficiency and hardware performance.
+
+### **4. Applications in Shared Dictionaries, PPM, and LLMs**
+Hierarchical trie compression is the backbone of both classical data compression and modern AI acceleration.
+
+*   **Speculative Decoding (REST & SpecInfer):** N-gram tries are used as "draft models" to predict sequences of tokens. **REST** utilizes a trie-based database of common phrases to retrieve candidate n-grams, allowing a larger model to verify entire "chunks" of text in a single parallel pass.
+*   **RadixAttention (SGLang):** In LLM serving, the KV cache is managed as a **radix tree**. This allows for the reuse of shared prefixes (e.g., system prompts) across multiple queries, significantly reducing redundant computation.
+*   **Prediction by Partial Matching (PPM):** PPM utilizes hierarchical tries to maintain context, "escaping" to lower-order tries when a symbol is not found. Hierarchical compression allows these multiple levels to be stored in a unified, residual-encoded structure.
+*   **Infini-gram:** While traditional tries are bounded, the **Infini-gram** engine uses **Suffix Arrays** to handle "unbounded" n-grams ($n=\infty$). It achieves a constant 7 bytes per token storage, providing a scalable alternative to tries for trillion-token datasets.
+
+---
+
+### **Comparison to the Provided Research Summary**
+The approach described in your goal—**hierarchical compression using parent expectation values**—represents a sophisticated synthesis of symbolic data structures and information theory. 
+
+| Feature | Traditional Trie Compression | Your Described Approach |
+| :--- | :--- | :--- |
+| **Primary Focus** | Structural compression (reducing pointers). | Value/Parameter compression (reducing bit-width). |
+| **Mechanism** | LOUDS, Succinct bit-vectors. | Residuals from parent expectation values. |
+| **Data Handling** | Static storage. | Predictive/Statistical modeling. |
+| **Efficiency** | Approaches info-theoretic lower bound of shape. | Approaches empirical entropy of the data distribution. |
+
+While classical succinct tries focus on the *shape* of the tree, your approach focuses on the *values* within the tree, aligning trie compression with the predictive nature of modern neural language modeling.
+
+---
+
+### **Important Links for Follow-up**
+
+*   **[Tongrams GitHub](https://github.com/jermp/tongrams):** Primary implementation of context-based remapping and the 1-Sort algorithm for massive n-gram tries.
+*   **[SDSL-lite Library](https://github.com/simongog/sdsl-lite):** The gold standard for succinct data structures, bit-vectors, and rank/select operations.
+*   **[Infini-gram: Scaling Unbounded n-gram LMs](https://arxiv.org/abs/2401.17377):** Essential for understanding suffix-array alternatives to hierarchical tries.
+*   **[RadixAttention (SGLang)](https://lmsys.org/blog/2024-01-17-sglang/):** Key resource for trie-based prefix reuse and KV cache management.
+*   **[KenLM Toolkit](https://kheafield.com/code/kenlm/):** The industry baseline for bit-packed, quantized, and differentially encoded n-gram tries.
+*   **[TriEmbed (ACL 2025)](https://aclanthology.org/2025.findings-acl.275/):** Direct application of trie structures to neural embedding reparameterization.
+*   **[REST: Retrieval-Based Speculative Decoding](https://arxiv.org/abs/2311.08252):** Details the use of n-gram tries as high-speed draft models for LLM acceleration.
+# Remaining Queue
+The following pages were not processed:
+1. [Infini-gram Source Code (GitHub)](https://github.com/liujch1998/infini-gram), Relevance Score: 95.411
+2. [Sadakane (2007a) - Compressed Suffix Trees with Full Functionality](http://dx.doi.org/10.1007/s00224-006-1188-3), Relevance Score: 95.387
+3. [Grossi et al. (2003) - High-order entropy-compressed text indexes](https://doi.org/10.1145/644108.644250), Relevance Score: 95.243
+4. [Infini-gram Mini](https://infini-gram-mini.io/), Relevance Score: 95.099
+5. [Brisaboa et al. (2009) - Directly Addressable Variable-Length Codes](https://doi.org/10.1007/978-3-642-03784-9_12), Relevance Score: 95.079
+6. [TOIS 2019 Paper: Handling Massive N-Gram Datasets Efficiently](https://dl.acm.org/doi/10.1145/3295455), Relevance Score: 95.036
+7. [SIGIR 2017 Paper: Efficient Data Structures for Massive N-Gram Datasets](https://dl.acm.org/doi/10.1145/3077136.3080798), Relevance Score: 94.992
+8. [REST GitHub Repository](https://github.com/FasterDecoding/REST), Relevance Score: 94.967
+9. [RQT: Hierarchical Residual Quantization for Multi-Model Compression](https://aclanthology.org/2025.findings-acl.554/), Relevance Score: 94.913
+10. [KenLM Language Model Toolkit](https://kheafield.com/code/kenlm/), Relevance Score: 94.816
+11. [SGLang GitHub Repository](https://github.com/sgl-project/sglang/), Relevance Score: 94.733
+12. [RadixAttention (vLLM Project)](https://github.com/vllm-project/vllm), Relevance Score: 94.708
+13. [Compressed FSM for JSON Decoding](https://lmsys.org/blog/2024-02-05-compressed-fsm/), Relevance Score: 94.645
+14. [Proceedings at OpenReview](https://openreview.net/group?id=ICLR.cc), Relevance Score: 94.576
+15. [zip2zip: Inference-Time Adaptive Tokenization via Online Compression](https://neurips.cc/virtual/2025/poster/118871), Relevance Score: 94.573
+16. [SCOPE: Step COmpression for Process Estimation (Prefix Tree Compression)](https://aclanthology.org/2025.findings-acl.1251.pdf), Relevance Score: 92.478
+17. [From Theory to Practice: Plug and Play with Succinct Data Structures (SEA 2014)](http://arxiv.org/pdf/1311.1249v1.pdf), Relevance Score: 90.499
+18. [Test-Time Steering for Lossless Text Compression](https://aclanthology.org/2025.findings-emnlp.110/), Relevance Score: 90.432
+19. [ds2i Project](https://github.com/ot/ds2i), Relevance Score: 90.379
+20. [Double-Array Trie Research (Aoe, 1989)](https://dl.acm.org/doi/10.1145/78524.78533), Relevance Score: 90.353
+21. [Okanohara & Sadakane (2007) - Practical Entropy-Compressed Rank/Select Dictionary](https://archive.siam.org/meetings/alenex07/papers/03.pdf), Relevance Score: 90.268
+22. [DFloat11: Lossless LLM Compression via Hierarchical Lookup Tables](https://neurips.cc/virtual/2025/poster/115225), Relevance Score: 90.221
+23. [Scalable Modified Kneser-Ney Language Model Estimation](http://www.aclweb.org/anthology/P11-1018), Relevance Score: 89.957
+24. [SpecInfer: Accelerating Generative LLM Serving with Speculative Inference and Token Tree Verification (Miao et al., 2023)](https://arxiv.org/html/2402.16363v3#bib.bib100), Relevance Score: 89.85
+25. [Shareghi et al. (2015) - Language Modeling with Compressed Suffix Trees](https://api.semanticscholar.org/CorpusID:225428), Relevance Score: 89.752
+26. [SpecInfer: Tree-based Speculative Decoding](https://arxiv.org/abs/2305.09781), Relevance Score: 89.55
+27. [DINT (Dictionary of Integers)](https://github.com/jermp/dint), Relevance Score: 89.526
+28. [MARISA-Trie](https://github.com/s-yata/marisa-trie), Relevance Score: 89.51
+29. [List of Implemented Data Structures](https://github.com/simongog/sdsl-lite/wiki/List-of-Implemented-Data-Structures), Relevance Score: 88.354
+30. [Succinct Data Structures (Technical Overview)](https://alexbowe.com/succinct-data-structures/), Relevance Score: 87.772
+31. [Succinct Data Structures for LMs (Ottaviano & Venturini)](https://arxiv.org/abs/1406.3510), Relevance Score: 85.432
+32. [PagedAttention (vLLM)](https://arxiv.org/abs/2309.06180), Relevance Score: 85.412
+33. [FastPFor Library](https://github.com/lemire/FastPFor), Relevance Score: 85.369
+34. [Hardware-aligned Hierarchical Sparse Attention](https://neurips.cc/virtual/2025/poster/117012), Relevance Score: 85.285
+35. [SDSL Cheat Sheet](http://simongog.github.io/assets/data/sdsl-cheatsheet.pdf), Relevance Score: 85.257
+36. [SGLang v0.4 Zero-Overhead Scheduler](https://lmsys.org/blog/2024-12-04-sglang-v0-4/), Relevance Score: 85.237
+37. [EMBYTE: Decomposition and Compression Learning for Small NLP](https://aclanthology.org/2025.findings-emnlp.379.pdf), Relevance Score: 85.183
+38. [Succinct Data Structures (Jacobson, 1989)](https://ieeexplore.ieee.org/document/45681), Relevance Score: 85.183
+39. [Stehouwer & van Zaanen (2010) - Suffix Arrays as Language Models](https://api.semanticscholar.org/CorpusID:18379946), Relevance Score: 85.112
+40. [KenLM Toolset](http://kheafield.com/code/kenlm), Relevance Score: 85.047
+41. [Tongrams-rs (Rust Implementation)](https://github.com/kampersanda/tongrams-rs), Relevance Score: 85.025
+42. [TransferTraj: A Vehicle Trajectory Learning Model with TRIE Module](https://neurips.cc/virtual/2025/poster/117508), Relevance Score: 84.987
+43. [ICLR Blog Track](https://iclr.cc/virtual/2026/events/BlogTrack-2026), Relevance Score: 84.983
+44. [Succinct Data Structures for Tries (Survey)](https://www.di.unipi.it/~ottavian/files/elias_fano_trie.pdf), Relevance Score: 84.975
+45. [Succinct Data Structures Library](https://github.com/ot/succinct), Relevance Score: 84.948
+46. [Succinct Data Structures (Wikipedia/Research Overview)](https://en.wikipedia.org/wiki/Succinct_data_structure), Relevance Score: 84.914
+47. [PagedAttention/vLLM (Kwon et al., 2023)](https://arxiv.org/html/2402.16363v3#bib.bib70), Relevance Score: 84.861
+48. [Succinct Tries by Steve Hanov](http://stevehanov.ca/blog/?id=120), Relevance Score: 84.809
+49. [Succinct Data Structures for Language Modeling](https://www.microsoft.com/en-us/research/publication/succinct-data-structures-for-compression-and-faster-queries/), Relevance Score: 84.688
+50. [Succinct Data Structures (LOUDS)](https://en.wikipedia.org/wiki/LOUDS), Relevance Score: 84.647
+51. [triebeard](https://cran.r-project.org/web/packages/triebeard/index.html), Relevance Score: 84.644
+52. [Ribbon Filters Paper](https://drops.dagstuhl.de/opus/volltexte/2022/16538/pdf/LIPIcs-SEA-2022-4.pdf), Relevance Score: 80.492
+53. [PPM Compression Algorithms](https://en.wikipedia.org/wiki/Prediction_by_partial_matching), Relevance Score: 80.474
+54. [Suffix Array Construction (Kärkkäinen et al., 2006)](https://api.semanticscholar.org/CorpusID:12825385), Relevance Score: 80.43
+55. [On the Implementation of MST (Minimum Spanning Trie) Compression](https://ieeexplore.ieee.org/document/1055557), Relevance Score: 80.427
+56. [gibasa (MeCab)](https://cran.r-project.org/web/packages/gibasa/index.html), Relevance Score: 80.379
+57. [CALM: Confident Adaptive Language Modeling (Schuster et al., 2022)](https://arxiv.org/html/2402.16363v3#bib.bib115), Relevance Score: 80.369
+58. [LAVa: Layer-wise KV Cache Eviction with Dynamic Budget Allocation](https://aclanthology.org/2025.findings-emnlp.737/), Relevance Score: 80.357
+59. [Zstandard (Zstd) Dictionary Compression Manual](https://facebook.github.io/zstd/), Relevance Score: 80.352
+60. [Understanding LLM Behaviors via Compression (Syntax-Knowledge Model)](https://neurips.cc/virtual/2025/poster/119655), Relevance Score: 80.344
+61. [Giulio Ermanno Pibiri’s Academic Page](http://pages.di.unipi.it/pibiri/), Relevance Score: 80.27
+62. [CHAMP: Compressed Hash-Array Mapped Prefix-tree](https://blog.acolyer.org/2015/11/27/hamt/), Relevance Score: 80.21
+63. [Guidance AI](https://github.com/guidance-ai/guidance), Relevance Score: 80.176
+64. [TensorGPT (TTD for Embeddings)](https://arxiv.org/abs/2303.04705), Relevance Score: 80.176
+65. [PPM Compression Standards (Cleary & Witten)](https://ieeexplore.ieee.org/document/1096127), Relevance Score: 80.126
+66. [Train It and Forget It: Merge Lists are Unnecessary for BPE Inference](https://arxiv.org/abs/2410.11111), Relevance Score: 80.079
+67. [Modified Kneser-Ney Smoothing Research](https://ict.usc.edu/pubs/Smoothing%20Techniques%20for%20N-gram%20Language%20Models.pdf), Relevance Score: 79.953
+68. [VLMC](https://cran.r-project.org/web/packages/VLMC/index.html), Relevance Score: 79.946
+69. [Point3R: Streaming Reconstruction with Explicit Spatial Pointer Memory](https://neurips.cc/virtual/2025/poster/115114), Relevance Score: 79.646
+70. [SIMD Compression Libraries (Masked-VByte)](https://github.com/lemire/MaskedVByte), Relevance Score: 79.625
+71. [SGLang Official Documentation](https://docs.sglang.io/), Relevance Score: 79.597
+72. [PPM Compression Research (Cleary & Witten)](https://ieeexplore.ieee.org/document/1096090), Relevance Score: 79.584
+73. [FPE2M2: Efficient Quantization with Native Floating Point](https://aclanthology.org/2025.findings-acl.943/), Relevance Score: 77.602
+74. [nanoarrow](https://cran.r-project.org/web/packages/nanoarrow/index.html), Relevance Score: 75.35
+75. [ICLR Downloads](https://iclr.cc/Downloads), Relevance Score: 75.343
+76. [LLM-Viewer GitHub Repository](https://github.com/hahnyuan/LLM-Viewer), Relevance Score: 75.291
+77. [thor (LMDB)](https://cran.r-project.org/web/packages/thor/index.html), Relevance Score: 74.742
+78. [Deterministic Acyclic Finite State Automaton (Wikipedia)](https://en.wikipedia.org/wiki/Deterministic_acyclic_finite_state_automaton), Relevance Score: 74.517
+79. [The Myth of RAM](http://www.ilikebigbits.com/2014_04_21_myth_of_ram_1.html), Relevance Score: 70.019
+
+
+
 
 
 

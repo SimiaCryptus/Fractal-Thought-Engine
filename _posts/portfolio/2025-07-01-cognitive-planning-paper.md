@@ -14,6 +14,8 @@ tags:
   - cognitive-architecture
   - philosophy
   - Multi-Perspective-Analysis
+  - Ideation
+  - Research
 title: A Multi-Modal Cognitive Planning Architecture for AI-Driven Task Execution
 featured_image: /assets/images/2025-07-01-cognitive-planning-paper/main.png
 category: portfolio

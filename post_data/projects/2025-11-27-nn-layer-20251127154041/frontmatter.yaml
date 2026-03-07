@@ -1,6 +1,6 @@
 date: '"2025-11-27T00:00:00.000Z"'
 description: 'Comprehensive technical analysis of the InterpolatedDensityEntropy neural network layer, including forward/backward passes, gradient derivations, stability analysis, and reference implementations.'
-featured_image: main.png
+featured_image: /assets/images/2025-11-27-nn-layer-20251127154041/main.png
 keywords:
   - interpolated density entropy
   - neural network layer
@@ -14,3 +14,4 @@ tags:
   - mathematics
   - entropy
 title: 'Neural Network Layer Analysis: InterpolatedDensityEntropy'
+category: projects

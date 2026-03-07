@@ -17,6 +17,8 @@ tags:
   - distributed-systems
   - software-engineering
   - Multi-Perspective-Analysis
+  - Ideation
+  - Research
 title: 'reSTM: A REST-Based Distributed Software Transactional Memory Platform'
 featured_image: /assets/images/2025-06-30-restm-research-paper/main.png
 category: portfolio

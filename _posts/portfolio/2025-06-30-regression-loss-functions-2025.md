@@ -18,6 +18,8 @@ tags:
   - machine-learning
   - mathematics
   - Multi-Perspective-Analysis
+  - Ideation
+  - Research
 title: 'Alternative Loss Functions in Regression: A Visual Guide'
 featured_image: /assets/images/2025-06-30-regression-loss-functions-2025/main.png
 category: portfolio

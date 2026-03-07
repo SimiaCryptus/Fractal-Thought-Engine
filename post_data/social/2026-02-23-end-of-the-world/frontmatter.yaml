@@ -1,6 +1,6 @@
 date: '"2026-02-23T00:00:00.000Z"'
 description: 'An analysis of the Great Resonance—the turbulent synchronization of civilizational, technological, and institutional cycles—and how the interregnum between constitutional epochs demands new frameworks for resilience and agency.'
-featured_image: main.png
+featured_image: /assets/images/2026-02-23-end-of-the-world/main.png
 keywords:
   - civilizational cycles
   - interregnum
@@ -22,4 +22,15 @@ tags:
   - political-economy
   - complexity-science
   - institutional-analysis
+  - Philosophy-of-Mind
+  - Computational-Analysis
+  - Multi-Perspective-Analysis
+  - Comparative-Analysis
 title: 'The Great Resonance: Navigating the Interregnum of Civilizational Cycles'
+category: social
+content_formats:
+  - article
+  - analogy
+  - perspectives
+  - socratic
+  - statemachine

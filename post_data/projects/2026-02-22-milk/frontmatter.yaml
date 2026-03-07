@@ -1,6 +1,6 @@
 date: '"2026-02-22T00:00:00.000Z"'
 description: An exploration of the transition of milk from a biological secretion to a programmable food substrate within an open metabolic commons.
-featured_image: main.png
+featured_image: /assets/images/2026-02-22-milk/main.png
 keywords:
   - precision fermentation
   - cellular agriculture
@@ -15,4 +15,13 @@ tags:
   - economics
   - ethics
   - game-theory
+  - Computational-Analysis
+  - Game-Theory
+  - Technical-Documentation
 title: 'The Programmable Secretion: Milk and the Open Metabolic Commons'
+category: projects
+content_formats:
+  - article
+  - gametheory
+  - statemachine
+  - technical_explanation

@@ -1,6 +1,6 @@
 date: '"2026-02-20T00:00:00.000Z"'
 description: 'A proposal for a new ontology of AI, reframing LLMs as ''Philosophical Calculators'' that perform high-dimensional conceptual arithmetic rather than mimicking human cognition.'
-featured_image: main.png
+featured_image: /assets/images/2026-02-20-Philosophical-Calculator/main.png
 keywords:
   - ontological misalignment
   - legacy metaphors
@@ -15,4 +15,11 @@ tags:
   - ai-consciousness
   - philosophy
   - cognitive-architecture
+  - Philosophy-of-Mind
+  - Multi-Perspective-Analysis
 title: 'The Philosophical Calculator: Beyond the Mirror of Legacy Metaphors'
+category: projects
+content_formats:
+  - article
+  - perspectives
+  - socratic

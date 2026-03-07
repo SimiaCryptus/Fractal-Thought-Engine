@@ -1,6 +1,6 @@
 date: '"2026-01-01T00:00:00.000Z"'
 description: An analysis of modern fascism as a self-replicating cognitive pathology that causes institutional collapse through algorithmic optimization and 'misfolded' social logic.
-featured_image: main.png
+featured_image: /assets/images/2026-01-01-facist-prion/main.png
 keywords:
   - cultural prion
   - institutional necrosis
@@ -13,4 +13,15 @@ tags:
   - political-economy
   - institutional-analysis
   - complexity-science
+  - Creative-Writing
+  - Philosophy-of-Mind
+  - Technical-Documentation
 title: 'Fascism as a Cultural Prion: The Structural Mechanics of Institutional Necrosis'
+category: social
+content_formats:
+  - article
+  - comic_seq
+  - narrative
+  - narrative_seq
+  - socratic
+  - technical_explanation

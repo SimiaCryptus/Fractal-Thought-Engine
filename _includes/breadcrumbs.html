@@ -2,20 +2,28 @@
 {% assign crumbs_total = crumbs | size | minus: 1 %}
 
 {% if crumbs_total > 0 %}
-<nav class="breadcrumbs" aria-label="Breadcrumb navigation">
+<nav class="breadcrumbs" aria-label="Breadcrumbs">
+  <ol>
+  <li>
   <a href="{{ site.baseurl }}/">Home</a>
+  </li>
   {% for crumb in crumbs offset: 1 %}
     {% if forloop.last %}
-      <span class="separator" aria-hidden="true">›</span>
-      <span class="current" aria-current="page">{{ page.title }}</span>
+      <li aria-current="page">
+        <span class="separator" aria-hidden="true">›</span>
+        <span class="current">{{ page.title }}</span>
+      </li>
     {% else %}
-      <span class="separator" aria-hidden="true">›</span>
       {% assign crumb_url = '' %}
       {% for i in (1..forloop.index) %}
         {% assign crumb_url = crumb_url | append: crumbs[i] | append: '/' %}
       {% endfor %}
-      <a href="{{ site.baseurl }}/{{ crumb_url }}">{{ crumb | replace: '_', ' ' | capitalize }}</a>
+      <li>
+        <span class="separator" aria-hidden="true">›</span>
+        <a href="{{ site.baseurl }}/{{ crumb_url }}">{{ crumb | replace: '_', ' ' | capitalize }}</a>
+      </li>
     {% endif %}
   {% endfor %}
+  </ol>
 </nav>
 {% endif %}

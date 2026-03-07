@@ -1,6 +1,6 @@
 date: '"2025-08-08T00:00:00.000Z"'
 description: 'A revolutionary physics framework proposing that reality emerges from dynamic minimal surfaces following soap film principles, unifying quantum mechanics, general relativity, and consciousness through geometric optimization.'
-featured_image: main.png
+featured_image: /assets/images/2025-08-08-quantum-flux-theory/main.png
 keywords:
   - minimal surface theory
   - soap film physics
@@ -16,3 +16,4 @@ tags:
   - geometry
   - theoretical-physics
 title: 'Minimal Surface Dynamics: A Fundamental Physics Framework'
+category: projects

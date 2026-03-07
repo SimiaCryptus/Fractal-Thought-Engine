@@ -15,6 +15,8 @@ tags:
   - software-engineering
   - algorithms
   - Multi-Perspective-Analysis
+  - Ideation
+  - Research
 title: MindsEye Reference Counting Analysis
 featured_image: /assets/images/2025-07-01-mindseye-refcount-analysis/main.png
 category: portfolio

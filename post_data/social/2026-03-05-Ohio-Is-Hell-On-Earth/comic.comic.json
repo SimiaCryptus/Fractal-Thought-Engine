@@ -1,0 +1,340 @@
+{
+  "config" : {
+    "task_description" : "Generate a comic book adaptation of 'Ohio Is Hell on Earth', exploring themes of institutional surveillance, the 'livestock logic' of modern parenting, and the social sorting of secular families in a moral-reform culture.",
+    "target_pages" : 6,
+    "art_style" : "Gritty Noir with Surrealist Institutional Elements",
+    "style_details" : "High contrast, heavy shadows (chiaroscuro). Use clinical white for institutional spaces (offices, schools) and deep, murky shadows for the 'exposed' reality. Visual metaphors should be literal: bureaucrats holding clipboards that look like scythes, children with subtle ear-tags like livestock, and the 'web of mutual recognition' depicted as glowing threads connecting church-aligned families.",
+    "generate_images" : true,
+    "character_references" : [ {
+      "character_name" : "Andrew",
+      "visual_description" : "Mid-40s, sharp features, wearing glasses and a slightly rumpled button-down shirt. He has the look of a weary intellectual—an AI researcher who has seen too much data. His eyes are tired but observant.",
+      "personality_notes" : "Analytical, protective, deeply cynical of institutions but deeply loving toward his daughter. He speaks in philosophical observations.",
+      "role" : "protagonist",
+      "relationships" : "Single adoptive father to his daughter; biological father to two sons (seen in flashbacks/photos)."
+    }, {
+      "character_name" : "The Daughter",
+      "visual_description" : "7 years old, bright and curious. She wears a t-shirt with a T-Rex on it. She often carries a fossil or a science book. She represents the 'illegible' spark of life the system tries to flatten.",
+      "personality_notes" : "Scientifically literate, oblivious to the bureaucratic weight on her father, but starting to feel the 'remainder' status at school.",
+      "role" : "supporting",
+      "relationships" : "Andrew's daughter (adopted niece)."
+    }, {
+      "character_name" : "The Bureaucrat",
+      "visual_description" : "An archetypal figure, often seen in silhouette or with features obscured by the glare of office lights. Wears a sharp, dated suit reminiscent of the 1920s Anti-Saloon League era, but with a modern clinical white coat over it.",
+      "personality_notes" : "Cold, metric-driven, convinced of their own moral righteousness. They don't see people, only 'cases'.",
+      "role" : "antagonist",
+      "relationships" : "Representative of the State of Ohio and the Westerville moral machinery."
+    } ],
+    "plot_continuity" : {
+      "narrative_structure" : "Five-act structure following the essay's descent into the 'Layers of Hell'.",
+      "key_plot_points" : [ "The Pediatrician's office: The growth chart is revealed as a livestock metric. Andrew realizes he is being graded on 'yield'.", "The Social Topology: A visual map of Westerville showing the 'Protected' (church web), 'Accommodated' (immigrants), and 'Exposed' (Andrew).", "The Impossible Father: Andrew in a glass room where his competence is invisible to the bureaucrats outside who only see the 'gap' where a mother should be.", "The Sorting: The LifeWise bus arrives at school. The 'saved' children board; the daughter is left behind as a 'remainder' in a cold classroom.", "The Ghost of Westerville: The Anti-Saloon League headquarters looming over the town like a panopticon. The 'New Temperance' logic explained.", "The Three Layers of Hell: The ambient toxicity, targeted misinterpretation, and ideological offense closing in on Andrew as he stands in a field that is actually a farm." ],
+      "setting_details" : "Westerville, Ohio. A suburb that looks perfect on the surface—manicured lawns, Saturday farmers markets—but feels like a high-pressure cooker or a managed farm from the inside.",
+      "themes" : [ "Institutional Legibility vs. Human Complexity", "Livestock Logic in Social Services", "Moral Reform as Surveillance", "The Erasure of Paternal Competence", "The Architecture of Social Exclusion" ],
+      "tone" : "Dark, analytical, haunting, and urgent.",
+      "prior_story_context" : "",
+      "continuity_constraints" : [ "The daughter's dinosaur shirt must be a recurring visual motif representing her 'dangerous' curiosity.", "The 'Anti-Saloon League' imagery should haunt the background of modern settings.", "The transition from a medical office to a literal farm should be seamless and surreal." ],
+      "ending_notes" : "The final panel should show the daughter looking at a fossil, defiant in her curiosity, while Andrew looks at the reader, acknowledging that the 'machine' is still running.",
+      "additional_notes" : "Use James C. Scott's 'Seeing Like a State' as a visual inspiration for how the state 'flattens' reality into grids and numbers."
+    },
+    "state" : "Pending",
+    "task_type" : "ComicBookGeneration",
+    "files" : [ "comic.md" ]
+  },
+  "script" : {
+    "title" : "Ohio Is Hell on Earth",
+    "premise" : "A secular single father navigates the \"livestock logic\" and moral-reform machinery of Westerville, Ohio, where institutional metrics and religious sorting transform a family into a \"case.\"",
+    "characters" : [ {
+      "name" : "Andrew",
+      "description" : "Analytical, protective, deeply cynical of institutions. The narrator and father fighting for legibility.",
+      "visual_traits" : "Mid-40s, sharp features, wearing glasses and a slightly rumpled button-down shirt. A weary intellectual with tired but observant eyes."
+    }, {
+      "name" : "The Daughter",
+      "description" : "Scientifically literate, oblivious to the bureaucracy, but feeling the social \"remainder\" status. The \"output\" the state is measuring.",
+      "visual_traits" : "7 years old, bright and curious. Wears a t-shirt with a T-Rex on it. Often carries a fossil or a science book."
+    }, {
+      "name" : "The Bureaucrat",
+      "description" : "Cold, metric-driven, morally self-righteous. Representative of the State’s \"livestock logic.\"",
+      "visual_traits" : "Features obscured by the glare of office lights. Wears a 1920s-style suit (Anti-Saloon League era) with a modern clinical white lab coat over it. Carries a clipboard that looks vaguely like a scythe."
+    } ],
+    "pages" : [ {
+      "page_number" : 1,
+      "rows" : [ {
+        "row_number" : 1,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "Extreme close-up of a growth chart. The lines look like a stock market crash. A red dot sits outside the \"acceptable\" curve.",
+          "dialog" : [ ]
+        }, {
+          "frame_number" : 2,
+          "description" : "A clinical white hand holds a pen, circling the outlier dot with aggressive precision.",
+          "dialog" : [ ]
+        } ],
+        "visual_description" : "High-contrast white background. The chart looks more like a blueprint for a machine than a medical record."
+      }, {
+        "row_number" : 2,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "Andrew sits in a small plastic chair, looking up. The Doctor/Bureaucrat is a towering silhouette against a blinding fluorescent light.",
+          "dialog" : [ ]
+        }, {
+          "frame_number" : 2,
+          "description" : "Andrew’s daughter sits on the exam table, swinging her legs. She’s wearing her T-Rex shirt. She looks perfectly healthy, but the Doctor is looking only at the chart.",
+          "dialog" : [ ],
+          "caption" : "I watched a doctor frown at a growth chart—my daughter’s growth chart—and I realized the concern had nothing to do with her health."
+        } ],
+        "visual_description" : "Chiaroscuro lighting. Andrew is in deep shadow; the Doctor is a bleached-out white shape."
+      }, {
+        "row_number" : 3,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "Surreal shift. The office walls peel away like old wallpaper to reveal a vast, muddy cattle feedlot under a grey Ohio sky.",
+          "dialog" : [ ]
+        }, {
+          "frame_number" : 2,
+          "description" : "Close-up of the Daughter’s ear. A small, yellow plastic livestock tag is clipped to it. It reads: PERCENTILE: 15th. STATUS: INTERVENTION.",
+          "dialog" : [ ],
+          "caption" : "That is livestock logic. A farmer evaluating whether a calf is gaining weight on schedule. The child is not the patient. The child is the output."
+        } ],
+        "visual_description" : "Gritty, textured mud and rain. The transition from the clean office to the dirty farm is seamless."
+      } ]
+    }, {
+      "page_number" : 2,
+      "rows" : [ {
+        "row_number" : 1,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "A map of Westerville, Ohio. It’s being flattened by a giant, transparent grid descending from the sky.",
+          "dialog" : [ ]
+        }, {
+          "frame_number" : 2,
+          "description" : "Andrew’s face, half-covered by the grid lines. His features are being converted into a barcode.",
+          "dialog" : [ ],
+          "caption" : "The first move of every modern state: make the population legible. Flatten the complexity of life into categories the institution can read."
+        } ],
+        "visual_description" : "The grid is glowing, clinical blue. It \"cuts\" through the organic shapes of the town."
+      }, {
+        "row_number" : 2,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "A \"Protected\" family. A suburban house wrapped in a glowing web of golden threads. The threads connect to a church steeple and a school board office.",
+          "dialog" : [ ]
+        }, {
+          "frame_number" : 2,
+          "description" : "An \"Accommodated\" family. An immigrant household. They are inside a box labeled \"CULTURAL DIFFERENCE (ESL).\" The Bureaucrat is checking a box on a form, nodding.",
+          "dialog" : [ ]
+        } ],
+        "visual_description" : "The \"Protected\" web looks like a safety net that also obscures the family from view."
+      }, {
+        "row_number" : 3,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "Andrew and his daughter standing in an open, empty field. No web, no box. Just a giant, harsh spotlight hitting them from above.",
+          "dialog" : [ ]
+        }, {
+          "frame_number" : 2,
+          "description" : "The Bureaucrat stands at the edge of the light, holding a clipboard. He looks at Andrew with a squint of \"deficiency.\"",
+          "dialog" : [ ],
+          "caption" : "Then there is the secular local family. Not protected by a church, not legible as \"other.\" Our difference is read as a defect."
+        } ],
+        "visual_description" : "Andrew looks small and vulnerable. The shadows around the spotlight are pitch black."
+      } ]
+    }, {
+      "page_number" : 3,
+      "rows" : [ {
+        "row_number" : 1,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "Andrew is in a glass observation room. He is packing a healthy lunch, helping with homework, and reading a bedtime story.",
+          "dialog" : [ ]
+        }, {
+          "frame_number" : 2,
+          "description" : "Outside the glass, a group of Bureaucrats are looking at him. They don't see the lunch or the books. They only see a large, dark silhouette of a woman with a question mark over her face.",
+          "dialog" : [ ],
+          "caption" : "A single father is not a category. He is a question. The system cannot see paternal competence. It only sees the empty space where a mother should be."
+        } ],
+        "visual_description" : "Andrew’s actions are rendered in warm, soft colors, but the glass filters them into cold, grey tones for the observers."
+      }, {
+        "row_number" : 2,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "A montage of forms. \"Mother/Guardian\" is highlighted in neon; \"Father/Guardian\" is a faint afterthought.",
+          "dialog" : [ ]
+        }, {
+          "frame_number" : 2,
+          "description" : "A Bureaucrat leans in close to Andrew, his breath visible.",
+          "dialog" : [ {
+            "character" : "The Bureaucrat",
+            "text" : "And where... is the mother, Mr. Charneski? Why are you the one here?"
+          } ]
+        } ],
+        "visual_description" : "The Bureaucrat’s face is a mask of \"clinical concern\" that looks like an interrogation."
+      }, {
+        "row_number" : 3,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "A manila folder slams shut. The label reads: CHARNESKI, A. – SITUATION TO BE MANAGED.",
+          "dialog" : [ ],
+          "caption" : "The data said \"competent father.\" The architecture said \"situation.\" The architecture won every time."
+        } ],
+        "visual_description" : "The folder is thick, bursting with papers that look like they’re trying to escape."
+      } ]
+    }, {
+      "page_number" : 4,
+      "rows" : [ {
+        "row_number" : 1,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "A bright yellow school bus pulls up. It has \"LIFEWISE ACADEMY\" written on the side in a font that looks like a hymn book.",
+          "dialog" : [ ]
+        }, {
+          "frame_number" : 2,
+          "description" : "Most of the children in the classroom stand up, glowing with a soft, communal light. They board the bus together.",
+          "dialog" : [ ]
+        } ],
+        "visual_description" : "The children boarding the bus look like a single, unified organism."
+      }, {
+        "row_number" : 2,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "Andrew’s daughter sits alone in a cavernous, dark classroom. The desks around her are empty. The clock on the wall is ticking loudly.",
+          "dialog" : [ ]
+        }, {
+          "frame_number" : 2,
+          "description" : "She looks down at her T-Rex shirt. The dinosaur looks lonely.",
+          "dialog" : [ ],
+          "caption" : "The LifeWise kids return as a group. My daughter is not part of a group. She is a remainder. She is what is left when the community leaves the room."
+        } ],
+        "visual_description" : "The classroom is tinted in a cold, lonely blue. The shadows of the empty desks stretch toward her."
+      }, {
+        "row_number" : 3,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "A group of \"Saved\" children stand in a circle, whispering and pointing at the Daughter.",
+          "dialog" : [ {
+            "character" : "Child 1",
+            "text" : "She believes in the old earth."
+          }, {
+            "character" : "Child 2",
+            "text" : "My mom says her house is... dangerous."
+          } ]
+        }, {
+          "frame_number" : 2,
+          "description" : "Andrew’s daughter holds a small trilobite fossil, her knuckles white.",
+          "dialog" : [ ],
+          "caption" : "Her scientific curiosity is treated as evidence of abuse. My fitness is evaluated through the lens of a community I do not belong to."
+        } ],
+        "visual_description" : "The whispering children are drawn with slightly exaggerated, judgmental features."
+      } ]
+    }, {
+      "page_number" : 5,
+      "rows" : [ {
+        "row_number" : 1,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "The Anti-Saloon League headquarters in Westerville. A grim, stone building that looks like a fortress.",
+          "dialog" : [ ]
+        }, {
+          "frame_number" : 2,
+          "description" : "A ghost-like figure in a 1920s top hat and coat stands in the window, looking out over the modern suburb.",
+          "dialog" : [ ],
+          "caption" : "Westerville calls itself the \"Dry Capital of the World.\" It’s a boast. The civic DNA here is moral reform. Surveillance in the name of protection."
+        } ],
+        "visual_description" : "The building looms over the modern houses like a panopticon."
+      }, {
+        "row_number" : 2,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "A modern kitchen. A pressure cooker sits on the stove, whistling violently.",
+          "dialog" : [ ]
+        }, {
+          "frame_number" : 2,
+          "description" : "The Bureaucrat is taking notes on the steam.",
+          "dialog" : [ ],
+          "caption" : "The new temperance uses the school schedule to remove the secular from the social body. Building a pressure cooker and pathologizing the steam."
+        } ],
+        "visual_description" : "The steam from the cooker forms the shape of a DNA double helix, which the Bureaucrat is \"measuring\" with a ruler."
+      }, {
+        "row_number" : 3,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "A neighbor peeks through closed blinds, holding a phone. Their face is twisted in \"righteous concern.\"",
+          "dialog" : [ ]
+        }, {
+          "frame_number" : 2,
+          "description" : "A CPS worker’s car idles at the curb of Andrew’s house. The headlights look like predatory eyes.",
+          "dialog" : [ ],
+          "caption" : "The enforcers are not aberrations. They are the immune system of the enclosure."
+        } ],
+        "visual_description" : "High-contrast noir. The neighborhood looks like a prison camp disguised as a cul-de-sac."
+      } ]
+    }, {
+      "page_number" : 6,
+      "rows" : [ {
+        "row_number" : 1,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "Andrew is walking down a staircase that descends into a dark pit. The walls are made of filing cabinets.",
+          "dialog" : [ ]
+        }, {
+          "frame_number" : 2,
+          "description" : "Whispers emerge from the cabinets: \"Unstable... Secular... Situation... Outlier...\"",
+          "dialog" : [ ],
+          "caption" : "Layer one: Ambient toxicity. Layer two: Targeted misinterpretation. Layer three: Ideological offense."
+        } ],
+        "visual_description" : "The filing cabinets are leaking black ink that pools at Andrew’s feet."
+      }, {
+        "row_number" : 2,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "Andrew and his daughter stand in their backyard. The wooden fence has transformed into barbed wire. A watchtower looms where the neighbor’s oak tree used to be.",
+          "dialog" : [ ]
+        }, {
+          "frame_number" : 2,
+          "description" : "Andrew looks at the reader. His glasses are cracked. He looks exhausted but defiant.",
+          "dialog" : [ {
+            "character" : "Andrew",
+            "text" : "Are we planning on eating the kids? No. We’re just processing them."
+          } ]
+        } ],
+        "visual_description" : "The \"suburb\" is now fully revealed as a managed farm. The lighting is the grey, oppressive light of a permanent Ohio winter."
+      }, {
+        "row_number" : 3,
+        "frames" : [ {
+          "frame_number" : 1,
+          "description" : "Close-up of the Daughter’s hand. She is holding a fossilized dinosaur tooth. It is sharp and real.",
+          "dialog" : [ ]
+        }, {
+          "frame_number" : 2,
+          "description" : "Wide shot. Andrew and the Daughter stand together as the \"machine\"—a giant, mechanical Bureaucrat made of clipboards and gears—looms over them.",
+          "dialog" : [ ],
+          "caption" : "My daughter believes in dinosaurs. The system believes this is a problem. One of us is right. This is Ohio. The heart of it all. That is exactly where it hurts."
+        } ],
+        "visual_description" : "The daughter looks at the fossil with a small, secret smile. Andrew stares down the machine. Blackout."
+      } ]
+    } ]
+  },
+  "characterImages" : {
+    "Andrew" : "char_Andrew.png",
+    "The Daughter" : "char_The_Daughter.png",
+    "The Bureaucrat" : "char_The_Bureaucrat.png"
+  },
+  "rowImages" : {
+    "1_1" : "page_1_row_1.png",
+    "1_2" : "page_1_row_2.png",
+    "1_3" : "page_1_row_3.png",
+    "2_1" : "page_2_row_1.png",
+    "2_2" : "page_2_row_2.png",
+    "2_3" : "page_2_row_3.png",
+    "3_1" : "page_3_row_1.png",
+    "3_2" : "page_3_row_2.png",
+    "3_3" : "page_3_row_3.png",
+    "4_1" : "page_4_row_1.png",
+    "4_2" : "page_4_row_2.png",
+    "4_3" : "page_4_row_3.png",
+    "5_1" : "page_5_row_1.png",
+    "5_2" : "page_5_row_2.png",
+    "5_3" : "page_5_row_3.png",
+    "6_1" : "page_6_row_1.png",
+    "6_2" : "page_6_row_2.png",
+    "6_3" : "page_6_row_3.png"
+  }
+}

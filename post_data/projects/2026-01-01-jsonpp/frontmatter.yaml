@@ -1,6 +1,6 @@
 date: '"2026-01-01T00:00:00.000Z"'
 description: 'A proposal for JSON++, a grammar-extensible substrate for active data, bridging the gap between static serialization and dynamic processing.'
-featured_image: main.png
+featured_image: /assets/images/2026-01-01-jsonpp/main.png
 keywords:
   - json++
   - symbolic bindings
@@ -11,4 +11,11 @@ tags:
   - technical-spec
   - software-engineering
   - data-structures
+  - Software-Design
+  - Tutorial
 title: 'JSON++: The Symbolic Substrate for Active Data'
+category: projects
+content_formats:
+  - article
+  - design
+  - tutorial

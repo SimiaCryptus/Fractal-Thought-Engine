@@ -1,6 +1,6 @@
 date: '"2025-12-07T00:00:00.000Z"'
 description: 'A technical proposal to detect ''Just-In-Time'' (JIT) rendering artifacts in macroscopic physics, testing the hypothesis that physical history is generated retroactively only when observed to conserve computational resources.'
-featured_image: main.png
+featured_image: /assets/images/2025-12-07-chronos-jit-protocol/main.png
 keywords:
   - lazy evaluation
   - retro-causal error correction
@@ -13,3 +13,4 @@ tags:
   - theoretical-physics
   - epistemology
 title: 'Project: Chronos-JIT (Detecting Latency in Macroscopic Reality Rendering)'
+category: projects

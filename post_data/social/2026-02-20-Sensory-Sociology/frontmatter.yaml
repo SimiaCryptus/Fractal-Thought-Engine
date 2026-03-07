@@ -1,6 +1,6 @@
 date: '"2026-02-20T00:00:00.000Z"'
 description: An exploration of sensory sociology and its implications for qualitative research.
-featured_image: main.png
+featured_image: /assets/images/2026-02-20-Sensory-Sociology/main.png
 keywords:
   - sensory sociology
   - senses
@@ -10,4 +10,11 @@ tags:
   - paper
   - sociology
   - phenomenology
+  - Creative-Writing
+  - Philosophy-of-Mind
 title: Sensory Sociology
+category: social
+content_formats:
+  - article
+  - narrative
+  - socratic

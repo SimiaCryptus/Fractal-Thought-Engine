@@ -16,6 +16,7 @@ tags:
   - theoretical-physics
   - orbital-dynamics
   - Multi-Perspective-Analysis
+  - Technical-Documentation
 title: >-
   Size-Band Field Theory for Planetary Formation: A Novel Statistical Mechanics
   Framework

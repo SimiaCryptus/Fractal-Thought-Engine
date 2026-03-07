@@ -4,6 +4,8 @@
 
 Every civilizational order rests on an implicit answer to the question: *what makes humans valuable?* Not morally — that answer is easy and cheap — but *functionally*, within the power structures that actually govern resource allocation, status, and survival. The substrate of that functional value has migrated three times in the modern era, and each migration has rendered a different dimension of human capability obsolete.
 
+![The three historical migrations of the functional substrate of human value, from physical mass to cognitive scarcity.](three_regimes_functional_value_infographic.png)
+
 **Regime 1: Animal Strength → Industrial Mass.** For most of recorded history, human value in the context of power was grounded in the body. Armies were collections of primate strength — men who could march, swing, hold a line. Political authority flowed from the capacity to organize and project physical violence. The sovereign who could field more bodies, and keep them fed and moving, dominated.
 
 **Regime 2: Industrial Mass → Cognitive Elites.** The twentieth century — specifically the period from roughly 1940 to 2020 — shifted the locus of civilizational power from mass to mind. The atomic bomb was not built by an army. It was built by a handful of physicists. The information revolution was not driven by factory labor. It was driven by mathematicians, engineers, and programmers. Human value, in the functional sense that matters to power, migrated from muscle to cognition.
@@ -21,6 +23,8 @@ The first regime transition — from primate-scale dominance to industrial-scale
 Napoleon's campaigns were, in one sense, the apotheosis of the old model: a single charismatic commander projecting power through the massed bodies of citizen-soldiers. But they were also the beginning of its end. The logistics of the Grande Armée — the supply chains, the road networks, the administrative apparatus required to move 600,000 men into Russia — were already industrial problems wearing pre-industrial clothes. Napoleon didn't lose to a better general. He lost to distance, weather, and the caloric requirements of half a million mammals.
 
 The American Civil War made the lesson explicit. The Confederacy fought, in many respects, a Napoleonic war: aristocratic officer corps, cavalry charges, the romance of individual valor. The Union fought an industrial war: railroads, telegraphs, factory-produced rifles, and the grim arithmetic of attrition. Grant's strategy was not brilliant in the classical sense. It was *systematic*. He understood that the North could replace its losses and the South could not. He turned the war into a resource-consumption problem and solved it with logistics.
+![The transition from the Napoleonic model of individual valor to the Union model of industrial logistics and systematic attrition.](napoleonic_valor_vs_industrial_logistics.png)
+
 
 What followed was not peace but transformation. The Gilded Age was the political economy of the new regime: human value now resided not in martial prowess but in the capacity to operate, manage, and profit from industrial systems. The old martial aristocracies didn't vanish — they adapted, or were replaced by industrial magnates who wielded a different kind of power. The humans who couldn't adapt — subsistence farmers, artisans, the formerly enslaved — were not gently retrained. They were crushed, exploited, or ignored.
 
@@ -35,6 +39,8 @@ This is the pattern. The substrate of value migrates. The humans left standing o
 The Second World War created a new myth, and for eighty years that myth held.
 
 The myth was this: *human value equals intelligence*. The war was won — or at least, its decisive asymmetries were created — by a tiny cohort of extraordinary minds. Alan Turing broke Enigma and, in doing so, arguably shortened the war by years. John von Neumann's mathematical contributions spanned ballistics, shock waves, and the foundational architecture of the digital computer. Robert Oppenheimer led the Manhattan Project, converting theoretical physics into the most consequential weapon in history. Claude Shannon formalized information theory, laying the groundwork for every communication system that followed.
+![The "Wizards" of the mid-20th century established intelligence as the primary strategic resource of the modern era.](postwar_cognitive_elite_wizards.png)
+
 
 These were the "wizards" — and their existence created a new social contract. If intelligence was the substrate of civilizational power, then societies needed to cultivate, educate, and reward intelligence. The postwar order was built on this logic. The GI Bill, the expansion of universities, the creation of national research laboratories, the space race, the semiconductor industry, Silicon Valley — all of it rested on the premise that smart humans were the scarce resource that determined national power.
 
@@ -53,10 +59,14 @@ That moment is now.
 The development of large-scale AI systems has done to cognitive labor what the steam engine did to physical labor: not eliminated it entirely, but destroyed its scarcity value. A language model can draft legal briefs, write code, analyze medical images, compose music, summarize research, and generate strategic analyses. It does these things imperfectly — but it does them at near-zero marginal cost, at scale, without sleep, without benefits, without complaint.
 
 The analogy that clarifies the situation is the horse. In 1900, the United States had approximately 21 million horses. They were essential to transportation, agriculture, industry, and warfare. The entire economy was organized around their capabilities. By 1960, the horse population had collapsed to roughly 3 million, and horses had become recreational luxuries. No one "solved" the horse unemployment problem. There was no retraining program, no equine universal basic income. Horses simply stopped being economically necessary, and their numbers adjusted accordingly.
+![The collapse of the horse population (1900–1960) serves as a historical precedent for the devaluation of a functional substrate when a cheaper substitute emerges.](horse_population_decline_chart.png)
+
 
 The critical difference, of course, is that horses don't vote, don't riot, and don't build nuclear weapons. Humans do. But the economic logic is identical: when a cheaper substitute exists for the function you perform, your market value collapses regardless of your intrinsic qualities.
 
 What makes the current transition uniquely dangerous is that it attacks the *last* substrate. When industrial machines replaced human muscle, humans could retreat to cognition — "we're not just bodies, we're *minds*." When AI replaces human cognition, there is no further retreat. The implicit promise of the Enlightenment — that human reason is the highest and most irreplaceable capacity in the universe — is being falsified in real time, not by philosophical argument but by engineering.
+![As AI automates cognition, the final functional substrate of human value begins to evaporate, leaving no further room for retreat.](evaporating_human_substrate_abstract.png)
+
 
 Simultaneously, the global economic system has reached a state of overintegration that amplifies every shock. Supply chains span continents. Financial markets are coupled in milliseconds. Labor markets are global. This means that the displacement effects of AI are not local or gradual — they propagate through the entire system at the speed of information. A breakthrough in automated coding doesn't just affect programmers in San Francisco; it reprices cognitive labor worldwide, instantaneously.
 

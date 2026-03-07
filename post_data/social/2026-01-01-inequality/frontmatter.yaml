@@ -1,6 +1,6 @@
 date: '"2026-01-01T00:00:00.000Z"'
 description: 'A multi-modal mathematical framework exploring the relationship between economic inequality, narrative perception, and the Agentic OS using SDEs and formal logic.'
-featured_image: main.png
+featured_image: /assets/images/2026-01-01-inequality/main.png
 keywords:
   - gini coefficient
   - stochastic differential equations
@@ -17,3 +17,4 @@ tags:
   - mathematics
   - game-theory
 title: 'Inequality Dynamics and the Agentic OS: A Multi-Modal Mathematical Framework'
+category: social

@@ -1,6 +1,6 @@
 date: '"2025-12-12T00:00:00.000Z"'
 description: 'Explores a novel formulation of knot theory using Minkowski distance matrices, revealing how causal structure encodes topological crossings as unavoidable tangencies in the metric sheet.'
-featured_image: main.png
+featured_image: /assets/images/2025-12-12-minkowski-knots/main.png
 keywords:
   - relativistic knot theory
   - minkowski metric
@@ -14,4 +14,13 @@ tags:
   - topology
   - spacetime
   - geometry
+  - Multi-Perspective-Analysis
+  - Tutorial
+  - Ideation
 title: 'Relativistic Knot Theory: Topology in the Minkowski Metric Sheet'
+category: projects
+content_formats:
+  - article
+  - brainstorm
+  - perspectives
+  - tutorial

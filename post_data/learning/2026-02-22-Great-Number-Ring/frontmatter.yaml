@@ -1,6 +1,6 @@
 date: '"2026-02-22T00:00:00.000Z"'
 description: 'An investigation into the topological nature of the real number system, exploring the thesis that the real line functions as a circle of infinite radius, unifying the concepts of linear progression and cyclical return.'
-featured_image: main.png
+featured_image: /assets/images/2026-02-22-Great-Number-Ring/main.png
 keywords:
   - projective geometry
   - fourier transform
@@ -12,4 +12,11 @@ tags:
   - topology
   - mathematics
   - philosophy
+  - Philosophy-of-Mind
+  - Technical-Documentation
 title: Great Number Ring
+category: learning
+content_formats:
+  - article
+  - socratic
+  - technical_explanation

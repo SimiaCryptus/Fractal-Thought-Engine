@@ -1,0 +1,8 @@
+{
+  "gemini-3-flash-preview" : {
+    "prompt_tokens" : 27005,
+    "completion_tokens" : 15586,
+    "total_tokens" : 42591,
+    "cost" : 0.10121050000000002
+  }
+}

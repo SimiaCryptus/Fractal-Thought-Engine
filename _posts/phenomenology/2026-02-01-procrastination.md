@@ -19,6 +19,7 @@ tags:
   - cognitive-architecture
   - Creative-Writing
   - Computational-Analysis
+  - Technical-Documentation
 title: 'The Architecture of Delay: Procrastination as Emotional Regulation'
 category: phenomenology
 content_formats:

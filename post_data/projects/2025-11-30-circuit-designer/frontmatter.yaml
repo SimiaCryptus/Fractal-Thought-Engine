@@ -1,6 +1,6 @@
 date: '"2025-11-30T00:00:00.000Z"'
 description: 'A comprehensive system architecture enabling LLMs to design, simulate, and visualize analog circuits through a Central Intermediate Representation (CIR-JSON), combining eecircuit simulation with tscircuit visualization.'
-featured_image: main.png
+featured_image: /assets/images/2025-11-30-circuit-designer/main.png
 keywords:
   - circuit design
   - llm
@@ -15,3 +15,4 @@ tags:
   - software-engineering
   - machine-learning
 title: 'Project: Circuit Designer (Electrical Modality for LLMs)'
+category: projects

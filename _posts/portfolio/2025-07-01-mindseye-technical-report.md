@@ -17,6 +17,8 @@ tags:
   - machine-learning
   - software-engineering
   - Multi-Perspective-Analysis
+  - Ideation
+  - Research
 title: >-
   Rediscovering MindsEye: A Case Study in Algorithmic Bias and Overlooked
   Innovation

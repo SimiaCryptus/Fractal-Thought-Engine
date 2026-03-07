@@ -9,8 +9,19 @@ paginate: 50
 {% comment %} First, get posts with matching category {% endcomment %}
 {% for post in site.posts %}
 {% comment %} Check if post category matches page category or page title {% endcomment %}
-{% if post.category == page.category %}
+{% assign post_cat = post.category | downcase | strip %}
+{% assign page_cat = page.category | downcase | strip %}
+{% assign page_ttl = page.title | downcase | strip %}
+{% if post_cat == page_cat or post_cat == page_ttl %}
 {% assign category_docs = category_docs | push: post %}
+{% else %}
+{% for cat in post.categories %}
+{% assign cat_down = cat | downcase | strip %}
+{% if cat_down == page_cat or cat_down == page_ttl %}
+{% assign category_docs = category_docs | push: post %}
+{% break %}
+{% endif %}
+{% endfor %}
 {% endif %}
 {% endfor %}
 
@@ -22,19 +33,21 @@ paginate: 50
         <h1>{{ page.title }} ({{ category_docs.size }} posts)</h1>
 
         {% if page.description %}
-        <div class="category-description">
+        <p class="category-description">
             {{ page.description | markdownify }}
-        </div>
+        </p>
         {% endif %}
     </header>
 
-    {{ content }}
+    <section class="category-content">
+        {{ content }}
+    </section>
 
-    <div class="posts-grid">
+    <section class="posts-grid" aria-label="Posts in {{ page.title }}">
         {% for doc in category_docs %}
         {% assign post = doc %}
         {% include post-card.html %}
         {% endfor %}
-    </div>
+    </section>
 
 </div>

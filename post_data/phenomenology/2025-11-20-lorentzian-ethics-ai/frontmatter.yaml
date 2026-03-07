@@ -1,6 +1,6 @@
 date: '"2025-11-20T00:00:00.000Z"'
 description: 'A mathematical framework applying relativistic principles to moral philosophy, modeling ethical relationships as observer-dependent across capability gradients.'
-featured_image: main.png
+featured_image: /assets/images/2025-11-20-lorentzian-ethics-ai/main.png
 keywords:
   - lorentzian ethics
   - observer-dependent morality
@@ -14,3 +14,4 @@ tags:
   - spacetime
   - phenomenology
 title: 'Lorentzian Ethics: A Geometric Framework for Observer-Dependent Moral Relationships'
+category: phenomenology

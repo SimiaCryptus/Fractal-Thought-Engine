@@ -10,18 +10,18 @@ keywords: "AI consciousness, human-AI collaboration, fractal thought, DocOps, em
 <div class="home-page">
   <!-- Posts Grid -->
   {% if paginator.posts.size > 0 %}
-  <div class="posts-grid">
+  <section class="posts-grid" aria-label="Recent posts">
     {% for post in paginator.posts %}
     {% include post-card.html %}
     {% endfor %}
-  </div>
+  </section>
 
   <!-- Pagination -->
   {% if paginator.total_pages > 1 %}
   <nav class="pagination" role="navigation" aria-label="Pagination">
     <div class="pagination-links">
       {% if paginator.previous_page %}
-      <a href="{{ paginator.previous_page_path | relative_url }}" class="pagination-link prev">← Prev</a>
+      <a href="{{ paginator.previous_page_path | relative_url }}" class="pagination-link prev" rel="prev">← Prev</a>
       {% else %}
       <span class="pagination-link prev disabled">← Prev</span>
       {% endif %}
@@ -31,7 +31,7 @@ keywords: "AI consciousness, human-AI collaboration, fractal thought, DocOps, em
       </span>
 
       {% if paginator.next_page %}
-      <a href="{{ paginator.next_page_path | relative_url }}" class="pagination-link next">Next →</a>
+      <a href="{{ paginator.next_page_path | relative_url }}" class="pagination-link next" rel="next">Next →</a>
       {% else %}
       <span class="pagination-link next disabled">Next →</span>
       {% endif %}
@@ -41,15 +41,11 @@ keywords: "AI consciousness, human-AI collaboration, fractal thought, DocOps, em
   {% endif %}
 
   <!-- Browse -->
-  <section class="browse-section">
-    <a href="{{ '/categories.html' | relative_url }}" class="browse-link">
-      <span class="browse-icon">📂</span>
-      <span>Browse by Category</span>
-    </a>
+  <nav class="browse-section" aria-label="Browse content">
     <a href="{{ '/tags/' | relative_url }}" class="browse-link">
-      <span class="browse-icon">🏷️</span>
+      <span class="browse-icon" aria-hidden="true">🏷️</span>
       <span>Browse by Tag</span>
     </a>
-  </section>
+  </nav>
 
 </div>

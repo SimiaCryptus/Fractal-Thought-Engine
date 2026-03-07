@@ -1,6 +1,6 @@
 date: '2026-02-20'
 description: 'An exploration of Generation-Augmented Retrieval (GAR) and the Model Context Protocol (MCP), navigating the shift from traditional RAG through a unique pirate-themed narrative.'
-featured_image: main.png
+featured_image: /assets/images/2026-02-20-GAR/main.png
 keywords:
   - generation-augmented retrieval
   - gar
@@ -13,4 +13,9 @@ tags:
   - tutorial
   - machine-learning
   - software-engineering
+  - Philosophy-of-Mind
 title: 'Charting New Waters: Why We’re Flipping the Compass from RAG to GAR'
+category: projects
+content_formats:
+  - article
+  - socratic

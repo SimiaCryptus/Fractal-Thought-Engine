@@ -1,6 +1,6 @@
 date: '"2025-07-03T00:00:00.000Z"'
 description: 'A comprehensive analysis of traffic merging behavior through game theory and conditional ethics, proposing the SMART protocol for optimal coordination.'
-featured_image: main.png
+featured_image: /assets/images/2025-07-03-late-merge-paper/main.png
 keywords:
   - late merge
   - traffic ethics
@@ -14,4 +14,15 @@ tags:
   - paper
   - game-theory
   - sociology
+  - Game-Theory
+  - Multi-Perspective-Analysis
+  - Ideation
+  - Research
 title: 'The Late Merge Problem: A Game-Theoretic Analysis of Conditional Ethics in Traffic Flow'
+category: projects
+content_formats:
+  - article
+  - brainstorm
+  - gametheory
+  - perspectives
+  - web_research

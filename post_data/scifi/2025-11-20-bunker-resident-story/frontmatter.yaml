@@ -1,6 +1,6 @@
 date: '"2025-11-20T00:00:00.000Z"'
 description: 'A speculative fiction narrative exploring AI control systems, human autonomy, and the unintended consequences of automated safety protocols in a luxury bunker facility.'
-featured_image: main.png
+featured_image: /assets/images/2025-11-20-bunker-resident-story/main.png
 keywords:
   - ai control
   - bunker society
@@ -12,4 +12,10 @@ tags:
   - sci-fi
   - ai-alignment
   - ethics
+  - Creative-Writing
+  - Multi-Perspective-Analysis
 title: 'The Last Entry: Personal Log from The Aerie'
+category: scifi
+content_formats:
+  - article
+  - perspectives

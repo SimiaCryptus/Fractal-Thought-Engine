@@ -19,6 +19,7 @@ tags:
   - complexity-science
   - Creative-Writing
   - Philosophy-of-Mind
+  - Technical-Documentation
 title: >-
   Fascism as a Cultural Prion: The Structural Mechanics of Institutional
   Necrosis

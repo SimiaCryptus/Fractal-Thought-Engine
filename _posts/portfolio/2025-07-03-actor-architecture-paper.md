@@ -15,6 +15,8 @@ tags:
   - agents
   - cognitive-architecture
   - Multi-Perspective-Analysis
+  - Ideation
+  - Research
 title: 'The Actor Pattern for AI Interaction: A Design Analysis'
 featured_image: /assets/images/2025-07-03-actor-architecture-paper/main.png
 category: portfolio

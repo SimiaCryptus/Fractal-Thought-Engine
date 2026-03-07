@@ -1,6 +1,6 @@
 date: '"2026-02-01T00:00:00.000Z"'
 description: 'An exploration of procrastination as a neurobiological conflict and emotional regulation strategy, reframing delay as mood repair rather than a character flaw.'
-featured_image: main.png
+featured_image: /assets/images/2026-02-01-procrastination/main.png
 keywords:
   - procrastination
   - emotional regulation
@@ -13,4 +13,13 @@ tags:
   - phenomenology
   - psychology
   - cognitive-architecture
+  - Creative-Writing
+  - Computational-Analysis
+  - Technical-Documentation
 title: 'The Architecture of Delay: Procrastination as Emotional Regulation'
+category: phenomenology
+content_formats:
+  - article
+  - narrative
+  - statemachine
+  - technical_explanation

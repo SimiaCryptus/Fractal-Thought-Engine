@@ -16,6 +16,8 @@ tags:
   - machine-learning
   - algorithms
   - Multi-Perspective-Analysis
+  - Ideation
+  - Research
 title: >-
   PromptOptimization: A Genetic Algorithm Framework for Automated Prompt
   Engineering in Large Language Models

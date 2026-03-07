@@ -1,6 +1,6 @@
 date: '"2025-11-20T00:00:00.000Z"'
 description: 'An analysis of why the phrase ''when I say jump, you say how high'' is logically incoherent, and how this exemplifies humanity''s systematic avoidance of cognitive discomfort.'
-featured_image: main.png
+featured_image: /assets/images/2025-11-20-obedience-paradox/main.png
 keywords:
   - obedience
   - cognitive discomfort
@@ -13,3 +13,4 @@ tags:
   - ethics
   - sociology
 title: 'The Obedience Paradox: On Noticing What Others Won''t'
+category: phenomenology

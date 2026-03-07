@@ -1,9 +1,10 @@
 date: '"2025-12-07T00:00:00.000Z"'
 description: 'A rigorous exploration of how consciousness might create retroactive causality through observation, suggesting that reading this paper may have caused its own writing.'
-featured_image: main.png
+featured_image: /assets/images/2025-12-07-consciousness-recursion/main.png
 tags:
   - paper
   - philosophy
   - consciousness
   - quantum-physics
 title: 'The Consciousness Recursion Paradox: Why You Might Be Reading This Paper Before You Wrote It'
+category: projects

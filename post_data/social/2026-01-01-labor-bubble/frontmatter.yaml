@@ -1,6 +1,6 @@
 date: '"2026-01-01T00:00:00.000Z"'
 description: An analysis of the impending collapse of the 'Labor Bubble'—the artificial inflation of human labor costs—and how AI acts as a liquidation mechanism for bureaucratic complexity.
-featured_image: main.png
+featured_image: /assets/images/2026-01-01-labor-bubble/main.png
 keywords:
   - labor bubble
   - ai automation
@@ -14,4 +14,13 @@ tags:
   - political-economy
   - economics
   - sociology
+  - Game-Theory
+  - Multi-Perspective-Analysis
+  - Ideation
 title: 'The Labor Bubble and the AI Catalyst: The Structural Liquidation of Human Labor'
+category: social
+content_formats:
+  - article
+  - brainstorm
+  - gametheory
+  - perspectives

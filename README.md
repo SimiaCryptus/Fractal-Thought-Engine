@@ -425,7 +425,10 @@ The system supports **23 content formats**, each representing a different cognit
 | `counterfactual.md`        | Counterfactual Analysis | "What if" exploration             |
 | `genetic.md`               | Genetic Optimization    | Evolutionary approach             |
 | `mathematical.md`          | Mathematical Reasoning  | Formal mathematical treatment     |
-| `brainstorming.md`         | Brainstorming           | Divergent ideation                |
+| `brainstorm.md`            | Brainstorming           | Divergent ideation                |
+| `analogy.md`               | Analogy                 | Comparative analysis              |
+| `causal.md`                | Causal                  | Causal reasoning                  |
+| `systems.md`               | Systems Thinking        | Systems analysis                  |
 | `interactive.md`           | Interactive Experience  | Participatory content             |
 | `script.md`                | Creative Writing        | Screenplay/script format          |
 | `technical_explanation.md` | Technical Documentation | Detailed technical docs           |
@@ -499,15 +502,24 @@ When multiple content formats are detected, format-specific tags are automatical
 
 | Format                     | Auto-Tag                     |
 |:---------------------------|:-----------------------------|
-| `comic.md`, `narrative.md` | `Creative-Writing`           |
+| `comic.md`, `narrative.md`, `script.md` | `Creative-Writing` |
 | `gametheory.md`            | `Game-Theory`                |
 | `socratic.md`              | `Philosophy-of-Mind`         |
 | `perspectives.md`          | `Multi-Perspective-Analysis` |
 | `dialectical.md`           | `Theoretical-Framework`      |
-| `statemachine.md`          | `Computational-Analysis`     |
+| `statemachine.md`, `genetic.md` | `Computational-Analysis` |
 | `design.md`                | `Software-Design`            |
 | `tutorial.md`              | `Tutorial`                   |
 | `persuasive.md`            | `Persuasive-Essay`           |
+| `technical_explanation.md` | `Technical-Documentation`     |
+| `web_research.md`          | `Research`                    |
+| `mathematical.md`          | `Mathematical-Reasoning`      |
+| `systems.md`               | `Systems-Thinking`            |
+| `counterfactual.md`        | `Counterfactual-Analysis`     |
+| `causal.md`                | `Causal-Analysis`             |
+| `analogy.md`               | `Comparative-Analysis`        |
+| `brainstorm.md`            | `Ideation`                    |
+| `interactive.md`           | `Interactive-Experience`      |
 
 ### `ingest-frontmatter.js`
 

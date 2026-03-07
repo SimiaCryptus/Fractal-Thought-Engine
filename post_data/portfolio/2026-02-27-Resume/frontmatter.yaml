@@ -1,6 +1,6 @@
 date: '"2026-02-27T00:00:00.000Z"'
 description: 'Professional resume of Andrew Charneski, a senior software engineer and AI architect with 20+ years of experience in AI/ML research, distributed systems, cloud infrastructure, and full-stack development.'
-featured_image: main.png
+featured_image: /assets/images/2026-02-27-Resume/main.png
 keywords:
   - resume
   - senior software engineer
@@ -27,4 +27,21 @@ tags:
   - software-engineering
   - machine-learning
   - distributed-systems
+  - Creative-Writing
+  - Multi-Perspective-Analysis
+  - Theoretical-Framework
+  - Persuasive-Essay
+  - Philosophy-of-Mind
+  - Ideation
+  - Research
 title: Andrew Charneski — Senior Software Engineer & AI Architect
+category: portfolio
+content_formats:
+  - article
+  - brainstorm
+  - narrative
+  - perspectives
+  - dialectical
+  - persuasive
+  - socratic
+  - web_research

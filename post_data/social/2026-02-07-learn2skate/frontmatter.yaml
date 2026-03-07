@@ -1,6 +1,6 @@
 date: '"2026-02-07T00:00:00.000Z"'
 description: 'A generated comic book script describing a young girl''s journey to learn roller skating, combining narrative storytelling with instructional steps.'
-featured_image: page_1_row_1.png
+featured_image: /assets/images/2026-02-07-learn2skate/page_1_row_1.png
 keywords:
   - roller skating
   - comic generation
@@ -11,4 +11,9 @@ tags:
   - comic-book
   - creative-writing
   - education
+  - Tutorial
 title: 'Learn to Skate: A Comic Book Adventure'
+category: social
+content_formats:
+  - article
+  - tutorial

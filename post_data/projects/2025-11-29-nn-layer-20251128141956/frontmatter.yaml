@@ -1,6 +1,6 @@
 date: '"2025-11-29T00:00:00.000Z"'
 description: 'Projects input vectors into Minkowski spacetime and computes complex-valued pseudo-distances to learned reference points, encoding causal structure through timelike vs. spacelike intervals.'
-featured_image: main.png
+featured_image: /assets/images/2025-11-29-nn-layer-20251128141956/main.png
 keywords:
   - minkowskirbflayer
   - neural network layer
@@ -24,3 +24,4 @@ tags:
   - machine-learning
   - spacetime
 title: 'Neural Network Layer Analysis: MinkowskiRBFLayer'
+category: projects

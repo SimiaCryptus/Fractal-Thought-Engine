@@ -1,6 +1,6 @@
 date: '"2025-06-30T00:00:00.000Z"'
 description: 'A comprehensive framework for open-source orbital dynamics and space mission design, featuring GPU acceleration, automatic differentiation, and relativistic corrections.'
-featured_image: main.png
+featured_image: /assets/images/2025-06-30-orbital-dynamics-paper/main.png
 keywords:
   - orbital mechanics
   - spacecraft trajectory
@@ -14,4 +14,11 @@ tags:
   - paper
   - orbital-dynamics
   - software-engineering
+  - Multi-Perspective-Analysis
+  - Tutorial
 title: 'Open Orbital Dynamics Platform: A Community Framework for Space Mission Design'
+category: projects
+content_formats:
+  - article
+  - perspectives
+  - tutorial

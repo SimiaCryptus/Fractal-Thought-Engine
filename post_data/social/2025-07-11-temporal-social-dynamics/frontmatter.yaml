@@ -1,6 +1,6 @@
 date: '"2025-07-11T00:00:00.000Z"'
 description: 'A unified computational framework modeling societies as distributed cognitive networks with temporal coherence challenges, explaining echo chambers, social movements, and institutional dynamics through information propagation delays.'
-featured_image: main.png
+featured_image: /assets/images/2025-07-11-temporal-social-dynamics/main.png
 keywords:
   - social networks
   - temporal coherence
@@ -16,3 +16,4 @@ tags:
   - game-theory
   - cognitive-architecture
 title: 'Temporal Network Dynamics in Social Systems: A Computational Framework for Distributed Cognitive Coherence'
+category: social

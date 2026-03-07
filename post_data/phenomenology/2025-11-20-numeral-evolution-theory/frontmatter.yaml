@@ -1,6 +1,6 @@
 date: '"2025-11-20T00:00:00.000Z"'
 description: 'Exploring why the numeral 7 has a distinctly angular design compared to 6, 8, and 9 in pre-Brahmi numeral systems through base-5 promotion theory and cultural reverence.'
-featured_image: main.png
+featured_image: /assets/images/2025-11-20-numeral-evolution-theory/main.png
 keywords:
   - pre-brahmi numerals
   - numeral evolution
@@ -14,3 +14,4 @@ tags:
   - mathematics
   - history
 title: 'The Sacred Seven: A Theory of Pre-Brahmi Numeral Evolution'
+category: phenomenology

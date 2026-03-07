@@ -1,6 +1,6 @@
 date: '"2025-12-01T00:00:00.000Z"'
 description: 'A comprehensive project proposal for an AI-powered psychosocial assistant that bridges emotional regulation and executive function through biometric feedback, gamified neurotechnology, and compassionate logic.'
-featured_image: main.png
+featured_image: /assets/images/2025-12-01-psychosocial-assistant/main.png
 keywords:
   - psychosocial engine
   - executive function
@@ -16,4 +16,12 @@ tags:
   - proposal
   - cognitive-architecture
   - public-health
+  - Software-Design
+  - Creative-Writing
 title: 'The Psychosocial Engine: A Hybrid Architecture for Executive Function & Emotional Regulation'
+category: social
+content_formats:
+  - article
+  - design
+  - narrative
+  - narrative_seq

@@ -1,6 +1,6 @@
 date: '"2026-01-01T00:00:00.000Z"'
 description: 'A technical proposal for Blind KMS, a non-custodial architecture that decouples policy enforcement from cryptographic visibility to create a zero-trust data plane.'
-featured_image: main.png
+featured_image: /assets/images/2026-01-01-server-arch/main.png
 keywords:
   - blind kms
   - non-custodial
@@ -12,4 +12,13 @@ tags:
   - technical-spec
   - cryptography
   - distributed-systems
+  - Software-Design
+  - Tutorial
+  - Technical-Documentation
 title: 'Blind KMS: A Non-Custodial Architecture for Policy-Gated Cryptography'
+category: projects
+content_formats:
+  - article
+  - design
+  - tutorial
+  - technical_explanation

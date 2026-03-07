@@ -1,6 +1,6 @@
 date: '2026-01-01'
 description: 'An analysis of China''s strategic use of AI as a systemic stress test to destabilize liberal democracies, examining open-source offensives, compute-energy infrastructure, and the theory of non-hegemonic power transition.'
-featured_image: main.png
+featured_image: /assets/images/2026-01-01-commie-ai/main.png
 keywords:
   - ai geopolitics
   - us-china ai competition
@@ -17,4 +17,13 @@ tags:
   - political-economy
   - ai-alignment
   - game-theory
+  - Game-Theory
+  - Multi-Perspective-Analysis
+  - Ideation
 title: 'The Substrate Shift: AI as a Geopolitical Stress Test'
+category: social
+content_formats:
+  - article
+  - brainstorm
+  - gametheory
+  - perspectives

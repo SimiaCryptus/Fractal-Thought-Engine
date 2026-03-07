@@ -1,6 +1,6 @@
 date: '"2025-11-30T00:00:00.000Z"'
 description: 'Project specification for a Geometric Theory Inference Engine, aiming for semantic reconstruction of point clouds via evolutionary CSG discovery and a hybrid optimization approach.'
-featured_image: main.png
+featured_image: /assets/images/2025-11-30-point-geometry/main.png
 keywords:
   - point cloud reconstruction
   - geometric inference
@@ -18,3 +18,4 @@ tags:
   - software-engineering
   - algorithms
 title: 'Project Specification: Geometric Theory Inference Engine'
+category: projects

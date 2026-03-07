@@ -1,6 +1,6 @@
 ---
 title: Andrew Charneski - Resume
-layout: page
+layout: post
 category: portfolio
 ---
 

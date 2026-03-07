@@ -152,24 +152,23 @@
 
 {% include theme_switcher.html %}
 {% include header.html %}
-{% include breadcrumbs.html %}
 
 
 <article class="post swipeable">
 
-    <div class="post-content">
+    <section class="post-content">
         <!-- Include image optimization -->
         {% include image_optimizer.html %}
         {{ content }}
-    </div>
+    </section>
 
     {% if page.tags.size > 0 %}
-    <div class="post-tags">
+    <nav class="post-tags" aria-label="Post tags">
         <span class="tag-label">Tags:</span>
         {% for tag in page.tags %}
         <a href="{{ tag | slugify | prepend: '/tag/' | append: '/' | relative_url }}" class="tag">{{ tag }}</a>
         {% endfor %}
-    </div>
+    </nav>
     {% endif %}
 </article>
 

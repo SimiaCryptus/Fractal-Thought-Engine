@@ -1,6 +1,6 @@
 date: '"2026-02-26T00:00:00.000Z"'
 description: 'A comprehensive walkthrough of Cognotik, an open-source AI-powered development platform that uses declarative Markdown files with YAML frontmatter to orchestrate complex workflows — from README generation and web research pipelines to self-maintaining codebases.'
-featured_image: main.png
+featured_image: /assets/images/2026-02-26-Cognotik/main.png
 keywords:
   - cognotik
   - ai orchestration
@@ -25,4 +25,15 @@ tags:
   - software-engineering
   - agents
   - human-ai-collaboration
+  - Creative-Writing
+  - Philosophy-of-Mind
+  - Comparative-Analysis
+  - Technical-Documentation
 title: 'Cognotik Demos: AI-Powered Workflows in Action'
+category: portfolio
+content_formats:
+  - article
+  - analogy
+  - narrative
+  - socratic
+  - technical_explanation

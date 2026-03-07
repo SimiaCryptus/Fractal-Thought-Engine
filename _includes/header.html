@@ -60,12 +60,14 @@
 <header class="site-header" role="banner">
   <div class="header-content">
     <a href="{{ '/' | relative_url }}" class="home-btn" aria-label="Go to homepage">
-      <svg class="home-icon" viewBox="0 0 24 24" width="24" height="24">
+     <svg class="home-icon" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true">
         <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z" fill="currentColor"/>
       </svg>
     </a>
     <img
             src="{{ 'assets/images/fractal_thought_engine.png' | featured_image }}"
+            alt=""
+            role="presentation"
             style="
               position: fixed;
               top: 0;
@@ -80,15 +82,17 @@
       <span class="nav-toggle-icon"></span>
       <span>MENU</span>
     </button>
-    <nav class="site-nav">
-      <a href="{{ '/portfolio.html' | relative_url }}" class="touch-target">Portfolio</a>
-      <a href="{{ '/projects.html' | relative_url }}" class="touch-target">Projects</a>
-      <a href="{{ '/learning.html' | relative_url }}" class="touch-target">Learning</a>
-      <a href="{{ '/scifi.html' | relative_url }}" class="touch-target">Physics</a>
-      <a href="{{ '/social.html' | relative_url }}" class="touch-target">Social</a>
-      <a href="{{ '/phenomenology.html' | relative_url }}" class="touch-target">Phenomenology</a>
-      <a href="{{ '/consciousness.html' | relative_url }}" class="touch-target">Consciousness</a>
-      <a href="{{ '/creative_writing.html' | relative_url }}" class="touch-target">Creative</a>
+    <nav class="site-nav" id="siteNav" aria-label="Main navigation">
+      <ul style="display: flex; list-style-type: none;">
+        <li><a href="{{ '/category/portfolio/' | relative_url }}" class="touch-target">Portfolio</a></li>
+        <li><a href="{{ '/category/projects/' | relative_url }}" class="touch-target">Projects</a></li>
+        <li><a href="{{ '/category/learning/' | relative_url }}" class="touch-target">Learning</a></li>
+        <li><a href="{{ '/category/scifi/' | relative_url }}" class="touch-target">Physics</a></li>
+        <li><a href="{{ '/category/social/' | relative_url }}" class="touch-target">Social</a></li>
+        <li><a href="{{ '/category/phenomenology/' | relative_url }}" class="touch-target">Phenomenology</a></li>
+        <li><a href="{{ '/category/consciousness/' | relative_url }}" class="touch-target">Consciousness</a></li>
+        <li><a href="{{ '/category/creative/' | relative_url }}" class="touch-target">Creative</a></li>
+      </ul>
     </nav>
   </div>
 </header>

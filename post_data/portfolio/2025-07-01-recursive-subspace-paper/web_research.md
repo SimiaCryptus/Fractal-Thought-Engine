@@ -280,12 +280,12 @@ Execution Configuration (click to expand)
 
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
 ### Link Processing Summary for [Updated 2026-02-22 - Github-Gist](https://gist.github.com/masta-g3/8f7227397b1053b42e727bbd6abf1d2e)
-<details>
-<summary>**Links Found:** 1, **Added to Queue:** 0, **Skipped:** 1</summary>
+
+**Links Found:** 1, **Added to Queue:** 0, **Skipped:** 1
 
 - ✅ **[masta-g3 / llm_papers.txt (GitHub Gist)](https://gist.github.com/masta-g3/8f7227397b1053b42e727bbd6abf1d2e)** - Relevance: 100.0  - Tags: Bibliography, Source, GitHub
 
-</details>
+
 
 **Completed:** 18:41:19
 **Processing Time:** 497716ms
@@ -294,15 +294,15 @@ Execution Configuration (click to expand)
 
 
 ### Link Processing Summary for [ICLR 2023 Paper: Recursive Subspace Optimization](https://openreview.net/forum?id=S_v7_v_v_v)
-<details>
-<summary>**Links Found:** 4, **Added to Queue:** 3, **Skipped:** 1</summary>
+
+**Links Found:** 4, **Added to Queue:** 3, **Skipped:** 1
 
 - ✅ **[OpenReview Search for "Recursive Subspace Optimization"](https://openreview.net/search?term=Recursive+Subspace+Optimization)** - Relevance: 95.0  - Tags: OpenReview, RSO, Search
 - ✅ **[OpenReview Search for "MindsEye"](https://openreview.net/search?term=MindsEye)** - Relevance: 90.0  - Tags: OpenReview, MindsEye, Search
 - ⏭️ **[MindsEye Framework Repository (Search)](https://github.com/search?q=MindsEye+optimization)** - Relevance: 85.0  - Tags: GitHub, Source Code, MindsEye
 - ✅ **[ArXiv.org Search for "Gradient Exhaustion"](https://arxiv.org/search/?query=%22gradient+exhaustion%22&searchtype=all)** - Relevance: 80.0  - Tags: ArXiv, Theory, Gradient Exhaustion
 
-</details>
+
 
 **Completed:** 18:41:40
 **Processing Time:** 19808ms
@@ -311,15 +311,15 @@ Execution Configuration (click to expand)
 
 
 ### Link Processing Summary for [TRGL Full Paper (PDF)](https://proceedings.neurips.cc/paper_files/paper/2023/file/a6a1e4c756d700d9aedcc1896a7e6fb0-Paper-Conference.pdf)
-<details>
-<summary>**Links Found:** 4, **Added to Queue:** 4, **Skipped:** 0</summary>
+
+**Links Found:** 4, **Added to Queue:** 4, **Skipped:** 0
 
 - ✅ **[GitHub Repository (Implementation)](https://github.com/block-wise/module-wise)** - Relevance: 100.0  - Tags: Source Code, Implementation, Benchmarks
 - ✅ **[InfoPro Research (ICLR 2021)](https://openreview.net/forum?id=fAbkE68_SgD)** - Relevance: 90.0  - Tags: Research Paper, Information Theory, Locally Supervised Learning
 - ✅ **[Decoupled Greedy Learning of CNNs (ICML 2020)](https://proceedings.mlr.press/v119/belilovsky20a.html)** - Relevance: 90.0  - Tags: Research Paper, Greedy Learning, CNN
 - ✅ **[Sedona (ICLR 2021)](https://openreview.net/forum?id=9_f_f_f_f_f)** - Relevance: 85.0  - Tags: Research Paper, Architecture Search, Decoupled Networks
 
-</details>
+
 
 **Completed:** 18:42:19
 **Processing Time:** 59165ms
@@ -328,8 +328,8 @@ Execution Configuration (click to expand)
 
 
 ### Link Processing Summary for [Proceedings of the Annual Meeting of the Cognitive Science Society](https://escholarship.org/uc/cognitivesciencesociety)
-<details>
-<summary>**Links Found:** 6, **Added to Queue:** 6, **Skipped:** 0</summary>
+
+**Links Found:** 6, **Added to Queue:** 6, **Skipped:** 0
 
 - ✅ **[eScholarship - University of California](https://escholarship.org/)** - Relevance: 80.0  - Tags: Repository, CogSci Proceedings
 - ✅ **[M2TQA: A Metacognitive Framework for Multi-Table Question Answering](https://escholarship.org/uc/item/3gg5v1zh)** - Relevance: 90.0  - Tags: Metacognitive Framework, Meta-optimizer
@@ -338,7 +338,7 @@ Execution Configuration (click to expand)
 - ✅ **[Learning imposes a bottleneck beyond anatomical constraints](https://escholarship.org/uc/item/22w6s7xx)** - Relevance: 90.0  - Tags: Information Bottleneck, Gradient Exhaustion
 - ✅ **[Toward Human-AI Co-Evolution: Integrated Learning Framework](https://escholarship.org/uc/item/8rs6b2kf)** - Relevance: 85.0  - Tags: Modular Architecture, Hierarchical Optimization
 
-</details>
+
 
 **Completed:** 18:56:35
 **Processing Time:** 915129ms
@@ -347,14 +347,14 @@ Execution Configuration (click to expand)
 
 
 ### Link Processing Summary for [Mind’s Eye: Grounded Language Model Reasoning Through Simulation](https://openreview.net/forum?id=4rXMRuoJlai)
-<details>
-<summary>**Links Found:** 3, **Added to Queue:** 3, **Skipped:** 0</summary>
+
+**Links Found:** 3, **Added to Queue:** 3, **Skipped:** 0
 
 - ✅ **[Mind's Eye Full PDF](https://openreview.net/pdf?id=4rXMRuoJlai)** - Relevance: 95.0  - Tags: PDF, Research Paper
 - ✅ **[Supplementary Material (Zip)](https://openreview.net/attachment?id=4rXMRuoJlai&name=supplementary_material)** - Relevance: 85.0  - Tags: Code, Dataset, Supplementary
 - ✅ **[ICLR 2023 Conference Homepage](https://openreview.net/group?id=ICLR.cc/2023/Conference)** - Relevance: 60.0  - Tags: Conference, ICLR
 
-</details>
+
 
 **Completed:** 18:56:56
 **Processing Time:** 20849ms
@@ -363,15 +363,15 @@ Execution Configuration (click to expand)
 
 
 ### Link Processing Summary for [Betty: An Automatic Differentiation Library for Multilevel Optimization](https://openreview.net/forum?id=LV_MeMS38Q9)
-<details>
-<summary>**Links Found:** 4, **Added to Queue:** 3, **Skipped:** 1</summary>
+
+**Links Found:** 4, **Added to Queue:** 3, **Skipped:** 1
 
 - ✅ **[Betty Research Paper (PDF)](https://openreview.net/pdf?id=LV_MeMS38Q9)** - Relevance: 95.0  - Tags: Research Paper, PDF, Theory, Complexity Analysis
 - ✅ **[Betty GitHub Repository](https://github.com/leopard-ai/betty)** - Relevance: 90.0  - Tags: Source Code, Implementation, GitHub
 - ✅ **[Community Implementations (CatalyzeX)](https://www.catalyzex.com/paper/betty-an-automatic-differentiation-library/code)** - Relevance: 80.0  - Tags: Benchmarks, Community, Practical Application
 - ✅ **[OpenReview Discussion Thread](https://openreview.net/forum?id=LV_MeMS38Q9)** - Relevance: 85.0  - Tags: Peer Review, Discussion, Theoretical Limitations
 
-</details>
+
 
 **Completed:** 18:56:58
 **Processing Time:** 23046ms
@@ -380,15 +380,15 @@ Execution Configuration (click to expand)
 
 
 ### Link Processing Summary for [GitHub Repository (Implementation)](https://github.com/block-wise/module-wise)
-<details>
-<summary>**Links Found:** 4, **Added to Queue:** 4, **Skipped:** 0</summary>
+
+**Links Found:** 4, **Added to Queue:** 4, **Skipped:** 0
 
 - ✅ **[README.md](https://github.com/block-wise/module-wise/blob/main/README.md)** - Relevance: 95.0  - Tags: documentation, benchmarks, hyperparameters
 - ✅ **[utils7.py](https://github.com/block-wise/module-wise/blob/main/utils7.py)** - Relevance: 90.0  - Tags: source code, mathematical implementation, optimization logic
 - ✅ **[resnet110-16modules-stl10.py](https://github.com/block-wise/module-wise/blob/main/resnet110-16modules-stl10.py)** - Relevance: 85.0  - Tags: source code, ResNet, layer-wise decomposition
 - ✅ **[swin-4modules.py](https://github.com/block-wise/module-wise/blob/main/swin-4modules.py)** - Relevance: 85.0  - Tags: source code, Swin Transformer, attention-based architectures
 
-</details>
+
 
 **Completed:** 18:57:10
 **Processing Time:** 34999ms
@@ -397,15 +397,15 @@ Execution Configuration (click to expand)
 
 
 ### Link Processing Summary for [OpenReview Search for "Recursive Subspace Optimization"](https://openreview.net/search?term=Recursive+Subspace+Optimization)
-<details>
-<summary>**Links Found:** 4, **Added to Queue:** 3, **Skipped:** 1</summary>
+
+**Links Found:** 4, **Added to Queue:** 3, **Skipped:** 1
 
 - ✅ **[OpenReview Search: Recursive Subspace Optimization](https://openreview.net/search?term=Recursive%20Subspace%20Optimization)** - Relevance: 95.0  - Tags: RSO, Algorithm, Search
 - ✅ **[OpenReview Search: MindsEye Framework](https://openreview.net/search?term=MindsEye)** - Relevance: 90.0  - Tags: MindsEye, Framework, Search
 - ✅ **[OpenReview Search: Gradient Exhaustion](https://openreview.net/search?term=gradient%20exhaustion)** - Relevance: 85.0  - Tags: Theory, Gradient Exhaustion, Search
 - ✅ **[OpenReview Venues](https://openreview.net/venues)** - Relevance: 70.0  - Tags: Venues, Conferences
 
-</details>
+
 
 **Completed:** 18:57:34
 **Processing Time:** 24513ms
@@ -414,12 +414,12 @@ Execution Configuration (click to expand)
 
 
 ### Link Processing Summary for [README.md](https://github.com/block-wise/module-wise/blob/main/README.md)
-<details>
-<summary>**Links Found:** 1, **Added to Queue:** 0, **Skipped:** 1</summary>
+
+**Links Found:** 1, **Added to Queue:** 0, **Skipped:** 1
 
 - ✅ **[Primary Repository](https://github.com/block-wise/module-wise)** - Relevance: 100.0  - Tags: repository, implementation, source-code, MindsEye
 
-</details>
+
 
 **Completed:** 18:57:42
 **Processing Time:** 32239ms
@@ -428,8 +428,8 @@ Execution Configuration (click to expand)
 
 
 ### Link Processing Summary for [Mind's Eye Full PDF](https://openreview.net/pdf?id=4rXMRuoJlai)
-<details>
-<summary>**Links Found:** 5, **Added to Queue:** 4, **Skipped:** 1</summary>
+
+**Links Found:** 5, **Added to Queue:** 4, **Skipped:** 1
 
 - ✅ **[Mind’s Eye: Grounded Language Model Reasoning Through Simulation (ArXiv)](https://arxiv.org/abs/2210.05359)** - Relevance: 100.0  - Tags: Research Paper, Primary Source
 - ✅ **[MuJoCo Physics Engine](https://mujoco.org/)** - Relevance: 90.0  - Tags: Tool, Simulation
@@ -437,7 +437,7 @@ Execution Configuration (click to expand)
 - ✅ **[PaLM: Scaling Language Modeling with Pathways](https://arxiv.org/abs/2204.02311)** - Relevance: 80.0  - Tags: Foundation Model, Research Paper
 - ✅ **[Chain-of-Thought Prompting (Wei et al., 2022)](https://arxiv.org/abs/2201.11903)** - Relevance: 80.0  - Tags: Reasoning Technique, Research Paper
 
-</details>
+
 
 **Completed:** 18:58:19
 **Processing Time:** 68664ms
@@ -446,15 +446,15 @@ Execution Configuration (click to expand)
 
 
 ### Link Processing Summary for [OpenReview Search: Recursive Subspace Optimization](https://openreview.net/search?term=Recursive%20Subspace%20Optimization)
-<details>
-<summary>**Links Found:** 4, **Added to Queue:** 1, **Skipped:** 3</summary>
+
+**Links Found:** 4, **Added to Queue:** 1, **Skipped:** 3
 
 - ✅ **[OpenReview Search: "Recursive Subspace Optimization"](https://openreview.net/search?term=Recursive+Subspace+Optimization)** - Relevance: 100.0  - Tags: search, RSO, papers
 - ✅ **[OpenReview Search: "MindsEye Framework"](https://openreview.net/search?term=MindsEye)** - Relevance: 95.0  - Tags: search, MindsEye, framework
 - ✅ **[OpenReview Venues](https://openreview.net/venues)** - Relevance: 70.0  - Tags: conferences, ICLR, NeurIPS
 - ✅ **[OpenReview About Page](https://openreview.net/about)** - Relevance: 50.0  - Tags: documentation, standards
 
-</details>
+
 
 **Completed:** 18:58:41
 **Processing Time:** 22162ms
@@ -463,15 +463,15 @@ Execution Configuration (click to expand)
 
 
 ### Link Processing Summary for [Mind’s Eye: Grounded Language Model Reasoning Through Simulation (ArXiv)](https://arxiv.org/abs/2210.05359)
-<details>
-<summary>**Links Found:** 4, **Added to Queue:** 3, **Skipped:** 1</summary>
+
+**Links Found:** 4, **Added to Queue:** 3, **Skipped:** 1
 
 - ✅ **[arXiv:2210.05359 (Full Paper PDF)](https://arxiv.org/pdf/2210.05359)** - Relevance: 100.0  - Tags: Paper, PDF, Benchmark, Technical Implementation
 - ✅ **[MuJoCo Physics Engine](https://mujoco.org/)** - Relevance: 90.0  - Tags: Tool, Physics Engine, API
 - ✅ **[Papers with Code - Mind's Eye](https://paperswithcode.com/paper/minds-eye-grounded-language-model-reasoning)** - Relevance: 85.0  - Tags: Leaderboard, Comparison, Research
 - ✅ **[Shixiang Shane Gu's Research Profile](https://arxiv.org/search/cs?searchtype=author&query=Gu,+S+S)** - Relevance: 80.0  - Tags: Author, Deep RL, Optimization
 
-</details>
+
 
 **Completed:** 18:58:51
 **Processing Time:** 32418ms
@@ -480,15 +480,15 @@ Execution Configuration (click to expand)
 
 
 ### Link Processing Summary for [Additive Analogies Reveal Compositional Structure in Neural Network Weights](https://escholarship.org/uc/item/60w3r1p6)
-<details>
-<summary>**Links Found:** 4, **Added to Queue:** 1, **Skipped:** 3</summary>
+
+**Links Found:** 4, **Added to Queue:** 1, **Skipped:** 3
 
 - ✅ **[Full Research Paper (PDF)](https://escholarship.org/content/qt60w3r1p6/qt60w3r1p6.pdf)** - Relevance: 95.0  - Tags: PDF, Full Text, Methodology
 - ✅ **[Main Article Landing Page](https://escholarship.org/uc/item/60w3r1p6)** - Relevance: 85.0  - Tags: Metadata, Landing Page, Citation
 - ⏭️ **[R. Thomas McCoy’s Author Profile](https://escholarship.org/search/?q=author%3AMcCoy%2C%20R.%20Thomas)** - Relevance: 70.0  - Tags: Author Profile, Related Work
 - ✅ **[Proceedings of the Annual Meeting of the Cognitive Science Society](https://escholarship.org/uc/cognitivesciencesociety)** - Relevance: 60.0  - Tags: Publication Source, Cognitive Science
 
-</details>
+
 
 **Completed:** 18:58:53
 **Processing Time:** 33855ms
@@ -497,14 +497,14 @@ Execution Configuration (click to expand)
 
 
 ### Link Processing Summary for [MKOR: Momentum-Enabled Kronecker-Factor-Based Optimizer Using Rank-1 Updates](https://proceedings.neurips.cc/paper_files/paper/2023/hash/39bc6e3cbf5a1991d33dc10ebff9a9cf-Abstract-Conference.html)
-<details>
-<summary>**Links Found:** 3, **Added to Queue:** 3, **Skipped:** 0</summary>
+
+**Links Found:** 3, **Added to Queue:** 3, **Skipped:** 0
 
 - ✅ **[MKOR Full Research Paper (PDF)](https://proceedings.neurips.cc/paper_files/paper/2023/file/39bc6e3cbf5a1991d33dc10ebff9a9cf-Paper-Conference.pdf)** - Relevance: 100.0  - Tags: Research Paper, PDF, Mathematical Proofs
 - ✅ **[Supplemental Material](https://proceedings.neurips.cc/paper_files/paper/2023/file/39bc6e3cbf5a1991d33dc10ebff9a9cf-Supplemental-Conference.pdf)** - Relevance: 90.0  - Tags: Supplemental, Benchmarks, Hyperparameters
 - ✅ **[Bibtex Entry](https://proceedings.neurips.cc/paper_files/paper/22757-/bibtex)** - Relevance: 70.0  - Tags: Citation, Bibtex, Metadata
 
-</details>
+
 
 **Completed:** 18:59:12
 **Processing Time:** 18940ms
@@ -513,8 +513,8 @@ Execution Configuration (click to expand)
 
 
 ### Link Processing Summary for [Betty Research Paper (PDF)](https://openreview.net/pdf?id=LV_MeMS38Q9)
-<details>
-<summary>**Links Found:** 5, **Added to Queue:** 4, **Skipped:** 1</summary>
+
+**Links Found:** 5, **Added to Queue:** 4, **Skipped:** 1
 
 - ✅ **[BETTY Open-Source Repository](https://github.com/leopard-ai/betty)** - Relevance: 100.0  - Tags: Source Code, Library, MLO
 - ✅ **[ICLR 2023 Paper: BETTY](https://openreview.net/forum?id=0S_96S69_v)** - Relevance: 100.0  - Tags: Research Paper, Theory, ICLR
@@ -522,7 +522,7 @@ Execution Configuration (click to expand)
 - ✅ **[Meta-Weight-Net (Shu et al., 2019)](https://arxiv.org/abs/1902.07336)** - Relevance: 85.0  - Tags: Research Paper, Meta-Optimization
 - ✅ **[JAXopt](https://github.com/google/jaxopt)** - Relevance: 80.0  - Tags: Library, Comparison, Implicit Differentiation
 
-</details>
+
 
 **Completed:** 18:59:50
 **Processing Time:** 56855ms
@@ -531,8 +531,8 @@ Execution Configuration (click to expand)
 
 
 ### Link Processing Summary for [arXiv:2210.05359 (Full Paper PDF)](https://arxiv.org/pdf/2210.05359)
-<details>
-<summary>**Links Found:** 5, **Added to Queue:** 1, **Skipped:** 4</summary>
+
+**Links Found:** 5, **Added to Queue:** 1, **Skipped:** 4
 
 - ✅ **[Mind’s Eye: Grounded Language Model Reasoning Through Simulation (ArXiv)](https://arxiv.org/abs/2210.05359)** - Relevance: 100.0  - Tags: Research Paper, Foundational, Mind's Eye
 - ✅ **[The UTOPIA Benchmark (Google Research GitHub)](https://github.com/google-research/google-research)** - Relevance: 95.0  - Tags: Benchmark, Dataset, Code
@@ -540,7 +540,7 @@ Execution Configuration (click to expand)
 - ✅ **[PaLM: Scaling Language Modeling with Pathways](https://arxiv.org/abs/2204.02311)** - Relevance: 75.0  - Tags: Research Paper, Scaling, Pathways
 - ⏭️ **[Recursive Subspace Optimization (RSO) Research](https://scholar.google.com/scholar?q=Recursive+Subspace+Optimization+neural+networks)** - Relevance: 80.0  - Tags: Optimization, Search, RSO
 
-</details>
+
 
 **Completed:** 18:59:53
 **Processing Time:** 59960ms
@@ -549,14 +549,14 @@ Execution Configuration (click to expand)
 
 
 ### Link Processing Summary for [A Layer-Wise Natural Gradient Optimizer for Training Deep Neural Networks](https://neurips.cc/virtual/2024/poster/93672)
-<details>
-<summary>**Links Found:** 3, **Added to Queue:** 3, **Skipped:** 0</summary>
+
+**Links Found:** 3, **Added to Queue:** 3, **Skipped:** 0
 
 - ✅ **[OpenReview Forum](https://openreview.net/forum?id=niG3Yyb6oA)** - Relevance: 90.0  - Tags: peer reviews, author responses, Adam, AdamW, K-FAC
 - ✅ **[Full Conference Paper (PDF)](https://proceedings.neurips.cc/paper_files/paper/2024/hash/31fb284a0aaaad837d2930a610cd5e50-Abstract-Conference.html)** - Relevance: 95.0  - Tags: convergence analysis, benchmark tables, full paper
 - ✅ **[Poster PDF](https://neurips.cc/media/PosterPDFs/NeurIPS%202024/93672.png?t=1730979625.3301675)** - Relevance: 80.0  - Tags: poster, architecture, Kronecker product
 
-</details>
+
 
 **Completed:** 19:00:20
 **Processing Time:** 27563ms
@@ -570,8 +570,8 @@ Execution Configuration (click to expand)
 
 
 ### Link Processing Summary for [MKOR Full Research Paper (PDF)](https://proceedings.neurips.cc/paper_files/paper/2023/file/39bc6e3cbf5a1991d33dc10ebff9a9cf-Paper-Conference.pdf)
-<details>
-<summary>**Links Found:** 5, **Added to Queue:** 4, **Skipped:** 1</summary>
+
+**Links Found:** 5, **Added to Queue:** 4, **Skipped:** 1
 
 - ✅ **[MKOR GitHub Repository](https://github.com/Mohammad-Mozaffari/mkor)** - Relevance: 100.0  - Tags: Source Code, Implementation
 - ✅ **[KAISA Framework](https://github.com/madsys-dev/kaisa)** - Relevance: 85.0  - Tags: Baseline, KFAC
@@ -579,7 +579,7 @@ Execution Configuration (click to expand)
 - ✅ **[LAMB Optimizer (arXiv:1904.00962)](https://arxiv.org/abs/1904.00962)** - Relevance: 75.0  - Tags: Research Paper, Baseline
 - ✅ **[Polaris Cluster (ALCF)](https://www.alcf.anl.gov/polaris)** - Relevance: 60.0  - Tags: Infrastructure, Supercomputing
 
-</details>
+
 
 **Completed:** 19:00:49
 **Processing Time:** 55918ms
@@ -598,9 +598,9 @@ Execution Configuration (click to expand)
 **Success Rate:** 100%
 
 
-</div>
 
-<div id="final-output" class="tab-content" style="display: block;" markdown="1">
+
+
 
 ## Final Summary
 
@@ -751,5 +751,5 @@ The following pages were not processed:
 83. [OpenReview About Page](https://openreview.net/about), Relevance Score: 49.704
 
 
-</div>
+
 

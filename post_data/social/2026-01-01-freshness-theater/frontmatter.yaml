@@ -1,6 +1,6 @@
 date: '"2026-01-01T00:00:00.000Z"'
 description: 'An analysis of ''Freshness Theater'' and ''Idiot Culture,'' exploring how institutions use sensory proxies and narrative flipping to externalize risk.'
-featured_image: main.png
+featured_image: /assets/images/2026-01-01-freshness-theater/main.png
 keywords:
   - freshness theater
   - idiot culture
@@ -13,4 +13,9 @@ tags:
   - sociology
   - institutional-analysis
   - ethics
+  - Creative-Writing
 title: 'Freshness Theater: The Nuclear-Hot Coffee Loop and the Rise of Idiot Culture'
+category: social
+content_formats:
+  - article
+  - narrative

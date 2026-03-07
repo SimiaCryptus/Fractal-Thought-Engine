@@ -1,6 +1,6 @@
 date: '"2026-01-01T00:00:00.000Z"'
 description: An analysis of how historical taboos and the 'Contamination Effect' are being hard-coded into AI architectures as a 'Silicon Governor'.
-featured_image: main.png
+featured_image: /assets/images/2026-01-01-eugenics/main.png
 keywords:
   - radioactive data
   - silicon governor
@@ -14,4 +14,9 @@ tags:
   - ethics
   - machine-learning
   - sociology
+  - Philosophy-of-Mind
 title: 'The Mechanics of Radioactive Data: Eugenics, Protoscience, and the Silicon Governor'
+category: social
+content_formats:
+  - article
+  - socratic

@@ -1,6 +1,6 @@
 date: '"2026-03-01T00:00:00.000Z"'
 description: 'An analysis of how AI-driven automation is eroding the functional basis of human value, tracing historical regime transitions from physical to cognitive labor and examining the existential risks of a third migration to automated cognition.'
-featured_image: main.png
+featured_image: /assets/images/2026-02-29-Human-Value/main.png
 keywords:
   - human value
   - automated cognition
@@ -23,4 +23,24 @@ tags:
   - economics
   - ethics
   - complexity-science
+  - Creative-Writing
+  - Multi-Perspective-Analysis
+  - Theoretical-Framework
+  - Philosophy-of-Mind
+  - Computational-Analysis
+  - Game-Theory
+  - Ideation
+  - Causal-Analysis
+  - Systems-Thinking
 title: 'The Evaporating Substrate: Human Value in the Age of Automated Cognition'
+category: social
+content_formats:
+  - article
+  - brainstorm
+  - causal
+  - gametheory
+  - perspectives
+  - dialectical
+  - socratic
+  - systems
+  - statemachine

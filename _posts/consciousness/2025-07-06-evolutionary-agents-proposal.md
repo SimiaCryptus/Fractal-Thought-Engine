@@ -16,6 +16,7 @@ tags:
   - agents
   - consciousness
   - complexity-science
+  - Mathematical-Reasoning
 title: 'Cognitive Ecology: An Evolutionary Framework for Self-Modifying AI Ecosystems'
 category: consciousness
 content_formats:

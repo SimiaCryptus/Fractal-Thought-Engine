@@ -1,10 +1,10 @@
 ---
-layout: page
+layout: post
 title: Concept Index
 permalink: /tags/
 ---
 
-<div class="tag-cloud-container">
+<section class="tag-cloud-container" aria-label="Tag cloud">
   <!--
     Logic:
     1. Capture tags from site.tags
@@ -12,7 +12,7 @@ permalink: /tags/
   -->
   {% assign sorted_tags = site.tags | sort %}
 
-  <div class="tag-cloud">
+  <nav class="tag-cloud" aria-label="All tags">
 {% for tag in sorted_tags %}
       {% assign tag_name = tag[0] %}
       {% assign tag_count = tag[1].size %}
@@ -31,11 +31,11 @@ permalink: /tags/
         Note the use of 'slugify' to handle spaces in tags (e.g. "Game Theory" -> "game-theory")
       -->
       <a href="{{ tag_name | slugify | prepend: '/tag/' | append: '/' | relative_url }}" class="tag-item" style="font-size: {{ tag_count | times: 4 | plus: 80 }}%;">
-        {{ tag_name }} <span class="count">({{ tag_count }})</span>
+        {{ tag_name }} <span class="count" aria-label="{{ tag_count }} posts">({{ tag_count }})</span>
       </a>
     {% endfor %}
-  </div>
-</div>
+  </nav>
+</section>
 
 <style>
   /* Simple styling for the cloud */

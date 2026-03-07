@@ -1,19 +1,18 @@
 <div class="theme-switcher">
-  <label for="theme-select" class="visually-hidden">Choose Theme:</label>
   <div class="theme-control-wrapper">
     <button class="theme-toggle-btn" aria-label="Toggle theme menu">
-      <svg class="theme-icon" viewBox="0 0 24 24" width="24" height="24">
+      <svg class="theme-icon" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false">
         <path d="M12 18c-3.31 0-6-2.69-6-6s2.69-6 6-6 6 2.69 6 6-2.69 6-6 6zm0-10c-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4z"/>
         <path d="M12 3c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1zm0 18c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1zm9-10c.55 0 1-.45 1-1s-.45-1-1-1-1 .45-1 1 .45 1 1 1zM3 13c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1zm16.24 2.76l1.42 1.42c.39.39 1.02.39 1.41 0s.39-1.02 0-1.41l-1.42-1.42c-.39-.39-1.02-.39-1.41 0s-.39 1.02 0 1.41zM3.93 5.34l1.42 1.42c.39.39 1.02.39 1.41 0s.39-1.02 0-1.41L5.34 3.93c-.39-.39-1.02-.39-1.41 0s-.39 1.02 0 1.41zm14.73 14.73l-1.42-1.42c-.39-.39-1.02-.39-1.41 0s-.39 1.02 0 1.41l1.42 1.42c.39.39 1.02.39 1.41 0s.39-1.02 0-1.41zM5.34 20.07l-1.42-1.42c-.39-.39-1.02-.39-1.41 0s-.39 1.02 0 1.41l1.42 1.42c.39.39 1.02.39 1.41 0s.39-1.02 0-1.41z"/>
       </svg>
     </button>
-    <div class="theme-dropdown" id="theme-dropdown">
+    <div class="theme-dropdown" id="theme-dropdown" role="dialog" aria-label="Theme selection" aria-modal="false">
       <div class="theme-dropdown-header">
         <h3>Choose Theme</h3>
         <button class="close-btn" aria-label="Close theme menu">&times;</button>
       </div>
-      <div class="theme-options">
-        <button class="theme-option" data-theme="darkMode">
+      <div class="theme-options" role="radiogroup" aria-label="Available themes">
+        <button class="theme-option" data-theme="darkMode" role="radio" aria-checked="false">
           <div class="theme-preview theme-preview-dark">
             <div class="preview-header"></div>
             <div class="preview-content">
@@ -460,17 +459,21 @@ document.addEventListener('DOMContentLoaded', function() {
   toggleBtn.addEventListener('click', function(e) {
     e.stopPropagation();
     dropdown.classList.toggle('active');
+    const isActive = dropdown.classList.contains('active');
+    toggleBtn.setAttribute('aria-expanded', isActive);
   });
   
   // Close dropdown
   closeBtn.addEventListener('click', function() {
     dropdown.classList.remove('active');
+    toggleBtn.setAttribute('aria-expanded', 'false');
   });
   
   // Close on outside click
   document.addEventListener('click', function(e) {
     if (!dropdown.contains(e.target) && !toggleBtn.contains(e.target)) {
       dropdown.classList.remove('active');
+      toggleBtn.setAttribute('aria-expanded', 'false');
     }
   });
   
@@ -482,8 +485,21 @@ document.addEventListener('DOMContentLoaded', function() {
         window.themeModel.applyTheme(themeName);
         updateActiveTheme(themeName);
         dropdown.classList.remove('active');
+        toggleBtn.setAttribute('aria-expanded', 'false');
         }
     });
   });
+  // Mark active theme with aria-checked
+  function updateActiveTheme(themeName) {
+    themeOptions.forEach(option => {
+      if (option.dataset.theme === themeName) {
+        option.classList.add('active');
+        option.setAttribute('aria-checked', 'true');
+      } else {
+        option.classList.remove('active');
+        option.setAttribute('aria-checked', 'false');
+      }
+    });
+  }
 });
 </script>

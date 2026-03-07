@@ -16,6 +16,8 @@ tags:
   - software-engineering
   - algorithms
   - Multi-Perspective-Analysis
+  - Ideation
+  - Research
 title: Trust Region Methods for Neural Network Optimization
 featured_image: /assets/images/2025-07-01-trust-regions/main.png
 category: portfolio

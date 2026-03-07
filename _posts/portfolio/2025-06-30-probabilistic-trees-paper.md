@@ -16,6 +16,8 @@ tags:
   - machine-learning
   - data-structures
   - Multi-Perspective-Analysis
+  - Ideation
+  - Research
 title: >-
   Probabilistic Decision Trees: A Cross-Entropy Approach to Joint Distribution
   Modeling

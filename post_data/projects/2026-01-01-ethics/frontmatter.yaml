@@ -1,6 +1,6 @@
 date: '"2026-01-01T00:00:00.000Z"'
 description: A formal framework for ethics using field theory and operator algebra to model harm propagation in multi-agent systems.
-featured_image: main.png
+featured_image: /assets/images/2026-01-01-ethics/main.png
 keywords:
   - moral physics
   - operator algebra
@@ -14,3 +14,4 @@ tags:
   - mathematics
   - philosophy
 title: 'Computational Ethics: A Field Theory of Moral Operators'
+category: projects

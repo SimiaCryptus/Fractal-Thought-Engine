@@ -1,6 +1,6 @@
 date: '"2025-06-29T00:00:00.000Z"'
 description: Revolutionary approach to nuclear fusion using quantum-coherent superfluid helium for controlled fusion and heavy element synthesis
-featured_image: main.png
+featured_image: /assets/images/2025-06-29-superfluid-fusion-proposal/main.png
 keywords:
   - superfluid helium
   - quantum coherence
@@ -12,4 +12,11 @@ tags:
   - proposal
   - theoretical-physics
   - quantum-physics
+  - Multi-Perspective-Analysis
+  - Tutorial
 title: 'Quantum-Coherent Nuclear Fusion in Superfluid Helium: A Novel Approach to Controlled Fusion and Heavy Element Synthesis'
+category: scifi
+content_formats:
+  - article
+  - perspectives
+  - tutorial
